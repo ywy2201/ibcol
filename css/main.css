@@ -118,8 +118,8 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
-  margin-top: 6rem;
-  margin-bottom: 1.8rem;
+  margin-top: 1rem;
+  margin-bottom: 5rem;
 }
 
 @media only screen and (max-width:600px) {
@@ -1442,6 +1442,9 @@ body.menu-is-open {
   margin-bottom: 3rem;
   position: relative;
 }
+.subhead.home {
+  text-align: center;
+}
 
 .item-title {
   font-size: 2.4rem;
@@ -1644,7 +1647,11 @@ body.menu-is-open {
   height: 100px;
   background-color: transparent;
   position: absolute;
-  top: 21px;
+  top: 0;
+  margin-top: 21px;
+}
+.s-header.moved {
+  background-color: white;
 }
 
 /* -------------------------------------------------------------------
@@ -1896,6 +1903,7 @@ body.menu-is-open {
 * ## mobile menu toggle 
 * ------------------------------------------------------------------- */
 .header-menu-toggle {
+  display: none;
   width: 48px;
   height: 45px;
   line-height: 45px;
@@ -1949,6 +1957,27 @@ body.menu-is-open {
 
 .header-menu-icon::after {
   bottom: -9px;
+}
+.desktop-nav {
+  display: inline-block;
+  position: absolute;
+  right: 7.5rem;
+  top: 3rem;
+}
+.desktop-nav .nav_list {
+  list-style: none;
+}
+.desktop-nav .nav_list li {
+  float: left;
+  font-size: 15px;
+  margin-right: 22px;
+}
+.desktop-nav .nav_list li a {
+  color: #151515;
+}
+.desktop-nav .nav_list li.current a, .desktop-nav .nav_list li a:hover {
+  color: #0086ca;
+  text-decoration: underline;
 }
 
 /* ------------------------------------------------------------------- 
@@ -2719,8 +2748,8 @@ html.no-csstransitions .home-content__main {
 *
 * ------------------------------------------------------------------- */
 .s-about {
-  padding-top: 18rem;
-  padding-bottom: 18rem;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
   position: relative;
 }
 
@@ -2733,9 +2762,9 @@ html.no-csstransitions .home-content__main {
 }
 
 .process h4 {
-  padding-left: 7rem;
   margin-bottom: 2.1rem;
   position: relative;
+  padding-top: 70px;
 }
 
 .process h4::before {
@@ -2784,7 +2813,6 @@ html.no-csstransitions .home-content__main {
 
 .item-process {
   position: relative;
-  margin-bottom: 3rem;
 }
 
 /*.item-process:nth-child(2n+1) {
@@ -3277,9 +3305,10 @@ padding-left: 30px;
 *
 * ------------------------------------------------------------------- */
 .s-clients {
-  padding-top: 16.2rem;
+  padding-top: 10rem;
   padding-bottom: 15rem;
   position: relative;
+  background: white;
 }
 
 .s-clients .grid-overlay {
@@ -3327,13 +3356,17 @@ padding-left: 30px;
 }
 
 .s-clients h1 {
-  color: white;
+  color: #13161b;
 }
 
 .s-clients .clients-wrap img {
   height: 100px;
   display: block;
   margin: 0 auto;
+}
+
+.s-clients .clients-wrap .col-block.mb-80{
+  margin-bottom: 80px;
 }
 
 /* ------------------------------------------------------------------- 
@@ -3624,8 +3657,8 @@ padding-left: 30px;
 *
 * ------------------------------------------------------------------- */
 .s-contact {
-  padding-top: 16rem;
-  padding-bottom: 16rem;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
   background-color: #0086ca;
   color: rgba(255, 255, 255, 0.6);
   text-align: center;
@@ -3649,7 +3682,7 @@ padding-left: 30px;
 }
 
 .s-contact .subhead {
-  color: #2a1538;
+  color: #f6c215;
 }
 
 .s-contact .section-header,
@@ -3725,6 +3758,12 @@ padding-left: 30px;
 
   .contact-email a {
     font-size: 7.6rem;
+  }
+  .desktop-nav {
+    display: none;
+  }
+  .header-menu-toggle {
+    display:block;
   }
 
 }
@@ -4092,6 +4131,9 @@ tr.last td {
   border: 0.2rem solid #0086ca;
   color: #ffffff;
 }
+.s-section {
+  padding-top: 8rem;
+}
 .s-section.first {
   padding-top: 18rem;
   position: relative;
@@ -4106,5 +4148,8 @@ tr.last td {
   padding: 10px;
   display: block;
   width: fit-content;
+}
+.no-bottom {
+  margin-bottom: 0 !important;
 }
 /*# sourceMappingURL=main.css.map */
