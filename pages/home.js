@@ -10,7 +10,7 @@ import { Link } from '/routes';
 
 import PageContainerComponent from 'components/PageContainerComponent';
 
-
+import Head from 'next/head';
 
 
 // const pagePadding = {
@@ -40,7 +40,7 @@ export default class extends React.Component {
     return { query }
   }
   
-  translate = (t) => translate(t, this.props.query.locale);
+  translate = (t) => translate(t, 'home', this.props.query.locale);
 
 
   componentDidMount = () => {
@@ -65,6 +65,10 @@ export default class extends React.Component {
     
     return (
       <ThisPageContainerComponent>
+        <Head>
+          <title>{this.translate('siteTitle')} {this.translate('titleSeparator')} {this.translate('pageTitle')}</title>
+        </Head>
+
         <section id="home" className="s-home page-hero target-section" data-parallax="scroll" data-image-src="/static/images/hero-bg-2.jpg" data-natural-width="3000" data-natural-height="2000" data-position-y="center">
 
           <div className="grid-overlay">
@@ -76,22 +80,22 @@ export default class extends React.Component {
             <div className="row home-content__main">
 
               <h1>
-                  International Blockchain Olympiad
+                {this.translate('mainHeading')}
               </h1>
 
               <h3>
-                  Global Blockchain Application Build Challenge
+                {this.translate('subHeading')}
               </h3>
 
               <div className="home-content__button">
                 <Link prefetch route="contact" params={{ locale }}>
                   <a className="btn btn--primary btn--large">
-                    Contact
+                    {this.translate('contact')}
                   </a>
                 </Link>
                 <Link prefetch route="criteria" params={{ locale }}>
                   <a className="btn btn--large">
-                      Competition Rules
+                    {this.translate('competitionRules')}
                   </a>
                 </Link>
               </div>
@@ -101,7 +105,7 @@ export default class extends React.Component {
             <div className="home-content__scroll">
               <Link prefetch route="home" params={{ locale }} hash="about">
                 <a className="scroll-link smoothscroll">
-                    Scroll
+                  {this.translate('scroll')}
                 </a>
               </Link>
             </div>
@@ -115,85 +119,18 @@ export default class extends React.Component {
         <section id="about" className="s-about target-section">
 
           <div className="row bit-narrow" style={{marginBottom:"60px"}}>
-            <h1>What is it?</h1>
-            <p>
-            The inaugural edition of the IBCOL is a two-day competition and exposition of blockchain and distributed ledger applications in Hong Kong. It provides an exceptional opportunity for students to learn and grow with their peers through solving real-world problems with cutting-edge technology and carving out a legacy in a nascent industry.
-            </p>
-            <p>
-            IBCOL 2019 is hosted by the Hong Kong Blockchain Society (HKBCS), which ran the predecessor of the IBCOL at the City University of Hong Kong in 2018: DappCamp International Student Blockchain Competition.
-            </p>
+            <h1>{this.translate('section01.heading')}</h1>
+            <div dangerouslySetInnerHTML={{ __html: this.translate('section01.contentHTML') }}/>
           </div>
 
           <div className="row section-header bit-narrow" style={{marginBottom:"60px"}}>
-            <h1>When to Join</h1>
-            <div className="table-responsive">
-              <table>
-                <tbody>
-                  <tr>
-                    <td></td>
-                    <td><b>Super Early Bird</b></td>
-                    <td><b>Early Bird</b></td>
-                    <td><b>Regular</b></td>
-                  </tr>
-                  <tr>
-                    <td>From</td>
-                    <td>Monday<br/>3 September 2018<br/>00:00 HKT</td>
-                    <td>Saturday<br/>2 February 2019<br/>00:00 HKT</td>
-                    <td>Tuesday<br/>2 April 2019<br/>00:00 HKT</td>
-                  </tr>
-                  <tr>
-                    <td>Unitl</td>
-                    <td>Friday<br/>1 February 2019<br/>23:59 HKT</td>
-                    <td>Monday<br/>1 April 2019<br/>23:59 HKT</td>
-                    <td>Sunday<br/>21 April 2019<br/>23:59 HKT</td>
-                  </tr>
-                  <tr>
-                    <td>Registration</td>
-                    <td>Fee is waived</td>
-                    <td>Fee is waived</td>
-                    <td>Fee is required</td>
-                  </tr>
-                  <tr>
-                    <td>Financial Assistance</td>
-                    <td>Eligible for travel subsidies</td>
-                    <td>Ineligible for travel subsidies</td>
-                    <td>Ineligible for travel subsidies</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
+            <h1>{this.translate('section02.heading')}</h1>
+            <div className="table-responsive" dangerouslySetInnerHTML={{ __html: this.translate('section02.contentTableHTML') }} />
           </div>
 
             <div className="row bit-narrow" style={{marginBottom:"60px"}}>
-                <h1>How To Join</h1>
-                <div className="about-process process">
-                    <div className="block-1-3 block-tab-full">
-                        <div className="col-block item-process blue">
-                            <div className="item-process__text">
-                                <h4 className="item-title">Team</h4>
-                                <p>
-                                    Up to 6 <b>students</b> can register into one <b>team</b>
-                                </p>
-                            </div>
-                        </div>
-                        <div className="col-block item-process yellow">
-                            <div className="item-process__text">
-                                <h4 className="item-title">Project</h4>
-                                <p>
-                                    A team can submit more than one <b>project</b>
-                                </p>
-                            </div>
-                        </div>
-                        <div className="col-block item-process green">
-                            <div className="item-process__text">
-                                <h4 className="item-title">Category</h4>
-                                <p>
-                                    Each project is entered into a <b>category</b>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              <h1>{this.translate('section03.heading')}</h1>
+            <div className="about-process process" dangerouslySetInnerHTML={{ __html: this.translate('section03.contentHTML') }} />
 
             </div>
 

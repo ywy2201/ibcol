@@ -22,8 +22,11 @@ const url = require('url');
 
 // const configs = Object.assign({}, envConfigs.common, envConfigs[currentEnv]);
 const configs = require('./configs');
-
 console.log('configs', configs);
+
+const translations = require('./translations');
+
+const defaultLocale = translations['_default']._locale;
 
 //────────────────────────────────────────────────────────────────────────────────
 
@@ -76,7 +79,7 @@ const router = express.Router({
 
 // redirect to default locale
 router.get('/', (req, res) => {
-  res.redirect(`/${configs.locales[0].id}`);
+  res.redirect(`/${defaultLocale.id}`);
 });
 
 
@@ -94,20 +97,24 @@ router.get('/:locale/*?', (req, res, next) => {
   } else {
     let newPath = "";
 
-    const requestedLocaleSupported = configs.locales.filter((locale, index) => locale.id === requestedLocale).length > 0;
+    const requestedLocaleSupported = _.find(translations, {
+      _locale: {
+        id: requestedLocale
+      }
+    }) !== undefined;
     
     if (!requestedLocaleSupported) {
       // requestedLocale is not in the supported locale list
 
       // requestedLocale is not supported, requestedParams is correct?
-      if (routes.findAndGetUrls(requestedParams, { locale: configs.locales[0].id }).route !== undefined) {
+      if (routes.findAndGetUrls(requestedParams, { locale: defaultLocale.id }).route !== undefined) {
         // requestedParams is found when default locale is used -> redirect to requestedParams with default locale
-        newPath = `/${configs.locales[0].id}${requestedParams}${search}`;
+        newPath = `/${defaultLocale.id}${requestedParams}${search}`;
       } else {
 
         // maybe locale is missing and requestedLocale is really part of the requestedParams?
 
-        newPath = `/${configs.locales[0].id}/${requestedLocale}${requestedParams}${search}`;
+        newPath = `/${defaultLocale.id}/${requestedLocale}${requestedParams}${search}`;
       }
 
       

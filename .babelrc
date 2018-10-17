@@ -17,7 +17,7 @@
         "root": ["./"],
         "alias": {
           "configs": "./configs",
-          "data": "./data",
+          "translations": "./translations",
           "styles": "./styles",
           "components": "./components",
           "helpers": "./helpers"

@@ -1,24 +1,26 @@
 import _ from 'lodash';
 import configs from 'configs';
+import translations from 'translations';
 
-const translate = (translatable, locale) => {
 
-  // console.log('translate', translatable, locale);
 
-  if (typeof (translatable) === 'string')
-    return translatable;
+const translate = (key, page, locale) => {
+  
+  // console.log('translate', key, page, locale);
 
-  if (_.isEmpty(translatable))
-    return "";
+  const localeSupported = _.find(translations, {
+    _locale: {
+      id: locale
+    }
+  }) !== undefined;
 
-  let translated = translatable[locale];
-
-  // console.log('translated', translated);
-
-  if (_.isEmpty(translated))
-    translated = translatable[configs.locales[0].id];
-
-  return translated === undefined ? "" : translated;
+  if (!localeSupported)
+    locale = "_default";
+  
+  
+  return _.get(translations[locale][page], key, _.get(translations['_default'][page], key));
+  
+  
 
 }
 

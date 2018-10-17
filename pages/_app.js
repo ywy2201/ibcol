@@ -22,9 +22,7 @@ import styled, { injectGlobal, ThemeProvider } from 'styled-components';
 import { media, style } from 'helpers/styledComponents.js';
 import { transparentize } from 'polished';
 
-import configs from 'configs';
-import FooterComponent from 'components/FooterComponent/FooterComponent';
-
+import translations from 'translations';
 
 
 // CSS
@@ -33,80 +31,7 @@ import "styles/vendor.css";
 import "styles/main.css";
 
 
-
-// const maxSiteWidth = style.dimension.normal.maxSiteWidth;
-
-// const pagePadding = {
-//   xSmall: style.dimension.normal.pagePadding.xSmall,
-//   small: style.dimension.normal.pagePadding.small,
-//   medium: style.dimension.normal.pagePadding.medium,
-//   large: style.dimension.normal.pagePadding.large,
-//   xLarge: style.dimension.normal.pagePadding.xLarge,
-//   xxLarge: style.dimension.normal.pagePadding.xxLarge
-// }
-
-
-
 injectGlobal`
-  ${'' /* html { 
-    font-size: 16px; 
-    ${media.xSmall`
-
-      font-size: 14px; 
-      
-      
-    `}
-
-    ${media.small`
-
-      font-size: 15px; 
-      
-      
-    `}
-  } 
-  body {
-
-    margin: 0;
-    padding: 0;
-
-    font-family: ${style.font.family.standard};
-
-    font-weight: 300;
-
-  
-    
-
-    background: ${style.color.almostWhite};
-
-
-
-
-    .withPadding {
-
-      ${media.smallDown`
-        padding: 0 ${pagePadding.small};
-      `}
-      ${media.mediumDown`
-        padding: 0 ${pagePadding.medium};
-      `}
-      ${media.largeUp`
-        padding: 0 ${pagePadding.large};
-      `}
-      ${media.xLargeUp`
-        padding: 0 ${pagePadding.xLarge};
-      `}
-      ${media.xxLargeUp`
-        padding: 0 ${pagePadding.xxLarge};
-      `}
-
-    }
-    
-  } */}
-
-  ${'' /* .fancy-fonts {
-    font-family: ${style.font.family.fancy};
-  } */}
-
 
   
 
@@ -115,99 +40,6 @@ injectGlobal`
 
 
 
-
-
-
-
-
-const AppContainerDiv = styled.div`
-  padding: 0;
-  margin: 0 auto;
-  width: 100%;
-  ${'' /* max-width: ${maxSiteWidth}; */}
-  
-  ${'' /* min-height: 100vh; */}
-  box-sizing: border-box;
-  background: ${style.color.trueWhite};
-  color: ${style.color.almostBlack};
-
-  
-  
-
-  
-
-`;
-
-
-
-
-const HeaderContainerDiv = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  position: relative;
-  
-  width: 100%;
-
-  padding: 1.5rem 0;
-
-
-
-  .logoContainer {
-    margin: 0 auto;
-  }
-  
-  
-  
-  ${'' /* max-width: ${maxSiteWidth};
-  margin: 0 auto;
-  box-sizing: border-box; */}
-
-  
-
-  ${'' /* .desktop-menus {
-    display: none;
-  }
-
-  ${media.xSmallUp`
-    padding: 0.6rem ${pagePadding.xSmall} 0.6rem;
-  `}
-  ${media.smallUp`
-    padding: 0.8rem ${pagePadding.small} 0.8rem;
-  `}
-  ${media.mediumUp`
-    padding: 1.1rem ${pagePadding.medium} 1.1rem;
-
-    .desktop-menus {
-      display: flex;
-
-      .LocaleSwitcherComponent {
-        margin-right: 2rem;
-      }
-    }
-  `}
-  ${media.largeUp`
-    padding: 1.5rem ${pagePadding.large} 1.5rem;
-  `}
-  ${media.xLargeUp`
-    padding: 1.5rem ${pagePadding.xLarge} 1.5rem;
-  `}
-  ${media.xxLargeUp`
-    padding: 1.5rem ${pagePadding.xxLarge} 1.5rem;
-  `} */}
-
-`;
-
-
-const BodyContainerDiv = styled.div`
-  width: 100%;
-  min-height: 20vh;
-
-  position: relative;
-
-  
-`;
 
 
 
@@ -228,7 +60,7 @@ class MyApp extends App {
   }
 
 
-  translate = (t, locale = this.props.router.query.locale) => translate(t, );
+  translate = (t, locale = this.props.router.query.locale) => translate(t, '_global', locale);
 
 
 
@@ -255,7 +87,7 @@ class MyApp extends App {
   render() {
     const { Component, pageProps, router } = this.props;
     const query = router.query;
-    const locale = query !== undefined ? query.locale !== undefined ? query.locale : configs.locales[0].id : configs.locales[0].id;
+    const locale = query !== undefined ? query.locale !== undefined ? query.locale : translations["_default"]._locale.id : translations["_default"]._locale.id;
 
     // console.debug('this.props >>>', this.props);
     // console.debug('pageProps >>>', pageProps);
@@ -289,11 +121,11 @@ class MyApp extends App {
       <footer>
         <div className="row">
           <div className="col-full ss-copyright">
-            <span>© Copyright International Blockchain Competition 2018</span>
+            <span dangerouslySetInnerHTML={{ __html: this.translate('copyright') }} />
           </div>
         </div>
         <div className="ss-go-top">
-          <a className="smoothscroll" title="Back to Top" href="#top">Back to Top</a>
+          <a className="smoothscroll" title="Back to Top" href="#top">{this.translate('backToTop')}</a>
         </div>
       </footer>
       

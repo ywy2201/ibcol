@@ -1,0 +1,18 @@
+{
+  "siteTitle": "IBCOL",
+  "titleSeparator": "|",
+  "menu": {
+    "home": "Home",
+    "about": "About",
+    "criteria": "Competition",
+    "studentRelations": "Student Relations",
+    "corporateRelations": "Corporate Relations",
+    "schedule": "Schedule & Programme",
+    "contact": "Contact"
+  },
+  "closeMenu": "Close",
+  "navigateTo": "Navigate to",
+  "copyright": "&copy; Copyright International Blockchain Competition 2018",
+  "backToTop": "Back to Top"
+
+}
