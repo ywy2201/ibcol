@@ -1,0 +1,17 @@
+{
+  "name": "icapro-web-production",
+  "alias": [
+    "icapro.com.hk",
+    "www.icapro.com.hk"
+  ],
+  "env": {
+    "ENV": "production",
+    "NODE_ENV": "production"
+  },
+  "scale": {
+    "sfo1": {
+      "min": 0,
+      "max": 1
+    }
+  }
+}

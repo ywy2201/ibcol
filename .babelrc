@@ -1,0 +1,28 @@
+{
+  "presets": [
+    "next/babel"
+  ],
+  "plugins": [
+    [
+      "babel-plugin-styled-components",
+      {
+        "ssr": true,
+        "displayName": true,
+        "preprocess": false
+      }
+    ],
+    [
+      "module-resolver",
+      {
+        "root": ["./"],
+        "alias": {
+          "configs": "./configs",
+          "data": "./data",
+          "styles": "./styles",
+          "components": "./components",
+          "helpers": "./helpers"
+        }
+      }
+    ]
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "name": "icapro-web",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "main": "index.js",
+  "keywords": [
+    "next",
+    "now",
+    "react",
+    "ica"
+  ],
+  "scripts": {
+    "start": "npm run local -- ",
+    "build": "next build",
+    "now-build": "next build",
+    "now-start": "node server.js",
+    "local": "NOW_CONFIG=now-local.json node server.js",
+    "stage": "NOW_CONFIG=now-stage.json node server.js",
+    "production": "#NOW_CONFIG=now-production.json node server.js",
+    "deploy": "npm run deploy-stage",
+    "deploy-stage": "now -e NODE_ENV=production --local-config=now-stage.json && npm run link-stage",
+    "deploy-production": "#now -e NODE_ENV=production --local-config=now-production.json && npm run link-production",
+    "link-stage": "now alias --local-config=now-stage.json",
+    "link-production": "#now alias --local-config=now-production.json",
+    "cleanup-production-now": "#now rm $npm_package_name-production -s"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/bbihq/icapro-web.git"
+  },
+  "bugs": {
+    "url": "https://bitbucket.org/bbihq/icapro-web/issues"
+  },
+  "author": {
+    "name": "Breaking Bad Interactive",
+    "email": "hello@bbi.io",
+    "url": "http://bbi.io"
+  },
+  "contributors": [
+    {
+      "name": "William Li",
+      "email": "williamli@bbi.io",
+      "url": "http://williamli.io"
+    }
+  ],
+  "browserslist": [
+    "last 2 versions"
+  ],
+  "license": "UNLICENSED",
+  "homepage": "https://bitbucket.org/bbihq/icapro-web#readme",
+  "dependencies": {
+    "@zeit/next-css": "^1.0.1",
+    "axios": "^0.18.0",
+    "babel-plugin-module-resolver": "^3.1.1",
+    "babel-plugin-styled-components": "^1.5.1",
+    "classnames": "^2.2.5",
+    "express": "^4.16.3",
+    "file-loader": "^2.0.0",
+    "minimist": "^1.2.0",
+    "moment-timezone": "^0.5.21",
+    "next": "^7.0.0",
+    "next-routes": "^1.4.2",
+    "now-env": "^3.1.0",
+    "polished": "^1.9.2",
+    "prop-types": "^15.6.1",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "react-slick": "^0.23.1",
+    "slick-carousel": "^1.8.1",
+    "styled-components": "^3.2.6",
+    "styled-theming": "^2.2.0",
+    "url-loader": "^1.1.1"
+  },
+  "devDependencies": {}
+}
