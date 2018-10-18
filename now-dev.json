@@ -1,10 +1,10 @@
 {
-  "name": "ibcol-stage",
+  "name": "ibcol-dev",
   "alias": [
-    "uat.icapro.bbi.codes"
+    "ibcol.bbi.codes"
   ],
   "env": {
-    "ENV": "stage",
+    "ENV": "dev",
     "NODE_ENV": "production"
   },
   "scale": {

@@ -1,5 +1,5 @@
 {
-  "name": "icapro-web-local",
+  "name": "ibcol-local",
   "env": {
     "ENV": "local",
     "secret": "don't tell anyone"

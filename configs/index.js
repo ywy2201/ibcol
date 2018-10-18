@@ -1,6 +1,7 @@
 const envConfigs = {
   "common": require('./common.json'),
   "local": require('./local.json'),
+  "dev": require('./dev.json'),
   "stage": require('./stage.json'),
   "production": require('./production.json')
 }

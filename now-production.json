@@ -1,8 +1,10 @@
 {
-  "name": "icapro-web-production",
+  "name": "ibcol-production",
   "alias": [
-    "icapro.com.hk",
-    "www.icapro.com.hk"
+    "ibcol.org",
+    "www.ibcol.org",
+    "ibo.foundation",
+    "www.ibo.foundation"
   ],
   "env": {
     "ENV": "production",
