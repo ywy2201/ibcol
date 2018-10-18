@@ -109,7 +109,7 @@ class MyApp extends App {
       {/* <LoaderComponent/> */}
 
 
-      <MenuComponent/>
+      <MenuComponent locale={locale}/>
       
 
     <Component {...pageProps} locale={locale} />
