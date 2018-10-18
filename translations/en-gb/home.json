@@ -1,5 +1,7 @@
 {
   "pageTitle": "International Blockchain Olympiad",
+  "seoDescription": "",
+  "ogImage": "",
   "mainHeading": "International Blockchain Olympiad",
   "subHeading": "Global Blockchain Application Build Challenge",
   "contact": "Contact",
@@ -12,7 +14,7 @@
   },
   "section02": {
     "heading": "When to Join",
-      "contentTableHTML": "<table><tbody><tr><td></td><td><b>Super Early Bird</b></td><td><b>Early Bird</b></td><td><b>Regular</b></td></tr><tr><td>From</td><td>Monday<br />3 September 2018<br />00:00 HKT</td><td>Saturday<br />2 February 2019<br />00:00 HKT</td><td>Tuesday<br />2 April 2019<br />00:00 HKT</td></tr><tr><td>Unitl</td><td>Friday<br />1 February 2019<br />23:59 HKT</td><td>Monday<br />1 April 2019<br />23:59 HKT</td><td>Sunday<br />21 April 2019<br />23:59 HKT</td></tr><tr><td>Registration</td><td>Fee is waived</td><td>Fee is waived</td><td>Fee is required</td></tr><tr><td>Financial Assistance</td><td>Eligible for travel subsidies</td><td>Ineligible for travel subsidies</td><td>Ineligible for travel subsidies</td></tr></tbody></table>"
+      "contentTableHTML": "<table><tbody><tr><td></td><td><b>Super Early Bird</b></td><td><b>Early Bird</b></td><td><b>Regular</b></td></tr><tr><td>From</td><td>Monday<br />3 September 2018<br />00:00 HKT</td><td>Saturday<br />2 February 2019<br />00:00 HKT</td><td>Tuesday<br />2 April 2019<br />00:00 HKT</td></tr><tr><td>Until</td><td>Friday<br />1 February 2019<br />23:59 HKT</td><td>Monday<br />1 April 2019<br />23:59 HKT</td><td>Sunday<br />21 April 2019<br />23:59 HKT</td></tr><tr><td>Registration</td><td>Fee is waived</td><td>Fee is waived</td><td>Fee is required</td></tr><tr><td>Financial Assistance</td><td>Eligible for travel subsidies</td><td>Ineligible for travel subsidies</td><td>Ineligible for travel subsidies</td></tr></tbody></table>"
   },
   "section03": {
     "heading": "How To Join",
