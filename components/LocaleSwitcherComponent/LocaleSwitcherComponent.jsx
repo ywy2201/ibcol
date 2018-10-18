@@ -5,7 +5,7 @@ import classNames from 'classnames';
 import _ from 'lodash';
 import routes, { Link } from '/routes';
 
-import configs from 'configs';
+// import configs from 'configs';
 
 import { media, style } from 'helpers/styledComponents.js';
 
@@ -154,7 +154,7 @@ class LocaleSwitcherComponent extends React.Component {
 
         <ul>
           {
-            configs.locales.map((locale, index) => {
+            {/* configs.locales.map((locale, index) => {
 
               const route = routes.findAndGetUrls(this.props.router.asPath, this.props.router.query).route;
 
@@ -175,7 +175,7 @@ class LocaleSwitcherComponent extends React.Component {
                   </a>
                 </Link>
               </li>
-            })
+            }) */}
           }
 
 
@@ -195,7 +195,7 @@ LocaleSwitcherComponent.propTypes = {
 }
 
 LocaleSwitcherComponent.defaultProps = {
-  locale: configs.locales[0].id,
+  // locale: configs.locales[0].id,
 }
 
 

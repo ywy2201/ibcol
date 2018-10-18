@@ -10,7 +10,7 @@ import { Link } from '/routes';
 
 import MenuComponent from 'components/MenuComponent';
 import LoaderComponent from 'components/LoaderComponent';
-import LocaleSwitcherComponent from 'components/LocaleSwitcherComponent';
+// import LocaleSwitcherComponent from 'components/LocaleSwitcherComponent';
 
 
 import styled, { injectGlobal, ThemeProvider } from 'styled-components';
