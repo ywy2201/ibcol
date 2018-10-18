@@ -89,16 +89,6 @@ class MyApp extends App {
     const query = router.query;
     const locale = query !== undefined ? query.locale !== undefined ? query.locale : translations["_default"]._locale.id : translations["_default"]._locale.id;
 
-    // console.debug('this.props >>>', this.props);
-    // console.debug('pageProps >>>', pageProps);
-    // console.debug('router >>>', router);
-
-    // const slideMode = this.props.router === undefined ? false : (this.props.router.asPath === '/landing/developer' || this.props.router.asPath === '/landing/exchange' || this.props.router.asPath === '/landing/trader' || this.props.router.asPath === '/landing/general') ? true : false;
-    
-
-    // const displayMode = invertMode ? 'invert' : 'default';
-
-    // console.log('invertMode', invertMode);
 
 
     return <Container>
