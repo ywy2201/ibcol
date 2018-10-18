@@ -4,7 +4,7 @@ import classNames from 'classnames';
 
 import { Link } from '/routes';
 
-import configs from 'configs';
+
 
 import { media, style } from 'helpers/styledComponents.js';
 
@@ -196,7 +196,6 @@ MenuComponent.propTypes = {
 }
 
 MenuComponent.defaultProps = {
-  locale: configs.locales[0].id,
 }
 
 

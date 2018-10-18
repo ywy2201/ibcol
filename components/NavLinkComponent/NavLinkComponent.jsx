@@ -5,7 +5,6 @@ import PropTypes from 'prop-types';
 import routes, {Link} from '/routes';
 import { withRouter } from 'next/router';
 
-import configs from 'configs';
 
 
 class NavLinkComponent extends React.Component {
@@ -58,8 +57,7 @@ NavLinkComponent.propTypes = {
 }
 
 NavLinkComponent.defaultProps = {
-  activeClassName: "active",
-  params: { locale: configs.locales[0].id }
+  activeClassName: "active"
 }
 
 export default withRouter(NavLinkComponent);

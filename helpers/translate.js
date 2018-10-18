@@ -1,5 +1,5 @@
 import _ from 'lodash';
-import configs from 'configs';
+
 import translations from 'translations';
 
 
