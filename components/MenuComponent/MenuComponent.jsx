@@ -153,6 +153,12 @@ class MenuComponent extends React.Component {
                 {this.translate('menu.contact')}
               </NavLinkComponent>
             </li>
+
+            <li className="featured">
+              <NavLinkComponent prefetch route="registration" params={{ locale }}>
+                {this.translate('menu.registration')}
+              </NavLinkComponent>
+            </li>
           </ul>
         </div>
 
@@ -201,6 +207,11 @@ class MenuComponent extends React.Component {
                 <li>
                   <NavLinkComponent prefetch route="contact" params={{ locale }}>
                     {this.translate('menu.contact')}
+                  </NavLinkComponent>
+                </li>
+                <li className="featured">
+                  <NavLinkComponent prefetch route="registration" params={{ locale }}>
+                    {this.translate('menu.registration')}
                   </NavLinkComponent>
                 </li>
               </ul>
