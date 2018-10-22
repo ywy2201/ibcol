@@ -146,54 +146,58 @@ class MenuComponent extends React.Component {
           </ul>
         </div>
 
-        <nav className="header-nav">
+        {
+          this.state.isMobileMenuOpened === true &&
+          
+          <nav className="header-nav">
 
-          <a className="header-nav__close" onClick={this.toggleMobileMenu} title="close"><span>{this.translate('close')}</span></a>
+            <a className="header-nav__close" onClick={this.toggleMobileMenu} title="close"><span>{this.translate('close')}</span></a>
 
-          <h3>{this.translate('navigateTo')}</h3>
+            <h3>{this.translate('navigateTo')}</h3>
 
-          <div className="header-nav__content">
+            <div className="header-nav__content">
 
-            <ul className="header-nav__list">
-              <li>
-                <NavLinkComponent prefetch route="home" params={{ locale }}>
-                  {this.translate('menu.home')}
-                </NavLinkComponent>
-              </li>
-              <li>
-                <NavLinkComponent prefetch route="about" params={{ locale }}>
-                  {this.translate('menu.about')}
-                </NavLinkComponent>
-              </li>
-              <li>
-                <NavLinkComponent prefetch route="criteria" params={{ locale }}>
-                  {this.translate('menu.criteria')}
-                </NavLinkComponent>
-              </li>
-              <li>
-                <NavLinkComponent prefetch route="student-relations" params={{ locale }}>
-                  {this.translate('menu.studentRelations')}
-                </NavLinkComponent>
-              </li>
-              <li>
-                <NavLinkComponent prefetch route="corporate-relations" params={{ locale }}>
-                  {this.translate('menu.corporateRelations')}
-                </NavLinkComponent>
-              </li>
-              <li>
-                <NavLinkComponent prefetch route="schedule" params={{ locale }}>
-                  {this.translate('menu.schedule')}
-                </NavLinkComponent>
-              </li>
-              <li>
-                <NavLinkComponent prefetch route="contact" params={{ locale }}>
-                  {this.translate('menu.contact')}
-                </NavLinkComponent>
-              </li>
-            </ul>
-          </div>
+              <ul className="header-nav__list">
+                <li>
+                  <NavLinkComponent prefetch route="home" params={{ locale }}>
+                    {this.translate('menu.home')}
+                  </NavLinkComponent>
+                </li>
+                <li>
+                  <NavLinkComponent prefetch route="about" params={{ locale }}>
+                    {this.translate('menu.about')}
+                  </NavLinkComponent>
+                </li>
+                <li>
+                  <NavLinkComponent prefetch route="criteria" params={{ locale }}>
+                    {this.translate('menu.criteria')}
+                  </NavLinkComponent>
+                </li>
+                <li>
+                  <NavLinkComponent prefetch route="student-relations" params={{ locale }}>
+                    {this.translate('menu.studentRelations')}
+                  </NavLinkComponent>
+                </li>
+                <li>
+                  <NavLinkComponent prefetch route="corporate-relations" params={{ locale }}>
+                    {this.translate('menu.corporateRelations')}
+                  </NavLinkComponent>
+                </li>
+                <li>
+                  <NavLinkComponent prefetch route="schedule" params={{ locale }}>
+                    {this.translate('menu.schedule')}
+                  </NavLinkComponent>
+                </li>
+                <li>
+                  <NavLinkComponent prefetch route="contact" params={{ locale }}>
+                    {this.translate('menu.contact')}
+                  </NavLinkComponent>
+                </li>
+              </ul>
+            </div>
 
-        </nav>
+          </nav>
+        }
 
 
 
