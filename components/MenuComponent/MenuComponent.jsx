@@ -32,9 +32,19 @@ import { withRouter } from 'next/router';
 // }
 
 
-
 const MenuHeader = styled.header`
   
+  
+`;
+
+
+const MobileNavBackdrop = styled.section`
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  ${'' /* background: red; */}
   
 `;
 
@@ -197,6 +207,13 @@ class MenuComponent extends React.Component {
             </div>
 
           </nav>
+        }
+
+        {
+          this.state.isMobileMenuOpened === true &&
+          <MobileNavBackdrop onClick={this.toggleMobileMenu}>
+            
+          </MobileNavBackdrop>
         }
 
 
