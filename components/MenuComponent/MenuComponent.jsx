@@ -131,7 +131,7 @@ class MenuComponent extends React.Component {
 
           <a href="#0" className="header-nav__close" title="close"><span>{this.translate('close')}</span></a>
 
-          <h3>{this.translate('menu.navigateTo')}</h3>
+          <h3>{this.translate('navigateTo')}</h3>
 
           <div className="header-nav__content">
 
