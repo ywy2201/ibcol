@@ -44,7 +44,7 @@ class MenuComponent extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      // isOpened: false
+      isMobileMenuOpened: false
     }
   }
 
@@ -60,9 +60,26 @@ class MenuComponent extends React.Component {
   // }
   
  
-  
-  
+  componentDidUpdate = (prevProps, prevState) => {
+    // console.log('prevProps', prevProps);
+    // console.log('this.props', this.props);
+    
+    if (this.props.router !== undefined) {
+      if (prevProps.router.asPath !== this.props.router.asPath) {
+        this.setState({
+          isMobileMenuOpened: false
+        })
+      }
+    }
 
+  }
+  
+  
+  toggleMobileMenu = () => {
+    this.setState({
+      isMobileMenuOpened: !this.state.isMobileMenuOpened
+    });
+  }
 
 
   render() {
@@ -76,7 +93,9 @@ class MenuComponent extends React.Component {
 
 
     return (
-      <MenuHeader className={classNames('s-header')}>
+      <MenuHeader className={classNames('s-header', {
+        'menu-is-open': this.state.isMobileMenuOpened === true
+      })}>
         
         <div className="header-logo">
           <Link prefetch route="home" params={{ locale }}>
@@ -129,7 +148,7 @@ class MenuComponent extends React.Component {
 
         <nav className="header-nav">
 
-          <a href="#0" className="header-nav__close" title="close"><span>{this.translate('close')}</span></a>
+          <a className="header-nav__close" onClick={this.toggleMobileMenu} title="close"><span>{this.translate('close')}</span></a>
 
           <h3>{this.translate('navigateTo')}</h3>
 
@@ -180,7 +199,7 @@ class MenuComponent extends React.Component {
 
 
 
-        <a className="header-menu-toggle" href="#0">
+        <a className="header-menu-toggle" onClick={this.toggleMobileMenu}>
           <span className="header-menu-icon"></span>
         </a>
 
