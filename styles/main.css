@@ -1927,6 +1927,7 @@ body.menu-is-open {
   position: fixed;
   right: 8rem;
   top: 30px;
+  z-index: 600;
 }
 
 .header-menu-toggle.opaque {
