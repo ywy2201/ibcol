@@ -1393,9 +1393,9 @@ input::-moz-focus-inner {
 * # reusable and common theme styles
 *
 * ------------------------------------------------------------------- */
-body.menu-is-open {
+/* body.menu-is-open {
   overflow: hidden;
-}
+} */
 
 .wide {
   max-width: 1400px;
@@ -1636,7 +1636,7 @@ body.menu-is-open {
 
 
   .header-logo {
-    top: 3rem;
+    top: 3rem !important;
   }
 
 }
@@ -1684,12 +1684,15 @@ body.menu-is-open {
   padding: 0;
   outline: 0;
   border: none;
+  width: 300px;
+  max-width: 60%;
+  max-height: 75px;
 }
 
 .header-logo img {
   /* height: 75px; */
-  max-width: 60%;
-  max-height: 75px;
+  width: 100%;
+  height: 100%;
 }
 
 .header-logo.subpage img {
@@ -1721,6 +1724,7 @@ body.menu-is-open {
   -ms-transform: translate3d(100%, 0, 0);
   transform: translate3d(100%, 0, 0);
   visibility: hidden;
+  z-index: 601;
 }
 
 .header-nav a,
@@ -1856,6 +1860,7 @@ body.menu-is-open {
   font: 0/0 a;
   text-shadow: none;
   color: transparent;
+  cursor: pointer;
 }
 
 .header-nav__close span::before,
@@ -1927,6 +1932,8 @@ body.menu-is-open {
   position: fixed;
   right: 8rem;
   top: 30px;
+  z-index: 600;
+  cursor: pointer;
 }
 
 .header-menu-toggle.opaque {
