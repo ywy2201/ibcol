@@ -22,232 +22,250 @@
     <!-- script
         ================================================== -->
         <script src="js/modernizr.js"></script>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <!-- favicons
         ================================================== -->
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
         <link rel="icon" href="favicon.ico" type="image/x-icon">
 
-    </head>
+</head>
 
 
-    <body id="top">
+<body id="top">
 
     <!-- preloader
         ================================================== -->
-        <div id="preloader">
-            <div id="loader" class="dots-jump">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
+    <div id="preloader">
+        <div id="loader" class="dots-jump">
+            <div></div>
+            <div></div>
+            <div></div>
         </div>
+    </div>
 
     <!-- header
         ================================================== -->
-        <header class="s-header">
+    <header class="s-header">
 
-            <div class="header-logo">
-                <a class="site-logo" href="index.html">
-                    <img src="images/logo-subpage.png" alt="IBCOL: International Blockchain Olympiad">
-                </a>
-            </div> <!-- end header-logo -->
+        <div class="header-logo">
+            <a class="site-logo" href="index.html">
+                <img src="images/logo-subpage.png" alt="IBCOL: International Blockchain Olympiad">
+            </a>
+        </div> <!-- end header-logo -->
 
-            <div class="desktop-nav">
-                <ul class="nav_list">
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="criteria.html">Competition</a></li>
-                    <li><a href="student-relations.html">Student Relations</a></li>
-                    <li><a href="corporate-relations.html">Corporate Relations</a></li>
-                    <li><a href="schedule.html">Schedule & Programme</a></li>
-                    
+        <div class="desktop-nav">
+            <ul class="nav_list">
+                <li class="current"><a href="index.html">Home</a></li>
+                <li><a href="registration.html">Registration</a></li>
+                <li><a href="competition.html">Competition</a></li>
+                <li><a href="students.html">Students</a></li>
+                <li><a href="sponsors.html">Sponsors</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <nav class="header-nav">
+
+            <a href="#0" class="header-nav__close" title="close"><span>Close</span></a>
+
+            <h3>Navigate to</h3>
+
+            <div class="header-nav__content">
+
+                <ul class="header-nav__list">
+                    <li claress="current"><a href="index.html">Home</a></li>
+                    <li><a href="registration.html">Registration</a></li>
+                    <li><a href="competition.html">Competition</a></li>
+                    <li><a href="students.html">Students</a></li>
+                    <li><a href="sponsors.html">Sponsors</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
-            </div>
+            </div> <!-- end header-nav__content -->
 
-            <nav class="header-nav">
+        </nav> <!-- end header-nav -->
 
-                <a href="#0" class="header-nav__close" title="close"><span>Close</span></a>
+        <a class="header-menu-toggle" href="#0">
+            <span class="header-menu-icon"></span>
+        </a>
 
-                <h3>Navigate to</h3>
-
-                <div class="header-nav__content">
-
-                    <ul class="header-nav__list">
-                        <li class="current"><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="criteria.html">Competition</a></li>
-                        <li><a href="student-relations.html">Student Relations</a></li>
-                        <li><a href="corporate-relations.html">Corporate Relations</a></li>
-                        <li><a href="schedule.html">Schedule & Programme</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div> <!-- end header-nav__content -->
-
-            </nav> <!-- end header-nav -->
-
-            <a class="header-menu-toggle" href="#0">
-                <span class="header-menu-icon"></span>
-            </a>
-
-        </header> <!-- end s-header -->
+    </header> <!-- end s-header -->
 
 
     <!-- home
         ================================================== -->
-        <section id="home" class="s-home page-hero target-section" data-parallax="scroll" data-image-src="images/hero-bg-2.jpg" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
+    <section id="home" class="s-home page-hero target-section" data-parallax="scroll" data-image-src="images/hero-bg-2.jpg" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
 
-            <div class="grid-overlay">
-                <div></div>
-            </div>
+        <div class="grid-overlay">
+            <div></div>
+        </div>
 
-            <div class="home-content">
+        <div class="home-content">
 
-                <div class="row home-content__main">
+            <div class="row home-content__main">
 
-                    <h1>
-                        Help bring the world<br>onto the Blockchain  
-                    </h1>
+                <h1>
+                    Help bring the world<br>onto the Blockchain  
+                </h1>
 
-                    <h3>
-                        Meet and compete with the world's best blockchain builders 
-                    </h3>
+                <h3>
+                    Meet and compete with the world's best blockchain builders 
+                </h3>
 
-                    <div class="home-content__button">
-                        <a href="contact.html" class="btn btn--primary btn--large">
-                            Contact
-                        </a>
-                        <a href="criteria.html" class="btn btn--large">
-                            Competition
-                        </a>
-                    </div>
-
-                </div> <!-- end home-content__main -->
-
-                <div class="home-content__scroll">
-                    <a href="#about" class="scroll-link smoothscroll">
-                        Scroll
+                <div class="home-content__button">
+                    <a href="registration.html" class="btn btn--primary btn--large">
+                        Registration Info
+                    </a>
+                    <a href="competition.html" class="btn btn--large">
+                        About Competition
                     </a>
                 </div>
 
-            </div> <!-- end home-content -->
+            </div> <!-- end home-content__main -->
 
-        </section> <!-- end s-home -->
+            <div class="home-content__scroll">
+                <a href="#about" class="scroll-link smoothscroll">
+                    Scroll
+                </a>
+            </div>
+
+        </div> <!-- end home-content -->
+
+    </section> <!-- end s-home -->
 
 
     <!-- about
         ================================================== -->
-        <section id="about" class="s-about target-section">
-
-            <div class="row bit-narrow" style="margin-bottom:60px;">
-                <h1>Seeking the best blockchain applications worldwide</h1>
-                <p>
-                    The inaugural edition of the IBCOL is a two-day competition and exposition of blockchain and distributed ledger applications in Hong Kong. It provides an exceptional opportunity for students to learn and grow with their peers through solving real-world problems with cutting-edge technology and carving out a legacy in a nascent industry.
-                </p>
-                <p>
-                    IBCOL 2019 is hosted by the Hong Kong Blockchain Society (HKBCS), which ran the predecessor of the IBCOL at the City University of Hong Kong in 2018: DappCamp International Student Blockchain Competition.
-                </p>
-            </div> <!-- end row -->
-
-            <div class="row bit-narrow" style="margin-bottom:60px;">
-                <h1>Not just a hackathon</h1>
-                <p>
-                    Unlike the typical hackathons found in this space, the IBCOL is a multidisciplinary challenge where technical competence is only a part of the overall score. Other factors to be considered are business, legal and compliance, and overall user experience. Teams are expected to be well-rounded.
-                </p>
-            </div> <!-- end row -->
-
-            <div class="row section-header bit-narrow" style="margin-bottom:60px;">
-                <h1>When to Join</h1>
-                <div class="table-responsive">
-                <table>
-                    <tr>
-                        <td></td>
-                        <td><b>Super Early Bird</b></td>
-                        <td><b>Early Bird</b></td>
-                        <td><b>Regular</b></td>
-                    </tr>
-                    <tr>
-                        <td>From</td>
-                        <td>Monday<br>3 September 2018<br>00:00 HKT</td>
-                        <td>Saturday<br>2 February 2019<br>00:00 HKT</td>
-                        <td>Tuesday<br>2 April 2019<br>00:00 HKT</td>
-                    </tr>
-                    <tr>
-                        <td>Until</td>
-                        <td>Friday<br>1 February 2019<br>23:59 HKT</td>
-                        <td>Monday<br>1 April 2019<br>23:59 HKT</td>
-                        <td>Sunday<br>21 April 2019<br>23:59 HKT</td>
-                    </tr>
-                    <tr>
-                        <td>Registration</td>
-                        <td>Fee is waived</td>
-                        <td>Fee is waived</td>
-                        <td>Fee is required</td>
-                    </tr>
-                    <tr>
-                        <td>Financial Assistance</td>
-                        <td>Eligible for travel subsidies</td>
-                        <td>Ineligible for travel subsidies</td>
-                        <td>Ineligible for travel subsidies</td>
-                    </tr>
-                </table>
+    <section id="intro" class="s-section target-section">
+        <div class="row">
+            <div class="block-1-2 block-tab-full">
+                <div class="col-block no-results">
+                    <div class="item-process__text">
+                        <h1>Most hackathons don’t produce useful results</h1>
+                        <ol>
+                            <li>Insufficient time to build well-rounded projects</li>
+                            <li>Projects too tech-focused and divorced from reality</li>
+                            <li>No incentive to continue developing the new project</li>
+                        </ol>
+                    </div>
                 </div>
-            </div> <!-- end section-header -->
-
-            <div class="row bit-narrow" style="margin-bottom:60px;">
-                <h1>How To Join</h1>
-                <div class="about-process process">
-                    <div class="block-1-3 block-tab-full">
-                        <div class="col-block item-process blue">
-                            <div class="item-process__text">
-                                <h4 class="item-title">Team</h4>
-                                <p>
-                                    Up to 6 <b>students</b> can register into one <b>team</b>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-block item-process yellow">
-                            <div class="item-process__text">
-                                <h4 class="item-title">Project</h4>
-                                <p>
-                                    A team can submit more than one <b>project</b>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-block item-process green">
-                            <div class="item-process__text">
-                                <h4 class="item-title">Category</h4>
-                                <p>
-                                    Each project is entered into a <b>category</b>
-                                </p>
-                            </div>
+                <div class="col-block get-results">
+                    <div class="item-process__text">
+                        <h1>This competition will produce useful results</h1>
+                        <ol>
+                            <li>From now until July 2019 to get something working</li>
+                            <li>Multidisciplinary approach to applying blockchain</li>
+                            <li>Matching with entities that can take projects forward</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="timeline" class="s-section target-section" style="padding-bottom:16rem;">
+        <div class="row">
+            <h1>Timeline</h1>
+            <div class="about-process">
+                <div class="block-1-7 block-tab-full icon timeline">
+                    <div class="col-block item-process">
+                        <div class="item-process__text">
+                            <i class="material-icons blue">restore</i>
+                            <h4 class="item-title">Super Early Bird</h4>
+                            <p>
+                                Until Feb 1st
+                            </p>
+                            <span class="time-line"></span>
                         </div>
                     </div>
-                </div> <!-- end process -->
-
-            </div> <!-- end row -->
-
-        </section> <!-- end s-about -->
-
+                    <div class="col-block item-process">
+                        <div class="item-process__text">
+                            <i class="material-icons yellow">schedule</i>
+                            <h4 class="item-title">Early Bird</h4>
+                            <p>
+                                Until April 1st
+                            </p>
+                            <span class="time-line"></span>
+                        </div>
+                    </div>
+                    <div class="col-block item-process">
+                        <div class="item-process__text">
+                            <i class="material-icons black">update</i>
+                            <h4 class="item-title">Regular</h4>
+                            <p>
+                                Until April 21st
+                            </p>
+                            <span class="time-line"></span>
+                        </div>
+                    </div>
+                    <div class="col-block item-process">
+                        <div class="item-process__text">
+                            <i class="material-icons green">description</i>
+                            <h4 class="item-title">Whitepaper</h4>
+                            <p>
+                                Due April 21st
+                            </p>
+                            <span class="time-line"></span>
+                        </div>
+                    </div>
+                    <div class="col-block item-process">
+                        <div class="item-process__text">
+                            <i class="material-icons red">chat</i>
+                            <h4 class="item-title">Interview</h4>
+                            <p>
+                                During May 2019
+                            </p>
+                            <span class="time-line"></span>
+                        </div>
+                    </div>
+                    <div class="col-block item-process">
+                        <div class="item-process__text">
+                            <i class="material-icons purple">devices_other</i>
+                            <h4 class="item-title">Demo</h4>
+                            <p>
+                                In July 2019
+                            </p>
+                            <span class="time-line"></span>
+                        </div>
+                    </div>
+                    <div class="col-block item-process">
+                        <div class="item-process__text">
+                            <i class="material-icons orange">airplay</i>
+                            <h4 class="item-title">Pitch</h4>
+                            <p>
+                                In July 2019
+                            </p>
+                        </div>
+                    </div>            
+                </div>
+            </div> <!-- end process -->
+        </div> <!-- end row -->
+    </section> 
 
     <!-- footer
         ================================================== -->
-        <footer>
-            <div class="row">
-                <div class="col-full ss-copyright">
-                    <span>Copyright &copy; 2018 International Blockchain Olympiad. All rights reserved.</span> 
-                </div>
+    <footer>
+        <div class="ss-go-top">
+            <a href="registration.html" class="register btn btn--primary btn--large">
+                Registration Info
+            </a>
+            <a href="competition.html" class="more-info btn btn--large">
+                About Competition
+            </a>
+            <a class="smoothscroll btn btn--large" title="Back to Top" href="#top">
+                Back to Top
+            </a>
+        </div>
+        <div class="row">
+            <div class="col-full ss-copyright">
+                <span>Copyright &copy; 2018 International Blockchain Olympiad. All rights reserved.</span> 
             </div>
-            <div class="ss-go-top">
-                <a class="smoothscroll" title="Back to Top" href="#top">Back to Top</a>
-            </div>
-        </footer>
-
+        </div>
+    </footer>
 
     <!-- Java Script
         ================================================== -->
-        <script src="js/jquery-3.2.1.min.js"></script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
 
-    </body>
+</body>

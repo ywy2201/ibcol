@@ -92,12 +92,13 @@ a {
   color: #793ea5;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  cursor: pointer;
 }
 
 a:hover,
 a:focus,
 a:active {
-  color: #FFFFFF;
+  text-decoration: underline;
 }
 
 a:hover,
@@ -3911,18 +3912,7 @@ footer a {
   display: none;
 }
 
-.ss-go-top a {
-  color: #FFFFFF;
-  background-color: #ec1d25;
-  text-align: center;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  font-size: 13px;
-  text-transform: uppercase;
-  letter-spacing: .3rem;
-  height: 75px;
-  line-height: 75px;
-  padding: 0 4rem 0 7rem;
+.ss-go-top {
   position: absolute;
   left: 50%;
   top: -37.5px;
@@ -3930,12 +3920,20 @@ footer a {
   -ms-transform: translate3d(-50%, 0, 0);
   transform: translate3d(-50%, 0, 0);
   z-index: 2;
+  width: 100%;
+}
+.ss-go-top a.smoothscroll {
+  color: #FFFFFF;
+  background-color: #ec1d25;
+  border: .2rem solid #ec1d25;
+  padding: 0 4rem 0 7rem;
+  position: relative;
 }
 
 /* ------------------------------------------------------------------- 
 * ## go top
 * ------------------------------------------------------------------- */
-.ss-go-top a::before {
+.ss-go-top a.smoothscroll::before {
   content: "";
   display: block;
   height: 16px;
@@ -3952,7 +3950,28 @@ footer a {
 
 .ss-go-top a:hover,
 .ss-go-top a:focus {
-  background-color: #ec1d258a;
+  opacity: 0.7;
+}
+
+@media only screen and (max-width: 800px) {
+  footer {
+    padding-top: 0;
+  }
+  .ss-go-top {
+    position: relative;
+    margin-bottom: 50px;
+    top:0;
+    left: 0;
+    transform: none;
+  }
+  .ss-go-top a {
+    display: block;
+    width: 100%;
+    margin: 0;
+  }
+  .ss-go-top a.smoothscroll {
+    top:0;
+  }
 }
 
 /* ------------------------------------------------------------------- 
@@ -4151,5 +4170,162 @@ tr.last td {
 }
 .no-bottom {
   margin-bottom: 0 !important;
+}
+.block-1-7 .col-block{
+  width:14.1%;
+}
+@media only screen and (max-width: 800px) {
+  .block-1-7 .col-block {
+    width: 100%;
+    clear: both;
+  }
+}
+.no-results {
+  padding-right: 0;
+  margin-top: 15px;
+}
+.no-results .item-process__text {
+  background: #eaeaea;
+  padding: 30px 0px 30px 40px;
+}
+.no-results ol {
+  margin-bottom: 0;
+}
+.get-results {
+  padding: 30px;
+  background: #0086CA;
+  color: white;
+  border-radius: .375rem;
+  box-shadow: 0 2px 0 rgba(90,97,105,.11), 0 4px 8px rgba(90,97,105,.12), 0 10px 10px rgba(90,97,105,.06), 0 7px 70px rgba(90,97,105,.1);
+}
+.get-results h1 {
+  color: white;
+}
+@media only screen and (max-width: 800px) {
+  .no-results {
+    padding:0;
+  }
+  .no-results .item-process__text {
+    padding: 30px;
+  }
+  .timeline .col-block {
+    text-align: center;
+  }
+}
+.icon h4 {
+  font-size: 20px;
+}
+.icon.timeline h4 {
+  height: 55px;
+}
+.icon p {
+  font-size: 14px;
+}
+.icon i {
+  color: white;
+  border-radius: 5rem;
+  background: blue;
+  padding: 15px;
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+.icon.number i {
+  font-size: 2rem;
+  padding: 11px;
+  display: block;
+  width: 60px;
+  text-align: center;
+}
+.icon.how i {
+  font-size: 2rem;
+}
+.icon i.blue {
+  background: #0390cf;
+}
+.icon i.yellow {
+  background: #f9c914;
+}
+.icon i.black {
+  background: #010303;
+}
+.icon i.green {
+  background: #00ae5a;
+}
+.icon i.red {
+  background: #ef1d29;
+}
+.icon i.purple {
+  background: #793ea5;
+}
+.icon i.orange {
+  background: #ffa500;
+}
+.icon i.gold {
+  background: #e2ae00;
+}
+.icon i.silver {
+  background: #ccc;
+}
+.icon i.bronze {
+  background: #694400;
+}
+.icon .time-line {
+  height: 1px;
+  width: 40%;
+  position: absolute;
+  background: lightgrey;
+  top: 30px;
+  right: 0;
+}
+.icon.competition.timeline .time-line {
+  width:60%;
+} 
+.col-block.item-process {
+  margin-bottom: 3rem;
+}
+.icon.how .item-process__text {
+  text-align: center;
+}
+td.minw {
+  min-width: 200px;
+}
+.show-mobile {
+  display: none;
+}
+.no-click:hover {
+  opacity: 1 !important;
+  background-color: #c5c5c5 !important;
+  cursor: default;
+  text-decoration: none;
+}
+@media only screen and (max-width: 800px) {
+  .timeline .col-block {
+    text-align: center;
+  }
+  .timeline .time-line {
+    display: none;
+  }
+  #cta {
+    height: 237px;
+  }
+  .header-logo {
+    width: 60%;
+  }
+  .header-logo img {
+    height: auto;
+    width: 100%;
+  }
+  .icon.number i {
+    margin: 30px auto;
+  }
+  .icon .col-block {
+    text-align: center;
+  }
+  .icon .col-block {
+    margin: 4rem 0;
+  }
+  .show-mobile {
+    display: block;
+  }
 }
 /*# sourceMappingURL=main.css.map */
