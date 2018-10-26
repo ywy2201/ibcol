@@ -3950,7 +3950,7 @@ footer a {
 
 .ss-go-top a:hover,
 .ss-go-top a:focus {
-  background-color: #ec1d258a;
+  opacity: 0.7;
 }
 
 @media only screen and (max-width: 800px) {
@@ -4283,7 +4283,21 @@ tr.last td {
 .col-block.item-process {
   margin-bottom: 3rem;
 }
-
+.icon.how .item-process__text {
+  text-align: center;
+}
+td.minw {
+  min-width: 200px;
+}
+.show-mobile {
+  display: none;
+}
+.no-click:hover {
+  opacity: 1 !important;
+  background-color: #c5c5c5 !important;
+  cursor: default;
+  text-decoration: none;
+}
 @media only screen and (max-width: 800px) {
   .timeline .col-block {
     text-align: center;
@@ -4306,6 +4320,12 @@ tr.last td {
   }
   .icon .col-block {
     text-align: center;
+  }
+  .icon .col-block {
+    margin: 4rem 0;
+  }
+  .show-mobile {
+    display: block;
   }
 }
 /*# sourceMappingURL=main.css.map */
