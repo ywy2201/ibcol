@@ -1,4 +1,5 @@
 import React from 'react';
+import classNames from 'classnames';
 import styled from 'styled-components';
 import _ from 'lodash';
 import update from 'update-immutable';
@@ -121,6 +122,11 @@ const FormTools = styled.div `
         background: #F6C215;
         color: #FFF;
       }
+
+      &.disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+      }
     }
   }
 `;
@@ -154,7 +160,6 @@ const FormField = styled.label `
 `;
 
 
-
 export default class extends React.Component {
   static async getInitialProps({ query }) {
     
@@ -166,13 +171,55 @@ export default class extends React.Component {
     this.state = {
       focusedField: undefined,
       record: this.props.record !== undefined ? this.graphQLCleanUp(this.props.record) : this.getDefaultEditorRecord(),
-      lastEditorStateChange: Date.now()
+      lastEditorStateChange: Date.now(),
+      recordIsValid: false
     }
 
     // this.onEditorStateChange();
     
 
   }
+
+
+  requiredFields = {
+    teamName: true,
+    studentRecords: {
+      firstName: true,
+      lastName: true,
+      email: true,
+      phone: true,
+      educationRecords: {
+        degree: true,
+        programme: true,
+        institutionName: true,
+        yearOfGraduation: true,
+        state: true,
+        countryCode: true
+      }
+    },
+    advisorRecords: {
+      firstName: true,
+      lastName: true,
+      email: true,
+      phone: true,
+      associationRecords: {
+        title: true,
+        sectorCode: true,
+        organisationName: true,
+        yearCommencement: true,
+        state: true,
+        countryCode: true
+      }
+    },
+    projectRecords: {
+      name: true,
+      projectCategoryKey: true,
+      description: true
+    }
+
+  };
+
+
 
   getDefaultEditorRecord = () => {
     return {
@@ -185,6 +232,10 @@ export default class extends React.Component {
       ],
     };
   }
+
+
+
+  
 
   getNewAdvisorRecord = () => {
     return {
@@ -255,13 +306,12 @@ export default class extends React.Component {
     if (e.currentTarget.getAttribute('data-section') === 'teamInfo') {
 
 
-      if (fieldId === 'teamName') {
-        updatedRecord = update(this.state.record, {
-          teamName: {
-            $set: value
-          }
-        })
-      }
+      updatedRecord = update(this.state.record, {
+        [fieldId]: {
+          $set: value
+        }
+      })
+    
 
 
 
@@ -362,8 +412,13 @@ export default class extends React.Component {
 
 
     if (!_.isEmpty(updatedRecord)) {
+      
+      // console.log('updatedRecord', updatedRecord);
+
+
       this.setState({
         record: updatedRecord,
+        recordIsValid: this.validateRecord(updatedRecord),
         lastEditorStateChange: Date.now()
       })
     }
@@ -378,6 +433,16 @@ export default class extends React.Component {
     "sectors": true,
     "project-categories": true
   });
+
+  getLabel = (field) => {
+
+    return <span>
+      {this.translate(field)} {
+        _.get(this.requiredFields, field) === true &&
+        <>*</>
+      }
+    </span>
+  }
 
   getGraduationYearRange = () => {
     const start = (new Date()).getFullYear() + 7;
@@ -571,6 +636,13 @@ export default class extends React.Component {
     }
   }
 
+
+  validateRecord = (record) => {
+    console.log('validateRecord', record, this.requiredFields);
+
+
+  }
+
   
   
   render() {
@@ -597,7 +669,7 @@ export default class extends React.Component {
 
                   <FormRow>
                     <FormField>
-                      <span>{this.translate('teamName')}</span>
+                      {this.getLabel('teamName')}
                       <input type="text" data-name="teamName" data-section="teamInfo" onChange={this.onRecordChange} value={_.isEmpty(this.state.record['teamName']) ? "" : this.state.record['teamName']} onFocus={this.onFieldFocused} onBlur={this.onFieldBlurred}/>
                     </FormField>
                   </FormRow>
@@ -618,24 +690,24 @@ export default class extends React.Component {
 
                     <FormRow>
                       <FormField>
-                        <span>{this.translate('firstName')}</span>
+                        {this.getLabel('studentRecords.firstName')}
                         <input type="text" data-name="firstName" data-section="studentRecords" data-student-index={studentIndex} onChange={this.onRecordChange} value={_.isEmpty(studentRecord['firstName']) ? "" : studentRecord['firstName']} onFocus={this.onFieldFocused} onBlur={this.onFieldBlurred}/>
                       </FormField>
 
                       <FormField>
-                        <span>{this.translate('lastName')}</span>
+                        {this.getLabel('studentRecords.lastName')}
                         <input type="text" data-name="lastName" data-section="studentRecords" data-student-index={studentIndex} onChange={this.onRecordChange} value={_.isEmpty(studentRecord['lastName']) ? "" : studentRecord['lastName']} onFocus={this.onFieldFocused} onBlur={this.onFieldBlurred}/>
                       </FormField>
                     </FormRow>
 
                     <FormRow>
                       <FormField>
-                        <span>{this.translate('phoneNumber')}</span>
+                        {this.getLabel('studentRecords.phoneNumber')}
                         <input type="tel" data-name="phoneNumber" data-section="studentRecords" data-student-index={studentIndex} onChange={this.onRecordChange} value={_.isEmpty(studentRecord['phoneNumber']) ? "" : studentRecord['phoneNumber']} onFocus={this.onFieldFocused} onBlur={this.onFieldBlurred}/>
                       </FormField>
 
                       <FormField>
-                        <span>{this.translate('email')}</span>
+                        {this.getLabel('studentRecords.email')}
                         <input type="email" data-name="email" data-section="studentRecords" data-student-index={studentIndex} onChange={this.onRecordChange} value={_.isEmpty(studentRecord['email']) ? "" : studentRecord['email']} onFocus={this.onFieldFocused} onBlur={this.onFieldBlurred}/>
                       </FormField>
                     </FormRow>
@@ -658,12 +730,12 @@ export default class extends React.Component {
                           
                           <FormRow>
                             <FormField>
-                              <span>{this.translate('degree')}</span>
+                              {this.getLabel('studentRecords.educationRecords.degree')}
                               <input type="text" data-name="degree" data-section="studentEducationRecords" data-student-index={studentIndex} data-student-education-index={studentEducationIndex} onChange={this.onRecordChange} value={_.isEmpty(educationRecord['degree']) ? "" : educationRecord['degree']} onFocus={this.onFieldFocused} onBlur={this.onFieldBlurred}/>
                             </FormField>
 
                             <FormField>
-                              <span>{this.translate('programme')}</span>
+                              {this.getLabel('studentRecords.educationRecords.programme')}
                               <input type="text" data-name="programme" data-section="studentEducationRecords" data-student-index={studentIndex} data-student-education-index={studentEducationIndex} onChange={this.onRecordChange} value={_.isEmpty(educationRecord['programme']) ? "" : educationRecord['programme']} onFocus={this.onFieldFocused} onBlur={this.onFieldBlurred}/>
                             </FormField>
                           </FormRow>
@@ -671,12 +743,12 @@ export default class extends React.Component {
 
                           <FormRow>
                             <FormField>
-                              <span>{this.translate('institutionName')}</span>
+                              {this.getLabel('studentRecords.educationRecords.institutionName')}
                               <input type="text" data-name="institutionName" data-section="studentEducationRecords" data-student-index={studentIndex} data-student-education-index={studentEducationIndex} onChange={this.onRecordChange} value={_.isEmpty(educationRecord['institutionName']) ? "" : educationRecord['institutionName']} onFocus={this.onFieldFocused} onBlur={this.onFieldBlurred}/>
                             </FormField>
 
                             <FormField>
-                              <span>{this.translate('yearOfGraduation')}</span>
+                              {this.getLabel('studentRecords.educationRecords.yearOfGraduation')}
                               <select data-name="yearOfGraduation" data-section="studentEducationRecords" data-student-index={studentIndex} data-student-education-index={studentEducationIndex} onChange={this.onRecordChange} value={_.isEmpty(educationRecord['yearOfGraduation']) ? "" : educationRecord['yearOfGraduation']} onFocus={this.onFieldFocused} onBlur={this.onFieldBlurred}>
                                 <option value=""></option>
                                 {
@@ -693,12 +765,12 @@ export default class extends React.Component {
 
                           <FormRow>
                             <FormField>
-                              <span>{this.translate('state')}</span>
+                              {this.getLabel('studentRecords.educationRecords.state')}
                               <input type="text" data-name="state" data-section="studentEducationRecords" data-student-index={studentIndex} data-student-education-index={studentEducationIndex} onChange={this.onRecordChange} value={_.isEmpty(educationRecord['state']) ? "" : educationRecord['state']} onFocus={this.onFieldFocused} onBlur={this.onFieldBlurred}/>
                             </FormField>
 
                             <FormField>
-                              <span>{this.translate('country')}</span>
+                              {this.getLabel('studentRecords.educationRecords.countryCode')}
 
                               <select data-name="countryCode" data-section="studentEducationRecords" data-student-index={studentIndex} data-student-education-index={studentEducationIndex} onChange={this.onRecordChange} value={_.isEmpty(educationRecord['countryCode']) ? "" : educationRecord['countryCode']} onFocus={this.onFieldFocused} onBlur={this.onFieldBlurred}>
                                 <option value=""></option>
@@ -753,24 +825,24 @@ export default class extends React.Component {
 
                     <FormRow>
                       <FormField>
-                        <span>{this.translate('firstName')}</span>
+                        {this.getLabel('advisorRecords.firstName')}
                         <input type="text" data-name="firstName" data-section="advisorRecords" data-advisor-index={advisorIndex} onChange={this.onRecordChange} value={_.isEmpty(advisorRecord['firstName']) ? "" : advisorRecord['firstName']} onFocus={this.onFieldFocused} onBlur={this.onFieldBlurred}/>
                       </FormField>
 
                       <FormField>
-                        <span>{this.translate('lastName')}</span>
+                        {this.getLabel('advisorRecords.lastName')}
                         <input type="text" data-name="lastName" data-section="advisorRecords" data-advisor-index={advisorIndex} onChange={this.onRecordChange} value={_.isEmpty(advisorRecord['lastName']) ? "" : advisorRecord['lastName']} onFocus={this.onFieldFocused} onBlur={this.onFieldBlurred}/>
                       </FormField>
                     </FormRow>
 
                     <FormRow>
                       <FormField>
-                        <span>{this.translate('phoneNumber')}</span>
+                        {this.getLabel('advisorRecords.phoneNumber')}
                         <input type="tel" data-name="phoneNumber" data-section="advisorRecords" data-advisor-index={advisorIndex} onChange={this.onRecordChange} value={_.isEmpty(advisorRecord['phoneNumber']) ? "" : advisorRecord['phoneNumber']} onFocus={this.onFieldFocused} onBlur={this.onFieldBlurred}/>
                       </FormField>
 
                       <FormField>
-                        <span>{this.translate('email')}</span>
+                        {this.getLabel('advisorRecords.email')}
                         <input type="email" data-name="email" data-section="advisorRecords" data-advisor-index={advisorIndex} onChange={this.onRecordChange} value={_.isEmpty(advisorRecord['email']) ? "" : advisorRecord['email']} onFocus={this.onFieldFocused} onBlur={this.onFieldBlurred}/>
                       </FormField>
                     </FormRow>
@@ -783,6 +855,7 @@ export default class extends React.Component {
                       advisorRecord.associationRecords.map((associationRecord, associationRecordIndex)=>{
 
                         return <FormSection className="FormSection" key={associationRecordIndex}>
+                          {this.getLabel('advisorRecords.firstName')}
                           <h3 className="subhead">{this.translate('advisorAssociationInfo')} {advisorRecord.associationRecords.length > 1 && `#${associationRecordIndex+1}`}
                             {
                               advisorRecord.associationRecords.length > 1 &&
@@ -794,7 +867,7 @@ export default class extends React.Component {
 
                           <FormRow>
                             <FormField>
-                              <span>{this.translate('organisationName')}</span>
+                              {this.getLabel('advisorRecords.associationRecords.organisationName')}
                               <input type="text" data-name="organisationName" data-section="advisorAssociationRecords" data-advisor-index={advisorIndex} data-advisor-association-index={associationRecordIndex} onChange={this.onRecordChange} value={_.isEmpty(associationRecord['organisationName']) ? "" : associationRecord['organisationName']} onFocus={this.onFieldFocused} onBlur={this.onFieldBlurred}/>
                             </FormField>
 
@@ -802,13 +875,12 @@ export default class extends React.Component {
                           
                           <FormRow>
                             <FormField>
-                              <span>{this.translate('advisorAssociationTitle')}</span>
+                              {this.getLabel('advisorRecords.associationRecords.title')}
                               <input type="text" data-name="title" data-section="advisorAssociationRecords" data-advisor-index={advisorIndex} data-advisor-association-index={associationRecordIndex} onChange={this.onRecordChange} value={_.isEmpty(associationRecord['title']) ? "" : associationRecord['title']} onFocus={this.onFieldFocused} onBlur={this.onFieldBlurred}/>
                             </FormField>
 
                             <FormField>
-                              <span>{this.translate('advisorAssociationSector')}</span>
-
+                              {this.getLabel('advisorRecords.associationRecords.sectorCode')}
                               <select data-name="sectorCode" data-section="advisorAssociationRecords" data-advisor-index={advisorIndex} data-advisor-association-index={associationRecordIndex} onChange={this.onRecordChange} value={_.isEmpty(associationRecord['sectorCode']) ? "" : associationRecord['sectorCode']} onFocus={this.onFieldFocused} onBlur={this.onFieldBlurred}>
                                 <option value=""></option>
                                 {
@@ -828,13 +900,12 @@ export default class extends React.Component {
 
                           <FormRow>
                             <FormField>
-                              <span>{this.translate('state')}</span>
+                              {this.getLabel('advisorRecords.associationRecords.state')}
                               <input type="text" data-name="state" data-section="advisorAssociationRecords" data-advisor-index={advisorIndex} data-advisor-association-index={associationRecordIndex} onChange={this.onRecordChange} value={_.isEmpty(associationRecord['state']) ? "" : associationRecord['state']} onFocus={this.onFieldFocused} onBlur={this.onFieldBlurred}/>
                             </FormField>
 
                             <FormField>
-                              <span>{this.translate('country')}</span>
-
+                              {this.getLabel('advisorRecords.associationRecords.countryCode')}
                               <select data-name="countryCode" data-section="advisorAssociationRecords" data-advisor-index={advisorIndex} data-advisor-association-index={associationRecordIndex} onChange={this.onRecordChange} value={_.isEmpty(associationRecord['countryCode']) ? "" : associationRecord['countryCode']} onFocus={this.onFieldFocused} onBlur={this.onFieldBlurred}>
                                 <option value=""></option>
                                 {
@@ -850,7 +921,7 @@ export default class extends React.Component {
 
                           <FormRow>
                             <FormField>
-                              <span>{this.translate('advisorAssociationYearCommencement')}</span>
+                              {this.getLabel('advisorRecords.associationRecords.yearCommencement')}
                               <select data-name="yearCommencement" data-section="advisorAssociationRecords" data-advisor-index={advisorIndex} data-advisor-association-index={associationRecordIndex} onChange={this.onRecordChange} value={_.isEmpty(associationRecord['yearCommencement']) ? "" : associationRecord['yearCommencement']} onFocus={this.onFieldFocused} onBlur={this.onFieldBlurred}>
                                 <option value=""></option>
                                 {
@@ -862,7 +933,7 @@ export default class extends React.Component {
                             </FormField>
 
                             <FormField>
-                              <span>{this.translate('advisorAssociationYearCessation')}</span>
+                              {this.getLabel('advisorRecords.associationRecords.yearCessation')}
                               <select data-name="yearCessation" data-section="advisorAssociationRecords" data-advisor-index={advisorIndex} data-advisor-association-index={associationRecordIndex} onChange={this.onRecordChange} value={_.isEmpty(associationRecord['yearCessation']) ? "" : associationRecord['yearCessation']} onFocus={this.onFieldFocused} onBlur={this.onFieldBlurred}>
                                 <option value=""> - </option>
                                 {
@@ -920,12 +991,12 @@ export default class extends React.Component {
 
                     <FormRow>
                       <FormField>
-                        <span>{this.translate('projectName')}</span>
+                        {this.getLabel('projectRecords.name')}
                         <input type="text" data-name="name" data-section="projectRecords" data-project-index={projectIndex} onChange={this.onRecordChange} value={_.isEmpty(projectRecord['name']) ? "" : projectRecord['name']} onFocus={this.onFieldFocused} onBlur={this.onFieldBlurred}/>
                       </FormField>
 
                       <FormField>
-                        <span>{this.translate('projectCategory')}</span>
+                        {this.getLabel('projectRecords.projectCategoryKey')}
                         <select data-name="projectCategoryKey" data-section="projectRecords" data-project-index={projectIndex} onChange={this.onRecordChange} value={_.isEmpty(projectRecord['projectCategoryKey']) ? "" : projectRecord['projectCategoryKey']} onFocus={this.onFieldFocused} onBlur={this.onFieldBlurred}>
                           <option value=""></option>
                           {
@@ -939,7 +1010,7 @@ export default class extends React.Component {
 
                     <FormRow>
                       <FormField>
-                        <span>{this.translate('projectDescription')}</span>
+                        {this.getLabel('projectRecords.description')}
                         <textarea type="text" data-name="description" data-section="projectRecords" data-project-index={projectIndex} onChange={this.onRecordChange} value={_.isEmpty(projectRecord['description']) ? "" : projectRecord['description']} onFocus={this.onFieldFocused} onBlur={this.onFieldBlurred}/>
                       </FormField>
 
@@ -962,7 +1033,9 @@ export default class extends React.Component {
 
                 <FormTools>
                   <div className="full-width">
-                    <button onClick={this.onSubmit}>{this.translate('submit')}</button>
+                    <button className={classNames({
+                      disabled: this.state.recordIsValid !== true
+                    })} disabled={!this.state.recordIsValid} onClick={this.onSubmit}>{this.translate('submit')}</button>
                   </div>
 
                   
