@@ -5,6 +5,9 @@ module.exports = {
     "label": "Welcome"
   },
   "_global": require('./global.json'),
+  "_countries": require('./countries.json'),
+  "_sectors": require('./sectors.json'),
+  "_project-categories": require('./project-categories.json'),
   "about": Object.assign({}, require('./global.json'), require('./about.json')),
   "contact": Object.assign({}, require('./global.json'), require('./contact.json')),
   "corporate-relations": Object.assign({}, require('./global.json'), require('./corporate-relations.json')),
