@@ -219,10 +219,16 @@ export default class extends React.Component {
 
   };
 
+  flattenKeys = (obj, path = []) =>
+    !_.isObject(obj)
+        ? { [path.join('.')]: obj }
+        : _.reduce(obj, (cum, next, key) => _.merge(cum, this.flattenKeys(next, [...path, key])), {});
+
 
 
   getDefaultEditorRecord = () => {
     return {
+      teamName: "",
       studentRecords: [
         this.getNewStudentRecord()
       ],
@@ -239,10 +245,10 @@ export default class extends React.Component {
 
   getNewAdvisorRecord = () => {
     return {
-      // firstName: "",
-      // lastName: "",
-      // phoneNumber: "",
-      // email: "",
+      firstName: "",
+      lastName: "",
+      phoneNumber: "",
+      email: "",
       associationRecords: [
         this.getNewAdvisorAssociationRecord()
       ]
@@ -252,22 +258,22 @@ export default class extends React.Component {
 
   getNewAdvisorAssociationRecord = () => {
     return {
-      // organisationName: "",
-      // title: "",
-      // sectorCode: "",
-      // state: "",
-      // countryCode: "",
-      // yearCommencement: "",
-      // yearCessation: ""
+      organisationName: "",
+      title: "",
+      sectorCode: "",
+      state: "",
+      countryCode: "",
+      yearCommencement: "",
+      yearCessation: ""
     }
   }
 
   getNewStudentRecord = () => {
     return {
-      // firstName: "",
-      // lastName: "",
-      // phoneNumber: "",
-      // email: "",
+      firstName: "",
+      lastName: "",
+      phoneNumber: "",
+      email: "",
       educationRecords: [
         this.getNewStudentEducationRecord()
       ]
@@ -276,22 +282,36 @@ export default class extends React.Component {
 
   getNewStudentEducationRecord = () => {
     return {
-      // institutionName: "",
-      // state: "",
-      // countryCode: "",
-      // degree: "",
-      // programme: "",
-      // yearOfGraducation: ""
+      institutionName: "",
+      state: "",
+      countryCode: "",
+      degree: "",
+      programme: "",
+      yearOfGraducation: ""
     }
   }
 
   getNewProjectRecord = () => {
     return {
-      // name: "",
-      // projectCategoryKey: "",
-      // description: ""
+      name: "",
+      projectCategoryKey: "",
+      description: ""
     }
   }
+
+  componentDidUpdate = (prevProps, prevState) => {
+
+    if (prevState.lastEditorStateChange !== this.state.lastEditorStateChange) {
+
+      // console.log('componentDidUpdate', this.state.lastEditorStateChange);
+
+      this.setState({
+        recordIsValid: this.validateRecord(this.state.record)
+      });
+    }
+    
+  }
+  
 
   onRecordChange = (e) => {
     const fieldId = e.currentTarget.getAttribute('data-name');
@@ -418,7 +438,6 @@ export default class extends React.Component {
 
       this.setState({
         record: updatedRecord,
-        recordIsValid: this.validateRecord(updatedRecord),
         lastEditorStateChange: Date.now()
       })
     }
@@ -637,8 +656,36 @@ export default class extends React.Component {
   }
 
 
-  validateRecord = (record) => {
-    console.log('validateRecord', record, this.requiredFields);
+  validateRecord = (record, parentKey) => {
+    // console.log('validateRecord', record, this.requiredFields);
+
+    
+
+    let isRecordValid = true;
+
+    Object.keys(record).map((key) => {
+      const inspect = _.get(record, key);
+      if (_.isArray(inspect)) {
+        inspect.map((data) => {
+          isRecordValid = isRecordValid && this.validateRecord(data, _.isEmpty(parentKey) ? `${key}` : `${parentKey}.${key}`);
+        })
+        // isRecordValid = isRecordValid && this.validateRecord(inspect, _.isEmpty(parentKey) ? `${key}` : `${parentKey}.${key}`);
+      } else {
+        
+        const requiredFields = this.flattenKeys(this.requiredFields);
+
+
+        
+
+        isRecordValid = isRecordValid && (_.get(requiredFields, _.isEmpty(parentKey) ? `${key}` : `${parentKey}.${key}`) === true ? !_.isEmpty(record[key]) : true);
+
+        // console.log('>>', _.isEmpty(parentKey) ? `${key}` : `${parentKey}.${key}`, (_.get(requiredFields, _.isEmpty(parentKey) ? `${key}` : `${parentKey}.${key}`) === true ? !_.isEmpty(record[key]) : true), isRecordValid);
+      }
+
+    })
+
+    return isRecordValid;
+
 
 
   }
