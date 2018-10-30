@@ -21,7 +21,7 @@
     "dev": "NOW_CONFIG=now-dev.json node server.js",
     "stage": "NOW_CONFIG=now-stage.json node server.js",
     "production": "NOW_CONFIG=now-production.json node server.js",
-    "deploy": "npm run deploy-dev",
+    "deploy": "npm run deploy-stage",
     "deploy-dev": "now --local-config=now-dev.json --team ibcol && npm run link-dev",
     "deploy-stage": "now --local-config=now-stage.json --team ibcol && npm run link-stage",
     "deploy-production": "now --local-config=now-production.json --team ibcol && npm run link-production",
