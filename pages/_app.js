@@ -13,7 +13,7 @@ import LoaderComponent from 'components/LoaderComponent';
 // import LocaleSwitcherComponent from 'components/LocaleSwitcherComponent';
 
 
-import styled, { injectGlobal, ThemeProvider } from 'styled-components';
+import styled, { createGlobalStyle, ThemeProvider } from 'styled-components';
 
 
 
@@ -31,7 +31,7 @@ import "styles/vendor.css";
 import "styles/main.css";
 
 
-injectGlobal`
+const GlobalStyle = createGlobalStyle`
 
   
 
@@ -93,7 +93,7 @@ class MyApp extends App {
 
     return <Container>
       
-
+      <GlobalStyle/>
 
       
       {/* <LoaderComponent/> */}
