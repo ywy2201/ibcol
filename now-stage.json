@@ -1,7 +1,7 @@
 {
   "name": "ibcol-stage",
   "alias": [
-    "uat.icapro.bbi.codes"
+    "uat.ibcol.org"
   ],
   "env": {
     "ENV": "stage",

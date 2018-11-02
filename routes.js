@@ -54,5 +54,4 @@ routes
   .add({ name: 'corporate-relations', pattern: '/:locale/corporate-relations/', page: 'corporate-relations' })
   .add({ name: 'schedule', pattern: '/:locale/schedule/', page: 'schedule' })
   .add({ name: 'contact', pattern: '/:locale/contact/', page: 'contact' })
-  
-  
+  .add({ name: 'registration', pattern: '/:locale/registration/', page: 'registration' })

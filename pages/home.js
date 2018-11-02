@@ -88,9 +88,9 @@ export default class extends React.Component {
               </h3>
 
               <div className="home-content__button">
-                <Link prefetch route="contact" params={{ locale }}>
+                <Link prefetch route="registration" params={{ locale }}>
                   <a className="btn btn--primary btn--large">
-                    {this.translate('contact')}
+                    {this.translate('register')}
                   </a>
                 </Link>
                 <Link prefetch route="criteria" params={{ locale }}>
