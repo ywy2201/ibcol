@@ -48,11 +48,11 @@ module.exports = routes
 
 routes
   .add({ name: 'home', pattern: '/:locale/', page: 'home' })
-  .add({ name: 'about', pattern: '/:locale/about/', page: 'about' })
-  .add({ name: 'criteria', pattern: '/:locale/criteria/', page: 'criteria' })
-  .add({ name: 'student-relations', pattern: '/:locale/student-relations/', page: 'student-relations' })
-  .add({ name: 'corporate-relations', pattern: '/:locale/corporate-relations/', page: 'corporate-relations' })
-  .add({ name: 'schedule', pattern: '/:locale/schedule/', page: 'schedule' })
+  // .add({ name: 'about', pattern: '/:locale/about/', page: 'about' })
+  .add({ name: 'how', pattern: '/:locale/how/', page: 'how' })
+  // .add({ name: 'competition', pattern: '/:locale/competition/', page: 'competition' })
+  .add({ name: 'ambassadors', pattern: '/:locale/ambassadors/', page: 'ambassadors' })
+  .add({ name: 'sponsors', pattern: '/:locale/sponsors/', page: 'sponsors' })
+  // .add({ name: 'schedule', pattern: '/:locale/schedule/', page: 'schedule' })
   .add({ name: 'contact', pattern: '/:locale/contact/', page: 'contact' })
-  
-  
+  // .add({ name: 'registration', pattern: '/:locale/registration/', page: 'registration' })

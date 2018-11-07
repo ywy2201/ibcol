@@ -45,7 +45,7 @@ export default class MyDocument extends Document {
 
 
           <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Nunito+Sans:300,400,400i,600,600i,700,700i" rel="stylesheet" />
-          
+          <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
           
           {this.props.styleTags}
 

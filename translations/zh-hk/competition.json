@@ -1,0 +1,84 @@
+{
+  "pageTitle": "Competition Overview",
+  "seoDescription": "",
+  "ogImage": "",
+  "subhead": "Competition Overview for the 2019 International Blockchain Olympiad",
+  "section01": {
+    "heading": "Competition Process",
+    "block01": {
+      "title": "Whitepaper",
+      "details": "due April 21st<br/>by online submission"
+    },
+    "block02": {
+      "title": "Interview",
+      "details": "due May & June<br/>by teleconference"
+    },
+    "block03": {
+      "title": "Demo",
+      "details": "during July<br/>at Tech Expo"
+    },
+    "block04": {
+      "title": "Pitch",
+      "details": "during July<br/>on Pitch Stage"
+    },
+    "block05": {
+      "title": "Continuation",
+      "details": "after July<br/>via Accelerators"
+    },
+    "writtenLanguageLabel": "Acceptable Languages for written material:",
+    "writtenLanguages": "Arabic (standard), Chinese (Simplified), Chinese (Traditional), English, French, German, Hungarian, Japanese, Korean, Persian, Polish, Portuguese, Russian, Spanish, Ukrainian",
+    "spokenLanguageLabel": "Acceptable Languages for spoken material: ",
+    "spokenLanguages": "Arabic (Egypt), Arabic (Gulf), Cantonese, English, French, German, Hungarian, Japanese, Korean, Mandarin, Persian, Polish, Portuguese, Russian, Spanish, Ukrainian"
+  },
+  "section02": {
+    "heading": "Awards",
+    "awards": {
+      "gold": {
+        "quantity": 5,
+        "title": "Gold Medals",
+        "description": "1st place winner of a category with 4096 USD prize"
+      },
+      "silver": {
+        "quantity": 5,
+        "title": "Silver Medals",
+        "description": "2nd place winner of a category with 2048 USD prize"
+      },
+      "bronze": {
+        "quantity": 5,
+        "title": "Bronze Medals",
+        "description": "3rd place winner of a category with 1024 USD prize"
+      
+      },
+      "nominee": {
+        "quantity": 15,
+        "title": "Nominee Awards",
+        "description": "Recognition of team coach for nominating a winning team"
+      },
+      "finalist": {
+        "quantity": 10,
+        "title": "Finalist Awards",
+        "description": "Recognition of teams for being top 5 in a category"
+      },
+      "merit": {
+        "quantity": 50,
+        "title": "Merit Awards",
+        "description": "Recognition of teams for designing a complete solution"
+      },
+
+      "note": "The best prize for students is not financial, but rather experience, guidance, and a chance to make a real impact in the real world."
+      
+    },
+
+
+    "contentHTML": "<div class='col-block item-process blue'>                            <div class='item-process__text'>                                <h4 class='item-title'>Fintech</h4>                                <p>                                    (Financial Technology) broadly encapsulates activities in the traditional finance sector, as well as in insurance, trading, and risk management.<br/>                                    e.g.<br/>                                    Bancassurance<br/>                                    Trade Finance<br/>                                    Digital Assets                                </p>                            </div>                        </div>                        <div class='col-block item-process yellow'>                            <div class='item-process__text'>                                <h4 class='item-title'>Govtech</h4>                                <p>                                    (Government Technology) describes key platform and infrastructure solutions required for administrative responsibilities of a sovereign state or territory.<br/>                                    e.g.<br/>                                    Identities<br/>                                    Registries<br/>                                    Audits                                </p>                            </div>                        </div>                        <div class='col-block item-process black'>                            <div class='item-process__text'>                                <h4 class='item-title'>Medtech</h4>                                <p>                                    (Medical Technology) is a collection of applications that solve health related issues and improve the quality of lives, for humans or otherwise.<br/>                                    e.g.<br/>                                    Health<br/>                                    Records<br/>                                    Medical Maps<br/>                                    Insurance Claim                                </p>                            </div>                        </div>                        <div class='col-block item-process green'>                            <div class='item-process__text'>                                <h4 class='item-title'>IoT / O2O</h4>                                <p>                                    (Internet of Things/Online-to- Offline/vice versa) concerns bridging of digital and physical worlds, i.e. interpreting real-life situations and phenomena into machine- useable data.<br/>                                    e.g.<br/>                                    Food Safety<br/>                                    Supply Chain<br/>                                    Transportation                                </p>                            </div>                        </div>                        <div class='col-block item-process red'>                            <div class='item-process__text'>                                <h4 class='item-title'>Arts / Media</h4>                                <p>                                    Encompassing human activities in public and commercial communications, entertainment, and adjacent industries.<br/>                                    e.g.<br/>                                    Adverts<br/>                                    Events<br/>                                    Statistics                                </p>                            </div>                        </div>"
+  },
+  "section03": {
+    "heading": "Eligibility & Fee",
+    "contentTableHTML": "<table>                    <tr>                        <td></td>                        <td><b>Super Early Bird</b></td>                        <td><b>Early Bird</b></td>                        <td><b>Regular</b></td>                    </tr>                    <tr>                        <td>From</td>                        <td>Monday<br/>3 September 2018<br/>00: 00 HKT</td>                        <td>Saturday<br/>2 February 2019<br/>00: 00 HKT</td>                        <td>Tuesday<br/>2 April 2019<br/>00: 00 HKT</td>                    </tr>                    <tr>                        <td>Until</td>                        <td>Friday<br/>1 February 2019<br/>23: 59 HKT</td>                        <td>Monday<br/>1 April 2019<br/>23: 59 HKT</td>                        <td>Sunday<br/>21 April 2019<br/>23: 59 HKT</td>                    </tr>                    <tr>                        <td>Registration</td>                        <td>Fee is waived</td>                        <td>Fee is waived</td>                        <td>Fee is required</td>                    </tr>                    <tr>                        <td>Financial Assistance</td>                        <td>Eligible for travel subsidies</td>                        <td>Ineligible for travel subsidies</td>                        <td>Ineligible for travel subsidies</td>                    </tr>                </table>"
+  },
+  "section04": {
+    "heading": "Prizes",
+    "contentHTML01": "<p>The best prize for students is not financial, but rather experience, guidance, and a chance to make a real impact in the real world.</p>",
+    "contentHTML02": "<div class='col-block item-process gold'>                            <div class='item-process__text'>                                <h4 class='item-title'>Gold Medal</h4>                                <p>                                    1st place winner of a category with 4096 USD prize (5 awards total)                                </p>                            </div>                        </div>                        <div class='col-block item-process silver'>                            <div class='item-process__text'>                                <h4 class='item-title'>Silver Medal</h4>                                <p>                                    2nd place winner of a category with 2048 USD prize (5 awards total)                                </p>                            </div>                        </div>                        <div class='col-block item-process bronze'>                            <div class='item-process__text'>                                <h4 class='item-title'>Bronze Medal</h4>                                <p>                                    3rd place winner of a category with 1024 USD prize (5 awards total)                                </p>                            </div>                        </div>                        <div class='col-block item-process green'>                            <div class='item-process__text'>                                <h4 class='item-title'>Nominee Award</h4>                                <p>                                    Recognition for nominating a winning team (15 awards total)                                </p>                            </div>                        </div>                        <div class='col-block item-process green'>                            <div class='item-process__text'>                                <h4 class='item-title'>Finalist Award</h4>                                <p>                                    Recognition for being top 5 in a category (10 awards total)                                </p>                            </div>                        </div>                        <div class='col-block item-process green'>                            <div class='item-process__text'>                                <h4 class='item-title'>Merit Award</h4>                                <p>                                    Recognition for designing a complete solution (50 awards total)                                </p>                            </div>                        </div>"
+  }
+}

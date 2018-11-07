@@ -29,6 +29,7 @@ import translations from 'translations';
 import "styles/base.css";
 import "styles/vendor.css";
 import "styles/main.css";
+import "styles/flag-icon.min.css";
 
 
 const GlobalStyle = createGlobalStyle`
@@ -109,14 +110,27 @@ class MyApp extends App {
 
 
       <footer>
+        <div className="ss-go-top">
+
+          {/* <a href="registration.html" className="register btn btn--primary btn--large">
+              {this.translate('footerMenu.registrationInfo')}
+          </a> */}
+          {/* <Link prefetch route="competition" params={{ locale }}>
+            <a className="more-info btn btn--large">
+                {this.translate('footerMenu.aboutCompetition')}
+            </a>
+          </Link> */}
+          <a className="smoothscroll btn btn--large" title={this.translate('footerMenu.backToTop')} href="#top">
+              {this.translate('footerMenu.backToTop')}
+          </a>
+        </div>
+
         <div className="row">
           <div className="col-full ss-copyright">
             <span dangerouslySetInnerHTML={{ __html: this.translate('copyright') }} />
           </div>
         </div>
-        <div className="ss-go-top">
-          <a className="smoothscroll" title="Back to Top" href="#top">{this.translate('backToTop')}</a>
-        </div>
+        
       </footer>
       
       
