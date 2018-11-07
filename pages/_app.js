@@ -112,14 +112,14 @@ class MyApp extends App {
       <footer>
         <div className="ss-go-top">
 
-          <a href="registration.html" className="register btn btn--primary btn--large">
+          {/* <a href="registration.html" className="register btn btn--primary btn--large">
               {this.translate('footerMenu.registrationInfo')}
-          </a>
-          <Link prefetch route="competition" params={{ locale }}>
+          </a> */}
+          {/* <Link prefetch route="competition" params={{ locale }}>
             <a className="more-info btn btn--large">
                 {this.translate('footerMenu.aboutCompetition')}
             </a>
-          </Link>
+          </Link> */}
           <a className="smoothscroll btn btn--large" title={this.translate('footerMenu.backToTop')} href="#top">
               {this.translate('footerMenu.backToTop')}
           </a>

@@ -9,7 +9,7 @@
     "about": "About",
     "how": "How To Join",
     "competition": "Competition",
-    "students": "School Ambassadors",
+    "ambassadors": "School Ambassadors",
     "sponsors": "Our Sponsors",
     "schedule": "Schedule & Programme",
     "contact": "Contact Us",
@@ -17,7 +17,7 @@
   },
   "footerMenu": {
     "backToTop": "Back to Top",
-    "aboutCompetition": "About Competition",
+    "aboutCompetition": "Competition Process",
     "registrationInfo": "Registration Info"
   },
   

@@ -48,7 +48,7 @@ export default class extends React.Component {
   return { query }
   }
   
-translate = (t) => translate(t, 'students', this.props.query.locale);
+translate = (t) => translate(t, 'ambassadors', this.props.query.locale);
   
   render() {
   

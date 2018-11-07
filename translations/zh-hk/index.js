@@ -15,6 +15,6 @@ module.exports = {
   "competition": Object.assign({}, require('./_global.json'), require('./competition.json')),
   "home": Object.assign({}, require('./_global.json'), require('./home.json')),
   "schedule": Object.assign({}, require('./_global.json'), require('./schedule.json')),
-  "students": Object.assign({}, require('./_global.json'), require('./students.json')),
+  "ambassadors": Object.assign({}, require('./_global.json'), require('./ambassadors.json')),
   "registration": Object.assign({}, require('./_global.json'), require('./registration.json')),
 }
