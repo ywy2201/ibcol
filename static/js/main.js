@@ -246,13 +246,15 @@
         // ssPreloader();
         ssMenuOnScrolldown();
         // ssOffCanvas();
-        ssMasonryFolio();
+        // ssMasonryFolio();
         ssPhotoswipe();
-        ssSlickSlider();
+        // ssSlickSlider();
         ssSmoothScroll();
         ssAlertBoxes();
-        ssAOS();
+        // ssAOS();
 
     })();
+
+    console.log("FFFF");
 
 })(jQuery);

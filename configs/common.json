@@ -1,1 +1,14 @@
-{}
+{
+  "sectorCodes": [
+    "IT",
+    "FINANCE",
+    "FASHION"
+  ],
+  "projectCategoryKeys": [
+    "FINTECH",
+    "GOVTECH",
+    "MEDTECH",
+    "IOT_O2O",
+    "ARTS_MEDIA"
+  ]
+}

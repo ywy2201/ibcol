@@ -57,25 +57,36 @@ export default class extends React.Component {
         
         <section id="general" className="s-section target-section first last">
 
-          <div className="row section-header bit-narrow">
+          <div className="row section-header">
             <div className="col-full">
               <h3 className="subhead">{this.translate('subhead')}</h3>
-              <h1>
-                {this.translate('section01.heading')}
-                </h1>
             </div>
           </div>
   
-          <div className="row bit-narrow">
+          <div className="row">
 
-              <div className="block-1-1 block-tab-full">
-                <div className="col-block sr-pack yellow">
-                  <div className="item-process__text">
-                  <h3>{this.translate('section01.emailAddress')}</h3>
-                  <a className="btn btn--stroke full-width" href={`mailto:${this.translate('section01.email')}`}>{this.translate('section01.email')}</a>
-                  </div>
+            <div className="block-1-2 block-tab-full">
+                <div className="col-block">
+                    <div className="item-process__text">
+                        <h3>{this.translate('mailingAddressTitle')}</h3>
+                        <p dangerouslySetInnerHTML={{__html: this.translate('mailingAddressHTML')}}/>
+                    </div>
                 </div>
-              </div> 
+                <div className="col-block">
+                    <div className="item-process__text">
+                        <h3>{this.translate('emailAddressTitle')}</h3>
+                        <p>
+                            {this.translate('generalEnquiriesLabel')}<br/>
+                            <a href={`mailto:${this.translate('generalEnquiriesEmail')}`}>{this.translate('generalEnquiriesEmail')}</a>
+                        </p>
+                        <p>
+                            {this.translate('sponsorshipLabel')}<br/>
+                            <a href={`mailto:${this.translate('sponsorshipEmail')}`}>{this.translate('sponsorshipEmail')}</a>
+                        </p>
+                    </div>
+                </div>
+            </div> 
+        
           </div>
         </section>
         

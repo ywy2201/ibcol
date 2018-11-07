@@ -2,9 +2,7 @@
   "name": "ibcol-production",
   "alias": [
     "ibcol.org",
-    "www.ibcol.org",
-    "ibo.foundation",
-    "www.ibo.foundation"
+    "www.ibcol.org"
   ],
   "env": {
     "ENV": "production",

@@ -1,0 +1,70 @@
+{
+  "pageTitle": "Registration",
+  "seoDescription": "",
+  "ogImage": "",
+  "subhead": "Team Registration",
+  "teamInfo": "Team Information",
+  "teamName": "Team Name",
+  "studentInfo": "Student Information",
+  "studentRecords": {
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "phoneNumber": "Phone Number",
+    "email": "Email",
+    "educationRecords": {
+      "degree": "Degree (or Equivalent)",
+      "programme": "Programme or Major",
+      "yearOfGraduation": "Year of Graduation",
+      "institutionName": "Institution Name",
+      "state": "State/Territory",
+      "countryCode": "Country"
+    }
+  },
+  "advisorRecords": {
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "phoneNumber": "Phone Number",
+    "email": "Email",
+    "associationRecords": {
+      "organisationName": "Company / Organisation",
+      "state": "State/Territory",
+      "countryCode": "Country",
+      "title": "Title / Responsibility",
+      "sectorCode": "Primary Sector",
+      "yearCommencement": "Commencement",
+      "yearCessation": "Cessation"
+    }
+  },
+
+  "projectRecords": {
+    "name": "Project Name",
+    "projectCategoryKey": "Project Category",
+    "description": "Project Description"
+  },
+
+  "studentEducationInfo": "Academic Achievement",
+  
+  
+  
+  
+  
+  "addAnotherStudent": "+ Add Another Student",
+  "removeStudent": "- Remove Student",
+  "addAnotherStudentEducationRecord": "+ Add Another Academic Achievement",
+  "removeStudentEducationRecord": "- Remove Academic Achievement",
+  "advisorInfo": "Advisor Information",
+  "addAnAdvisor": "+ Add An Advisor",
+  "addAnotherAdvisor": "+ Add Another Advisor",
+  "removeAdvisor": "- Remove Advisor",
+  "advisorAssociationInfo": "Association Record",
+  
+  
+  
+  "addAnotherAdvisorAssociationRecord": "+ Add Another Association Record",
+  "removeAdvisorAssociationRecord": "- Remove Association Record",
+  "projectInfo": "Project Information",
+  "removeProject": "- Remove Project",
+  "addAnotherProject": "+ Add Another Project",
+  
+  "submit": "Submit"
+}
