@@ -122,31 +122,36 @@ class MenuComponent extends React.Component {
                 {this.translate('menu.home')}
               </NavLinkComponent>
             </li>
-            <li>
+            {/* <li>
               <NavLinkComponent prefetch route="about" params={{ locale }}>
                 {this.translate('menu.about')}
               </NavLinkComponent>
-            </li>
+            </li> */}
             <li>
-              <NavLinkComponent prefetch route="criteria" params={{ locale }}>
-                {this.translate('menu.criteria')}
+              <NavLinkComponent prefetch route="how" params={{ locale }}>
+                {this.translate('menu.how')}
+              </NavLinkComponent>
+            </li>
+            {/* <li>
+              <NavLinkComponent prefetch route="competition" params={{ locale }}>
+                {this.translate('menu.competition')}
+              </NavLinkComponent>
+            </li> */}
+            <li>
+              <NavLinkComponent prefetch route="students" params={{ locale }}>
+                {this.translate('menu.students')}
               </NavLinkComponent>
             </li>
             <li>
-              <NavLinkComponent prefetch route="student-relations" params={{ locale }}>
-                {this.translate('menu.studentRelations')}
+              <NavLinkComponent prefetch route="sponsors" params={{ locale }}>
+                {this.translate('menu.sponsors')}
               </NavLinkComponent>
             </li>
-            <li>
-              <NavLinkComponent prefetch route="corporate-relations" params={{ locale }}>
-                {this.translate('menu.corporateRelations')}
-              </NavLinkComponent>
-            </li>
-            <li>
+            {/* <li>
               <NavLinkComponent prefetch route="schedule" params={{ locale }}>
                 {this.translate('menu.schedule')}
               </NavLinkComponent>
-            </li>
+            </li> */}
 
             <li>
               <NavLinkComponent prefetch route="contact" params={{ locale }}>

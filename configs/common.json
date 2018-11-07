@@ -5,7 +5,10 @@
     "FASHION"
   ],
   "projectCategoryKeys": [
-    "FIN-TECH",
-    "INSURANCE"
+    "FINTECH",
+    "GOVTECH",
+    "MEDTECH",
+    "IOT_O2O",
+    "ARTS_MEDIA"
   ]
 }

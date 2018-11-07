@@ -707,7 +707,7 @@ export default class extends React.Component {
         
         <section id="general" className="s-section target-section first last">
 
-          <div className="row section-header bit-narrow">
+          <div className="row section-header">
             <div className="col-full">
 
               <RegistrationForm onSubmit={(e)=>{e.preventDefault();}}>
@@ -1048,7 +1048,7 @@ export default class extends React.Component {
                           <option value=""></option>
                           {
                             configs.projectCategoryKeys.map((projectCategoryKey, index) => {
-                              return <option value={projectCategoryKey} key={projectCategoryKey}>{this.translate(projectCategoryKey)}</option>
+                              return <option value={projectCategoryKey} key={projectCategoryKey}>{this.translate(`${projectCategoryKey}.name`)}</option>
                             })
                           }
                         </select>
