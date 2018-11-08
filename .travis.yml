@@ -24,12 +24,14 @@ deploy:
   script: now --local-config=now-stage.json --team ibcol --token $NOW_TOKEN && now alias --local-config=now-stage.json --team ibcol --token $NOW_TOKEN
   skip_cleanup: true
   on:
+    repo: ibcol/ibcol
     branch: dev
 # deploy master branch to zeit as production
 - provider: script
   script: now --local-config=now-production.json --team ibcol --token $NOW_TOKEN && now alias --local-config=now-production.json --team ibcol --token $NOW_TOKEN
   skip_cleanup: true
   on:
+    repo: ibcol/ibcol
     branch: master
 env:
   global:
