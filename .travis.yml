@@ -1,0 +1,35 @@
+language: node_js
+node_js:
+- node
+cache:
+  directories:
+  - node_modules
+branches:
+  only:
+    - master
+    - dev
+    - /^feature.*$/
+script: npm test
+before_deploy: npm install now --no-save
+deploy:
+# deploy feature branch to zeit unalaised
+- provider: script
+  script: now --local-config=now-stage.json --team ibcol --token $NOW_TOKEN
+  skip_cleanup: true
+  on:
+    branch: /^feature.*$/
+# deploy dev branch to zeit as uat
+- provider: script
+  script: now --local-config=now-stage.json --team ibcol --token $NOW_TOKEN && now alias --local-config=now-stage.json --team ibcol --token $NOW_TOKEN
+  skip_cleanup: true
+  on:
+    branch: dev
+# deploy master branch to zeit as production
+- provider: script
+  script: now --local-config=now-production.json --team ibcol --token $NOW_TOKEN && now alias --local-config=now-production.json --team ibcol --token $NOW_TOKEN
+  skip_cleanup: true
+  on:
+    branch: master
+env:
+  global:
+    secure: kzh4kj/eMyrmXdvfpwzyurZ5rVYqlz4TKfp16ZNF6ylCysE+iB9DJkJKBLHGpby8Ool0vEsZPH57Ks676ErmobqeyfRGRNFa5aIo7JM48ZnCofxSMOsIaoBzET90OhC7+SoaveRcubQpXX+6kHgLYGoDhiJtKcV6+481TnvtUcHMu47A0eo1OI9xG8mkAzNsZQtMPHKXyh2eevKI6sCKvaXYp8XAY/50kRlyLXqS7CXTkPkumfRI7XVXb/0/q3rOPnQuSiyLfqUQ0SJDx4Lrp3lBTSII5ovb3B1IasU/u5RnyUK+UQbnWlF2MItr3sNc4vGEXnGWifzfzUbWBo0CziQNijP4J8U6XFZGjywjDY2IaA5F9B9Ft/CrrUGB4iOY+AJY6Ayd5V2W39M0o7uQ2tmw4qnphcWFJIiNz4SnfxxJ8dEsSSXKS8QtIkZ3iaF0dHHc/NjNWC3vkNfLOeer/1ebt04UGMLVMH+DA3RiyFCNnAZ+zcHJf8jLIMcSq04tijAwoLiANo6jROh24/1AqN24/4e9TQ1Dde0JIwgdaDyU/vv9GOI/UwFt6WVlWWdi1DLCboRPwx0LohH/h55kCtsjtlvTpongAfAbTr2pJ1lLxw9oJ2dz8kVE8q4/uDHlICDlzkVq+ew11AQROtcA9Rb+Z88PgKAHKA55r+a5utA=
