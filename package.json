@@ -1,6 +1,6 @@
 {
   "name": "ibcol",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "description": "",
   "main": "index.js",
@@ -25,8 +25,8 @@
     "deploy-production": "now --local-config=now-production.json --team ibcol && npm run link-production",
     "link-dev": "now alias --local-config=now-dev.json --team ibcol",
     "link-stage": "now alias --local-config=now-stage.json --team ibcol",
-    "link-production": "#now alias --local-config=now-production.json --team ibcol",
-    "cleanup-production-now": "#now rm $npm_package_name-production -s"
+    "link-production": "now alias --local-config=now-production.json --team ibcol",
+    "cleanup-production-now": "now rm $npm_package_name-production -s"
   },
   "repository": {
     "type": "git",
