@@ -6,12 +6,19 @@ if(process.env.NOW) {
    
   slack = new Slack();
   slack.setWebhook(webhookUri);
-   
+
+
+  var text = `A new ${process.env.ENV} deployment is ready at: ${process.env.NOW_URL}.`;
+
+  if(process.env.TRAVIS) {
+    text = `Travis CI Build <${process.env.TRAVIS_BUILD_WEB_URL}|#${process.env.TRAVIS_BUILD_NUMBER} (${process.env.TRAVIS_BUILD_ID})>:\n${text}`;
+  }
+
   slack.webhook({
     channel: "#web-dev",
     icon_emoji: "https://file-ructyqhftk.now.sh/now.png",
     username: "Now @ Zeit",
-    text: `A new ${process.env.ENV} deployment is ready at: ${process.env.NOW_URL}`,
+    text,
   }, function(err, response) {
     console.log(response);
   });
