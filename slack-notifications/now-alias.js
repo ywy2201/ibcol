@@ -8,7 +8,7 @@ if(process.env.NOW) {
   slack.setWebhook(webhookUri);
 
 
-  var text = `${process.env.ENV} deployment at ${process.env.NOW_URL} has been aliased to https://www.uat.ibcol.org.`;
+  var text = `${process.env.ENV} deployment at ${process.env.NOW_URL} has been aliased to ${process.env.ALIAS_PATH}.`;
 
   if(process.env.TRAVIS) {
     text = `Travis CI Build <${process.env.TRAVIS_BUILD_WEB_URL}|#${process.env.TRAVIS_BUILD_NUMBER} (${process.env.TRAVIS_BUILD_ID})>:\n${text}`;
