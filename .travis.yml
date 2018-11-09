@@ -6,33 +6,34 @@ cache:
   - node_modules
 branches:
   only:
-  - master
-  - dev
-  - "/^feature.*$/"
-  - "/^release.*$/"
-env:
-  global:
-    secure: Ucg0ETYCwYFA8PkrEqs9sHwvdYduVC950QUnaLDzgLxbCbkyUj3CtthpLGdoeQOjLL+IYVWDnIrtRF0uO6tpQUrJ436j0f3bh2v7fhHloTMwindKHBX30gRdqCGyocNq87lrkEGMNs1x+2xJto/md/Z+4kipMcVzyF6pIlBwpDtWwEQQw1XiwcwUgt3jCno3Sa5F7U3OBUkrjhYGZ8wf6xw2eKIkgWIPDsDwQ/T/mMS68/Jbh6HWPbui2PoLZ5L8Py05djaR4H8Al9Euv19A1r8Z4wPtKTtwNYcbKnF+ns/aTA21lIjfutZ5lj14HCI1B4+lcLKubIsyLTfpZ1Rd2+flPxiwQhFABOdPjebWNrbAEcGcX/Y0HWl5FPM+MRY5cuV967KT6y6929cqjZpqRddw/dRq7ZjXmUmJZhTunSbxfECWqvGoeN9AeLy3anXtcgWa5KP4UumIaL63fy+K/QNRaMHjxsOGXmpMJlKUc/FWYPvXPBPBzmXdOdzy4JSTpsz6SV4Cb+2bKe779bHJm36huI5Po/QmDpZeOQvk3Cpifc4nwwy2FziEVOYfwvGmQiGUN41VYjhJkSWcsV5n/gQ6Uqq2aZQcupn0K89Y58oArGE1dMxXhccpmn7U4brVBHWDXj17PsW31cm9VgFHcU2B2BZqPYFEl0BCrVUCYdM=
+    - master
+    - dev
+    - /^feature.*$/
+    - /^release.*$/
 script: npm test
 before_deploy: npm install now --no-save
 deploy:
+# deploy feature and release branch to zeit unalaised
 - provider: script
-  script: echo "HELLO" && echo $NOW_TOKEN
+  script: now --local-config=now-stage.json --team ibcol --token $NOW_TOKEN
   skip_cleanup: true
   on:
     all_branches: true
-    condition: "$TRAVIS_BRANCH =~ ^feature.*|^release.*"
+    condition: $TRAVIS_BRANCH =~ ^feature.*|^release.*
+# deploy dev branch to zeit as uat
 - provider: script
-  script: now --local-config=now-stage.json --team ibcol --token $NOW_TOKEN && now
-    alias --local-config=now-stage.json --team ibcol --token $NOW_TOKEN
+  script: now --local-config=now-stage.json --team ibcol --token $NOW_TOKEN && now alias --local-config=now-stage.json --team ibcol --token $NOW_TOKEN
   skip_cleanup: true
   on:
     repo: ibcol/ibcol
     branch: dev
+# deploy master branch to zeit as production
 - provider: script
-  script: now --local-config=now-production.json --team ibcol --token $NOW_TOKEN &&
-    now alias --local-config=now-production.json --team ibcol --token $NOW_TOKEN
+  script: now --local-config=now-production.json --team ibcol --token $NOW_TOKEN && now alias --local-config=now-production.json --team ibcol --token $NOW_TOKEN
   skip_cleanup: true
   on:
     repo: ibcol/ibcol
     branch: master
+env:
+  global:
+    secure: kzh4kj/eMyrmXdvfpwzyurZ5rVYqlz4TKfp16ZNF6ylCysE+iB9DJkJKBLHGpby8Ool0vEsZPH57Ks676ErmobqeyfRGRNFa5aIo7JM48ZnCofxSMOsIaoBzET90OhC7+SoaveRcubQpXX+6kHgLYGoDhiJtKcV6+481TnvtUcHMu47A0eo1OI9xG8mkAzNsZQtMPHKXyh2eevKI6sCKvaXYp8XAY/50kRlyLXqS7CXTkPkumfRI7XVXb/0/q3rOPnQuSiyLfqUQ0SJDx4Lrp3lBTSII5ovb3B1IasU/u5RnyUK+UQbnWlF2MItr3sNc4vGEXnGWifzfzUbWBo0CziQNijP4J8U6XFZGjywjDY2IaA5F9B9Ft/CrrUGB4iOY+AJY6Ayd5V2W39M0o7uQ2tmw4qnphcWFJIiNz4SnfxxJ8dEsSSXKS8QtIkZ3iaF0dHHc/NjNWC3vkNfLOeer/1ebt04UGMLVMH+DA3RiyFCNnAZ+zcHJf8jLIMcSq04tijAwoLiANo6jROh24/1AqN24/4e9TQ1Dde0JIwgdaDyU/vv9GOI/UwFt6WVlWWdi1DLCboRPwx0LohH/h55kCtsjtlvTpongAfAbTr2pJ1lLxw9oJ2dz8kVE8q4/uDHlICDlzkVq+ew11AQROtcA9Rb+Z88PgKAHKA55r+a5utA=
