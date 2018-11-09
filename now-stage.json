@@ -1,7 +1,7 @@
 {
   "name": "ibcol-stage",
   "alias": [
-    "uat.ibcol.org"
+    "www.uat.ibcol.org"
   ],
   "env": {
     "ENV": "stage",
