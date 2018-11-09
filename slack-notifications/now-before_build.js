@@ -8,12 +8,23 @@ if(process.env.NOW) {
    
   slack = new Slack();
   slack.setWebhook(webhookUri);
-   
+  
+  var text = `Building ${process.env.ENV} at <${process.env.NOW_URL}/_logs|${process.env.NOW_URL}>...`;
+
+  if(process.env.TRAVIS) {
+    text = `Travis CI Build <${process.env.TRAVIS_BUILD_WEB_URL}|#${process.env.TRAVIS_BUILD_NUMBER} (${process.env.TRAVIS_BUILD_ID})>:\n${text}`;
+  }
+
   slack.webhook({
     channel: "#web-dev",
     icon_emoji: "https://file-ructyqhftk.now.sh/now.png",
     username: "Now @ Zeit",
-    text: `Building ${process.env.ENV} at <${process.env.NOW_URL}/_logs|${process.env.NOW_URL}>...`,
+    attachments: [
+      {
+        "color": "#ECECEC",
+        text
+      }
+    ],
   }, function(err, response) {
     console.log(response);
   });
