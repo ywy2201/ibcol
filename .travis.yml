@@ -9,16 +9,17 @@ branches:
     - master
     - dev
     - /^feature.*$/
+    - /^release.*$/
 script: npm test
 before_deploy: npm install now --no-save
 deploy:
-# deploy feature branch to zeit unalaised
+# deploy feature and release branch to zeit unalaised
 - provider: script
   script: now --local-config=now-stage.json --team ibcol --token $NOW_TOKEN
   skip_cleanup: true
   on:
     all_branches: true
-    condition: $TRAVIS_BRANCH =~ /^feature.*$/
+    condition: $TRAVIS_BRANCH =~ ^feature.*|^release.*
 # deploy dev branch to zeit as uat
 - provider: script
   script: now --local-config=now-stage.json --team ibcol --token $NOW_TOKEN && now alias --local-config=now-stage.json --team ibcol --token $NOW_TOKEN
