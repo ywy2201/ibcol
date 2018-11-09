@@ -15,7 +15,7 @@ if(process.env.TRAVIS) {
       channel: "#web-dev",
       icon_emoji: "https://file-gfcrqwuzya.now.sh/travis-ci-female.png",
       username: "Travis CI",
-      text: `Test completed. Deploying build <${process.env.TRAVIS_BUILD_WEB_URL}|#${process.env.TRAVIS_BUILD_NUMBER} (${process.env.TRAVIS_BUILD_ID})> for <https://github.com/${process.env.TRAVIS_REPO_SLUG}/commit/${process.env.TRAVIS_COMMIT}|commit #${process.env.TRAVIS_COMMIT.substring(0,7)}> @ <https://github.com/${process.env.TRAVIS_REPO_SLUG}|${process.env.TRAVIS_REPO_SLUG}> <https://github.com/${process.env.TRAVIS_REPO_SLUG}/tree/${process.env.TRAVIS_BRANCH}|${process.env.TRAVIS_BRANCH}>: ${process.env.TRAVIS_COMMIT_MESSAGE}`,
+      text: `Test completed. Deploying build <${process.env.TRAVIS_BUILD_WEB_URL}|#${process.env.TRAVIS_BUILD_NUMBER} (${process.env.TRAVIS_BUILD_ID})> to server...`,
     }, function(err, response) {
       console.log(response);
     });
@@ -24,7 +24,7 @@ if(process.env.TRAVIS) {
       channel: "#web-dev",
       icon_emoji: "https://file-gfcrqwuzya.now.sh/travis-ci-female.png",
       username: "Travis CI",
-      text: `Test completed. Deploying for a build trigged by Travis CI event ${process.env.TRAVIS_EVENT_TYPE}`,
+      text: `Test completed. Deploying for a build trigged by Travis CI event ${process.env.TRAVIS_EVENT_TYPE} to server...`,
     }, function(err, response) {
       console.log(response);
     });
