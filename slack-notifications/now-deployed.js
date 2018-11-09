@@ -9,7 +9,7 @@ if(process.env.NOW) {
    
   slack.webhook({
     channel: "#web-dev",
-    icon_emoji: "https://file-ructyqhftk.now.sh/now.png",
+    icon_url: "https://file-ructyqhftk.now.sh/now.png",
     username: "Now @ Zeit",
     text: `A new deployment is ready at: ${process.env.NOW_URL}`,
   }, function(err, response) {

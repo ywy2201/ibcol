@@ -9,14 +9,19 @@ if(process.env.TRAVIS) {
    
   slack = new Slack();
   slack.setWebhook(webhookUri);
-   
-  slack.webhook({
-    channel: "#web-dev",
-    icon_emoji: "https://file-ructyqhftk.now.sh/now.png",
-    username: "Travis CI",
-    text: `Travis CI is hard at work...`,
-  }, function(err, response) {
-    console.log(response);
-  });
+  
+  if (process.env.TRAVIS_EVENT_TYPE === 'push') {
+    slack.webhook({
+      channel: "#web-dev",
+      icon_url: "https://file-gfcrqwuzya.now.sh/travis-ci-female.png",
+      username: "Travis CI",
+      text: `Travis CI started working a new build <a href="${process.env.TRAVIS_BUILD_WEB_URL}">#${process.env.TRAVIS_BUILD_NUMBER} (${process.env.TRAVIS_BUILD_ID})</a> for new commit push <a href="https://github.com/${process.env.TRAVIS_REPO_SLUG}/commit/${process.env.TRAVIS_COMMIT}">#${process.env.TRAVIS_COMMIT}</a> on <a href="https://github.com/${process.env.TRAVIS_REPO_SLUG}">${process.env.TRAVIS_REPO_SLUG}</a> <a href="https://github.com/${process.env.TRAVIS_REPO_SLUG}/tree/${process.env.TRAVIS_BRANCH}">${process.env.TRAVIS_BRANCH}</a>: ${process.env.TRAVIS_COMMIT_MESSAGE}`,
+    }, function(err, response) {
+      console.log(response);
+    });
+  } else {
+
+  }
+  
 
 }
