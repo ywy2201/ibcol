@@ -181,7 +181,7 @@ export default class extends React.Component {
                             <i className="material-icons orange">assessment</i>
                             <h4 className="item-title">{this.translate('timelineSection.block5.title')}</h4>
                             <p dangerouslySetInnerHTML={{__html: this.translate('timelineSection.block5.details')}}/>
-                            <span class="time-line"></span>
+                            <span className="time-line"></span>
                         </div>
                     </div>
                     <div className="col-block item-process">
