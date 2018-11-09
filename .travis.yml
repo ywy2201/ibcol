@@ -10,9 +10,9 @@ branches:
   - dev
   - "/^feature.*$/"
   - "/^release.*$/"
-before_script: npm install && node slack-notifications/travis-started.js
+before_script: npm install && node slack-notifications/travis-before_script.js
 script: npm test
-before_deploy: npm install now --no-save
+before_deploy: npm install now --no-save && node slack-notifications/travis-before_deploy.js
 deploy:
 - provider: script
   script: now --local-config=now-stage.json --team ibcol --token $NOW_TOKEN
