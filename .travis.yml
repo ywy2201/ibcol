@@ -15,7 +15,7 @@ before_deploy: npm install now --no-save
 deploy:
 # deploy feature and release branch to zeit unalaised
 - provider: script
-  script: echo $NOW_TOKEN && now --local-config=now-stage.json --team ibcol --token $NOW_TOKEN
+  script: echo "HELLO" && echo $NOW_TOKEN
   skip_cleanup: true
   on:
     all_branches: true
