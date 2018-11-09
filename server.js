@@ -202,11 +202,32 @@ const logURL = (req, res, next) => {
 
 
 
+//
+// ─── MIDDLEWARE PRODUCTION NAKED TO WWW ──────────────────────────────────────────────
+//
+
+
+const toWWW = (req, res, next) => {
+  if (process.env === 'production' && req.get('host') === 'ibcol.org') {
+    require('express-naked-redirect')({
+      subDomain: 'www',
+      https: true
+    })(req, res, next)
+  } else {
+    next();
+  }
+}
+
+
+//────────────────────────────────────────────────────────────────────────────────
+
+
 app.prepare().then(() => {
 
 
 
   server
+    .use(toWWW)
     .use(logURL)
     .use(addSlash)
     .use(router)
