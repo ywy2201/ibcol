@@ -1,7 +1,7 @@
 {
   "name": "ibcol-dev",
   "alias": [
-    "dev.ibcol.org"
+    "www.dev.ibcol.org"
   ],
   "env": {
     "ENV": "dev",
