@@ -13,7 +13,7 @@ if(process.env.TRAVIS) {
   if (process.env.TRAVIS_EVENT_TYPE === 'push') {
     text = `Started working on a new build <${process.env.TRAVIS_BUILD_WEB_URL}|#${process.env.TRAVIS_BUILD_NUMBER} (${process.env.TRAVIS_BUILD_ID})> for a new <https://github.com/${process.env.TRAVIS_REPO_SLUG}/commit/${process.env.TRAVIS_COMMIT}|commit #${process.env.TRAVIS_COMMIT.substring(0,7)}> with <https://github.com/${process.env.TRAVIS_REPO_SLUG}/compare/${process.env.TRAVIS_COMMIT_RANGE}|changes> pushed to <https://github.com/${process.env.TRAVIS_REPO_SLUG}|${process.env.TRAVIS_REPO_SLUG}> <https://github.com/${process.env.TRAVIS_REPO_SLUG}/tree/${process.env.TRAVIS_BRANCH}|${process.env.TRAVIS_BRANCH}>:\n${process.env.TRAVIS_COMMIT_MESSAGE}`;
   } else {
-    text = `Started working on a new build trigged by Travis CI event ${process.env.TRAVIS_EVENT_TYPE}`;
+    text = `Build <${process.env.TRAVIS_BUILD_WEB_URL}|#${process.env.TRAVIS_BUILD_NUMBER} (${process.env.TRAVIS_BUILD_ID})> of ${process.env.TRAVIS_REPO_SLUG}@${process.env.TRAVIS_BRANCH}:\n New build trigged by Travis CI event ${process.env.TRAVIS_EVENT_TYPE}`;
   }
 
 

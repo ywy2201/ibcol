@@ -15,8 +15,7 @@ if(process.env.TRAVIS) {
   if (process.env.TRAVIS_EVENT_TYPE === 'push') {
     text = `Test completed. Deploying build <${process.env.TRAVIS_BUILD_WEB_URL}|#${process.env.TRAVIS_BUILD_NUMBER} (${process.env.TRAVIS_BUILD_ID})> to server...`;
   } else {
-    text = `Test completed. Deploying for a build trigged by Travis CI event ${process.env.TRAVIS_EVENT_TYPE} to server...`;
-    
+    text = `Build <${process.env.TRAVIS_BUILD_WEB_URL}|#${process.env.TRAVIS_BUILD_NUMBER} (${process.env.TRAVIS_BUILD_ID})> of ${process.env.TRAVIS_REPO_SLUG}@${process.env.TRAVIS_BRANCH}:\n Test completed. Deploying for a build trigged by Travis CI event ${process.env.TRAVIS_EVENT_TYPE} to server...`;
   }
 
 
