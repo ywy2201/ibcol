@@ -85,7 +85,7 @@ router.get('/', (req, res) => {
 
 router.get('/:locale/*?', (req, res, next) => {
   const urlObject = url.parse(req.url);
-  const status = (process.env === 'production') ? 301 : 302;
+  const status = (process.env.ENV === 'production') ? 301 : 302;
   const search = _.isEmpty(urlObject.search) ? '' : urlObject.search;
   const requestedLocale = req.params.locale.toLowerCase();
   const requestedParams = (_.isEmpty(req.params['0'])) ? '' : `/${req.params['0']}`;
@@ -129,7 +129,7 @@ router.get('/:locale/*?', (req, res, next) => {
 
       // if is supported route, route to default locale
 
-      if (process.env !== 'production')
+      if (process.env.ENV !== 'production')
         console.log(`       >> ${status}: ${newPath}`);
 
       res.redirect(status, newPath);
@@ -155,7 +155,7 @@ const addSlash = (req, res, next) => {
   const search = _.isEmpty(urlObject.search) ? '' : urlObject.search;
 
   const pathTokens = urlObject.pathname.split('/');
-  const status = (process.env === 'production') ? 301 : 302;
+  const status = (process.env.ENV === 'production') ? 301 : 302;
 
   // console.log('pathTokens', pathTokens);
 
@@ -171,7 +171,7 @@ const addSlash = (req, res, next) => {
   } else {
 
 
-    if (process.env !== 'production')
+    if (process.env.ENV !== 'production')
       console.log(`       >> ${status}: ${urlObject.pathname}/${search}`);
 
     res.redirect(status, `${urlObject.pathname}/${search}`);
@@ -191,7 +191,7 @@ const addSlash = (req, res, next) => {
 
 
 const logURL = (req, res, next) => {
-  if (process.env !== 'production')
+  if (process.env.ENV !== 'production')
     console.log('URL Requested:', req.url);
   next();
 }
@@ -208,11 +208,12 @@ const logURL = (req, res, next) => {
 
 
 const toWWW = (req, res, next) => {
-  if (process.env === 'production' && req.get('host') === 'ibcol.org') {
-    require('express-naked-redirect')({
+
+  if (process.env.ENV === 'production' && req.get('host') === 'ibcol.org') {
+    return require('express-naked-redirect')({
       subDomain: 'www',
       https: true
-    })(req, res, next)
+    })(req, res, next);
   } else {
     next();
   }
