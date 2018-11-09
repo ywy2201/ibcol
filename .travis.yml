@@ -15,26 +15,26 @@ script: npm test
 before_deploy: npm install now --no-save && node slack-notifications/travis-before_deploy.js
 deploy:
 - provider: script
-  script: now --local-config=now-stage.json --team ibcol --token $NOW_TOKEN
+  script: now --local-config=now-stage.json --team ibcol --token $NOW_TOKEN -e TRAVIS_BUILD_WEB_URL -e TRAVIS_BUILD_NUMBER -e TRAVIS_BUILD_ID -e TRAVIS
   skip_cleanup: true
   on:
     all_branches: true
     condition: "$TRAVIS_BRANCH =~ ^feature.*"
 - provider: script
-  script: now --local-config=now-production.json --team ibcol --token $NOW_TOKEN
+  script: now --local-config=now-production.json --team ibcol --token $NOW_TOKEN -e TRAVIS_BUILD_WEB_URL -e TRAVIS_BUILD_NUMBER -e TRAVIS_BUILD_ID -e TRAVIS
   skip_cleanup: true
   on:
     all_branches: true
     condition: "$TRAVIS_BRANCH =~ ^release.*"
 - provider: script
-  script: now --local-config=now-stage.json --team ibcol --token $NOW_TOKEN && now
+  script: now --local-config=now-stage.json --team ibcol --token $NOW_TOKEN -e TRAVIS_BUILD_WEB_URL -e TRAVIS_BUILD_NUMBER -e TRAVIS_BUILD_ID -e TRAVIS && now
     alias --local-config=now-stage.json --team ibcol --token $NOW_TOKEN
   skip_cleanup: true
   on:
     repo: ibcol/ibcol
     branch: dev
 - provider: script
-  script: now --local-config=now-production.json --team ibcol --token $NOW_TOKEN &&
+  script: now --local-config=now-production.json --team ibcol --token $NOW_TOKEN -e TRAVIS_BUILD_WEB_URL -e TRAVIS_BUILD_NUMBER -e TRAVIS_BUILD_ID -e TRAVIS &&
     now alias --local-config=now-production.json --team ibcol --token $NOW_TOKEN
   skip_cleanup: true
   on:

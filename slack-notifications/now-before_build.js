@@ -2,7 +2,7 @@ let Slack = require('slack-node');
 
 if(process.env.NOW) {
 
-  // console.log("ENVs", process.env);
+  console.log("ENVs", process.env);
 
   webhookUri = "https://hooks.slack.com/services/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";
    
