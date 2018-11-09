@@ -19,7 +19,13 @@ deploy:
   skip_cleanup: true
   on:
     all_branches: true
-    condition: "$TRAVIS_BRANCH =~ ^feature.*|^release.*"
+    condition: "$TRAVIS_BRANCH =~ ^feature.*"
+- provider: script
+  script: now --local-config=now-production.json --team ibcol --token $NOW_TOKEN
+  skip_cleanup: true
+  on:
+    all_branches: true
+    condition: "$TRAVIS_BRANCH =~ ^release.*"
 - provider: script
   script: now --local-config=now-stage.json --team ibcol --token $NOW_TOKEN && now
     alias --local-config=now-stage.json --team ibcol --token $NOW_TOKEN
