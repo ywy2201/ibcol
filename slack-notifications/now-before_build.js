@@ -12,7 +12,7 @@ if(process.env.NOW) {
   var text = `Building ${process.env.ENV} at <${process.env.NOW_URL}/_logs|${process.env.NOW_URL}>...`;
 
   if(process.env.TRAVIS) {
-    text = `Travis CI Build <${process.env.TRAVIS_BUILD_WEB_URL}|#${process.env.TRAVIS_BUILD_NUMBER} (${process.env.TRAVIS_BUILD_ID})>:\n${text}`;
+    text = `Travis CI Build <${process.env.TRAVIS_BUILD_WEB_URL}|#${process.env.TRAVIS_BUILD_NUMBER}> (<https://github.com/${process.env.TRAVIS_REPO_SLUG}/compare/${process.env.TRAVIS_COMMIT_RANGE}|${process.env.TRAVIS_COMMIT.substring(0,7)}>):\n${text}`;
   }
 
   slack.webhook({
