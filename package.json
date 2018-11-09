@@ -13,7 +13,7 @@
   "scripts": {
     "start": "npm run local -- ",
     "build": "next build",
-    "now-build": "next build",
+    "now-build": "node slack-notifications/now-before_build.js && next build",
     "now-start": "node slack-notifications/now-deployed.js && node server.js",
     "local": "NOW_CONFIG=now-local.json node server.js",
     "dev": "NOW_CONFIG=now-dev.json node server.js",

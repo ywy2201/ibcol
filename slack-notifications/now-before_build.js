@@ -2,6 +2,8 @@ let Slack = require('slack-node');
 
 if(process.env.NOW) {
 
+  // console.log("ENVs", process.env);
+
   webhookUri = "https://hooks.slack.com/services/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";
    
   slack = new Slack();
@@ -11,7 +13,7 @@ if(process.env.NOW) {
     channel: "#web-dev",
     icon_emoji: "https://file-ructyqhftk.now.sh/now.png",
     username: "Now @ Zeit",
-    text: `A new ${process.env.ENV} deployment is ready at: ${process.env.NOW_URL}`,
+    text: `Building ${process.env.ENV} at <${process.env.NOW_URL}/_logs|${process.env.NOW_URL}>...`,
   }, function(err, response) {
     console.log(response);
   });
