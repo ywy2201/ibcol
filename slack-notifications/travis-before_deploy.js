@@ -26,7 +26,7 @@ if(process.env.TRAVIS) {
     username: "Travis CI",
     attachments: [
       {
-        "color": "#ECECEC",
+        "color": "#80cbc4",
         text
       }
     ],
