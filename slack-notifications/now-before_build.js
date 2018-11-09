@@ -19,7 +19,12 @@ if(process.env.NOW) {
     channel: "#web-dev",
     icon_emoji: "https://file-ructyqhftk.now.sh/now.png",
     username: "Now @ Zeit",
-    text,
+    attachments: [
+      {
+        "color": "#333",
+        text
+      }
+    ],
   }, function(err, response) {
     console.log(response);
   });
