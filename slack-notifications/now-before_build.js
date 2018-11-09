@@ -21,7 +21,7 @@ if(process.env.NOW) {
     username: "Now @ Zeit",
     attachments: [
       {
-        "color": "#b2dfdb",
+        "color": "#ECECEC",
         text
       }
     ],
