@@ -22,7 +22,6 @@
     "deploy": "npm run deploy-stage",
     "deploy-dev": "now --local-config=now-dev.json --team ibcol && npm run link-dev",
     "deploy-stage": "export NOW_URL=$(now --local-config=now-stage.json --team ibcol) && npm run link-stage && ALIAS_PATH='https://www.uat.ibcol.org' node slack-notifications/now-alias.js",
-    "deploy-only-stage": "export NOW_URL=$(now --local-config=now-stage.json --team ibcol)",
     "deploy-production": "export NOW_URL=$(now --local-config=now-production.json --team ibcol) && npm run link-production && ALIAS_PATH='https://www.ibcol.org' node slack-notifications/now-alias.js",
     "link-dev": "now alias --local-config=now-dev.json --team ibcol",
     "link-stage": "now alias --local-config=now-stage.json --team ibcol",
