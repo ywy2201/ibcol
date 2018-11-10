@@ -29,7 +29,7 @@ deploy:
     condition: "$TRAVIS_BRANCH =~ ^release.*|^hotfix.*"
 - provider: script
   script: now --local-config=now-stage.json --team ibcol --token $NOW_TOKEN -e TRAVIS_BUILD_WEB_URL -e TRAVIS_BUILD_NUMBER -e TRAVIS_BUILD_ID -e TRAVIS_REPO_SLUG -e TRAVIS_COMMIT_RANGE -e TRAVIS_COMMIT -e TRAVIS > NOW_URL.log && now
-    alias --local-config=now-stage.json --team ibcol --token $NOW_TOKEN && cat NOW_URL.log && ls && export NOW_URL="`cat NOW_URL.log`" && echo $NOW_URL && ALIAS_PATH="https://www.uat.ibcol.org" node slack-notifications/now-alias.js
+    alias --local-config=now-stage.json --team ibcol --token $NOW_TOKEN && cat NOW_URL.log && echo $NOW_URL && ls && export NOW_URL="`cat NOW_URL.log`" && echo $NOW_URL && ALIAS_PATH="https://www.uat.ibcol.org" node slack-notifications/now-alias.js
   skip_cleanup: true
   on:
     repo: ibcol/ibcol
@@ -44,9 +44,7 @@ deploy:
 env:
   global:
     secure: kzh4kj/eMyrmXdvfpwzyurZ5rVYqlz4TKfp16ZNF6ylCysE+iB9DJkJKBLHGpby8Ool0vEsZPH57Ks676ErmobqeyfRGRNFa5aIo7JM48ZnCofxSMOsIaoBzET90OhC7+SoaveRcubQpXX+6kHgLYGoDhiJtKcV6+481TnvtUcHMu47A0eo1OI9xG8mkAzNsZQtMPHKXyh2eevKI6sCKvaXYp8XAY/50kRlyLXqS7CXTkPkumfRI7XVXb/0/q3rOPnQuSiyLfqUQ0SJDx4Lrp3lBTSII5ovb3B1IasU/u5RnyUK+UQbnWlF2MItr3sNc4vGEXnGWifzfzUbWBo0CziQNijP4J8U6XFZGjywjDY2IaA5F9B9Ft/CrrUGB4iOY+AJY6Ayd5V2W39M0o7uQ2tmw4qnphcWFJIiNz4SnfxxJ8dEsSSXKS8QtIkZ3iaF0dHHc/NjNWC3vkNfLOeer/1ebt04UGMLVMH+DA3RiyFCNnAZ+zcHJf8jLIMcSq04tijAwoLiANo6jROh24/1AqN24/4e9TQ1Dde0JIwgdaDyU/vv9GOI/UwFt6WVlWWdi1DLCboRPwx0LohH/h55kCtsjtlvTpongAfAbTr2pJ1lLxw9oJ2dz8kVE8q4/uDHlICDlzkVq+ew11AQROtcA9Rb+Z88PgKAHKA55r+a5utA=
-after_deploy:
-  - ls
-  - cat NOW_URL.log
+after_deploy: cat NOW_URL.log && ls
 notifications:
   slack:
     rooms:
