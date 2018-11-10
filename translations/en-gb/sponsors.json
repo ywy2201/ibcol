@@ -9,13 +9,13 @@
       "name": "Cardano",
       "url": "https://www.cardano.org/en/home/",
       "logo": "/static/images/cardano-logo.png",
-      "description": "<b>Cardano</b> is a decentralised public blockchain and cryptocurrency project and is fully open source. Cardano is developing a smart contract platform which seeks to deliver more advanced features than any protocol previously developed."
+      "description": "<b>Cardano</b> is a decentralised public blockchain and cryptocurrency project and is fully open sourced. Cardano is developing a smart contract platform which seeks to deliver more advanced features than any protocol previously developed. Cardano is represented by Emurgo HK."
     },
     {
-      "name": "Emurgo",
-      "url": "https://emurgo.io/",
-      "logo": "/static/images/emurgo-logo.png",
-      "description": "<b>EMURGO</b> was founded in 2017 and is a registered company in Japan. We develop, support, and incubate commercial ventures and help integrate these businesses into Cardano’s decentralized blockchain ecosystem. Cardano seeks to power the financial stack for the developing world, and EMURGO's mission is to help these economies emerge through blockchain technology"
+      "name": "EmurgoHK",
+      "url": "https://emurgohk.io/",
+      "logo": "/static/images/emurgohk-logo.png",
+      "description": "<b>EMURGO HK</b> is the venture builder for the Cardano blockchain protocol. And now we're in Hong Kong. Located in one of the world's most dynamic business hubs, and perfectly positioned between Northeast and Southeast Asia, EmurgoHK is spreading the revolutionary Cardano protocol across the Pacific Rim."
     },
     {
       "name": "eMALI",
