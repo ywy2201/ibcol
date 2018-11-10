@@ -29,7 +29,7 @@ deploy:
     condition: "$TRAVIS_BRANCH =~ ^release.*|^hotfix.*"
 - provider: script
   script: now --local-config=now-stage.json --team ibcol --token $NOW_TOKEN -e TRAVIS_BUILD_WEB_URL -e TRAVIS_BUILD_NUMBER -e TRAVIS_BUILD_ID -e TRAVIS_REPO_SLUG -e TRAVIS_COMMIT_RANGE -e TRAVIS_COMMIT -e TRAVIS > NOW_URL.log && now
-    alias --local-config=now-stage.json --team ibcol --token $NOW_TOKEN && cat NOW_URL.log && ls && export NOW_URL="`cat NOW_URL.log`" && echo $NOW_URL && ALIAS_PATH="https://www.uat.ibcol.org" node slack-notifications/now-alias.js
+    alias --local-config=now-stage.json --team ibcol --token $NOW_TOKEN && cat NOW_URL.log && ls && export NOW_URL="THIS IS A TEST" && echo $NOW_URL && ALIAS_PATH="https://www.uat.ibcol.org" node slack-notifications/now-alias.js
   skip_cleanup: true
   on:
     repo: ibcol/ibcol
