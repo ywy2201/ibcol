@@ -1,3 +1,5 @@
+const fs = require('fs');
+
 let Slack = require('slack-node');
 
 
@@ -7,9 +9,9 @@ webhookUri = "https://hooks.slack.com/services/TDV04909H/BE0TMGEUE/cATmP0VmP7zIE
 slack = new Slack();
 slack.setWebhook(webhookUri);
 
-const NOW_URL = (process.argv.length > 2) ? process.argv[2] : process.env.NOW_URL;
+const ALIAS_PATH = process.env.ALIAS_PATH !== undefined ? process.env.ALIAS_PATH : (process.argv.length > 2) ? process.argv[2] : "";
 
-const ALIAS_PATH = (process.argv.length > 3) ? process.argv[3] : process.env.ALIAS_PATH;
+const NOW_URL = process.env.NOW_URL !== undefined ? process.env.NOW_URL : (process.argv.length > 3) ? process.argv[3] : fs.readFileSync('NOW_URL.log', 'utf8');;
 
 
 var text = `Deployment at ${NOW_URL} has been aliased to ${ALIAS_PATH}.`;
