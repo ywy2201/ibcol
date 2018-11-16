@@ -218,7 +218,7 @@ class MenuComponent extends React.Component {
 
 
 MenuComponent.propTypes = {
-  locale: PropTypes.string,
+  locale: PropTypes.string.isRequired,
 }
 
 MenuComponent.defaultProps = {
