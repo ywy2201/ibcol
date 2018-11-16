@@ -101,6 +101,55 @@ class MenuComponent extends React.Component {
 
     // const { activeClassName, className, children, router, href, ...props } = this.props;
 
+    const menuItems = <>
+      <li>
+        <NavLinkComponent prefetch route="home" params={{ locale }}>
+          {this.translate('menu.home')}
+        </NavLinkComponent>
+      </li>
+      {/* <li>
+        <NavLinkComponent prefetch route="about" params={{ locale }}>
+          {this.translate('menu.about')}
+        </NavLinkComponent>
+      </li> */}
+      <li>
+        <NavLinkComponent prefetch route="how" params={{ locale }}>
+          {this.translate('menu.how')}
+        </NavLinkComponent>
+      </li>
+      {/* <li>
+        <NavLinkComponent prefetch route="competition" params={{ locale }}>
+          {this.translate('menu.competition')}
+        </NavLinkComponent>
+      </li> */}
+      <li>
+        <NavLinkComponent prefetch route="ambassadors" params={{ locale }}>
+          {this.translate('menu.ambassadors')}
+        </NavLinkComponent>
+      </li>
+      <li>
+        <NavLinkComponent prefetch route="sponsors" params={{ locale }}>
+          {this.translate('menu.sponsors')}
+        </NavLinkComponent>
+      </li>
+      {/* <li>
+        <NavLinkComponent prefetch route="schedule" params={{ locale }}>
+          {this.translate('menu.schedule')}
+        </NavLinkComponent>
+      </li> */}
+
+      <li>
+        <NavLinkComponent prefetch route="contact" params={{ locale }}>
+          {this.translate('menu.contact')}
+        </NavLinkComponent>
+      </li>
+
+      <li className="featured">
+        <NavLinkComponent prefetch route="registration" params={{ locale }}>
+          {this.translate('menu.registration')}
+        </NavLinkComponent>
+      </li>
+    </>
 
     return (
       <MenuHeader className={classNames('s-header', {
@@ -117,53 +166,8 @@ class MenuComponent extends React.Component {
 
         <div className="desktop-nav">
           <ul className="nav_list">
-            <li>
-              <NavLinkComponent prefetch route="home" params={{ locale }}>
-                {this.translate('menu.home')}
-              </NavLinkComponent>
-            </li>
-            {/* <li>
-              <NavLinkComponent prefetch route="about" params={{ locale }}>
-                {this.translate('menu.about')}
-              </NavLinkComponent>
-            </li> */}
-            <li>
-              <NavLinkComponent prefetch route="how" params={{ locale }}>
-                {this.translate('menu.how')}
-              </NavLinkComponent>
-            </li>
-            {/* <li>
-              <NavLinkComponent prefetch route="competition" params={{ locale }}>
-                {this.translate('menu.competition')}
-              </NavLinkComponent>
-            </li> */}
-            <li>
-              <NavLinkComponent prefetch route="ambassadors" params={{ locale }}>
-                {this.translate('menu.ambassadors')}
-              </NavLinkComponent>
-            </li>
-            <li>
-              <NavLinkComponent prefetch route="sponsors" params={{ locale }}>
-                {this.translate('menu.sponsors')}
-              </NavLinkComponent>
-            </li>
-            {/* <li>
-              <NavLinkComponent prefetch route="schedule" params={{ locale }}>
-                {this.translate('menu.schedule')}
-              </NavLinkComponent>
-            </li> */}
-
-            <li>
-              <NavLinkComponent prefetch route="contact" params={{ locale }}>
-                {this.translate('menu.contact')}
-              </NavLinkComponent>
-            </li>
-
-            <li className="featured">
-              <NavLinkComponent prefetch route="registration" params={{ locale }}>
-                {this.translate('menu.registration')}
-              </NavLinkComponent>
-            </li>
+            
+            {menuItems}
 
           </ul>
         </div>
@@ -180,46 +184,11 @@ class MenuComponent extends React.Component {
             <div className="header-nav__content">
 
               <ul className="header-nav__list">
-                <li>
-                  <NavLinkComponent prefetch route="home" params={{ locale }}>
-                    {this.translate('menu.home')}
-                  </NavLinkComponent>
-                </li>
-                <li>
-                  <NavLinkComponent prefetch route="about" params={{ locale }}>
-                    {this.translate('menu.about')}
-                  </NavLinkComponent>
-                </li>
-                <li>
-                  <NavLinkComponent prefetch route="criteria" params={{ locale }}>
-                    {this.translate('menu.criteria')}
-                  </NavLinkComponent>
-                </li>
-                <li>
-                  <NavLinkComponent prefetch route="student-relations" params={{ locale }}>
-                    {this.translate('menu.studentRelations')}
-                  </NavLinkComponent>
-                </li>
-                <li>
-                  <NavLinkComponent prefetch route="corporate-relations" params={{ locale }}>
-                    {this.translate('menu.corporateRelations')}
-                  </NavLinkComponent>
-                </li>
-                <li>
-                  <NavLinkComponent prefetch route="schedule" params={{ locale }}>
-                    {this.translate('menu.schedule')}
-                  </NavLinkComponent>
-                </li>
-                <li>
-                  <NavLinkComponent prefetch route="contact" params={{ locale }}>
-                    {this.translate('menu.contact')}
-                  </NavLinkComponent>
-                </li>
-                <li className="featured">
-                  <NavLinkComponent prefetch route="registration" params={{ locale }}>
-                    {this.translate('menu.registration')}
-                  </NavLinkComponent>
-                </li>
+
+                {menuItems}
+
+
+                
               </ul>
             </div>
 
