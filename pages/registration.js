@@ -12,6 +12,7 @@ import { transparentize } from 'polished'
 import { Link } from '/routes';
 
 import PageContainerComponent from 'components/PageContainerComponent';
+import CountryInputSelectComponent from 'components/CountryInputSelectComponent';
 
 import Head from 'next/head';
 
@@ -452,7 +453,7 @@ export default class extends React.Component {
   }
   
   translate = (t) => translate(t, 'registration', this.props.query.locale, {
-    "countries": true,
+    // "countries": true,
     "sectors": true,
     "project-categories": true
   });
@@ -833,14 +834,19 @@ export default class extends React.Component {
                             <FormField>
                               {this.getLabel('studentRecords.educationRecords.countryCode')}
 
-                              <select data-name="countryCode" data-section="studentEducationRecords" data-student-index={studentIndex} data-student-education-index={studentEducationIndex} onChange={this.onRecordChange} value={_.isEmpty(educationRecord['countryCode']) ? "" : educationRecord['countryCode']} onFocus={this.onFieldFocused} onBlur={this.onFieldBlurred}>
-                                <option value=""></option>
-                                {
-                                  countryCodes.map((code, index) => {
-                                    return <option value={code} key={code}>{this.translate(code)}</option>
-                                  })
-                                }
-                              </select>
+                              <CountryInputSelectComponent 
+                                locale={locale}
+                                dataName="countryCode" 
+                                dataSection="studentEducationRecords" 
+                                dataStudentIndex={studentIndex} 
+                                dataStudentEducationIndex={studentEducationIndex} 
+                                value={_.isEmpty(educationRecord['countryCode']) ? "" : educationRecord['countryCode']} 
+                                onFocus={this.onFieldFocused} 
+                                onBlur={this.onFieldBlurred} 
+                                onChange={this.onRecordChange} 
+                                
+                              />
+                                
                             </FormField>
                           </FormRow>
 
@@ -1002,14 +1008,17 @@ export default class extends React.Component {
 
                             <FormField>
                               {this.getLabel('advisorRecords.associationRecords.countryCode')}
-                              <select data-name="countryCode" data-section="advisorAssociationRecords" data-advisor-index={advisorIndex} data-advisor-association-index={associationRecordIndex} onChange={this.onRecordChange} value={_.isEmpty(associationRecord['countryCode']) ? "" : associationRecord['countryCode']} onFocus={this.onFieldFocused} onBlur={this.onFieldBlurred}>
-                                <option value=""></option>
-                                {
-                                  countryCodes.map((code, index) => {
-                                    return <option value={code} key={code}>{this.translate(code)}</option>
-                                  })
-                                }
-                              </select>
+                              <CountryInputSelectComponent 
+                                locale={locale}
+                                dataName="countryCode" 
+                                dataSection="advisorAssociationRecords" 
+                                dataAdvisorIndex={advisorIndex} 
+                                dataAdvisorAssociationIndex={associationRecordIndex} 
+                                value={_.isEmpty(associationRecord['countryCode']) ? "" : associationRecord['countryCode']}
+                                onFocus={this.onFieldFocused} 
+                                onBlur={this.onFieldBlurred} 
+                                onChange={this.onRecordChange} 
+                              />
                             </FormField>
                           </FormRow>
 
