@@ -194,6 +194,7 @@ export default class extends React.Component {
         institutionName: true,
         yearOfGraduation: true,
         state: true,
+        city: true,
         countryCode: true
       }
     },
@@ -208,6 +209,7 @@ export default class extends React.Component {
         organisationName: true,
         yearCommencement: true,
         state: true,
+        city: true,
         countryCode: true
       }
     },
@@ -262,6 +264,7 @@ export default class extends React.Component {
       title: "",
       sectorCode: "",
       state: "",
+      city: "",
       countryCode: "",
       yearCommencement: "",
       yearCessation: ""
@@ -284,6 +287,7 @@ export default class extends React.Component {
     return {
       institutionName: "",
       state: "",
+      city: "",
       countryCode: "",
       degree: "",
       programme: "",
@@ -812,9 +816,19 @@ export default class extends React.Component {
 
                           <FormRow>
                             <FormField>
+                              {this.getLabel('studentRecords.educationRecords.city')}
+                              <input type="text" data-name="city" data-section="studentEducationRecords" data-student-index={studentIndex} data-student-education-index={studentEducationIndex} onChange={this.onRecordChange} value={_.isEmpty(educationRecord['city']) ? "" : educationRecord['city']} onFocus={this.onFieldFocused} onBlur={this.onFieldBlurred}/>
+                            </FormField>
+
+                            <FormField>
                               {this.getLabel('studentRecords.educationRecords.state')}
                               <input type="text" data-name="state" data-section="studentEducationRecords" data-student-index={studentIndex} data-student-education-index={studentEducationIndex} onChange={this.onRecordChange} value={_.isEmpty(educationRecord['state']) ? "" : educationRecord['state']} onFocus={this.onFieldFocused} onBlur={this.onFieldBlurred}/>
                             </FormField>
+                          </FormRow>
+
+
+
+                          <FormRow>
 
                             <FormField>
                               {this.getLabel('studentRecords.educationRecords.countryCode')}
@@ -941,31 +955,6 @@ export default class extends React.Component {
 
 
                           
-
-
-
-
-                          <FormRow>
-                            <FormField>
-                              {this.getLabel('advisorRecords.associationRecords.state')}
-                              <input type="text" data-name="state" data-section="advisorAssociationRecords" data-advisor-index={advisorIndex} data-advisor-association-index={associationRecordIndex} onChange={this.onRecordChange} value={_.isEmpty(associationRecord['state']) ? "" : associationRecord['state']} onFocus={this.onFieldFocused} onBlur={this.onFieldBlurred}/>
-                            </FormField>
-
-                            <FormField>
-                              {this.getLabel('advisorRecords.associationRecords.countryCode')}
-                              <select data-name="countryCode" data-section="advisorAssociationRecords" data-advisor-index={advisorIndex} data-advisor-association-index={associationRecordIndex} onChange={this.onRecordChange} value={_.isEmpty(associationRecord['countryCode']) ? "" : associationRecord['countryCode']} onFocus={this.onFieldFocused} onBlur={this.onFieldBlurred}>
-                                <option value=""></option>
-                                {
-                                  countryCodes.map((code, index) => {
-                                    return <option value={code} key={code}>{this.translate(code)}</option>
-                                  })
-                                }
-                              </select>
-                            </FormField>
-                          </FormRow>
-
-
-
                           <FormRow>
                             <FormField>
                               {this.getLabel('advisorRecords.associationRecords.yearCommencement')}
@@ -991,6 +980,42 @@ export default class extends React.Component {
                               </select>
                             </FormField>
                           </FormRow>
+
+
+
+                          <FormRow>
+                            <FormField>
+                              {this.getLabel('advisorRecords.associationRecords.city')}
+                              <input type="text" data-name="city" data-section="advisorAssociationRecords" data-advisor-index={advisorIndex} data-advisor-association-index={associationRecordIndex} onChange={this.onRecordChange} value={_.isEmpty(associationRecord['city']) ? "" : associationRecord['city']} onFocus={this.onFieldFocused} onBlur={this.onFieldBlurred}/>
+                            </FormField>
+                            <FormField>
+                              {this.getLabel('advisorRecords.associationRecords.state')}
+                              <input type="text" data-name="state" data-section="advisorAssociationRecords" data-advisor-index={advisorIndex} data-advisor-association-index={associationRecordIndex} onChange={this.onRecordChange} value={_.isEmpty(associationRecord['state']) ? "" : associationRecord['state']} onFocus={this.onFieldFocused} onBlur={this.onFieldBlurred}/>
+                            </FormField>
+
+                            
+                          </FormRow>
+
+
+                          <FormRow>
+                            
+
+                            <FormField>
+                              {this.getLabel('advisorRecords.associationRecords.countryCode')}
+                              <select data-name="countryCode" data-section="advisorAssociationRecords" data-advisor-index={advisorIndex} data-advisor-association-index={associationRecordIndex} onChange={this.onRecordChange} value={_.isEmpty(associationRecord['countryCode']) ? "" : associationRecord['countryCode']} onFocus={this.onFieldFocused} onBlur={this.onFieldBlurred}>
+                                <option value=""></option>
+                                {
+                                  countryCodes.map((code, index) => {
+                                    return <option value={code} key={code}>{this.translate(code)}</option>
+                                  })
+                                }
+                              </select>
+                            </FormField>
+                          </FormRow>
+
+
+
+                          
 
                           
                           

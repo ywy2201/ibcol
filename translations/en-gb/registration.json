@@ -16,6 +16,7 @@
       "programme": "Programme or Major",
       "yearOfGraduation": "Year of Graduation",
       "institutionName": "Institution Name",
+      "city": "City",
       "state": "State/Territory",
       "countryCode": "Country"
     }
@@ -27,6 +28,7 @@
     "email": "Email",
     "associationRecords": {
       "organisationName": "Company / Organisation",
+      "city": "City",
       "state": "State/Territory",
       "countryCode": "Country",
       "title": "Title / Responsibility",
@@ -42,7 +44,7 @@
     "description": "Project Description"
   },
 
-  "studentEducationInfo": "Academic Achievement",
+  "studentEducationInfo": "Academic Credential",
   
   
   
@@ -50,8 +52,8 @@
   
   "addAnotherStudent": "+ Add Another Student",
   "removeStudent": "- Remove Student",
-  "addAnotherStudentEducationRecord": "+ Add Another Academic Achievement",
-  "removeStudentEducationRecord": "- Remove Academic Achievement",
+  "addAnotherStudentEducationRecord": "+ Add Another Academic Credential",
+  "removeStudentEducationRecord": "- Remove Academic Credential",
   "advisorInfo": "Advisor Information",
   "addAnAdvisor": "+ Add An Advisor",
   "addAnotherAdvisor": "+ Add Another Advisor",
