@@ -255,6 +255,4 @@
 
     })();
 
-    console.log("FFFF");
-
 })(jQuery);
