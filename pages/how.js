@@ -72,7 +72,7 @@ export default class extends React.Component {
                 </div>
                 <div className="col-block" style={{"width": "100%"}}>
                     <div className="table-responsive">
-                        <table>
+                        <table><tbody>
                             <tr>
                                 <td className="minw"></td>
                                 <td className="minw"><b>{this.translate('plans.superEarlyBird.name')}</b></td>
@@ -103,7 +103,7 @@ export default class extends React.Component {
                                 <td dangerouslySetInnerHTML={{__html:this.translate('plans.earlyBird.financialAssistanceDetails')}}/>
                                 <td dangerouslySetInnerHTML={{__html:this.translate('plans.regular.financialAssistanceDetails')}}/>
                             </tr>
-                        </table>
+                        </tbody></table>
                         <p className="show-mobile">{this.translate('plans.viewMoreLabel')}<br/><i className="material-icons">arrow_right_alt</i></p>
                     </div>
                 </div>
@@ -196,7 +196,7 @@ export default class extends React.Component {
                 </div>
                 <div className="col-block" style={{"width": "100%"}}>
                     <div className="table-responsive">
-                        <table>
+                        <table><tbody>
                             <tr>
                                 <td className="minw"></td>
                                 <td className="minw"><b>{this.translate('plans.superEarlyBird.name')}</b></td>
@@ -221,7 +221,7 @@ export default class extends React.Component {
                                 <td>{this.translate('plans.earlyBird.feeSchedule.additionalCategory')}</td>
                                 <td>{this.translate('plans.regular.feeSchedule.additionalCategory')}</td>
                             </tr>
-                        </table>
+                        </tbody></table>
                     </div>
                     <p className="show-mobile">{this.translate('plans.viewMoreLabel')}<br/><i className="material-icons">arrow_right_alt</i></p>
                     <p style={{color: "red"}}>{this.translate('plans.specialNotice')}</p>
