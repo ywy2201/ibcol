@@ -2,7 +2,7 @@
   "pageTitle": "Our Sponsors",
   "seoDescription": "",
   "ogImage": "",
-  "subhead": "Sponsors & Supporters of the 2019 International Blockchain Olympaid",
+  "subhead": "Sponsoren & Träger der 2019 Internationalen Blockchain Olympiade",
   "sponsorsTitle": "Sponsors",
   "sponsors": [
     {
@@ -39,5 +39,5 @@
       "description": "<b>Blockchain Education Network</b> is made up of students and alumni across the world who are creating bitcoin and blockchain clubs on their academic campuses. By exploring this socioeconomic experiment within the safety of their peers, students build new expectations and innovations."
     }
   ],
-  "prompt": "<p>If your organisation is interested in supporting the International Blockchain Olympiad, please contact <a href='mailto:sponsors@ibcol.org'>sponsors@ibcol.org</a></p>"
+  "prompt": "<p>Falls ihr Unternehmen Interesse an einer Förderung der Internationalen Blockchain Olympiade hat, kontaktieren Sie uns bitte per <a href='mailto:sponsors@ibcol.org'>sponsors@ibcol.org</a></p>"
 }

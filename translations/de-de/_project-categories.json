@@ -1,31 +1,31 @@
 {
   "FINTECH": {
     "name": "Fintech",
-    "description": "Financial Technology broadly encapsulates activities in the traditional finance sector, as well as in insurance, trading, and risk management.",
+    "description": "Finanztechnologie umfasst Aktivitäten des traditionellen Finanzsektors, sowie in den Bereichen Versicherung, Handel und Risikomanagement.",
     "color": "blue",
     "icon": "show_chart"
   },
   "GOVTECH": {
     "name": "Govtech",
-    "description": "Government Technology describes key platform and infrastructure solutions required for administrative responsibilities of a sovereign state or territory.",
+    "description": "Government Technology beschreibt Plattform- und Infrastrukturlösungen, welche für die Verwaltungsverantwortung eines souveränen Staates oder Territoriums erforderlich sind.",
     "color": "yellow",
     "icon": "account_balance"
   },
   "MEDTECH": {
     "name": "Medtech",
-    "description": "Medical Technology is a collection of applications that solve health related issues and improve the quality of lives, for humans or otherwise.",
+    "description": "Die Medizintechnik umfasst Anwendungen, welche gesundheitsbezogene Probleme lösen und welche die Lebensqualität für Menschen oder andere verbessern.",
     "color": "black",
     "icon": "local_hospital"
   },
   "IOT_O2O": {
     "name": "IoT / O2O",
-    "description": "Internet of Things / Online-to-Offline / vice versa concerns bridging of digital and physical worlds, i.e. interpreting real-life situations and phenomena into machine-useable data.",
+    "description": "IoT / Online-zu-Offline / vice versa umfassen die Überbrückung digitaler und physischer Welten, nämlich die Interpretation realer Situationen und Phänomene in maschinell verwendbare Daten.",
     "color": "green",
     "icon": "local_shipping"
   },
   "ARTS_MEDIA": {
-    "name": "Arts / Media",
-    "description": "Art and media technology encompassing human activities in public and commercial communications, entertainment, and adjacent industries.",
+    "name": "Kunst / Medien",
+    "description": "Kunst- und Medientechnologie umfassen Aktivitäten in der öffentlichen und kommerziellen Kommunikation, Unterhaltung und angrenzenden Branchen.",
     "color": "red",
     "icon": "color_lens"
   }
