@@ -22,6 +22,10 @@ import styled, { createGlobalStyle, ThemeProvider } from 'styled-components';
 import { media, style } from 'helpers/styledComponents.js';
 import { transparentize } from 'polished';
 
+import { ApolloProvider } from 'react-apollo';
+// import { AccountsGraphQLClient } from '@accounts/graphql-client';
+import withApollo from 'helpers/withApollo';
+
 import translations from 'translations';
 
 
@@ -86,54 +90,54 @@ class MyApp extends App {
 
 
   render() {
-    const { Component, pageProps, router } = this.props;
+    const { Component, pageProps, router, apollo } = this.props;
     const query = router.query;
     const locale = query !== undefined ? query.locale !== undefined ? query.locale : translations["_default"]._locale.id : translations["_default"]._locale.id;
 
 
 
     return <Container>
-      
-      <GlobalStyle/>
+      <ApolloProvider client={apollo}>
+        <GlobalStyle/>
 
-      
-      {/* <LoaderComponent/> */}
-
-
-      <MenuComponent locale={locale}/>
-      
-
-    <Component {...pageProps} locale={locale} />
-
-
-
-
-
-      <footer>
-        <div className="ss-go-top">
-
-          {/* <a href="registration.html" className="register btn btn--primary btn--large">
-              {this.translate('footerMenu.registrationInfo')}
-          </a> */}
-          {/* <Link prefetch route="competition" params={{ locale }}>
-            <a className="more-info btn btn--large">
-                {this.translate('footerMenu.aboutCompetition')}
-            </a>
-          </Link> */}
-          <a className="smoothscroll btn btn--large" title={this.translate('footerMenu.backToTop')} href="#top">
-              {this.translate('footerMenu.backToTop')}
-          </a>
-        </div>
-
-        <div className="row">
-          <div className="col-full ss-copyright">
-            <span dangerouslySetInnerHTML={{ __html: this.translate('copyright') }} />
-          </div>
-        </div>
         
-      </footer>
-      
-      
+        {/* <LoaderComponent/> */}
+
+
+        <MenuComponent locale={locale}/>
+        
+
+      <Component {...pageProps} locale={locale} />
+
+
+
+
+
+        <footer>
+          <div className="ss-go-top">
+
+            {/* <a href="registration.html" className="register btn btn--primary btn--large">
+                {this.translate('footerMenu.registrationInfo')}
+            </a> */}
+            {/* <Link prefetch route="competition" params={{ locale }}>
+              <a className="more-info btn btn--large">
+                  {this.translate('footerMenu.aboutCompetition')}
+              </a>
+            </Link> */}
+            <a className="smoothscroll btn btn--large" title={this.translate('footerMenu.backToTop')} href="#top">
+                {this.translate('footerMenu.backToTop')}
+            </a>
+          </div>
+
+          <div className="row">
+            <div className="col-full ss-copyright">
+              <span dangerouslySetInnerHTML={{ __html: this.translate('copyright') }} />
+            </div>
+          </div>
+          
+        </footer>
+        
+      </ApolloProvider>
     </Container>
   }
 }
@@ -148,4 +152,4 @@ MyApp.defaultProps = {
   // activeClassName: "active"
 }
 
-export default MyApp;
+export default withApollo(MyApp);
