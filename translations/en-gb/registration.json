@@ -68,5 +68,12 @@
   "removeProject": "- Remove Project",
   "addAnotherProject": "+ Add Another Project",
   
-  "submit": "Submit"
+  "submit": "Submit",
+  "registerAnother": "Create Another Application",
+  "confirmation": {
+    "title": "Thank you for your regisration.",
+    "message": "We have received your application. We will be in touch shortly.",
+    "refTitle": "Application Reference:",
+    "teamNameTitle": "Team Name:"
+  }
 }
