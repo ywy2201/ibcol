@@ -144,11 +144,11 @@ class MenuComponent extends React.Component {
         </NavLinkComponent>
       </li>
 
-      {/* <li className="featured">
+      <li className="featured">
         <NavLinkComponent prefetch route="registration" params={{ locale }}>
           {this.translate('menu.registration')}
         </NavLinkComponent>
-      </li> */}
+      </li>
     </>
 
     return (
@@ -218,7 +218,7 @@ class MenuComponent extends React.Component {
 
 
 MenuComponent.propTypes = {
-  locale: PropTypes.string,
+  locale: PropTypes.string.isRequired,
 }
 
 MenuComponent.defaultProps = {

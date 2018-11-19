@@ -55,7 +55,7 @@ export default class extends React.Component {
           <title>{this.translate('siteTitle')} {this.translate('titleSeparator')} {this.translate('pageTitle')}</title>
         </Head>
         
-        <section id="general" className="s-section target-section first last">
+        <section className="s-section target-section first last">
 
           <div className="row section-header">
             <div className="col-full">
