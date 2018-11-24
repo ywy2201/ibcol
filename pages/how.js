@@ -231,9 +231,11 @@ export default class extends React.Component {
 
             <div className="block-tab-full">
                 <div className="col-block" style={{"width": "100%"}}>
-                    <a className="btn btn--large no-click" style={{"margin": "3rem auto", "display": "block", "width": "60%", "cursor": "not-allowed"}}>
-                        {this.translate('applyNowCTALabel')}
-                    </a>
+                    <Link prefetch route="registration" params={{ locale }}>
+                        <a className="btn btn--large btn--primary" style={{"margin": "3rem auto", "display": "block", "width": "60%"}}>
+                            {this.translate('applyNowCTALabel')}
+                        </a>
+                    </Link>
                 </div>
             </div>
 
