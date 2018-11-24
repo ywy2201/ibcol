@@ -161,7 +161,7 @@ translate = (t) => translate(t, 'ambassadors', this.props.query.locale);
             </div>
             <div className="block-tab-full">
                 <div className="col-block" style={{"width": "100%"}}>
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSc2U64f1PK6YZy8mlFVM1MgH8sEPZw-jwNBaxKhvyzuNfeNTA/viewform" className="btn btn--primary btn--large" style={{"margin": "3rem auto", "display": "block", "width": "60%"}}>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSc2U64f1PK6YZy8mlFVM1MgH8sEPZw-jwNBaxKhvyzuNfeNTA/viewform" target="_blank" className="btn btn--primary btn--large" style={{"margin": "3rem auto", "display": "block", "width": "60%"}}>
                         {this.translate('applyNowButtonLabel')}
                     </a>
                 </div>
