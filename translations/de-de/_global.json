@@ -1,0 +1,29 @@
+{
+  "siteTitle": "IBCOL",
+  "seoDescription": "",
+  "ogImage": "",
+  "logoTag": "IBCOL: Internationale Blockchain Olympiade",
+  "titleSeparator": "|",
+  "menu": {
+    "home": "Übersetzung",
+    "about": "Über uns",
+    "how": "Wie nimmt man teil",
+    "competition": "Wettbewerb",
+    "ambassadors": "Studenten",
+    "sponsors": "Sponsoren",
+    "schedule": "Schedule & Programme",
+    "contact": "Kontakt",
+    "registration": "Registration"
+  },
+  "footerMenu": {
+    "backToTop": "Zurück nach oben",
+    "aboutCompetition": "Mehr zum Wettbewerb",
+    "registrationInfo": "Registration"
+  },
+  
+  "closeMenu": "Close",
+  "navigateTo": "Navigiere zu",
+  "copyright": "Copyright &copy; 2018 Internationale Blockchain-Olympiade. Alle Rechte vorbehalten."
+  
+
+}

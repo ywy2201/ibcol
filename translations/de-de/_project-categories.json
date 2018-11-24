@@ -1,0 +1,33 @@
+{
+  "FINTECH": {
+    "name": "Fintech",
+    "description": "Finanztechnologie umfasst Aktivitäten des traditionellen Finanzsektors, sowie in den Bereichen Versicherung, Handel und Risikomanagement.",
+    "color": "blue",
+    "icon": "show_chart"
+  },
+  "GOVTECH": {
+    "name": "Govtech",
+    "description": "Government Technology beschreibt Plattform- und Infrastrukturlösungen, welche für die Verwaltungsverantwortung eines souveränen Staates oder Territoriums erforderlich sind.",
+    "color": "yellow",
+    "icon": "account_balance"
+  },
+  "MEDTECH": {
+    "name": "Medtech",
+    "description": "Die Medizintechnik umfasst Anwendungen, welche gesundheitsbezogene Probleme lösen und welche die Lebensqualität für Menschen oder andere verbessern.",
+    "color": "black",
+    "icon": "local_hospital"
+  },
+  "IOT_O2O": {
+    "name": "IoT / O2O",
+    "description": "IoT / Online-zu-Offline / vice versa umfassen die Überbrückung digitaler und physischer Welten, nämlich die Interpretation realer Situationen und Phänomene in maschinell verwendbare Daten.",
+    "color": "green",
+    "icon": "local_shipping"
+  },
+  "ARTS_MEDIA": {
+    "name": "Kunst / Medien",
+    "description": "Kunst- und Medientechnologie umfassen Aktivitäten in der öffentlichen und kommerziellen Kommunikation, Unterhaltung und angrenzenden Branchen.",
+    "color": "red",
+    "icon": "color_lens"
+  }
+
+}
