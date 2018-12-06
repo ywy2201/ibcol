@@ -1,0 +1,62 @@
+{
+  "pageTitle":"",
+  "seoDescription":"",
+  "ogImage":"../../static/images/ogimage.jpg",
+  "subhead":"",
+  "schoolAmbassadorsTitle":"",
+  "schoolAmbassadorsDescriptions":"",
+  "applyAmbassadorsLabel":"",
+  "schoolAmbassadors":[
+    {"flag":"flag-icon-hu","countryCode":"hu","title":"Budapesti Metropolitan Egyetem","ambassadors":[
+      {"name":"Viktor Tabori","email":"viktor.tabori@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-hu","countryCode":"hu","title":"Budapesti Műszaki és Gazdaságtudományi Egyetem","ambassadors":[
+      {"name":"Viktor Tabori","email":"viktor.tabori@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-hu","countryCode":"hu","title":"Közép-európai Egyetem","ambassadors":[
+      {"name":"Viktor Tabori","email":"viktor.tabori@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-hu","countryCode":"hu","title":"Budapesti Corvinus Egyetem","ambassadors":[
+      {"name":"Viktor Tabori","email":"viktor.tabori@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-ua","countryCode":"ua","title":"Donetsk State University of Economics and Trade (DonNUET)","ambassadors":[
+      {"name":"Marina Danylyuk","email":"marina.danylyuk@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-kr","countryCode":"kr","title":"Korea Advanced Institute of Science and Technology (KAIST)","ambassadors":[
+      {"name":"Sung Soo Kim","email":"sungsoo.kim@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-ru","countryCode":"ru","title":"Moscow State University (MSU)","ambassadors":[
+      {"name":"Marina Danylyuk","email":"marina.danylyuk@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-us","countryCode":"us","title":"Stanford University","ambassadors":[
+      {"name":"Julian Gropp","email":"julian.gropp@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-de","countryCode":"de","title":"Müncheni Műszaki Egyetem","ambassadors":[
+      {"name":"Julian Gropp","email":"julian.gropp@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-us","countryCode":"us","title":"Kaliforniai Egyetem Berkeley","ambassadors":[
+      {"name":"Alex Rusnak","email":"alex.rusnak@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-ca","countryCode":"ca","title":"University of Waterloo (UW)","ambassadors":[
+      {"name":"Gabriel Chan","email":"gabriel.chan@ibcol.org"},
+      {"name":"Danielle Cadoret","email":"danielle.cadoret@ibcol.org"},
+      {"name":"Mika Tsoi","email":"mika.tsoi@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-my","countryCode":"my","title":"Universiti Sains Malaysia (USM)","ambassadors":[
+      {"name":"Fei Yee Yeoh","email":"feiyee.yeoh@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-ua","countryCode":"ua","title":"Yaroslav Mudryi National Law University","ambassadors":[
+      {"name":"Marina Danylyuk","email":"marina.danylyuk@ibcol.org"}
+    ]}
+  ],
+  "schoolAmbassadorProgrammeTitle":"",
+  "schoolAmbassadorProgrammeDescription":"",
+  "responsibilitiesTitle":"",
+  "responsibilities":["","","","","",""],
+  "perksTitle":"",
+  "perks":["","","",""],
+  "applyNowButtonLabel":"",
+  "comingSoonButtonLabel":"",
+  "financialAssistanceTitle":"",
+  "financialAssistanceDescription":""
+}

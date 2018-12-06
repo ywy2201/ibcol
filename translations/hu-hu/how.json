@@ -1,0 +1,64 @@
+{
+  "pageTitle":"",
+  "seoDescription":"",
+  "ogImage":"../../static/images/ogimage.jpg",
+  "subhead":"Jelentkezés a 2019-es Nemzetközi Blockchain Olimpiára",
+  "whenToJoinHeading":"Mikor jelentkezz",
+  "plans":{
+    "fromLabel":"Mikortól",
+    "toLabel":"Meddig",
+    "feeLabel":"Regisztrálás",
+    "financialAssistanceLabel":"Pénzügyi támogatás",
+    "viewMoreLabel":"",
+    "secondaryLabel":"",
+    "postSecondaryLabel":"",
+    "additionalCategoryLabel":"",
+    "specialNotice":"",
+    "superEarlyBird":{
+      "name":"Szuper early bird",
+      "fromDate":"Ma",
+      "toDate":"péntek<br/>2019 február 1. <br/>00:00 HKT",
+      "fee":"Díjmentes",
+      "financialAssistanceDetails":"",
+      "feeSchedule":{
+        "secondary":"",
+        "postSecondary":"",
+        "additionalCategory":""
+      }
+    },
+    "earlyBird":{
+      "name":"Early bird",
+      "fromDate":"szombat<br/>2019 február 2. <br/>00:00 HKT",
+      "toDate":"hétfő<br/>2019 április 1.<br/>00:00 HKT",
+      "fee":"Díjmentes",
+      "financialAssistanceDetails":"",
+      "feeSchedule":{
+        "secondary":"",
+        "postSecondary":"",
+        "additionalCategory":""
+      }
+    },
+    "regular":{
+      "name":"Normál",
+      "fromDate":"kedd<br/>2019 április 2.<br/>00:00 HKT",
+      "toDate":"vasárnap<br/>2019 április 21. <br/>00:00 HKT",
+      "fee":"Díjat kell fizetni",
+      "financialAssistanceDetails":"",
+      "feeSchedule":{
+        "secondary":"",
+        "postSecondary":"",
+        "additionalCategory":""
+      }
+    }
+  },
+  "howToJoinHeading":"",
+  "teamLabel":"",
+  "teamExplained":"",
+  "projectLabel":"",
+  "projectExplained":"",
+  "categoryLabel":"",
+  "categoryExplained":"",
+  "categoriesHeading":"",
+  "feeScheduleHeading":"",
+  "applyNowCTALabel":""
+}
