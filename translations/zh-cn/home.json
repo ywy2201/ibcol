@@ -20,29 +20,29 @@
   },
   "timelineSection":{
     "heading":"比赛流程",
-    "block01":{
+    "block1":{
       "title":"登记",
       "details":"超级早鸟　直到2月1日<br/>早鸟　直到4月1日<br/>一般　直到4月21日"
     },
-    "block02":{
+    "block2":{
       "title":"白皮書",
-      "details":"白皮书需于4月21日或之前通过网上提交"
+      "details":"白皮书<br/>需于4月21日或之前<br/>通过网上提交"
     },
-    "block03":{
+    "block3":{
       "title":"訪問",
-      "details":"通过电话会议面试 五月及六月举行"
+      "details":"通过电话会议面试<br/>五月及六月举行"
     },
-    "block04":{
+    "block4":{
       "title":"模擬示範",
-      "details":"七月期间在科技博览会模拟示范"
+      "details":"七月期间<br/>在科技博览会<br/>模拟示范"
     },
-    "block05":{
+    "block5":{
       "title":"開幕",
-      "details":"「7月在舞台上正式開幕」"
+      "details":"7月<br/>在舞台上<br/>正式开幕"
     },
-    "block06":{
+    "block6":{
       "title":"延續",
-      "details":"七月後通過加速器繼續"
+      "details":"七月后<br/>通过加速器继续"
     }
   },
   "section01":{

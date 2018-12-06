@@ -20,29 +20,29 @@
   },
   "timelineSection":{
     "heading":"比賽流程",
-    "block01":{
+    "block1":{
       "title":"登記",
       "details":"超級早鳥　直到2月1日<br/>早鳥　直到4月1日<br/>一般　直到4月21日"
     },
-    "block02":{
+    "block2":{
       "title":"白皮書",
-      "details":"白皮書需於4月21日或之前通過網上提交"
+      "details":"白皮書<br/>需於4月21日或之前<br/>通過網上提交"
     },
-    "block03":{
+    "block3":{
       "title":"訪問",
-      "details":"通過電話會議面試 五月及六月舉行"
+      "details":"通過電話會議面試<br/>五月及六月舉行"
     },
-    "block04":{
+    "block4":{
       "title":"模擬示範",
-      "details":"七月期間在科技博覽會模擬示範"
+      "details":"七月期間<br/>在科技博覽會<br/>模擬示範"
     },
-    "block05":{
+    "block5":{
       "title":"開幕",
-      "details":"「7月在舞台上正式開幕」"
+      "details":"7月<br/>在舞台上<br/>正式開幕"
     },
-    "block06":{
+    "block6":{
       "title":"延續",
-      "details":"七月後通過加速器繼續"
+      "details":"七月後<br/>通過加速器繼續"
     }
   },
   "section01":{
