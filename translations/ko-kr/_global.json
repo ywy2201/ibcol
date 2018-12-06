@@ -1,0 +1,26 @@
+{
+  "siteTitle":"국제 블록체인 올림피아드 (IBCOL)",
+  "seoDescription":"",
+  "ogImage":"../../static/images/ogimage.jpg",
+  "logoTag":"IBCOL: 국제 블록체인 올림피아드",
+  "titleSeparator":"|",
+  "menu":{
+    "home":"홈페이지",
+    "about":"",
+    "how":"참가 신청 방법",
+    "competition":"공모 대회",
+    "ambassadors":"학생",
+    "sponsors":"스폰서",
+    "schedule":"프로그램",
+    "contact":"연락처",
+    "registration":"참가 신청"
+  },
+  "footerMenu":{
+    "backToTop":"위로 가기",
+    "aboutCompetition":"대회 내용",
+    "registrationInfo":"참가 신청"
+  },
+  "closeMenu":"닫기",
+  "navigateTo":"...로 이동",
+  "copyright":"Copyright © 2018 국제 블록체인 올림피아드. All rights reserved."
+}

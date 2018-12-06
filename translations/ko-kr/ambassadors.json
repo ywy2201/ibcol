@@ -1,0 +1,62 @@
+{
+  "pageTitle":"학교 대사",
+  "seoDescription":"",
+  "ogImage":"../../static/images/ogimage.jpg",
+  "subhead":"2019년 국제 블록체인 올림피아드 학생 관계",
+  "schoolAmbassadorsTitle":"학교 대사",
+  "schoolAmbassadorsDescriptions":"학교 대사는 각 캠퍼스에서 IBCOL 2019를 대표합니다",
+  "applyAmbassadorsLabel":"IBCOL 학교 대사에 지원하세요",
+  "schoolAmbassadors":[
+    {"flag":"flag-icon-hu","countryCode":"hu","title":"Budapest Metropolitan University (METU)","ambassadors":[
+      {"name":"빅토르 타보리","email":"viktor.tabori@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-hu","countryCode":"hu","title":"Budapest University of Technology and Economics (BME)","ambassadors":[
+      {"name":"빅토르 타보리","email":"viktor.tabori@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-hu","countryCode":"hu","title":"Central European University (CEU)","ambassadors":[
+      {"name":"빅토르 타보리","email":"viktor.tabori@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-hu","countryCode":"hu","title":"부다페스트 코르비누스 대학교","ambassadors":[
+      {"name":"빅토르 타보리","email":"viktor.tabori@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-ua","countryCode":"ua","title":"Donetsk State University of Economics and Trade (DonNUET)","ambassadors":[
+      {"name":"마리나 달리류크","email":"marina.danylyuk@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-kr","countryCode":"kr","title":"한국과학기술원 (카이스트)","ambassadors":[
+      {"name":"김성수","email":"sungsoo.kim@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-ru","countryCode":"ru","title":"모스크바 국립 대학교","ambassadors":[
+      {"name":"마리나 달리류크","email":"marina.danylyuk@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-us","countryCode":"us","title":"스탠퍼드 대학교","ambassadors":[
+      {"name":"줄리언 게로프","email":"julian.gropp@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-de","countryCode":"de","title":"뮌헨 공과대학교","ambassadors":[
+      {"name":"줄리언 게로프","email":"julian.gropp@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-us","countryCode":"us","title":"캘리포니아 대학교 버클리","ambassadors":[
+      {"name":"알렉스 루스낙","email":"alex.rusnak@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-ca","countryCode":"ca","title":"워털루 대학교","ambassadors":[
+      {"name":"진가호","email":"gabriel.chan@ibcol.org"},
+      {"name":"다니엘 카도레","email":"danielle.cadoret@ibcol.org"},
+      {"name":"최미카","email":"mika.tsoi@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-my","countryCode":"my","title":"Universiti Sains Malaysia (USM)","ambassadors":[
+      {"name":"양비일","email":"feiyee.yeoh@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-ua","countryCode":"ua","title":"Yaroslav Mudryi National Law University","ambassadors":[
+      {"name":"마리나 달리류크","email":"marina.danylyuk@ibcol.org"}
+    ]}
+  ],
+  "schoolAmbassadorProgrammeTitle":"학교 대사 프로그램",
+  "schoolAmbassadorProgrammeDescription":"기술, 혁신 또는 학생 대회에 대한 열정이 있습니까? 최초의 국제 블록체인 올림피아드 (International Blockchain Olympiad) 에 참여하십시오! 현재 각 학교 캠퍼스에서 IBCOL 2019를 홍보 할 학교 대사를 찾고 있습니다.",
+  "responsibilitiesTitle":"임무",
+  "responsibilities":["캠퍼스에서 국제 블록체인 올림피아드 홍보","관심있는 캠퍼스 학생들 모집","관심있는 지원자와 등록 된 참가자 간의 학생 접점이(Point of Contact) 되어 리드하기","지원금을 보조받기 위해 학생 단체, 교수 또는 부서와 협의","IBCOL 2019 참가자들이 팀 구성, 블록체인 교육 및 홍보를 할 수 있도록 이벤트 조직","국제 블록체인 올림피아드의 가장 큰 관심사가 되어 행동하기"],
+  "perksTitle":"혜택",
+  "perks":["기업, 정부 및 블록 체인 세계에 대한 소중한 경험과 통찰력 얻기","홍콩 블록체인 학회 (Hong Kong Blockchain Society)에서 발급 한 1 회 무료 강좌 (DC3) (금액가치 : US$2,000)","국제 블록체인 올림피아드에서 발행 한 학교 대사 증명서","추천 된 각 팀에 대해 IBCOL 2019 참가 티켓 10 % 할인 (금액가치 최대 US$2,000 USD 상당의 기술 박람회 (Tech Expo), 대담, 오찬 및 네트워킹 세션 2 일간 포함). 예를 들어 3개의 추천된 팀은 30 %, 7 개 추천된 팀은 70 % 할인되며, 10 명이 100 % 할인이 됨 (즉, 무료임)"],
+  "applyNowButtonLabel":"지금 신청하기",
+  "comingSoonButtonLabel":"Coming Soon",
+  "financialAssistanceTitle":"지원금 보조 옵션",
+  "financialAssistanceDescription":"지원자는 경쟁 결과에 영향을 받지 않고 사례별로 평가됨. 학생들은 IBCOL 2019에 참가하는 재정적 부담을 줄이기 위해 참가비(entry fee), 홍콩까지의 경비와 숙박 지원비 같은 보조금을 신청할 수 있음. 2 월 1 일 이전 신청자에게만 자격이 주어짐."
+}

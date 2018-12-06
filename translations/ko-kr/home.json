@@ -1,0 +1,91 @@
+{
+  "pageTitle":"국제 블록체인 올림피아드",
+  "seoDescription":"",
+  "ogImage":"../../static/images/ogimage.jpg",
+  "mainHeading":"블록체인으로 세상을 옮기세요",
+  "subHeading":"세계 최고의 블록체인 기술자들을 만나고 경쟁하세요",
+  "register":"참가 신청 정보",
+  "howToJoin":"참가 신청 방법",
+  "competitionRules":"대회 과정",
+  "scroll":"스크롤",
+  "introSection":{
+    "leftBlock":{
+      "title":"대부분의 해커톤 (Hackathon)은 유용한 결과를 만들어 내지 못합니다",
+      "infoList":"<li>다방면을 구축한 프로젝트를 만들어 내기 불충분한 시간</li><li>기술에만 치우치고, 현실과는 거리가 먼 프로젝트</li><li>프로젝트를 계속 개발해 갈 수 있는 동기 부여 부족</li>"
+    },
+    "rightBlock":{
+      "title":"이 대회는 유용한 결과를 만들어 낼 것 입니다",
+      "infoList":"<li>오늘부터 2019년 7월까지 일부분 실행</li><li>블록체인 적용을 위한 다양한 접근 법</li><li>프로젝트를 함께 진행 할 수 있는 회사와의 매칭</li>"
+    }
+  },
+  "timelineSection":{
+    "heading":"대회 과정",
+    "block01":{
+      "title":"참가 신청비",
+      "details":"2월 1일까지 수퍼 얼리버드 (Early Bird)<br/>4월 1일까지 얼리버드 (Early Bird)<br/>4월 21일까지 레귤러 (Regular) "
+    },
+    "block02":{
+      "title":"",
+      "details":"4월 21일 백서 온라인 접수 마감"
+    },
+    "block03":{
+      "title":"",
+      "details":"5월 & 6월 화상회의 인터뷰"
+    },
+    "block04":{
+      "title":"",
+      "details":"테크 엑스포에서 7월 시범"
+    },
+    "block05":{
+      "title":"",
+      "details":"7월 발표"
+    },
+    "block06":{
+      "title":"",
+      "details":"엑셀러레이터 (Accelerator)와 7월 이후 계속 진행"
+    }
+  },
+  "section01":{
+      "languageTitle":"언어",
+      "writtenLanguageLabel":"필기 문서 수용 가능한 언어:",
+      "writtenLanguages":"아랍어 (표준어), 중국어 (간체), 중국어 (번체), 영어, 프랑스어, 독일어, 헝가리어, 일본어, 한국어, 페르시아어, 폴란드어, 포르투갈어, 러시아어, 스페인어, 우크라이나어",
+      "spokenLanguageLabel":"스피킹 수용 가능한 언어:",
+      "spokenLanguages":"아랍어 (이집트), 아랍어 (걸프), 광동어, 영어, 프랑스어, 독일어, 헝가리어, 일본어, 한국어, 중국어, 페르시아어, 폴란드어, 포르투갈어, 러시아어, 스페인어, 우크라이나어"
+  },
+  "section02":{
+    "heading":"수상",
+    "awards":{
+      "gold":{
+        "quantity":5,
+        "title":"금메달",
+        "description":"1위 수상자에게 US$4,096 수여"
+      },
+      "silver":{
+        "quantity":5,
+        "title":"은메달",
+        "description":"2위 수상자에게 US$2,048 수여"
+      },
+      "bronze":{
+        "quantity":5,
+        "title":"동메달",
+        "description":"3위 수상자에게 US$1,024 수여"
+      },
+      "nominee":{
+        "quantity":15,
+        "title":"지명자 수상",
+        "description":"우승 팀 지명을 한 팀 코치에게 수여"
+      },
+      "finalist":{
+        "quantity":10,
+        "title":"결선 진출자 수상",
+        "description":"각 카테고리별 상위 5 팀에게 수여"
+      },
+      "merit":{
+        "quantity":50,
+        "title":"공로상",
+        "description":"완벽한 솔루션 설계를 해준 팀에게 수여"
+      },
+      "note":"학생들에게 최고의 수상은 상금이 아니라, 경험, 지도 및 세상에 실제 영향을 줄 수 있는 기회입니다."
+    }
+  }
+}
