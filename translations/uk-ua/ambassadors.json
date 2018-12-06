@@ -38,8 +38,8 @@
       {"name":"Олексій Руснак","email":"alex.rusnak@ibcol.org"}
     ]},
     {"flag":"flag-icon-ca","countryCode":"ca","title":"Університет Ватерлоо","ambassadors":[
-      {"name":"Гавриїл Чан","email":"gabriel.chan@ibcol.org"}
-      {"name":"Даниэль Кадоре","email":"danielle.cadoret@ibcol.org"}
+      {"name":"Гавриїл Чан","email":"gabriel.chan@ibcol.org"},
+      {"name":"Даниэль Кадоре","email":"danielle.cadoret@ibcol.org"},
       {"name":"Мика Цой","email":"mika.tsoi@ibcol.org"}
     ]},
     {"flag":"flag-icon-my","countryCode":"my","title":"Universiti Sains Malaysia (USM)","ambassadors":[
