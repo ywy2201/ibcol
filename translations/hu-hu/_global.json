@@ -1,0 +1,26 @@
+{
+  "siteTitle":"Nemzetközi Blockchain Olimpia (NBO)",
+  "seoDescription":"",
+  "ogImage":"../../static/images/ogimage.jpg",
+  "logoTag":"IBCOL: Nemzetközi Blockchain Olimpia",
+  "titleSeparator":"|",
+  "menu":{
+    "home":"Főoldal",
+    "about":"",
+    "how":"",
+    "competition":"Verseny",
+    "ambassadors":"Diákok",
+    "sponsors":"Szponzorok",
+    "schedule":"",
+    "contact":"Kapcsolat",
+    "registration":"Jelentkezés"
+  },
+  "footerMenu":{
+    "backToTop":"Az oldal tetejére",
+    "aboutCompetition":"A versenyről",
+    "registrationInfo":"Jelentkezés"
+  },
+  "closeMenu":"",
+  "navigateTo":"",
+  "copyright":"Copyright © 2018 International Blockchain Olympiad. Minden jog fenntartva."
+}

@@ -1,177 +1,62 @@
 {
-  "pageTitle": "Internationale Blockchain Olympiade: Studentenbeziehungen",
-  "seoDescription": "",
-  "ogImage": "",
-  "subhead": "Studentenbeziehungen für die Internationale Blockchain Olympiade 2019",
-  "schoolAmbassadorsTitle": "Schulbotschafter",
-  "schoolAmbassadorsDescriptions": "Schulbotschafter vertreten IBCOL 2019 auf ihrem Campus",
-  "applyAmbassadorsLabel": "Apply to be an IBCOL school ambassador",
-  "schoolAmbassadors": [
-    {
-      "flag": "flag-icon-hu",
-      "countryCode": "hu",
-      "title": "Budapest Metropolitan University (METU)",
-      "ambassadors": [
-        {
-          "name": "Viktor Tabori",
-          "email": "viktor.tabori@ibcol.org"
-        }
-      ]
-    },
-    {
-      "flag": "flag-icon-hu",
-      "countryCode": "hu",
-      "title": "Budapest University of Technology and Economics (BME)",
-      "ambassadors": [
-        {
-          "name": "Viktor Tabori",
-          "email": "viktor.tabori@ibcol.org"
-        }
-      ]
-    },
-    {
-      "flag": "flag-icon-hu",
-      "countryCode": "hu",
-      "title": "Central European University (CEU)",
-      "ambassadors": [
-        {
-          "name": "Viktor Tabori",
-          "email": "viktor.tabori@ibcol.org"
-        }
-      ]
-    },
-    {
-      "flag": "flag-icon-hu",
-      "countryCode": "hu",
-      "title": "Corvinus University of Budapest",
-      "ambassadors": [
-        {
-          "name": "Viktor Tabori",
-          "email": "viktor.tabori@ibcol.org"
-        }
-      ]
-    },
-    {
-      "flag": "flag-icon-ua",
-      "countryCode": "ua",
-      "title": "Donetsk State University of Economics and Trade (DonNUET)",
-      "ambassadors": [
-        {
-          "name": "Marina Danylyuk ",
-          "email": "marina.danylyuk@ibcol.org"
-        }
-      ]
-    },
-    {
-      "flag": "flag-icon-kr",
-      "countryCode": "kr",
-      "title": "Korea Advanced Institute of Science and Technology (KAIST)",
-      "ambassadors": [
-        {
-          "name": "Sung Soo Kim ",
-          "email": "sungsoo.kim@ibcol.org"
-        }
-      ]
-    },
-    {
-      "flag": "flag-icon-ru",
-      "countryCode": "ru",
-      "title": "Moscow State University (MSU)",
-      "ambassadors": [
-        {
-          "name": "Marina Danylyuk ",
-          "email": "marina.danylyuk@ibcol.org"
-        }
-      ]
-    },
-    {
-      "flag": "flag-icon-us",
-      "countryCode": "us",
-      "title": "Stanford University",
-      "ambassadors": [
-        {
-          "name": "Julian Gropp",
-          "email": "julian.gropp@ibcol.org"
-        }
-      ]
-    },
-    {
-      "flag": "flag-icon-de",
-      "countryCode": "de",
-      "title": "Technical University of Munich (TUM)",
-      "ambassadors": [
-        {
-          "name": "Julian Gropp",
-          "email": "julian.gropp@ibcol.org"
-        }
-      ]
-    },
-    {
-      "flag": "flag-icon-us",
-      "countryCode": "us",
-      "title": "University of California, Berkeley (UC Berkeley)",
-      "ambassadors": [
-        {
-          "name": "Alex Rusnak",
-          "email": "alex.rusnak@ibcol.org"
-        }
-      ]
-    },
-    {
-      "flag": "flag-icon-ca",
-      "countryCode": "ca",
-      "title": "University of Waterloo (UW)",
-      "ambassadors": [
-        {
-          "name": "Mika Tsoi",
-          "email": "mika.tsoi@ibcol.org"
-        }
-      ]
-    },
-    {
-      "flag": "flag-icon-my",
-      "countryCode": "my",
-      "title": "Universiti Sains Malaysia (USM)",
-      "ambassadors": [
-        {
-          "name": "Fei Yee Yeoh",
-          "email": "feiyee.yeoh@ibcol.org"
-        }
-      ]
-    },
-    {
-      "flag": "flag-icon-ua",
-      "countryCode": "ua",
-      "title": "Yaroslav Mudryi National Law University",
-      "ambassadors": [
-        {
-          "name": "Marina Danylyuk",
-          "email": "marina.danylyuk@ibcol.org"
-        }
-      ]
-    }
+  "pageTitle":"Schulbotschafter",
+  "seoDescription":"IBCOL",
+  "ogImage":"../../static/images/ogimage.jpg",
+  "subhead":"Studentenbeziehungen für die Internationale Blockchain Olympiade 2019",
+  "schoolAmbassadorsTitle":"Schulbotschafter",
+  "schoolAmbassadorsDescriptions":"Schulbotschafter vertreten IBCOL 2019 auf ihrem Campus",
+  "applyAmbassadorsLabel":"Bewerb Dich als IBCOL Schulbotschafter",
+  "schoolAmbassadors":[
+    {"flag":"flag-icon-hu","countryCode":"hu","title":"Budapest Metropolitan University (METU)","ambassadors":[
+      {"name":"Viktor Tabori","email":"viktor.tabori@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-hu","countryCode":"hu","title":"Technische und Wirtschaftswissenschaftliche Universität Budapest","ambassadors":[
+      {"name":"Viktor Tabori","email":"viktor.tabori@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-hu","countryCode":"hu","title":"Zentraleuropäische Universität","ambassadors":[
+      {"name":"Viktor Tabori","email":"viktor.tabori@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-hu","countryCode":"hu","title":"Corvinus-Universität Budapest","ambassadors":[
+      {"name":"Viktor Tabori","email":"viktor.tabori@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-ua","countryCode":"ua","title":"Donetsk State University of Economics and Trade (DonNUET)","ambassadors":[
+      {"name":"Marina Danylyuk","email":"marina.danylyuk@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-kr","countryCode":"kr","title":"Korea Advanced Institute of Science and Technology (KAIST)","ambassadors":[
+      {"name":"SungSoo Kim","email":"sungsoo.kim@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-ru","countryCode":"ru","title":"Universität Moskau","ambassadors":[
+      {"name":"Marina Danylyuk","email":"marina.danylyuk@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-us","countryCode":"us","title":"Universität Stanford","ambassadors":[
+      {"name":"Julian Gropp","email":"julian.gropp@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-de","countryCode":"de","title":"Technische Universität München (TUM) ","ambassadors":[
+      {"name":"Julian Gropp","email":"julian.gropp@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-us","countryCode":"us","title":"Universität von Kalifornien, Berkeley","ambassadors":[
+      {"name":"Alex Rusnak","email":"alex.rusnak@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-ca","countryCode":"ca","title":"Universität Waterloo","ambassadors":[
+      {"name":"Gabriel Chan","email":"gabriel.chan@ibcol.org"},
+      {"name":"Danielle Cadoret","email":"danielle.cadoret@ibcol.org"},
+      {"name":"Mika Tsoi","email":"mika.tsoi@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-my","countryCode":"my","title":"Universiti Sains Malaysia (USM)","ambassadors":[
+      {"name":"FeiYee Yeoh","email":"feiyee.yeoh@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-ua","countryCode":"ua","title":"Yaroslav Mudryi National Law University","ambassadors":[
+      {"name":"Marina Danylyuk","email":"marina.danylyuk@ibcol.org"}
+    ]}
   ],
-  "schoolAmbassadorProgrammeTitle": "School Ambassador Programme",
-  "schoolAmbassadorProgrammeDescription": "Have a passion for technology, innovation, or student competitions? Take part in building the first ever International Blockchain Olympiad! We are looking for school ambassadors to promote <a href='http://ibcol.org/' target='_blank'>IBCOL 2019</a> in your local campus.",
-  "responsibilitiesTitle": "Responsibilities",
-  "responsibilities": [
-    "Promote the International Blockchain Olympiad on campus",
-    "Recruit interested students on campus",
-    "Take lead and be the point of contact between interested applicants and registered participants",
-    "Arrange with student organisations or faculty or department for subsidies",
-    "Organise events for preparing students to compete in IBCOL 2019, such as team formation, blockchain training, and general promotion",
-    "Act in the best interest of the International Blockchain Olympiad"
-  ],
-  "perksTitle": "Perks",
-  "perks": [
-    "Gain valuable experience and insights into the enterprise, government, and blockchain worlds",
-    "1 free course (<a href='https://www.hkbcs.org/dappcamp/courses' target='_blank'>DC3</a>) issued by the Hong Kong Blockchain Society (Value: 2000 USD)",
-    "School Ambassador Certificate issued by the International Blockchain Olympiad",
-    "Entitled to 10% discount on admission to IBCOL 2019 (Value up to 2000 USD - includes full 2-day access to tech expo, fireside chats, keynote luncheons, and networking sessions), for each referred team. For example, 3 referred teams is 30%, 7 referred teams is 70% off, 10 or more is 100% off, i.e. free ticket."
-  ],
-  "applyNowButtonLabel": "Apply Now",
-  "comingSoonButtonLabel": "Coming Soon",
-  "financialAssistanceTitle": "Financial Assistance Options",
-  "financialAssistanceDescription": "Applicants are evaluated on a case-by-case basis, with no bearing on the actual results of the competition. Students may apply for subsidies to reduce the financial burden of participating in IBCOL 2019, such as the entry fee, travel to the main event in Hong Kong, and accommodation assistance while in Hong Kong. Only eligible for registrants before Feb 1."
-
+  "schoolAmbassadorProgrammeTitle":"Schulbotschafter Programm",
+  "schoolAmbassadorProgrammeDescription":"Leidenschaft für Technologie, Innovation oder Studentenwettbewerbe? Nimm am Aufbau der ersten Internationalen Blockchain Olympiade teil! Wir suchen Schulbotschafter zur Förderung der IBCOL 2019 auf eurem Campus.",
+  "responsibilitiesTitle":"Verantwortlichkeiten",
+  "responsibilities":["Campusförderung der Internationalen Blockchain Olympiade","Rekrutiere interessierte Studenten auf deinem Campus","Sei die Kontaktstelle zwischen interessierten Bewerbern und registrierten Teilnehmern","Koordiniere Studentenorganisationen, Fakultäten oder Abteilungen für Spenden oder Subventionen","Organisiere Veranstaltungen zur Vorbereitung von Teilnehmern der IBCOL 2019, z. B. Teambildung, Blockchain-Training und allgemeine Unterstützung","Handle im besten Interesse der IBCOL"],
+  "perksTitle":"Vorteile",
+  "perks":["Sammle wertvolle Erfahrungen und Einblicke in die Unternehmenswelt, Regierungen sowie die Blockchain-Welt","1 kostenloser Kurs (DC3) der Hong Kong Blockchain Society (Wert: 2000 USD)","Schulbotschafter-Zertifikat der Internationalen Blockchain Olympiade","10% Rabatt auf IBCOL 2019 Tickets (Wert bis zu 2000 USD - inklusive 2-tägiger Zugang zur Tech-Expo, Fireside Chats, Keynote-Lunch und Networking Events) für jedes Team. Zum Beispiel sind 3 vermittelte Teams 30%, 7 vermittelte Teams 70%, 10 oder mehr 100% (Freikarte)"],
+  "applyNowButtonLabel":"Bewirb dich jetzt",
+  "comingSoonButtonLabel":"Kommt bald",
+  "financialAssistanceTitle":"Optionen für finanzielle Unterstützung",
+  "financialAssistanceDescription":"Die Bewerber werden von Fall zu Fall bewertet, ohne die tatsächlichen Ergebnisse des Wettbewerbs zu beeinflussen. Studenten können Zuschüsse beantragen, um die finanzielle Belastung durch die Teilnahme an IBCOL 2019 zu verringern, wie z. B. die Teilnahmegebühr, die Anreise zum Hauptereignis in Hongkong und die Unterstützung bei der Unterkunft in Hongkong. Nur Registranten vor dem 1. Februar sind berechtigt."
 }

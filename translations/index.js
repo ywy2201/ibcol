@@ -1,6 +1,20 @@
 module.exports = {
-  "_default": require('./en-gb'),
-  "en-gb": require('./en-gb'),
+  "_default": require('./en-gb'),  
+  "ar": require('./ar'),
   "de-de": require('./de-de'),
-  "zh-hk": require('./zh-hk')
+  "en-gb": require('./en-gb'),
+  "es-es": require('./es-es'),
+  "fa": require('./fa'),
+  "fr-fr": require('./fr-fr'),
+  "hu-hu": require('./hu-hu'),
+  "ja-jp": require('./ja-jp'),
+  "ko-kr": require('./ko-kr'),
+  "pl-pl": require('./pl-pl'),
+  "pt-pt": require('./pt-pt'),
+  "ro-ro": require('./ro-ro'),
+  "ru-ru": require('./ru-ru'),
+  "uk-ua": require('./uk-ua'),
+  "zh-cn": require('./zh-cn'),
+  "zh-hk": require('./zh-hk'),
+  "zh-tw": require('./zh-tw')
 }

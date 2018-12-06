@@ -1,0 +1,64 @@
+{
+  "pageTitle":"Як приєднатися",
+  "seoDescription":"",
+  "ogImage":"../../static/images/ogimage.jpg",
+  "subhead":"Реєстрація на Олімпіаду з Блокчейну 2019",
+  "whenToJoinHeading":"Коли приєднуватися",
+  "plans":{
+    "fromLabel":"З",
+    "toLabel":"До",
+    "feeLabel":"Реєстрація",
+    "financialAssistanceLabel":"Фінансування",
+    "viewMoreLabel":"",
+    "secondaryLabel":"Учні старших класів",
+    "postSecondaryLabel":"Учень вищого навчального закладу або технікуму.",
+    "additionalCategoryLabel":"Для кожної додаткової категорії",
+    "specialNotice":"За винятком зборів за додаткову категорію, плата за реєстрацію проектів скасовується для всіх зареєстрованих команд до 1 квітня 2019 року",
+    "superEarlyBird":{
+      "name":"Super Early Bird",
+      "fromDate":"Сьогодні",
+      "toDate":"П'ятниця<br/>1 лютого 2019 року<br/>23:59 за Гонконгом",
+      "fee":"Плата не стягується",
+      "financialAssistanceDetails":"Право на субсидії для поїздки",
+      "feeSchedule":{
+        "secondary":"",
+        "postSecondary":"",
+        "additionalCategory":""
+      }
+    },
+    "earlyBird":{
+      "name":"Early Bird",
+      "fromDate":"Субота<br/>2 лютого 2019 року<br/>00:00 за Гонконгом",
+      "toDate":"Понеділок<br/>1 квітня 2019 року<br/>23:59 за Гонконгом",
+      "fee":"Плата не стягується",
+      "financialAssistanceDetails":"Ті хто не мають права на субсидії для поїздки",
+      "feeSchedule":{
+        "secondary":"",
+        "postSecondary":"",
+        "additionalCategory":""
+      }
+    },
+    "regular":{
+      "name":"Regular",
+      "fromDate":"Вівторок<br/>2 квітня 2019 року<br/>00:00 за Гонконгом",
+      "toDate":"Неділя<br/>21 квітня 2019 року<br/>23:59 за Гонконгом",
+      "fee":"Потрібна оплата",
+      "financialAssistanceDetails":"Ті хто не мають права на субсидії для поїздки",
+      "feeSchedule":{
+        "secondary":"",
+        "postSecondary":"",
+        "additionalCategory":""
+      }
+    }
+  },
+  "howToJoinHeading":"Як приєднатися",
+  "teamLabel":"Команда",
+  "teamExplained":"В одній команді можуть зареєструватися до 6 студентів",
+  "projectLabel":"Проект",
+  "projectExplained":"Кожна команда може представити кілька проектів",
+  "categoryLabel":"Категорія",
+  "categoryExplained":"Кожен проект приєднується до певної категорії",
+  "categoriesHeading":"Категорії",
+  "feeScheduleHeading":"Графік платежів",
+  "applyNowCTALabel":""
+}

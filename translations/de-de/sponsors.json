@@ -1,9 +1,9 @@
 {
-  "pageTitle": "Our Sponsors",
+  "pageTitle":"Unsere Sponsoren & Träger",
   "seoDescription": "",
   "ogImage": "",
   "subhead": "Sponsoren & Träger der 2019 Internationalen Blockchain Olympiade",
-  "sponsorsTitle": "Sponsors",
+  "sponsorsTitle": "Sponsoren",
   "sponsors": [
     {
       "name": "Cardano",
@@ -21,10 +21,10 @@
       "name": "eMALI",
       "url": "https://emali.io/",
       "logo": "/static/images/emali-logo.png",
-      "description": "<b>eMALI</b> is an enterprise blockchain developer working on applications in the Fin/Insur/RegTech sectors specializing on identity management, trade and supply chain finance, insurance claim management, fraud detection and regulatory registries."
+      "description": "<b>Emali</b> is an enterprise blockchain developer working on applications in the Fin/Insur/RegTech sectors specializing on identity management, trade and supply chain finance, insurance claim management, fraud detection and regulatory registries."
     }
   ],
-  "supportingOrganisationsTitle": "Supporting Organisations",
+  "supportingOrganisationsTitle": "Träger",
   "supportingOrganisations": [
     {
       "name": "HKBCS",
@@ -39,5 +39,5 @@
       "description": "<b>Blockchain Education Network</b> is made up of students and alumni across the world who are creating bitcoin and blockchain clubs on their academic campuses. By exploring this socioeconomic experiment within the safety of their peers, students build new expectations and innovations."
     }
   ],
-  "prompt": "<p>Falls ihr Unternehmen Interesse an einer Förderung der Internationalen Blockchain Olympiade hat, kontaktieren Sie uns bitte per <a href='mailto:sponsors@ibcol.org'>sponsors@ibcol.org</a></p>"
+  "prompt":"Falls ihr Unternehmen Interesse an einer Förderung der Internationalen Blockchain Olympiade hat, kontaktieren Sie uns bitte per sponsors@ibcol.org"
 }

@@ -1,94 +1,91 @@
 {
-  "pageTitle": "International Blockchain Olympiad",
-  "seoDescription": "",
-  "ogImage": "",
-  "mainHeading": "Help bring the world onto the Blockchain",
-  "subHeading": "Meet and compete with the world's best blockchain builders",
-  "register": "Registration Info",
-  "howToJoin": "How To Join",
-  "competitionRules": "Competition Process",
-  "scroll": "Scroll",
-  "introSection": {
-    "leftBlock": {
-      "title": "Most hackathons don’t produce useful results",
-      "infoList": "<li>Insufficient time to build well-rounded projects</li><li>Projects too tech-focused and divorced from reality</li><li>No incentive to continue developing the new project</li>"
+  "pageTitle":"國際奧林匹克區塊鏈競賽",
+  "seoDescription":"國際奧林匹克區塊鏈競賽是一個多學科的設計與建設性的競賽。 IBCOL 2019邀請來自世界各地的學生,通過分散的應用程式,解決現實生活中所面對的挑戰。",
+  "ogImage":"../../static/images/ogimage.jpg",
+  "mainHeading":"幫助將世界帶來到區塊鏈上",
+  "subHeading":"與世界上最好的區塊鏈建設者會面並競賽",
+  "register":"申請資訊",
+  "howToJoin":"參加方法",
+  "competitionRules":"比賽流程",
+  "scroll":"滑動",
+  "introSection":{
+    "leftBlock":{
+      "title":"大多數黑客馬拉松都沒有產生有用的結果",
+      "infoList":"<li>沒有足夠的時間來建立全面的項目</li><li>項目太過以技術為中心，且與現實脫節</li><li>沒有動力繼續開發新項目</li>"
     },
-    "rightBlock": {
-      "title": "This competition will produce useful results",
-      "infoList": "<li>From now until July 2019 to get something working</li><li>Multidisciplinary approach to applying blockchain</li><li>Matching with entities that can take projects forward</li>"
+    "rightBlock":{
+      "title":"本次比賽將產生有益的結果",
+      "infoList":"<li>從現在到2019年7月，開始進行一些運作</li><li>應用區塊鏈於不同範疇</li><li>配合實體相可推進的項目</li>"
     }
   },
-  "timelineSection": {
-    "heading": "Competition Process",
-    "block1": {
-      "title": "Registration",
-      "details": "<b>Super Early Bird</b><br/>Until Feb 1st<br/><b>Early Bird</b><br/>Until April 1st<br/><b>Regular</b><br/>Until April 21st"
+  "timelineSection":{
+    "heading":"比賽流程",
+    "block01":{
+      "title":"登記",
+      "details":"超級早鳥　直到2月1日<br/>早鳥　直到4月1日<br/>一般　直到4月21日"
     },
-    "block2": {
-      "title": "Whitepaper",
-      "details": "due April 21st<br/>by online submission"
+    "block02":{
+      "title":"白皮書",
+      "details":"白皮書需於4月21日或之前通過網上提交"
     },
-    "block3": {
-      "title": "Interview",
-      "details": "due May & June<br/>by teleconference"
+    "block03":{
+      "title":"訪問",
+      "details":"通過電話會議面試 五月及六月舉行"
     },
-    "block4": {
-      "title": "Demo",
-      "details": "during July<br/>at Tech Expo"
+    "block04":{
+      "title":"模擬示範",
+      "details":"七月期間在科技博覽會模擬示範"
     },
-    "block5": {
-      "title": "Pitch",
-      "details": "during July<br/>on Pitch Stage"
+    "block05":{
+      "title":"開幕",
+      "details":"「7月在舞台上正式開幕」"
     },
-    "block6": {
-      "title": "Continuation",
-      "details": "after July<br/>via Accelerators"
+    "block06":{
+      "title":"延續",
+      "details":"七月後通過加速器繼續"
     }
   },
-  "section01": {
-    "languageTitle": "Languages",
-    "writtenLanguageLabel": "Acceptable Languages for written material:",
-    "writtenLanguages": "Arabic (standard), Chinese (Simplified), Chinese (Traditional), English, French, German, Hungarian, Japanese, Korean, Persian, Polish, Portuguese, Russian, Spanish, Ukrainian",
-    "spokenLanguageLabel": "Acceptable Languages for spoken material: ",
-    "spokenLanguages": "Arabic (Egypt), Arabic (Gulf), Cantonese, English, French, German, Hungarian, Japanese, Korean, Mandarin, Persian, Polish, Portuguese, Russian, Spanish, Ukrainian"
+  "section01":{
+      "languageTitle":"語言",
+      "writtenLanguageLabel":"可接受的書面語言： ",
+      "writtenLanguages":"阿拉伯語（標準），中文（簡體），中文（繁體），英語，法語，德語，匈牙利語，日語，韓語，波斯語，波蘭語，葡萄牙語，俄語，西班牙語，烏克蘭語",
+      "spokenLanguageLabel":"可接受的説話語言：",
+      "spokenLanguages":" 阿拉伯語（埃及），阿拉伯語（海灣），廣東話，英語，法語，德語，匈牙利語，日語，韓語，普通話，波斯語，波蘭語，葡萄牙語，俄語，西班牙語，烏克蘭語"
   },
-  "section02": {
-    "heading": "Awards",
-    "awards": {
-      "gold": {
-        "quantity": 5,
-        "title": "Gold Medals",
-        "description": "1st place winner of a category with 4096 USD prize"
+  "section02":{
+    "heading":"獎項",
+    "awards":{
+      "gold":{
+        "quantity":5,
+        "title":"金獎",
+        "description":"各部門的第一名將獲得4096美元獎金"
       },
-      "silver": {
-        "quantity": 5,
-        "title": "Silver Medals",
-        "description": "2nd place winner of a category with 2048 USD prize"
+      "silver":{
+        "quantity":5,
+        "title":"銀獎",
+        "description":"各部門的第二名將獲得2048美元獎金"
       },
-      "bronze": {
-        "quantity": 5,
-        "title": "Bronze Medals",
-        "description": "3rd place winner of a category with 1024 USD prize"
-      
+      "bronze":{
+        "quantity":5,
+        "title":"銅獎",
+        "description":"各部門的第三名將獲得1024美元獎金"
       },
-      "nominee": {
-        "quantity": 15,
-        "title": "Nominee Awards",
-        "description": "Recognition of team coach for nominating a winning team"
+      "nominee":{
+        "quantity":15,
+        "title":"提名人獎項",
+        "description":"提名勝利隊伍的人將獲表揚"
       },
-      "finalist": {
-        "quantity": 10,
-        "title": "Finalist Awards",
-        "description": "Recognition of teams for being top 5 in a category"
+      "finalist":{
+        "quantity":10,
+        "title":"入圍獎",
+        "description":"在各類別中認受排前五名團隊"
       },
-      "merit": {
-        "quantity": 50,
-        "title": "Merit Awards",
-        "description": "Recognition of teams for designing a complete solution"
+      "merit":{
+        "quantity":50,
+        "title":"優異獎",
+        "description":"對設計完整解決方案的團隊作出表揚"
       },
-
-      "note": "The best prize for students is not financial, but rather experience, guidance, and a chance to make a real impact in the real world."
-      
+      "note":"對學生來說，最好的獎勵不是在於經濟上，而是各種經驗，指導，以及對現實世界產生真正影響的機會。"
     }
   }
 }

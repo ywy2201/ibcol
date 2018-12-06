@@ -1,0 +1,32 @@
+{
+  "FINTECH":{
+    "name":"금융기술 (Fintech)",
+    "description":"금융 기술은 보험, 트레이딩 및 위험(Risk) 관리뿐만 아니라 전통적인 금융 부문에서도 광범위하게 다뤄지고 있습니다.",
+    "color":"blue",
+    "icon":"show_chart"
+  },
+  "GOVTECH":{
+    "name":"정부기술 (Govtech)",
+    "description":"정부 기술은 주권 국가 또는 지역의 행정 책임에 필요한 핵심 플랫폼 및 인프라 솔루션을 설명합니다.",
+    "color":"yellow",
+    "icon":"account_balance"
+  },
+  "MEDTECH":{
+    "name":"의료기술 (Medtech)",
+    "description":"의료 기술은 건강과 관련된 문제를 해결하고 인간의 삶의 질을 향상 시킬 수 있는 응용 프로그램이 포함됩니다.",
+    "color":"black",
+    "icon":"local_hospital"
+  },
+  "IOT_O2O":{
+    "name":"IoT / O2O",
+    "description":"IoT (사물인터넷) / O2O (Online-to-Offline) 는 디지털과 물리적 세계를 결합, 즉 실제 상황 및 현상을 기계가 사용가능한 데이터로 해석하는 것을 말합니다.",
+    "color":"green",
+    "icon":"local_shipping"
+  },
+  "ARTS_MEDIA":{
+    "name":"예술/미디어",
+    "description":"예술 및 미디어 기술에는 공공 행사, 상업적 커뮤니케이션, 엔터테인먼트 및 관련 산업 분야가 포함됩니다.",
+    "color":"red",
+    "icon":"color_lens"
+  }
+}

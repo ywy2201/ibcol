@@ -1,0 +1,26 @@
+{
+  "siteTitle":"Olimpiada Internacional de Blockchain",
+  "seoDescription":"",
+  "ogImage":"../../static/images/ogimage.jpg",
+  "logoTag":"IBCOL: Olimpiada Internacional de Blockchain",
+  "titleSeparator":"|",
+  "menu":{
+    "home":"Inicio",
+    "about":"",
+    "how":"Como apuntarse",
+    "competition":"Competición",
+    "ambassadors":"Estudiantes",
+    "sponsors":"Sponsors",
+    "schedule":"",
+    "contact":"Contacto",
+    "registration":"Registro"
+  },
+  "footerMenu":{
+    "backToTop":"Volver a inicio",
+    "aboutCompetition":"Acerca (competición)",
+    "registrationInfo":"Registro"
+  },
+  "closeMenu":"",
+  "navigateTo":"",
+  "copyright":"Copyright © 2018. Olimpiada internacional de Blockchain. Todos los derechos reservados"
+}
