@@ -2,7 +2,7 @@ module.exports = {
   "_locale":{
     "id":"ru-ru",
     "name":"Русский",
-    "label":"Добро пожаловать",
+    "label":"Добро пожаловать"
   },
   "_global":require('./_global.json'),
   "_countries": require('./_countries.json'),

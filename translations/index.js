@@ -3,6 +3,7 @@ module.exports = {
   "ar": require('./ar'),
   "de-de": require('./de-de'),
   "en-gb": require('./en-gb'),
+  "es-es": require('./es-es'),
   "fa": require('./fa'),
   "hu-hu": require('./hu-hu'),
   "ja-jp": require('./ja-jp'),

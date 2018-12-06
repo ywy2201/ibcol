@@ -2,7 +2,7 @@ module.exports = {
   "_locale":{
     "id":"ko-kr",
     "name":"한국어",
-    "label":"환영",
+    "label":"환영"
   },
   "_global":require('./_global.json'),
   "_countries": require('./_countries.json'),
