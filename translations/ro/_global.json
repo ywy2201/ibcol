@@ -1,0 +1,26 @@
+{
+  "siteTitle":"Olimpiada Internațională de Blockchain",
+  "seoDescription":"",
+  "ogImage":"../../static/images/ogimage.jpg",
+  "logoTag":"IBCOL: Olimpiada Internațională de Blockchain",
+  "titleSeparator":"|",
+  "menu":{
+    "home":"Acasă",
+    "about":"",
+    "how":"Cum să te înregistrezi",
+    "competition":"Competiție",
+    "ambassadors":"Studenți",
+    "sponsors":"Sponsori",
+    "schedule":"",
+    "contact":"Contact",
+    "registration":"Înregistrare"
+  },
+  "footerMenu":{
+    "backToTop":"Înapoi",
+    "aboutCompetition":"Despre competiție",
+    "registrationInfo":"Înregistrează-te"
+  },
+  "closeMenu":"",
+  "navigateTo":"",
+  "copyright":"Copyright © 2018 International Blockchain Olympiad. Toate drepturile rezervate."
+}

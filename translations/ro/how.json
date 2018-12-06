@@ -1,0 +1,64 @@
+{
+  "pageTitle":"Cum să te înregistrezi",
+  "seoDescription":"",
+  "ogImage":"../../static/images/ogimage.jpg",
+  "subhead":"Înregistrare pentru Olimpiada Internațională de Blockchain",
+  "whenToJoinHeading":"Când vrei să te înregistrezi",
+  "plans":{
+    "fromLabel":"Din",
+    "toLabel":"Până în",
+    "feeLabel":"Înregistrare",
+    "financialAssistanceLabel":"Asistență financiară",
+    "viewMoreLabel":"",
+    "secondaryLabel":"Școala gimnazială",
+    "postSecondaryLabel":"Liceu",
+    "additionalCategoryLabel":"Pentru fiecare categorie adițională",
+    "specialNotice":"Cu excepția categoriilor adiționale, înregistrarea proiectelor pentru echipe este gratis, pentru toate echipele înregistrate până în 21 aprilie 2019",
+    "superEarlyBird":{
+      "name":"Super Early Bird",
+      "fromDate":"Astăzi",
+      "toDate":"Vineri<br/>1 februarie 2019 <br/>23:59 (ora locală Hong Kong)",
+      "fee":"Fără taxă",
+      "financialAssistanceDetails":"Eligibil pentru subvenții la transport",
+      "feeSchedule":{
+        "secondary":"",
+        "postSecondary":"",
+        "additionalCategory":""
+      }
+    },
+    "earlyBird":{
+      "name":"Early Bird",
+      "fromDate":"Sâmbătă <br/>2 februarie 2019<br/>00:00 (ora locală Hong Kong)",
+      "toDate":"Luni<br/>1 aprilie 2019<br/>23:59 (ora locală Hong Kong)",
+      "fee":"Fără taxă",
+      "financialAssistanceDetails":"Ineligibil pentru subvenții la transport",
+      "feeSchedule":{
+        "secondary":"",
+        "postSecondary":"",
+        "additionalCategory":""
+      }
+    },
+    "regular":{
+      "name":"Normal",
+      "fromDate":"Marți<br/>2 aprilie 2019<br/>00:00 (ora locală Hong Kong)",
+      "toDate":"Duminică<br/>21 aprilie 2019<br/>23:59 (ora locală Hong Kong)",
+      "fee":"Cu taxă",
+      "financialAssistanceDetails":"Ineligibil pentru subvenții la transport",
+      "feeSchedule":{
+        "secondary":"",
+        "postSecondary":"",
+        "additionalCategory":""
+      }
+    }
+  },
+  "howToJoinHeading":"Cum să te înregistrezi",
+  "teamLabel":"Echipa",
+  "teamExplained":"Până la 6 studenți pot forma o echipă",
+  "projectLabel":"Proiectul",
+  "projectExplained":"O echipă poate da mai multe proiecte",
+  "categoryLabel":"Categoria",
+  "categoryExplained":"Fiecare proiect aparține unei categorii",
+  "categoriesHeading":"Categoriile",
+  "feeScheduleHeading":"Tarife",
+  "applyNowCTALabel":""
+}
