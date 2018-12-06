@@ -4,5 +4,7 @@ module.exports = {
   "de-de": require('./de-de'),
   "ar": require('./ar'),
   "fa": require('./fa'),
-  "zh-hk": require('./zh-hk')
+  "zh-cn": require('./zh-cn'),
+  "zh-hk": require('./zh-hk'),
+  "zh-tw": require('./zh-tw')
 }

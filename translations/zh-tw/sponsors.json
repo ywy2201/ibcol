@@ -1,0 +1,18 @@
+{
+  "pageTitle":"",
+  "seoDescription":"國際奧林匹克區塊鏈競賽是一個多學科的設計與建設性的競賽。 IBCOL 2019邀請來自世界各地的學生,通過分散的應用程式,解決現實生活中所面對的挑戰。",
+  "ogImage":"../../static/images/ogimage.jpg",
+  "subhead":"2019年度國際奧林匹克區塊鏈競賽的贊助商和支持者",
+  "sponsorsTitle":"贊助商",
+  "sponsors":[
+    {"name":"Cardano","url":"https://www.cardano.org","logo":"/static/images/logo-cardano.png","description":"<b>cardano</b> is a decentralised public blockchain and cryptocurrency project and is fully open sourced. cardano is developing a smart contract platform which seeks to deliver more advanced features than any protocol previously developed. cardano is represented by emurgo hk."},
+    {"name":"EmurgoHK","url":"https://emurgohk.io","logo":"/static/images/logo-emurgohk.png","description":"<b>emurgo hk</b> is the venture builder for the cardano blockchain protocol. and now we're in hong kong. located in one of the world's most dynamic business hubs, and perfectly positioned between northeast and southeast asia, emurgohk is spreading the revolutionary cardano protocol across the pacific rim."},
+    {"name":"Emali","url":"https://emali.io","logo":"/static/images/logo-emali.png","description":"<b>emali</b> is an enterprise blockchain developer working on applications in the fin/insur/regtech sectors specializing on identity management, trade and supply chain finance, insurance claim management, fraud detection and regulatory registries."}
+  ],
+  "supportingOrganisationsTitle":"支援機構",
+  "supportingOrganisations":[
+    {"name":"Hong Kong Blockchain Society (HKBCS)","url":"http://www.hkbcs.org","logo":"/static/images/logo-hong-kong-blockchain-society-(hkbcs).png","description":"<b>the hong kong blockchain society</b> promotes sustainable and mature of the blockchain ecosystem. hkbcs encourages and supports projects that are legal and compliant in hong kong and the surrounding region."},
+    {"name":"Blockchain Education Network (BEN)","url":"https://www.blockchainedu.org","logo":"/static/images/logo-blockchain-education-network-(ben).png","description":"<b>blockchain education network</b> is made up of students and alumni across the world who are creating bitcoin and blockchain clubs on their academic campuses. by exploring this socioeconomic experiment within the safety of their peers, students build new expectations and innovations."}
+  ],
+  "prompt":"如果您有興趣支持國際奧林匹克區塊鏈競賽，請聯絡sponsors@ibcol.org"
+}
