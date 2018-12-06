@@ -9,6 +9,7 @@ module.exports = {
   "hu-hu": require('./hu-hu'),
   "ja-jp": require('./ja-jp'),
   "ko-kr": require('./ko-kr'),
+  "pl-pl": require('./pl-pl'),
   "pt-pt": require('./pt-pt'),
   "ro-ro": require('./ro-ro'),
   "ru-ru": require('./ru-ru'),
