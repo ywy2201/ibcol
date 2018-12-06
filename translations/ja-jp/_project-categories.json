@@ -1,0 +1,32 @@
+{
+  "FINTECH":{
+    "name":"金融テクノロジー",
+    "description":"金融テクノロジーは、伝統的な金融セクターだけでなく、保険、取引、リスク管理の活動まで広く含まれています",
+    "color":"blue",
+    "icon":"show_chart"
+  },
+  "GOVTECH":{
+    "name":"政府技術",
+    "description":"政府技術は、主権国家または地域における行政責任に必要とされるプラットフォーム、およびインフラストラクチャソリューションを記述しています",
+    "color":"yellow",
+    "icon":"account_balance"
+  },
+  "MEDTECH":{
+    "name":"医療技術",
+    "description":"医療技術は、健康に関しての問題を解決し、人類の生活の質やいろんな面を向上させるアプリケーションです。",
+    "color":"black",
+    "icon":"local_hospital"
+  },
+  "IOT_O2O":{
+    "name":"IoT / O2O",
+    "description":"IoT /オンラインからオフラインへ/またはその逆　デジタルと物理の世界をつなぐことを考える　すなわち現実の状況や現象を機械可用のデータに変換することなど",
+    "color":"green",
+    "icon":"local_shipping"
+  },
+  "ARTS_MEDIA":{
+    "name":"芸術/メディア",
+    "description":"芸術とメディア技術　公衆のイベント、商業通信、娯楽、および隣接産業が含まれています。",
+    "color":"red",
+    "icon":"color_lens"
+  }
+}
