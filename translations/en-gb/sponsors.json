@@ -5,39 +5,14 @@
   "subhead": "Sponsors & Supporters of the 2019 International Blockchain Olympiad",
   "sponsorsTitle": "Sponsors",
   "sponsors": [
-    {
-      "name": "Cardano",
-      "url": "https://www.cardano.org/en/home/",
-      "logo": "/static/images/cardano-logo.png",
-      "description": "<b>Cardano</b> is a decentralised public blockchain and cryptocurrency project and is fully open sourced. Cardano is developing a smart contract platform which seeks to deliver more advanced features than any protocol previously developed. Cardano is represented by Emurgo HK."
-    },
-    {
-      "name": "EmurgoHK",
-      "url": "https://emurgohk.io/",
-      "logo": "/static/images/emurgohk-logo.png",
-      "description": "<b>EMURGO HK</b> is the venture builder for the Cardano blockchain protocol. And now we're in Hong Kong. Located in one of the world's most dynamic business hubs, and perfectly positioned between Northeast and Southeast Asia, EmurgoHK is spreading the revolutionary Cardano protocol across the Pacific Rim."
-    },
-    {
-      "name": "eMALI",
-      "url": "https://emali.io/",
-      "logo": "/static/images/emali-logo.png",
-      "description": "<b>Emali</b> is an enterprise blockchain developer working on applications in the Fin/Insur/RegTech sectors specializing on identity management, trade and supply chain finance, insurance claim management, fraud detection and regulatory registries."
-    }
+    {"name":"Cardano","url":"https://www.cardano.org","logo":"/static/images/logo-cardano.png","description":"<b>Cardano</b> is a decentralised public blockchain and cryptocurrency project and is fully open sourced. Cardano is developing a smart contract platform which seeks to deliver more advanced features than any protocol previously developed. Cardano is represented by Emurgo HK."},
+    {"name":"EmurgoHK","url":"https://emurgohk.io","logo":"/static/images/logo-emurgohk.png","description":"<b>EMURGO HK</b> is the venture builder for the Cardano blockchain protocol. And now we're in Hong Kong. Located in one of the world's most dynamic business hubs, and perfectly positioned between Northeast and Southeast Asia, EmurgoHK is spreading the revolutionary Cardano protocol across the Pacific Rim."},
+    {"name":"Emali","url":"https://emali.io","logo":"/static/images/logo-emali.png","description":"<b>Emali</b> is an enterprise blockchain developer working on applications in the Fin/Insur/RegTech sectors specializing on identity management, trade and supply chain finance, insurance claim management, fraud detection and regulatory registries."}
   ],
   "supportingOrganisationsTitle": "Supporting Organisations",
   "supportingOrganisations": [
-    {
-      "name": "HKBCS",
-      "url": "http://www.hkbcs.org/",
-      "logo": "/static/images/hkbcs-logo.png",
-      "description": "<b>The Hong Kong Blockchain Society</b> promotes sustainable and mature of the blockchain ecosystem. HKBCS encourages and supports projects that are legal and compliant in Hong Kong and the surrounding region."
-    },
-    {
-      "name": "Blockchain Education Network",
-      "url": "https://www.blockchainedu.org/",
-      "logo": "/static/images/ben-logo.png",
-      "description": "<b>Blockchain Education Network</b> is made up of students and alumni across the world who are creating bitcoin and blockchain clubs on their academic campuses. By exploring this socioeconomic experiment within the safety of their peers, students build new expectations and innovations."
-    }
+    {"name":"Hong Kong Blockchain Society (HKBCS)","url":"http://www.hkbcs.org","logo":"/static/images/logo-hong-kong-blockchain-society-(hkbcs).png","description":"<b>The Hong Kong Blockchain Society</b> promotes sustainable and mature of the blockchain ecosystem. HKBCS encourages and supports projects that are legal and compliant in Hong Kong and the surrounding region."},
+    {"name":"Blockchain Education Network (BEN)","url":"https://www.blockchainedu.org","logo":"/static/images/logo-blockchain-education-network-(ben).png","description":"<b>Blockchain Education Network</b> is made up of students and alumni across the world who are creating bitcoin and blockchain clubs on their academic campuses. By exploring this socioeconomic experiment within the safety of their peers, students build new expectations and innovations."}
   ],
   "prompt": "<p>If your organisation is interested in supporting the International Blockchain Olympiad, please contact <a href='mailto:sponsors@ibcol.org'>sponsors@ibcol.org</a></p>"
 }
