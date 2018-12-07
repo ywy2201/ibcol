@@ -2048,9 +2048,7 @@ input::-moz-focus-inner {
 * ------------------------------------------------------------------- */
 
 @media only screen and (min-width:1201px) and (max-width:1500px) {
-  .desktop-nav {
-    top: 9rem;
-  }
+  
 
 }
 
@@ -2060,9 +2058,13 @@ input::-moz-focus-inner {
     padding-left: 60px;
   }
 
-  .header-menu-toggle {
-    right: 60px;
+  .desktop-nav {
+    top: 9rem;
   }
+
+  /* .header-menu-toggle {
+    right: 60px;
+  } */
 
 }
 
@@ -2097,6 +2099,14 @@ input::-moz-focus-inner {
   .header-nav {
     width: calc(100% - 80px);
     padding: 3.6rem 3rem 3.6rem 5rem;
+  }
+
+  .desktop-nav {
+    display: none;
+  }
+
+  .header-menu-toggle {
+    display:block;
   }
 
   .header-menu-toggle {
@@ -3830,12 +3840,8 @@ padding-left: 30px;
   .contact-email a {
     font-size: 7.6rem;
   }
-  .desktop-nav {
-    display: none;
-  }
-  .header-menu-toggle {
-    display:block;
-  }
+  
+  
 
 }
 
