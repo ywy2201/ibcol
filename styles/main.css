@@ -1657,11 +1657,15 @@ input::-moz-focus-inner {
 .s-header {
   z-index: 500;
   width: 100%;
-  height: 100px;
+  height: 125px;
   background-color: transparent;
-  position: absolute;
+  position: fixed;
   top: 0;
-  margin-top: 21px;
+  
+
+  background: #FFF;
+  box-shadow: 0 0 2rem 0.05rem #ccc;
+
 }
 .s-header.moved {
   background-color: white;
@@ -1678,7 +1682,7 @@ input::-moz-focus-inner {
   position: absolute;
   left: 0;
   padding-left: 7.5rem;
-  top: 50%;
+  top: 40%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -2048,9 +2052,7 @@ input::-moz-focus-inner {
 * ------------------------------------------------------------------- */
 
 @media only screen and (min-width:1201px) and (max-width:1500px) {
-  .desktop-nav {
-    top: 9rem;
-  }
+  
 
 }
 
@@ -2060,9 +2062,17 @@ input::-moz-focus-inner {
     padding-left: 60px;
   }
 
-  .header-menu-toggle {
-    right: 60px;
+  .desktop-nav {
+    top: 9rem;
   }
+
+  .s-header {
+    height: 130px;
+  }
+
+  /* .header-menu-toggle {
+    right: 60px;
+  } */
 
 }
 
@@ -2099,8 +2109,25 @@ input::-moz-focus-inner {
     padding: 3.6rem 3rem 3.6rem 5rem;
   }
 
+  .desktop-nav {
+    display: none;
+  }
+
+  .header-menu-toggle {
+    display:block;
+  }
+
   .header-menu-toggle {
     right: 40px;
+  }
+
+  .s-header {
+    position: absolute;
+    background: none;
+    height: 100px;
+    box-shadow: none;
+    margin-top: 21px;
+
   }
 
 }
@@ -3830,12 +3857,8 @@ padding-left: 30px;
   .contact-email a {
     font-size: 7.6rem;
   }
-  .desktop-nav {
-    display: none;
-  }
-  .header-menu-toggle {
-    display:block;
-  }
+  
+  
 
 }
 
