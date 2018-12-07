@@ -115,19 +115,19 @@ class MyApp extends App {
 
         <footer>
           <div className="ss-go-top">
-            <Link prefetch route="registration" params={{ locale }}>
+            {/* <Link prefetch route="registration" params={{ locale }}>
               <a className="register btn btn--primary btn--large">
                   {this.translate('footerMenu.registrationInfo')}
               </a>
-            </Link>
+            </Link>*/}
             {/* <Link prefetch route="competition" params={{ locale }}>
               <a className="more-info btn btn--large">
                   {this.translate('footerMenu.aboutCompetition')}
               </a>
             </Link> */}
-            <a className="smoothscroll btn btn--large" title={this.translate('footerMenu.backToTop')} href="#top">
+            {/* <a className="smoothscroll btn btn--large" title={this.translate('footerMenu.backToTop')} href="#top">
                 {this.translate('footerMenu.backToTop')}
-            </a>
+            </a>*/}
           </div>
 
           <div className="row">
