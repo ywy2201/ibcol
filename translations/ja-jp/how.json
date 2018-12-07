@@ -1,0 +1,64 @@
+{
+  "pageTitle":"参加方法",
+  "seoDescription":"国際ブロックチェンオリンピアッドは、多分野のデザインと建設的な試合です。 IBCOL 2019は、世界各国からの生徒に分散的なアプリケーションを通じて、現実社会の課題を解決するよう呼びかけています。",
+  "ogImage":"../../static/images/ogimage.jpg",
+  "subhead":"国際ブロックチェーンオリンピアッドの申し込み",
+  "whenToJoinHeading":"いつ参加するか",
+  "plans":{
+    "fromLabel":"...から",
+    "toLabel":"...まで",
+    "feeLabel":"申し込み",
+    "financialAssistanceLabel":"経費援助",
+    "viewMoreLabel":"更にスクロール",
+    "secondaryLabel":"中学生プロジェクト",
+    "postSecondaryLabel":"中学校卒業生プロジェクト",
+    "additionalCategoryLabel":"追加項目",
+    "specialNotice":"2019年4月1日までに、追加のカテゴリー料金を除き、すべてのチームの申し込み料は免除されます。",
+    "superEarlyBird":{
+      "name":"スーパーアーリーバード",
+      "fromDate":"今日",
+      "toDate":"金曜日2019年2月1日香港時間23:59",
+      "fee":"無料",
+      "financialAssistanceDetails":"旅行補助金の対象となります",
+      "feeSchedule":{
+        "secondary":"40 USドル",
+        "postSecondary":"50 USドル",
+        "additionalCategory":"16 USドル"
+      }
+    },
+    "earlyBird":{
+      "name":"アーリーバード",
+      "fromDate":"土曜日2019年2月2日香港時間00:00 ",
+      "toDate":"月曜日2019年4月1日香港時間23:59",
+      "fee":"無料",
+      "financialAssistanceDetails":"旅行補助金の対象外",
+      "feeSchedule":{
+        "secondary":"50 USドル",
+        "postSecondary":"60 USドル",
+        "additionalCategory":"20 USドル"
+      }
+    },
+    "regular":{
+      "name":"通常",
+      "fromDate":"火曜日2019年4月2日香港時間00:00",
+      "toDate":"日曜日2019年4月21日香港時間23:59",
+      "fee":"有料",
+      "financialAssistanceDetails":"旅行補助金の対象外",
+      "feeSchedule":{
+        "secondary":"100 USドル",
+        "postSecondary":"120 USD",
+        "additionalCategory":"40 USドル"
+      }
+    }
+  },
+  "howToJoinHeading":"参加方法",
+  "teamLabel":"チーム",
+  "teamExplained":"最大6人の学生が1つのチームに登録できます",
+  "projectLabel":"プロジェクト",
+  "projectExplained":"チームは複数のプロジェクトを提出することができます",
+  "categoryLabel":"カテゴリー",
+  "categoryExplained":"各プロジェクトは一つのカテゴリに入ります",
+  "categoriesHeading":"カテゴリー",
+  "feeScheduleHeading":"参加費",
+  "applyNowCTALabel":"今すぐ申し込む"
+}

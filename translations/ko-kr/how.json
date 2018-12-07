@@ -1,0 +1,64 @@
+{
+  "pageTitle":"참가 신청 방법",
+  "seoDescription":"",
+  "ogImage":"../../static/images/ogimage.jpg",
+  "subhead":"2019년 국제 블록체인 올림피아드 참가 신청",
+  "whenToJoinHeading":"참가 신청 날짜",
+  "plans":{
+    "fromLabel":"...부터",
+    "toLabel":"...까지",
+    "feeLabel":"참가 신청비",
+    "financialAssistanceLabel":"지원금 보조",
+    "viewMoreLabel":"옆으로 넘겨서 더 보기",
+    "secondaryLabel":"고등학생 (Secondary School) 프로젝트",
+    "postSecondaryLabel":"대학생 (Post-Secondary Student) 프로젝트",
+    "additionalCategoryLabel":"추가 카테고리",
+    "specialNotice":"2019년 4월 1일까지는, 카테고리 추가 비용을 제외 한, 모든 팀의 참가비는 면제 됩니다.",
+    "superEarlyBird":{
+      "name":"수퍼 얼리버드 (Super Early Bird)",
+      "fromDate":"오늘",
+      "toDate":"2019년 2월 1일 금요일 홍콩시간 23:59",
+      "fee":"참가비 면제",
+      "financialAssistanceDetails":"여행 보조금 지원 자격",
+      "feeSchedule":{
+        "secondary":"US$40",
+        "postSecondary":"US$50",
+        "additionalCategory":"US$16"
+      }
+    },
+    "earlyBird":{
+      "name":"얼리버드 (Early Bird)",
+      "fromDate":"2019년 2월 2일 토요일 홍콩시간 00:00",
+      "toDate":"2019년 4월 1일 월요일 홍콩시간 23:59",
+      "fee":"참가비 면제",
+      "financialAssistanceDetails":"여행 보조금 지원 자격 없음",
+      "feeSchedule":{
+        "secondary":"US$50",
+        "postSecondary":"US$60",
+        "additionalCategory":"US$20"
+      }
+    },
+    "regular":{
+      "name":"레귤러 (Regular) ",
+      "fromDate":"2019년 4월 2일 토요일 홍콩시간 00:00",
+      "toDate":"2019년 4월 21일 일요일 홍콩시간 23:59",
+      "fee":"참가비 필수",
+      "financialAssistanceDetails":"여행 보조금 지원 자격 없음",
+      "feeSchedule":{
+        "secondary":"US$100",
+        "postSecondary":"US$120",
+        "additionalCategory":"US$40"
+      }
+    }
+  },
+  "howToJoinHeading":"참가 신청 방법",
+  "teamLabel":"팀",
+  "teamExplained":"최대 6명의 학생이 한 팀으로 신청 가능",
+  "projectLabel":"프로젝트",
+  "projectExplained":"한 팀당 두개의 프로젝트 이상 제출 가능",
+  "categoryLabel":"카테고리",
+  "categoryExplained":"각 프로젝트는 카테고리로 분류 됨",
+  "categoriesHeading":"카테고리",
+  "feeScheduleHeading":"참가비 스케쥴",
+  "applyNowCTALabel":"지금 신청하기"
+}

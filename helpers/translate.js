@@ -29,8 +29,9 @@ const translate = (key, page, locale, extras) => {
 
   
   
-  
-  return _.get(db, key, _.get(translations['_default'][page], key));
+  // TODO: 
+  const translated = _.get(db, key)
+  return _.isEmpty(translated) ? _.get(translations['_default'][page], key) : translated;
   
   
 

@@ -1,0 +1,32 @@
+{
+  "FINTECH":{
+    "name":"金融科技",
+    "description":"金融技术涵盖了传统金融部门，保险、交易、风险管理等方面的活动",
+    "color":"blue",
+    "icon":"show_chart"
+  },
+  "GOVTECH":{
+    "name":"政府科技",
+    "description":"政府科技叙述了主权国家或地区行政责任所需的关键平台和基础设施的解决方案",
+    "color":"yellow",
+    "icon":"account_balance"
+  },
+  "MEDTECH":{
+    "name":"医疗科技",
+    "description":"医疗科技是一系列可解决与健康相关问题，并改善人类生活质量或其他方面的应用程式",
+    "color":"black",
+    "icon":"local_hospital"
+  },
+  "IOT_O2O":{
+    "name":"IoT / O2O",
+    "description":"物联网/由在线到离线/反之亦然　考虑数码和物理世界间的桥接，例如　将现实生活中的情况和现象，转化为机器可用的数据",
+    "color":"green",
+    "icon":"local_shipping"
+  },
+  "ARTS_MEDIA":{
+    "name":"艺术/媒体",
+    "description":"艺术及媒体科技　包括公共公众活动，商业通信，娱乐和相邻行业。",
+    "color":"red",
+    "icon":"color_lens"
+  }
+}

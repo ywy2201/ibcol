@@ -1,0 +1,26 @@
+{
+  "siteTitle":"Міжнародна Олімпіада з Блокчейну (МОБ)",
+  "seoDescription":"",
+  "ogImage":"../../static/images/ogimage.jpg",
+  "logoTag":"IBCOL: Міжнародна Олімпіада з Блокчейну",
+  "titleSeparator":"|",
+  "menu":{
+    "home":"Додому",
+    "about":"",
+    "how":"Як приєднатися",
+    "competition":"Змагання",
+    "ambassadors":"Студенти",
+    "sponsors":"Спонсори",
+    "schedule":"",
+    "contact":"Контакти",
+    "registration":"Реєстрація"
+  },
+  "footerMenu":{
+    "backToTop":"Повернутися на початок сторінки",
+    "aboutCompetition":"Про конкурс",
+    "registrationInfo":"Реєстрація"
+  },
+  "closeMenu":"",
+  "navigateTo":"",
+  "copyright":"Копірайт © Міжнародна Олімпіада з Блокчейну. Всі права захищені."
+}

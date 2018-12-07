@@ -1,0 +1,68 @@
+{
+  "pageTitle":"",
+  "seoDescription":"",
+  "ogImage":"../../static/images/ogimage.jpg",
+  "subhead":"",
+  "teamInfo":"팀 정보",
+  "teamName":"팀 이름",
+  "studentInfo":"학생 정보",
+  "studentRecords":{
+    "firstName":"이름",
+    "lastName":"성",
+    "phoneNumber":"전화번호",
+    "email":"이메일",
+    "educationRecords":{
+      "degree":"학위",
+      "programme":"전공 과목",
+      "yearOfGraduation":"기관명 (학교)",
+      "institutionName":"졸업년도",
+      "city":"도시",
+      "state":"",
+      "countryCode":"국가/지역"
+    }
+  },
+  "advisorRecords":{
+    "firstName":"이름",
+    "lastName":"성",
+    "phoneNumber":"전화번호",
+    "email":"이메일",
+    "associationRecords":{
+      "organisationName":"",
+      "city":"도시",
+      "state":"",
+      "countryCode":"국가/지역",
+      "title":"",
+      "sectorCode":"",
+      "yearCommencement":"",
+      "yearCessation":""
+    }
+  },
+  "projectRecords":{
+    "name":"",
+    "projectCategoryKey":"",
+    "description":""
+  },
+  "studentEducationInfo":"학업 정보",
+  "addAnotherStudent":"",
+  "removeStudent":"",
+  "addAnotherStudentEducationRecord":"",
+  "removeStudentEducationRecord":"",
+  "advisorInfo":"",
+  "addAnAdvisor":"",
+  "addAnotherAdvisor":"",
+  "removeAdvisor":"",
+  "advisorAssociationInfo":"",
+  "addAnotherAdvisorAssociationRecord":"",
+  "removeAdvisorAssociationRecord":"",
+  "projectInfo":"",
+  "removeProject":"",
+  "addAnotherProject":"",
+  "submit":"",
+  "registerAnother":"",
+  "confirmation":{
+    "title":"",
+    "message":"",
+    "refTitle":"",
+    "TteamNameTitle":""
+  }
+}

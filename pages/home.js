@@ -75,7 +75,7 @@ export default class extends React.Component {
         
 
 
-        <section id="home" className="s-home page-hero target-section" data-parallax="scroll" data-image-src="/static/images/hero-bg-2.jpg" data-natural-width="3000" data-natural-height="2000" data-position-y="center">
+        <section id="home" className="s-home page-hero target-section" data-parallax="scroll" data-image-src="/static/images/bg-international-blockchain-olympiad-(ibcol).jpg" data-natural-width="3000" data-natural-height="2000" data-position-y="center">
 
           <div className="grid-overlay">
               <div></div>

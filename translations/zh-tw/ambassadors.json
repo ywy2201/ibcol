@@ -1,0 +1,62 @@
+{
+  "pageTitle":"學校大使",
+  "seoDescription":"國際奧林匹克區塊鏈競賽是一個多學科的設計與建設性的競賽。 IBCOL 2019邀請來自世界各地的學生,通過分散的應用程式,解決現實生活中所面對的挑戰。",
+  "ogImage":"../../static/images/ogimage.jpg",
+  "subhead":"2019年國際奧林匹克區塊鏈競賽　學生關係專員",
+  "schoolAmbassadorsTitle":"學校大使",
+  "schoolAmbassadorsDescriptions":"學校大使將在他們的校園代表IBCOL 2019",
+  "applyAmbassadorsLabel":"申請成為IBCOL的學校大使",
+  "schoolAmbassadors":[
+    {"flag":"flag-icon-hu","countryCode":"hu","title":"布達佩斯城市大學","ambassadors":[
+      {"name":"維篤 • 塔博瑞","email":"viktor.tabori@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-hu","countryCode":"hu","title":"布達佩斯科技經濟大學","ambassadors":[
+      {"name":"維篤 • 塔博瑞","email":"viktor.tabori@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-hu","countryCode":"hu","title":"中歐大學","ambassadors":[
+      {"name":"維篤 • 塔博瑞","email":"viktor.tabori@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-hu","countryCode":"hu","title":"布達佩斯考文紐斯大學","ambassadors":[
+      {"name":"維篤 • 塔博瑞","email":"viktor.tabori@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-ua","countryCode":"ua","title":"頓內次克國立經濟貿易大學","ambassadors":[
+      {"name":"瑪麗娜 • 丹尼陸","email":"marina.danylyuk@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-kr","countryCode":"kr","title":"韓國科學技術院","ambassadors":[
+      {"name":"金性洙","email":"sungsoo.kim@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-ru","countryCode":"ru","title":"莫斯科國立大學","ambassadors":[
+      {"name":"瑪麗娜 • 丹尼陸","email":"marina.danylyuk@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-us","countryCode":"us","title":"斯坦福大學","ambassadors":[
+      {"name":"朱利安 • 葛洛普","email":"julian.gropp@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-de","countryCode":"de","title":"慕尼黑工業大學","ambassadors":[
+      {"name":"朱利安 • 葛洛普","email":"julian.gropp@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-us","countryCode":"us","title":"加州大學柏克萊分校","ambassadors":[
+      {"name":"艾力士 • 魯斯納克","email":"alex.rusnak@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-ca","countryCode":"ca","title":"滑鐵盧大學","ambassadors":[
+        {"name":"陳嘉濠","email":"gabriel.chan@ibcol.org"},
+      {"name":"卡薏珊","email":"danielle.cadoret@ibcol.org"},
+      {"name":"蔡欣欣","email":"mika.tsoi@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-my","countryCode":"my","title":"馬來西亞理科大學","ambassadors":[
+      {"name":"楊飛逸","email":"feiyee.yeoh@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-ua","countryCode":"ua","title":"雅羅斯拉夫穆德里國立法律大學","ambassadors":[
+      {"name":"瑪麗娜 • 丹尼陸","email":"marina.danylyuk@ibcol.org"}
+    ]}
+  ],
+  "schoolAmbassadorProgrammeTitle":"學校大使計劃",
+  "schoolAmbassadorProgrammeDescription":"對科技，創新以及學生競賽充滿熱誠？我們正在尋找學校大使，在各地校園推廣IBCOL 2019。成為我們的一份子，參與創建首屆國際奧林匹克區塊鏈競賽吧！",
+  "responsibilitiesTitle":"使命",
+  "responsibilities":["Promote the International Blockchain Olympiad on campus","在校園招募感興趣的學生","Take lead and be the point of contact between interested applicants and registered participants","Arrange with student organisations or faculty or department for subsidies","Organise events for preparing students to compete in IBCOL 2019, such as team formation, blockchain training, and general promotion","Act in the best interest of the International Blockchain Olympiad"],
+  "perksTitle":"額外津貼",
+  "perks":["Gain valuable experience and insights into the enterprise, government, and blockchain worlds","1 free course (DC3) issued by the Hong Kong Blockchain Society (Value: 2000 USD)","School Ambassador Certificate issued by the International Blockchain Olympiad","Entitled to 10% discount on admission to IBCOL 2019 (Value up to 2000 USD - includes full 2-day access to tech expo, fireside chats, keynote luncheons, and networking sessions), for each referred team. For example, 3 referred teams is 30%, 7 referred teams is 70% off, 10 or more is 100% off, i.e. free ticket."],
+  "applyNowButtonLabel":"立刻申請",
+  "comingSoonButtonLabel":"更新中",
+  "financialAssistanceTitle":"經濟援助的選擇",
+  "financialAssistanceDescription":""
+}

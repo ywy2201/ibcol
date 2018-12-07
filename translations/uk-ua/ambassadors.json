@@ -1,0 +1,62 @@
+{
+  "pageTitle":"",
+  "seoDescription":"",
+  "ogImage":"../../static/images/ogimage.jpg",
+  "subhead":"",
+  "schoolAmbassadorsTitle":"",
+  "schoolAmbassadorsDescriptions":"",
+  "applyAmbassadorsLabel":"",
+  "schoolAmbassadors":[
+    {"flag":"flag-icon-hu","countryCode":"hu","title":"Budapest Metropolitan University (METU)","ambassadors":[
+      {"name":"Віктор Таборі","email":"viktor.tabori@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-hu","countryCode":"hu","title":"Будапештський університет технології та економіки","ambassadors":[
+      {"name":"Віктор Таборі","email":"viktor.tabori@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-hu","countryCode":"hu","title":"Центрально-Європейський університет","ambassadors":[
+      {"name":"Віктор Таборі","email":"viktor.tabori@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-hu","countryCode":"hu","title":"Університет Корвіна","ambassadors":[
+      {"name":"Віктор Таборі","email":"viktor.tabori@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-ua","countryCode":"ua","title":"Доне́цький націона́льний університе́т еконо́міки і торгі́влі імені (ДонНУЕТ) ","ambassadors":[
+      {"name":"Марина Данилюк","email":"marina.danylyuk@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-kr","countryCode":"kr","title":"Корейський провідний науково-технологічний інститут (KAIST)","ambassadors":[
+      {"name":"Кім Сен Су","email":"sungsoo.kim@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-ru","countryCode":"ru","title":"Московський державний університет","ambassadors":[
+      {"name":"Марина Данилюк","email":"marina.danylyuk@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-us","countryCode":"us","title":"Стенфордський університет","ambassadors":[
+      {"name":"Юліан Гропп","email":"julian.gropp@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-de","countryCode":"de","title":"Мюнхенський технічний університет","ambassadors":[
+      {"name":"Юліан Гропп","email":"julian.gropp@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-us","countryCode":"us","title":"Університет Каліфорнії, Берклі","ambassadors":[
+      {"name":"Олексій Руснак","email":"alex.rusnak@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-ca","countryCode":"ca","title":"Університет Ватерлоо","ambassadors":[
+      {"name":"Гавриїл Чан","email":"gabriel.chan@ibcol.org"},
+      {"name":"Даниэль Кадоре","email":"danielle.cadoret@ibcol.org"},
+      {"name":"Мика Цой","email":"mika.tsoi@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-my","countryCode":"my","title":"Universiti Sains Malaysia (USM)","ambassadors":[
+      {"name":"Єо Фей Ей","email":"feiyee.yeoh@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-ua","countryCode":"ua","title":"Національний юридичний університет імені Ярослава Мудрого (НЮУ)","ambassadors":[
+      {"name":"Марина Данилюк","email":"marina.danylyuk@ibcol.org"}
+    ]}
+  ],
+  "schoolAmbassadorProgrammeTitle":"",
+  "schoolAmbassadorProgrammeDescription":"",
+  "responsibilitiesTitle":"",
+  "responsibilities":["Promote the International Blockchain Olympiad on campus","Recruit interested students on campus","Take lead and be the point of contact between interested applicants and registered participants","Arrange with student organisations or faculty or department for subsidies","Organise events for preparing students to compete in IBCOL 2019, such as team formation, blockchain training, and general promotion","Act in the best interest of the International Blockchain Olympiad"],
+  "perksTitle":"",
+  "perks":["Gain valuable experience and insights into the enterprise, government, and blockchain worlds","1 free course (DC3) issued by the Hong Kong Blockchain Society (Value: 2000 USD)","School Ambassador Certificate issued by the International Blockchain Olympiad","Entitled to 10% discount on admission to IBCOL 2019 (Value up to 2000 USD - includes full 2-day access to tech expo, fireside chats, keynote luncheons, and networking sessions), for each referred team. For example, 3 referred teams is 30%, 7 referred teams is 70% off, 10 or more is 100% off, i.e. free ticket."],
+  "applyNowButtonLabel":"",
+  "comingSoonButtonLabel":"",
+  "financialAssistanceTitle":"",
+  "financialAssistanceDescription":""
+}

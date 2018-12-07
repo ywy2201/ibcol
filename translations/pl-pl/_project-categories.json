@@ -1,0 +1,32 @@
+{
+  "FINTECH":{
+    "name":"",
+    "description":"",
+    "color":"blue",
+    "icon":"show_chart"
+  },
+  "GOVTECH":{
+    "name":"",
+    "description":"",
+    "color":"yellow",
+    "icon":"account_balance"
+  },
+  "MEDTECH":{
+    "name":"",
+    "description":"",
+    "color":"black",
+    "icon":"local_hospital"
+  },
+  "IOT_O2O":{
+    "name":"",
+    "description":"",
+    "color":"green",
+    "icon":"local_shipping"
+  },
+  "ARTS_MEDIA":{
+    "name":"",
+    "description":"",
+    "color":"red",
+    "icon":"color_lens"
+  }
+}

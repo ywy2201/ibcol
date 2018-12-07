@@ -117,7 +117,7 @@ class MyApp extends App {
           <div className="ss-go-top">
             <Link prefetch route="registration" params={{ locale }}>
               <a className="register btn btn--primary btn--large">
-                  {this.translate('footerMenu.registerNow')}
+                  {this.translate('footerMenu.registrationInfo')}
               </a>
             </Link>
             {/* <Link prefetch route="competition" params={{ locale }}>

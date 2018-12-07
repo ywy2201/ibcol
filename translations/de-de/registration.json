@@ -1,0 +1,68 @@
+{
+  "pageTitle":"Registration",
+  "seoDescription":"IBCOL",
+  "ogImage":"../../static/images/ogimage.jpg",
+  "subhead":"",
+  "teamInfo":"Team Information",
+  "teamName":"Name des Teams",
+  "studentInfo":"Information für Studenten",
+  "studentRecords":{
+    "firstName":"Vorname",
+    "lastName":"Nachname",
+    "phoneNumber":"Telefonnummer",
+    "email":"Email",
+    "educationRecords":{
+      "degree":"Abschluss",
+      "programme":"Studienrichtung",
+      "yearOfGraduation":"Name der Universität",
+      "institutionName":"Abschlussjahr",
+      "city":"Stadt",
+      "state":"",
+      "countryCode":"Land"
+    }
+  },
+  "advisorRecords":{
+    "firstName":"Vorname",
+    "lastName":"Nachname",
+    "phoneNumber":"Telefonnummer",
+    "email":"Email",
+    "associationRecords":{
+      "organisationName":"",
+      "city":"Stadt",
+      "state":"",
+      "countryCode":"Land",
+      "title":"",
+      "sectorCode":"",
+      "yearCommencement":"",
+      "yearCessation":""
+    }
+  },
+  "projectRecords":{
+    "name":"",
+    "projectCategoryKey":"",
+    "description":""
+  },
+  "studentEducationInfo":"Akademische Abschlüsse",
+  "addAnotherStudent":"",
+  "removeStudent":"",
+  "addAnotherStudentEducationRecord":"",
+  "removeStudentEducationRecord":"",
+  "advisorInfo":"",
+  "addAnAdvisor":"",
+  "addAnotherAdvisor":"",
+  "removeAdvisor":"",
+  "advisorAssociationInfo":"",
+  "addAnotherAdvisorAssociationRecord":"",
+  "removeAdvisorAssociationRecord":"",
+  "projectInfo":"",
+  "removeProject":"",
+  "addAnotherProject":"",
+  "submit":"",
+  "registerAnother":"",
+  "confirmation":{
+    "title":"",
+    "message":"",
+    "refTitle":"",
+    "TteamNameTitle":""
+  }
+}

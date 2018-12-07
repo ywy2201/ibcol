@@ -159,7 +159,7 @@ class MenuComponent extends React.Component {
         <div className="header-logo">
           <Link prefetch route="home" params={{ locale }}>
             <a className="site-logo">
-              <img src="/static/images/logo-subpage.png" alt={this.translate('logoTag')}/>
+              <img src="/static/images/logo-international-blockchain-olympiad-(ibcol)-subpage.png" alt={this.translate('logoTag')}/>
             </a>
           </Link>
         </div>

@@ -1,0 +1,62 @@
+{
+  "pageTitle":"学校大使",
+  "seoDescription":"国際ブロックチェンオリンピアッドは、多分野のデザインと建設的な試合です。 IBCOL 2019は、世界各国からの生徒に分散的なアプリケーションを通じて、現実社会の課題を解決するよう呼びかけています。",
+  "ogImage":"../../static/images/ogimage.jpg",
+  "subhead":"2019国際ブロックチェーンオリンピアッド　学生関係係り",
+  "schoolAmbassadorsTitle":"学校大使",
+  "schoolAmbassadorsDescriptions":"学校大使は自分のキャンパスでIBCOL 2019を代表します",
+  "applyAmbassadorsLabel":"IBCOLの学校大使になるために申し込む",
+  "schoolAmbassadors":[
+    {"flag":"flag-icon-hu","countryCode":"hu","title":"ブダペストメトロポリタン大学（METU）","ambassadors":[
+      {"name":"ヴィクトル・タボリ","email":"viktor.tabori@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-hu","countryCode":"hu","title":"ブダペスト工科経済大学","ambassadors":[
+      {"name":"ヴィクトル・タボリ","email":"viktor.tabori@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-hu","countryCode":"hu","title":"中央ヨーロッパ大学（CEU）","ambassadors":[
+      {"name":"ヴィクトル・タボリ","email":"viktor.tabori@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-hu","countryCode":"hu","title":"ブダペシュト・コルヴィヌス大学","ambassadors":[
+      {"name":"ヴィクトル・タボリ","email":"viktor.tabori@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-ua","countryCode":"ua","title":"ドネツク州経済貿易大学（DonNUET）","ambassadors":[
+      {"name":"マリーナ・ダニュリク","email":"marina.danylyuk@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-kr","countryCode":"kr","title":"韓国科学技術院 (カイストゥ)","ambassadors":[
+      {"name":"キム．スンソー","email":"sungsoo.kim@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-ru","countryCode":"ru","title":"モスクワ州立大学（MSU）","ambassadors":[
+      {"name":"マリーナ・ダニュリク","email":"marina.danylyuk@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-us","countryCode":"us","title":"スタンフォード大学","ambassadors":[
+      {"name":"ジュリアン・グロップ","email":"julian.gropp@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-de","countryCode":"de","title":"ミュンヘン工科大学","ambassadors":[
+      {"name":"ジュリアン・グロップ","email":"julian.gropp@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-us","countryCode":"us","title":"カリフォルニア大学（UCバークレー校）","ambassadors":[
+      {"name":"アレックス・ラスナク","email":"alex.rusnak@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-ca","countryCode":"ca","title":"ワーテルロー大学（UW）","ambassadors":[
+      {"name":"チン．カゴウ（ガブリエル）","email":"gabriel.chan@ibcol.org"},
+      {"name":"ダニエル・カドレ","email":"danielle.cadoret@ibcol.org"},
+      {"name":"サイ　ヤンヤン（ミカ）","email":"mika.tsoi@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-my","countryCode":"my","title":"マレーシア理科大学","ambassadors":[
+      {"name":"ヨウ．ヒイツ","email":"feiyee.yeoh@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-ua","countryCode":"ua","title":"ヤロスラフ・ムドリー国立法学大学","ambassadors":[
+      {"name":"マリーナ・ダニュリク","email":"marina.danylyuk@ibcol.org"}
+    ]}
+  ],
+  "schoolAmbassadorProgrammeTitle":"学校大使プログラム",
+  "schoolAmbassadorProgrammeDescription":"テクノロジー、イノベーション、または学生競争に熱意を持っていますか？各キャンパスでIBCOL 2019を宣伝するために学校の大使を募集しています。ぜひ私たちの一員となり、世界初の国際ブロックチェーンオリンピアッドの創設に参加しましょう！",
+  "responsibilitiesTitle":"使命",
+  "responsibilities":["Promote the International Blockchain Olympiad on campus","キャンパスで関心のある学生を募集する","Take lead and be the point of contact between interested applicants and registered participants","Arrange with student organisations or faculty or department for subsidies","Organise events for preparing students to compete in IBCOL 2019, such as team formation, blockchain training, and general promotion","Act in the best interest of the International Blockchain Olympiad"],
+  "perksTitle":"追加手当",
+  "perks":["Gain valuable experience and insights into the enterprise, government, and blockchain worlds","1 free course (DC3) issued by the Hong Kong Blockchain Society (Value: 2000 USD)","School Ambassador Certificate issued by the International Blockchain Olympiad","Entitled to 10% discount on admission to IBCOL 2019 (Value up to 2000 USD - includes full 2-day access to tech expo, fireside chats, keynote luncheons, and networking sessions), for each referred team. For example, 3 referred teams is 30%, 7 referred teams is 70% off, 10 or more is 100% off, i.e. free ticket."],
+  "applyNowButtonLabel":"今すぐ申し込む",
+  "comingSoonButtonLabel":"近日公開",
+  "financialAssistanceTitle":"財政支援の選択",
+  "financialAssistanceDescription":""
+}

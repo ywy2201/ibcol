@@ -1,0 +1,26 @@
+{
+  "siteTitle":"",
+  "seoDescription":"",
+  "ogImage":"../../static/images/ogimage.jpg",
+  "logoTag":"",
+  "titleSeparator":"|",
+  "menu":{
+    "home":"",
+    "about":"",
+    "how":"",
+    "competition":"",
+    "ambassadors":"",
+    "sponsors":"",
+    "schedule":"",
+    "contact":"",
+    "registration":""
+  },
+  "footerMenu":{
+    "backToTop":"",
+    "aboutCompetition":"",
+    "registrationInfo":""
+  },
+  "closeMenu":"",
+  "navigateTo":"",
+  "copyright":""
+}
