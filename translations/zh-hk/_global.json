@@ -1,29 +1,26 @@
 {
-  "siteTitle": "IBCOL",
-  "seoDescription": "",
-  "ogImage": "",
-  "logoTag": "IBCOL: International Blockchain Olympiad",
-  "titleSeparator": "|",
-  "menu": {
-    "home": "Overview",
-    "about": "About",
-    "how": "How To Join",
-    "competition": "Competition",
-    "ambassadors": "School Ambassadors",
-    "sponsors": "Our Sponsors",
-    "schedule": "Schedule & Programme",
-    "contact": "Contact Us",
-    "registration": "Registration"
+  "siteTitle":"國際奧林匹克區塊鏈競賽 (奧鏈賽)",
+  "seoDescription":"國際奧林匹克區塊鏈競賽是一個多學科的設計與建設性的競賽。 IBCOL 2019邀請來自世界各地的學生,通過分散的應用程式,解決現實生活中所面對的挑戰。",
+  "ogImage":"../../static/images/ogimage.jpg",
+  "logoTag":"IBCOL: 國際奧林匹克區塊鏈競賽",
+  "titleSeparator":"|",
+  "menu":{
+    "home":"首頁",
+    "about":"關於",
+    "how":"參加方法",
+    "competition":"賽事",
+    "ambassadors":"學生",
+    "sponsors":"贊助",
+    "schedule":"項目",
+    "contact":"聯繫",
+    "registration":"參加"
   },
-  "footerMenu": {
-    "backToTop": "Back to Top",
-    "aboutCompetition": "Competition Process",
-    "registrationInfo": "Registration Info"
+  "footerMenu":{
+    "backToTop":"回到頂部",
+    "aboutCompetition":"關於本次賽事",
+    "registrationInfo":"申請參加"
   },
-  
-  "closeMenu": "Close",
-  "navigateTo": "Navigate to",
-  "copyright": "Copyright &copy; 2018 International Blockchain Olympiad. All rights reserved."
-  
-
+  "closeMenu":"閉幕",
+  "navigateTo":"移至...",
+  "copyright":"© 2018 國際奧林匹克區塊鏈競賽  版權所有  不得轉載"
 }
