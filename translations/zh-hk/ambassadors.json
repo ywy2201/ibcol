@@ -1,12 +1,12 @@
 {
-  "pageTitle": "School Ambassadors",
-  "seoDescription": "",
-  "ogImage": "",
-  "subhead": "Student Relations for the 2019 International Blockchain Olympiad",
-  "schoolAmbassadorsTitle": "School Ambassadors",
-  "schoolAmbassadorsDescriptions": "School ambassadors represent IBCOL 2019 on their campuses",
-  "applyAmbassadorsLabel": "Apply to be an IBCOL school ambassador",
-  "schoolAmbassadors": [
+  "pageTitle":"學校大使",
+  "seoDescription":"國際奧林匹克區塊鏈競賽是一個多學科的設計與建設性的競賽。 IBCOL 2019邀請來自世界各地的學生,通過分散的應用程式,解決現實生活中所面對的挑戰。",
+  "ogImage":"../../static/images/ogimage.jpg",
+  "subhead":"2019年國際奧林匹克區塊鏈競賽　學生關係專員",
+  "schoolAmbassadorsTitle":"學校大使",
+  "schoolAmbassadorsDescriptions":"學校大使將在他們的校園代表IBCOL 2019",
+  "applyAmbassadorsLabel":"申請成為IBCOL的學校大使",
+  "schoolAmbassadors":[
     {
       "flag": "flag-icon-hu",
       "countryCode": "hu",
@@ -151,27 +151,14 @@
       ]
     }
   ],
-  "schoolAmbassadorProgrammeTitle": "School Ambassador Programme",
-  "schoolAmbassadorProgrammeDescription": "Have a passion for technology, innovation, or student competitions? Take part in building the first ever International Blockchain Olympiad! We are looking for school ambassadors to promote <a href='http://ibcol.org/' target='_blank'>IBCOL 2019</a> in your local campus.",
-  "responsibilitiesTitle": "Responsibilities",
-  "responsibilities": [
-    "Promote the International Blockchain Olympiad on campus",
-    "Recruit interested students on campus",
-    "Take lead and be the point of contact between interested applicants and registered participants",
-    "Arrange with student organisations or faculty or department for subsidies",
-    "Organise events for preparing students to compete in IBCOL 2019, such as team formation, blockchain training, and general promotion",
-    "Act in the best interest of the International Blockchain Olympiad"
-  ],
-  "perksTitle": "Perks",
-  "perks": [
-    "Gain valuable experience and insights into the enterprise, government, and blockchain worlds",
-    "1 free course (<a href='https://www.hkbcs.org/dappcamp/courses' target='_blank'>DC3</a>) issued by the Hong Kong Blockchain Society (Value: 2000 USD)",
-    "School Ambassador Certificate issued by the International Blockchain Olympiad",
-    "Entitled to 10% discount on admission to IBCOL 2019 (Value up to 2000 USD - includes full 2-day access to tech expo, fireside chats, keynote luncheons, and networking sessions), for each referred team. For example, 3 referred teams is 30%, 7 referred teams is 70% off, 10 or more is 100% off, i.e. free ticket."
-  ],
-  "applyNowButtonLabel": "Apply Now",
-  "comingSoonButtonLabel": "Coming Soon",
-  "financialAssistanceTitle": "Financial Assistance Options",
-  "financialAssistanceDescription": "Applicants are evaluated on a case-by-case basis, with no bearing on the actual results of the competition. Students may apply for subsidies to reduce the financial burden of participating in IBCOL 2019, such as the entry fee, travel to the main event in Hong Kong, and accommodation assistance while in Hong Kong. Only eligible for registrants before Feb 1."
-
+  "schoolAmbassadorProgrammeTitle":"學校大使計劃",
+  "schoolAmbassadorProgrammeDescription":"對科技，創新以及學生競賽充滿熱誠？我們正在尋找學校大使，在各地校園推廣IBCOL 2019。成為我們的一份子，參與創建首屆國際奧林匹克區塊鏈競賽吧！",
+  "responsibilitiesTitle":"使命",
+  "responsibilities":["Promote the International Blockchain Olympiad on campus","在校園招募感興趣的學生","Take lead and be the point of contact between interested applicants and registered participants","Arrange with student organisations or faculty or department for subsidies","Organise events for preparing students to compete in IBCOL 2019, such as team formation, blockchain training, and general promotion","Act in the best interest of the International Blockchain Olympiad"],
+  "perksTitle":"額外津貼",
+  "perks":["Gain valuable experience and insights into the enterprise, government, and blockchain worlds","1 free course (DC3) issued by the Hong Kong Blockchain Society (Value: 2000 USD)","School Ambassador Certificate issued by the International Blockchain Olympiad","Entitled to 10% discount on admission to IBCOL 2019 (Value up to 2000 USD - includes full 2-day access to tech expo, fireside chats, keynote luncheons, and networking sessions), for each referred team. For example, 3 referred teams is 30%, 7 referred teams is 70% off, 10 or more is 100% off, i.e. free ticket."],
+  "applyNowButtonLabel":"立刻申請",
+  "comingSoonButtonLabel":"更新中",
+  "financialAssistanceTitle":"經濟援助的選擇",
+  "financialAssistanceDescription":""
 }
