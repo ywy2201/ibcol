@@ -1,72 +1,64 @@
 {
-  "pageTitle": "How to Join",
-  "seoDescription": "",
-  "ogImage": "",
-  "subhead": "Registration Process for the 2019 International Blockchain Olympiad",
-  "whenToJoinHeading": "When To Join",
-  "plans": {
-    "fromLabel": "From",
-    "toLabel": "Until",
-    "feeLabel": "Registration Fee",
-    "financialAssistanceLabel": "Financial Assistance",
-    "viewMoreLabel": "swipe for more",
-    "secondaryLabel": "Secondary School Student Project",
-    "postSecondaryLabel": "Post-Secondary Student Project",
-    "additionalCategoryLabel": "For each Additional Category",
-    "specialNotice": "Except additional category fees, project registration fees for team registrations are waived for all registered teams until April 1st 2019",
-    "superEarlyBird": {
-      "name": "Super Early Bird",
-      "fromDate": "Today",
-      "toDate": "Friday<br/>1 February 2019<br/>23:59 HKT",
-      "fee": "Fee is waived",
-      "financialAssistanceDetails": "Eligible for travel subsidies",
-      "feeSchedule": {
-        "secondary": "40 USD",
-        "postSecondary": "50 USD",
-        "additionalCategory": "16 USD"
+  "pageTitle":"參加方法",
+  "seoDescription":"國際奧林匹克區塊鏈競賽是一個多學科的設計與建設性的競賽。 IBCOL 2019邀請來自世界各地的學生,通過分散的應用程式,解決現實生活中所面對的挑戰。",
+  "ogImage":"../../static/images/ogimage.jpg",
+  "subhead":"申請2019年國際區塊鏈奧林匹克運動會",
+  "whenToJoinHeading":"什麼時候加入",
+  "plans":{
+    "fromLabel":"由...",
+    "toLabel":"至...",
+    "feeLabel":"登記",
+    "financialAssistanceLabel":"經費支援",
+    "viewMoreLabel":"瀏覽更多",
+    "secondaryLabel":"中學生項目",
+    "postSecondaryLabel":"中學畢業生項目",
+    "additionalCategoryLabel":"附加類別",
+    "specialNotice":"在2019年4月1日之前，除了額外的類別費用，所有團隊註冊費將獲免除",
+    "superEarlyBird":{
+      "name":"超級早鳥",
+      "fromDate":"今天",
+      "toDate":"星期五 2019年2月1日 香港時間23:59",
+      "fee":"費用免除",
+      "financialAssistanceDetails":"有資格獲得旅費補貼",
+      "feeSchedule":{
+        "secondary":"40 美元",
+        "postSecondary":"50 美元",
+        "additionalCategory":"16 美元"
       }
     },
-
-    "earlyBird": {
-      "name": "Early Bird",
-      "fromDate": "Saturday<br/>2 February 2019<br/>00:00 HKT",
-      "toDate": "Monday<br/>1 April 2019<br/>23:59 HKT",
-      "fee": "Fee is waived",
-      "financialAssistanceDetails": "Ineligible for travel subsidies",
-      "feeSchedule": {
-        "secondary": "50 USD",
-        "postSecondary": "60 USD",
-        "additionalCategory": "20 USD"
+    "earlyBird":{
+      "name":"早鳥",
+      "fromDate":"星期六 2019年2月2日 香港時間00:00",
+      "toDate":"星期一 2019年4月1日 香港時間23:59",
+      "fee":"費用免除",
+      "financialAssistanceDetails":"不符合旅費補貼資格",
+      "feeSchedule":{
+        "secondary":"50 美元",
+        "postSecondary":"60 美元",
+        "additionalCategory":"20 美元"
       }
     },
-
-    "regular": {
-      "name": "Regular",
-      "fromDate": "Tuesday<br/>2 April 2019<br/>00:00 HKT",
-      "toDate": "Sunday<br/>21 April 2019<br/>23:59 HKT",
-      "fee": "Fee is required",
-      "financialAssistanceDetails": "Ineligible for travel subsidies",
-      "feeSchedule": {
-        "secondary": "100 USD",
-        "postSecondary": "120 USD",
-        "additionalCategory": "40 USD"
+    "regular":{
+      "name":"一般",
+      "fromDate":"星期二 2019年4月2日 香港時間00:00",
+      "toDate":"星期日 2019年4月21日 香港時間23:59",
+      "fee":"必需繳費",
+      "financialAssistanceDetails":"不符合旅費補貼資格",
+      "feeSchedule":{
+        "secondary":"100 美元",
+        "postSecondary":"120 美元",
+        "additionalCategory":"40 美元"
       }
     }
   },
-  "howToJoinHeading": "How To Join",
-  "teamLabel": "Team",
-  "teamExplained": "Up to 6 <b>students</b> can register into one <b>team</b>",
-  "projectLabel": "Project",
-  "projectExplained": "A team can submit more than one <b>project</b>",
-  "categoryLabel": "Category",
-  "categoryExplained": "Each project is entered into a <b>category</b>",
-  "categoriesHeading": "Categories",
-  "feeScheduleHeading": "Fee Schedule",
-  "applyNowCTALabel": "Apply Now (Comming Soon)"
-
-
-
-
-
-  
+  "howToJoinHeading":"參加方法",
+  "teamLabel":"隊伍",
+  "teamExplained":"最多6名學生可以組成一個隊伍",
+  "projectLabel":"企劃報告",
+  "projectExplained":"一個團隊可以提交多個項目",
+  "categoryLabel":"類別",
+  "categoryExplained":"每份企劃報告分別可進入一個類別",
+  "categoriesHeading":"類別",
+  "feeScheduleHeading":"報名費",
+  "applyNowCTALabel":"立即申請"
 }
