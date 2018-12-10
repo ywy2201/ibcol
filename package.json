@@ -79,6 +79,7 @@
     "react": "^16.6.0",
     "react-apollo": "^2.3.1",
     "react-dom": "^16.6.0",
+    "react-ga": "^2.5.6",
     "react-slick": "^0.23.2",
     "slack-node": "^0.1.8",
     "slick-carousel": "^1.8.1",
