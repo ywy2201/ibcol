@@ -794,8 +794,11 @@ export default class extends React.Component {
     
     // console.log(">>> query", this.props.query);
 
-
+    
     const locale = this.props.query.locale;
+
+    const sectors = this.translate('sectors');
+    
     
     return (
       <ThisPageContainerComponent>
@@ -1104,8 +1107,8 @@ export default class extends React.Component {
                                       <select data-name="sectorCode" data-section="advisorAssociationRecords" data-advisor-index={advisorIndex} data-advisor-association-index={associationRecordIndex} onChange={this.onRecordChange} value={_.isEmpty(associationRecord['sectorCode']) ? "" : associationRecord['sectorCode']} onFocus={this.onFieldFocused} onBlur={this.onFieldBlurred}>
                                         <option value=""></option>
                                         {
-                                          configs.sectorCodes.map((sectorCode, index) => {
-                                            return <option value={sectorCode} key={sectorCode}>{this.translate(sectorCode)}</option>
+                                          Object.keys(sectors).map((sectorCode, index) => {
+                                            return <option value={sectorCode} key={sectorCode}>{sectors[sectorCode]}</option>
                                           })
                                         }
                                       </select>
