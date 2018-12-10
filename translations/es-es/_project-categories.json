@@ -1,32 +1,34 @@
 {
-  "FINTECH":{
-    "name":"Fintech",
-    "description":"La tecnología financiera engloba ampliamente las actividades en el sector financiero tradicional, así como en seguros, comercio y gestión de riesgos.",
-    "color":"blue",
-    "icon":"show_chart"
-  },
-  "GOVTECH":{
-    "name":"Govtech",
-    "description":"La tecnología gubernamental describe las soluciones clave de infraestructura y plataforma requeridas para las responsabilidades administrativas de un estado o territorio soberano.",
-    "color":"yellow",
-    "icon":"account_balance"
-  },
-  "MEDTECH":{
-    "name":"Meditech",
-    "description":"Medical Technology is a collection of applications that solve health related issues and improve the quality of lives, for humans or otherwise.",
-    "color":"black",
-    "icon":"local_hospital"
-  },
-  "IOT_O2O":{
-    "name":"IoT/O2O",
-    "description":"Internet de las cosas / Online-to-Offline / viceversa se refiere a la unión de mundos digitales y físicos, es decir, la interpretación de situaciones y fenómenos de la vida real en datos utilizables por la máquina.",
-    "color":"green",
-    "icon":"local_shipping"
-  },
-  "ARTS_MEDIA":{
-    "name":"Arte/media",
-    "description":"Arte y tecnología de medios que abarca actividades humanas en comunicaciones públicas y comerciales, entretenimiento e industrias adyacentes.",
-    "color":"red",
-    "icon":"color_lens"
+  "projectCategories": {
+    "FINTECH":{
+      "name":"Fintech",
+      "description":"La tecnología financiera engloba ampliamente las actividades en el sector financiero tradicional, así como en seguros, comercio y gestión de riesgos.",
+      "color":"blue",
+      "icon":"show_chart"
+    },
+    "GOVTECH":{
+      "name":"Govtech",
+      "description":"La tecnología gubernamental describe las soluciones clave de infraestructura y plataforma requeridas para las responsabilidades administrativas de un estado o territorio soberano.",
+      "color":"yellow",
+      "icon":"account_balance"
+    },
+    "MEDTECH":{
+      "name":"Meditech",
+      "description":"Medical Technology is a collection of applications that solve health related issues and improve the quality of lives, for humans or otherwise.",
+      "color":"black",
+      "icon":"local_hospital"
+    },
+    "IOT_O2O":{
+      "name":"IoT/O2O",
+      "description":"Internet de las cosas / Online-to-Offline / viceversa se refiere a la unión de mundos digitales y físicos, es decir, la interpretación de situaciones y fenómenos de la vida real en datos utilizables por la máquina.",
+      "color":"green",
+      "icon":"local_shipping"
+    },
+    "ARTS_MEDIA":{
+      "name":"Arte/media",
+      "description":"Arte y tecnología de medios que abarca actividades humanas en comunicaciones públicas y comerciales, entretenimiento e industrias adyacentes.",
+      "color":"red",
+      "icon":"color_lens"
+    }
   }
 }
