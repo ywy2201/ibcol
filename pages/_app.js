@@ -84,8 +84,8 @@ class MyApp extends App {
     }
 
     // client-side only, run on page changes, do not run on server (SSR)
-    if (typeof(window) === undefined) {
-      ReactGA.pageview(router.asPath);
+    if (typeof(window) === "object") {
+      ReactGA.pageview(ctx.asPath);
     }
 
     
