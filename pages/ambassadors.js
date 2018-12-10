@@ -104,7 +104,7 @@ translate = (t) => translate(t, 'ambassadors', this.props.query.locale);
 
                         {
                             school.ambassadors.map((ambassador, j)=>{
-                                return <p className="rep">
+                                return <p className="rep" key={j}>
                                     {ambassador.name} (<a href={`mailto:${ambassador.email}`}>{ambassador.email}</a>)
                                 </p>
                             })
