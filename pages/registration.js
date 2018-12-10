@@ -794,8 +794,12 @@ export default class extends React.Component {
     
     // console.log(">>> query", this.props.query);
 
-
+    
     const locale = this.props.query.locale;
+
+    const sectors = this.translate('sectors');
+    const projectCategories = this.translate('projectCategories');
+    
     
     return (
       <ThisPageContainerComponent>
@@ -1104,8 +1108,8 @@ export default class extends React.Component {
                                       <select data-name="sectorCode" data-section="advisorAssociationRecords" data-advisor-index={advisorIndex} data-advisor-association-index={associationRecordIndex} onChange={this.onRecordChange} value={_.isEmpty(associationRecord['sectorCode']) ? "" : associationRecord['sectorCode']} onFocus={this.onFieldFocused} onBlur={this.onFieldBlurred}>
                                         <option value=""></option>
                                         {
-                                          configs.sectorCodes.map((sectorCode, index) => {
-                                            return <option value={sectorCode} key={sectorCode}>{this.translate(sectorCode)}</option>
+                                          Object.keys(sectors).map((sectorCode, index) => {
+                                            return <option value={sectorCode} key={sectorCode}>{sectors[sectorCode]}</option>
                                           })
                                         }
                                       </select>
@@ -1234,8 +1238,8 @@ export default class extends React.Component {
                                 <select data-name="projectCategoryKey" data-section="projectRecords" data-project-index={projectIndex} onChange={this.onRecordChange} value={_.isEmpty(projectRecord['projectCategoryKey']) ? "" : projectRecord['projectCategoryKey']} onFocus={this.onFieldFocused} onBlur={this.onFieldBlurred}>
                                   <option value=""></option>
                                   {
-                                    configs.projectCategoryKeys.map((projectCategoryKey, index) => {
-                                      return <option value={projectCategoryKey} key={projectCategoryKey}>{this.translate(`${projectCategoryKey}.name`)}</option>
+                                    Object.keys(projectCategories).map((projectCategoryKey, index) => {
+                                      return <option value={projectCategoryKey} key={projectCategoryKey}>{projectCategories[projectCategoryKey].name}</option>
                                     })
                                   }
                                 </select>
