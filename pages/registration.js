@@ -798,6 +798,7 @@ export default class extends React.Component {
     const locale = this.props.query.locale;
 
     const sectors = this.translate('sectors');
+    const projectCategories = this.translate('projectCategories');
     
     
     return (
@@ -1237,8 +1238,8 @@ export default class extends React.Component {
                                 <select data-name="projectCategoryKey" data-section="projectRecords" data-project-index={projectIndex} onChange={this.onRecordChange} value={_.isEmpty(projectRecord['projectCategoryKey']) ? "" : projectRecord['projectCategoryKey']} onFocus={this.onFieldFocused} onBlur={this.onFieldBlurred}>
                                   <option value=""></option>
                                   {
-                                    configs.projectCategoryKeys.map((projectCategoryKey, index) => {
-                                      return <option value={projectCategoryKey} key={projectCategoryKey}>{this.translate(`${projectCategoryKey}.name`)}</option>
+                                    Object.keys(projectCategories).map((projectCategoryKey, index) => {
+                                      return <option value={projectCategoryKey} key={projectCategoryKey}>{projectCategories[projectCategoryKey].name}</option>
                                     })
                                   }
                                 </select>
