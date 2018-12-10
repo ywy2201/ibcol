@@ -66,6 +66,10 @@ translate = (t) => translate(t, 'ambassadors', this.props.query.locale);
 
     <Head>
       <title>{this.translate('siteTitle')} {this.translate('titleSeparator')} {this.translate('pageTitle')}</title>
+      <meta name="description" content={this.translate('seoDescription')}/>
+      <meta name="keywords" content={this.translate('keywords')}/>
+      <meta property="og:image" content={this.translate('ogImage')} />
+      <meta property="og:type" content="website" />
     </Head>
     
     <section className="s-section target-section first">
