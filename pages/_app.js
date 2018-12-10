@@ -5,6 +5,10 @@ import classNames from 'classnames';
 
 import translate from 'helpers/translate.js';
 
+import ReactGA from 'react-ga';
+
+  
+
 import { Link } from '/routes';
 // import css from 'styled-jsx/css';
 
@@ -79,15 +83,22 @@ class MyApp extends App {
       
     }
 
+    // client-side only, run on page changes, do not run on server (SSR)
+    if (typeof(window) === undefined) {
+      ReactGA.pageview(router.asPath);
+    }
+
     
 
     return { pageProps, router }
   }
-
-
   
   
-
+  componentDidMount() {
+    // client-side only, run once on mount
+    ReactGA.initialize('UA-113535301-3');
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }
 
   render() {
     const { Component, pageProps, router, apollo } = this.props;
