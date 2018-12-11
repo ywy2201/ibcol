@@ -54,7 +54,8 @@ class MenuComponent extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      isMobileMenuOpened: false
+      isMobileMenuOpened: false,
+      wasSticky: false
     }
   }
 
@@ -73,6 +74,16 @@ class MenuComponent extends React.Component {
   componentDidUpdate = (prevProps, prevState) => {
     // console.log('prevProps', prevProps);
     // console.log('this.props', this.props);
+
+    if (this.props.isSticky === false && prevProps.isSticky === true) {
+      this.setState({
+        wasSticky: true
+      })
+    } else if (this.props.isSticky === true && prevProps.isSticky === false) {
+      this.setState({
+        wasSticky: false
+      })
+    }
     
     if (this.props.router !== undefined) {
       if (prevProps.router.asPath !== this.props.router.asPath) {
@@ -95,7 +106,9 @@ class MenuComponent extends React.Component {
   render() {
     const componentName = "MenuComponent";
 
-
+    // console.log("this.props.style", this.props.style);
+    // console.log("this.props.className", this.props.className);
+    // console.log("this.props", this.props);
 
     const locale = this.props.locale;
 
@@ -152,9 +165,10 @@ class MenuComponent extends React.Component {
     </>
 
     return (
-      <MenuHeader className={classNames('s-header', {
-        'menu-is-open': this.state.isMobileMenuOpened === true
-      })}>
+      <MenuHeader className={classNames('s-header', this.props.className, {
+        'menu-is-open': this.state.isMobileMenuOpened === true,
+        wasSticky: this.state.wasSticky
+      })} style={this.props.style}>
         
         <div className="header-logo">
           <Link prefetch route="home" params={{ locale }}>
