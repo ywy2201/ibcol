@@ -5,6 +5,11 @@ import classNames from 'classnames';
 
 import translate from 'helpers/translate.js';
 
+import ReactGA from 'react-ga';
+import { StickyContainer, Sticky } from 'react-sticky';
+
+  
+
 import { Link } from '/routes';
 // import css from 'styled-jsx/css';
 
@@ -79,15 +84,22 @@ class MyApp extends App {
       
     }
 
+    // client-side only, run on page changes, do not run on server (SSR)
+    if (typeof(window) === "object") {
+      ReactGA.pageview(ctx.asPath);
+    }
+
     
 
     return { pageProps, router }
   }
-
-
   
   
-
+  componentDidMount() {
+    // client-side only, run once on mount
+    ReactGA.initialize('UA-113535301-3');
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }
 
   render() {
     const { Component, pageProps, router, apollo } = this.props;
@@ -103,14 +115,31 @@ class MyApp extends App {
         
         {/* <LoaderComponent/> */}
 
+        <StickyContainer>
 
-        <MenuComponent locale={locale}/>
+          <Sticky topOffset={500}>
+            {({
+              style,
+  
+              // the following are also available but unused in this example
+              isSticky,
+              wasSticky,
+              distanceFromTop,
+              distanceFromBottom,
+              calculatedHeight
+            }) => (
+              <MenuComponent distanceFromTop={distanceFromTop} calculatedHeight={calculatedHeight} isSticky={isSticky} locale={locale} className={classNames({
+                isSticky,
+                atTop: distanceFromTop * -1 < calculatedHeight
+              })}/>
+            )}
+          </Sticky>
         
 
-      <Component {...pageProps} locale={locale} />
+          <Component {...pageProps} locale={locale} />
 
 
-
+        </StickyContainer>
 
 
         <footer>
@@ -137,6 +166,7 @@ class MyApp extends App {
           </div>
           
         </footer>
+        
         
       </ApolloProvider>
     </Container>
