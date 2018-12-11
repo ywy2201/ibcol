@@ -6,6 +6,7 @@ import classNames from 'classnames';
 import translate from 'helpers/translate.js';
 
 import ReactGA from 'react-ga';
+import { StickyContainer, Sticky } from 'react-sticky';
 
   
 
@@ -114,14 +115,31 @@ class MyApp extends App {
         
         {/* <LoaderComponent/> */}
 
+        <StickyContainer>
 
-        <MenuComponent locale={locale}/>
+          <Sticky topOffset={500}>
+            {({
+              style,
+  
+              // the following are also available but unused in this example
+              isSticky,
+              wasSticky,
+              distanceFromTop,
+              distanceFromBottom,
+              calculatedHeight
+            }) => (
+              <MenuComponent distanceFromTop={distanceFromTop} calculatedHeight={calculatedHeight} isSticky={isSticky} locale={locale} className={classNames({
+                isSticky,
+                atTop: distanceFromTop * -1 < calculatedHeight
+              })}/>
+            )}
+          </Sticky>
         
 
-      <Component {...pageProps} locale={locale} />
+          <Component {...pageProps} locale={locale} />
 
 
-
+        </StickyContainer>
 
 
         <footer>
@@ -148,6 +166,7 @@ class MyApp extends App {
           </div>
           
         </footer>
+        
         
       </ApolloProvider>
     </Container>
