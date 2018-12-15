@@ -2,7 +2,8 @@ module.exports = {
   "_locale":{
     "id":"ja-jp",
     "name":"日本語",
-    "label":"ようこそ"
+    "label":"ようこそ",
+    "flag": "jp.svg"
   },
   "_global":require('./_global.json'),
   "_countries": require('./_countries.json'),

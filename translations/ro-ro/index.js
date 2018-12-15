@@ -2,7 +2,8 @@ module.exports = {
   "_locale":{
     "id":"ro-ro",
     "name":"Română",
-    "label":"Bine ați venit"
+    "label":"Bine ați venit",
+    "flag": "ro.svg"
   },
   "_global":require('./_global.json'),
   "_countries": require('./_countries.json'),
