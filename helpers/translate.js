@@ -27,6 +27,8 @@ const translate = (key, page, locale, extras) => {
     })
   }
 
+  db._locale = translations[locale]['_locale'];
+
   
   
   // TODO: 
