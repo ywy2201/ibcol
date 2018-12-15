@@ -797,8 +797,8 @@ export default class extends React.Component {
     
     const locale = this.props.query.locale;
 
-    const sectors = this.translate('sectors');
-    const projectCategories = this.translate('projectCategories');
+    const sectors = _.sortBy(this.translate('sectors'),[(o)=>o]);
+    const projectCategories = _.sortBy(this.translate('projectCategories'), [(o)=>o.name]);
     
     
     return (
