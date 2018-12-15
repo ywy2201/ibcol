@@ -22,8 +22,33 @@
     {"flag":"flag-icon-ua","countryCode":"ua","title":"Donetsk State University of Economics and Trade (DonNUET)","ambassadors":[
       {"name":"마리나 달리류크","email":"marina.danylyuk@ibcol.org"}
     ]},
+    {"flag":"flag-icon-kr","countryCode":"kr","title":"중앙대학교","ambassadors":[
+      {"name":"ジェイミー・アン","email":"jaime.an@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-kr","countryCode":"kr","title":"한양대학교","ambassadors":[
+      {"name":"ジェイミー・アン","email":"jaime.an@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-kr","countryCode":"kr","title":"건국대학교","ambassadors":[
+      {"name":"ジェイミー・アン","email":"jaime.an@ibcol.org"}
+    ]},
     {"flag":"flag-icon-kr","countryCode":"kr","title":"한국과학기술원 (카이스트)","ambassadors":[
+      {"name":"ジェイミー・アン","email":"jaime.an@ibcol.org"},
       {"name":"김성수","email":"sungsoo.kim@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-kr","countryCode":"kr","title":"고려대학교","ambassadors":[
+      {"name":"ジェイミー・アン","email":"jaime.an@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-kr","countryCode":"kr","title":"포항공과대학교","ambassadors":[
+      {"name":"ジェイミー・アン","email":"jaime.an@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-kr","countryCode":"kr","title":"서울대학교","ambassadors":[
+      {"name":"ジェイミー・アン","email":"jaime.an@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-kr","countryCode":"kr","title":"성균관대학교","ambassadors":[
+      {"name":"ジェイミー・アン","email":"jaime.an@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-kr","countryCode":"kr","title":"연세대학교","ambassadors":[
+      {"name":"ジェイミー・アン","email":"jaime.an@ibcol.org"}
     ]},
     {"flag":"flag-icon-ru","countryCode":"ru","title":"모스크바 국립 대학교","ambassadors":[
       {"name":"마리나 달리류크","email":"marina.danylyuk@ibcol.org"}

@@ -22,8 +22,33 @@
     {"flag":"flag-icon-ua","countryCode":"ua","title":"Donetsk State University of Economics and Trade (DonNUET)","ambassadors":[
       {"name":"Marina Danylyuk","email":"marina.danylyuk@ibcol.org"}
     ]},
-    {"flag":"flag-icon-kr","countryCode":"kr","title":"Korea Advanced Institute of Science and Technology (KAIST)","ambassadors":[
-      {"name":"Sung Soo Kim","email":"sungsoo.kim@ibcol.org"}
+    {"flag":"flag-icon-kr","countryCode":"kr","title":"Uniwersytet Chung-Ang (중앙대학교)","ambassadors":[
+      {"name":"Jaime An","email":"jaime.an@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-kr","countryCode":"kr","title":"Uniwersytet Hanyang (한양대학교)","ambassadors":[
+      {"name":"Jaime An","email":"jaime.an@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-kr","countryCode":"kr","title":"Uniwersytet Konkuk (건국대학교)","ambassadors":[
+      {"name":"Jaime An","email":"jaime.an@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-kr","countryCode":"kr","title":"Korea Zaawansowany Instytut Nauki i Technologii (KAIST)","ambassadors":[
+      {"name":"Jaime An","email":"jaime.an@ibcol.org"},
+      {"name":"SungSoo Kim","email":"sungsoo.kim@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-kr","countryCode":"kr","title":"Uniwersytet Korea (고려대학교)","ambassadors":[
+      {"name":"Jaime An","email":"jaime.an@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-kr","countryCode":"kr","title":"Pohang University of Science and Technology (POSTECH)","ambassadors":[
+      {"name":"Jaime An","email":"jaime.an@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-kr","countryCode":"kr","title":"Narodowy Uniwersytet Seulski (서울대학교)","ambassadors":[
+      {"name":"Jaime An","email":"jaime.an@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-kr","countryCode":"kr","title":"Uniwersytet Sungkyunkwan (성균관대학교)","ambassadors":[
+      {"name":"Jaime An","email":"jaime.an@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-kr","countryCode":"kr","title":"Uniwersytet Yonsei (연세대학교)","ambassadors":[
+      {"name":"Jaime An","email":"jaime.an@ibcol.org"}
     ]},
     {"flag":"flag-icon-ru","countryCode":"ru","title":"Uniwersytet Moskiewski (MSU)","ambassadors":[
       {"name":"Marina Danylyuk","email":"marina.danylyuk@ibcol.org"}

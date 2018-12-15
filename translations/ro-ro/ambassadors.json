@@ -22,8 +22,33 @@
     {"flag":"flag-icon-ua","countryCode":"ua","title":"Donetsk State University of Economics and Trade (DonNUET)","ambassadors":[
       {"name":"Marina Danylyuk","email":"marina.danylyuk@ibcol.org"}
     ]},
+    {"flag":"flag-icon-kr","countryCode":"kr","title":"Chung-Ang University (CAU)","ambassadors":[
+      {"name":"Jaime An","email":"jaime.an@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-kr","countryCode":"kr","title":"Hanyang University","ambassadors":[
+      {"name":"Jaime An","email":"jaime.an@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-kr","countryCode":"kr","title":"Konkuk University","ambassadors":[
+      {"name":"Jaime An","email":"jaime.an@ibcol.org"}
+    ]},
     {"flag":"flag-icon-kr","countryCode":"kr","title":"Korea Advanced Institute of Science and Technology (KAIST)","ambassadors":[
-      {"name":"Sung Soo Kim","email":"sungsoo.kim@ibcol.org"}
+      {"name":"Jaime An","email":"jaime.an@ibcol.org"},
+        {"name":"SungSoo Kim","email":"sungsoo.kim@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-kr","countryCode":"kr","title":"Korea University (KU)","ambassadors":[
+      {"name":"Jaime An","email":"jaime.an@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-kr","countryCode":"kr","title":"Pohang University of Science and Technology (POSTECH)","ambassadors":[
+      {"name":"Jaime An","email":"jaime.an@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-kr","countryCode":"kr","title":"Seoul National University (SNU)","ambassadors":[
+      {"name":"Jaime An","email":"jaime.an@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-kr","countryCode":"kr","title":"Sungkyunkwan University (SKKU)","ambassadors":[
+      {"name":"Jaime An","email":"jaime.an@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-kr","countryCode":"kr","title":"Yonsei University","ambassadors":[
+      {"name":"Jaime An","email":"jaime.an@ibcol.org"}
     ]},
     {"flag":"flag-icon-ru","countryCode":"ru","title":"Moscow State University (MSU)","ambassadors":[
       {"name":"Marina Danylyuk","email":"marina.danylyuk@ibcol.org"}

@@ -22,8 +22,33 @@
     {"flag":"flag-icon-ua","countryCode":"ua","title":"Доне́цький націона́льний університе́т еконо́міки і торгі́влі імені (ДонНУЕТ) ","ambassadors":[
       {"name":"Марина Данилюк","email":"marina.danylyuk@ibcol.org"}
     ]},
+    {"flag":"flag-icon-kr","countryCode":"kr","title":"Університет Чунан (중앙대학교)","ambassadors":[
+      {"name":"Джеймі Ан","email":"jaime.an@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-kr","countryCode":"kr","title":"Ханьянский університет (한양대학교)","ambassadors":[
+      {"name":"Джеймі Ан","email":"jaime.an@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-kr","countryCode":"kr","title":"Університет Конкук (건국대학교)","ambassadors":[
+      {"name":"Джеймі Ан","email":"jaime.an@ibcol.org"}
+    ]},
     {"flag":"flag-icon-kr","countryCode":"kr","title":"Корейський провідний науково-технологічний інститут (KAIST)","ambassadors":[
+      {"name":"Джеймі Ан","email":"jaime.an@ibcol.org"},
       {"name":"Кім Сен Су","email":"sungsoo.kim@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-kr","countryCode":"kr","title":"Університет Корё (고려대학교)","ambassadors":[
+      {"name":"Джеймі Ан","email":"jaime.an@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-kr","countryCode":"kr","title":"Пхоханскій університет науки і технології (POSTECH)","ambassadors":[
+      {"name":"Джеймі Ан","email":"jaime.an@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-kr","countryCode":"kr","title":"Сеульський національний університет (서울대학교)","ambassadors":[
+      {"name":"Джеймі Ан","email":"jaime.an@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-kr","countryCode":"kr","title":"Університет Сонгюнгван (성균관대학교)","ambassadors":[
+      {"name":"Джеймі Ан","email":"jaime.an@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-kr","countryCode":"kr","title":"Університет Ёнсе (연세대학교)","ambassadors":[
+      {"name":"Джеймі Ан","email":"jaime.an@ibcol.org"}
     ]},
     {"flag":"flag-icon-ru","countryCode":"ru","title":"Московський державний університет","ambassadors":[
       {"name":"Марина Данилюк","email":"marina.danylyuk@ibcol.org"}

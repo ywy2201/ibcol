@@ -22,8 +22,33 @@
     {"flag":"flag-icon-ua","countryCode":"ua","title":"Донецкий национальный университет экономики и торговли (ДонНУЭТ)","ambassadors":[
       {"name":"Марина Данылюк","email":"marina.danylyuk@ibcol.org"}
     ]},
+    {"flag":"flag-icon-kr","countryCode":"kr","title":"Университет Чунан (중앙대학교)","ambassadors":[
+      {"name":"Джейми Ан","email":"jaime.an@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-kr","countryCode":"kr","title":"Ханьянский университет (한양대학교)","ambassadors":[
+      {"name":"Джейми Ан","email":"jaime.an@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-kr","countryCode":"kr","title":"Университет Конкук (건국대학교)","ambassadors":[
+      {"name":"Джейми Ан","email":"jaime.an@ibcol.org"}
+    ]},
     {"flag":"flag-icon-kr","countryCode":"kr","title":"Корейский институт передовых технологий (KAIST)","ambassadors":[
+      {"name":"Джейми Ан","email":"jaime.an@ibcol.org"},
       {"name":"Ким Сен Су","email":"sungsoo.kim@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-kr","countryCode":"kr","title":"Университет Корё (고려대학교)","ambassadors":[
+      {"name":"Джейми Ан","email":"jaime.an@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-kr","countryCode":"kr","title":"Пхоханский университет науки и технологии (POSTECH)","ambassadors":[
+      {"name":"Джейми Ан","email":"jaime.an@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-kr","countryCode":"kr","title":"Сеульский национальный университет (서울대학교)","ambassadors":[
+      {"name":"Джейми Ан","email":"jaime.an@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-kr","countryCode":"kr","title":"Университет Сонгюнгван (성균관대학교)","ambassadors":[
+      {"name":"Джейми Ан","email":"jaime.an@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-kr","countryCode":"kr","title":"Университет Ёнсе (연세대학교)","ambassadors":[
+      {"name":"Джейми Ан","email":"jaime.an@ibcol.org"}
     ]},
     {"flag":"flag-icon-ru","countryCode":"ru","title":"Московский государственный университет","ambassadors":[
       {"name":"Марина Данылюк","email":"marina.danylyuk@ibcol.org"}
