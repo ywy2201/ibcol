@@ -22,8 +22,33 @@
     {"flag":"flag-icon-ua","countryCode":"ua","title":"Donetsk State University of Economics and Trade (DonNUET)","ambassadors":[
       {"name":"Marina Danylyuk","email":"marina.danylyuk@ibcol.org"}
     ]},
+    {"flag":"flag-icon-kr","countryCode":"kr","title":"Université de Chung-Ang (중앙대학교)","ambassadors":[
+      {"name":"Jaime An","email":"jaime.an@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-kr","countryCode":"kr","title":"Université d'Hanyang (한양대학교)","ambassadors":[
+      {"name":"Jaime An","email":"jaime.an@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-kr","countryCode":"kr","title":"Université Konkuk (건국대학교)","ambassadors":[
+      {"name":"Jaime An","email":"jaime.an@ibcol.org"}
+    ]},
     {"flag":"flag-icon-kr","countryCode":"kr","title":"L'Institut supérieur coréen des sciences et technologies (KAIST)","ambassadors":[
-      {"name":"Sung Soo Kim","email":"sungsoo.kim@ibcol.org"}
+      {"name":"Jaime An","email":"jaime.an@ibcol.org"},
+      {"name":"SungSoo Kim","email":"sungsoo.kim@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-kr","countryCode":"kr","title":"Université de Corée (고려대학교)","ambassadors":[
+      {"name":"Jaime An","email":"jaime.an@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-kr","countryCode":"kr","title":"Université technologique de Pohang (POSTECH)","ambassadors":[
+      {"name":"Jaime An","email":"jaime.an@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-kr","countryCode":"kr","title":"Université nationale de Séoul (서울대학교)","ambassadors":[
+      {"name":"Jaime An","email":"jaime.an@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-kr","countryCode":"kr","title":"Université Sungkyunkwan (성균관대학교)","ambassadors":[
+      {"name":"Jaime An","email":"jaime.an@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-kr","countryCode":"kr","title":"Université Yonsei (연세대학교)","ambassadors":[
+      {"name":"Jaime An","email":"jaime.an@ibcol.org"}
     ]},
     {"flag":"flag-icon-ru","countryCode":"ru","title":"Université d'État de Moscou (MSU)","ambassadors":[
       {"name":"Marina Danylyuk","email":"marina.danylyuk@ibcol.org"}

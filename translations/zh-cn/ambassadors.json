@@ -22,8 +22,33 @@
     {"flag":"flag-icon-ua","countryCode":"ua","title":"顿内次克国立经济贸易大学","ambassadors":[
       {"name":"玛丽娜 • 丹尼陆","email":"marina.danylyuk@ibcol.org"}
     ]},
-    {"flag":"flag-icon-kr","countryCode":"kr","title":"韩国科学技术院","ambassadors":[
+    {"flag":"flag-icon-kr","countryCode":"kr","title":"中央大学校","ambassadors":[
+      {"name":"安杰米","email":"jaime.an@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-kr","countryCode":"kr","title":"汉阳大学校","ambassadors":[
+      {"name":"安杰米","email":"jaime.an@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-kr","countryCode":"kr","title":"建国大学校","ambassadors":[
+      {"name":"安杰米","email":"jaime.an@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-kr","countryCode":"kr","title":"韩国科学技术院 (KAIST)","ambassadors":[
+      {"name":"安杰米","email":"jaime.an@ibcol.org"},
       {"name":"金性洙","email":"sungsoo.kim@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-kr","countryCode":"kr","title":"高丽大学校","ambassadors":[
+      {"name":"安杰米","email":"jaime.an@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-kr","countryCode":"kr","title":"浦项工科大学校","ambassadors":[
+      {"name":"安杰米","email":"jaime.an@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-kr","countryCode":"kr","title":"首尔大学校","ambassadors":[
+      {"name":"安杰米","email":"jaime.an@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-kr","countryCode":"kr","title":"成均馆大学校","ambassadors":[
+      {"name":"安杰米","email":"jaime.an@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-kr","countryCode":"kr","title":"延世大学校","ambassadors":[
+      {"name":"安杰米","email":"jaime.an@ibcol.org"}
     ]},
     {"flag":"flag-icon-ru","countryCode":"ru","title":"莫斯科国立大学","ambassadors":[
       {"name":"玛丽娜 • 丹尼陆","email":"marina.danylyuk@ibcol.org"}
