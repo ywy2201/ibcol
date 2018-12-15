@@ -48,11 +48,17 @@ export default class extends React.Component {
 
 
     const locale = this.props.query.locale;
+
+    const projectCategories = this.translate('projectCategories');
     
     return (
       <ThisPageContainerComponent>
         <Head>
             <title>{this.translate('siteTitle')} {this.translate('titleSeparator')} {this.translate('pageTitle')}</title>
+            <meta name="description" content={this.translate('seoDescription')}/>
+            <meta name="keywords" content={this.translate('keywords')}/>
+            <meta property="og:image" content={this.translate('ogImage')} />
+            <meta property="og:type" content="website" />
         </Head>
         
         <section className="s-section first target-section">
@@ -171,12 +177,12 @@ export default class extends React.Component {
             <div className="about-process icon">
                 <div className="block-1-5 block-tab-full">
                     {
-                        configs.projectCategoryKeys.map((projectCategoryKey, index) => {
+                        Object.keys(projectCategories).map((projectCategoryKey, index) => {
                               return <div className="col-block" key={projectCategoryKey}>
                                 <div className="item-process__text">
-                                    <i className={classNames("material-icons", this.translate(`${projectCategoryKey}.color`))}>{this.translate(`${projectCategoryKey}.icon`)}</i>
-                                    <h4 className="item-title">{this.translate(`${projectCategoryKey}.name`)}</h4>
-                                    <p dangerouslySetInnerHTML={{__html: this.translate(`${projectCategoryKey}.description`)}}/>
+                                    <i className={classNames("material-icons", projectCategories[projectCategoryKey].color)}>{projectCategories[projectCategoryKey].icon}</i>
+                                    <h4 className="item-title">{projectCategories[projectCategoryKey].name}</h4>
+                                    <p dangerouslySetInnerHTML={{__html: projectCategories[projectCategoryKey].description}}/>
                                 </div>
                             </div>
                     

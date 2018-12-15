@@ -1657,16 +1657,48 @@ input::-moz-focus-inner {
 .s-header {
   z-index: 500;
   width: 100%;
-  height: 125px;
-  background-color: transparent;
-  position: fixed;
-  top: 0;
   
+  background-color: transparent;
+  
+  position: absolute;
+  height: 100px;
+  top: 100px;
+  margin-top: -100px;
+
+  /* transition: margin-top 500ms; */
+  /* transition: top 500ms; */
+  
+
+  /* transition: top 1s ease 1s; */
+
+  transition: margin-top 300ms;
+
+}
+
+.s-header.atTop, .s-header.atTop.wasSticky {
+  position: absolute;
+  height: 100px;
+  top: 100px;
+  margin-top: -100px;
+  
+}
+
+.s-header.isSticky {
+  position: fixed;
+  top: 0px;
+  margin-top: 0px;
 
   background: #FFF;
   box-shadow: 0 0 2rem 0.05rem #ccc;
-
 }
+
+.s-header.wasSticky {
+  position: fixed;
+  top: 0px;
+  margin-top: -100px;
+}
+
+
 .s-header.moved {
   background-color: white;
 }
@@ -1682,6 +1714,7 @@ input::-moz-focus-inner {
   position: absolute;
   left: 0;
   padding-left: 7.5rem;
+  padding-top: 3rem;
   top: 40%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -2060,14 +2093,33 @@ input::-moz-focus-inner {
 @media only screen and (max-width:1200px) {
   .header-logo {
     padding-left: 60px;
+    padding-top: 0;
   }
 
   .desktop-nav {
-    top: 9rem;
+    top: 8.75rem;
   }
 
   .s-header {
     height: 130px;
+    top: 130px;
+    margin-top: -130px;
+  }
+
+  .s-header.atTop, .s-header.atTop.wasSticky {
+    height: 130px;
+    top: 130px;
+    margin-top: -130px;
+  }
+
+  .s-header.isSticky {
+    top: 0px;
+    margin-top: 0px;
+  }
+
+  .s-header.wasSticky {
+    top: 0px;
+    margin-top: -130px;
   }
 
   /* .header-menu-toggle {
@@ -2122,11 +2174,12 @@ input::-moz-focus-inner {
   }
 
   .s-header {
-    position: absolute;
-    background: none;
-    height: 100px;
-    box-shadow: none;
-    margin-top: 21px;
+    position: absolute !important;
+    top: 0 !important;
+    background: transparent !important;
+    height: 100px !important;
+    box-shadow: none !important;
+    margin-top: 21px !important;
 
   }
 
@@ -2135,7 +2188,7 @@ input::-moz-focus-inner {
 @media only screen and (max-width:600px) {
   .s-header {
     height: 90px;
-    top: 12px;
+    margin-top: 12px !important;
   }
 
   .header-nav {
