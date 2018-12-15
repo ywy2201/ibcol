@@ -3,7 +3,7 @@ module.exports = {
     "id":"ar",
     "name":"العَرَبِيَّة‎",
     "label":"مرحبا",
-    "flag": "af.svg"
+    "flag": "ar.svg",
   },
   "_global":require('./_global.json'),
   "_countries": require('./_countries.json'),
