@@ -11,7 +11,8 @@
   ],
   "supportingOrganisationsTitle":"支援机构",
   "supportingOrganisations":[
-    {"name":"Hong Kong Blockchain Society (HKBCS)","url":"http://www.hkbcs.org","logo":"/static/images/logo-hong-kong-blockchain-society-(hkbcs).png","description":"<b>The Hong Kong Blockchain Society</b> promotes sustainable and mature of the blockchain ecosystem. HKBCS encourages and supports projects that are legal and compliant in Hong Kong and the surrounding region."},
+    {"name":"香港区块链学会（港链会 - HKBCS）","url":"http://www.hkbcs.org","logo":"/static/images/logo-hong-kong-blockchain-society-(hkbcs).png","description":"<b>The Hong Kong Blockchain Society</b> promotes sustainable and mature of the blockchain ecosystem. HKBCS encourages and supports projects that are legal and compliant in Hong Kong and the surrounding region."},
+    {"name":"香港科技园","url":"https://www.hkstp.org","logo":"/static/images/logo-hong-kong-science-park-(hkstp).png","description":"关于香港科学园，包括科技园，创新中心和工业园，香港科技园公司（香港科技园）是致力于建设一个充满活力的创新和技术生态系统连接的利益相关者，培育科技人才，促进协作，并推动一个法定机构创新交付给香港和该地区的社会和经济效益。成立于2001年5月，香港科技园已推动香港发展成为在几个专门的集群，包括电子，信息与通信技术，绿色科技，生物技术，材料和精密工程的创新和发展的区域枢纽。我们能科技公司培育的思路，创新和发展，通过我们的R＆d设施，基础设施和市场领导的实验室和技术中心，拥有专业的支持服务。我们还提供增值服务，全面培育计划用于科技创业，加速他们的成长。科技企业从科技园为应用研究和产品开发我们的专业服务和基础设施中受益;企业可以找到创新中心创意设计支持;而skill-密集型企业是我们在大埔，将军澳及元朗三个工业服务。关于香港科技园公司的更多信息，请www.hkstp.org。"},
     {"name":"Blockchain Education Network (BEN)","url":"https://www.blockchainedu.org","logo":"/static/images/logo-blockchain-education-network-(ben).png","description":"<b>Blockchain Education Network</b> is made up of students and alumni across the world who are creating bitcoin and blockchain clubs on their academic campuses. By exploring this socioeconomic experiment within the safety of their peers, students build new expectations and innovations."}
   ],
   "prompt":"如果您有兴趣支持国际奥林匹克区块链竞赛，请联络sponsors@ibcol.org"
