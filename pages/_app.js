@@ -14,7 +14,7 @@ import { Link } from '/routes';
 // import css from 'styled-jsx/css';
 
 import MenuComponent from 'components/MenuComponent';
-import LoaderComponent from 'components/LoaderComponent';
+import LanguageSelectorComponent from 'components/LanguageSelectorComponent';
 // import LocaleSwitcherComponent from 'components/LocaleSwitcherComponent';
 
 
@@ -38,12 +38,54 @@ import translations from 'translations';
 import "styles/base.css";
 import "styles/vendor.css";
 import "styles/main.css";
-import "styles/flag-icon.min.css";
+// import "styles/flag-icon.min.css";
 
 
 const GlobalStyle = createGlobalStyle`
 
-  
+  body.noScroll { /* ...or body.dialogShowing */
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+    position: fixed;
+  }
+
+  footer {
+    .languageMenuFooterTrigger {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+
+      ${'' /* width: 200px; */}
+      padding: 0.2rem 3rem 0.15rem;
+
+      margin: 1rem auto 0;
+
+      border: 1px solid #CCC;
+      border-radius: 1rem;
+
+      cursor: pointer;
+
+      .languageMenuFooterTriggerIcon {
+        display: inline-block;
+
+        cursor: pointer;
+        
+        width: 2rem;
+        height: 2rem;
+
+        margin-right: 1.5rem;
+
+        background-color: #EEE;
+        background-size: cover;
+        background-position: center center;
+
+        border: solid 1px #CCC;
+
+        border-radius: 10rem;
+      }
+    }
+  }
 
   
 `;
@@ -63,12 +105,28 @@ class MyApp extends App {
     super(props);
     this.state = {
       isLoading: false,
+      showLanguageSelector: false
       // width: 0, height: 0
     }
 
     
   }
 
+
+  toggleLanguageSelector = (show) => {
+    
+    if (typeof(show) === 'object') {
+      
+      this.setState({
+        showLanguageSelector: !this.state.showLanguageSelector
+      });
+    } else {
+      this.setState({
+        showLanguageSelector: show
+      });
+    }
+    
+  }
 
   translate = (t, locale = this.props.router.query.locale) => translate(t, '_global', locale);
 
@@ -113,7 +171,11 @@ class MyApp extends App {
         <GlobalStyle/>
 
         
-        {/* <LoaderComponent/> */}
+        {
+          this.state.showLanguageSelector === true &&
+          <LanguageSelectorComponent locale={locale} onToggleLanguageSelector={this.toggleLanguageSelector}/>
+        }
+        
 
         <StickyContainer>
 
@@ -128,7 +190,7 @@ class MyApp extends App {
               distanceFromBottom,
               calculatedHeight
             }) => (
-              <MenuComponent distanceFromTop={distanceFromTop} calculatedHeight={calculatedHeight} isSticky={isSticky} locale={locale} className={classNames({
+              <MenuComponent onToggleLanguageSelector={this.toggleLanguageSelector} distanceFromTop={distanceFromTop} calculatedHeight={calculatedHeight} isSticky={isSticky} locale={locale} className={classNames({
                 isSticky,
                 atTop: distanceFromTop * -1 < calculatedHeight
               })}/>
@@ -163,6 +225,15 @@ class MyApp extends App {
             <div className="col-full ss-copyright">
               <span dangerouslySetInnerHTML={{ __html: this.translate('copyright') }} />
             </div>
+            <div>
+              <div className="languageMenuFooterTrigger" onClick={this.toggleLanguageSelector}>
+                <div className="languageMenuFooterTriggerIcon" alt={this.translate('_locale.name')} title={this.translate('_locale.name')} style={{
+                  backgroundImage: `url("/static/images/flags/1x1/${this.translate('_locale.flag')}")`
+                }}></div>
+                {this.translate('_locale.name')}
+              </div>
+            </div>
+            <div></div>
           </div>
           
         </footer>

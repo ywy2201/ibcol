@@ -2,7 +2,8 @@ module.exports = {
   "_locale":{
     "id":"es-es",
     "name":"Español",
-    "label":"Bienvenido"
+    "label":"Bienvenido",
+    "flag": "es.svg"
   },
   "_global":require('./_global.json'),
   "_countries": require('./_countries.json'),
