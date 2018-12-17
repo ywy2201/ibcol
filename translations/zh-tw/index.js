@@ -1,7 +1,7 @@
 module.exports = {
   "_locale":{
     "id":"zh-tw",
-    "name":"繁體中文",
+    "name":"中國台灣",
     "label":"歡迎",
     "flag": "tw.svg"
   },
