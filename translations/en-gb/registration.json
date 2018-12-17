@@ -32,7 +32,7 @@
       "state": "State/Territory",
       "countryCode": "Country",
       "title": "Title / Responsibility",
-      "sectorCode": "Primary Sector",
+      "sectorCode": "Industry Group",
       "yearCommencement": "Commencement",
       "yearCessation": "Cessation"
     }
