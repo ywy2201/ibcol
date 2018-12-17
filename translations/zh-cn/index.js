@@ -2,7 +2,8 @@ module.exports = {
   "_locale":{
     "id":"zh-cn",
     "name":"简体中文",
-    "label":"欢迎"
+    "label":"欢迎",
+    "flag": "cn.svg"
   },
   "_global":require('./_global.json'),
   "_countries": require('./_countries.json'),

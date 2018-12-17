@@ -95,13 +95,14 @@ router.get('/:locale/*?', (req, res, next) => {
   if (requestedLocale === '_next' || requestedLocale === 'static' || requestedLocale === 'robots.txt') {
     next();
   } else {
-    let newPath = "";
-
-    const requestedLocaleSupported = _.find(translations, {
+    let newPath = "";    
+    const requestedLocaleObject = _.find(translations, {
       _locale: {
         id: requestedLocale
       }
-    }) !== undefined;
+    });
+    
+    const requestedLocaleSupported = requestedLocaleObject !== undefined && ( (process.env.ENV !== 'production') || requestedLocaleObject._locale.disabled !== true );
     
     if (!requestedLocaleSupported) {
       // requestedLocale is not in the supported locale list

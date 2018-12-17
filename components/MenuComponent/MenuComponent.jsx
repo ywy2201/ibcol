@@ -33,6 +33,55 @@ import { withRouter } from 'next/router';
 
 
 const MenuHeader = styled.header`
+
+  li.languageMenuHeaderTrigger,
+  div.languageMenuHeaderTriggerMobile {
+
+    cursor: pointer;
+    
+    
+
+    background-color: #EEE;
+    background-size: cover;
+    background-position: center center;
+
+
+    border: solid 1px #CCC;
+
+
+
+    border-radius: 10rem;
+
+  }
+
+
+  li.languageMenuHeaderTrigger {
+    
+    width: 3rem;
+    height: 3rem;
+    
+    margin-top: -0.25rem;
+
+    @media only screen and (max-width:800px) {
+      display: none;
+    }
+
+  }
+
+  div.languageMenuHeaderTriggerMobile {
+    @media only screen and (min-width:801px) {
+      display: none;
+    }
+
+    position: fixed;
+    right: 10rem;
+    top: 3.5rem;
+
+    width: 3.5rem;
+    height: 3.5rem;
+
+
+  }
   
   
 `;
@@ -162,6 +211,10 @@ class MenuComponent extends React.Component {
           {this.translate('menu.registration')}
         </NavLinkComponent>
       </li>
+
+      <li onClick={this.props.onToggleLanguageSelector} className="languageMenuHeaderTrigger" alt={this.translate('_locale.name')} title={this.translate('_locale.name')} style={{
+        backgroundImage: `url("/static/images/flags/1x1/${this.translate('_locale.flag')}")`
+      }}></li>
     </>
 
     return (
@@ -218,7 +271,9 @@ class MenuComponent extends React.Component {
 
 
 
-
+        <div onClick={this.props.onToggleLanguageSelector} className="languageMenuHeaderTriggerMobile" alt={this.translate('_locale.name')} title={this.translate('_locale.name')} style={{
+        backgroundImage: `url("/static/images/flags/1x1/${this.translate('_locale.flag')}")`
+      }}></div>
 
         <a className="header-menu-toggle" onClick={this.toggleMobileMenu}>
           <span className="header-menu-icon"></span>
@@ -233,6 +288,7 @@ class MenuComponent extends React.Component {
 
 MenuComponent.propTypes = {
   locale: PropTypes.string.isRequired,
+  onToggleLanguageSelector: PropTypes.func.isRequired
 }
 
 MenuComponent.defaultProps = {

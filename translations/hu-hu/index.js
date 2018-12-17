@@ -2,7 +2,8 @@ module.exports = {
   "_locale":{
     "id":"hu-hu",
     "name":"Magyar",
-    "label":"Üdvözlet"
+    "label":"Üdvözlet",
+    "flag": "hu.svg"
   },
   "_global":require('./_global.json'),
   "_countries": require('./_countries.json'),
