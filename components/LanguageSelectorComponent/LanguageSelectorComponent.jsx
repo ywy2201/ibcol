@@ -72,12 +72,16 @@ const LanguageSelectorContainerDiv = styled.div`
     a {
 
       text-decoration: none;
-      color: #666;
+      
 
       li {
         display: inline-flex;
         justify-content: center;
         align-items: center;
+
+        color: #666;
+
+        
 
         cursor: pointer;
         padding: 0.3rem 3rem 0.25rem;
@@ -105,6 +109,12 @@ const LanguageSelectorContainerDiv = styled.div`
           width: 100%;
           padding: 0.5rem 0rem 0.45rem;
         `}
+
+
+        &.disabled {
+          
+          opacity: 0.3;
+        }
 
 
         > .translationFlag {
@@ -179,10 +189,14 @@ class LanguageSelectorComponent extends React.Component {
       {
         translationKeys.map((key, index) =>{
           const locale = translations[key]['_locale'];
+          if (process.env.ENV === 'production' && locale.disabled === true)
+            return undefined;
+
+          
           return <Link key={index} prefetch route={routeName} params={Object.assign({}, this.props.router.query, { locale: locale.id })}>
                   <a onClick={()=>{this.props.onToggleLanguageSelector(false)}}>
                   
-                  <li >
+                  <li className={classNames({disabled: locale.disabled === true})}>
             <span className="translationFlag" alt={locale.name} title={locale.name} style={{
               backgroundImage: `url("/static/images/flags/1x1/${locale.flag}")`
             }}></span>

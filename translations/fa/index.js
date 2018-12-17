@@ -3,7 +3,8 @@ module.exports = {
     "id":"fa",
     "name":"فارسی",
     "label":"خوش آمدید",
-    "flag": "ir.svg"
+    "flag": "ir.svg",
+    "disabled": true
   },
   "_global":require('./_global.json'),
   "_countries": require('./_countries.json'),
