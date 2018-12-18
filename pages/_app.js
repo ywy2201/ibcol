@@ -38,7 +38,7 @@ import translations from 'translations';
 import "styles/base.css";
 import "styles/vendor.css";
 import "styles/main.css";
-// import "styles/flag-icon.min.css";
+import "styles/flag-icon.min.css";
 
 
 const GlobalStyle = createGlobalStyle`
