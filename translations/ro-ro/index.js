@@ -1,7 +1,7 @@
 module.exports = {
   "_locale":{
     "id":"ro-ro",
-    "name":"Română",
+    "name":"România",
     "label":"Bine ați venit",
     "flag": "ro.svg"
   },

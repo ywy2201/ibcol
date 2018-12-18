@@ -1,7 +1,7 @@
 module.exports = {
   "_locale": {
     "id": "de-de",
-    "name": "German",
+    "name": "Deutschland",
     "label": "Willkommen",
     "flag": "de.svg"
   },

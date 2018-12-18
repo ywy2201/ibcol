@@ -1,7 +1,7 @@
 module.exports = {
   "_locale":{
     "id":"hu-hu",
-    "name":"Magyar",
+    "name":"Magyarország",
     "label":"Üdvözlet",
     "flag": "hu.svg"
   },
