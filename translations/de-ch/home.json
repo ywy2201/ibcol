@@ -1,0 +1,94 @@
+{
+  "pageTitle": "Internationale Blockchain Olympiade",
+  "seoDescription": "",
+  "ogImage": "",
+  "mainHeading": "Helfe der Welt auf die Blockchain",
+  "subHeading": "Treffe und trete gegen die weltweit besten Blockchain-Entwickler an",
+  "register": "Info zur Registration",
+  "howToJoin": "Mehr zum Wettbewerb",
+  "competitionRules": "Wettbewerbsprozess",
+  "scroll": "Scrollen",
+  "introSection": {
+    "leftBlock": {
+      "title": "Hackathons erreichen meist keine brauchbaren Ziele",
+      "infoList": "<li>Zu wenig Zeit um umfassende Konzepte zu entwicklen</li><li>Projekte sind meist zu konzentriert auf Technologie und haben mit der Realität keinen Einklang</li><li>Keinen Anreiz das neue Projekt weiterzuentwicklen</li>"
+    },
+    "rightBlock": {
+      "title": "Dieser Wettbewerb produziert nützliche Resultate",
+      "infoList": "<li>Zeit ein Projekt zu starten beginnt jetzt und endet Juli 2019</li><li>Ein multidisziplinärer Ansatz Blockchain Technologien anzuwenden</li><li>Treffe Investoren die Projekte weitertragen können</li>"
+    }
+  },
+  "timelineSection": {
+    "heading": "Wettbewerbsprozess",
+    "block1": {
+      "title": "Registration",
+      "details": "<b>Super Early Bird</b><br/>bis 1. Feb 2019<br/><b>Early Bird</b><br/>bis 1. April 2019<br/><b>Regular</b><br/>bis 21. April 2019"
+    },
+    "block2": {
+      "title": "Whitepaper",
+      "details": "am 21. April<br/>per Online-Einreichung fällig"
+    },
+    "block3": {
+      "title": "Interview",
+      "details": "im Mai & Juni<br/>per Telekonferenz"
+    },
+    "block4": {
+      "title": "Demo",
+      "details": "im Juli<br/>bei der Tech Expo"
+    },
+    "block5": {
+      "title": "Pitch",
+      "details": "im July<br/>auf der Pitch Stage"
+    },
+    "block6": {
+      "title": "Forsetzung",
+      "details": "nach Juli<br/>via Accelerators"
+    }
+  },
+  "section01": {
+    "languageTitle": "Sprachen",
+    "writtenLanguageLabel": "Zulässige Sprachen für schriftliches Material:",
+    "writtenLanguages": "Arabisch (Standard), Chinesisch (Vereinfacht), Chinesisch (Traditionell), Englisch, Französisch, Deutsch, Ungarisch, Japanisch, Koreanisch, Persisch, Polnisch, Portugiesisch, Russisch, Spanisch, Ukrainisch",
+    "spokenLanguageLabel": "Zulässige Sprachen für Präsentationsmaterial: ",
+    "spokenLanguages": "Arabisch (Ägypten), Arabisch (Golf), Kantonesisch, Englisch, Französisch, Deutsch, Ungarisch, Japanisch, Koreanisch, Mandarin, Persisch, Polnisch, Portugiesisch, Russisch, Spanisch, Ukrainisch"
+  },
+  "section02": {
+    "heading": "Auszeichnungen",
+    "awards": {
+      "gold": {
+        "quantity": 5,
+        "title": "Gold Medaillen",
+        "description": "1. Platz Gewinner einer Kategorie mit 4096 USD Preis"
+      },
+      "silver": {
+        "quantity": 5,
+        "title": "Silber Medaillen",
+        "description": "2. Platz Gewinner einer Kategorie mit 2048 USD Preis"
+      },
+      "bronze": {
+        "quantity": 5,
+        "title": "Bronze Medaillen",
+        "description": "3. Platz Gewinner einer Kategorie mit 1024 USD Preis"
+      
+      },
+      "nominee": {
+        "quantity": 15,
+        "title": "Nominator Awards",
+        "description": "Anerkennung eines Team-Trainers für die Nominierung eines Gewinnerteams"
+      },
+      "finalist": {
+        "quantity": 10,
+        "title": "Finalist Awards",
+        "description": "Anerkennung von Teams als Top 5 in einer Kategorie"
+      },
+      "merit": {
+        "quantity": 50,
+        "title": "Merit Awards",
+        "description": "Anerkennung von Teams für den Entwurf einer Komplettlösung"
+      },
+
+      "note": "Der beste Preis für Studenten ist nicht finanzieller Natur, sondern Erfahrung, Guidance und die Chance, in der Blockchain Industrie einen Unterschied zu machen."
+      
+    }
+  }
+}

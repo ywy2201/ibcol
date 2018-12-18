@@ -1,0 +1,64 @@
+{
+  "pageTitle":"Wie nimmt man teil?",
+  "seoDescription":"IBCOL",
+  "ogImage":"../../static/images/ogimage.jpg",
+  "subhead":"Registration für die 2019 Internationale Blockchain Olympiade",
+  "whenToJoinHeading":"Teilnahme Zeitpunkt",
+  "plans":{
+    "fromLabel":"Von",
+    "toLabel":"Bis",
+    "feeLabel":"Registration",
+    "financialAssistanceLabel":"Finanzielle Unterstützung",
+    "viewMoreLabel":"Streichen Sie für mehr",
+    "secondaryLabel":"Projekt für Gymnasialisten",
+    "postSecondaryLabel":"Projekt für Studenten",
+    "additionalCategoryLabel":"Für jede weitere Kategorie",
+    "specialNotice":"Mit Ausnahme zusätzlicher Kategoriegebühren werden Projektregistrierungsgebühren bis zum 1. April 2019 für Teamregistrierungen für alle registrierten Teams erlassen",
+    "superEarlyBird":{
+      "name":"Super Early Bird",
+      "fromDate":"Heute",
+      "toDate":"Freitag<br/>1. Februar 2019<br/>um 23:59 HKT",
+      "fee":"Gebühr wird erlassen",
+      "financialAssistanceDetails":"Reisezuschüsse erhältlich",
+      "feeSchedule":{
+        "secondary":"",
+        "postSecondary":"",
+        "additionalCategory":""
+      }
+    },
+    "earlyBird":{
+      "name":"Early Bird",
+      "fromDate":"Samstag<br/>2. Februar 2019<br/>um 00:00 HKT",
+      "toDate":"Montag<br/>1. April 2019<br/>um 23:59 HKT",
+      "fee":"Gebühr wird erlassen",
+      "financialAssistanceDetails":"Reisezuschüsse nicht erhältlich",
+      "feeSchedule":{
+        "secondary":"",
+        "postSecondary":"",
+        "additionalCategory":""
+      }
+    },
+    "regular":{
+      "name":"Regular",
+      "fromDate":"Dienstag<br/>2. April 2019 <br/>um 00:00 HKT",
+      "toDate":"Sonntag<br/>21. April 2019<br/>um 23:59 HKT",
+      "fee":"Gebühr ist erforderlich",
+      "financialAssistanceDetails":"Reisezuschüsse nicht erhältlich",
+      "feeSchedule":{
+        "secondary":"",
+        "postSecondary":"",
+        "additionalCategory":""
+      }
+    }
+  },
+  "howToJoinHeading":"Wie nimmt man teil?",
+  "teamLabel":"Team",
+  "teamExplained":"Bis zu 6 Studenten können sich fuer ein Team registrieren",
+  "projectLabel":"Projekt",
+  "projectExplained":"Ein Team kann mehrere Projekte einreichen",
+  "categoryLabel":"Kategorie",
+  "categoryExplained":"Jedes Projekt wird in eine spezielle Kategorie eingeordnet",
+  "categoriesHeading":"Kategorien",
+  "feeScheduleHeading":"Gebühren",
+  "applyNowCTALabel":""
+}

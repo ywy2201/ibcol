@@ -1,0 +1,64 @@
+{
+  "pageTitle":"Como apuntarse",
+  "seoDescription":"",
+  "ogImage":"../../static/images/ogimage.jpg",
+  "subhead":"Registro para las olimpiadas internacionales de Blockchain 2019",
+  "whenToJoinHeading":"Cuando registrarse",
+  "plans":{
+    "fromLabel":"Desde",
+    "toLabel":"Hasta",
+    "feeLabel":"Registro  ",
+    "financialAssistanceLabel":"Asistencia financiera",
+    "viewMoreLabel":"",
+    "secondaryLabel":"Proyecto de estudiante de secundaria",
+    "postSecondaryLabel":"Proyecto Estudiantil Post Secundaria",
+    "additionalCategoryLabel":"Para cada categoría adicional",
+    "specialNotice":"Excepto las tarifas de categoría adicionales, las tarifas de registro de proyectos para inscripciones de equipos no se aplicarán a todos los equipos registrados hasta el 1 de abril de 2019",
+    "superEarlyBird":{
+      "name":"Super Descuento",
+      "fromDate":"Hoy",
+      "toDate":"Viernes<br/>1 de febrero 2019<br/>23:59 HKT",
+      "fee":"No se cobra tarifa",
+      "financialAssistanceDetails":"Elegible para subsidios de viaje",
+      "feeSchedule":{
+        "secondary":"",
+        "postSecondary":"",
+        "additionalCategory":""
+      }
+    },
+    "earlyBird":{
+      "name":"Descuento",
+      "fromDate":"Sabado<br/>2 de febrero 2019<br/>0 horas HKT",
+      "toDate":"Lunes<br/>1 de abril 2019<br/>23:59 HKT",
+      "fee":"No se cobra tarifa",
+      "financialAssistanceDetails":"No elegible para subsidios de viaje",
+      "feeSchedule":{
+        "secondary":"",
+        "postSecondary":"",
+        "additionalCategory":""
+      }
+    },
+    "regular":{
+      "name":"Normal",
+      "fromDate":"Martes<br/>2 de abril 2019<br/>0 horas HKT",
+      "toDate":"Domingo<br/>21 de abril 2019<br/>23:59 HKT",
+      "fee":"Se requiere pago",
+      "financialAssistanceDetails":"No elegible para subsidios de viaje",
+      "feeSchedule":{
+        "secondary":"",
+        "postSecondary":"",
+        "additionalCategory":""
+      }
+    }
+  },
+  "howToJoinHeading":"Como apuntarse",
+  "teamLabel":"Equipo",
+  "teamExplained":"Hasta 6 estudiantes pueden registrarse por equipo",
+  "projectLabel":"Projecto",
+  "projectExplained":"Un equipo puede aplicar para más de un proyecto",
+  "categoryLabel":"Categoría",
+  "categoryExplained":"Cada proyecto entra en una categoría ",
+  "categoriesHeading":"Categorías",
+  "feeScheduleHeading":"Tarifas",
+  "applyNowCTALabel":""
+}
