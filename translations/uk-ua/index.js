@@ -1,7 +1,7 @@
 module.exports = {
   "_locale":{
     "id":"uk-ua",
-    "name":"Українська",
+    "name":"Україна",
     "label":"Ласкаво просимо",
     "flag": "ua.svg"
   },

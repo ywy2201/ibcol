@@ -1,0 +1,79 @@
+{
+  "pageTitle": "Registration",
+  "seoDescription": "",
+  "ogImage": "",
+  "subhead": "Team Registration",
+  "teamInfo": "Team Information",
+  "teamName": "Team Name",
+  "studentInfo": "Student Information",
+  "studentRecords": {
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "phoneNumber": "Phone Number",
+    "email": "Email",
+    "educationRecords": {
+      "degree": "Degree (or Equivalent)",
+      "programme": "Programme or Major",
+      "yearOfGraduation": "Year of Graduation",
+      "institutionName": "Institution Name",
+      "city": "City",
+      "state": "State/Territory",
+      "countryCode": "Country"
+    }
+  },
+  "advisorRecords": {
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "phoneNumber": "Phone Number",
+    "email": "Email",
+    "associationRecords": {
+      "organisationName": "Company / Organisation",
+      "city": "City",
+      "state": "State/Territory",
+      "countryCode": "Country",
+      "title": "Title / Responsibility",
+      "sectorCode": "Industry Group",
+      "yearCommencement": "Commencement",
+      "yearCessation": "Cessation"
+    }
+  },
+
+  "projectRecords": {
+    "name": "Project Name",
+    "projectCategoryKey": "Project Category",
+    "description": "Project Description"
+  },
+
+  "studentEducationInfo": "Academic Credential",
+  
+  
+  
+  
+  
+  "addAnotherStudent": "+ Add Another Student",
+  "removeStudent": "- Remove Student",
+  "addAnotherStudentEducationRecord": "+ Add Another Academic Credential",
+  "removeStudentEducationRecord": "- Remove Academic Credential",
+  "advisorInfo": "Advisor Information",
+  "addAnAdvisor": "+ Add An Advisor",
+  "addAnotherAdvisor": "+ Add Another Advisor",
+  "removeAdvisor": "- Remove Advisor",
+  "advisorAssociationInfo": "Association Record",
+  
+  
+  
+  "addAnotherAdvisorAssociationRecord": "+ Add Another Association Record",
+  "removeAdvisorAssociationRecord": "- Remove Association Record",
+  "projectInfo": "Project Information",
+  "removeProject": "- Remove Project",
+  "addAnotherProject": "+ Add Another Project",
+  
+  "submit": "Submit",
+  "registerAnother": "Create Another Application",
+  "confirmation": {
+    "title": "Thank you for your regisration.",
+    "message": "We have received your application. We will be in touch shortly.",
+    "refTitle": "Application Reference:",
+    "teamNameTitle": "Team Name:"
+  }
+}

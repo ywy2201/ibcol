@@ -1,0 +1,68 @@
+{
+  "pageTitle":"",
+  "seoDescription":"Olimpiada Internațională de Blockchain este o competiție multidisciplinară de design si inginerie. IBCOL 2019 invită studenții din toată lumea să rezolve provocări reale, prin aplicații de-centralizate.",
+  "ogImage":"../../static/images/ogimage.jpg",
+  "subhead":"Înregistrare echipă",
+  "teamInfo":"Informații echipă",
+  "teamName":"Numele echipei",
+  "studentInfo":"Informații studenți",
+  "studentRecords":{
+    "firstName":"Prenume",
+    "lastName":"Nume de familie",
+    "phoneNumber":"Număr de telefon",
+    "email":"Email",
+    "educationRecords":{
+      "degree":"Diplomă",
+      "programme":"Profil sau Master",
+      "yearOfGraduation":"Numele instituției",
+      "institutionName":"Anul absolvirii",
+      "city":"Oraș",
+      "state":"Stat/Județ/Provincie",
+      "countryCode":"Țară"
+    }
+  },
+  "advisorRecords":{
+    "firstName":"Prenume",
+    "lastName":"Nume de familie",
+    "phoneNumber":"Număr de telefon",
+    "email":"Email",
+    "associationRecords":{
+      "organisationName":"Companie/Organizație",
+      "city":"Oraș",
+      "state":"Stat/Județ/Provincie",
+      "countryCode":"Țară",
+      "title":"Titlu/Rol",
+      "sectorCode":"Industrie",
+      "yearCommencement":"Început",
+      "yearCessation":"Sfârșit"
+    }
+  },
+  "projectRecords":{
+    "name":"Numele proiectului",
+    "projectCategoryKey":"Categoria proiectului",
+    "description":"Descrierea proiectului"
+  },
+  "studentEducationInfo":"Calificare academică",
+  "addAnotherStudent":"Adaugă încă un student",
+  "removeStudent":"Șterge student",
+  "addAnotherStudentEducationRecord":"Adaugă încă o calificare academică",
+  "removeStudentEducationRecord":"Șterge calificare academică",
+  "advisorInfo":"Informații mentor",
+  "addAnAdvisor":"Adaugă mentor",
+  "addAnotherAdvisor":"Adaugă încă un mentor",
+  "removeAdvisor":"Șterge mentor",
+  "advisorAssociationInfo":"",
+  "addAnotherAdvisorAssociationRecord":"",
+  "removeAdvisorAssociationRecord":"",
+  "projectInfo":"Informații despre Proiect",
+  "removeProject":"Șterge proiect",
+  "addAnotherProject":"Adaugă încă un proiect",
+  "submit":"Trimite",
+  "registerAnother":"Creează încă o aplicație",
+  "confirmation":{
+    "title":"Mulțumim pentru înregistrare",
+    "message":"Am primit aplicația. Așteptăm să primim whitepaper (până în 21 aprilie 2019). Nu uita să o trimiți înainte de termen!",
+    "refTitle":"Referința pentru aplicație",
+    "TteamNameTitle":"Numele echipei"
+  }
+}

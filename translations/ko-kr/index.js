@@ -1,7 +1,7 @@
 module.exports = {
   "_locale":{
     "id":"ko-kr",
-    "name":"한국어",
+    "name":"한국",
     "label":"환영",
     "flag": "kr.svg"
   },

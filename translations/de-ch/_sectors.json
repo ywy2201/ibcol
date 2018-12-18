@@ -1,0 +1,28 @@
+{
+  "sectors": {
+    "1010":"Energie",
+    "1510":"Roh-, Hilfs- & Betriebsstoffe",
+    "2010":"Investitionsgüter",
+    "2020":"Gewerbliche Dienste & Betriebsstoffe",
+    "2030":"Transportwesen",
+    "2510":"Automobile & Komponenten",
+    "2520":"Gebrauchsgüter & Bekleidung",
+    "2530":"Verbraucherdienste",
+    "2540":"Medien",
+    "2550":"Groß- und Einzelhandel",
+    "3010":"Lebensmittel- und Basisartikeleinzelhandel",
+    "3020":"Lebensmittel, Getränke & Tabak",
+    "3030":"Haushaltsartikel & Körperpflegeprodukte",
+    "3510":"Gesundheitswesen: Ausstattung & Dienste",
+    "3520":"Pharmazeutika, Biotechnologie & Biowissenschaften",
+    "4010":"Banken",
+    "4020":"Diversifizierte Finanzdienste",
+    "4030":"Versicherungen",
+    "4510":"Software & Dienste",
+    "4520":"Hardware & Ausrüstung",
+    "4530":"Halbleiter & Geräte zur Halbleiterproduktion",
+    "5010":"Telekommunikationsdienste",
+    "5510":"Versorgungsbetriebe",
+    "6010":"Immobilien"
+  }
+}
