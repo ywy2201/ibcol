@@ -32,7 +32,7 @@ const LanguageSelectorContainerDiv = styled.div`
   justify-content: center;
   align-items: center;
 
-  overflow: auto !important;
+  
 
   .header-nav__close span::before, .header-nav__close span::after {
     background-color: #000;
@@ -54,7 +54,7 @@ const LanguageSelectorContainerDiv = styled.div`
   
 
   ul.translationList {
-    padding: 0;
+    padding: 13rem 0;
     margin: 0;
     
     display: flex;
@@ -62,7 +62,10 @@ const LanguageSelectorContainerDiv = styled.div`
     
 
     ${'' /* height: 100%; */}
+    ${'' /* padding-top: 20rem; */}
+    max-height: 100%;
     width: 100%;
+    overflow: auto;
 
     justify-content: center;
     align-items: center;
