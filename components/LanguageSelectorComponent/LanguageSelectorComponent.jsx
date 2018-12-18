@@ -187,7 +187,7 @@ class LanguageSelectorComponent extends React.Component {
     delete selectableTranslations._default;
     // const translationKeys = Object.keys(translations).filter((x) => x !== "_default");
     selectableTranslations = _.sortBy(selectableTranslations, (o)=>o._locale.name);
-    console.log('selectableTranslations', selectableTranslations);
+    // console.log('selectableTranslations', selectableTranslations);
 
     const route = routes.findAndGetUrls(this.props.router.asPath, this.props.router.query).route;
 
