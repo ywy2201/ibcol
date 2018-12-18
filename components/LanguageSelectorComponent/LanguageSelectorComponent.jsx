@@ -72,7 +72,23 @@ const LanguageSelectorContainerDiv = styled.div`
     a {
 
       text-decoration: none;
-      
+      margin: 2rem 4rem;
+
+      ${media.small`
+        margin: 1rem 1rem;
+
+        &:nth-child(even) {
+          margin-left: 0;
+        }
+
+        width: calc(50% - 3rem);
+      `}
+
+      ${media.xSmallDown`
+        margin: 1rem 1.5rem;
+        width: 100%;
+      `}
+
 
       li {
         display: inline-flex;
@@ -86,7 +102,7 @@ const LanguageSelectorContainerDiv = styled.div`
         cursor: pointer;
         padding: 0.3rem 3rem 0.25rem;
 
-        margin: 2rem 4rem;
+        
 
         border: 1px solid #CCC;
         border-radius: 1rem;
@@ -94,18 +110,11 @@ const LanguageSelectorContainerDiv = styled.div`
         box-sizing: border-box;
 
         ${media.small`
-          margin: 1rem 1rem;
-
-          &:nth-child(even) {
-            margin-left: 0;
-          }
-
-          width: calc(50% - 3rem);
+          width: 100%;
           padding: 0.3rem 0rem 0.25rem;
         `}
 
         ${media.xSmallDown`
-          margin: 1rem 1.5rem;
           width: 100%;
           padding: 0.5rem 0rem 0.45rem;
         `}
