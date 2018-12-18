@@ -1,12 +1,11 @@
 module.exports = {
-  "_locale":{
-    "id":"ar",
-    "name":"العَرَبِيَّة‎",
-    "label":"مرحبا",
-    "flag": "ae.svg",
-    "disabled": true
+  "_locale": {
+    "id": "en-ca",
+    "name": "Canada",
+    "label": "Welcome",
+    "flag": "ca.svg"
   },
-  "_global":require('./_global.json'),
+  "_global": require('./_global.json'),
   "_countries": require('./_countries.json'),
   "_sectors": require('./_sectors.json'),
   "_project-categories": require('./_project-categories.json'),

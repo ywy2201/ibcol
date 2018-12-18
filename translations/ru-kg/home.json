@@ -1,0 +1,91 @@
+{
+  "pageTitle":"",
+  "seoDescription":"",
+  "ogImage":"../../static/images/ogimage.jpg",
+  "mainHeading":"Помогите перенести мир на Блокчейн",
+  "subHeading":"Знакомтись и конкурируйте с лучшими разработчиками блокчейна в мире",
+  "register":"Информация о регистрации",
+  "howToJoin":"Как присоединиться",
+  "competitionRules":"",
+  "scroll":"",
+  "introSection":{
+    "leftBlock":{
+      "title":"Большинство хакатонов не дают полезных результатов",
+      "infoList":"<li>Недостаточно времени для создания хорошо продуманных проектов</li><li>Проекты слишком ориентированные на технологии и оторваны от реальности</li><li>Отсутствие стимулов для продолжения разработки нового проекта</li>"
+    },
+    "rightBlock":{
+      "title":"Этот конкурс принесет полезные результаты",
+      "infoList":"<li>У вас есть время с этого момента до июля 2019 года, чтобы получить работающий реезулитат</li><li>Многопрофильный подход к применению блокчейн</li><li>Синхронизация с компаниями которые могут продвинуть ваш проект</li>"
+    }
+  },
+  "timelineSection":{
+    "heading":"",
+    "block1":{
+      "title":"Регистрация",
+      "details":"Super Early Bird до 1 Февраля<br/>Early Bird до 1 Апреля<br/>Regular до 21 Апреля"
+    },
+    "block2":{
+      "title":"",
+      "details":""
+    },
+    "block3":{
+      "title":"",
+      "details":""
+    },
+    "block4":{
+      "title":"",
+      "details":""
+    },
+    "block5":{
+      "title":"",
+      "details":""
+    },
+    "block6":{
+      "title":"",
+      "details":""
+    }
+  },
+  "section01":{
+      "languageTitle":"",
+      "writtenLanguageLabel":"",
+      "writtenLanguages":"",
+      "spokenLanguageLabel":"",
+      "spokenLanguages":""
+  },
+  "section02":{
+    "heading":"",
+    "awards":{
+      "gold":{
+        "quantity":5,
+        "title":"",
+        "description":""
+      },
+      "silver":{
+        "quantity":5,
+        "title":"",
+        "description":""
+      },
+      "bronze":{
+        "quantity":5,
+        "title":"",
+        "description":""
+      },
+      "nominee":{
+        "quantity":15,
+        "title":"",
+        "description":""
+      },
+      "finalist":{
+        "quantity":10,
+        "title":"",
+        "description":""
+      },
+      "merit":{
+        "quantity":50,
+        "title":"",
+        "description":""
+      },
+      "note":""
+    }
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "pageTitle":"Как присоединиться",
+  "seoDescription":"",
+  "ogImage":"../../static/images/ogimage.jpg",
+  "subhead":"Регистрация на Олимпиаду по Блокчейну 2019",
+  "whenToJoinHeading":"Когда присоединяться",
+  "plans":{
+    "fromLabel":"С",
+    "toLabel":"До",
+    "feeLabel":"Регистрация",
+    "financialAssistanceLabel":"Финансовое содействие",
+    "viewMoreLabel":"",
+    "secondaryLabel":"Учащиеся старших классов ",
+    "postSecondaryLabel":"Учащийся высшего учебного заведения или техникума.",
+    "additionalCategoryLabel":"Для каждой дополнительной категории",
+    "specialNotice":"За исключением сборов за дополнительную категорию, плата за регистрацию проектов отменяется для всех зарегистрированных команд до 1 апреля 2019 года",
+    "superEarlyBird":{
+      "name":"Super Early Bird",
+      "fromDate":"Сегодня",
+      "toDate":"Пятница<br/>1 февраля 2019 года<br/>23:59 по Гонконгу",
+      "fee":"Плата не взимается",
+      "financialAssistanceDetails":"Право на субсидии для поездки",
+      "feeSchedule":{
+        "secondary":"",
+        "postSecondary":"",
+        "additionalCategory":""
+      }
+    },
+    "earlyBird":{
+      "name":"Early Bird",
+      "fromDate":"Суббота<br/>2 февраля 2019 года<br/>00:00 по Гонконгу",
+      "toDate":"Понедельник<br/>1 апреля 2019 года<br/>23:59 по Гонконгу",
+      "fee":"Плата не взимается",
+      "financialAssistanceDetails":"Те кто не имеют права на субсидии для поездки",
+      "feeSchedule":{
+        "secondary":"",
+        "postSecondary":"",
+        "additionalCategory":""
+      }
+    },
+    "regular":{
+      "name":"Regular",
+      "fromDate":"Вторник<br/>2 апреля 2019 года<br/>00:00 по Гонконгу",
+      "toDate":"Воскресенье<br/>21 апреля 2019 года<br/>23:59 по Гонконгу",
+      "fee":"Требуется оплата",
+      "financialAssistanceDetails":"Те кто не имеют права на субсидии для поездки",
+      "feeSchedule":{
+        "secondary":"",
+        "postSecondary":"",
+        "additionalCategory":""
+      }
+    }
+  },
+  "howToJoinHeading":"Как присоединиться",
+  "teamLabel":"Команда",
+  "teamExplained":"В одной команде могут зарегистрироваться до 6 студентов",
+  "projectLabel":"Проект",
+  "projectExplained":"Каждая команда может представить несколько проектов",
+  "categoryLabel":"Категория",
+  "categoryExplained":"Каждый проект присоединяется к определенной категории",
+  "categoriesHeading":"Категории",
+  "feeScheduleHeading":"График платежей",
+  "applyNowCTALabel":""
+}

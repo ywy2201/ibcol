@@ -1,10 +1,9 @@
 module.exports = {
   "_locale":{
-    "id":"ar",
-    "name":"العَرَبِيَّة‎",
-    "label":"مرحبا",
-    "flag": "ae.svg",
-    "disabled": true
+    "id":"zh-cn",
+    "name":"新加坡",
+    "label":"欢迎",
+    "flag": "sg.svg"
   },
   "_global":require('./_global.json'),
   "_countries": require('./_countries.json'),
