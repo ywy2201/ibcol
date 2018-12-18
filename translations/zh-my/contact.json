@@ -1,0 +1,13 @@
+{
+  "pageTitle":"联络我们",
+  "seoDescription":"国际奥林匹克区块链竞赛是一个多学科的设计与建设性的竞赛。 IBCOL 2019邀请来自世界各地的学生,通过分散的应用程式,解决现实生活中所面对的挑战。",
+  "ogImage":"../../static/images/ogimage.jpg",
+  "subhead":"联络2019国际奥林匹克区块链竞赛的主办人",
+  "mailingAddressTitle":"邮寄地址",
+  "emailAddressTitle":"电邮地址",
+  "mailingAddressHTML":"香港新界科技大道<br/>1W核心大楼2座3楼333A<br/>国际奥林匹克区块链竞赛<br/>IBCOL委员会",
+  "generalEnquiriesLabel":"一般查询",
+  "generalEnquiriesEmail":"info@ibcol.org",
+  "sponsorshipLabel":"赞助",
+  "sponsorshipEmail":"sponsorship@ibcol.org"
+}

@@ -32,7 +32,7 @@ const LanguageSelectorContainerDiv = styled.div`
   justify-content: center;
   align-items: center;
 
-  overflow: auto !important;
+  
 
   .header-nav__close span::before, .header-nav__close span::after {
     background-color: #000;
@@ -54,7 +54,7 @@ const LanguageSelectorContainerDiv = styled.div`
   
 
   ul.translationList {
-    padding: 0;
+    padding: 13rem 0;
     margin: 0;
     
     display: flex;
@@ -62,7 +62,10 @@ const LanguageSelectorContainerDiv = styled.div`
     
 
     ${'' /* height: 100%; */}
+    ${'' /* padding-top: 20rem; */}
+    max-height: 100%;
     width: 100%;
+    overflow: auto;
 
     justify-content: center;
     align-items: center;
@@ -72,7 +75,7 @@ const LanguageSelectorContainerDiv = styled.div`
     a {
 
       text-decoration: none;
-      margin: 2rem 4rem;
+      margin: 1rem 4rem;
 
       ${media.small`
         margin: 1rem 1rem;
@@ -183,10 +186,11 @@ class LanguageSelectorComponent extends React.Component {
 
   render() {
     const componentName = "LanguageSelectorComponent";
-
-    const translationKeys = _.sortBy(Object.keys(translations).filter((x) => x !== "_default"), (o) => o);
-
-    // console.log('translationKeys', translationKeys);
+    let selectableTranslations = Object.assign({}, translations);
+    delete selectableTranslations._default;
+    // const translationKeys = Object.keys(translations).filter((x) => x !== "_default");
+    selectableTranslations = _.sortBy(selectableTranslations, (o)=>o._locale.name);
+    // console.log('selectableTranslations', selectableTranslations);
 
     const route = routes.findAndGetUrls(this.props.router.asPath, this.props.router.query).route;
 
@@ -196,8 +200,8 @@ class LanguageSelectorComponent extends React.Component {
     <a className="header-nav__close" onClick={()=>{this.props.onToggleLanguageSelector(false)}} title="close"><span>{this.translate('close')}</span></a>
     <ul className="translationList">
       {
-        translationKeys.map((key, index) =>{
-          const locale = translations[key]['_locale'];
+        selectableTranslations.map((selectableTranslation, index) =>{
+          const locale = selectableTranslation['_locale'];
           if (process.env.ENV === 'production' && locale.disabled === true)
             return undefined;
 

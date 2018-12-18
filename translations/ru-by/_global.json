@@ -1,0 +1,27 @@
+{
+  "siteTitle":"Международная Олимпиада по Блокчейну (МОБ)",
+  "seoDescription":"",
+  "keywords":"",
+  "ogImage":"../../static/images/ogimage.jpg",
+  "logoTag":"IBCOL: Международная Олимпиада по Блокчейну",
+  "titleSeparator":"|",
+  "menu":{
+    "home":"Домой",
+    "about":"",
+    "how":"Как присоединиться",
+    "competition":"Соревнование",
+    "ambassadors":"Студенты",
+    "sponsors":"Спонсоры ",
+    "schedule":"",
+    "contact":"Контакты",
+    "registration":"Регистрация"
+  },
+  "footerMenu":{
+    "backToTop":"Вернуться в начало страницы",
+    "aboutCompetition":"О конкурсе",
+    "registrationInfo":"Регистрация"
+  },
+  "closeMenu":"",
+  "navigateTo":"",
+  "copyright":"Копирайт © Международная Олимпиада по Блокчейну. Все права защищены."
+}

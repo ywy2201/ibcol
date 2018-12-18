@@ -1,7 +1,7 @@
 module.exports = {
   "_locale":{
     "id":"ja-jp",
-    "name":"日本語",
+    "name":"日本",
     "label":"ようこそ",
     "flag": "jp.svg"
   },

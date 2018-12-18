@@ -1,0 +1,91 @@
+{
+  "pageTitle":"Olimpiada Internațională de Blockchain",
+  "seoDescription":"Olimpiada Internațională de Blockchain este o competiție multidisciplinară de design si inginerie. IBCOL 2019 invită studenții din toată lumea să rezolve provocări reale, prin aplicații de-centralizate.",
+  "ogImage":"../../static/images/ogimage.jpg",
+  "mainHeading":"Ajută lumea sa treacă pe Blockchain",
+  "subHeading":"Întâlnește-te și concurează cu cei mai buni ingineri Blockchain",
+  "register":"Informații pentru înregistrare",
+  "howToJoin":"Cum să te înregistrezi",
+  "competitionRules":"Procesul",
+  "scroll":"",
+  "introSection":{
+    "leftBlock":{
+      "title":"Cele mai multe hackatoane nu produc rezultate utile",
+      "infoList":"<li>Timp insuficient pentru a dezvolta suficient proiectele</li><li>Proiecte prea concentrate pe tehnologie și prea departe de realitate</li><li>Fără motivație pentru a continua noul proiect</li>"
+    },
+    "rightBlock":{
+      "title":"Această competiție va produce rezultate folositoare",
+      "infoList":"<li>Timp de acum până in iulie 2019 pentru a produce un prototip</li><li>O abordare multidisciplinară pentru aplicarea blockchain-ului</li><li>Facem legătura cu entitățile care ajută la dezvoltarea ulterioară a proiectelor</li>"
+    }
+  },
+  "timelineSection":{
+    "heading":"Procesul",
+    "block1":{
+      "title":"Înregistrare",
+      "details":"Înregistrarea foarte devreme (Super Early Bird) până la 1 februarie<br/>Înregistrarea devreme (Early Bird) până la 1 aprilie<br/>Înregistrarea normală până la 21 aprilie"
+    },
+    "block2":{
+      "title":"",
+      "details":""
+    },
+    "block3":{
+      "title":"",
+      "details":""
+    },
+    "block4":{
+      "title":"",
+      "details":""
+    },
+    "block5":{
+      "title":"",
+      "details":""
+    },
+    "block6":{
+      "title":"",
+      "details":""
+    }
+  },
+  "section01":{
+      "languageTitle":"",
+      "writtenLanguageLabel":"",
+      "writtenLanguages":"",
+      "spokenLanguageLabel":"",
+      "spokenLanguages":""
+  },
+  "section02":{
+    "heading":"",
+    "awards":{
+      "gold":{
+        "quantity":5,
+        "title":"",
+        "description":""
+      },
+      "silver":{
+        "quantity":5,
+        "title":"",
+        "description":""
+      },
+      "bronze":{
+        "quantity":5,
+        "title":"",
+        "description":""
+      },
+      "nominee":{
+        "quantity":15,
+        "title":"",
+        "description":""
+      },
+      "finalist":{
+        "quantity":10,
+        "title":"",
+        "description":""
+      },
+      "merit":{
+        "quantity":50,
+        "title":"",
+        "description":""
+      },
+      "note":""
+    }
+  }
+}

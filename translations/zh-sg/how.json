@@ -1,0 +1,64 @@
+{
+  "pageTitle":"参加方法",
+  "seoDescription":"国际奥林匹克区块链竞赛是一个多学科的设计与建设性的竞赛。 IBCOL 2019邀请来自世界各地的学生,通过分散的应用程式,解决现实生活中所面对的挑战。",
+  "ogImage":"../../static/images/ogimage.jpg",
+  "subhead":"申请2019年国际区块链奥林匹克运动会",
+  "whenToJoinHeading":"什么时候加入",
+  "plans":{
+    "fromLabel":"由...",
+    "toLabel":"至...",
+    "feeLabel":"登记",
+    "financialAssistanceLabel":"经费支援",
+    "viewMoreLabel":"浏览更多",
+    "secondaryLabel":"中学生项目",
+    "postSecondaryLabel":"中学毕业生项目",
+    "additionalCategoryLabel":"附加类别",
+    "specialNotice":"在2019年4月1日之前，除了额外的类别费用，所有团队注册费将获免除",
+    "superEarlyBird":{
+      "name":"超级早鸟",
+      "fromDate":"今天",
+      "toDate":"星期五 2019年2月1日 香港时间23:59",
+      "fee":"费用免除",
+      "financialAssistanceDetails":"有资格获得旅费补贴",
+      "feeSchedule":{
+        "secondary":"40 美元",
+        "postSecondary":"50 美元",
+        "additionalCategory":"16 美元"
+      }
+    },
+    "earlyBird":{
+      "name":"早鸟",
+      "fromDate":"星期六 2019年2月2日 香港时间00:00",
+      "toDate":"星期一 2019年4月1日 香港时间23:59",
+      "fee":"费用免除",
+      "financialAssistanceDetails":"不符合旅费补贴资格",
+      "feeSchedule":{
+        "secondary":"50 美元",
+        "postSecondary":"60 美元",
+        "additionalCategory":"20 美元"
+      }
+    },
+    "regular":{
+      "name":"一般",
+      "fromDate":"星期二 2019年4月2日 香港时间00:00",
+      "toDate":"星期日 2019年4月21日 香港时间23:59",
+      "fee":"必需缴费",
+      "financialAssistanceDetails":"不符合旅费补贴资格",
+      "feeSchedule":{
+        "secondary":"100 美元",
+        "postSecondary":"120 美元",
+        "additionalCategory":"40 美元"
+      }
+    }
+  },
+  "howToJoinHeading":"参加方法",
+  "teamLabel":"队伍",
+  "teamExplained":"最多6名学生可以组成一个队伍",
+  "projectLabel":"企划报告",
+  "projectExplained":"一个团队可以提交多个项目",
+  "categoryLabel":"类别",
+  "categoryExplained":"每份企划报告分别可进入一个类别",
+  "categoriesHeading":"类别",
+  "feeScheduleHeading":"报名费",
+  "applyNowCTALabel":"立即申请"
+}

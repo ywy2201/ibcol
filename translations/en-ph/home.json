@@ -1,0 +1,95 @@
+{
+  "pageTitle": "International Blockchain Olympiad",
+  "seoDescription": "",
+  "ogImage": "",
+  "mainHeading": "Help bring the world onto the Blockchain",
+  "subHeading": "Meet and compete with the world's best blockchain builders",
+  "contact": "Contact",
+  "register": "Register",
+  "howToJoin": "How To Join",
+  "competitionRules": "Competition Process",
+  "scroll": "Scroll",
+  "introSection": {
+    "leftBlock": {
+      "title": "Most hackathons don’t produce useful results",
+      "infoList": "<li>Insufficient time to build well-rounded projects</li><li>Projects too tech-focused and divorced from reality</li><li>No incentive to continue developing the new project</li>"
+    },
+    "rightBlock": {
+      "title": "This competition will produce useful results",
+      "infoList": "<li>From now until July 2019 to get something working</li><li>Multidisciplinary approach to applying blockchain</li><li>Matching with entities that can take projects forward</li>"
+    }
+  },
+  "timelineSection": {
+    "heading": "Competition Process",
+    "block1": {
+      "title": "Registration",
+      "details": "<b>Super Early Bird</b><br/>Until Feb 1st<br/><b>Early Bird</b><br/>Until April 1st<br/><b>Regular</b><br/>Until April 21st"
+    },
+    "block2": {
+      "title": "Whitepaper",
+      "details": "due April 21st<br/>by online submission"
+    },
+    "block3": {
+      "title": "Interview",
+      "details": "due May & June<br/>by teleconference"
+    },
+    "block4": {
+      "title": "Demo",
+      "details": "during July<br/>at Tech Expo"
+    },
+    "block5": {
+      "title": "Pitch",
+      "details": "during July<br/>on Pitch Stage"
+    },
+    "block6": {
+      "title": "Continuation",
+      "details": "after July<br/>via Accelerators"
+    }
+  },
+  "section01": {
+    "languageTitle": "Languages",
+    "writtenLanguageLabel": "Acceptable Languages for written material:",
+    "writtenLanguages": "Arabic (standard), Chinese (Simplified), Chinese (Traditional), English, French, German, Hungarian, Japanese, Korean, Persian, Polish, Portuguese, Russian, Spanish, Ukrainian",
+    "spokenLanguageLabel": "Acceptable Languages for spoken material: ",
+    "spokenLanguages": "Arabic (Egypt), Arabic (Gulf), Cantonese, English, French, German, Hungarian, Japanese, Korean, Mandarin, Persian, Polish, Portuguese, Russian, Spanish, Ukrainian"
+  },
+  "section02": {
+    "heading": "Awards",
+    "awards": {
+      "gold": {
+        "quantity": 5,
+        "title": "Gold Medals",
+        "description": "1st place winner of a category with 4096 USD prize"
+      },
+      "silver": {
+        "quantity": 5,
+        "title": "Silver Medals",
+        "description": "2nd place winner of a category with 2048 USD prize"
+      },
+      "bronze": {
+        "quantity": 5,
+        "title": "Bronze Medals",
+        "description": "3rd place winner of a category with 1024 USD prize"
+      
+      },
+      "nominee": {
+        "quantity": 15,
+        "title": "Nominee Awards",
+        "description": "Recognition of team coach for nominating a winning team"
+      },
+      "finalist": {
+        "quantity": 10,
+        "title": "Finalist Awards",
+        "description": "Recognition of teams for being top 5 in a category"
+      },
+      "merit": {
+        "quantity": 50,
+        "title": "Merit Awards",
+        "description": "Recognition of teams for designing a complete solution"
+      },
+
+      "note": "The best prize for students is not financial, but rather experience, guidance, and a chance to make a real impact in the real world."
+      
+    }
+  }
+}
