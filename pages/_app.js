@@ -105,7 +105,7 @@ class MyApp extends App {
     super(props);
     this.state = {
       isLoading: false,
-      showLanguageSelector: true
+      showLanguageSelector: false
       // width: 0, height: 0
     }
 
