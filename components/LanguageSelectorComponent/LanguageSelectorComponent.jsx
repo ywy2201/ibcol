@@ -65,6 +65,8 @@ const LanguageSelectorContainerDiv = styled.div`
     ${'' /* padding-top: 20rem; */}
     max-height: 100%;
     width: 100%;
+    max-width: 1200px;
+    
     overflow: auto;
 
     justify-content: center;
@@ -76,6 +78,28 @@ const LanguageSelectorContainerDiv = styled.div`
 
       text-decoration: none;
       margin: 1rem 4rem;
+
+      font-size: 1.5rem;
+
+      ${media.largeUp`
+        margin: 1rem 1rem;
+
+        &:not:first-child {
+          margin-left: 0;
+        }
+
+        width: calc(100%/4 - 2rem);
+      `}
+
+      ${media.medium`
+        margin: 1rem 1rem;
+
+        &:not:first-child {
+          margin-left: 0;
+        }
+
+        width: calc(100%/3 - 2rem);
+      `}
 
       ${media.small`
         margin: 1rem 1rem;
@@ -111,6 +135,16 @@ const LanguageSelectorContainerDiv = styled.div`
         border-radius: 1rem;
 
         box-sizing: border-box;
+
+        ${media.largeUp`
+          width: 100%;
+          padding: 0.3rem 0rem 0.25rem;
+        `}
+
+        ${media.medium`
+          width: 100%;
+          padding: 0.3rem 0rem 0.25rem;
+        `}
 
         ${media.small`
           width: 100%;

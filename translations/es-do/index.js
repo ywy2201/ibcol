@@ -1,7 +1,7 @@
 module.exports = {
   "_locale":{
     "id":"es-do",
-    "name":"República Dominicana",
+    "name":"Rep. Dominicana",
     "label":"Bienvenido",
     "flag": "do.svg"
   },
