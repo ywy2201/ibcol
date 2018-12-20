@@ -49,9 +49,9 @@
   "section01": {
     "languageTitle": "Languages",
     "writtenLanguageLabel": "Acceptable Languages for written material:",
-    "writtenLanguages": "Arabic (standard), Chinese (Simplified), Chinese (Traditional), English, French, German, Hungarian, Japanese, Korean, Persian, Polish, Portuguese, Russian, Spanish, Ukrainian",
+    "writtenLanguages": "Arabic (standard), Chinese (Simplified), Chinese (Traditional), English, French, German, Hungarian, Italian, Japanese, Korean, Persian, Polish, Portuguese, Russian, Spanish, Ukrainian",
     "spokenLanguageLabel": "Acceptable Languages for spoken material: ",
-    "spokenLanguages": "Arabic (Egypt), Arabic (Gulf), Cantonese, English, French, German, Hungarian, Japanese, Korean, Mandarin, Persian, Polish, Portuguese, Russian, Spanish, Ukrainian"
+    "spokenLanguages": "Arabic (Egypt), Arabic (Gulf), Cantonese, English, French, German, Hungarian, Italian, Japanese, Korean, Mandarin, Persian, Polish, Portuguese, Russian, Spanish, Ukrainian"
   },
   "section02": {
     "heading": "Awards",
