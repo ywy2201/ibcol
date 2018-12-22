@@ -4,7 +4,7 @@
   "ogImage":"../../static/images/ogimage.jpg",
   "mainHeading":"帮助将世界带来到区块链上",
   "subHeading":"与世界上最好的区块链建设者会面并竞赛",
-  "register":"申请资讯",
+  "register":"申请参加",
   "howToJoin":"参加方法",
   "competitionRules":"比赛流程",
   "scroll":"滑动",
@@ -48,9 +48,9 @@
   "section01":{
       "languageTitle":"語言",
       "writtenLanguageLabel":"可接受的书面语言：",
-      "writtenLanguages":"阿拉伯语（标准），中文（简体），中文（繁体），英语，法语，德语，匈牙利语，日语，韩语，波斯语，波兰语，葡萄牙语，俄语，西班牙语，乌克兰语",
+      "writtenLanguages":"阿拉伯语（标准）、中文（简体）、中文（繁体）、英语、法语、德语、匈牙利语、义大利语、日语、韩语、波斯语、波兰语、葡萄牙语、俄语、西班牙语、乌克兰语",
       "spokenLanguageLabel":"可接受的说话语言：",
-      "spokenLanguages":" 阿拉伯语（埃及），阿拉伯语（海湾），广东话，英语，法语，德语，匈牙利语，日语，韩语，普通话，波斯语，波兰语，葡萄牙语，俄语，西班牙语，乌克兰语"
+      "spokenLanguages":"阿拉伯语（埃及）、阿拉伯语（海湾）、广东话、英语、法语、德语、匈牙利语、义大利语、日语、韩语、普通话、波斯语、波兰语、葡萄牙语、俄语、西班牙语、乌克兰语"
   },
   "section02":{
     "heading":"奖项",

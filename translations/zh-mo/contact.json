@@ -1,0 +1,13 @@
+{
+  "pageTitle":"聯絡我們",
+  "seoDescription":"國際奧林匹克區塊鏈競賽是一個多學科的設計與建設性的競賽。 IBCOL 2019邀請來自世界各地的學生,通過分散的應用程式,解決現實生活中所面對的挑戰。",
+  "ogImage":"../../static/images/ogimage.jpg",
+  "subhead":"聯絡2019國際奧林匹克區塊鏈競賽的主辦人",
+  "mailingAddressTitle":"郵寄地址",
+  "emailAddressTitle":"電郵地址",
+  "mailingAddressHTML":"香港新界科技大道<br/>1W核心大樓2座3樓333A<br/>國際奧林匹克區塊鏈競賽<br/>IBCOL委員會",
+  "generalEnquiriesLabel":"一般查詢",
+  "generalEnquiriesEmail":"info@ibcol.org",
+  "sponsorshipLabel":"贊助",
+  "sponsorshipEmail":"sponsorship@ibcol.org"
+}
