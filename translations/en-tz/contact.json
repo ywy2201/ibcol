@@ -1,0 +1,13 @@
+{
+  "pageTitle":"Contact Us",
+  "seoDescription":"International Blockchain Olympiad is a multidisciplinary design and building competition. IBCOL 2019 invites students from around the world to solve real-world challenges through decentralised applications.",
+  "ogImage":"../../static/images/ogimage.jpg",
+  "subhead":"Contact the organisers of the 2019 International Blockchain Olympiad",
+  "mailingAddressTitle":"Mailing Address",
+  "emailAddressTitle":"E-mail Address",
+  "mailingAddressHTML":"IBCOL Organising Committee<br/>International Blockchain Olympiad<br/>333A, 3/F, Core Building 2,<br/>1W Science Park Avenue,<br/>Hong Kong",
+  "generalEnquiriesLabel":"General Enquiries",
+  "generalEnquiriesEmail":"info@ibcol.org",
+  "sponsorshipLabel":"Sponsorship",
+  "sponsorshipEmail":"sponsorship@ibcol.org"
+}
