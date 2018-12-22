@@ -1,10 +1,10 @@
 {
   "pageTitle": "Internationale Blockchain Olympiade",
   "seoDescription": "",
-  "ogImage": "",
+  "ogImage":"../../static/images/ogimage.jpg",
   "mainHeading": "Helfe der Welt auf die Blockchain",
   "subHeading": "Treffe und trete gegen die weltweit besten Blockchain-Entwickler an",
-  "register": "Info zur Registration",
+  "register": "Jetzt Registieren",
   "howToJoin": "Mehr zum Wettbewerb",
   "competitionRules": "Wettbewerbsprozess",
   "scroll": "Scrollen",
@@ -48,7 +48,7 @@
   "section01": {
     "languageTitle": "Sprachen",
     "writtenLanguageLabel": "Zulässige Sprachen für schriftliches Material:",
-    "writtenLanguages": "Arabisch (Standard), Chinesisch (Vereinfacht), Chinesisch (Traditionell), Englisch, Französisch, Deutsch, Ungarisch, Japanisch, Koreanisch, Persisch, Polnisch, Portugiesisch, Russisch, Spanisch, Ukrainisch",
+    "writtenLanguages": "Arabisch (Standard), Chinesisch (Vereinfacht), Chinesisch (Traditionell), Englisch, Französisch, Deutsch, Ungarisch, Italienisch, Japanisch, Koreanisch, Persisch, Polnisch, Portugiesisch, Russisch, Spanisch, Ukrainisch",
     "spokenLanguageLabel": "Zulässige Sprachen für Präsentationsmaterial: ",
     "spokenLanguages": "Arabisch (Ägypten), Arabisch (Golf), Kantonesisch, Englisch, Französisch, Deutsch, Ungarisch, Japanisch, Koreanisch, Mandarin, Persisch, Polnisch, Portugiesisch, Russisch, Spanisch, Ukrainisch"
   },
