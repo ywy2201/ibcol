@@ -1,0 +1,19 @@
+{
+  "pageTitle":"",
+  "seoDescription":"國際奧林匹克區塊鏈競賽是一個多學科的設計與建設性的競賽。 IBCOL 2019邀請來自世界各地的學生,通過分散的應用程式,解決現實生活中所面對的挑戰。",
+  "ogImage":"../../static/images/ogimage.jpg",
+  "subhead":"2019年度國際奧林匹克區塊鏈競賽的贊助商和支持者",
+  "sponsorsTitle":"贊助商",
+  "sponsors":[
+    {"name":"Cardano","url":"https://www.cardano.org","logo":"/static/images/logo-cardano.png","description":"<b>Cardano</b> is a decentralised public blockchain and cryptocurrency project and is fully open sourced. Cardano is developing a smart contract platform which seeks to deliver more advanced features than any protocol previously developed. Cardano is represented by Emurgo HK."},
+    {"name":"EmurgoHK","url":"https://emurgohk.io","logo":"/static/images/logo-emurgohk.png","description":"<b>EMURGO HK</b> is the venture builder for the Cardano blockchain protocol. And now we're in Hong Kong. Located in one of the world's most dynamic business hubs, and perfectly positioned between Northeast and Southeast Asia, EmurgoHK is spreading the revolutionary Cardano protocol across the Pacific Rim."},
+    {"name":"Emali","url":"https://emali.io","logo":"/static/images/logo-emali.png","description":"<b>Emali</b> is an enterprise blockchain developer working on applications in the Fin/Insur/RegTech sectors specializing on identity management, trade and supply chain finance, insurance claim management, fraud detection and regulatory registries."}
+  ],
+  "supportingOrganisationsTitle":"支援機構",
+  "supportingOrganisations":[
+    {"name":"香港區塊鏈學會（港鏈會 - HKBCS）","url":"http://www.hkbcs.org","logo":"/static/images/logo-hong-kong-blockchain-society-(hkbcs).png","description":"<b>The Hong Kong Blockchain Society</b> promotes sustainable and mature of the blockchain ecosystem. HKBCS encourages and supports projects that are legal and compliant in Hong Kong and the surrounding region."},
+    {"name":"香港科技園","url":"https://www.hkstp.org","logo":"/static/images/logo-hong-kong-science-park-(hkstp).png","description":"關於香港科學園，包括科技園，創新中心和工業園，香港科技園公司（香港科技園）是致力於建設一個充滿活力的創新和技術生態系統連接的利益相關者，培育科技人才，促進協作，並推動一個法定機構創新交付給香港和該地區的社會和經濟效益。成立於2001年5月，香港科技園已推動香港發展成為在幾個專門的集群，包括電子，信息與通信技術，綠色科技，生物技術，材料和精密工程的創新和發展的區域樞紐。我們能科技公司培育的思路，創新和發展，通過我們的R＆d設施，基礎設施和市場領導的實驗室和技術中心，擁有專業的支持服務。我們還提供增值服務，全面培育計劃用於科技創業，加速他們的成長。科技企業從科技園為應用研究和產品開發我們的專業服務和基礎設施中受益;企業可以找到創新中心創意設計支持;而skill-密集型企業是我們在大埔，將軍澳及元朗三個工業服務。關於香港科技園公司的更多信息，請www.hkstp.org。"},
+    {"name":"Blockchain Education Network (BEN)","url":"https://www.blockchainedu.org","logo":"/static/images/logo-blockchain-education-network-(ben).png","description":"<b>Blockchain Education Network</b> is made up of students and alumni across the world who are creating bitcoin and blockchain clubs on their academic campuses. By exploring this socioeconomic experiment within the safety of their peers, students build new expectations and innovations."}
+  ],
+  "prompt":"如果您有興趣支持國際奧林匹克區塊鏈競賽，請聯絡sponsors@ibcol.org"
+}
