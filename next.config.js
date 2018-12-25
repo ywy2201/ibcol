@@ -1,6 +1,10 @@
 const webpack = require('webpack')
 require('now-env')
 
+const withOffline = require('next-offline')
+
+
+
 /**
  * If some of the envs are public, like a google maps key, but you still
  * want to keep them secret from the repo, the following code will allow you
@@ -47,7 +51,7 @@ const withCSS = require('@zeit/next-css')
 // module.exports = withSass();
 // module.exports = withCSS();
 
-module.exports = withCSS({
+module.exports = withOffline(withCSS({
   webpack: (config) => {
     
     config.plugins.push(
@@ -70,4 +74,4 @@ module.exports = withCSS({
     })
     return config
   }
-})
+}))
