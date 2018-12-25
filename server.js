@@ -77,6 +77,21 @@ const router = express.Router({
 //────────────────────────────────────────────────────────────────────────────────
 
 
+
+// serve service-worker.js
+router.get('/service-worker.js', (req, res) => {
+  // Don't cache service worker is a best practice (otherwise clients wont get emergency bug fix)
+  res.set("Cache-Control", "no-store, no-cache, must-revalidate, proxy-revalidate");
+  res.set("Content-Type", "application/javascript");
+
+  if (process.env.ENV !== 'production')
+    console.log(`requesting /service-worker.js...`);
+
+  const filePath = join(app.distDir, 'service-worker.js');
+  res.sendFile(filePath);
+})
+
+
 // redirect to default locale
 router.get('/', (req, res) => {
   res.redirect(`/${defaultLocale.id}`);
