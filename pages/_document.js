@@ -2,6 +2,8 @@ import Document, { Head, Main, NextScript } from 'next/document';
 import { ServerStyleSheet } from 'styled-components';
 import { style } from 'helpers/styledComponents.js';
 
+import jQuery from 'jquery';
+
 
 export default class MyDocument extends Document {
   static getInitialProps({ renderPage }) {
@@ -66,9 +68,9 @@ export default class MyDocument extends Document {
           <NextScript />
 
 
-          <script src="/static/js/jquery-3.2.1.min.js"></script>
+          {/* <script src="/static/js/jquery-3.2.1.min.js"></script> */}
           {/* <script src="/static/js/plugins.js"></script> */}
-          <script src="/static/js/main.js"></script>
+          {/* <script src="/static/js/main.js"></script> */}
         </body>
       </html>
     )
