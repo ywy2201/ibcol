@@ -16,6 +16,10 @@ import routes, { Link } from '/routes';
 
 import { withRouter } from 'next/router';
 
+import jQuery from 'jquery';
+
+const $ = jQuery;
+
 
 const LanguageSelectorContainerDiv = styled.div` 
   position: fixed;

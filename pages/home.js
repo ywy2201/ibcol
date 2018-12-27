@@ -12,6 +12,9 @@ import PageContainerComponent from 'components/PageContainerComponent';
 
 import Head from 'next/head';
 
+import jQuery from 'jquery';
+
+const $ = jQuery;
 
 // const pagePadding = {
 //   xSmall: style.dimension.normal.pagePadding.xSmall,
@@ -112,13 +115,13 @@ export default class extends React.Component {
 
             </div>
 
-            <div className="home-content__scroll">
+            {/* <div className="home-content__scroll">
               <Link prefetch route="home" params={{ locale }} hash="about">
                 <a className="scroll-link smoothscroll">
                   {this.translate('scroll')}
                 </a>
               </Link>
-            </div>
+            </div> */}
 
           </div>
         </section>
