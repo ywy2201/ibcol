@@ -134,17 +134,11 @@
         }
       ]
     },
-    {
-      "flag": "flag-icon-ca",
-      "countryCode": "ca",
-      "title": "University of Waterloo (UW)",
-      "ambassadors": [
-        {
-          "name": "Mika Tsoi",
-          "email": "mika.tsoi@ibcol.org"
-        }
-      ]
-    },
+    {"flag":"flag-icon-ca","countryCode":"ca","title":"University of Waterloo (UW)","ambassadors":[
+      {"name":"Danielle Cadoret","email":"danielle.cadoret@ibcol.org"},
+      {"name":"Gabriel Chan","email":"gabriel.chan@ibcol.org"},
+      {"name":"Mika Tsoi","email":"mika.tsoi@ibcol.org"}
+    ]},
     {
       "flag": "flag-icon-my",
       "countryCode": "my",
