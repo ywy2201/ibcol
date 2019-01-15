@@ -1,7 +1,7 @@
 {
   "pageTitle":"Registration",
   "seoDescription":"International Blockchain Olympiad is a multidisciplinary design and building competition. IBCOL 2019 invites students from around the world to solve real-world challenges through decentralized applications.",
-  "ogImage":"../../static/images/ogimage.jpg",
+  "ogImage":"static/images/ogimage.jpg",
   "subhead": "Team Registration",
   "teamInfo": "Team Information",
   "teamName": "Team Name",

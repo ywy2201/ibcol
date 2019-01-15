@@ -1,7 +1,7 @@
 {
   "pageTitle":"Registration",
   "seoDescription":"IBCOL",
-  "ogImage":"../../static/images/ogimage.jpg",
+  "ogImage":"static/images/ogimage.jpg",
   "subhead":"",
   "teamInfo":"Team Information",
   "teamName":"Name des Teams",

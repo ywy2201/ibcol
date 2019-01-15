@@ -1,7 +1,7 @@
 {
   "pageTitle":"",
   "seoDescription":"國際奧林匹克區塊鏈競賽是一個多學科的設計與建設性的競賽。 IBCOL 2019邀請來自世界各地的學生,通過分散的應用程式,解決現實生活中所面對的挑戰。",
-  "ogImage":"../../static/images/ogimage.jpg",
+  "ogImage":"static/images/ogimage.jpg",
   "subhead":"2019年度國際奧林匹克區塊鏈競賽的贊助商和支持者",
   "sponsorsTitle":"贊助商",
   "sponsors":[

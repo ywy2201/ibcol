@@ -2,7 +2,7 @@
   "siteTitle":"国際ブロックチェーンオリンピアッド (IBCOL)",
   "seoDescription":"国際ブロックチェンオリンピアッドは、多分野のデザインと建設的な試合です。 IBCOL 2019は、世界各国からの生徒に分散的なアプリケーションを通じて、現実社会の課題を解決するよう呼びかけています。",
   "keywords":"",
-  "ogImage":"../../static/images/ogimage.jpg",
+  "ogImage":"static/images/ogimage.jpg",
   "logoTag":"IBCOL: 国際ブロックチェーンオリンピアッド",
   "titleSeparator":"|",
   "menu":{

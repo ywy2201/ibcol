@@ -2,7 +2,7 @@
   "siteTitle":"",
   "seoDescription":"",
   "keywords":"",
-  "ogImage":"../../static/images/ogimage.jpg",
+  "ogImage":"static/images/ogimage.jpg",
   "logoTag":"",
   "titleSeparator":"|",
   "menu":{

@@ -1,7 +1,7 @@
 {
   "pageTitle":"School Ambassadors",
   "seoDescription":"International Blockchain Olympiad is a multidisciplinary design and building competition. IBCOL 2019 invites students from around the world to solve real-world challenges through decentralised applications.",
-  "ogImage":"../../static/images/ogimage.jpg",
+  "ogImage":"static/images/ogimage.jpg",
   "subhead": "Student Relations for the 2019 International Blockchain Olympiad",
   "schoolAmbassadorsTitle": "School Ambassadors",
   "schoolAmbassadorsDescriptions": "School ambassadors represent IBCOL 2019 on their campuses",

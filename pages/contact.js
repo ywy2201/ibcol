@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import configs from 'configs';
+
 import { media, style } from 'helpers/styledComponents.js';
 
 import translate from 'helpers/translate.js';
@@ -55,7 +57,7 @@ export default class extends React.Component {
           <title>{this.translate('siteTitle')} {this.translate('titleSeparator')} {this.translate('pageTitle')}</title>
           <meta name="description" content={this.translate('seoDescription')}/>
           <meta name="keywords" content={this.translate('keywords')}/>
-          <meta property="og:image" content={this.translate('ogImage')} />
+          <meta property="og:image" content={`${configs.url}${this.translate('ogImage')}`} />
           <meta property="og:type" content="website" />
         </Head>
         

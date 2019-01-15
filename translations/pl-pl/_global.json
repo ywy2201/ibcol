@@ -2,7 +2,7 @@
   "siteTitle":"Międzynarodowa Olimpiada Blockchain (MOB)",
   "seoDescription":"",
   "keywords":"",
-  "ogImage":"../../static/images/ogimage.jpg",
+  "ogImage":"static/images/ogimage.jpg",
   "logoTag":"IBCOL: Międzynarodowa Olimpiada Blockchain",
   "titleSeparator":"|",
   "menu":{
