@@ -1,7 +1,7 @@
 {
   "pageTitle":"",
   "seoDescription":"",
-  "ogImage":"../../static/images/ogimage.jpg",
+  "ogImage":"static/images/ogimage.jpg",
   "subhead":"",
   "teamInfo":"팀 정보",
   "teamName":"팀 이름",

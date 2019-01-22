@@ -2,7 +2,7 @@
   "siteTitle":"Internationale Blockchain Olympiade (IBCOL)",
   "seoDescription":"IBCOL",
   "keywords":"",
-  "ogImage":"../../static/images/ogimage.jpg",
+  "ogImage":"static/images/ogimage.jpg",
   "logoTag":"IBCOL: Internationale Blockchain Olympiade",
   "titleSeparator":"|",
   "menu":{

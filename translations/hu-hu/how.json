@@ -1,7 +1,7 @@
 {
   "pageTitle":"",
   "seoDescription":"",
-  "ogImage":"../../static/images/ogimage.jpg",
+  "ogImage":"static/images/ogimage.jpg",
   "subhead":"Jelentkezés a 2019-es Nemzetközi Blockchain Olimpiára",
   "whenToJoinHeading":"Mikor jelentkezz",
   "plans":{

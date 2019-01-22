@@ -1,7 +1,7 @@
 {
   "pageTitle":"",
   "seoDescription":"",
-  "ogImage":"../../static/images/ogimage.jpg",
+  "ogImage":"static/images/ogimage.jpg",
   "subhead":"",
   "mailingAddressTitle":"",
   "emailAddressTitle":"",

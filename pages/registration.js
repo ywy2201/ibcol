@@ -4,6 +4,8 @@ import styled from 'styled-components';
 import _ from 'lodash-checkit';
 import update from 'update-immutable';
 
+import configs from 'configs';
+
 import { media, style } from 'helpers/styledComponents.js';
 
 import translate from 'helpers/translate.js';
@@ -15,8 +17,6 @@ import PageContainerComponent from 'components/PageContainerComponent';
 import CountryInputSelectComponent from 'components/CountryInputSelectComponent';
 
 import Head from 'next/head';
-
-import configs from 'configs';
 
 import { Mutation } from "react-apollo";
 import gql from 'graphql-tag'
@@ -807,7 +807,7 @@ export default class extends React.Component {
           <title>{this.translate('siteTitle')} {this.translate('titleSeparator')} {this.translate('pageTitle')}</title>
           <meta name="description" content={this.translate('seoDescription')}/>
           <meta name="keywords" content={this.translate('keywords')}/>
-          <meta property="og:image" content={this.translate('ogImage')} />
+          <meta property="og:image" content={`${configs.url}${this.translate('ogImage')}`} />
           <meta property="og:type" content="website" />
         </Head>
 

@@ -1,7 +1,7 @@
 {
   "pageTitle":"學校大使",
   "seoDescription":"國際奧林匹克區塊鏈競賽是一個多學科的設計與建設性的競賽。 IBCOL 2019邀請來自世界各地的學生,通過分散的應用程式,解決現實生活中所面對的挑戰。",
-  "ogImage":"../../static/images/ogimage.jpg",
+  "ogImage":"static/images/ogimage.jpg",
   "subhead":"2019年國際奧林匹克區塊鏈競賽　學生關係專員",
   "schoolAmbassadorsTitle":"學校大使",
   "schoolAmbassadorsDescriptions":"學校大使將在他們的校園代表IBCOL 2019",

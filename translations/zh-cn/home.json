@@ -1,7 +1,7 @@
 {
   "pageTitle":"国际奥林匹克区块链竞赛",
   "seoDescription":"国际奥林匹克区块链竞赛是一个多学科的设计与建设性的竞赛。 IBCOL 2019邀请来自世界各地的学生,通过分散的应用程式,解决现实生活中所面对的挑战。",
-  "ogImage":"../../static/images/ogimage.jpg",
+  "ogImage":"static/images/ogimage.jpg",
   "mainHeading":"帮助将世界带来到区块链上",
   "subHeading":"与世界上最好的区块链建设者会面并竞赛",
   "register":"申请参加",

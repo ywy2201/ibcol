@@ -2,7 +2,7 @@
   "siteTitle":"المپیاد جهانی بلاک چین",
   "seoDescription":"",
   "keywords":"",
-  "ogImage":"../../static/images/ogimage.jpg",
+  "ogImage":"static/images/ogimage.jpg",
   "logoTag":"IBCOL: المپیاد جهانی بلاک چین",
   "titleSeparator":"|",
   "menu":{
