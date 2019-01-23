@@ -22,6 +22,37 @@
     {"flag":"flag-icon-ua","countryCode":"ua","title":"Donetsk State University of Economics and Trade (DonNUET)","ambassadors":[
       {"name":"Marina Danylyuk","email":"marina.danylyuk@ibcol.org"}
     ]},
+    {"flag":"flag-icon-hk","countryCode":"hk","title":"University of Hong Kong (HKU)","ambassadors":[
+      {"name":"Charles Wong","email":"charles.wong@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-hk","countryCode":"hk","title":"Chinese University of Hong Kong (CUHK)","ambassadors":[
+      {"name":"Gabriel Chan","email":"gabriel.chan@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-hk","countryCode":"hk","title":"Hong Kong University of Science and Technology (HKUST)","ambassadors":[
+      {"name":"Gabriel Chan","email":"gabriel.chan@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-hk","countryCode":"hk","title":"Hong Kong Baptist University (HKBU)","ambassadors":[
+      {"name":"Gabriel Chan","email":"gabriel.chan@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-hk","countryCode":"hk","title":"Hong Kong Polytechnic University (PolyU) ","ambassadors":[
+      {"name":"Kavis Cho","email":"kavis.cho@ibcol.org"},
+      {"name":"Peter Tang","email":"peter.tang@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-hk","countryCode":"hk","title":"City University of Hong Kong (CityU)","ambassadors":[
+      {"name":"Charles Wong","email":"charles.wong@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-hk","countryCode":"hk","title":"Open University of Hong Kong (OpenU)","ambassadors":[
+      {"name":"Gabriel Chan","email":"gabriel.chan@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-hk","countryCode":"hk","title":"Lingnan University","ambassadors":[
+      {"name":"Gabriel Chan","email":"gabriel.chan@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-hk","countryCode":"hk","title":"Hong Kong Shue Yan University (SYU)","ambassadors":[
+      {"name":"Gabriel Chan","email":"gabriel.chan@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-hk","countryCode":"hk","title":"Hang Seng University of Hong Kong (HSUHK)","ambassadors":[
+      {"name":"Gabriel Chan","email":"gabriel.chan@ibcol.org"}
+    ]},
     {"flag":"flag-icon-kr","countryCode":"kr","title":"Chung-Ang University (CAU)","ambassadors":[
       {"name":"Jaime An","email":"jaime.an@ibcol.org"}
     ]},
