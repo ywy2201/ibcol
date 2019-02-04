@@ -6,6 +6,8 @@ const handler = routes.getRequestHandler(app)
 const parseArgs = require('minimist')
 const url = require('url');
 const { join } = require('path');
+const geoip = require('geoip-lite');
+const translationsMapping = require('./translationsMapping');
 
 //
 // ─── GET CONFIGS ────────────────────────────────────────────────────────────────
@@ -94,6 +96,20 @@ router.get('/service-worker.js', (req, res) => {
 
 // redirect to default locale
 router.get('/', (req, res) => {
+  let ip = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
+  console.log('ip:'+ip);
+
+  //ip = "210.138.184.59";
+  
+  //let iptype=req.socket.address().family;
+
+  let geo = geoip.lookup(ip);
+  let id = translationsMapping[geo.country];
+  //console.log(geo);
+  //res.redirect(`/${defaultLocale.id}`);
+  if(id!=null)
+    res.redirect(`/${id}`);
+  
   res.redirect(`/${defaultLocale.id}`);
 });
 
