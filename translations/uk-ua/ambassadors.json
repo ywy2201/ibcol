@@ -22,6 +22,35 @@
     {"flag":"flag-icon-ua","countryCode":"ua","title":"Доне́цький націона́льний університе́т еконо́міки і торгі́влі імені (ДонНУЕТ) ","ambassadors":[
       {"name":"Марина Данилюк","email":"marina.danylyuk@ibcol.org"}
     ]},
+    {"flag":"flag-icon-hk","countryCode":"hk","title":"Університет Гонконга (HKU)","ambassadors":[
+      {"name":"Чарльз Вонг","email":"charles.wong@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-hk","countryCode":"hk","title":"Китайський університет Гонконгу (CUHK)","ambassadors":[
+      {"name":"Гавриїл Чан","email":"gabriel.chan@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-hk","countryCode":"hk","title":"Гонконзький університет науки і технології (HKUST)","ambassadors":[INSERT_AMBASSADOR_ARRAY]},
+    {"flag":"flag-icon-hk","countryCode":"hk","title":"Гонконгський баптистський університет (HKBU)","ambassadors":[
+      {"name":"Єремія Лі","email":"jeremiah.lee@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-hk","countryCode":"hk","title":"Гонконзький політехнічний університет (PolyU)","ambassadors":[
+      {"name":"Кавіс Чо","email":"kavis.cho@ibcol.org"},
+      {"name":"Петер Танг","email":"peter.tang@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-hk","countryCode":"hk","title":"Міський університет Гонконгу (CityU)","ambassadors":[
+      {"name":"Чарльз Вонг","email":"charles.wong@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-hk","countryCode":"hk","title":"Відкритий університет Гонконгу (OpenU)","ambassadors":[
+      {"name":"Гавриїл Чан","email":"gabriel.chan@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-hk","countryCode":"hk","title":"Університет Ліннань","ambassadors":[
+      {"name":"Гавриїл Чан","email":"gabriel.chan@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-hk","countryCode":"hk","title":"Гонконгський університет Сюянь (SYU)","ambassadors":[
+      {"name":"Гавриїл Чан","email":"gabriel.chan@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-hk","countryCode":"hk","title":"Хенг Сен університет Гонконгу (HSUHK)","ambassadors":[
+      {"name":"Гавриїл Чан","email":"gabriel.chan@ibcol.org"}
+    ]},
     {"flag":"flag-icon-kr","countryCode":"kr","title":"Університет Чунан (중앙대학교)","ambassadors":[
       {"name":"Джеймі Ан","email":"jaime.an@ibcol.org"}
     ]},
