@@ -28,7 +28,9 @@
     {"flag":"flag-icon-hk","countryCode":"hk","title":"Китайський університет Гонконгу (CUHK)","ambassadors":[
       {"name":"Гавриїл Чан","email":"gabriel.chan@ibcol.org"}
     ]},
-    {"flag":"flag-icon-hk","countryCode":"hk","title":"Гонконзький університет науки і технології (HKUST)","ambassadors":[INSERT_AMBASSADOR_ARRAY]},
+    {"flag":"flag-icon-hk","countryCode":"hk","title":"Гонконзький університет науки і технології (HKUST)","ambassadors":[
+      {"name":"Гавриїл Чан","email":"gabriel.chan@ibcol.org"}
+    ]},
     {"flag":"flag-icon-hk","countryCode":"hk","title":"Гонконгський баптистський університет (HKBU)","ambassadors":[
       {"name":"Єремія Лі","email":"jeremiah.lee@ibcol.org"}
     ]},
