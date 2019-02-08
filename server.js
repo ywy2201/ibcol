@@ -96,20 +96,19 @@ router.get('/service-worker.js', (req, res) => {
 
 // redirect to default locale
 router.get('/', (req, res) => {
-  let ip = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
-  console.log('ip:'+ip);
-
-  //ip = "210.138.184.59";
+  if (process.env.ENV !== 'production') {
+    res.redirect(`/${defaultLocale.id}`);
+  }
   
-  //let iptype=req.socket.address().family;
-
+  // Check ip and geolocation
+  let ip = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
   let geo = geoip.lookup(ip);
   let id = translationsMapping[geo.country];
-  //console.log(geo);
-  //res.redirect(`/${defaultLocale.id}`);
-  if(id!=null)
+
+  if(id!=null) {
     res.redirect(`/${id}`);
-  
+  }
+
   res.redirect(`/${defaultLocale.id}`);
 });
 
