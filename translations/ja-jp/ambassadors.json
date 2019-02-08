@@ -22,6 +22,37 @@
     {"flag":"flag-icon-ua","countryCode":"ua","title":"ドネツク州経済貿易大学（DonNUET）","ambassadors":[
       {"name":"マリーナ・ダニュリク","email":"marina.danylyuk@ibcol.org"}
     ]},
+    {"flag":"flag-icon-hk","countryCode":"hk","title":"香港大学 (HKU)","ambassadors":[
+      {"name":"チャールズ・ウォン","email":"charles.wong@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-hk","countryCode":"hk","title":"香港中文大学","ambassadors":[
+      {"name":"チン．カゴウ（ガブリエル）","email":"gabriel.chan@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-hk","countryCode":"hk","title":"港科技大学 (HKUST)","ambassadors":[
+      {"name":"チン．カゴウ（ガブリエル）","email":"gabriel.chan@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-hk","countryCode":"hk","title":"香港浸会大学 (HKBU)","ambassadors":[
+      {"name":"ジェレミア・リー","email":"jeremiah.lee@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-hk","countryCode":"hk","title":"香港理工大学 (PolyU)","ambassadors":[
+      {"name":"カビス・チョ","email":"kavis.cho@ibcol.org"},
+      {"name":"ピーター・トン","email":"peter.tang@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-hk","countryCode":"hk","title":"香港城市大学 (CityU)","ambassadors":[
+      {"name":"チャールズ・ウォン","email":"charles.wong@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-hk","countryCode":"hk","title":"香港公開大学 (OpenU)","ambassadors":[
+      {"name":"チン．カゴウ（ガブリエル）","email":"gabriel.chan@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-hk","countryCode":"hk","title":"嶺南大学","ambassadors":[
+      {"name":"チン．カゴウ（ガブリエル）","email":"gabriel.chan@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-hk","countryCode":"hk","title":"香港樹仁大学 (SYU)","ambassadors":[
+      {"name":"チン．カゴウ（ガブリエル）","email":"gabriel.chan@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-hk","countryCode":"hk","title":"香港恒生大学 (HSUHK)","ambassadors":[
+      {"name":"チン．カゴウ（ガブリエル）","email":"gabriel.chan@ibcol.org"}
+    ]},
     {"flag":"flag-icon-kr","countryCode":"kr","title":"中央大学校","ambassadors":[
       {"name":"ジェイミー・アン","email":"jaime.an@ibcol.org"}
     ]},
