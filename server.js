@@ -96,7 +96,7 @@ router.get('/service-worker.js', (req, res) => {
 
 // redirect to default locale
 router.get('/', (req, res) => {
-  if (process.env.ENV !== 'production') {
+  if (process.env.ENV === 'local') {
     res.redirect(`/${defaultLocale.id}`);
   }
   
