@@ -22,6 +22,37 @@
     {"flag":"flag-icon-ua","countryCode":"ua","title":"Donetsk State University of Economics and Trade (DonNUET)","ambassadors":[
       {"name":"마리나 달리류크","email":"marina.danylyuk@ibcol.org"}
     ]},
+    {"flag":"flag-icon-hk","countryCode":"hk","title":"홍콩 대학 (HKU)","ambassadors":[
+      {"name":"왕례현","email":"charles.wong@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-hk","countryCode":"hk","title":"홍콩 중문 대학","ambassadors":[
+      {"name":"진가호","email":"gabriel.chan@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-hk","countryCode":"hk","title":"홍콩 과기 대학 (HKUST)","ambassadors":[
+      {"name":"진가호","email":"gabriel.chan@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-hk","countryCode":"hk","title":"홍콩 침례 대학 (HKBU)","ambassadors":[
+      {"name":"리강곤","email":"jeremiah.lee@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-hk","countryCode":"hk","title":"홍콩 이공 대학 (PolyU)","ambassadors":[
+      {"name":"조자건","email":"kavis.cho@ibcol.org"},
+      {"name":"등막천","email":"peter.tang@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-hk","countryCode":"hk","title":"홍콩 성시 대학 (CityU)","ambassadors":[
+      {"name":"왕례현","email":"charles.wong@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-hk","countryCode":"hk","title":"홍콩 공개 대학 (OpenU)","ambassadors":[
+      {"name":"진가호","email":"gabriel.chan@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-hk","countryCode":"hk","title":"링난 대학 (嶺南大學)","ambassadors":[
+      {"name":"진가호","email":"gabriel.chan@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-hk","countryCode":"hk","title":"홍콩 수인 대학 (SYU)","ambassadors":[
+      {"name":"진가호","email":"gabriel.chan@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-hk","countryCode":"hk","title":"홍콩 항셍 대학 (HSUHK)","ambassadors":[
+      {"name":"진가호","email":"gabriel.chan@ibcol.org"}
+    ]},
     {"flag":"flag-icon-kr","countryCode":"kr","title":"중앙대학교","ambassadors":[
       {"name":"ジェイミー・アン","email":"jaime.an@ibcol.org"}
     ]},
