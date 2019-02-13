@@ -718,8 +718,16 @@ textarea {
   width: 25%;
 }
 
-.block-1-3 .col-block {
+.block-1-3 .col-block  {
   width: 33.33333%;
+}
+
+.block-1-3 .col-block a img{
+  max-width: auto;
+  max-height: 95px;
+  width:auto;
+  height:auto;
+  
 }
 
 .block-1-2 .col-block {
