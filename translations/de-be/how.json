@@ -17,7 +17,7 @@
     "superEarlyBird":{
       "name":"Super Early Bird",
       "fromDate":"Heute",
-      "toDate":"Freitag<br/>1. Februar 2019<br/>um 23:59 HKT",
+      "toDate":"Samstag<br/>16. März 2019<br/>um 23:59 HKT",
       "fee":"Gebühr wird erlassen",
       "financialAssistanceDetails":"Reisezuschüsse erhältlich",
       "feeSchedule":{
@@ -28,8 +28,8 @@
     },
     "earlyBird":{
       "name":"Early Bird",
-      "fromDate":"Samstag<br/>2. Februar 2019<br/>um 00:00 HKT",
-      "toDate":"Montag<br/>1. April 2019<br/>um 23:59 HKT",
+      "fromDate":"Sonntag<br/>17. März 2019<br/>um 00:00 HKT",
+      "toDate":"Samstag<br/>13. April 2019<br/>um 23:59 HKT",
       "fee":"Gebühr wird erlassen",
       "financialAssistanceDetails":"Reisezuschüsse nicht erhältlich",
       "feeSchedule":{
@@ -40,7 +40,7 @@
     },
     "regular":{
       "name":"Regular",
-      "fromDate":"Dienstag<br/>2. April 2019 <br/>um 00:00 HKT",
+      "fromDate":"Sonntag<br/>14. April 2019 <br/>um 00:00 HKT",
       "toDate":"Sonntag<br/>21. April 2019<br/>um 23:59 HKT",
       "fee":"Gebühr ist erforderlich",
       "financialAssistanceDetails":"Reisezuschüsse nicht erhältlich",

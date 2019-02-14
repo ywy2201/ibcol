@@ -17,7 +17,7 @@
     "superEarlyBird":{
       "name":"Super Descuento",
       "fromDate":"Hoy",
-      "toDate":"Viernes<br/>1 de febrero 2019<br/>23:59 HKT",
+      "toDate":"Sábado<br/>16 de marzo 2019<br/>23:59 HKT",
       "fee":"No se cobra tarifa",
       "financialAssistanceDetails":"Elegible para subsidios de viaje",
       "feeSchedule":{
@@ -28,8 +28,8 @@
     },
     "earlyBird":{
       "name":"Descuento",
-      "fromDate":"Sabado<br/>2 de febrero 2019<br/>0 horas HKT",
-      "toDate":"Lunes<br/>1 de abril 2019<br/>23:59 HKT",
+      "fromDate":"Domingo<br/>17 de marzo 2019<br/>0 horas HKT",
+      "toDate":"Lunes<br/>13 de abril 2019<br/>23:59 HKT",
       "fee":"No se cobra tarifa",
       "financialAssistanceDetails":"No elegible para subsidios de viaje",
       "feeSchedule":{
@@ -40,7 +40,7 @@
     },
     "regular":{
       "name":"Normal",
-      "fromDate":"Martes<br/>2 de abril 2019<br/>0 horas HKT",
+      "fromDate":"Martes<br/>14 de abril 2019<br/>0 horas HKT",
       "toDate":"Domingo<br/>21 de abril 2019<br/>23:59 HKT",
       "fee":"Se requiere pago",
       "financialAssistanceDetails":"No elegible para subsidios de viaje",

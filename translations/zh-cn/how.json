@@ -17,7 +17,7 @@
     "superEarlyBird":{
       "name":"超级早鸟",
       "fromDate":"今天",
-      "toDate":"星期五 2019年2月1日 香港时间23:59",
+      "toDate":"星期六 2019年3月16日 香港时间23:59",
       "fee":"费用免除",
       "financialAssistanceDetails":"有资格获得旅费补贴",
       "feeSchedule":{
@@ -28,8 +28,8 @@
     },
     "earlyBird":{
       "name":"早鸟",
-      "fromDate":"星期六 2019年2月2日 香港时间00:00",
-      "toDate":"星期一 2019年4月1日 香港时间23:59",
+      "fromDate":"星期日 2019年3月17日 香港时间00:00",
+      "toDate":"星期六 2019年4月13日 香港时间23:59",
       "fee":"费用免除",
       "financialAssistanceDetails":"不符合旅费补贴资格",
       "feeSchedule":{
@@ -40,7 +40,7 @@
     },
     "regular":{
       "name":"一般",
-      "fromDate":"星期二 2019年4月2日 香港时间00:00",
+      "fromDate":"星期日 2019年4月14日 香港时间00:00",
       "toDate":"星期日 2019年4月21日 香港时间23:59",
       "fee":"必需缴费",
       "financialAssistanceDetails":"不符合旅费补贴资格",

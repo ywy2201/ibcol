@@ -17,7 +17,7 @@
     "superEarlyBird":{
       "name":"Super Early Bird",
       "fromDate":"Today",
-      "toDate":"Friday<br/>1 February 2019<br/>23:59 HKT",
+      "toDate":"Saturday<br/>16 March 2019<br/>23:59 HKT",
       "fee":"Fee is waived",
       "financialAssistanceDetails":"Eligible for travel subsidies",
       "feeSchedule":{
@@ -28,8 +28,8 @@
     },
     "earlyBird":{
       "name":"Early Bird",
-      "fromDate":"Saturday<br/>2 February 2019<br/>00:00 HKT",
-      "toDate":"Monday<br/>1 April 2019<br/>23:59 HKT",
+      "fromDate":"Sunday<br/>17 March 2019<br/>00:00 HKT",
+      "toDate":"Saturday<br/>13 April 2019<br/>23:59 HKT",
       "fee":"Fee is waived",
       "financialAssistanceDetails":"Ineligible for travel subsidies",
       "feeSchedule":{
@@ -40,7 +40,7 @@
     },
     "regular":{
       "name":"Regular",
-      "fromDate":"Tuesday<br/>2 April 2019<br/>00:00 HKT",
+      "fromDate":"Sunday<br/>14 April 2019<br/>00:00 HKT",
       "toDate":"Sunday<br/>21 April 2019<br/>23:59 HKT",
       "fee":"Fee is required",
       "financialAssistanceDetails":"Ineligible for travel subsidies",
