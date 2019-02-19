@@ -71,12 +71,12 @@ const ThisPageContainerComponent = styled(PageContainerComponent)`
   }
 `;
 
-const RegistrationForm = styled.form `
+const RegistrationForm = styled.form`
   width: 100%;
   box-sizing: border-box;
 `;
 
-const FormSection = styled.section `
+const FormSection = styled.section`
   width: 100%;
   box-sizing: border-box;
   padding-bottom: 3rem;
@@ -114,7 +114,7 @@ const FormSection = styled.section `
   
 `;
 
-const FormRow = styled.div `
+const FormRow = styled.div`
   display: flex;
   width: 100%;
   box-sizing: border-box;
@@ -125,7 +125,7 @@ const FormRow = styled.div `
 `;
 
 
-const FormTools = styled.div `
+const FormTools = styled.div`
   display: flex;
   width: 100%;
   box-sizing: border-box;
@@ -150,7 +150,7 @@ const FormTools = styled.div `
   }
 `;
 
-const FormField = styled.label `
+const FormField = styled.label`
   flex: 1;
   width: 100%;
   box-sizing: border-box;
@@ -181,19 +181,14 @@ const FormField = styled.label `
 
 export default class extends React.Component {
   static async getInitialProps({ query }) {
-    
-    return { query }
+    return { query };
   }
 
   constructor(props) {
     super(props);
     this.state = this.getDefaultState();
-
     this.resetForm();
-
     // this.onEditorStateChange();
-    
-
   }
 
   getDefaultState = () => {
@@ -207,14 +202,12 @@ export default class extends React.Component {
         teamName: "",
         ref: ""
       }
-    }
+    };
   }
-
 
   resetForm = () => {
     this.setState(this.getDefaultState());
   }
-
 
   requiredFields = {
     teamName: true,
@@ -253,13 +246,12 @@ export default class extends React.Component {
       projectCategoryKey: true,
       description: true
     }
-
   };
 
   flattenKeys = (obj, path = []) =>
     !_.isObject(obj)
-        ? { [path.join('.')]: obj }
-        : _.reduce(obj, (cum, next, key) => _.merge(cum, this.flattenKeys(next, [...path, key])), {});
+      ? { [path.join('.')]: obj }
+      : _.reduce(obj, (cum, next, key) => _.merge(cum, this.flattenKeys(next, [...path, key])), {});
 
 
 
@@ -278,7 +270,7 @@ export default class extends React.Component {
 
 
 
-  
+
 
   getNewAdvisorRecord = () => {
     return {
@@ -341,66 +333,43 @@ export default class extends React.Component {
   componentDidUpdate = (prevProps, prevState) => {
 
     if (prevState.lastEditorStateChange !== this.state.lastEditorStateChange) {
-
       // console.log('componentDidUpdate', this.state.lastEditorStateChange);
-
       this.setState({
         recordIsValid: this.validateRecord(this.state.record)
       });
     }
-    
+
   }
-  
 
   onRecordChange = (e) => {
     const fieldId = e.currentTarget.getAttribute('data-name');
     const value = e.currentTarget.type === 'checkbox' ? e.currentTarget.checked ? "true" : "false" : e.currentTarget.value;
-    
     // console.log('onRecordChange', fieldId, value);
-
     let updatedRecord = {};
-
-    
-
     if (e.currentTarget.getAttribute('data-section') === 'teamInfo') {
-
-
       updatedRecord = update(this.state.record, {
         [fieldId]: {
           $set: value
         }
       })
-    
-
-
-
     } else if (e.currentTarget.getAttribute('data-section') === 'studentRecords') {
-
       const studentIndex = parseInt(e.currentTarget.getAttribute('data-student-index'));
-
-      
-      updatedRecord = update(this.state.record, {
-        studentRecords: {
-          [studentIndex] : {
-            [fieldId]: {
-              $set: value
+      updatedRecord = update(this.state.record,
+        {
+          studentRecords: {
+            [studentIndex]: {
+              [fieldId]: {
+                $set: value
+              }
             }
           }
-        }
-      })
-      
-
-
-
+        })
     } else if (e.currentTarget.getAttribute('data-section') === 'studentEducationRecords') {
       const studentIndex = parseInt(e.currentTarget.getAttribute('data-student-index'));
-
       const studentEducationIndex = parseInt(e.currentTarget.getAttribute('data-student-education-index'));
-
-      
       updatedRecord = update(this.state.record, {
         studentRecords: {
-          [studentIndex] : {
+          [studentIndex]: {
             educationRecords: {
               [studentEducationIndex]: {
                 [fieldId]: {
@@ -412,32 +381,22 @@ export default class extends React.Component {
         }
       })
     } else if (e.currentTarget.getAttribute('data-section') === 'advisorRecords') {
-
       const advisorIndex = parseInt(e.currentTarget.getAttribute('data-advisor-index'));
-
-      
       updatedRecord = update(this.state.record, {
         advisorRecords: {
-          [advisorIndex] : {
+          [advisorIndex]: {
             [fieldId]: {
               $set: value
             }
           }
         }
       })
-      
-
-
-
     } else if (e.currentTarget.getAttribute('data-section') === 'advisorAssociationRecords') {
-
       const advisorIndex = parseInt(e.currentTarget.getAttribute('data-advisor-index'));
-
       const associationRecordIndex = parseInt(e.currentTarget.getAttribute('data-advisor-association-index'));
-
       updatedRecord = update(this.state.record, {
         advisorRecords: {
-          [advisorIndex] : {
+          [advisorIndex]: {
             associationRecords: {
               [associationRecordIndex]: {
                 [fieldId]: {
@@ -448,51 +407,33 @@ export default class extends React.Component {
           }
         }
       })
-      
-
-
-
     } else if (e.currentTarget.getAttribute('data-section') === 'projectRecords') {
-      
       const projectIndex = parseInt(e.currentTarget.getAttribute('data-project-index'));
-
       updatedRecord = update(this.state.record, {
         projectRecords: {
-          [projectIndex] : {
+          [projectIndex]: {
             [fieldId]: {
               $set: value
             }
           }
         }
       })
-      
     }
-
-
-
     if (!_.isEmpty(updatedRecord)) {
-      
       // console.log('updatedRecord', updatedRecord);
-
-
       this.setState({
         record: updatedRecord,
         lastEditorStateChange: Date.now()
-      })
+      });
     }
   }
-
   graphQLCleanUp = (record) => {
     return record;
   }
-
   onCreateApplication = (mutate) => {
     if (this.state.recordIsValid) {
-
       // mutation AddPage($slug: String!, $locale: String!, $localisedPageInput: LocalisedPageInput!, $schemaDefinitionInputs: [SchemaDefinitionInput]!,
       //   $localisedFieldInputs: [LocalisedFieldInput]) {
-        
-
       mutate({
         variables: {
           "application": {
@@ -514,7 +455,6 @@ export default class extends React.Component {
       })
     }
   }
-  
   translate = (t) => translate(t, 'registration', this.props.query.locale, {
     // "countries": true,
     "sectors": true,
@@ -522,13 +462,14 @@ export default class extends React.Component {
   });
 
   getLabel = (field) => {
-
-    return <span>
-      {this.translate(field)} {
-        _.get(this.requiredFields, field) === true &&
-        <>*</>
-      }
-    </span>
+    return (
+      <span>
+        {this.translate(field)} {
+          _.get(this.requiredFields, field) === true &&
+          <>*</>
+        }
+      </span>
+    );
   }
 
   getGraduationYearRange = () => {
@@ -547,19 +488,14 @@ export default class extends React.Component {
     const start = (new Date()).getFullYear();
     const yearsAvailable = (min === undefined) ? 50 : start - parseInt(min);
     const range = [];
-
-    
-
     for (let index = start; index >= start - yearsAvailable; index--) {
       range.push(index);
     }
-
     return range;
   }
 
   addStudentEducationRecord = (e) => {
     const studentIndex = parseInt(e.currentTarget.getAttribute('data-student-index'));
-
     this.setState({
       record: update(this.state.record, {
         studentRecords: {
@@ -572,12 +508,10 @@ export default class extends React.Component {
       }),
       lastEditorStateChange: Date.now()
     })
-
   }
 
   addAdvisorAssociationRecord = (e) => {
     const advisorIndex = parseInt(e.currentTarget.getAttribute('data-advisor-index'));
-
     this.setState({
       record: update(this.state.record, {
         advisorRecords: {
@@ -590,14 +524,11 @@ export default class extends React.Component {
       }),
       lastEditorStateChange: Date.now()
     })
-
   }
-  
+
   removeStudentEducationRecord = (e) => {
     const studentIndex = parseInt(e.currentTarget.getAttribute('data-student-index'));
-
     const studentEducationIndex = parseInt(e.currentTarget.getAttribute('data-student-education-index'));
-
     this.setState({
       record: update(this.state.record, {
         studentRecords: {
@@ -610,8 +541,8 @@ export default class extends React.Component {
       }),
       lastEditorStateChange: Date.now()
     })
-
   }
+
 
 
   removeAdvisorAssociationRecord = (e) => {
@@ -666,7 +597,7 @@ export default class extends React.Component {
 
   addAdvisor = () => {
 
-    
+
     this.setState({
       record: update(this.state.record, {
         advisorRecords: {
@@ -675,7 +606,7 @@ export default class extends React.Component {
       }),
       lastEditorStateChange: Date.now()
     })
-  
+
   }
 
   removeStudent = (e) => {
@@ -726,11 +657,7 @@ export default class extends React.Component {
 
   validateRecord = (record, parentKey) => {
     // console.log('validateRecord', record, this.requiredFields);
-
-    
-
     let isRecordValid = true;
-
     Object.keys(record).map((key) => {
       const inspect = _.get(record, key);
       if (_.isArray(inspect)) {
@@ -739,27 +666,18 @@ export default class extends React.Component {
         })
         // isRecordValid = isRecordValid && this.validateRecord(inspect, _.isEmpty(parentKey) ? `${key}` : `${parentKey}.${key}`);
       } else {
-        
         const requiredFields = this.flattenKeys(this.requiredFields);
-
-
-        
-
         isRecordValid = isRecordValid && (_.get(requiredFields, _.isEmpty(parentKey) ? `${key}` : `${parentKey}.${key}`) === true ? !_.isEmpty(record[key]) : true) && (
           key === 'email' ?
             _.isEmail(record[key])
-          : true
+            : true
         );
 
         // console.log('>>', _.isEmpty(parentKey) ? `${key}` : `${parentKey}.${key}`, (_.get(requiredFields, _.isEmpty(parentKey) ? `${key}` : `${parentKey}.${key}`) === true ? !_.isEmpty(record[key]) : true), isRecordValid);
       }
 
     })
-
     return isRecordValid;
-
-
-
   }
 
 
@@ -772,9 +690,8 @@ export default class extends React.Component {
   }
 
 
-  onMutationCompleted = ({addApplication}) => {
+  onMutationCompleted = ({ addApplication }) => {
     console.log('addApplication', addApplication);
-
     this.setState({
       isEditorMutating: false,
       mutationError: undefined,
@@ -788,113 +705,107 @@ export default class extends React.Component {
     })
   }
 
-  
-  
   render() {
-    
+
     // console.log(">>> query", this.props.query);
 
-    
+
     const locale = this.props.query.locale;
 
-    const sectors = _.sortBy(this.translate('sectors'),[(o)=>o]);
-    const projectCategories = _.sortBy(this.translate('projectCategories'), [(o)=>o.name]);
-    
-    
+    const sectors = _.sortBy(this.translate('sectors'), [(o) => o]);
+    const projectCategories = _.sortBy(this.translate('projectCategories'), [(o) => o.name]);
+
+
     return (
       <ThisPageContainerComponent>
         <Head>
           <title>{this.translate('siteTitle')} {this.translate('titleSeparator')} {this.translate('pageTitle')}</title>
-          <meta name="description" content={this.translate('seoDescription')}/>
-          <meta name="keywords" content={this.translate('keywords')}/>
+          <meta name="description" content={this.translate('seoDescription')} />
+          <meta name="keywords" content={this.translate('keywords')} />
           <meta property="og:image" content={`${configs.url}${this.translate('ogImage')}`} />
           <meta property="og:type" content="website" />
         </Head>
 
-        {this.state.showConfirmation && 
-          <section className="s-section target-section first last">
-
-          <div className="row section-header">
-            <div className="col-full">
-              <h3 className="subhead">{this.translate('confirmation.title')}</h3>
-            </div>
-          </div>
-  
-          <div className="row">
-
-            <div className="block-tab-full">
-                <div className="col-block" style={{width: "100%"}}>
-                    <div className="item-process__text">
-                        <p dangerouslySetInnerHTML={{__html: this.translate('confirmation.message')}}/>
-                        <p>
-                          <b>{this.translate('confirmation.refTitle')}</b><br/>#{this.state.confirmation.ref}
-                        </p>
-                        <p>
-                          <b>{this.translate('confirmation.teamNameTitle')}</b><br/>{this.state.confirmation.teamName}
-                        </p>
-                    </div>
-                    <div className="full-width">
-                      <button onClick={this.resetForm}>{this.translate('registerAnother')}</button>
-                    </div>
-                </div>
-            </div> 
-        
-          </div>
-        </section>
-        
-        }
-
-        
-
-        
-        
-
-        {!this.state.showConfirmation && 
+        {this.state.showConfirmation &&
           <section className="s-section target-section first last">
 
             <div className="row section-header">
               <div className="col-full">
-                
+                <h3 className="subhead">{this.translate('confirmation.title')}</h3>
+              </div>
+            </div>
 
-                
-                  <Mutation
-                    mutation={ADD_APPLICATION}
-                    onCompleted={this.onMutationCompleted}
-                    onError={this.onMutationError}
-                  >
-                    {(mutate, { loading, error, called, data }) => {
+            <div className="row">
 
-                      {/* this.graphQLMutateCreate = mutate; */}
+              <div className="block-tab-full">
+                <div className="col-block" style={{ width: "100%" }}>
+                  <div className="item-process__text">
+                    <p dangerouslySetInnerHTML={{ __html: this.translate('confirmation.message') }} />
+                    <p>
+                      <b>{this.translate('confirmation.refTitle')}</b><br />#{this.state.confirmation.ref}
+                    </p>
+                    <p>
+                      <b>{this.translate('confirmation.teamNameTitle')}</b><br />{this.state.confirmation.teamName}
+                    </p>
+                  </div>
+                  <div className="full-width">
+                    <button onClick={this.resetForm}>{this.translate('registerAnother')}</button>
+                  </div>
+                </div>
+              </div>
 
-                      
-                      return <RegistrationForm onSubmit={(e)=>{e.preventDefault();}}>
-                        <FormSection className="FormSection">
-                          <h3 className="subhead">{this.translate('teamInfo')}</h3>
+            </div>
+          </section>
 
-                          <FormRow>
-                            <FormField>
-                              {this.getLabel('teamName')}
-                              <input type="text" data-name="teamName" data-section="teamInfo" onChange={this.onRecordChange} value={_.isEmpty(this.state.record['teamName']) ? "" : this.state.record['teamName']} onFocus={this.onFieldFocused} onBlur={this.onFieldBlurred}/>
-                            </FormField>
-                          </FormRow>
+        }
 
-                          {
-                            !_.isEmpty(this.state.mutationError) &&
-                            <div className="full-width" style={{color: "red", marginTop: "-3rem"}}>
-                              {this.state.mutationError}
-                            </div>
-                          }
-                        </FormSection>
 
-                        
 
+
+
+
+        {!this.state.showConfirmation &&
+          <section className="s-section target-section first last">
+
+            <div className="row section-header">
+              <div className="col-full">
+
+
+
+                <Mutation
+                  mutation={ADD_APPLICATION}
+                  onCompleted={this.onMutationCompleted}
+                  onError={this.onMutationError}
+                >
+                  {(mutate, { loading, error, called, data }) => {
+
+                    {/* this.graphQLMutateCreate = mutate; */ }
+
+
+                    return <RegistrationForm onSubmit={(e) => { e.preventDefault(); }}>
+                      <FormSection className="FormSection">
+                        <h3 className="subhead">{this.translate('teamInfo')}</h3>
+
+                        <FormRow>
+                          <FormField>
+                            {this.getLabel('teamName')}
+                            <input type="text" data-name="teamName" data-section="teamInfo" onChange={this.onRecordChange} value={_.isEmpty(this.state.record['teamName']) ? "" : this.state.record['teamName']} onFocus={this.onFieldFocused} onBlur={this.onFieldBlurred} />
+                          </FormField>
+                        </FormRow>
 
                         {
-                          this.state.record.studentRecords.map((studentRecord, studentIndex)=>{
+                          !_.isEmpty(this.state.mutationError) &&
+                          <div className="full-width" style={{ color: "red", marginTop: "-3rem" }}>
+                            {this.state.mutationError}
+                          </div>
+                        }
+                      </FormSection>
+                      {
+                        this.state.record.studentRecords.map((studentRecord, studentIndex) => {
 
                           return <FormSection className="FormSection" key={studentIndex}>
-                            <h3 className="subhead">{this.translate('studentInfo')} {this.state.record.studentRecords.length > 1 && `#${studentIndex+1}`}
-                            
+                            <h3 className="subhead">{this.translate('studentInfo')} {this.state.record.studentRecords.length > 1 && `#${studentIndex + 1}`}
+
                               {
                                 this.state.record.studentRecords.length > 1 &&
                                 <div className="remove" data-student-index={studentIndex} onClick={this.removeStudent}>{this.translate('removeStudent')}</div>
@@ -904,52 +815,52 @@ export default class extends React.Component {
                             <FormRow>
                               <FormField>
                                 {this.getLabel('studentRecords.firstName')}
-                                <input type="text" data-name="firstName" data-section="studentRecords" data-student-index={studentIndex} onChange={this.onRecordChange} value={_.isEmpty(studentRecord['firstName']) ? "" : studentRecord['firstName']} onFocus={this.onFieldFocused} onBlur={this.onFieldBlurred}/>
+                                <input type="text" data-name="firstName" data-section="studentRecords" data-student-index={studentIndex} onChange={this.onRecordChange} value={_.isEmpty(studentRecord['firstName']) ? "" : studentRecord['firstName']} onFocus={this.onFieldFocused} onBlur={this.onFieldBlurred} />
                               </FormField>
 
                               <FormField>
                                 {this.getLabel('studentRecords.lastName')}
-                                <input type="text" data-name="lastName" data-section="studentRecords" data-student-index={studentIndex} onChange={this.onRecordChange} value={_.isEmpty(studentRecord['lastName']) ? "" : studentRecord['lastName']} onFocus={this.onFieldFocused} onBlur={this.onFieldBlurred}/>
+                                <input type="text" data-name="lastName" data-section="studentRecords" data-student-index={studentIndex} onChange={this.onRecordChange} value={_.isEmpty(studentRecord['lastName']) ? "" : studentRecord['lastName']} onFocus={this.onFieldFocused} onBlur={this.onFieldBlurred} />
                               </FormField>
                             </FormRow>
 
                             <FormRow>
                               <FormField>
                                 {this.getLabel('studentRecords.phoneNumber')}
-                                <input type="tel" data-name="phoneNumber" data-section="studentRecords" data-student-index={studentIndex} onChange={this.onRecordChange} value={_.isEmpty(studentRecord['phoneNumber']) ? "" : studentRecord['phoneNumber']} onFocus={this.onFieldFocused} onBlur={this.onFieldBlurred}/>
+                                <input type="tel" data-name="phoneNumber" data-section="studentRecords" data-student-index={studentIndex} onChange={this.onRecordChange} value={_.isEmpty(studentRecord['phoneNumber']) ? "" : studentRecord['phoneNumber']} onFocus={this.onFieldFocused} onBlur={this.onFieldBlurred} />
                               </FormField>
 
                               <FormField>
                                 {this.getLabel('studentRecords.email')}
-                                <input type="email" data-name="email" data-section="studentRecords" data-student-index={studentIndex} onChange={this.onRecordChange} value={_.isEmpty(studentRecord['email']) ? "" : studentRecord['email']} onFocus={this.onFieldFocused} onBlur={this.onFieldBlurred}/>
+                                <input type="email" data-name="email" data-section="studentRecords" data-student-index={studentIndex} onChange={this.onRecordChange} value={_.isEmpty(studentRecord['email']) ? "" : studentRecord['email']} onFocus={this.onFieldFocused} onBlur={this.onFieldBlurred} />
                               </FormField>
                             </FormRow>
 
 
 
-                            
+
 
                             {
-                              studentRecord.educationRecords.map((educationRecord, studentEducationIndex)=>{
+                              studentRecord.educationRecords.map((educationRecord, studentEducationIndex) => {
 
                                 return <FormSection className="FormSection" key={studentEducationIndex}>
-                                  <h3 className="subhead">{this.translate('studentEducationInfo')} {studentRecord.educationRecords.length > 1 && `#${studentEducationIndex+1}`}
+                                  <h3 className="subhead">{this.translate('studentEducationInfo')} {studentRecord.educationRecords.length > 1 && `#${studentEducationIndex + 1}`}
                                     {
                                       studentRecord.educationRecords.length > 1 &&
-                                      <div className="remove" data-student-index={studentIndex} 
-                                      data-student-education-index={studentEducationIndex} onClick={this.removeStudentEducationRecord}>{this.translate('removeStudentEducationRecord')}</div>
+                                      <div className="remove" data-student-index={studentIndex}
+                                        data-student-education-index={studentEducationIndex} onClick={this.removeStudentEducationRecord}>{this.translate('removeStudentEducationRecord')}</div>
                                     }
                                   </h3>
-                                  
+
                                   <FormRow>
                                     <FormField>
                                       {this.getLabel('studentRecords.educationRecords.degree')}
-                                      <input type="text" data-name="degree" data-section="studentEducationRecords" data-student-index={studentIndex} data-student-education-index={studentEducationIndex} onChange={this.onRecordChange} value={_.isEmpty(educationRecord['degree']) ? "" : educationRecord['degree']} onFocus={this.onFieldFocused} onBlur={this.onFieldBlurred}/>
+                                      <input type="text" data-name="degree" data-section="studentEducationRecords" data-student-index={studentIndex} data-student-education-index={studentEducationIndex} onChange={this.onRecordChange} value={_.isEmpty(educationRecord['degree']) ? "" : educationRecord['degree']} onFocus={this.onFieldFocused} onBlur={this.onFieldBlurred} />
                                     </FormField>
 
                                     <FormField>
                                       {this.getLabel('studentRecords.educationRecords.programme')}
-                                      <input type="text" data-name="programme" data-section="studentEducationRecords" data-student-index={studentIndex} data-student-education-index={studentEducationIndex} onChange={this.onRecordChange} value={_.isEmpty(educationRecord['programme']) ? "" : educationRecord['programme']} onFocus={this.onFieldFocused} onBlur={this.onFieldBlurred}/>
+                                      <input type="text" data-name="programme" data-section="studentEducationRecords" data-student-index={studentIndex} data-student-education-index={studentEducationIndex} onChange={this.onRecordChange} value={_.isEmpty(educationRecord['programme']) ? "" : educationRecord['programme']} onFocus={this.onFieldFocused} onBlur={this.onFieldBlurred} />
                                     </FormField>
                                   </FormRow>
 
@@ -957,7 +868,7 @@ export default class extends React.Component {
                                   <FormRow>
                                     <FormField>
                                       {this.getLabel('studentRecords.educationRecords.institutionName')}
-                                      <input type="text" data-name="institutionName" data-section="studentEducationRecords" data-student-index={studentIndex} data-student-education-index={studentEducationIndex} onChange={this.onRecordChange} value={_.isEmpty(educationRecord['institutionName']) ? "" : educationRecord['institutionName']} onFocus={this.onFieldFocused} onBlur={this.onFieldBlurred}/>
+                                      <input type="text" data-name="institutionName" data-section="studentEducationRecords" data-student-index={studentIndex} data-student-education-index={studentEducationIndex} onChange={this.onRecordChange} value={_.isEmpty(educationRecord['institutionName']) ? "" : educationRecord['institutionName']} onFocus={this.onFieldFocused} onBlur={this.onFieldBlurred} />
                                     </FormField>
 
                                     <FormField>
@@ -979,12 +890,12 @@ export default class extends React.Component {
                                   <FormRow>
                                     <FormField>
                                       {this.getLabel('studentRecords.educationRecords.city')}
-                                      <input type="text" data-name="city" data-section="studentEducationRecords" data-student-index={studentIndex} data-student-education-index={studentEducationIndex} onChange={this.onRecordChange} value={_.isEmpty(educationRecord['city']) ? "" : educationRecord['city']} onFocus={this.onFieldFocused} onBlur={this.onFieldBlurred}/>
+                                      <input type="text" data-name="city" data-section="studentEducationRecords" data-student-index={studentIndex} data-student-education-index={studentEducationIndex} onChange={this.onRecordChange} value={_.isEmpty(educationRecord['city']) ? "" : educationRecord['city']} onFocus={this.onFieldFocused} onBlur={this.onFieldBlurred} />
                                     </FormField>
 
                                     <FormField>
                                       {this.getLabel('studentRecords.educationRecords.state')}
-                                      <input type="text" data-name="state" data-section="studentEducationRecords" data-student-index={studentIndex} data-student-education-index={studentEducationIndex} onChange={this.onRecordChange} value={_.isEmpty(educationRecord['state']) ? "" : educationRecord['state']} onFocus={this.onFieldFocused} onBlur={this.onFieldBlurred}/>
+                                      <input type="text" data-name="state" data-section="studentEducationRecords" data-student-index={studentIndex} data-student-education-index={studentEducationIndex} onChange={this.onRecordChange} value={_.isEmpty(educationRecord['state']) ? "" : educationRecord['state']} onFocus={this.onFieldFocused} onBlur={this.onFieldBlurred} />
                                     </FormField>
                                   </FormRow>
 
@@ -995,56 +906,56 @@ export default class extends React.Component {
                                     <FormField>
                                       {this.getLabel('studentRecords.educationRecords.countryCode')}
 
-                                      <CountryInputSelectComponent 
+                                      <CountryInputSelectComponent
                                         locale={locale}
-                                        dataName="countryCode" 
-                                        dataSection="studentEducationRecords" 
-                                        dataStudentIndex={studentIndex} 
-                                        dataStudentEducationIndex={studentEducationIndex} 
-                                        value={_.isEmpty(educationRecord['countryCode']) ? "" : educationRecord['countryCode']} 
-                                        onFocus={this.onFieldFocused} 
-                                        onBlur={this.onFieldBlurred} 
-                                        onChange={this.onRecordChange} 
-                                        
+                                        dataName="countryCode"
+                                        dataSection="studentEducationRecords"
+                                        dataStudentIndex={studentIndex}
+                                        dataStudentEducationIndex={studentEducationIndex}
+                                        value={_.isEmpty(educationRecord['countryCode']) ? "" : educationRecord['countryCode']}
+                                        onFocus={this.onFieldFocused}
+                                        onBlur={this.onFieldBlurred}
+                                        onChange={this.onRecordChange}
+
                                       />
-                                        
+
                                     </FormField>
                                   </FormRow>
 
-                                  
 
-                                  
-                                  
+
+
+
                                 </FormSection>
 
                               })
                             }
 
                             <FormTools>
-                              <div data-student-index={studentIndex}  onClick={this.addStudentEducationRecord}>
+                              <div data-student-index={studentIndex} onClick={this.addStudentEducationRecord}>
                                 {this.translate('addAnotherStudentEducationRecord')}
                               </div>
                             </FormTools>
 
                           </FormSection>
-                          })
-                        }
+                        })
+                      }
 
-                        <FormTools>
-                          <div onClick={this.addStudent}>
-                            {this.state.record.studentRecords.length < MAX_STUDENT_PER_TEAM && this.translate('addAnotherStudent')}
-                          </div>
-
-                          
-                        </FormTools>
+                      <FormTools>
+                        <div onClick={this.addStudent}>
+                          {this.state.record.studentRecords.length < MAX_STUDENT_PER_TEAM && this.translate('addAnotherStudent')}
+                        </div>
 
 
-                        {
-                          this.state.record.advisorRecords.map((advisorRecord, advisorIndex)=>{
+                      </FormTools>
+
+
+                      {
+                        this.state.record.advisorRecords.map((advisorRecord, advisorIndex) => {
 
                           return <FormSection className="FormSection" key={advisorIndex}>
-                            <h3 className="subhead">{this.translate('advisorInfo')} {this.state.record.advisorRecords.length > 1 && `#${advisorIndex+1}`}
-                            
+                            <h3 className="subhead">{this.translate('advisorInfo')} {this.state.record.advisorRecords.length > 1 && `#${advisorIndex + 1}`}
+
                               {
                                 this.state.record.advisorRecords.length > 1 &&
                                 <div className="remove" data-advisor-index={advisorIndex} onClick={this.removeAdvisor}>{this.translate('removeAdvisor')}</div>
@@ -1054,41 +965,41 @@ export default class extends React.Component {
                             <FormRow>
                               <FormField>
                                 {this.getLabel('advisorRecords.firstName')}
-                                <input type="text" data-name="firstName" data-section="advisorRecords" data-advisor-index={advisorIndex} onChange={this.onRecordChange} value={_.isEmpty(advisorRecord['firstName']) ? "" : advisorRecord['firstName']} onFocus={this.onFieldFocused} onBlur={this.onFieldBlurred}/>
+                                <input type="text" data-name="firstName" data-section="advisorRecords" data-advisor-index={advisorIndex} onChange={this.onRecordChange} value={_.isEmpty(advisorRecord['firstName']) ? "" : advisorRecord['firstName']} onFocus={this.onFieldFocused} onBlur={this.onFieldBlurred} />
                               </FormField>
 
                               <FormField>
                                 {this.getLabel('advisorRecords.lastName')}
-                                <input type="text" data-name="lastName" data-section="advisorRecords" data-advisor-index={advisorIndex} onChange={this.onRecordChange} value={_.isEmpty(advisorRecord['lastName']) ? "" : advisorRecord['lastName']} onFocus={this.onFieldFocused} onBlur={this.onFieldBlurred}/>
+                                <input type="text" data-name="lastName" data-section="advisorRecords" data-advisor-index={advisorIndex} onChange={this.onRecordChange} value={_.isEmpty(advisorRecord['lastName']) ? "" : advisorRecord['lastName']} onFocus={this.onFieldFocused} onBlur={this.onFieldBlurred} />
                               </FormField>
                             </FormRow>
 
                             <FormRow>
                               <FormField>
                                 {this.getLabel('advisorRecords.phoneNumber')}
-                                <input type="tel" data-name="phoneNumber" data-section="advisorRecords" data-advisor-index={advisorIndex} onChange={this.onRecordChange} value={_.isEmpty(advisorRecord['phoneNumber']) ? "" : advisorRecord['phoneNumber']} onFocus={this.onFieldFocused} onBlur={this.onFieldBlurred}/>
+                                <input type="tel" data-name="phoneNumber" data-section="advisorRecords" data-advisor-index={advisorIndex} onChange={this.onRecordChange} value={_.isEmpty(advisorRecord['phoneNumber']) ? "" : advisorRecord['phoneNumber']} onFocus={this.onFieldFocused} onBlur={this.onFieldBlurred} />
                               </FormField>
 
                               <FormField>
                                 {this.getLabel('advisorRecords.email')}
-                                <input type="email" data-name="email" data-section="advisorRecords" data-advisor-index={advisorIndex} onChange={this.onRecordChange} value={_.isEmpty(advisorRecord['email']) ? "" : advisorRecord['email']} onFocus={this.onFieldFocused} onBlur={this.onFieldBlurred}/>
+                                <input type="email" data-name="email" data-section="advisorRecords" data-advisor-index={advisorIndex} onChange={this.onRecordChange} value={_.isEmpty(advisorRecord['email']) ? "" : advisorRecord['email']} onFocus={this.onFieldFocused} onBlur={this.onFieldBlurred} />
                               </FormField>
                             </FormRow>
 
 
 
-                            
+
 
                             {
-                              advisorRecord.associationRecords.map((associationRecord, associationRecordIndex)=>{
+                              advisorRecord.associationRecords.map((associationRecord, associationRecordIndex) => {
 
                                 return <FormSection className="FormSection" key={associationRecordIndex}>
                                   {this.getLabel('advisorRecords.firstName')}
-                                  <h3 className="subhead">{this.translate('advisorAssociationInfo')} {advisorRecord.associationRecords.length > 1 && `#${associationRecordIndex+1}`}
+                                  <h3 className="subhead">{this.translate('advisorAssociationInfo')} {advisorRecord.associationRecords.length > 1 && `#${associationRecordIndex + 1}`}
                                     {
                                       advisorRecord.associationRecords.length > 1 &&
-                                      <div className="remove" data-advisor-index={advisorIndex} 
-                                      data-advisor-education-index={associationRecordIndex} onClick={this.removeAdvisorAssociationRecord}>{this.translate('removeAdvisorAssociationRecord')}</div>
+                                      <div className="remove" data-advisor-index={advisorIndex}
+                                        data-advisor-education-index={associationRecordIndex} onClick={this.removeAdvisorAssociationRecord}>{this.translate('removeAdvisorAssociationRecord')}</div>
                                     }
                                   </h3>
 
@@ -1096,15 +1007,15 @@ export default class extends React.Component {
                                   <FormRow>
                                     <FormField>
                                       {this.getLabel('advisorRecords.associationRecords.organisationName')}
-                                      <input type="text" data-name="organisationName" data-section="advisorAssociationRecords" data-advisor-index={advisorIndex} data-advisor-association-index={associationRecordIndex} onChange={this.onRecordChange} value={_.isEmpty(associationRecord['organisationName']) ? "" : associationRecord['organisationName']} onFocus={this.onFieldFocused} onBlur={this.onFieldBlurred}/>
+                                      <input type="text" data-name="organisationName" data-section="advisorAssociationRecords" data-advisor-index={advisorIndex} data-advisor-association-index={associationRecordIndex} onChange={this.onRecordChange} value={_.isEmpty(associationRecord['organisationName']) ? "" : associationRecord['organisationName']} onFocus={this.onFieldFocused} onBlur={this.onFieldBlurred} />
                                     </FormField>
 
                                   </FormRow>
-                                  
+
                                   <FormRow>
                                     <FormField>
                                       {this.getLabel('advisorRecords.associationRecords.title')}
-                                      <input type="text" data-name="title" data-section="advisorAssociationRecords" data-advisor-index={advisorIndex} data-advisor-association-index={associationRecordIndex} onChange={this.onRecordChange} value={_.isEmpty(associationRecord['title']) ? "" : associationRecord['title']} onFocus={this.onFieldFocused} onBlur={this.onFieldBlurred}/>
+                                      <input type="text" data-name="title" data-section="advisorAssociationRecords" data-advisor-index={advisorIndex} data-advisor-association-index={associationRecordIndex} onChange={this.onRecordChange} value={_.isEmpty(associationRecord['title']) ? "" : associationRecord['title']} onFocus={this.onFieldFocused} onBlur={this.onFieldBlurred} />
                                     </FormField>
 
                                     <FormField>
@@ -1121,7 +1032,7 @@ export default class extends React.Component {
                                   </FormRow>
 
 
-                                  
+
                                   <FormRow>
                                     <FormField>
                                       {this.getLabel('advisorRecords.associationRecords.yearCommencement')}
@@ -1153,44 +1064,32 @@ export default class extends React.Component {
                                   <FormRow>
                                     <FormField>
                                       {this.getLabel('advisorRecords.associationRecords.city')}
-                                      <input type="text" data-name="city" data-section="advisorAssociationRecords" data-advisor-index={advisorIndex} data-advisor-association-index={associationRecordIndex} onChange={this.onRecordChange} value={_.isEmpty(associationRecord['city']) ? "" : associationRecord['city']} onFocus={this.onFieldFocused} onBlur={this.onFieldBlurred}/>
+                                      <input type="text" data-name="city" data-section="advisorAssociationRecords" data-advisor-index={advisorIndex} data-advisor-association-index={associationRecordIndex} onChange={this.onRecordChange} value={_.isEmpty(associationRecord['city']) ? "" : associationRecord['city']} onFocus={this.onFieldFocused} onBlur={this.onFieldBlurred} />
                                     </FormField>
                                     <FormField>
                                       {this.getLabel('advisorRecords.associationRecords.state')}
-                                      <input type="text" data-name="state" data-section="advisorAssociationRecords" data-advisor-index={advisorIndex} data-advisor-association-index={associationRecordIndex} onChange={this.onRecordChange} value={_.isEmpty(associationRecord['state']) ? "" : associationRecord['state']} onFocus={this.onFieldFocused} onBlur={this.onFieldBlurred}/>
+                                      <input type="text" data-name="state" data-section="advisorAssociationRecords" data-advisor-index={advisorIndex} data-advisor-association-index={associationRecordIndex} onChange={this.onRecordChange} value={_.isEmpty(associationRecord['state']) ? "" : associationRecord['state']} onFocus={this.onFieldFocused} onBlur={this.onFieldBlurred} />
                                     </FormField>
-
-                                    
                                   </FormRow>
-
-
                                   <FormRow>
-                                    
+
 
                                     <FormField>
                                       {this.getLabel('advisorRecords.associationRecords.countryCode')}
-                                      <CountryInputSelectComponent 
+                                      <CountryInputSelectComponent
                                         locale={locale}
-                                        dataName="countryCode" 
-                                        dataSection="advisorAssociationRecords" 
-                                        dataAdvisorIndex={advisorIndex} 
-                                        dataAdvisorAssociationIndex={associationRecordIndex} 
+                                        dataName="countryCode"
+                                        dataSection="advisorAssociationRecords"
+                                        dataAdvisorIndex={advisorIndex}
+                                        dataAdvisorAssociationIndex={associationRecordIndex}
                                         value={_.isEmpty(associationRecord['countryCode']) ? "" : associationRecord['countryCode']}
-                                        onFocus={this.onFieldFocused} 
-                                        onBlur={this.onFieldBlurred} 
-                                        onChange={this.onRecordChange} 
+                                        onFocus={this.onFieldFocused}
+                                        onBlur={this.onFieldBlurred}
+                                        onChange={this.onRecordChange}
                                       />
                                     </FormField>
                                   </FormRow>
-
-
-
-                                  
-
-                                  
-                                  
                                 </FormSection>
-
                               })
                             }
 
@@ -1201,29 +1100,28 @@ export default class extends React.Component {
                             </FormTools>
 
                           </FormSection>
-                          })
-                        }
+                        })
+                      }
 
 
-                        <FormTools>
-                          <div onClick={this.addAdvisor}>
-                            {
-                              this.state.record.advisorRecords.length > 0 ?
-                                this.translate('addAnotherAdvisor')
+                      <FormTools>
+                        <div onClick={this.addAdvisor}>
+                          {
+                            this.state.record.advisorRecords.length > 0 ?
+                              this.translate('addAnotherAdvisor')
                               : this.translate('addAnAdvisor')
-                            }
-                          </div>
-
-                          
-                        </FormTools>
+                          }
+                        </div>
+                      </FormTools>
 
 
 
-                        {
-                          this.state.record.projectRecords.map((projectRecord, projectIndex)=>{
+                      {
+                        this.state.record.projectRecords.map((projectRecord, projectIndex) => {
 
                           return <FormSection className="FormSection" key={projectIndex}>
-                            <h3 className="subhead">{this.translate('projectInfo')} {this.state.record.projectRecords.length > 1 && `#${projectIndex+1}`}
+                            
+                            <h3 className="subhead">{this.translate('projectInfo')} {this.state.record.projectRecords.length > 1 && `#${projectIndex + 1}`}
                             
                               {
                                 this.state.record.projectRecords.length > 1 &&
@@ -1231,10 +1129,11 @@ export default class extends React.Component {
                               }
                             </h3>
 
+                            <h5>{this.translate('extraInfo')} </h5>
                             <FormRow>
                               <FormField>
                                 {this.getLabel('projectRecords.name')}
-                                <input type="text" data-name="name" data-section="projectRecords" data-project-index={projectIndex} onChange={this.onRecordChange} value={_.isEmpty(projectRecord['name']) ? "" : projectRecord['name']} onFocus={this.onFieldFocused} onBlur={this.onFieldBlurred}/>
+                                <input type="text" data-name="name" data-section="projectRecords" data-project-index={projectIndex} onChange={this.onRecordChange} value={_.isEmpty(projectRecord['name']) ? "" : projectRecord['name']} onFocus={this.onFieldFocused} onBlur={this.onFieldBlurred} />
                               </FormField>
 
                               <FormField>
@@ -1249,74 +1148,43 @@ export default class extends React.Component {
                                 </select>
                               </FormField>
                             </FormRow>
-
                             <FormRow>
                               <FormField>
                                 {this.getLabel('projectRecords.description')}
-                                <textarea type="text" data-name="description" data-section="projectRecords" data-project-index={projectIndex} onChange={this.onRecordChange} value={_.isEmpty(projectRecord['description']) ? "" : projectRecord['description']} onFocus={this.onFieldFocused} onBlur={this.onFieldBlurred}/>
+                                <textarea type="text" data-name="description" data-section="projectRecords" data-project-index={projectIndex} onChange={this.onRecordChange} value={_.isEmpty(projectRecord['description']) ? "" : projectRecord['description']} onFocus={this.onFieldFocused} onBlur={this.onFieldBlurred} />
                               </FormField>
-
                             </FormRow>
-
-
                           </FormSection>
-                          })
-                        }
-
-                        <FormTools>
-                          <div onClick={this.addProject}>
-                            {this.state.record.projectRecords.length < MAX_PROJECT_PER_TEAM && this.translate('addAnotherProject')}
-                          </div>
-
-                          
-                        </FormTools>
-
-
-
-                        <FormTools>
-                          <div className="full-width">
-                            <button className={classNames({
-                              disabled: this.state.recordIsValid !== true
-                            })} disabled={!this.state.recordIsValid} onClick={()=>{
-                              this.onCreateApplication(mutate)
-                            }}>{this.translate('submit')}</button>
-                          </div>
-                          
-
-                          
-                          
-                        </FormTools>
-
-                        {
-                          !_.isEmpty(this.state.mutationError) &&
-                          <div className="full-width" style={{color: "red"}}>
-                            {this.state.mutationError}
-                          </div>
-                        }
-
-
-                      </RegistrationForm>
-
-                    }}
-                  </Mutation>
-                
-
-            
-
-
-
+                        })
+                      }
+                      <FormTools>
+                        <div onClick={this.addProject}>
+                          {this.state.record.projectRecords.length < MAX_PROJECT_PER_TEAM && this.translate('addAnotherProject')}
+                        </div>
+                      </FormTools>
+                      <FormTools>
+                        <div className="full-width">
+                          <button className={classNames({
+                            disabled: this.state.recordIsValid !== true
+                          })} disabled={!this.state.recordIsValid} onClick={() => {
+                            this.onCreateApplication(mutate)
+                          }}>{this.translate('submit')}</button>
+                        </div>
+                      </FormTools>
+                      {
+                        !_.isEmpty(this.state.mutationError) &&
+                        <div className="full-width" style={{ color: "red" }}>
+                          {this.state.mutationError}
+                        </div>
+                      }
+                    </RegistrationForm>
+                  }}
+                </Mutation>
               </div>
             </div>
-    
-            
           </section>
         }
-        
-        
-        
-        
       </ThisPageContainerComponent>
     )
   }
 }
-    
