@@ -65,6 +65,7 @@
   "addAnotherAdvisorAssociationRecord": "+ Add Another Association Record",
   "removeAdvisorAssociationRecord": "- Remove Association Record",
   "projectInfo": "Project Information",
+  "extraInfo":"If you have a team but not yet a project decided, please enter n/a and choose any category. You may change this information later.",
   "removeProject": "- Remove Project",
   "addAnotherProject": "+ Add Another Project",
   
