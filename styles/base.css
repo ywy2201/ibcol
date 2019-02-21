@@ -330,6 +330,72 @@ div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, p, blockquote, t
   padding: 0;
 }
 
+#trainingBox {
+  display: block;
+  margin-bottom: 20px;
+  
+}
+
+#trainingBox h1{
+  float: left;
+  width: 50%;
+  height: 44px;
+  margin: 0;
+}
+
+#trainingBox span{
+  width: 50%;
+  font-size: 22px;
+  float: left;
+  display: block;
+  height: 44px;
+}
+.countdown table td {
+  white-space: normal;
+  text-align:left;
+}
+.clearing {
+  clear: both;
+}
+@media (max-width: 1100px) {
+  #trainingBox h1{
+    width: 100%;
+    font-size: 22px;
+  }
+  
+}
+@media (max-width: 39.9375em) {
+  #trainingBox h1{
+    width: 100%;
+  }
+  
+  #trainingBox span{
+    width: 100%;
+  } 
+}
+
+#registrationBox{
+  display: block;
+  margin-bottom: 20px;
+}
+
+#registrationBox h3{
+  float: left;
+  width: 50%;
+  height: 44px;
+  margin: 0;
+  line-height: inherit;
+}
+
+#registrationBox a{
+  width: 50%;
+  font-size: 22px;
+  float:left;
+  display: block;
+  height: 44px;
+}
+
+
 h1, h2, h3, h4, h5, h6 {
   -webkit-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;

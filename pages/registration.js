@@ -22,6 +22,9 @@ import { Mutation } from "react-apollo";
 import gql from 'graphql-tag'
 
 
+import ReactDOM from 'react-dom';
+import Countdown from 'react-countdown-now';
+
 const MAX_STUDENT_PER_TEAM = 6;
 const MAX_PROJECT_PER_TEAM = 5;
 
@@ -178,6 +181,10 @@ const FormField = styled.label`
   
 `;
 
+const renderer = ({ days, hours, minutes, seconds }) => {
+  // Render a countdown
+  return <span>{days} Days, {hours} Hrs, {minutes} Mins, {seconds} Secs</span>;
+};
 
 export default class extends React.Component {
   static async getInitialProps({ query }) {
@@ -703,7 +710,7 @@ export default class extends React.Component {
         ref: addApplication.ref
       }
     })
-  }
+  };
 
   render() {
 
@@ -783,7 +790,22 @@ export default class extends React.Component {
 
 
                     return <RegistrationForm onSubmit={(e) => { e.preventDefault(); }}>
+
                       <FormSection className="FormSection">
+                        <div id="trainingBox">
+                          <h1>Next Training Section: </h1>
+                          <Countdown date={new Date(2019, 1, 25, 18, 0, 0, 0)}
+                            renderer={renderer}
+                          />
+                          <div class="clearing"></div>
+                        </div>
+
+                        <div id="registrationBox">
+                          <h3>@City University of Hong Kong </h3>
+                          <a href="https://www.credproof.net/ibcol-training-hk/reg_form.php">Register Now</a>
+                          <div class="clearing"></div>
+                        </div>
+                        
                         <h3 className="subhead">{this.translate('teamInfo')}</h3>
 
                         <FormRow>
@@ -1120,9 +1142,9 @@ export default class extends React.Component {
                         this.state.record.projectRecords.map((projectRecord, projectIndex) => {
 
                           return <FormSection className="FormSection" key={projectIndex}>
-                            
+
                             <h3 className="subhead">{this.translate('projectInfo')} {this.state.record.projectRecords.length > 1 && `#${projectIndex + 1}`}
-                            
+
                               {
                                 this.state.record.projectRecords.length > 1 &&
                                 <div className="remove" data-project-index={projectIndex} onClick={this.removeProject}>{this.translate('removeProject')}</div>
