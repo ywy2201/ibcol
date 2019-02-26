@@ -71,53 +71,7 @@ export default class extends React.Component {
                 </div>
             </div>
 
-
-            <div className="row innerpage no-bottom">
-            <div className="block-tab-full">
-                <div className="col-block">
-                    <h1>{this.translate('whenToJoinHeading')}</h1>
-                </div>
-                <div className="col-block" style={{"width": "100%"}}>
-                    <div className="table-responsive">
-                        <table><tbody>
-                            <tr>
-                                <td className="minw"></td>
-                                <td className="minw"><b>{this.translate('plans.superEarlyBird.name')}</b></td>
-                                <td className="minw"><b>{this.translate('plans.earlyBird.name')}</b></td>
-                                <td className="minw"><b>{this.translate('plans.regular.name')}</b></td>
-                            </tr>
-                            <tr>
-                                <td>{this.translate('plans.fromLabel')}</td>
-                                <td dangerouslySetInnerHTML={{__html:this.translate('plans.superEarlyBird.fromDate')}}/>
-                                <td dangerouslySetInnerHTML={{__html:this.translate('plans.earlyBird.fromDate')}}/>
-                                <td dangerouslySetInnerHTML={{__html:this.translate('plans.regular.fromDate')}}/>
-                            </tr>
-                            <tr>
-                                <td>{this.translate('plans.toLabel')}</td>
-                                <td dangerouslySetInnerHTML={{__html:this.translate('plans.superEarlyBird.toDate')}}/>
-                                <td dangerouslySetInnerHTML={{__html:this.translate('plans.earlyBird.toDate')}}/>
-                                <td dangerouslySetInnerHTML={{__html:this.translate('plans.regular.toDate')}}/>
-                            </tr>
-                            <tr>
-                                <td>{this.translate('plans.feeLabel')}</td>
-                                <td dangerouslySetInnerHTML={{__html:this.translate('plans.superEarlyBird.fee')}}/>
-                                <td dangerouslySetInnerHTML={{__html:this.translate('plans.earlyBird.fee')}}/>
-                                <td dangerouslySetInnerHTML={{__html:this.translate('plans.regular.fee')}}/>
-                            </tr>
-                            <tr>
-                                <td>{this.translate('plans.financialAssistanceLabel')}</td>
-                                <td dangerouslySetInnerHTML={{__html:this.translate('plans.superEarlyBird.financialAssistanceDetails')}}/>
-                                <td dangerouslySetInnerHTML={{__html:this.translate('plans.earlyBird.financialAssistanceDetails')}}/>
-                                <td dangerouslySetInnerHTML={{__html:this.translate('plans.regular.financialAssistanceDetails')}}/>
-                            </tr>
-                        </tbody></table>
-                        <p className="show-mobile">{this.translate('plans.viewMoreLabel')}<br/><i className="material-icons">arrow_right_alt</i></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </section>
+        </section>
 
 
     <section className="s-section target-section">
@@ -196,46 +150,6 @@ export default class extends React.Component {
     </section>
     <section className="s-section target-section" style={{"paddingBottom": "16rem"}}>
 
-        <div className="row innerpage">
-            <div className="block-tab-full">
-                <div className="col-block">
-                    <h1>{this.translate('feeScheduleHeading')}</h1>
-                </div>
-                <div className="col-block" style={{"width": "100%"}}>
-                    <div className="table-responsive">
-                        <table><tbody>
-                            <tr>
-                                <td className="minw"></td>
-                                <td className="minw"><b>{this.translate('plans.superEarlyBird.name')}</b></td>
-                                <td className="minw"><b>{this.translate('plans.earlyBird.name')}</b></td>
-                                <td className="minw"><b>{this.translate('plans.regular.name')}</b></td>
-                            </tr>
-                            <tr>
-                                <td>{this.translate('plans.secondaryLabel')}</td>
-                                <td>{this.translate('plans.superEarlyBird.feeSchedule.secondary')}</td>
-                                <td>{this.translate('plans.earlyBird.feeSchedule.secondary')}</td>
-                                <td>{this.translate('plans.regular.feeSchedule.secondary')}</td>
-                            </tr>
-                            <tr>
-                                <td>{this.translate('plans.postSecondaryLabel')}</td>
-                                <td>{this.translate('plans.superEarlyBird.feeSchedule.postSecondary')}</td>
-                                <td>{this.translate('plans.earlyBird.feeSchedule.postSecondary')}</td>
-                                <td>{this.translate('plans.regular.feeSchedule.postSecondary')}</td>
-                            </tr>
-                            <tr>
-                                <td>{this.translate('plans.additionalCategoryLabel')}</td>
-                                <td>{this.translate('plans.superEarlyBird.feeSchedule.additionalCategory')}</td>
-                                <td>{this.translate('plans.earlyBird.feeSchedule.additionalCategory')}</td>
-                                <td>{this.translate('plans.regular.feeSchedule.additionalCategory')}</td>
-                            </tr>
-                        </tbody></table>
-                    </div>
-                    <p className="show-mobile">{this.translate('plans.viewMoreLabel')}<br/><i className="material-icons">arrow_right_alt</i></p>
-                    <p style={{color: "red"}}>{this.translate('plans.specialNotice')}</p>
-                </div>
-            </div>
-
-
             <div className="block-tab-full">
                 <div className="col-block" style={{"width": "100%"}}>
                     <Link prefetch route="registration" params={{ locale }}>
@@ -248,8 +162,6 @@ export default class extends React.Component {
 
 
 
-            
-        </div>
     </section>
 
 
