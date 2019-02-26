@@ -80,10 +80,10 @@ export default class extends React.Component {
             </div>
 
             <div className="col-block">
-                <font size="4"><b>A student is defined as a person enrolled in good standing at a recognised secondary or post-secondary academic institution, or if graduated from a recognised secondary or post-secondary academic institution within the last 2 years.</b></font>
+                <font size="4"><b>{this.translate('eligibilityGeneral')}</b></font>
                 <ul>
-                    <li><font size="4">Students are categorised as secondary or post-secondary students based on their student identity documents at the time of registration.</font></li>
-                    <li><font size="4">Students may only be registered to one team; if a student is involved with a team other than their own, they would be considered an advisor to that other team, and a contestant to their primary team.</font></li>
+                    <li><font size="4">{this.translate('eligibilityCategory')}</font></li>
+                    <li><font size="4">{this.translate('eligibilityTeam')}</font></li>
                 </ul>
             </div>
         </div>
