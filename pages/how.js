@@ -73,6 +73,22 @@ export default class extends React.Component {
 
         </section>
 
+        <section className="s-section target-section">
+        <div className="row">
+            <div className="col-block">
+                <h1>{this.translate('eligibility')}</h1>
+            </div>
+
+            <div className="col-block">
+                <font size="4"><b>{this.translate('eligibilityGeneral')}</b></font>
+                <ul>
+                    <li><font size="4">{this.translate('eligibilityCategory')}</font></li>
+                    <li><font size="4">{this.translate('eligibilityTeam')}</font></li>
+                </ul>
+            </div>
+        </div>
+        
+        </section>
 
     <section className="s-section target-section">
         <div className="row">
