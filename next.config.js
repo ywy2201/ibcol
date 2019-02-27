@@ -62,6 +62,7 @@ const withCSS = require('@zeit/next-css')
 // module.exports = withCSS();
 
 const nextConfig = {
+  target: 'serverless',
   webpack: (config) => {
     
     config.plugins.push(
