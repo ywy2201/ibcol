@@ -797,13 +797,13 @@ export default class extends React.Component {
                           <Countdown date={new Date(2019, 1, 27, 18, 0, 0, 0)}
                             renderer={renderer}
                           />
-                          <div class="clearing"></div>
+                          <div className="clearing"></div>
                         </div>
 
                         <div id="registrationBox">
                           <h3>@City University of Hong Kong </h3>
                           <a href="https://www.credproof.net/ibcol-training-hk/reg_form.php">Register Now</a>
-                          <div class="clearing"></div>
+                          <div className="clearing"></div>
                         </div>
                         
                         <h3 className="subhead">{this.translate('teamInfo')}</h3>
