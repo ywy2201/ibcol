@@ -4,6 +4,13 @@
   "alias": [
     "ibcol-dev.bbi.codes"
   ],
+  "regions": ["all"],
+  "github": {
+    "enabled": false,
+    "autoAlias": false,
+    "silent": true,
+    "autoJobCancelation": true
+  },
   "env": {
     "ENV": "dev",
     "NODE_ENV": "production"
