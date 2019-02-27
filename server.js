@@ -103,6 +103,11 @@ router.get('/', (req, res) => {
   // Check ip and geolocation
   let ip = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
   let geo = geoip.lookup(ip);
+
+  if (geo === null) {
+    res.redirect(`/${defaultLocale.id}`);
+  }
+
   let id = translationsMapping[geo.country];
 
   if(id!=null) {
