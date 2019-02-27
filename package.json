@@ -71,7 +71,7 @@
     "lodash-checkit": "^2.1.0",
     "minimist": "^1.2.0",
     "moment-timezone": "^0.5.23",
-    "next": "^7.0.3",
+    "next": "^8.0.3",
     "next-offline": "^3.3.5",
     "next-routes": "^1.4.2",
     "next-with-apollo": "^3.3.2",
