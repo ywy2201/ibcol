@@ -1,9 +1,18 @@
+function moduleExists(name) {
+  try {
+    return require.resolve(name);
+  } catch (error) {
+    return false;
+  }
+}
+
+
 const webpack = require('webpack')
 require('now-env')
 
-const withOffline = require('next-offline')
-
-
+const withOffline = moduleExists('next-offline')
+  ? require('next-offline')
+  : {};
 
 /**
  * If some of the envs are public, like a google maps key, but you still
@@ -22,6 +31,7 @@ const withOffline = require('next-offline')
 //     return config
 //   }
 // }
+
 
 
 // const withSass = require('@zeit/next-sass')
@@ -51,7 +61,7 @@ const withCSS = require('@zeit/next-css')
 // module.exports = withSass();
 // module.exports = withCSS();
 
-module.exports = withOffline(withCSS({
+const nextConfig = {
   webpack: (config) => {
     
     config.plugins.push(
@@ -73,5 +83,29 @@ module.exports = withOffline(withCSS({
       }
     })
     return config
-  }
-}))
+  },
+  workboxOpts: {
+    swDest: 'static/service-worker.js',
+    runtimeCaching: [
+      {
+        urlPattern: /^https?.*/,
+        handler: 'networkFirst',
+        options: {
+          cacheName: 'https-calls',
+          networkTimeoutSeconds: 15,
+          expiration: {
+            maxEntries: 150,
+            maxAgeSeconds: 30 * 24 * 60 * 60, // 1 month
+          },
+          cacheableResponse: {
+            statuses: [0, 200],
+          },
+        },
+      },
+    ],
+  },
+}
+
+module.exports = moduleExists('next-offline')
+  ? withOffline(withCSS(nextConfig))
+  : withCSS(nextConfig)
