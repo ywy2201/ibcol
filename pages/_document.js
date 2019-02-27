@@ -59,7 +59,7 @@ export default class MyDocument extends Document {
 
           <meta name="viewport" content="initial-scale=1.0, width=device-width" />
 
-          <script src="/static/js/modernizr.js"></script>
+          
 
 
         </Head>
