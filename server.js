@@ -110,7 +110,7 @@ router.get('/', (req, res) => {
 
   let id = translationsMapping[geo.country];
 
-  if(id!=null) {
+  if(id !== null) {
     res.redirect(`/${id}`);
   }
 
