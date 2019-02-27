@@ -35,8 +35,6 @@ const routes = require('next-routes')({
   Router: HashAwareRouter,
 })
 
-module.exports = routes
-
 
 // SAMPLES
 // routes
@@ -56,3 +54,7 @@ routes
   // .add({ name: 'schedule', pattern: '/:locale/schedule/', page: 'schedule' })
   .add({ name: 'contact', pattern: '/:locale/contact/', page: 'contact' })
   .add({ name: 'registration', pattern: '/:locale/registration/', page: 'registration' })
+
+
+
+  module.exports = routes
