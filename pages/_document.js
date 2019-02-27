@@ -68,9 +68,6 @@ export default class MyDocument extends Document {
           <NextScript />
 
 
-          {/* <script src="/static/js/jquery-3.2.1.min.js"></script> */}
-          {/* <script src="/static/js/plugins.js"></script> */}
-          {/* <script src="/static/js/main.js"></script> */}
         </body>
       </html>
     )
