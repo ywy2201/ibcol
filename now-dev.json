@@ -1,4 +1,5 @@
 {
+  "version": 2,
   "name": "ibcol-dev",
   "alias": [
     "ibcol-dev.bbi.codes"
@@ -7,10 +8,11 @@
     "ENV": "dev",
     "NODE_ENV": "production"
   },
-  "scale": {
-    "sfo1": {
-      "min": 0,
-      "max": 1
+  "builds": [
+    {
+      "src": "next.config.js",
+      "use": "@now/next"
     }
-  }
+  ],
+  "routes": []
 }
