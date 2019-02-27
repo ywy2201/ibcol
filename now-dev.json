@@ -1,7 +1,7 @@
 {
   "name": "ibcol-dev",
   "alias": [
-    "www.dev.ibcol.org"
+    "ibcol-dev.bbi.codes"
   ],
   "env": {
     "ENV": "dev",
