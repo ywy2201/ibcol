@@ -802,7 +802,7 @@ export default class extends React.Component {
 
                         <div id="registrationBox">
                           <h3>@City University of Hong Kong </h3>
-                          <a href="https://www.credproof.net/ibcol-training-hk/reg_form.php">Register Now</a>
+                          <a target="_blank" href="https://www.credproof.net/ibcol-training-hk/reg_form.php">Register Now</a>
                           <div className="clearing"></div>
                         </div>
                         
