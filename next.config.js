@@ -63,8 +63,27 @@ const withCSS = require('@zeit/next-css')
 
 const nextConfig = {
   target: 'serverless',
-  env: {
-    ENV: process.env.ENV
+  webpack: (config) => {
+    
+    config.plugins.push(
+      new webpack.DefinePlugin({
+        'process.env.ENV': JSON.stringify(process.env.ENV)
+      })
+      // Same as above
+      // new webpack.EnvironmentPlugin(['SECRET'])
+    )
+
+    config.module.rules.push({
+      test: /\.(eot|woff|woff2|ttf|svg|png|jpg|gif)$/,
+      use: {
+        loader: 'url-loader',
+        options: {
+          limit: 100000,
+          name: '[name].[ext]'
+        }
+      }
+    })
+    return config
   },
   workboxOpts: {
     swDest: 'static/service-worker.js',

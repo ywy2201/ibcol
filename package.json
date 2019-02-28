@@ -90,7 +90,9 @@
     "styled-components": "^4.1.3",
     "styled-theming": "^2.2.0",
     "subscriptions-transport-ws": "^0.9.15",
-    "update-immutable": "^1.5.0"
+    "update-immutable": "^1.5.0",
+    "url-loader": "^1.1.2",
+    "webpack": "^4.29.5"
   },
   "devDependencies": {}
 }
