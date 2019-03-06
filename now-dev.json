@@ -23,7 +23,14 @@
   ],
   "routes": [
 
+    { "src": "/(?<locale>[^/]*)([/]*)$", "headers": {"cache-control": "s-maxage=31536000, maxage=0"}, "dest": "/home?locale=$locale" },
+    { "src": "/(?<locale>[^/]*)/how([/]*)$", "headers": {"cache-control": "s-maxage=31536000, maxage=0"}, "dest": "/how?locale=$locale" },
+    { "src": "/(?<locale>[^/]*)/ambassadors([/]*)$", "headers": {"cache-control": "s-maxage=31536000, maxage=0"}, "dest": "/ambassadors?locale=$locale" },
+    { "src": "/(?<locale>[^/]*)/sponsors([/]*)$", "headers": {"cache-control": "s-maxage=31536000, maxage=0"}, "dest": "/sponsors?locale=$locale" },
+    { "src": "/(?<locale>[^/]*)/contact([/]*)$", "headers": {"cache-control": "s-maxage=31536000, maxage=0"}, "dest": "/contact?locale=$locale" },
+    { "src": "/(?<locale>[^/]*)/registration([/]*)$", "headers": {"cache-control": "s-maxage=31536000, maxage=0"}, "dest": "/registration?locale=$locale" },
+
     { "src": "/_next/static/(?:[^/]+/pages|chunks|runtime)/.+", "headers": { "cache-control": "immutable" } }
-    
+
   ]
 }
