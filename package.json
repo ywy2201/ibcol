@@ -29,10 +29,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@bitbucket.org/bbihq/icapro-web.git"
+    "url": "git+ssh://git@bitbucket.org/ibcol/ibcol.git"
   },
   "bugs": {
-    "url": "https://bitbucket.org/bbihq/icapro-web/issues"
+    "url": "https://bitbucket.org/ibcol/ibcol/issues"
   },
   "author": {
     "name": "Breaking Bad Interactive",
@@ -50,7 +50,7 @@
     "last 2 versions"
   ],
   "license": "UNLICENSED",
-  "homepage": "https://bitbucket.org/bbihq/icapro-web#readme",
+  "homepage": "https://bitbucket.org/ibcol/ibcol#readme",
   "dependencies": {
     "@zeit/next-css": "^1.0.1",
     "apollo-boost": "^0.3.0",
