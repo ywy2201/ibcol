@@ -84,9 +84,9 @@ const findDefaultPath = (req) => {
 
 const routeToDefaultPath = (req, res) => {
   const status = (process.env.ENV === 'production') ? 301 : 302;
-  res.redirect(status, findDefaultPath(req));
+  res.writeHead(status, {"Location": findDefaultPath(req)});
+  res.end();
 }
-
 
 
 module.exports = {
