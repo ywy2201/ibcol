@@ -1,4 +1,6 @@
+const _ = require('lodash');
 const geoip = require('geoip-lite');
+const { parse } = require('url')
 
 const translations = require('../translations');
 const translationsMapping = require('../translationsMapping');
@@ -26,34 +28,69 @@ const getLocaleObject = (requestedLocale) => {
 }
 
 const findDefaultPath = (req) => {
-  let ip = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
-  let geo = geoip.lookup(ip);
+  // console.log('req', req);
+  const urlObject = parse(req.url);
+  const pathname = urlObject.pathname;
+  // console.log('pathname', pathname);
+  const search = _.isEmpty(urlObject.search) ? '' : urlObject.search;
+  const pathTokens = pathname.split('/');
 
-  if (geo === null) {
-    return `/${defaultLocale.id}`;
-  }
 
-  let id = translationsMapping[geo.country];
+  const requestedLocale = _.isEmpty(pathTokens[1]) ? undefined : pathTokens[1].toLowerCase();
+  const requestedParams = (_.isEmpty(pathTokens[2])) ? '' : `/${pathTokens[2]}`;
 
-  if(id === undefined) {
-    return `/${defaultLocale.id}`;
-  }
-  
-  const requestedLocaleObject = getLocaleObject(id);
+  console.log('search', search);
+  console.log('requestedLocale', requestedLocale);
+  console.log('requestedParams', requestedParams);
+
+
+  const requestedLocaleObject = getLocaleObject(requestedLocale)
+  ;
   const requestedLocaleSupported = requestedLocaleObject !== undefined;
 
-  if(requestedLocaleSupported !== undefined) {
-    return `/${id}`;
+  let translationId;
+
+  if (requestedLocaleSupported) {
+    translationId = requestedLocaleObject._locale.id;
+  } else {
+    let ip = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
+    let geo = geoip.lookup(ip);
+    
+
+
+    const id = (geo === null) ? undefined : translationsMapping[geo.country];
+
+    translationId = 
+      (id === undefined) ? 
+        defaultLocale.id 
+        : getLocaleObject(id) !== undefined ? 
+          id
+          : defaultLocale.id;
+
   }
 
-  return `/${defaultLocale.id}`;
+  
+  if (requestedLocale === undefined)
+    return `/${translationId}`;
+
+  // maybe locale is missing and requestedLocale is really part of the requestedParams?
+
+  return `/${defaultLocale.id}/${requestedLocale}${requestedParams}${search}`;
 
 
 }
 
 
 
+const routeToDefaultPath = (req, res) => {
+  const status = (process.env.ENV === 'production') ? 301 : 302;
+  res.redirect(status, findDefaultPath(req));
+}
+
+
+
 module.exports = {
   findDefaultPath,
+  routeToDefaultPath,
   getLocaleObject
 };

@@ -81,65 +81,8 @@ const router = express.Router({
 
 
 // redirect to default locale
-router.get('/', (req, res) => {
-  res.redirect(routeHelpers.findDefaultPath(req));
-});
-
-
-router.get('/:locale/*?', (req, res, next) => {
-  const urlObject = url.parse(req.url);
-  const status = (process.env.ENV === 'production') ? 301 : 302;
-  const search = _.isEmpty(urlObject.search) ? '' : urlObject.search;
-  const requestedLocale = req.params.locale.toLowerCase();
-  const requestedParams = (_.isEmpty(req.params['0'])) ? '' : `/${req.params['0']}`;
-
-  
-
-  if (requestedLocale === '_next' || requestedLocale === 'static' || requestedLocale === 'robots.txt') {
-    next();
-  } else {
-    let newPath = "";    
-
-    const requestedLocaleObject = routeHelpers.getLocaleObject(requestedLocale);
-
-    
-    const requestedLocaleSupported = requestedLocaleObject !== undefined;
-    
-    if (!requestedLocaleSupported) {
-      // requestedLocale is not in the supported locale list
-
-      // requestedLocale is not supported, requestedParams is correct?
-      if (routes.findAndGetUrls(requestedParams, { locale: defaultLocale.id }).route !== undefined) {
-        // requestedParams is found when default locale is used -> redirect to requestedParams with default locale
-        newPath = `/${defaultLocale.id}${requestedParams}${search}`;
-      } else {
-
-        // maybe locale is missing and requestedLocale is really part of the requestedParams?
-
-        newPath = `/${defaultLocale.id}/${requestedLocale}${requestedParams}${search}`;
-      }
-
-      
-
-
-      // requestedLocale is missing, requestedParams is
-
-      // is requestedParams a valid path?
-
-      // requestedParams is supported (but requestedLocale is not supported)
-      // -> render requestedParams under default locale
-
-      // if is supported route, route to default locale
-
-      if (process.env.ENV !== 'production')
-        console.log(`       >> ${status}: ${newPath}`);
-
-      res.redirect(status, newPath);
-    } else {
-      next();
-    }
-
-  }
+router.get('/:page(how|ambassadors|sponsors|contact|registration)?/', (req, res, next) => {
+  routeHelpers.routeToDefaultPath(req, res);
 });
 
 
