@@ -22,15 +22,21 @@
     }
   ],
   "routes": [
-
-    { "src": "/(?<locale>[^/]*)([/]*)$", "dest": "/home?locale=$locale", "headers": {"cache-control": "s-maxage=31536000, maxage=0"} },
-    { "src": "/(?<locale>[^/]*)/how([/]*)$", "dest": "/how?locale=$locale", "headers": {"cache-control": "s-maxage=31536000, maxage=0"} },
-    { "src": "/(?<locale>[^/]*)/ambassadors([/]*)$", "dest": "/ambassadors?locale=$locale", "headers": {"cache-control": "s-maxage=31536000, maxage=0"} },
-    { "src": "/(?<locale>[^/]*)/sponsors([/]*)$", "dest": "/sponsors?locale=$locale", "headers": {"cache-control": "s-maxage=31536000, maxage=0"} },
-    { "src": "/(?<locale>[^/]*)/contact([/]*)$", "dest": "/contact?locale=$locale", "headers": {"cache-control": "s-maxage=31536000, maxage=0"} },
-    { "src": "/(?<locale>[^/]*)/registration([/]*)$", "dest": "/registration?locale=$locale", "headers": {"cache-control": "s-maxage=31536000, maxage=0"} },
-
-    { "src": "/_next/static/(?:[^/]+/pages|chunks|runtime)/.+", "headers": { "cache-control": "immutable" } }
-
+      { "src": "/(?<locale>[^/]*)([/]*)$", "dest": "/home?locale=$locale", "headers": {"cache-control": "s-maxage=31536000, maxage=0"} },
+      { "src": "/(?<locale>[^/]*)/how([/]*)$", "dest": "/how?locale=$locale", "headers": {"cache-control": "s-maxage=31536000, maxage=0"} },
+      { "src": "/(?<locale>[^/]*)/ambassadors([/]*)$", "dest": "/ambassadors?locale=$locale", "headers": {"cache-control": "s-maxage=31536000, maxage=0"} },
+      { "src": "/(?<locale>[^/]*)/sponsors([/]*)$", "dest": "/sponsors?locale=$locale", "headers": {"cache-control": "s-maxage=31536000, maxage=0"} },
+      { "src": "/(?<locale>[^/]*)/contact([/]*)$", "dest": "/contact?locale=$locale", "headers": {"cache-control": "s-maxage=31536000, maxage=0"} },
+      { "src": "/(?<locale>[^/]*)/registration([/]*)$", "dest": "/registration?locale=$locale", "headers": {"cache-control": "s-maxage=31536000, maxage=0"} },
+      
+      { "src": "/_next/static/(?:[^/]+/pages|chunks|runtime)/.+", "headers": { "cache-control": "immutable" } },
+      {	
+        "src": "^/service-worker.js$",	
+        "dest": "/_next/static/service-worker.js",
+        "headers": {
+          "cache-control": "public, max-age=43200, immutable",
+          "Service-Worker-Allowed": "/"
+        }
+      }
   ]
 }
