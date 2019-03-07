@@ -22,12 +22,71 @@
     }
   ],
   "routes": [
-      { "src": "/(?<locale>[^/]*)([/]*)$", "dest": "/home?locale=$locale", "headers": {"cache-control": "s-maxage=31536000, maxage=0"} },
-      { "src": "/(?<locale>[^/]*)/how([/]*)$", "dest": "/how?locale=$locale", "headers": {"cache-control": "s-maxage=31536000, maxage=0"} },
-      { "src": "/(?<locale>[^/]*)/ambassadors([/]*)$", "dest": "/ambassadors?locale=$locale", "headers": {"cache-control": "s-maxage=31536000, maxage=0"} },
-      { "src": "/(?<locale>[^/]*)/sponsors([/]*)$", "dest": "/sponsors?locale=$locale", "headers": {"cache-control": "s-maxage=31536000, maxage=0"} },
-      { "src": "/(?<locale>[^/]*)/contact([/]*)$", "dest": "/contact?locale=$locale", "headers": {"cache-control": "s-maxage=31536000, maxage=0"} },
-      { "src": "/(?<locale>[^/]*)/registration([/]*)$", "dest": "/registration?locale=$locale", "headers": {"cache-control": "s-maxage=31536000, maxage=0"} },
+      { 
+        "src": "/(?<locale>[^/]*)/$", 
+        "dest": "/home?locale=$locale", 
+        "headers": {"cache-control": "s-maxage=31536000, maxage=0"}
+      },
+      { 
+        "src": "/(?<locale>[^/]*)$", 
+        "status": 301,
+        "headers": { "Location": "/$locale/", "cache-control": "s-maxage=31536000, maxage=0" }
+      },
+
+      { 
+        "src": "/(?<locale>[^/]*)/how/$", 
+        "dest": "/how?locale=$locale", 
+        "headers": {"cache-control": "s-maxage=31536000, maxage=0"}
+      },
+      { 
+        "src": "/(?<locale>[^/]*)/how$", 
+        "status": 301,
+        "headers": { "Location": "/$locale/how/", "cache-control": "s-maxage=31536000, maxage=0" }
+      },
+
+      { 
+        "src": "/(?<locale>[^/]*)/ambassadors/$", 
+        "dest": "/ambassadors?locale=$locale", 
+        "headers": {"cache-control": "s-maxage=31536000, maxage=0"}
+      },
+      { 
+        "src": "/(?<locale>[^/]*)/ambassadors$", 
+        "status": 301,
+        "headers": { "Location": "/$locale/ambassadors/", "cache-control": "s-maxage=31536000, maxage=0" }
+      },
+
+      { 
+        "src": "/(?<locale>[^/]*)/sponsors/$", 
+        "dest": "/sponsors?locale=$locale", 
+        "headers": {"cache-control": "s-maxage=31536000, maxage=0"}
+      },
+      { 
+        "src": "/(?<locale>[^/]*)/sponsors$", 
+        "status": 301,
+        "headers": { "Location": "/$locale/sponsors/", "cache-control": "s-maxage=31536000, maxage=0" }
+      },
+
+      { 
+        "src": "/(?<locale>[^/]*)/contact/$", 
+        "dest": "/contact?locale=$locale", 
+        "headers": {"cache-control": "s-maxage=31536000, maxage=0"}
+      },
+      { 
+        "src": "/(?<locale>[^/]*)/contact$", 
+        "status": 301,
+        "headers": { "Location": "/$locale/contact/", "cache-control": "s-maxage=31536000, maxage=0" }
+      },
+
+      { 
+        "src": "/(?<locale>[^/]*)/registration/$", 
+        "dest": "/registration?locale=$locale", 
+        "headers": {"cache-control": "s-maxage=31536000, maxage=0"}
+      },
+      { 
+        "src": "/(?<locale>[^/]*)/registration$", 
+        "status": 301,
+        "headers": { "Location": "/$locale/registration/", "cache-control": "s-maxage=31536000, maxage=0" }
+      },
       
       { "src": "/_next/static/(?:[^/]+/pages|chunks|runtime)/.+", "headers": { "cache-control": "immutable" } },
       {	
