@@ -137,7 +137,7 @@ router.get('/:locale/*?', (req, res, next) => {
       }
     });
     
-    const requestedLocaleSupported = requestedLocaleObject !== undefined && ( (process.env.ENV !== 'production') || requestedLocaleObject._locale.disabled !== true );
+    const requestedLocaleSupported = requestedLocaleObject !== undefined && !( (process.env.ENV === 'production') && requestedLocaleObject._locale.disabled === true );
     
     if (!requestedLocaleSupported) {
       // requestedLocale is not in the supported locale list
