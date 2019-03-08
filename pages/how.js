@@ -53,7 +53,7 @@ export default class extends React.Component {
     const projectCategories = this.translate('projectCategories');
     const FaqSection = this.translate('faqSection').map(
       function (faq, index) {
-        console.log(faq);
+        // console.log(faq);
         return (
                 <div id="faqList" key={index}>
                   <ul>
