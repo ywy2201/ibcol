@@ -13,7 +13,7 @@ import { Link } from '/routes';
 import PageContainerComponent from 'components/PageContainerComponent';
 
 
-import translate from 'helpers/translate.js';
+import {translate} from 'helpers/translate.js';
 
 import Head from 'next/head';
 

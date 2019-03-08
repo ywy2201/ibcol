@@ -2,19 +2,21 @@ import _ from 'lodash';
 
 import translations from 'translations';
 
-
+const localeSupported = (requestedLocale) => {
+  return _.find(translations, {
+    _locale: {
+      id: requestedLocale
+    }
+  }) !== undefined;
+}
 
 const translate = (key, page, locale, extras) => {
   
   // console.log('translate', key, page, locale);
 
-  const localeSupported = _.find(translations, {
-    _locale: {
-      id: locale
-    }
-  }) !== undefined;
+  const isLocaleSupported = localeSupported(locale);
 
-  if (!localeSupported)
+  if (!isLocaleSupported)
     locale = "_default";
 
   let db = Object.assign({}, translations[locale][page]);
@@ -39,4 +41,7 @@ const translate = (key, page, locale, extras) => {
 
 }
 
-export default translate;
+export {
+  translate,
+  localeSupported
+};

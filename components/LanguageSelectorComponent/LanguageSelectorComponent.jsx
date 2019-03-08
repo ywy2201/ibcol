@@ -7,7 +7,7 @@ import { media, style } from 'helpers/styledComponents.js';
 
 import _ from 'lodash';
 
-import translate from 'helpers/translate.js';
+import {translate} from 'helpers/translate.js';
 
 import translations from 'translations';
 
