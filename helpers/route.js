@@ -75,7 +75,7 @@ const findDefaultPath = (req) => {
 
   // maybe locale is missing and requestedLocale is really part of the requestedParams?
 
-  return `/${defaultLocale.id}/${requestedLocale}${requestedParams}${search}`;
+  return `/${translationId}/${requestedLocale}${requestedParams}${search}`;
 
 
 }
