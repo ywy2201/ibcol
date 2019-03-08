@@ -43,6 +43,11 @@ import "styles/flag-icon.min.css";
 
 const GlobalStyle = createGlobalStyle`
 
+  html {
+    /* override [class*="col-"] configs when site is deployed under ibcol-dev- scope <html> ended up with col in classname, e.g. gr__ibcol-dev-7ubigywmr_now_sh */
+    padding: 0 !important;
+    width: 100vw !important;
+  }
   body.noScroll { /* ...or body.dialogShowing */
     height: 100%;
     overflow: hidden;

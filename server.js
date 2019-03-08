@@ -5,9 +5,9 @@ const app = next({ dev: process.env.NODE_ENV !== 'production' })
 const handler = routes.getRequestHandler(app)
 const parseArgs = require('minimist')
 const url = require('url');
-const { join } = require('path');
-const geoip = require('geoip-lite');
-const translationsMapping = require('./translationsMapping');
+// const { join } = require('path');
+
+const routeHelpers = require('./helpers/route');
 
 //
 // ─── GET CONFIGS ────────────────────────────────────────────────────────────────
@@ -80,95 +80,9 @@ const router = express.Router({
 
 
 
-// serve service-worker.js
-router.get('/service-worker.js', (req, res) => {
-  // Don't cache service worker is a best practice (otherwise clients wont get emergency bug fix)
-  res.set("Cache-Control", "no-store, no-cache, must-revalidate, proxy-revalidate");
-  res.set("Content-Type", "application/javascript");
-
-  if (process.env.ENV !== 'production')
-    console.log(`requesting /service-worker.js...`);
-
-  const filePath = join(app.distDir, 'service-worker.js');
-  res.sendFile(filePath);
-})
-
-
 // redirect to default locale
-router.get('/', (req, res) => {
-  if (process.env.ENV === 'local') {
-    res.redirect(`/${defaultLocale.id}`);
-  }
-  
-  // Check ip and geolocation
-  let ip = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
-  let geo = geoip.lookup(ip);
-  let id = translationsMapping[geo.country];
-
-  if(id!=null) {
-    res.redirect(`/${id}`);
-  }
-
-  res.redirect(`/${defaultLocale.id}`);
-});
-
-
-router.get('/:locale/*?', (req, res, next) => {
-  const urlObject = url.parse(req.url);
-  const status = (process.env.ENV === 'production') ? 301 : 302;
-  const search = _.isEmpty(urlObject.search) ? '' : urlObject.search;
-  const requestedLocale = req.params.locale.toLowerCase();
-  const requestedParams = (_.isEmpty(req.params['0'])) ? '' : `/${req.params['0']}`;
-
-  
-
-  if (requestedLocale === '_next' || requestedLocale === 'static' || requestedLocale === 'robots.txt') {
-    next();
-  } else {
-    let newPath = "";    
-    const requestedLocaleObject = _.find(translations, {
-      _locale: {
-        id: requestedLocale
-      }
-    });
-    
-    const requestedLocaleSupported = requestedLocaleObject !== undefined && ( (process.env.ENV !== 'production') || requestedLocaleObject._locale.disabled !== true );
-    
-    if (!requestedLocaleSupported) {
-      // requestedLocale is not in the supported locale list
-
-      // requestedLocale is not supported, requestedParams is correct?
-      if (routes.findAndGetUrls(requestedParams, { locale: defaultLocale.id }).route !== undefined) {
-        // requestedParams is found when default locale is used -> redirect to requestedParams with default locale
-        newPath = `/${defaultLocale.id}${requestedParams}${search}`;
-      } else {
-
-        // maybe locale is missing and requestedLocale is really part of the requestedParams?
-
-        newPath = `/${defaultLocale.id}/${requestedLocale}${requestedParams}${search}`;
-      }
-
-      
-
-
-      // requestedLocale is missing, requestedParams is
-
-      // is requestedParams a valid path?
-
-      // requestedParams is supported (but requestedLocale is not supported)
-      // -> render requestedParams under default locale
-
-      // if is supported route, route to default locale
-
-      if (process.env.ENV !== 'production')
-        console.log(`       >> ${status}: ${newPath}`);
-
-      res.redirect(status, newPath);
-    } else {
-      next();
-    }
-
-  }
+router.get('/:page(how|ambassadors|sponsors|contact|registration)?/', (req, res, next) => {
+  routeHelpers.routeToDefaultPath(req, res);
 });
 
 
@@ -259,7 +173,7 @@ app.prepare().then(() => {
 
 
   server
-    .use(toWWW)
+    // .use(toWWW)
     .use(logURL)
     .use(addSlash)
     .use(router)

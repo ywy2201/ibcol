@@ -1,5 +1,5 @@
 {
-  "graphqlURL": "https://api.dev.ibcol.org/graphql",
-  "wsURL": "ws://api.dev.ibcol.org:5000/",
-  "url": "https://www.dev.ibcol.org/"
+  "graphqlURL": "https://ibcol-micro-graphql-api-dev.bbi.space/graphql",
+  "wsURL": "ws://ibcol-dev.bbi.space:5000/",
+  "url": "https://ibcol-dev.bbi.space/"
 }

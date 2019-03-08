@@ -3,11 +3,5 @@
   "env": {
     "ENV": "local",
     "secret": "don't tell anyone"
-  },
-  "scale": {
-    "sfo1": {
-      "min": 0,
-      "max": 1
-    }
   }
 }
