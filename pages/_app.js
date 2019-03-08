@@ -97,14 +97,6 @@ const GlobalStyle = createGlobalStyle`
 
 
 
-
-
-
-
-
-
-
-
 class MyApp extends App {
   constructor(props) {
     super(props);
