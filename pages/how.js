@@ -5,7 +5,7 @@ import { media, style } from 'helpers/styledComponents.js';
 
 import configs from 'configs';
 
-import translate from 'helpers/translate.js';
+import {translate} from 'helpers/translate.js';
 import { transparentize } from 'polished'
 
 import { Link } from '/routes';
@@ -47,11 +47,24 @@ export default class extends React.Component {
     
     // console.log(">>> query", this.props.query);
 
-
+    
     const locale = this.props.query.locale;
 
     const projectCategories = this.translate('projectCategories');
-    
+    const FaqSection = this.translate('faqSection').map(
+      function (faq, index) {
+        // console.log(faq);
+        return (
+                <div id="faqList" key={index}>
+                  <ul>
+                      <li><font size="5"><b>{faq.question}</b></font></li>
+                      <li><font size="4">{faq.answer}</font></li>
+                  </ul>  
+                </div>    
+        );
+      }
+    );
+
     return (
       <ThisPageContainerComponent>
         <Head>
@@ -164,7 +177,19 @@ export default class extends React.Component {
             </div>
         </div> 
     </section>
-    <section className="s-section target-section" style={{"paddingBottom": "16rem"}}>
+    
+    <section className="s-section target-section">
+        <div className="row">
+            <div className="col-block">
+                <h1>{this.translate('faqHeading')}</h1>
+            </div>
+            <div className="col-block" style={{"width": "100%"}}>
+                {FaqSection}
+            </div>
+        </div>       
+      </section>
+             
+      <section className="s-section target-section" style={{"paddingBottom": "16rem"}} >
 
             <div className="block-tab-full">
                 <div className="col-block" style={{"width": "100%"}}>
@@ -175,18 +200,8 @@ export default class extends React.Component {
                     </Link>
                 </div>
             </div>
-
-
-
     </section>
-
-
-
-    
-        
-        
-        
-      </ThisPageContainerComponent>
+    </ThisPageContainerComponent>
     )
   }
 }

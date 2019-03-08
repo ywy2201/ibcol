@@ -1,16 +1,16 @@
 import App, { Container } from 'next/app';
 import React from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
-import translate from 'helpers/translate.js';
+import {translate, localeSupported} from 'helpers/translate.js';
 
 import ReactGA from 'react-ga';
 import { StickyContainer, Sticky } from 'react-sticky';
 
-  
+import routes from '/routes';
 
-import { Link } from '/routes';
+// import Router from 'next/router';
 // import css from 'styled-jsx/css';
 
 import MenuComponent from 'components/MenuComponent';
@@ -18,14 +18,14 @@ import LanguageSelectorComponent from 'components/LanguageSelectorComponent';
 // import LocaleSwitcherComponent from 'components/LocaleSwitcherComponent';
 
 
-import styled, { createGlobalStyle, ThemeProvider } from 'styled-components';
+import { createGlobalStyle } from 'styled-components';
 
 
 
 // import theme from 'styled-theming';
 
-import { media, style } from 'helpers/styledComponents.js';
-import { transparentize } from 'polished';
+// import { media, style } from 'helpers/styledComponents.js';
+// import { transparentize } from 'polished';
 
 import { ApolloProvider } from 'react-apollo';
 // import { AccountsGraphQLClient } from '@accounts/graphql-client';
@@ -43,6 +43,11 @@ import "styles/flag-icon.min.css";
 
 const GlobalStyle = createGlobalStyle`
 
+  html {
+    /* override [class*="col-"] configs when site is deployed under ibcol-dev- scope <html> ended up with col in classname, e.g. gr__ibcol-dev-7ubigywmr_now_sh */
+    padding: 0 !important;
+    width: 100vw !important;
+  }
   body.noScroll { /* ...or body.dialogShowing */
     height: 100%;
     overflow: hidden;
@@ -92,14 +97,6 @@ const GlobalStyle = createGlobalStyle`
 
 
 
-
-
-
-
-
-
-
-
 class MyApp extends App {
   constructor(props) {
     super(props);
@@ -107,6 +104,29 @@ class MyApp extends App {
       isLoading: false,
       showLanguageSelector: false
       // width: 0, height: 0
+    }
+
+    
+    // client side locale check
+    if (typeof(window) === "object") {
+      // console.log('constructor props', props)
+      if (props.pageProps.query !== undefined && props.pageProps.query.locale !== undefined) {
+        // console.log('requested locale:', pageProps.query.locale);
+      //   // console.log('localeSupported?', localeSupported(pageProps.query.locale));
+      //   console.log('constructor pageProps', props.pageProps)
+      //   // console.log('router', router);
+        if (!localeSupported(props.pageProps.query.locale)) {
+          // console.log("----->>>>>", props);
+
+          const requestedRoute = routes.findAndGetUrls(props.router.route.replace('/',''), {locale: props.pageProps.query.locale}).route;
+
+          if (requestedRoute !== undefined && requestedRoute.name !== undefined) {
+            routes.Router.replaceRoute(requestedRoute.name, Object.assign({}, props.pageProps.query, {locale: translations["_default"]._locale.id}))
+          }
+
+          
+        }
+      }
     }
 
     
@@ -148,15 +168,32 @@ class MyApp extends App {
     }
 
     
+    
+
+
+    
 
     return { pageProps, router }
   }
   
-  
+  componentWillMount() {
+    
+  }
+
   componentDidMount() {
     // client-side only, run once on mount
     ReactGA.initialize('UA-113535301-3');
     ReactGA.pageview(window.location.pathname + window.location.search);
+
+    
+    // console.log('router', this.props.router);
+
+    // if ()
+    // Router.replaceRoute(this.props.router.route, {
+    //   locale: 'en-au'
+    // });
+    
+
   }
 
   render() {

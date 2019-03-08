@@ -5,7 +5,7 @@ import configs from 'configs';
 
 import { media, style } from 'helpers/styledComponents.js';
 
-import translate from 'helpers/translate.js';
+import {translate} from 'helpers/translate.js';
 import { transparentize } from 'polished'
 
 import { Link } from '/routes';
@@ -119,12 +119,6 @@ translate = (t) => translate(t, 'ambassadors', this.props.query.locale);
 
         </div>
     </div> 
-
-
-
-
-    
-
 
 
   </section> 

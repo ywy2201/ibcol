@@ -55,14 +55,35 @@
       }
     }
   },
-  "howToJoinHeading":"How to join",
-  "teamLabel":"Team",
-  "teamExplained":"Up to 6 students can register into one team",
-  "projectLabel":"Project",
-  "projectExplained":"A team can submit more than one project",
-  "categoryLabel":"Category",
-  "categoryExplained":"Each project is entered into a category",
-  "categoriesHeading":"Categories",
-  "feeScheduleHeading":"Fee Schedule",
-  "applyNowCTALabel":"Apply Now"
+  "howToJoinHeading": "How to join",
+  "teamLabel": "Team",
+  "teamExplained": "Up to 6 students can register into one team",
+  "projectLabel": "Project",
+  "projectExplained": "A team can submit more than one project",
+  "categoryLabel": "Category",
+  "categoryExplained": "Each project is entered into a category",
+  "categoriesHeading": "Categories",
+  "feeScheduleHeading": "Fee Schedule",
+  "applyNowCTALabel": "Apply Now",
+  "faqHeading": "FAQ",
+  "faqSection": [
+    {
+        "question":
+        "Do team members have to be from the same school?",
+        "answer":
+        "No, team members do not even need to be from the same school, or even the same country. Teams can also be formed from a mix of any student or recent graduate within two years of graduating."
+    },
+    {
+        "question":
+        "What is the fee for joining the competition?",
+        "answer":
+        "There is no fee ."
+    },
+    {
+        "question":
+        "Will you fly us to Hong Kong?",
+        "answer":
+        "We will provide subsidies to finalists on a case-by-case basis, depending on where they are traveling from."
+    }
+]
 }

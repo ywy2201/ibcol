@@ -9,7 +9,7 @@ import classNames from 'classnames';
 import styled from 'styled-components';
 
 
-import translate from 'helpers/translate.js';
+import {translate} from 'helpers/translate.js';
 
 
 const countryCodes = require('country-list')().getCodes();

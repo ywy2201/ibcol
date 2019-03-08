@@ -13,7 +13,7 @@ import NavLinkComponent from 'components/NavLinkComponent';
 import styled from 'styled-components';
 
 import { transparentize } from 'polished'
-import translate from 'helpers/translate.js';
+import {translate} from 'helpers/translate.js';
 
 import { withRouter } from 'next/router';
 

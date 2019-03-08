@@ -1,6 +1,6 @@
 import _ from 'lodash';
 import configs from 'configs';
-import translate from 'helpers/translate.js';
+import {translate} from 'helpers/translate.js';
 
 const getTitle = (pageHeading, locale) => {
 
