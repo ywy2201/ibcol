@@ -4,6 +4,10 @@
   "alias": [
     "ibcol-dev.bbi.space"
   ],
+  "env": {
+    "ENV": "dev",
+    "NODE_ENV": "production"
+  },
   "regions": ["all"],
   "github": {
     "enabled": false,
@@ -11,96 +15,92 @@
     "silent": true,
     "autoJobCancelation": true
   },
-  "env": {
-    "ENV": "dev",
-    "NODE_ENV": "production"
-  },
   "builds": [
     { "src": "node-routes/defaultRoute.js", "use": "@now/node", "config": { "maxLambdaSize": "40mb" } },
     { "src": "next.config.js", "use": "@now/next" }
   ],
   "routes": [
-      { 
-        "src": "/.*",
-        "headers": {"cache-control": "s-maxage=31536000, maxage=0"},
-        "continue": true
-      },
+    { 
+      "src": "/.*",
+      "headers": {"cache-control": "s-maxage=31536000, maxage=0"},
+      "continue": true
+    },
 
 
-      {
-        "src": "/(how|ambassadors|sponsors|contact|registration)?([/]*)$",
-        "dest": "/node-routes/defaultRoute.js"
-      },
-      
-      
-      { 
-        "src": "/(?<locale>[^/]*)/$", 
-        "dest": "/home?locale=$locale"
-      },
-      { 
-        "src": "/(?<locale>[^/]*)$", 
-        "status": 301,
-        "headers": { "Location": "/$locale/" }
-      },
+    {
+      "src": "/(how|ambassadors|sponsors|contact|registration)?([/]*)$",
+      "dest": "/node-routes/defaultRoute.js"
+    },
+    
+    
+    { 
+      "src": "/(?<locale>[^/]*)/$", 
+      "dest": "/home?locale=$locale"
+    },
+    { 
+      "src": "/(?<locale>[^/]*)$", 
+      "status": 301,
+      "headers": { "Location": "/$locale/" }
+    },
 
-      { 
-        "src": "/(?<locale>[^/]*)/how/$", 
-        "dest": "/how?locale=$locale"
-      },
-      { 
-        "src": "/(?<locale>[^/]*)/how$", 
-        "status": 301,
-        "headers": { "Location": "/$locale/how/" }
-      },
+    { 
+      "src": "/(?<locale>[^/]*)/how/$", 
+      "dest": "/how?locale=$locale"
+    },
+    { 
+      "src": "/(?<locale>[^/]*)/how$", 
+      "status": 301,
+      "headers": { "Location": "/$locale/how/" }
+    },
 
-      { 
-        "src": "/(?<locale>[^/]*)/ambassadors/$", 
-        "dest": "/ambassadors?locale=$locale"
-      },
-      { 
-        "src": "/(?<locale>[^/]*)/ambassadors$", 
-        "status": 301,
-        "headers": { "Location": "/$locale/ambassadors/" }
-      },
+    { 
+      "src": "/(?<locale>[^/]*)/ambassadors/$", 
+      "dest": "/ambassadors?locale=$locale"
+    },
+    { 
+      "src": "/(?<locale>[^/]*)/ambassadors$", 
+      "status": 301,
+      "headers": { "Location": "/$locale/ambassadors/" }
+    },
 
-      { 
-        "src": "/(?<locale>[^/]*)/sponsors/$", 
-        "dest": "/sponsors?locale=$locale"
-      },
-      { 
-        "src": "/(?<locale>[^/]*)/sponsors$", 
-        "status": 301,
-        "headers": { "Location": "/$locale/sponsors/" }
-      },
+    { 
+      "src": "/(?<locale>[^/]*)/sponsors/$", 
+      "dest": "/sponsors?locale=$locale"
+    },
+    { 
+      "src": "/(?<locale>[^/]*)/sponsors$", 
+      "status": 301,
+      "headers": { "Location": "/$locale/sponsors/" }
+    },
 
-      { 
-        "src": "/(?<locale>[^/]*)/contact/$", 
-        "dest": "/contact?locale=$locale"
-      },
-      { 
-        "src": "/(?<locale>[^/]*)/contact$", 
-        "status": 301,
-        "headers": { "Location": "/$locale/contact/" }
-      },
+    { 
+      "src": "/(?<locale>[^/]*)/contact/$", 
+      "dest": "/contact?locale=$locale"
+    },
+    { 
+      "src": "/(?<locale>[^/]*)/contact$", 
+      "status": 301,
+      "headers": { "Location": "/$locale/contact/" }
+    },
 
-      { 
-        "src": "/(?<locale>[^/]*)/registration/$", 
-        "dest": "/registration?locale=$locale"
-      },
-      { 
-        "src": "/(?<locale>[^/]*)/registration$", 
-        "status": 301,
-        "headers": { "Location": "/$locale/registration/" }
-      },
-      
-      { "src": "/_next/static/(?:[^/]+/pages|chunks|runtime)/.+", "headers": { "cache-control": "immutable" } },
-      {	
-        "src": "^/service-worker.js$",	
-        "dest": "/_next/static/service-worker.js",
-        "headers": {
-          "cache-control": "public, max-age=43200, immutable",
-          "Service-Worker-Allowed": "/"
-        }
+    { 
+      "src": "/(?<locale>[^/]*)/registration/$", 
+      "dest": "/registration?locale=$locale"
+    },
+    { 
+      "src": "/(?<locale>[^/]*)/registration$", 
+      "status": 301,
+      "headers": { "Location": "/$locale/registration/" }
+    },
+    
+    { "src": "/_next/static/(?:[^/]+/pages|chunks|runtime)/.+", "headers": { "cache-control": "immutable" } },
+    {	
+      "src": "^/service-worker.js$",	
+      "dest": "/_next/static/service-worker.js",
+      "headers": {
+        "cache-control": "public, max-age=43200, immutable",
+        "Service-Worker-Allowed": "/"
       }
+    }
   ]
 }
