@@ -51,14 +51,15 @@
       }
     }
   },
-  "howToJoinHeading":"How to join",
-  "teamLabel":"Team",
-  "teamExplained":"Up to 6 students can register into one team",
-  "projectLabel":"Project",
-  "projectExplained":"A team can submit more than one project",
-  "categoryLabel":"Category",
-  "categoryExplained":"Each project is entered into a category",
-  "categoriesHeading":"Categories",
-  "feeScheduleHeading":"Fee Schedule",
-  "applyNowCTALabel":"Apply Now"
+  "howToJoinHeading": "How to join",
+  "teamLabel": "Team",
+  "teamExplained": "Up to 6 students can register into one team",
+  "projectLabel": "Project",
+  "projectExplained": "A team can submit more than one project",
+  "categoryLabel": "Category",
+  "categoryExplained": "Each project is entered into a category",
+  "categoriesHeading": "Categories",
+  "feeScheduleHeading": "Fee Schedule",
+  "applyNowCTALabel": "Apply Now",
+  "faqHeading": "FAQ"
 }

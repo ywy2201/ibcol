@@ -121,12 +121,6 @@ translate = (t) => translate(t, 'ambassadors', this.props.query.locale);
     </div> 
 
 
-
-
-    
-
-
-
   </section> 
 
 
