@@ -5,7 +5,7 @@ import { media, style } from 'helpers/styledComponents.js';
 
 import configs from 'configs';
 
-import translate from 'helpers/translate.js';
+import {translate} from 'helpers/translate.js';
 import { transparentize } from 'polished'
 
 import { Link } from '/routes';
@@ -52,10 +52,10 @@ export default class extends React.Component {
 
     const projectCategories = this.translate('projectCategories');
     const FaqSection = this.translate('faqSection').map(
-      function (faq) {
-        console.log(faq);
+      function (faq, index) {
+        // console.log(faq);
         return (
-                <div id="faqList">
+                <div id="faqList" key={index}>
                   <ul>
                       <li><font size="5"><b>{faq.question}</b></font></li>
                       <li><font size="4">{faq.answer}</font></li>
