@@ -9,6 +9,11 @@
     "ENV": "stage",
     "NODE_ENV": "production"
   },
+  "build": {
+    "env": {
+      "ENV": "stage"
+    }
+  },
   "regions": ["all"],
   "github": {
     "enabled": false,
