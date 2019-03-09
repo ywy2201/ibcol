@@ -8,7 +8,12 @@ function moduleExists(name) {
 
 
 const webpack = require('webpack')
-require('now-env')
+
+
+if (process.env.NODE_ENV !== 'production') {
+  require('now-env')
+}
+
 
 const withOffline = moduleExists('next-offline')
   ? require('next-offline')
@@ -60,6 +65,8 @@ const withCSS = require('@zeit/next-css')
 
 // module.exports = withSass();
 // module.exports = withCSS();
+
+// console.log(">>>>>>> next.config.js process.env.ENV -->>>", process.env.ENV)
 
 const nextConfig = {
   target: 'serverless',
