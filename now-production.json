@@ -8,6 +8,11 @@
     "ENV": "production",
     "NODE_ENV": "production"
   },
+  "build": {
+    "env": {
+      "ENV": "production"
+    }
+  },
   "regions": ["all"],
   "github": {
     "enabled": false,
