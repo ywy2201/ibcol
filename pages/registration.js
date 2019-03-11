@@ -802,7 +802,7 @@ export default class extends React.Component {
 
                         <div id="registrationBox">
                           <h3>National Taiwan University</h3>
-                          <a href="https://docs.google.com/forms/d/1t2yY7P-v2xA6b1r25cbBeSQ981stMY_25vrZy919fww/viewform">Register Now</a>
+                          <a href="https://docs.google.com/forms/d/1t2yY7P-v2xA6b1r25cbBeSQ981stMY_25vrZy919fww/viewform" target="_blank">Register Now</a>
                           <div className="clearing"></div>
                         </div>
                         
