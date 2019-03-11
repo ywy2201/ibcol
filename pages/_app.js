@@ -116,13 +116,15 @@ class MyApp extends App {
       //   console.log('constructor pageProps', props.pageProps)
       //   // console.log('router', router);
         if (!localeSupported(props.pageProps.query.locale)) {
-          // console.log("----->>>>>", props);
+          
 
-          const requestedRoute = routes.findAndGetUrls(props.router.route.replace('/',''), {locale: props.pageProps.query.locale}).route;
+          // const requestedRoute = routes.findAndGetUrls(props.router.route.replace('/',''), {locale: props.pageProps.query.locale}).route;
 
-          if (requestedRoute !== undefined && requestedRoute.name !== undefined) {
-            routes.Router.replaceRoute(requestedRoute.name, Object.assign({}, props.pageProps.query, {locale: translations["_default"]._locale.id}))
-          }
+          // console.log("----->>>>>", requestedRoute);
+
+          // if (requestedRoute !== undefined && requestedRoute.name !== undefined) {
+            document.location = props.router.route;
+          // }
 
           
         }
