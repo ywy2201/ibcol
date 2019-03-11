@@ -14,6 +14,7 @@ import PageContainerComponent from 'components/PageContainerComponent';
 
 import Head from 'next/head';
 
+import classNames from 'classnames';
 
 // const pagePadding = {
 //   xSmall: style.dimension.normal.pagePadding.xSmall,
@@ -50,7 +51,22 @@ export default class extends React.Component {
 
 
     const locale = this.props.query.locale;
-    
+    const CommunitiesContactInfo = this.translate('offcialCommunitiesInfo').map(
+      function (info, index) {
+        return (
+          <div id="CommunitiesContact" key={index}>
+            <h4 className="item-title" id="CommunitiesContactInfo">
+              <span className={classNames("flag-icon", info.flag)}></span>
+              {info.country}
+            </h4>
+            <p className="rep">
+               <a href={info.facebookUrl} target="_blank">{info.facebook}</a>
+              {info.telegramUrl.length > 0 && (<span> • <a href={info.telegramUrl} target="_blank">{info.telegram} </a> </span>)}
+            </p>
+          </div>
+        );
+      }
+    );
     return (
       <ThisPageContainerComponent>
         <Head>
@@ -61,7 +77,7 @@ export default class extends React.Component {
           <meta property="og:type" content="website" />
         </Head>
         
-        <section className="s-section target-section first last">
+        <section className="s-section target-section first">
 
           <div className="row section-header">
             <div className="col-full">
@@ -96,6 +112,15 @@ export default class extends React.Component {
           </div>
         </section>
         
+        <section className="s-section target-section last">
+          <div className="row">
+            <div className="col-block">
+              <h3>{this.translate('officialCommunitiesTitle')}</h3>
+              {CommunitiesContactInfo}
+            </div>
+          </div>
+        </section>
+
         
         
       </ThisPageContainerComponent>

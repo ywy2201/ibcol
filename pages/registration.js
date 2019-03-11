@@ -794,7 +794,7 @@ export default class extends React.Component {
                       <FormSection className="FormSection">
                         <div id="trainingBox">
                           <h1>Next Training Section: </h1>
-                          <Countdown date={new Date(2019, 2, 16, 10, 0, 0, 0)}
+                          <Countdown date={new Date(2019, 2, 16, 9, 0, 0, 0)}
                             renderer={renderer}
                           />
                           <div className="clearing"></div>
@@ -802,7 +802,7 @@ export default class extends React.Component {
 
                         <div id="registrationBox">
                           <h3>National Taiwan University</h3>
-                          <a href="#">Register Now</a>
+                          <a href="https://docs.google.com/forms/d/1t2yY7P-v2xA6b1r25cbBeSQ981stMY_25vrZy919fww/viewform">Register Now</a>
                           <div className="clearing"></div>
                         </div>
                         
