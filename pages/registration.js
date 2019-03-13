@@ -203,6 +203,7 @@ export default class extends React.Component {
       focusedField: undefined,
       record: this.props.record !== undefined ? this.graphQLCleanUp(this.props.record) : this.getDefaultEditorRecord(),
       lastEditorStateChange: Date.now(),
+      isEditorMutating: false,
       recordIsValid: false,
       showConfirmation: false,
       confirmation: {
@@ -1187,8 +1188,8 @@ export default class extends React.Component {
                       <FormTools>
                         <div className="full-width">
                           <button className={classNames({
-                            disabled: this.state.recordIsValid !== true
-                          })} disabled={!this.state.recordIsValid} onClick={() => {
+                            disabled: this.state.recordIsValid !== true || this.state.isEditorMutating === true
+                          })} disabled={!this.state.recordIsValid || this.state.isEditorMutating === true} onClick={() => {
                             this.onCreateApplication(mutate)
                           }}>{this.translate('submit')}</button>
                         </div>
