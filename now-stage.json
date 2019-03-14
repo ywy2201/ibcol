@@ -32,6 +32,15 @@
       "continue": true
     },
 
+    { 
+      "src": "/service-worker.js",  
+      "dest": "/_next/static/service-worker.js",
+      "headers": {
+        "cache-control": "public, max-age=43200, immutable",
+        "Service-Worker-Allowed": "/"
+      }
+    },
+
 
     {
       "src": "/(how|ambassadors|sponsors|contact|registration)?([/]*)$",
@@ -99,14 +108,6 @@
       "headers": { "Location": "/$locale/registration/" }
     },
     
-    { "src": "/_next/static/(?:[^/]+/pages|chunks|runtime)/.+", "headers": { "cache-control": "immutable" } },
-    {	
-      "src": "^/service-worker.js$",	
-      "dest": "/_next/static/service-worker.js",
-      "headers": {
-        "cache-control": "public, max-age=43200, immutable",
-        "Service-Worker-Allowed": "/"
-      }
-    }
+    { "src": "/_next/static/(?:[^/]+/pages|chunks|runtime)/.+", "headers": { "cache-control": "immutable" } }
   ]
 }
