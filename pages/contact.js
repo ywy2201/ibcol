@@ -78,7 +78,7 @@ export default class extends React.Component {
       function (info, index) {
         console.log(info, index);
         return (
-          <div className="block-1-2 block-tab-full">
+          <div className="block-1-2 block-tab-full" key={info[0].country+index}>
             <div className="col-block" key={index}>{getInfo(info[0])}</div>
             <div className="col-block" key={index + 1}>{getInfo(info[1])}</div>
           </div>
