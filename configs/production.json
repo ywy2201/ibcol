@@ -1,5 +1,5 @@
 {
-  "graphqlURL": "https://api.ibcol.org/graphql",
+  "graphqlURL": "https://api.ibcol.org",
   "wsURL": "ws://api.ibcol.org:5000/",
   "url": "https://www.ibcol.org/"
 }
