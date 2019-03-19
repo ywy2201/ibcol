@@ -11,7 +11,7 @@
   "sponsorshipLabel":"Sponsorship",
   "sponsorshipEmail":"sponsorship@ibcol.org",
   "officialCommunitiesTitle":"Official Communities",
-  "offcialCommunitiesInfo":[
+  "officialCommunitiesInfo":[
     {"flag":"flag-icon-ar","country":"Argentina","facebook":"Facebook","facebookUrl":"https://bit.ly/ibcol_ar","telegram":"","telegramUrl":""},
     {"flag":"flag-icon-am","country":"Armenia","facebook":"Facebook","facebookUrl":"https://bit.ly/ibcol_am","telegram":"","telegramUrl":""},
     {"flag":"flag-icon-au","country":"Australia","facebook":"Facebook","facebookUrl":"https://bit.ly/ibcol_au","telegram":"Telegram","telegramUrl":"https://t.me/ibcol_au"},
