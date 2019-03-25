@@ -852,15 +852,15 @@ export default class extends React.Component {
                       <FormSection className="FormSection">
                         <div id="trainingBox">
                           <h1>Next Training Section: </h1>
-                          <Countdown date={new Date(2019, 2, 16, 9, 0, 0, 0)}
+                          <Countdown date={new Date(2019, 2, 30, 13, 0, 0, 0)}
                             renderer={renderer}
                           />
                           <div className="clearing"></div>
                         </div>
 
                         <div id="registrationBox">
-                          <h3>National Taiwan University</h3>
-                          <a href="https://docs.google.com/forms/d/1t2yY7P-v2xA6b1r25cbBeSQ981stMY_25vrZy919fww/viewform" target="_blank">Register Now</a>
+                          <h3>HK Polytechnic University (香港理工大學) </h3>
+                          <a href="https://www.credproof.net/hong-kong-polytechnic-university/registration.php" target="_blank">Register Now</a>
                           <div className="clearing"></div>
                         </div>
                         
