@@ -243,7 +243,7 @@ const renderer = ({ days, hours, minutes, seconds }) => {
   return <span>{days} Days, {hours} Hrs, {minutes} Mins, {seconds} Secs</span>;
 };
 
-export default class extends React.Component {
+export default class extends React.PureComponent {
   static async getInitialProps({ query }) {
     return { query };
   }
