@@ -55,6 +55,27 @@ const ADD_APPLICATION = gql`
 
 const ThisPageContainerComponent = styled(PageContainerComponent)`
 
+  #extraRegistration {
+    h1, h3, a, span {
+      width: 100%;
+      float: none;
+      height: unset;
+      line-height: 3rem;
+    }
+
+    a {
+      display: inline;
+    }
+    
+    background: #eee;
+    padding: 3rem 2rem 0.8rem;
+    margin-left: -2rem;
+    margin-right: -2rem;
+    margin-bottom: 5rem;
+
+  }
+
+
   .lds-ellipsis {
     display: inline-block;
     position: relative;
@@ -850,18 +871,18 @@ export default class extends React.PureComponent {
                     return <RegistrationForm onSubmit={(e) => { e.preventDefault(); }}>
 
                       <FormSection className="FormSection">
-                        <div id="trainingBox">
-                          <h1>Next Training Section: </h1>
-                          <Countdown date={new Date(2019, 2, 30, 13, 0, 0, 0)}
-                            renderer={renderer}
-                          />
-                          <div className="clearing"></div>
-                        </div>
+                        <div id="extraRegistration">
+                          <div id="trainingBox">
+                            <h1>Next Training Section: </h1>
+                            <Countdown date={new Date(2019, 2, 30, 13, 0, 0, 0)}
+                              renderer={renderer}
+                            />
+                          </div>
 
-                        <div id="registrationBox">
-                          <h3>HK Polytechnic University (香港理工大學) </h3>
-                          <a href="https://www.credproof.net/hong-kong-polytechnic-university/registration.php" target="_blank">Register Now</a>
-                          <div className="clearing"></div>
+                          <div id="registrationBox">
+                            <h3>HK Polytechnic University (香港理工大學) </h3>
+                            <a href="https://www.credproof.net/hong-kong-polytechnic-university/registration.php" target="_blank">Register Now</a>
+                          </div>
                         </div>
                         
                         <h3 className="subhead">{this.translate('teamInfo')}</h3>
