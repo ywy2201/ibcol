@@ -18,7 +18,11 @@
       "institutionName": "Institution Name",
       "city": "City",
       "state": "State/Territory",
-      "countryCode": "Country"
+      "countryCode": "Country",
+      "studentNumber": "Student Number",
+      "studentCard": "Student ID Card",
+      "studentCardFrontImagePrompt": "Image of Student Card (Front)",
+      "studentCardBackImagePrompt": "Image of Student Card (Back)"
     }
   },
   "advisorRecords": {

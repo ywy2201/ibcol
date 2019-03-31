@@ -16,6 +16,8 @@ import { Link } from '/routes';
 import PageContainerComponent from 'components/PageContainerComponent';
 import CountryInputSelectComponent from 'components/CountryInputSelectComponent';
 
+
+
 import Head from 'next/head';
 
 import { Mutation } from "react-apollo";
@@ -24,6 +26,20 @@ import gql from 'graphql-tag'
 
 import ReactDOM from 'react-dom';
 import Countdown from 'react-countdown-now';
+
+
+// import FilePondComponent from 'components/FilePondComponent';
+import { FilePond, registerPlugin } from 'react-filepond';
+import '/node_modules/filepond/dist/filepond.min.css';
+
+import FilePondPluginImageExifOrientation from 'filepond-plugin-image-exif-orientation';
+import FilePondPluginImagePreview from 'filepond-plugin-image-preview';
+import '/node_modules/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.css';
+
+
+// Register the plugins
+registerPlugin(FilePondPluginImageExifOrientation, FilePondPluginImagePreview);
+
 
 const MAX_STUDENT_PER_TEAM = 6;
 const MAX_PROJECT_PER_TEAM = 5;
@@ -399,6 +415,9 @@ export default class extends React.PureComponent {
   getNewStudentEducationRecord = () => {
     return {
       institutionName: "",
+      studentCardFrontURL: "",
+      studentCardBackURL: "",
+      studentNumber: "",
       state: "",
       city: "",
       countryCode: "",
@@ -936,6 +955,7 @@ export default class extends React.PureComponent {
                                 <input type="email" data-name="email" data-section="studentRecords" data-student-index={studentIndex} onChange={this.onRecordChange} value={_.isEmpty(studentRecord['email']) ? "" : studentRecord['email']} onFocus={this.onFieldFocused} onBlur={this.onFieldBlurred} />
                               </FormField>
                             </FormRow>
+                            
 
 
 
@@ -985,7 +1005,36 @@ export default class extends React.PureComponent {
                                     </FormField>
                                   </FormRow>
 
+                                  <FormRow>
+                                    <FormField>
+                                      {this.getLabel('studentRecords.educationRecords.studentNumber')}
+                                      <input type="text" data-name="studentCardFrontURL" data-section="studentEducationRecords" data-student-index={studentIndex} data-student-education-index={studentEducationIndex} onChange={this.onRecordChange} value={_.isEmpty(educationRecord['studentCardFrontURL']) ? "" : educationRecord['studentCardFrontURL']} onFocus={this.onFieldFocused} onBlur={this.onFieldBlurred} />
+                                    </FormField>
 
+                                    
+                                  </FormRow>
+
+
+                                  <FormRow>
+                                    <FormField>
+                                      {this.getLabel('studentRecords.educationRecords.studentCard')}
+                                      <input disabled type="text" data-name="studentNumber" data-section="studentEducationRecords" data-student-index={studentIndex} data-student-education-index={studentEducationIndex} onChange={this.onRecordChange} value={_.isEmpty(educationRecord['studentNumber']) ? "" : educationRecord['studentNumber']} onFocus={this.onFieldFocused} onBlur={this.onFieldBlurred} />
+                                      <FilePond 
+                                        allowMultiple={false} 
+                                        oninit={() => {console.log("oninit")} }
+                                        server='/api'/>
+                                      
+                                      
+                                      
+                                    </FormField>
+
+                                    
+
+                                    {/* <FormField>
+                                      {this.getLabel('studentRecords.educationRecords.programme')}
+                                      <input type="text" data-name="programme" data-section="studentEducationRecords" data-student-index={studentIndex} data-student-education-index={studentEducationIndex} onChange={this.onRecordChange} value={_.isEmpty(educationRecord['programme']) ? "" : educationRecord['programme']} onFocus={this.onFieldFocused} onBlur={this.onFieldBlurred} />
+                                    </FormField> */}
+                                  </FormRow>
 
 
                                   <FormRow>
