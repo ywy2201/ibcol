@@ -4,7 +4,7 @@ module.exports = {
     "name":"France",
     "label":"Bienvenue",
     "flag": "fr.svg",
-    "disabled": true
+    "disabled": false
   },
   "_global":require('./_global.json'),
   "_countries": require('./_countries.json'),

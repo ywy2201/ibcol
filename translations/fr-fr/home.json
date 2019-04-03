@@ -1,21 +1,21 @@
 {
-  "pageTitle":"",
-  "seoDescription":"",
+  "pageTitle":"Olympiades Internationales de Blockchain",
+  "seoDescription":"L’Olympiade internationale de Blockchain (IBCOL) est un concours multidisciplinaire de conception et de construction. IBCOL 2019 invite les étudiants du monde entier à résoudre des problèmes concrets grâce à des applications décentralisées.",
   "ogImage":"static/images/ogimage.jpg",
-  "mainHeading":"",
-  "subHeading":"",
-  "register":"",
-  "howToJoin":"",
-  "competitionRules":"",
-  "scroll":"",
+  "mainHeading":"Aider à apporter le monde sur le Blockchain",
+  "subHeading":"Rencontrer et rivaliser avec les meilleurs constructeurs de blockchain du monde",
+  "register":"Infos Inscription",
+  "howToJoin":"Comment s'inscrire",
+  "competitionRules":"Processus de la concurrence",
+  "scroll":"Faire défiler",
   "introSection":{
     "leftBlock":{
-      "title":"",
-      "infoList":"<li>Insufficient time to build well-rounded projects</li><li>Projects too tech-focused and divorced from reality</li><li>No incentive to continue developing the new project</li>"
+      "title":"La plupart des hackathons ne produisent pas des résultats utiles",
+      "infoList":"<li>Trop peu de temps pour construire des projets bien arrondis</li><li>Les projets trop technologie et axée sur la réalité divorcé</li><li>Aucune incitation à poursuivre le développement du nouveau projet</li>"
     },
     "rightBlock":{
-      "title":"",
-      "infoList":"<li>From now until July 2019 to get something working</li><li>Multidisciplinary approach to applying blockchain</li><li>Matching with entities that can take projects forward</li>"
+      "title":"Ce concours produira des résultats utiles",
+      "infoList":"<li>A partir de maintenant jusqu'en Juillet 2019 obtenir quelque chose de travail</li><li>Approche multidisciplinaire d'appliquer blockchain</li><li>Correspondant à des entités qui peuvent prendre des projets en avant</li>"
     }
   },
   "timelineSection":{
@@ -46,46 +46,46 @@
     }
   },
   "section01":{
-      "languageTitle":"",
-      "writtenLanguageLabel":"",
-      "writtenLanguages":"",
-      "spokenLanguageLabel":"",
-      "spokenLanguages":""
+      "languageTitle":"langues",
+      "writtenLanguageLabel":"Langues acceptables pour le matériel écrit:",
+      "writtenLanguages":"Arabe (standard), chinois (simplifié), chinois (traditionnel), anglais, français, allemand, hongrois, italien, japonais, coréen, persan, polonais, portugais, russe, espagnol, ukrainien",
+      "spokenLanguageLabel":"Langues acceptables pour le matériel oral:",
+      "spokenLanguages":"Arabe (Egypte), Arabe (du Golfe), cantonais, anglais, français, allemand, hongrois, italien, japonais, coréen, mandarin, persan, polonais, portugais, russe, espagnol, ukrainien"
   },
   "section02":{
-    "heading":"",
+    "heading":"Prix",
     "awards":{
       "gold":{
         "quantity":5,
-        "title":"",
-        "description":""
+        "title":"Médailles d'or",
+        "description":"1ère place d'une catégorie avec 4096 USD prix"
       },
       "silver":{
         "quantity":5,
-        "title":"",
-        "description":""
+        "title":"Médailles d'argent",
+        "description":"2ème place gagnant d'une catégorie avec 2048 USD prix"
       },
       "bronze":{
         "quantity":5,
-        "title":"",
-        "description":""
+        "title":"Médailles de Bronze",
+        "description":"3e place gagnant d'une catégorie avec 1024 USD prix"
       },
       "nominee":{
         "quantity":15,
-        "title":"",
-        "description":""
+        "title":"Prix ​​des parrains",
+        "description":"Reconnaissance de l'entraîneur de l'équipe pour la nomination d'une équipe gagnante"
       },
       "finalist":{
         "quantity":10,
-        "title":"",
-        "description":""
+        "title":"Prix ​​finaliste",
+        "description":"La reconnaissance des équipes pour être top 5 dans une catégorie"
       },
       "merit":{
         "quantity":50,
-        "title":"",
-        "description":""
+        "title":"Prix ​​de mérite",
+        "description":"La reconnaissance des équipes pour la conception d'une solution complète"
       },
-      "note":""
+      "note":"Le meilleur prix pour les étudiants ne sont pas financier, mais plutôt l'expérience, des conseils et une chance de faire un impact réel dans le monde réel."
     }
   }
 }
