@@ -1,91 +1,91 @@
 {
-  "pageTitle":"",
-  "seoDescription":"",
+  "pageTitle":"Międzynarodowa Olimpiada Blockchain",
+  "seoDescription":"Miedzynarodowa Olimpiada Blockchain (IBCOL) to wielotematyczny konkurs projektow budowlamych. IBCOL zaprasza studentow z calego swiata do rozwiazania realnych zadan poprzez zdecentralizowane aplikacje.",
   "ogImage":"static/images/ogimage.jpg",
-  "mainHeading":"",
-  "subHeading":"",
-  "register":"",
-  "howToJoin":"",
-  "competitionRules":"",
-  "scroll":"",
+  "mainHeading":"Pomóc doprowadzić świat na Blockchain",
+  "subHeading":"Spotkać i rywalizować z najlepszych światowych producentów blockchain",
+  "register":"Informacje Rejestracja",
+  "howToJoin":"Jak dołączyć",
+  "competitionRules":"Proces konkurencja",
+  "scroll":"Zwój",
   "introSection":{
     "leftBlock":{
-      "title":"",
-      "infoList":"<li>Insufficient time to build well-rounded projects</li><li>Projects too tech-focused and divorced from reality</li><li>No incentive to continue developing the new project</li>"
+      "title":"Większość hackathons nie produkują użytecznych wyników",
+      "infoList":"<li>Zbyt mało czasu, aby zbudować projekty dobrze zaokrąglone</li><li>Projekty zbyt tech-skoncentrowany i oderwane od rzeczywistości</li><li>Nie bodziec do dalszego rozwoju nowego projektu</li>"
     },
     "rightBlock":{
-      "title":"",
-      "infoList":"<li>From now until July 2019 to get something working</li><li>Multidisciplinary approach to applying blockchain</li><li>Matching with entities that can take projects forward</li>"
+      "title":"Ta konkurencja będzie produkować użytecznych wyników",
+      "infoList":"<li>Od teraz aż do lipca 2019 roku, aby uzyskać coś pracy</li><li>Interdyscyplinarne podejście do stosowania blockchain</li><li>Matching z podmiotami, które mogą przyjmować projekty do przodu</li>"
     }
   },
   "timelineSection":{
-    "heading":"",
+    "heading":"Proces konkurencja",
     "block1":{
-      "title":"",
-      "details":"Until April 21st"
+      "title":"Rejestracja",
+      "details":"Musisz się zarejestrować, aby zarządzać projektem"
     },
     "block2":{
-      "title":"",
-      "details":""
+      "title":"Biały papier",
+      "details":"Termin toczenia jest na 21 kwietnia"
     },
     "block3":{
-      "title":"",
-      "details":""
+      "title":"Wywiad",
+      "details":"Wszystkie rozmowy zostaną zakończone przed 9 czerwca"
     },
     "block4":{
-      "title":"",
-      "details":""
+      "title":"Próbny",
+      "details":"Finaliści sporządza proof of concept"
     },
     "block5":{
-      "title":"",
-      "details":""
+      "title":"Smoła",
+      "details":"Finaliści przygotowują prezentację sceniczną"
     },
     "block6":{
-      "title":"",
-      "details":""
+      "title":"Kontynuacja",
+      "details":"Zawodnicy otrzymują staże lub inwestycji"
     }
   },
   "section01":{
-      "languageTitle":"",
-      "writtenLanguageLabel":"",
-      "writtenLanguages":"",
-      "spokenLanguageLabel":"",
-      "spokenLanguages":""
+      "languageTitle":"Języki",
+      "writtenLanguageLabel":"Języki dopuszczalne dla materiałów pisemnych:",
+      "writtenLanguages":"Arabski (standard), chiński (uproszczony), chiński (tradycyjny), angielski, francuski, niemiecki, węgierski, włoski, japoński, koreański, perski, polski, portugalski, rosyjski, hiszpański, ukraiński",
+      "spokenLanguageLabel":"Dopuszczalne Języki obce: dla materiału",
+      "spokenLanguages":"Arabski (Egipt), arabski (Zatoka), kantoński, angielski, francuski, niemiecki, węgierski, włoski, japoński, koreański, mandaryński, perski, polski, portugalski, rosyjski, hiszpański, ukraiński"
   },
   "section02":{
-    "heading":"",
+    "heading":"nagrody",
     "awards":{
       "gold":{
         "quantity":5,
-        "title":"",
-        "description":""
+        "title":"Złote medale",
+        "description":"1. miejsce zwycięzca kategorii z 4096 USD nagrody"
       },
       "silver":{
         "quantity":5,
-        "title":"",
-        "description":""
+        "title":"srebrne Medale",
+        "description":"2 miejsce zwycięzca kategorii z 2048 USD nagrody"
       },
       "bronze":{
         "quantity":5,
-        "title":"",
-        "description":""
+        "title":"Brązowe medale",
+        "description":"3 miejsce zwycięzca kategorii z 1024 USD nagrody"
       },
       "nominee":{
         "quantity":15,
-        "title":"",
-        "description":""
+        "title":"Nagrody liczniku",
+        "description":"Uznanie trenera za powołanie Zwycięska drużyna"
       },
       "finalist":{
         "quantity":10,
-        "title":"",
-        "description":""
+        "title":"finalista Nagrody",
+        "description":"Rozpoznawanie zespołów do bycia top 5 w kategorii"
       },
       "merit":{
         "quantity":50,
-        "title":"",
-        "description":""
+        "title":"Merit Awards",
+        "description":"Rozpoznawanie zespołów do projektowania kompletne rozwiązanie"
       },
-      "note":""
+      "note":"Najlepszą nagrodą dla studentów nie jest finansowy, ale raczej doświadczenie, naprowadzania i szansa, aby rzeczywisty wpływ w świecie rzeczywistym."
     }
   }
 }

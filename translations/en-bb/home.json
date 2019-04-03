@@ -22,27 +22,27 @@
     "heading":"Competition Process",
     "block1":{
       "title":"Registration",
-      "details":"Until April 21st"
+      "details":"You must register to manage your project"
     },
     "block2":{
       "title":"Whitepaper",
-      "details":"Whitepaper<br/>due April 21st<br/>by online submission"
+      "details":"The rolling deadline is on April 21"
     },
     "block3":{
       "title":"Interview",
-      "details":"Interview<br/>due May & June<br/>by teleconference"
+      "details":"All interviews will be finished before June 9"
     },
     "block4":{
       "title":"Demo",
-      "details":"Demo<br/>during July<br/>at Tech Expo"
+      "details":"Finalists shall prepare Proof of Concept"
     },
     "block5":{
       "title":"Pitch",
-      "details":"Pitch<br/>during July<br/>on Pitch Stage"
+      "details":"Finalists shall prepare stage presentation"
     },
     "block6":{
       "title":"Continuation",
-      "details":"Continuation<br/>after July<br/>via Accelerators"
+      "details":"Competitors receive internships or investments"
     }
   },
   "section01":{

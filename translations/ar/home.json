@@ -19,30 +19,30 @@
     }
   },
   "timelineSection":{
-    "heading":"",
+    "heading":"عملية المنافسة",
     "block1":{
-      "title":"",
-      "details":"Super Early Bird Until Feb 1st<br/>Early Bird Until April 1st<br/>Regular Until April 21st"
+      "title":"التسجيل",
+      "details":"يجب أن تسجل لإدارة مشروعك"
     },
     "block2":{
-      "title":"",
-      "details":""
+      "title":"ورق ابيض",
+      "details":"الموعد النهائي المتداول هو يوم 21 أبريل"
     },
     "block3":{
-      "title":"",
-      "details":""
+      "title":"مقابلة",
+      "details":"وسيتم الانتهاء من جميع المقابلات قبل 9 يونيو"
     },
     "block4":{
-      "title":"",
-      "details":""
+      "title":"عرض",
+      "details":"يجب النهائية إعداد إثبات الفكرة"
     },
     "block5":{
-      "title":"",
-      "details":""
+      "title":"ملعب كورة قدم",
+      "details":"يجب النهائية إعداد عرض المرحلة"
     },
     "block6":{
-      "title":"",
-      "details":""
+      "title":"استمرار",
+      "details":"المنافسين تلقي التدريب أو الاستثمارات"
     }
   },
   "section01":{

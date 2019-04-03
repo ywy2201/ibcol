@@ -1,11 +1,11 @@
 {
-  "pageTitle":"",
-  "seoDescription":"",
+  "pageTitle":"Ambasadori ai școlilor",
+  "seoDescription":"Olimpiada Internațională de Blockchain este o competiție multidisciplinară de design si inginerie. IBCOL 2019 invită studenții din toată lumea să rezolve provocări reale, prin aplicații de-centralizate.",
   "ogImage":"static/images/ogimage.jpg",
-  "subhead":"",
-  "schoolAmbassadorsTitle":"",
-  "schoolAmbassadorsDescriptions":"",
-  "applyAmbassadorsLabel":"",
+  "subhead":"Relații cu studenții",
+  "schoolAmbassadorsTitle":"Ambasadori ai școlilor",
+  "schoolAmbassadorsDescriptions":"Ambasadori școlari reprezintă IBCOL în campusuri",
+  "applyAmbassadorsLabel":"Aplică pentru a deveni ambasador în școală",
   "schoolAmbassadors":[
     {"flag":"flag-icon-hu","countryCode":"hu","title":"Budapest Metropolitan University (METU)","ambassadors":[
       {"name":"Viktor Tabori","email":"viktor.tabori@ibcol.org"}
@@ -105,14 +105,14 @@
       {"name":"Marina Danylyuk","email":"marina.danylyuk@ibcol.org"}
     ]}
   ],
-  "schoolAmbassadorProgrammeTitle":"",
-  "schoolAmbassadorProgrammeDescription":"",
-  "responsibilitiesTitle":"",
-  "responsibilities":["Promote the International Blockchain Olympiad on campus","Recruit interested students on campus","Take lead and be the point of contact between interested applicants and registered participants","Arrange with student organisations or faculty or department for subsidies","Organise events for preparing students to compete in IBCOL 2019, such as team formation, blockchain training, and general promotion","Act in the best interest of the International Blockchain Olympiad"],
-  "perksTitle":"",
-  "perks":["Gain valuable experience and insights into the enterprise, government, and blockchain worlds","1 free course (DC3) issued by the Hong Kong Blockchain Society (Value: 2000 USD)","School Ambassador Certificate issued by the International Blockchain Olympiad","Entitled to 10% discount on admission to IBCOL 2019 (Value up to 2000 USD - includes full 2-day access to tech expo, fireside chats, keynote luncheons, and networking sessions), for each referred team. For example, 3 referred teams is 30%, 7 referred teams is 70% off, 10 or more is 100% off, i.e. free ticket."],
-  "applyNowButtonLabel":"",
-  "comingSoonButtonLabel":"",
-  "financialAssistanceTitle":"",
-  "financialAssistanceDescription":""
+  "schoolAmbassadorProgrammeTitle":"Programul ambasadori școlari",
+  "schoolAmbassadorProgrammeDescription":"Ai o pasiune pentru tehnologie, inovație sau competiție? Ia parte la prima Olimpiadă de Blockchain! Cautăm ambasadori care să promoveze IBCOL 2019 in campusuri.",
+  "responsibilitiesTitle":"Responsibilități",
+  "responsibilities":["Promovează IBCOL în campus","Recrutează studenții interesați","Ia inițiativa și devine punct de contact între studenții interesați sa aplice și participanții înregistrați deja","Lucrează cu organizațiile studențești sau departamentele facultății pentru a obține subvenții","Organizează evenimente pentru a pregăti studenții să participe - formarea echipelor, pregătirea tehnică si promovare în general","Lucreaza in interesul IBCOL"],
+  "perksTitle":"Beneficii",
+  "perks":["Câștiga o experiență valoroasă și perspective în întreprindere, guvern, și lumi blockchain","1 curs gratuit (DC3) emise de Blockchain Society din Hong Kong (Valoare: 2000 USD)","Școala Ambasador Certificat eliberat de Blockchain Olimpiada Internațională","Are dreptul la 10% reducere la admiterea la IBCOL 2019 (valoare de până la 2000 USD - include acces complet 2 zile la Tech Expo, chat-uri la gura sobei, dejunuri keynote, si sesiuni de networking), pentru fiecare echipă menționată. De exemplu, 3 menționate echipe este de 30%, 7 menționat echipe este de 70% off, 10 sau mai mult este de 100% off, adică bilet gratuit."],
+  "applyNowButtonLabel":"Aplica acum",
+  "comingSoonButtonLabel":"In curand",
+  "financialAssistanceTitle":"Opțiuni de asistență financiară",
+  "financialAssistanceDescription":"Solicitanții sunt evaluate de la caz la caz, cu nici un efect asupra rezultatelor reale ale competiției. Studenții pot aplica pentru subvenții pentru a reduce povara financiară de a participa la IBCOL 2019, cum ar fi taxa de intrare, de călătorie la evenimentul principal în Hong Kong, și asistență de cazare în timp ce în Hong Kong. Numai eligibile pentru solicitanții înregistrării înainte de 01 februarie."
 }

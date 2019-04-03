@@ -1,0 +1,118 @@
+{
+  "pageTitle":"ambasciatori della scuola",
+  "seoDescription":"Internazionale Blockchain Olimpiade è un disegno e la costruzione di concorso multidisciplinare. IBCOL 2019 invita gli studenti di tutto il mondo per risolvere le sfide del mondo reale attraverso le applicazioni decentralizzate.",
+  "ogImage":"static/images/ogimage.jpg",
+  "subhead":"Relazioni degli studenti per il 2019 Internazionale Blockchain Olimpiade",
+  "schoolAmbassadorsTitle":"ambasciatori della scuola",
+  "schoolAmbassadorsDescriptions":"ambasciatori della scuola rappresentano IBCOL 2019 sul loro campus",
+  "applyAmbassadorsLabel":"Applicare di essere un ambasciatore di scuola IBCOL",
+  "schoolAmbassadors":[
+    {"flag":"flag-icon-hu","countryCode":"hu","title":"Budapest Metropolitan University (METU)","ambassadors":[
+      {"name":"Viktor Tabori","email":"viktor.tabori@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-hu","countryCode":"hu","title":"Universitatea de Tehnologie și Economie din Budapesta","ambassadors":[
+      {"name":"Viktor Tabori","email":"viktor.tabori@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-hu","countryCode":"hu","title":"Central European University (CEU)","ambassadors":[
+      {"name":"Viktor Tabori","email":"viktor.tabori@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-hu","countryCode":"hu","title":"Corvinus University of Budapest","ambassadors":[
+      {"name":"Viktor Tabori","email":"viktor.tabori@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-ua","countryCode":"ua","title":"Donetsk State University of Economics and Trade (DonNUET)","ambassadors":[
+      {"name":"Marina Danylyuk","email":"marina.danylyuk@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-hk","countryCode":"hk","title":"University of Hong Kong (HKU)","ambassadors":[
+      {"name":"Charles Wong","email":"charles.wong@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-hk","countryCode":"hk","title":"Chinese University of Hong Kong (CUHK)","ambassadors":[
+      {"name":"Gabriel Chan","email":"gabriel.chan@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-hk","countryCode":"hk","title":"Hong Kong University of Science and Technology (HKUST)","ambassadors":[
+      {"name":"Gabriel Chan","email":"gabriel.chan@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-hk","countryCode":"hk","title":"Hong Kong Baptist University (HKBU)","ambassadors":[
+      {"name":"Jeremiah Lee","email":"jeremiah.lee@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-hk","countryCode":"hk","title":"Hong Kong Polytechnic University (PolyU) ","ambassadors":[
+      {"name":"Kavis Cho","email":"kavis.cho@ibcol.org"},
+      {"name":"Peter Tang","email":"peter.tang@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-hk","countryCode":"hk","title":"City University of Hong Kong (CityU)","ambassadors":[
+      {"name":"Charles Wong","email":"charles.wong@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-hk","countryCode":"hk","title":"Open University of Hong Kong (OpenU)","ambassadors":[
+      {"name":"Gabriel Chan","email":"gabriel.chan@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-hk","countryCode":"hk","title":"Lingnan University","ambassadors":[
+      {"name":"Gabriel Chan","email":"gabriel.chan@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-hk","countryCode":"hk","title":"Hong Kong Shue Yan University (SYU)","ambassadors":[
+      {"name":"Gabriel Chan","email":"gabriel.chan@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-hk","countryCode":"hk","title":"Hang Seng University of Hong Kong (HSUHK)","ambassadors":[
+      {"name":"Gabriel Chan","email":"gabriel.chan@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-kr","countryCode":"kr","title":"Chung-Ang University (CAU)","ambassadors":[
+      {"name":"Susie Kim","email":"susie.kim@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-kr","countryCode":"kr","title":"Hanyang University","ambassadors":[
+      {"name":"Jaime An","email":"jaime.an@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-kr","countryCode":"kr","title":"Konkuk University","ambassadors":[
+      {"name":"Jaime An","email":"jaime.an@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-kr","countryCode":"kr","title":"Korea Advanced Institute of Science and Technology (KAIST)","ambassadors":[
+      {"name":"Jaime An","email":"jaime.an@ibcol.org"},
+        {"name":"SungSoo Kim","email":"sungsoo.kim@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-kr","countryCode":"kr","title":"Korea University (KU)","ambassadors":[
+      {"name":"Jaime An","email":"jaime.an@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-kr","countryCode":"kr","title":"Pohang University of Science and Technology (POSTECH)","ambassadors":[
+      {"name":"Jaime An","email":"jaime.an@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-kr","countryCode":"kr","title":"Seoul National University (SNU)","ambassadors":[
+      {"name":"Jaime An","email":"jaime.an@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-kr","countryCode":"kr","title":"Sungkyunkwan University (SKKU)","ambassadors":[
+      {"name":"Jaime An","email":"jaime.an@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-kr","countryCode":"kr","title":"Yonsei University","ambassadors":[
+      {"name":"Jaime An","email":"jaime.an@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-ru","countryCode":"ru","title":"Moscow State University (MSU)","ambassadors":[
+      {"name":"Marina Danylyuk","email":"marina.danylyuk@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-us","countryCode":"us","title":"Stanford University","ambassadors":[
+      {"name":"Julian Gropp","email":"julian.gropp@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-de","countryCode":"de","title":"Universitatea Tehnică din München","ambassadors":[
+      {"name":"Julian Gropp","email":"julian.gropp@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-us","countryCode":"us","title":"Universitatea Berkeley din California","ambassadors":[
+      {"name":"Alex Rusnak","email":"alex.rusnak@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-ca","countryCode":"ca","title":"University of Waterloo (UW)","ambassadors":[
+      {"name":"Gabriel Chan","email":"gabriel.chan@ibcol.org"},
+      {"name":"Danielle Cadoret","email":"danielle.cadoret@ibcol.org"},
+      {"name":"Mika Tsoi","email":"mika.tsoi@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-my","countryCode":"my","title":"Universiti Sains Malaysia (USM)","ambassadors":[
+      {"name":"Fei Yee Yeoh","email":"feiyee.yeoh@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-ua","countryCode":"ua","title":"Yaroslav Mudryi National Law University","ambassadors":[
+      {"name":"Marina Danylyuk","email":"marina.danylyuk@ibcol.org"}
+    ]}
+  ],
+  "schoolAmbassadorProgrammeTitle":"Scuola Ambassador Program",
+  "schoolAmbassadorProgrammeDescription":"Hanno una passione per le competizioni la tecnologia, l'innovazione, o studente? Prendere parte nella costruzione del primo internazionale Blockchain Olimpiade! Siamo alla ricerca di ambasciatori della scuola per promuovere IBCOL 2019 nel campus locale.",
+  "responsibilitiesTitle":"responsabilità",
+  "responsibilities":["Promuovere la Blockchain Olimpiadi Internazionali del campus","Reclutare studenti interessati del campus","Prendere piombo e di essere il punto di contatto tra i candidati interessati e partecipanti registrati","Organizzare con le organizzazioni studentesche o facoltà o dipartimento per le sovvenzioni","Organizzare eventi per preparare gli studenti a competere nel IBCOL 2019, come ad esempio la formazione di squadra, la formazione blockchain e promozione generale","Agire nel migliore interesse del Blockchain Olimpiadi Internazionali"],
+  "perksTitle":"Vantaggi",
+  "perks":["Acquisire una preziosa esperienza e intuizioni l'impresa, governo e mondi blockchain","1 corso gratuito (DC3) emessa dalla Hong Kong Blockchain Society (Valore: 2000 USD)","School Certificate Ambasciatore rilasciato dal Blockchain Olimpiadi Internazionali","Hanno diritto a 10% di sconto sull'ingresso al IBCOL 2019 (valore fino a 2000 dollari - include il pieno accesso di 2 giorni a Expo Tech, chiacchiere davanti al focolare, pranzi keynote, sessioni di networking e), per ogni squadra di cui. Ad esempio, 3 di cui squadre è del 30%, 7 di cui squadre è 70%, 10 o più è 100% fuori, cioè biglietto gratuito."],
+  "applyNowButtonLabel":"Applica ora",
+  "comingSoonButtonLabel":"Prossimamente",
+  "financialAssistanceTitle":"Opzioni di assistenza finanziaria",
+  "financialAssistanceDescription":"I candidati sono valutati caso per caso, senza alcuna influenza sui risultati effettivi del concorso. Gli studenti possono presentare domanda di sussidi per ridurre l'onere finanziario di partecipare a IBCOL 2019, come ad esempio la quota di iscrizione, viaggiare per l'evento principale a Hong Kong, e l'assistenza alloggio, mentre a Hong Kong. Solo beneficiare di dichiaranti prima 1 febbraio."
+}
