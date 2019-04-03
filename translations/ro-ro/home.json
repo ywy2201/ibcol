@@ -21,28 +21,28 @@
   "timelineSection":{
     "heading":"Procesul",
     "block1":{
-      "title":"Înregistrarea",
-      "details":"până la 21 aprilie"
+      "title":"Înregistrare",
+      "details":"Trebuie să vă înregistrați pentru a gestiona proiectul"
     },
     "block2":{
-      "title":"",
-      "details":""
+      "title":"Hartie alba",
+      "details":"Termenul limită de rulare este la 21 aprilie"
     },
     "block3":{
-      "title":"",
-      "details":""
+      "title":"Interviu",
+      "details":"Toate interviurile vor fi finalizate înainte de 09 iunie"
     },
     "block4":{
-      "title":"",
-      "details":""
+      "title":"Demo",
+      "details":"Finaliști pregătește dovada conceptului"
     },
     "block5":{
-      "title":"",
-      "details":""
+      "title":"Pas",
+      "details":"Finaliști pregătește etapa de prezentare"
     },
     "block6":{
-      "title":"",
-      "details":""
+      "title":"Continuare",
+      "details":"Concurenții primesc stagii sau investiții"
     }
   },
   "section01":{
