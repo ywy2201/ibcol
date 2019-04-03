@@ -1,13 +1,13 @@
 {
-  "pageTitle":"",
-  "seoDescription":"",
+  "pageTitle":"Olimpiada Internacional de Blockchain",
+  "seoDescription":"La Olimpiada Internacional de Blockchain (IBCOL) es un concurso multidisciplinar de diseño y creación. IBCOL 2019 invita a estudiantes de todo el mundo a resolver desafíos del mundo real a través de aplicaciones descentralizadas.",
   "ogImage":"static/images/ogimage.jpg",
   "mainHeading":"Colabora en llevar blockchain a todo el mundo",
   "subHeading":"Conoce y compite con los mejores talentos mundiales en Blockchain",
-  "register":"Registro",
+  "register":"Información de registro",
   "howToJoin":"Como apuntarse",
-  "competitionRules":"",
-  "scroll":"",
+  "competitionRules":"Proceso de competencia",
+  "scroll":"Voluta",
   "introSection":{
     "leftBlock":{
       "title":"La mayoría de Hackatones no producen los resultados deseados",
@@ -46,46 +46,46 @@
     }
   },
   "section01":{
-      "languageTitle":"",
-      "writtenLanguageLabel":"",
-      "writtenLanguages":"",
-      "spokenLanguageLabel":"",
-      "spokenLanguages":""
+      "languageTitle":"idiomas",
+      "writtenLanguageLabel":"Idiomas aceptables para el material escrito:",
+      "writtenLanguages":"Árabe (estándar), chino (simplificado), chino (tradicional), Inglés, Francés, alemán, húngaro, italiano, japonés, coreano, persa, polaco, portugués, ruso, español, ucraniano",
+      "spokenLanguageLabel":"Idiomas aceptables para el material que se hablan:",
+      "spokenLanguages":"Árabe (Egipto), Árabe (Golfo), Cantonés, Inglés, Francés, alemán, húngaro, italiano, japonés, coreano, mandarín, persa, polaco, portugués, ruso, español, ucraniano"
   },
   "section02":{
-    "heading":"",
+    "heading":"Premios",
     "awards":{
       "gold":{
         "quantity":5,
-        "title":"",
-        "description":""
+        "title":"Medallas de oro",
+        "description":"1er lugar ganador de una categoría con 4.096 dólares de premios"
       },
       "silver":{
         "quantity":5,
-        "title":"",
-        "description":""
+        "title":"Medallas de plata",
+        "description":"Segundo lugar ganador de una categoría con 2.048 dólares de premios"
       },
       "bronze":{
         "quantity":5,
-        "title":"",
-        "description":""
+        "title":"Medallas de bronce",
+        "description":"3er lugar ganador de una categoría con 1.024 dólares de premios"
       },
       "nominee":{
         "quantity":15,
-        "title":"",
-        "description":""
+        "title":"Premios NOMINADOR",
+        "description":"El reconocimiento de entrenador del equipo de nombrar a un equipo ganador"
       },
       "finalist":{
         "quantity":10,
-        "title":"",
-        "description":""
+        "title":"Finalista Premios",
+        "description":"El reconocimiento de los equipos de máximo 5 en una categoría"
       },
       "merit":{
         "quantity":50,
-        "title":"",
-        "description":""
+        "title":"Premios al mérito",
+        "description":"El reconocimiento de los equipos para el diseño de una solución completa"
       },
-      "note":""
+      "note":"El mejor premio para los estudiantes no es financiera, sino más bien la experiencia, la orientación, y la oportunidad de hacer un impacto real en el mundo real."
     }
   }
 }
