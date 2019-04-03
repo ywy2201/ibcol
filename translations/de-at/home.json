@@ -18,31 +18,31 @@
       "infoList": "<li>Zeit ein Projekt zu starten beginnt jetzt und endet Juli 2019</li><li>Ein multidisziplinärer Ansatz Blockchain Technologien anzuwenden</li><li>Treffe Investoren die Projekte weitertragen können</li>"
     }
   },
-  "timelineSection": {
-    "heading": "Wettbewerbsprozess",
-    "block1": {
-      "title": "Registration",
-      "details": "bis 21. April 2019"
+  "timelineSection":{
+    "heading":"Wettbewerbsprozess",
+    "block1":{
+      "title":"Registration",
+      "details":"Sie müssen sich registrieren Ihr Projekt verwalten"
     },
-    "block2": {
-      "title": "Whitepaper",
-      "details": "am 21. April<br/>per Online-Einreichung fällig"
+    "block2":{
+      "title":"Whitepaper",
+      "details":"Der Rollschluss ist am 21. April"
     },
-    "block3": {
-      "title": "Interview",
-      "details": "im Mai & Juni<br/>per Telekonferenz"
+    "block3":{
+      "title":"Interview",
+      "details":"Alle Interviews werden vor dem 9. Juni fertig gestellt werden"
     },
-    "block4": {
-      "title": "Demo",
-      "details": "im Juli<br/>bei der Tech Expo"
+    "block4":{
+      "title":"Demo",
+      "details":"Die Finalisten werden Proof of Concept vorbereiten"
     },
-    "block5": {
-      "title": "Pitch",
-      "details": "im July<br/>auf der Pitch Stage"
+    "block5":{
+      "title":"Pitch",
+      "details":"Die Finalisten werden Bühnenpräsentation vorbereiten"
     },
-    "block6": {
-      "title": "Forsetzung",
-      "details": "nach Juli<br/>via Accelerators"
+    "block6":{
+      "title":"Fortsetzung",
+      "details":"Wettbewerber erhalten Praktika oder Investitionen"
     }
   },
   "section01": {
