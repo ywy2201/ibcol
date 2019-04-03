@@ -3,7 +3,8 @@ module.exports = {
     "id":"it-ch",
     "name":"Svizzera",
     "label":"Benvenuti",
-    "flag": "ch.svg"
+    "flag": "ch.svg",
+    "disabled": false
   },
   "_global":require('./_global.json'),
   "_countries": require('./_countries.json'),

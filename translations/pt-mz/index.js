@@ -1,9 +1,9 @@
 module.exports = {
   "_locale":{
-    "id":"it-it",
-    "name":"Italia",
-    "label":"Benvenuti",
-    "flag": "it.svg",
+    "id":"pt-mz",
+    "name":"Moçambique",
+    "label":"Bem vindo",
+    "flag": "mz.svg",
     "disabled": false
   },
   "_global":require('./_global.json'),

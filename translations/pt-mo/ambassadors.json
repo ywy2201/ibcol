@@ -1,0 +1,87 @@
+{
+  "pageTitle":"Embaixadores escolares",
+  "seoDescription":"A Olimpíada Internacional de Blockchain (IBCOL) é uma competição multidisciplinar de design e criação. O IBCOL 2019 convida estudantes do mundo inteiro para resolver desafios reais por meio de aplicativos descentralizados (DApps).",
+  "ogImage":"static/images/ogimage.jpg",
+  "subhead":"Relações aluno para o 2019 Internacional Blockchain Olympiad",
+  "schoolAmbassadorsTitle":"Embaixadores escolares",
+  "schoolAmbassadorsDescriptions":"embaixadores escolares representam IBCOL 2019 em seus campi",
+  "applyAmbassadorsLabel":"Aplicar a ser um embaixador escola IBCOL",
+  "schoolAmbassadors":[
+    {"flag":"flag-icon-hu","countryCode":"hu","title":"Budapest Metropolitan University (METU)","ambassadors":[
+      {"name":"Viktor Tabori","email":"viktor.tabori@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-hu","countryCode":"hu","title":"Universidade de Tecnologia e Economia de Budapeste (BME)","ambassadors":[
+      {"name":"Viktor Tabori","email":"viktor.tabori@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-hu","countryCode":"hu","title":"Universidade Centro-Europeia (CEU)","ambassadors":[
+      {"name":"Viktor Tabori","email":"viktor.tabori@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-hu","countryCode":"hu","title":"Corvinus University of Budapest","ambassadors":[
+      {"name":"Viktor Tabori","email":"viktor.tabori@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-ua","countryCode":"ua","title":"Donetsk State University of Economics and Trade (DonNUET)","ambassadors":[
+      {"name":"Marina Danylyuk","email":"marina.danylyuk@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-kr","countryCode":"kr","title":"Universidade Chung-Ang (중앙대학교)","ambassadors":[
+      {"name":"Jaime An","email":"jaime.an@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-kr","countryCode":"kr","title":"Universidade de Hanyang (한양대학교)","ambassadors":[
+      {"name":"Jaime An","email":"jaime.an@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-kr","countryCode":"kr","title":"Universidade Konkuk (건국대학교)","ambassadors":[
+      {"name":"Jaime An","email":"jaime.an@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-kr","countryCode":"kr","title":"Instituto Avançado de Ciência e Tecnologia (KAIST)","ambassadors":[
+      {"name":"Jaime An","email":"jaime.an@ibcol.org"},
+      {"name":"SungSoo Kim","email":"sungsoo.kim@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-kr","countryCode":"kr","title":"Universidade da Coreia (고려대학교)","ambassadors":[
+      {"name":"Jaime An","email":"jaime.an@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-kr","countryCode":"kr","title":"Pohang University of Science and Technology (POSTECH)","ambassadors":[
+      {"name":"Jaime An","email":"jaime.an@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-kr","countryCode":"kr","title":"Universidade Nacional de Seul (서울대학교)","ambassadors":[
+      {"name":"Jaime An","email":"jaime.an@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-kr","countryCode":"kr","title":"Universidade Sungkyunkwan (성균관대학교)","ambassadors":[
+      {"name":"Jaime An","email":"jaime.an@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-kr","countryCode":"kr","title":"Universidade Yonsei (연세대학교)","ambassadors":[
+      {"name":"Jaime An","email":"jaime.an@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-ru","countryCode":"ru","title":"Universidade Estatal de Moscovo (MSU)","ambassadors":[
+      {"name":"Marina Danylyuk","email":"marina.danylyuk@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-us","countryCode":"us","title":"Universidade Stanford","ambassadors":[
+      {"name":"Julian Gropp","email":"julian.gropp@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-de","countryCode":"de","title":"Universidade Técnica de Munique","ambassadors":[
+      {"name":"Julian Gropp","email":"julian.gropp@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-us","countryCode":"us","title":"Universidade da Califórnia em Berkeley","ambassadors":[
+      {"name":"Alex Rusnak","email":"alex.rusnak@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-ca","countryCode":"ca","title":"Universidade de Waterloo (UW)","ambassadors":[
+      {"name":"Gabriel Chan","email":"gabriel.chan@ibcol.org"},
+      {"name":"Danielle Cadoret","email":"danielle.cadoret@ibcol.org"},
+      {"name":"Mika Tsoi","email":"mika.tsoi@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-my","countryCode":"my","title":"Universiti Sains Malaysia (USM)","ambassadors":[
+      {"name":"Fei Yee Yeoh","email":"feiyee.yeoh@ibcol.org"}
+    ]},
+    {"flag":"flag-icon-ua","countryCode":"ua","title":"Yaroslav Mudryi National Law University","ambassadors":[
+      {"name":"Marina Danylyuk","email":"marina.danylyuk@ibcol.org"}
+    ]}
+  ],
+  "schoolAmbassadorProgrammeTitle":"Programa Embaixador escola",
+  "schoolAmbassadorProgrammeDescription":"Tem uma paixão por competições de tecnologia, de inovação ou de estudante? Participar na construção da primeira Internacional Blockchain Olimpíada! Estamos à procura de embaixadores escolares para promover IBCOL 2019 em seu campus local.",
+  "responsibilitiesTitle":"responsabilidades",
+  "responsibilities":["Promover a Blockchain Olimpíada Internacional no campus","Recrutar estudantes interessados ​​no campus","Tome liderança e ser o ponto de contato entre os candidatos interessados ​​e participantes inscritos","Combine com organizações estudantis ou faculdade ou departamento de subsídios","Organizar eventos para preparar os alunos para competir no IBCOL 2019, tais como a formação da equipe, treinamento blockchain e promoção geral","Agir no melhor interesse da Blockchain Olimpíada Internacional"],
+  "perksTitle":"perks",
+  "perks":["Ganhar uma experiência valiosa e insights sobre a empresa, governo e mundos blockchain","1 curso livre (DC3), emitido pela Hong Kong Blockchain Society (Valor: 2000 USD)","Escola Certificado Embaixador emitido pelo Blockchain Olimpíada Internacional","Direito a 10% de desconto na admissão ao IBCOL 2019 (Valor até 2000 USD - inclui acesso 2-dia inteiro para expo tecnologia, bate-papos ao pé da lareira, almoços palestras e sessões de networking), para cada equipe que se refere. Por exemplo, três times referido é de 30%, 7 equipas referido é 70% menos, 10 ou mais de 100% é desligado, isto é, livre do bilhete."],
+  "applyNowButtonLabel":"Aplique agora",
+  "comingSoonButtonLabel":"Em breve",
+  "financialAssistanceTitle":"Opções de assistência financeira",
+  "financialAssistanceDescription":"Os candidatos são avaliados numa base caso-a-caso, com qualquer influência sobre os resultados reais da competição. Os alunos podem candidatar-se a subsídios para reduzir a carga financeira de participar IBCOL 2019, tais como a taxa de entrada, viajar para o evento principal em Hong Kong, e o auxílio à habitação, enquanto em Hong Kong. Apenas elegíveis para os inscritos antes de 01 de fevereiro"
+}

@@ -1,0 +1,69 @@
+{
+  "pageTitle":"Como entrar",
+  "seoDescription":"A Olimpíada Internacional de Blockchain (IBCOL) é uma competição multidisciplinar de design e criação. O IBCOL 2019 convida estudantes do mundo inteiro para resolver desafios reais por meio de aplicativos descentralizados (DApps).",
+  "ogImage":"static/images/ogimage.jpg",
+  "subhead":"As inscrições para o 2019 Internacional Blockchain Olympiad",
+  "eligibility":"Critério de eleição",
+  "eligibilityGeneral":"Um estudante é definido como uma pessoa inscrita em boa posição em uma instituição acadêmica secundário ou pós-secundário reconhecido, ou se formou em uma instituição acadêmica secundário ou pós-secundário reconhecido nos últimos 2 anos.",
+  "eligibilityCategory":"Os estudantes são classificados como alunos do ensino secundário ou pós-secundário com base em seus documentos de identidade de estudante no momento da inscrição.",
+  "eligibilityTeam":"Os alunos só podem ser registrados em uma equipe; se um aluno está envolvido com uma equipe que não o seu, que seria considerado um conselheiro para que outra equipe, e um concorrente para a sua equipa principal.",
+  "whenToJoinHeading":"Quando a aderir",
+  "plans":{
+    "fromLabel":"De...",
+    "toLabel":"Até...",
+    "feeLabel":"Cadastro",
+    "financialAssistanceLabel":"Assistência financeira",
+    "viewMoreLabel":"furto por mais",
+    "secondaryLabel":"Projeto Escola Estudante secundário",
+    "postSecondaryLabel":"Projeto Estudante de pós-secundária",
+    "additionalCategoryLabel":"Para cada categoria adicional",
+    "specialNotice":"Exceto taxas de categoria adicionais, taxas de inscrição de projeto para inscrições da equipe são dispensado para todas as equipes inscritas até 01 de abril de 2019",
+    "superEarlyBird":{
+      "name":"Super Early Bird",
+      "fromDate":"Hoje",
+      "toDate":"Sexta-feira<br/>01 de fevereiro de 2019<br/>23:59 HKT",
+      "fee":"Taxa é dispensada",
+      "financialAssistanceDetails":"Elegíveis para subsídios viagem",
+      "feeSchedule":{
+        "secondary":"40 USD",
+        "postSecondary":"50 USD",
+        "additionalCategory":"16 USD"
+      }
+    },
+    "earlyBird":{
+      "name":"Madrugador",
+      "fromDate":"sábado<br/>2 de fevereiro de 2019<br/>00:00 HKT",
+      "toDate":"Segunda-feira<br/>01 de abril de 2019<br/>23:59 HKT",
+      "fee":"Taxa é dispensada",
+      "financialAssistanceDetails":"Inelegível para financiamento de viagens",
+      "feeSchedule":{
+        "secondary":"50 USD",
+        "postSecondary":"60 USD",
+        "additionalCategory":"20 USD"
+      }
+    },
+    "regular":{
+      "name":"Regular",
+      "fromDate":"terça<br/>02 de abril de 2019<br/>00:00 HKT",
+      "toDate":"domingo<br/>21 de abril de 2019<br/>23:59 HKT",
+      "fee":"Taxa é necessária",
+      "financialAssistanceDetails":"Inelegível para financiamento de viagens",
+      "feeSchedule":{
+        "secondary":"100 USD",
+        "postSecondary":"120 USD",
+        "additionalCategory":"40 USD"
+      }
+    }
+  },
+  "howToJoinHeading":"Como entrar",
+  "teamLabel":"Equipe",
+  "teamExplained":"Até 6 estudantes podem se registrar em uma equipe",
+  "projectLabel":"Projeto",
+  "projectExplained":"A equipe pode apresentar mais de um projeto",
+  "categoryLabel":"Categoria",
+  "categoryExplained":"Cada projeto é inserido em uma categoria",
+  "categoriesHeading":"categorias",
+  "feeScheduleHeading":"Tabela de Taxas",
+  "applyNowCTALabel":"Aplique agora",
+  "faqHeading":"Perguntas frequentes"
+}

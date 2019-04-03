@@ -1,0 +1,68 @@
+{
+  "pageTitle":"Cadastro",
+  "seoDescription":"A Olimpíada Internacional de Blockchain (IBCOL) é uma competição multidisciplinar de design e criação. O IBCOL 2019 convida estudantes do mundo inteiro para resolver desafios reais por meio de aplicativos descentralizados (DApps).",
+  "ogImage":"static/images/ogimage.jpg",
+  "subhead":"Registro da equipe",
+  "teamInfo":"Informação da Seleção",
+  "teamName":"Nome do time",
+  "studentInfo":"Informações do estudante",
+  "studentRecords":{
+    "firstName":"Primeiro nome",
+    "lastName":"Último nome",
+    "phoneNumber":"Número de telefone",
+    "email":"O email",
+    "educationRecords":{
+      "degree":"Grau ou equivalente",
+      "programme":"Programa ou Major",
+      "yearOfGraduation":"Nome da Instituição",
+      "institutionName":"Ano da Graduação",
+      "city":"Cidade",
+      "state":"Província / Estado",
+      "countryCode":"País / Região"
+    }
+  },
+  "advisorRecords":{
+    "firstName":"Primeiro nome",
+    "lastName":"Último nome",
+    "phoneNumber":"Número de telefone",
+    "email":"O email",
+    "associationRecords":{
+      "organisationName":"Empresa / Organização",
+      "city":"Cidade",
+      "state":"Província / Estado",
+      "countryCode":"País / Região",
+      "title":"Título / Papel",
+      "sectorCode":"Industry Group",
+      "yearCommencement":"Começo",
+      "yearCessation":"Cessação"
+    }
+  },
+  "projectRecords":{
+    "name":"Nome do Projeto",
+    "projectCategoryKey":"Categoria projeto",
+    "description":"Descrição do Projeto"
+  },
+  "studentEducationInfo":"Credenciais acadêmicas",
+  "addAnotherStudent":"Adicionar outro estudante",
+  "removeStudent":"Remover Student",
+  "addAnotherStudentEducationRecord":"Adicionar outro Credencial Academic",
+  "removeStudentEducationRecord":"Remover Academic Credencial",
+  "advisorInfo":"Informações Advisor",
+  "addAnAdvisor":"Adicionar um conselheiro",
+  "addAnotherAdvisor":"Adicionar outro Advisor",
+  "removeAdvisor":"Remover Advisor",
+  "advisorAssociationInfo":"Associação Gravar",
+  "addAnotherAdvisorAssociationRecord":"Adicionar outra associação Registro",
+  "removeAdvisorAssociationRecord":"Remover Associação Gravar",
+  "projectInfo":"Informações do Projeto",
+  "removeProject":"remover o Project",
+  "addAnotherProject":"Adicionar outro projeto",
+  "submit":"Enviar",
+  "registerAnother":"Criar outro aplicativo",
+  "confirmation":{
+    "title":"Obrigado por sua inscrição.",
+    "message":"Recebemos sua inscrição. Estamos ansiosos para ler o seu whitepaper (devido 21 de abril de 2019). Por favor, não procrastine!",
+    "refTitle":"Nota de aplicação:",
+    "TteamNameTitle":"Nome do time:"
+  }
+}

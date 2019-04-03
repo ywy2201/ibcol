@@ -1,0 +1,91 @@
+{
+  "pageTitle":"Olimpíadas Internacionais de Blockchain",
+  "seoDescription":"A Olimpíada Internacional de Blockchain (IBCOL) é uma competição multidisciplinar de design e criação. O IBCOL 2019 convida estudantes do mundo inteiro para resolver desafios reais por meio de aplicativos descentralizados (DApps).",
+  "ogImage":"static/images/ogimage.jpg",
+  "mainHeading":"Ajudar a trazer o mundo para o Blockchain",
+  "subHeading":"Conhecer e competir com os melhores construtores blockchain do mundo",
+  "register":"Informações de registro",
+  "howToJoin":"Como entrar",
+  "competitionRules":"Processo de Concorrência",
+  "scroll":"Rolagem",
+  "introSection":{
+    "leftBlock":{
+      "title":"A maioria dos hackathons não produzem resultados úteis",
+      "infoList":"<li>tempo suficiente para construir projetos bem-arredondados</li><li>Projetos também e divorciada da realidade focada-tech</li><li>Nenhum incentivo para continuar a desenvolver o novo projeto</li>"
+    },
+    "rightBlock":{
+      "title":"Esta competição irá produzir resultados úteis",
+      "infoList":"<li>De agora até julho 2019 para obter algo de trabalho</li><li>abordagem multidisciplinar para aplicar blockchain</li><li>Combinando com entidades que podem levar projetos adiante</li>"
+    }
+  },
+  "timelineSection":{
+    "heading":"Processo de Concorrência",
+    "block1":{
+      "title":"Cadastro",
+      "details":"Você deve se registrar para gerenciar seu projeto"
+    },
+    "block2":{
+      "title":"Papel branco",
+      "details":"O prazo rolando é em 21 de abril"
+    },
+    "block3":{
+      "title":"Entrevista",
+      "details":"Todas as entrevistas será concluída antes de 09 de junho"
+    },
+    "block4":{
+      "title":"programa demonstrativo",
+      "details":"Os finalistas deverão preparar Prova de Conceito"
+    },
+    "block5":{
+      "title":"breu",
+      "details":"Os finalistas deverão preparar apresentação estágio"
+    },
+    "block6":{
+      "title":"Continuação",
+      "details":"Concorrentes receber estágios ou investimentos"
+    }
+  },
+  "section01":{
+      "languageTitle":"línguas",
+      "writtenLanguageLabel":"Línguas aceitáveis ​​para material escrito:",
+      "writtenLanguages":"Árabe (standard), chinês (simplificado), chinês (tradicional), Inglês, Francês, alemão, húngaro, italiano, japonês, coreano, persa, polonês, Português, Russo, Espanhol, Ucraniano",
+      "spokenLanguageLabel":"Línguas aceitáveis ​​para o material que fala:",
+      "spokenLanguages":"Árabe (Egito), Árabe (Golfo), Cantonês, Inglês, Francês, alemão, húngaro, italiano, japonês, coreano, mandarim, Persa, Polaco, Português, Russo, Espanhol, Ucraniano"
+  },
+  "section02":{
+    "heading":"Prêmios",
+    "awards":{
+      "gold":{
+        "quantity":5,
+        "title":"Medalhas de ouro",
+        "description":"1º lugar vencedor de uma categoria com 4096 prêmio de USD"
+      },
+      "silver":{
+        "quantity":5,
+        "title":"Medalhas de prata",
+        "description":"vencedor do lugar dia 2 de uma categoria com 2.048 prêmio USD"
+      },
+      "bronze":{
+        "quantity":5,
+        "title":"Medalhas de bronze",
+        "description":"vencedor do lugar 3ª de uma categoria com 1.024 prêmio USD"
+      },
+      "nominee":{
+        "quantity":15,
+        "title":"Prêmios nominator",
+        "description":"Reconhecimento de treinador da equipe pela nomeação de um time vencedor"
+      },
+      "finalist":{
+        "quantity":10,
+        "title":"Finalista Prêmios",
+        "description":"Reconhecimento de equipes por ser top 5 em uma categoria"
+      },
+      "merit":{
+        "quantity":50,
+        "title":"Prêmios de mérito",
+        "description":"Reconhecimento de equipes para a concepção de uma solução completa"
+      },
+      "note":"O melhor prêmio para os alunos não é financeiro, mas sim experiência, orientação, e uma chance de ter um impacto real no mundo real."
+    }
+  }
+}
