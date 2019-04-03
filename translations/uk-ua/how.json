@@ -1,6 +1,6 @@
 {
   "pageTitle":"Як приєднатися",
-  "seoDescription":"",
+  "seoDescription":"Міжнародна Олімпіада з Блокчейну (IBCOL) - це мультидисциплінарний конкурс з розробки та дизайну програмних рішень на основі технології блокчейн. IBCOL 2019 запрошує студентів з усього світу до вирішення реальних завдань через децентралізовані програми.",
   "ogImage":"static/images/ogimage.jpg",
   "subhead":"Реєстрація на Олімпіаду з Блокчейну 2019",
   "eligibility":"критерії прийнятності",
@@ -13,7 +13,7 @@
     "toLabel":"До",
     "feeLabel":"Реєстрація",
     "financialAssistanceLabel":"Фінансування",
-    "viewMoreLabel":"",
+    "viewMoreLabel":"серветки для більш",
     "secondaryLabel":"Учні старших класів",
     "postSecondaryLabel":"Учень вищого навчального закладу або технікуму.",
     "additionalCategoryLabel":"Для кожної додаткової категорії",
@@ -25,9 +25,9 @@
       "fee":"Плата не стягується",
       "financialAssistanceDetails":"Право на субсидії для поїздки",
       "feeSchedule":{
-        "secondary":"",
-        "postSecondary":"",
-        "additionalCategory":""
+        "secondary":"40 USD",
+        "postSecondary":"50 USD",
+        "additionalCategory":"16 USD"
       }
     },
     "earlyBird":{
@@ -37,9 +37,9 @@
       "fee":"Плата не стягується",
       "financialAssistanceDetails":"Ті хто не мають права на субсидії для поїздки",
       "feeSchedule":{
-        "secondary":"",
-        "postSecondary":"",
-        "additionalCategory":""
+        "secondary":"50 USD",
+        "postSecondary":"60 USD",
+        "additionalCategory":"20 USD"
       }
     },
     "regular":{
@@ -49,9 +49,9 @@
       "fee":"Потрібна оплата",
       "financialAssistanceDetails":"Ті хто не мають права на субсидії для поїздки",
       "feeSchedule":{
-        "secondary":"",
-        "postSecondary":"",
-        "additionalCategory":""
+        "secondary":"100 USD",
+        "postSecondary":"120 USD",
+        "additionalCategory":"40 USD"
       }
     }
   },
@@ -64,5 +64,5 @@
   "categoryExplained":"Кожен проект приєднується до певної категорії",
   "categoriesHeading":"Категорії",
   "feeScheduleHeading":"Графік платежів",
-  "applyNowCTALabel":""
+  "applyNowCTALabel":"Подати зараз"
 }
