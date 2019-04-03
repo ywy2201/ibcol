@@ -19,30 +19,30 @@
     }
   },
   "timelineSection":{
-    "heading":"",
+    "heading":"Verseny folyamata",
     "block1":{
-      "title":"Regisztrálás",
-      "details":"ápr. 21-ig"
+      "title":"Jelentkezés",
+      "details":"Regisztrálnia kell irányítani a projekt"
     },
     "block2":{
-      "title":"",
-      "details":""
+      "title":"Fehér papír",
+      "details":"A gördülő határidő április 21-én"
     },
     "block3":{
-      "title":"",
-      "details":""
+      "title":"Interjú",
+      "details":"Minden interjú hamarabb, június 9"
     },
     "block4":{
-      "title":"",
-      "details":""
+      "title":"Demó",
+      "details":"A döntősök elkészíti Proof of Concept"
     },
     "block5":{
-      "title":"",
-      "details":""
+      "title":"Hangmagasság",
+      "details":"A döntősök elkészít szakaszban bemutatása"
     },
     "block6":{
-      "title":"",
-      "details":""
+      "title":"Folytatás",
+      "details":"A versenyzők kapnak szakmai vagy befektetési"
     }
   },
   "section01":{
