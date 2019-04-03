@@ -1,0 +1,28 @@
+{
+  "sectors":{
+    "1010":"Energia",
+    "1510":"Materiali",
+    "2010":"Beni strumentali",
+    "2020":"Servizi commerciali e professionali",
+    "2030":"Trasporto",
+    "2510":"Automezzi e componenti",
+    "2520":"Prodotti durevoli e tessili",
+    "2530":"Servizi al consumatore",
+    "2540":"Mezzi di comunicazione",
+    "2550":"Vendita al dettaglio",
+    "3010":"Vendita al dettaglio di alimenti e beni di prima necessità",
+    "3020":"Alimenti, bevande e tabacco",
+    "3030":"Prodotti per la casa e l'igiene personale",
+    "3510":"Attrezzature e servizi sanitari",
+    "3520":"Farmaceutica, Biotecnologie e Scienze biogiche",
+    "4010":"Banche",
+    "4020":"Prodotti e servizi finanziari diversificati",
+    "4030":"Assicurazioni",
+    "4510":"Software e servizi",
+    "4520":"Tecnologia hardware e apparecchiature",
+    "4530":"Semiconduttori e apparecchiature con semiconduttori",
+    "5010":"Servizi di telecomunicazione",
+    "5510":"Servizi di pubblica utilità",
+    "6010":"Investimento immobiliare"
+  }
+}

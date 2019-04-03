@@ -1,11 +1,11 @@
 {
-  "pageTitle":"",
-  "seoDescription":"",
+  "pageTitle":"Embajadores de la escuela",
+  "seoDescription":"La Olimpiada Internacional de Blockchain (IBCOL) es un concurso multidisciplinar de diseño y creación. IBCOL 2019 invita a estudiantes de todo el mundo a resolver desafíos del mundo real a través de aplicaciones descentralizadas.",
   "ogImage":"static/images/ogimage.jpg",
-  "subhead":"",
-  "schoolAmbassadorsTitle":"",
-  "schoolAmbassadorsDescriptions":"",
-  "applyAmbassadorsLabel":"",
+  "subhead":"Relación con los alumnos para el 2019 Internacional Blockchain Olimpiada",
+  "schoolAmbassadorsTitle":"Embajadores de la escuela",
+  "schoolAmbassadorsDescriptions":"embajadores escolares representan IBCOL 2019 en sus campus",
+  "applyAmbassadorsLabel":"Aplicar para ser un embajador de la escuela IBCOL",
   "schoolAmbassadors":[
     {"flag":"flag-icon-hu","countryCode":"hu","title":"Budapest Metropolitan University (METU)","ambassadors":[
       {"name":"Viktor Tabori","email":"viktor.tabori@ibcol.org"}
@@ -74,14 +74,14 @@
       {"name":"Marina Danylyuk","email":"marina.danylyuk@ibcol.org"}
     ]}
   ],
-  "schoolAmbassadorProgrammeTitle":"",
-  "schoolAmbassadorProgrammeDescription":"",
-  "responsibilitiesTitle":"",
-  "responsibilities":["Promote the International Blockchain Olympiad on campus","Recruit interested students on campus","Take lead and be the point of contact between interested applicants and registered participants","Arrange with student organisations or faculty or department for subsidies","Organise events for preparing students to compete in IBCOL 2019, such as team formation, blockchain training, and general promotion","Act in the best interest of the International Blockchain Olympiad"],
-  "perksTitle":"",
-  "perks":["Gain valuable experience and insights into the enterprise, government, and blockchain worlds","1 free course (DC3) issued by the Hong Kong Blockchain Society (Value: 2000 USD)","School Ambassador Certificate issued by the International Blockchain Olympiad","Entitled to 10% discount on admission to IBCOL 2019 (Value up to 2000 USD - includes full 2-day access to tech expo, fireside chats, keynote luncheons, and networking sessions), for each referred team. For example, 3 referred teams is 30%, 7 referred teams is 70% off, 10 or more is 100% off, i.e. free ticket."],
-  "applyNowButtonLabel":"",
-  "comingSoonButtonLabel":"",
-  "financialAssistanceTitle":"",
-  "financialAssistanceDescription":""
+  "schoolAmbassadorProgrammeTitle":"Programa de Embajadores de la escuela",
+  "schoolAmbassadorProgrammeDescription":"Tienen una pasión para las competiciones de la tecnología, la innovación, o el estudiante? Tomar parte en la construcción de la primera Olimpiada Internacional Blockchain! Buscamos embajadores escolares para promover IBCOL 2019 en su campus local.",
+  "responsibilitiesTitle":"Responsabilidades",
+  "responsibilities":["Promover la Blockchain Olimpiada Internacional en el campus","Reclutar a los estudiantes interesados ​​en el campus","Tome ventaja y ser el punto de contacto entre los candidatos interesados ​​y participantes registrados","Arreglos con organizaciones de estudiantes o profesores o departamento para los subsidios","Organizar eventos para la preparación de los estudiantes para competir en IBCOL 2019, tales como la formación de equipos, formación blockchain y promoción general","Actuar en el mejor interés de la Olimpiada Internacional de Blockchain"],
+  "perksTitle":"Ventajas",
+  "perks":["Adquirir una valiosa experiencia y conocimientos sobre la empresa, el gobierno y mundos blockchain","1 curso gratuito (DC3) emitidas por la Sociedad Blockchain Hong Kong (Valor: 2 000 USD)","Certificado Embajador escuela emitida por el Blockchain Olimpiada Internacional","Derecho a un 10% de descuento en la entrada a IBCOL 2019 (Valor hasta 2000 USD - incluye el acceso completo de 2 días a la expo de tecnología, charlas, almuerzos magistrales y sesiones de networking), para cada equipo referido. Por ejemplo, 3 referidos equipos es 30%, 7 referidos equipos es de 70% de, 10 o más es 100% de descuento, es decir billete gratuito."],
+  "applyNowButtonLabel":"Aplica ya",
+  "comingSoonButtonLabel":"Próximamente",
+  "financialAssistanceTitle":"Opciones de asistencia financiera",
+  "financialAssistanceDescription":"Los candidatos son evaluados sobre una base caso por caso, sin ninguna relación con los resultados reales de la competencia. Los estudiantes pueden solicitar subvenciones para reducir la carga financiera de participar en IBCOL 2019, tales como el costo de la entrada, viajar al evento principal en Hong Kong, y ayuda a la vivienda, mientras que en Hong Kong. Solamente elegibles para los solicitantes de registro antes del 1 de Feb."
 }

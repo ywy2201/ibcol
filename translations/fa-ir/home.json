@@ -19,30 +19,30 @@
     }
   },
   "timelineSection":{
-    "heading":"",
+    "heading":"فرآیند مسابقه",
     "block1":{
-      "title":"",
-      "details":"Until April 21st"
+      "title":"ثبت",
+      "details":"شما باید ثبت نام برای مدیریت پروژه خود را"
     },
     "block2":{
-      "title":"",
-      "details":""
+      "title":"کاغذ سفید",
+      "details":"آخرین مهلت آلیاژها است در تاریخ 21 آوریل"
     },
     "block3":{
-      "title":"",
-      "details":""
+      "title":"مصاحبه",
+      "details":"تمام مصاحبه ها خواهد شد قبل از ژوئن 9 به پایان رسید"
     },
     "block4":{
-      "title":"",
-      "details":""
+      "title":"نسخه ی نمایشی",
+      "details":"فینالیست باید اثبات مفهوم آماده"
     },
     "block5":{
-      "title":"",
-      "details":""
+      "title":"گام صدا",
+      "details":"فینالیست باید ارائه مرحله آماده"
     },
     "block6":{
-      "title":"",
-      "details":""
+      "title":"ادامه",
+      "details":"رقبای دریافت کارآموزی و یا سرمایه گذاری"
     }
   },
   "section01":{

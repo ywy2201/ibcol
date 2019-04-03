@@ -1,9 +1,9 @@
 {
-  "pageTitle":"",
-  "seoDescription":"",
+  "pageTitle":"nos commanditaires",
+  "seoDescription":"L’Olympiade internationale de Blockchain (IBCOL) est un concours multidisciplinaire de conception et de construction. IBCOL 2019 invite les étudiants du monde entier à résoudre des problèmes concrets grâce à des applications décentralisées.",
   "ogImage":"static/images/ogimage.jpg",
-  "subhead":"",
-  "sponsorsTitle":"",
+  "subhead":"Sponsors et Supporters de l'Internationale Blockchain Olympiade 2019",
+  "sponsorsTitle":"sponsors",
   "sponsors":[
     {"name":"Cardano","url":"https://www.cardano.org","logo":"/static/images/logo-cardano.png","description":"<b>Cardano</b> is a decentralised public blockchain and cryptocurrency project and is fully open sourced. Cardano is developing a smart contract platform which seeks to deliver more advanced features than any protocol previously developed. Cardano is represented by Emurgo HK."},
     {"name":"EmurgoHK","url":"https://emurgohk.io","logo":"/static/images/logo-emurgohk.png","description":"<b>EMURGO HK</b> is the venture builder for the Cardano blockchain protocol. And now we're in Hong Kong. Located in one of the world's most dynamic business hubs, and perfectly positioned between Northeast and Southeast Asia, EmurgoHK is spreading the revolutionary Cardano protocol across the Pacific Rim."},
@@ -11,7 +11,7 @@
     {"name":"CredProof","url":"http://www.credproof.net/","logo":"/static/images/logo-credproof.png","description":"<b>CredProof</b> is an identity proofing and credential verification service for academic, employment, and other instances where trusted authentication is required between trustless parties in a private and secure manner in accordance to the EU GDPR."},
     {"name":"R3","url":"https://www.r3.com/","logo":"/static/images/logo-r3.png","description":"<b>R3</b> is an enterprise blockchain software firm working with a broad ecosystem of more than 300 members and partners across multiple industries from both the private and public sectors to develop on open-source blockchain platform <b>Corda</b>."}
   ],
-  "supportingOrganisationsTitle":"",
+  "supportingOrganisationsTitle":"organisations de soutien",
   "supportingOrganisations":[
     {"name":"Hong Kong Blockchain Society (HKBCS)","url":"http://www.hkbcs.org","logo":"/static/images/logo-hong-kong-blockchain-society-(hkbcs).png","description":"<b>The Hong Kong Blockchain Society</b> promotes sustainable and mature of the blockchain ecosystem. HKBCS encourages and supports projects that are legal and compliant in Hong Kong and the surrounding region."},
     {"name":"Hong Kong Science Park (HKSTP)","url":"https://www.hkstp.org","logo":"/static/images/logo-hong-kong-science-park-(hkstp).png","description":"<b>Hong Kong Science Park</b> is dedicated to building a vibrant innovation and technology ecosystem to connect stakeholders, nurture technology talents, facilitate collaboration, and catalyse innovations to deliver social and economic benefits to Hong Kong and the region."},
@@ -26,5 +26,5 @@
     {"name":"Moscow State University (MSU), Faculty of Law","url":"http://law.msu.ru/","logo":"/static/images/logo-moscow-state-university-(msu),-faculty-of-law.png","description":"The <b>Law School of Moscow State University</b> is Russia’s leading educational and legal research institution. The school merges in its work the classical academic culture and the latest requirements of the job market. It is for a reason that the school’s motto is <i>Traditions and development</i>. About 3,000 students and postgrads study at the school."},
     {"name":"Future Pre-employment Planning (Shenzhen)","url":"#","logo":"/static/images/logo-future-pre-employment-planning-(shenzhen).png","description":"<b>FPP</b> empowers students to discover their true passion and career interest and equip them with professional competencies, so they can ultimately pursue a personally-rewarding career and make a positive impact on society, by offering online and offline individualized solutions that fill the gap between theoretical classroom learning and practical skillsets needed in the employment market."}
   ],
-  "prompt":""
+  "prompt":"Si votre organisation est intéressée à soutenir la Blockchain Olympiade internationale, s'il vous plaît contacter sponsors@ibcol.org"
 }

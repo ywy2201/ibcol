@@ -1,13 +1,13 @@
 {
-  "pageTitle":"",
-  "seoDescription":"",
+  "pageTitle":"Contacteaza-ne",
+  "seoDescription":"Olimpiada Internațională de Blockchain este o competiție multidisciplinară de design si inginerie. IBCOL 2019 invită studenții din toată lumea să rezolve provocări reale, prin aplicații de-centralizate.",
   "ogImage":"static/images/ogimage.jpg",
-  "subhead":"",
-  "mailingAddressTitle":"",
-  "emailAddressTitle":"",
-  "mailingAddressHTML":"",
-  "generalEnquiriesLabel":"",
+  "subhead":"Contactați organizatorii 2019 Internațional Blockchain Olimpiadă",
+  "mailingAddressTitle":"Adresa postala",
+  "emailAddressTitle":"Adresa de email",
+  "mailingAddressHTML":"<br/> IBCOL Comitetul de OrganizareInternational Blockchain olimpiada <br/>333A, 3 / F, Core Building 2, <br/>1W Science Park Avenue, <br/>Hong Kong",
+  "generalEnquiriesLabel":"Intrebari generale",
   "generalEnquiriesEmail":"info@ibcol.org",
-  "sponsorshipLabel":"",
+  "sponsorshipLabel":"Sponsorizare",
   "sponsorshipEmail":"sponsorship@ibcol.org"
 }

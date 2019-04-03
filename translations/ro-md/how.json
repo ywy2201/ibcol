@@ -3,13 +3,17 @@
   "seoDescription":"Olimpiada Internațională de Blockchain este o competiție multidisciplinară de design si inginerie. IBCOL 2019 invită studenții din toată lumea să rezolve provocări reale, prin aplicații de-centralizate.",
   "ogImage":"static/images/ogimage.jpg",
   "subhead":"Înregistrare pentru Olimpiada Internațională de Blockchain",
+  "eligibility":"Criterii de eligibilitate",
+  "eligibilityGeneral":"Un student este definit ca o persoană înscrisă într-o stare bună, la o instituție academică secundară sau post-secundar recunoscut, sau în cazul în care a absolvit-o instituție academică secundar sau post-secundar recunoscut în ultimii 2 ani.",
+  "eligibilityCategory":"Studenții sunt clasificate ca studenții din învățământul secundar sau post-secundare, pe baza documentelor de identitate student la momentul înregistrării.",
+  "eligibilityTeam":"Elevii pot fi înregistrate numai la o singură echipă; în cazul în care un student este implicat cu o echipă, alta decât propria lor, ei ar fi considerat un consilier care alta echipa, si un concurent pentru echipa lor primară.",
   "whenToJoinHeading":"Când vrei să te înregistrezi",
   "plans":{
     "fromLabel":"Din",
     "toLabel":"Până în",
     "feeLabel":"Înregistrare",
     "financialAssistanceLabel":"Asistență financiară",
-    "viewMoreLabel":"",
+    "viewMoreLabel":"glisează pentru mai multe",
     "secondaryLabel":"Școala gimnazială",
     "postSecondaryLabel":"Liceu",
     "additionalCategoryLabel":"Pentru fiecare categorie adițională",
@@ -21,9 +25,9 @@
       "fee":"Fără taxă",
       "financialAssistanceDetails":"Eligibil pentru subvenții la transport",
       "feeSchedule":{
-        "secondary":"",
-        "postSecondary":"",
-        "additionalCategory":""
+        "secondary":"40 USD",
+        "postSecondary":"50 USD",
+        "additionalCategory":"16 USD"
       }
     },
     "earlyBird":{
@@ -33,9 +37,9 @@
       "fee":"Fără taxă",
       "financialAssistanceDetails":"Ineligibil pentru subvenții la transport",
       "feeSchedule":{
-        "secondary":"",
-        "postSecondary":"",
-        "additionalCategory":""
+        "secondary":"50 USD",
+        "postSecondary":"60 USD",
+        "additionalCategory":"20 USD"
       }
     },
     "regular":{
@@ -45,9 +49,9 @@
       "fee":"Cu taxă",
       "financialAssistanceDetails":"Ineligibil pentru subvenții la transport",
       "feeSchedule":{
-        "secondary":"",
-        "postSecondary":"",
-        "additionalCategory":""
+        "secondary":"100 USD",
+        "postSecondary":"120 USD",
+        "additionalCategory":"40 USD"
       }
     }
   },
@@ -60,5 +64,6 @@
   "categoryExplained":"Fiecare proiect aparține unei categorii",
   "categoriesHeading":"Categoriile",
   "feeScheduleHeading":"Tarife",
-  "applyNowCTALabel":"Aplică acum"
+  "applyNowCTALabel":"Aplică acum",
+  "faqHeading":"FAQ"
 }

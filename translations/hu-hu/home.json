@@ -1,91 +1,91 @@
 {
-  "pageTitle":"",
-  "seoDescription":"",
+  "pageTitle":"Nemzetközi Blockchain Diákolimpia",
+  "seoDescription":"A Nemzetközi Blockchain Diákolimpia egy multidiszciplináris verseny, ahol a tervezés és kivitelezés van középpontban. Az IBCOL 2019 a világ minden tájáról várja a diákokat, hogy olyan decentralizált alkalamzások szülessenek, amik valós problémákat oldanak meg.",
   "ogImage":"static/images/ogimage.jpg",
   "mainHeading":"Segítsd át a világot Blockchainre",
   "subHeading":"Találkozz és versenyezz a világ legjobb blockchain építővel",
-  "register":"Jelentkezés",
-  "howToJoin":"",
-  "competitionRules":"",
-  "scroll":"",
+  "register":"Jelentkezési információ",
+  "howToJoin":"Hogyan jelentkezz",
+  "competitionRules":"Verseny folyamata",
+  "scroll":"Lapozás",
   "introSection":{
     "leftBlock":{
-      "title":"A legtöbb hackathonnak nincs hasznos eredménye",
-      "infoList":"<li>Kevés az idő letisztult projektet létrehozni</li><li>Túlságosan techno-fókuszú projektek, amik el vannak rugaszkodva a valóságtól</li><li>Nincs ösztönzés a projekt folytatására</li>"
+      "title":"A legtöbb hackathonnak nincs valós eredménye",
+      "infoList":"<li>Kevés az idő letisztult projektet létrehozni</li><li>Túlságosan technológia fókuszú projektek, amik el vannak rugaszkodva a valóságtól</li><li>Nincs ösztönzés a projekt folytatására</li>"
     },
     "rightBlock":{
-      "title":"Ebből a versenyből hasznos eredmények fognak születni",
+      "title":"Itt valós és hasznos eredmények fognak születni",
       "infoList":"<li>2019 Júliusáig van időd (mostantól), hogy valami működőt alkoss</li><li>Multidiszciplináris megközelítés a blokkchain használatához</li><li>Összekötés olyan szereplőkkel, akik segíteni tudják a projekteket</li>"
     }
   },
   "timelineSection":{
-    "heading":"",
+    "heading":"Verseny folyamata",
     "block1":{
-      "title":"Regisztrálás",
-      "details":"ápr. 21-ig"
+      "title":"Jelentkezés",
+      "details":"Regisztrálnia kell irányítani a projekt"
     },
     "block2":{
-      "title":"",
-      "details":""
+      "title":"Fehér papír",
+      "details":"A gördülő határidő április 21-én"
     },
     "block3":{
-      "title":"",
-      "details":""
+      "title":"Interjú",
+      "details":"Minden interjú hamarabb, június 9"
     },
     "block4":{
-      "title":"",
-      "details":""
+      "title":"Demó",
+      "details":"A döntősök elkészíti Proof of Concept"
     },
     "block5":{
-      "title":"",
-      "details":""
+      "title":"Hangmagasság",
+      "details":"A döntősök elkészít szakaszban bemutatása"
     },
     "block6":{
-      "title":"",
-      "details":""
+      "title":"Folytatás",
+      "details":"A versenyzők kapnak szakmai vagy befektetési"
     }
   },
   "section01":{
-      "languageTitle":"",
-      "writtenLanguageLabel":"",
-      "writtenLanguages":"",
-      "spokenLanguageLabel":"",
-      "spokenLanguages":""
+      "languageTitle":"Nyelvek",
+      "writtenLanguageLabel":"Írásos anyagok elfogadott nyelvei:",
+      "writtenLanguages":"Arab (standard), kínai (egyszerűsített), kínai (hagyományos), angol, francia, német, magyar, olasz, japán, koreai, perzsa, lengyel, portugál, orosz, spanyol, ukrán",
+      "spokenLanguageLabel":"Szóbeli anyagot elfogadott nyelvei:",
+      "spokenLanguages":"Arab (Egyiptom), arab (Gulf), kantoni, angol, francia, német, magyar, olasz, japán, koreai, mandarin, perzsa, lengyel, portugál, orosz, spanyol, ukrán"
   },
   "section02":{
-    "heading":"",
+    "heading":"Díjak",
     "awards":{
       "gold":{
         "quantity":5,
-        "title":"",
-        "description":""
+        "title":"Aranyérmek",
+        "description":"Kategóriák 1. helyezettjei: 4,096 USD díj"
       },
       "silver":{
         "quantity":5,
-        "title":"",
-        "description":""
+        "title":"Ezüstérem",
+        "description":"Kategóriák 2. helyezettjei: 2,048 USD díj"
       },
       "bronze":{
         "quantity":5,
-        "title":"",
-        "description":""
+        "title":"Bronzérem",
+        "description":"Kategóriák 3. helyezettjei: 1,024 USD díj"
       },
       "nominee":{
         "quantity":15,
-        "title":"",
-        "description":""
+        "title":"Jelölő díjak",
+        "description":"Elismerés a csapat edzőjének a győztes csapat jelöléséért"
       },
       "finalist":{
         "quantity":10,
-        "title":"",
-        "description":""
+        "title":"Döntős Díjak",
+        "description":"Elismerése a csapatoknak a kategóriákon belüli top 5 helyezés eléréséért"
       },
       "merit":{
         "quantity":50,
-        "title":"",
-        "description":""
+        "title":"Érdem díjak",
+        "description":"Elismerés a csapatoknak egy teljes megoldás megtervezéséért"
       },
-      "note":""
+      "note":"A \"diákoknak járó legjobb díj\" nem pénzügyi, hanem tapasztalatot és útmutatást von magával, illetve lehetőséget, hogy egy valódi hatása legyen a valós világban."
     }
   }
 }

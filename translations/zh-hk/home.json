@@ -19,30 +19,30 @@
     }
   },
   "timelineSection":{
-    "heading":"比賽流程",
+    "heading":"比賽過程",
     "block1":{
-      "title":"登記",
-      "details":"直到4月21日"
+      "title":"參加",
+      "details":"您必須註冊才能管理項目"
     },
     "block2":{
       "title":"白皮書",
-      "details":"白皮書<br/>需於4月21日或之前<br/>通過網上提交"
+      "details":"滾動截止日期為4月21日"
     },
     "block3":{
       "title":"訪問",
-      "details":"通過電話會議面試<br/>五月及六月舉行"
+      "details":"所有的採訪將6月9日之前完成"
     },
     "block4":{
       "title":"模擬示範",
-      "details":"七月期間<br/>在科技博覽會<br/>模擬示範"
+      "details":"入圍者應準備概念驗證"
     },
     "block5":{
       "title":"開幕",
-      "details":"7月<br/>在舞台上<br/>正式開幕"
+      "details":"入圍者應準備登台演講"
     },
     "block6":{
       "title":"延續",
-      "details":"七月後<br/>通過加速器繼續"
+      "details":"參賽者獲得實習或投資"
     }
   },
   "section01":{

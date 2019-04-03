@@ -1,0 +1,91 @@
+{
+  "pageTitle":"Olimpiadi internazionali di Blockchain",
+  "seoDescription":"Internazionale Blockchain Olimpiade è un disegno e la costruzione di concorso multidisciplinare. IBCOL 2019 invita gli studenti di tutto il mondo per risolvere le sfide del mondo reale attraverso le applicazioni decentralizzate.",
+  "ogImage":"static/images/ogimage.jpg",
+  "mainHeading":"Contribuire a portare il mondo sul Blockchain",
+  "subHeading":"Incontra e competere con migliori costruttori blockchain del mondo",
+  "register":"registrazione Info",
+  "howToJoin":"Come partecipare",
+  "competitionRules":"processo di concorrenza",
+  "scroll":"Scorrere",
+  "introSection":{
+    "leftBlock":{
+      "title":"La maggior parte dei hackathons non producono risultati utili",
+      "infoList":"<li>Tempo insufficiente per costruire progetti a tutto tondo</li><li>Progetti troppo tech-concentrati e avulsa dalla realtà</li><li>Nessun incentivo a continuare a sviluppare il nuovo progetto</li>"
+    },
+    "rightBlock":{
+      "title":"Questo concorso produrrà risultati utili",
+      "infoList":"<li>Da oggi fino al luglio 2019 per ottenere qualcosa di lavoro</li><li>Approccio multidisciplinare per l'applicazione blockchain</li><li>Abbinamento con le entità che possono prendere i progetti in avanti</li>"
+    }
+  },
+  "timelineSection":{
+    "heading":"processo di concorrenza",
+    "block1":{
+      "title":"Registrazione",
+      "details":"È necessario registrarsi per gestire il vostro progetto"
+    },
+    "block2":{
+      "title":"Carta bianca",
+      "details":"Il termine di rotolamento è il 21 Aprile"
+    },
+    "block3":{
+      "title":"Colloquio",
+      "details":"Tutte le interviste saranno finiti prima del 9 giugno"
+    },
+    "block4":{
+      "title":"dimostrazione",
+      "details":"Finalisti prepara Proof of Concept"
+    },
+    "block5":{
+      "title":"Intonazione",
+      "details":"Finalisti prepara presentazione palco"
+    },
+    "block6":{
+      "title":"continuazione",
+      "details":"I concorrenti ricevono stage o investimenti"
+    }
+  },
+  "section01":{
+      "languageTitle":"Le lingue",
+      "writtenLanguageLabel":"Lingue accettabili per materiale scritto:",
+      "writtenLanguages":"Arabica (standard), cinese (semplificato), cinese (tradizionale), inglese, francese, tedesco, ungherese, italiano, giapponese, coreano, persiano, polacco, portoghese, russo, spagnolo, ucraino",
+      "spokenLanguageLabel":"Lingue accettabili per materiale parlato:",
+      "spokenLanguages":"Arabo (Egitto), arabo (Golfo), cantonese, inglese, francese, tedesco, ungherese, italiano, giapponese, coreano, mandarino, persiano, polacco, portoghese, russo, spagnolo, ucraino"
+  },
+  "section02":{
+    "heading":"Premi",
+    "awards":{
+      "gold":{
+        "quantity":5,
+        "title":"Medaglie d'oro",
+        "description":"1 ° posto vincitore di un categoria con 4096 dollari premio"
+      },
+      "silver":{
+        "quantity":5,
+        "title":"Medaglie d'argento",
+        "description":"2 ° posto vincitore di un categoria con 2.048 USD premio"
+      },
+      "bronze":{
+        "quantity":5,
+        "title":"Medaglie di bronzo",
+        "description":"3 ° posto vincitore di un categoria con 1.024 USD premio"
+      },
+      "nominee":{
+        "quantity":15,
+        "title":"Premi nominator",
+        "description":"Il riconoscimento di allenatore della nomina di un team vincente"
+      },
+      "finalist":{
+        "quantity":10,
+        "title":"Finalista Premi",
+        "description":"Riconoscimento delle squadre per essere top 5 in una categoria"
+      },
+      "merit":{
+        "quantity":50,
+        "title":"Merit Awards",
+        "description":"Il riconoscimento di squadre per la progettazione di una soluzione completa"
+      },
+      "note":"Il miglior premio per gli studenti non è finanziaria, ma piuttosto l'esperienza, la guida e la possibilità di avere un impatto reale nel mondo reale."
+    }
+  }
+}
