@@ -22,27 +22,27 @@
     "heading":"대회 과정",
     "block1":{
       "title":"참가 신청",
-      "details":"4월 21일까지"
+      "details":"당신은 당신의 프로젝트를 관리하기 위해 등록해야"
     },
     "block2":{
-      "title":"",
-      "details":"4월 21일 백서 <br/>온라인 접수 마감"
+      "title":"백지",
+      "details":"롤링 마감 4 월 21 일입니다"
     },
     "block3":{
-      "title":"",
-      "details":"5월 & 6월 <br/>화상회의 인터뷰"
+      "title":"회견",
+      "details":"모든 인터뷰는 6월 9일 전에 완료됩니다"
     },
     "block4":{
-      "title":"",
-      "details":"테크 엑스포에서 <br/>7월 시범"
+      "title":"데모",
+      "details":"최종 후보는 개념의 증명을 작성한다"
     },
     "block5":{
-      "title":"",
-      "details":"7월 발표"
+      "title":"피치",
+      "details":"최종 후보는 단계 프리젠 테이션을 작성한다"
     },
     "block6":{
-      "title":"",
-      "details":"엑셀러레이터 <br/>(Accelerator)와 <br/>7월 이후 계속 진행"
+      "title":"계속",
+      "details":"참가자는 인턴이나 투자를받을"
     }
   },
   "section01":{
