@@ -4,10 +4,10 @@
   "ogImage":"static/images/ogimage.jpg",
   "mainHeading":"Ajută lumea sa treacă pe Blockchain",
   "subHeading":"Întâlnește-te și concurează cu cei mai buni ingineri Blockchain",
-  "register":"Înregistrează-te",
+  "register":"Informații pentru înregistrare",
   "howToJoin":"Cum să te înregistrezi",
   "competitionRules":"Procesul",
-  "scroll":"",
+  "scroll":"Sul",
   "introSection":{
     "leftBlock":{
       "title":"Cele mai multe hackatoane nu produc rezultate utile",
@@ -46,46 +46,46 @@
     }
   },
   "section01":{
-      "languageTitle":"",
-      "writtenLanguageLabel":"",
-      "writtenLanguages":"",
-      "spokenLanguageLabel":"",
-      "spokenLanguages":""
+      "languageTitle":"Limbile",
+      "writtenLanguageLabel":"Limbile acceptate pentru materiale scrise:",
+      "writtenLanguages":"Arabă (standard), chineză (simplificată), chineză (tradițională), engleză, franceză, germană, maghiară, italiană, japoneză, coreeană, persană, poloneză, portugheză, rusă, spaniolă, ucraineană",
+      "spokenLanguageLabel":"Limbile acceptate pentru materiale vorbite:",
+      "spokenLanguages":"Arabă (Egipt), Arabă (Gulf), cantoneză, engleză, franceză, germană, maghiară, italiană, japoneză, coreeană, mandarină, persană, poloneză, portugheză, rusă, spaniolă, ucraineană"
   },
   "section02":{
-    "heading":"",
+    "heading":"Premii",
     "awards":{
       "gold":{
         "quantity":5,
-        "title":"",
-        "description":""
+        "title":"Medalii de aur",
+        "description":"Câștigător locul 1 dintr-o categorie cu premiu 4096 USD"
       },
       "silver":{
         "quantity":5,
-        "title":"",
-        "description":""
+        "title":"Medalii de argint",
+        "description":"Doilea câștigător locul unei categorii cu premiu 2048 USD"
       },
       "bronze":{
         "quantity":5,
-        "title":"",
-        "description":""
+        "title":"Medalii de bronz",
+        "description":"Treilea câștigător locul unei categorii cu premiu 1024 USD"
       },
       "nominee":{
         "quantity":15,
-        "title":"",
-        "description":""
+        "title":"Premiile Propunatorul",
+        "description":"Recunoașterea antrenorului echipei pentru desemnarea unei echipe câștigătoare"
       },
       "finalist":{
         "quantity":10,
-        "title":"",
-        "description":""
+        "title":"finalist Premii",
+        "description":"Recunoașterea echipelor de top 5 pentru a fi într-o categorie"
       },
       "merit":{
         "quantity":50,
-        "title":"",
-        "description":""
+        "title":"Premii de merit",
+        "description":"Recunoașterea echipelor pentru proiectarea unei soluții complete"
       },
-      "note":""
+      "note":"Cel mai bun premiu pentru studenți nu este de natură financiară, ci mai degrabă o experiență, de orientare, și o șansă de a face un impact real în lumea reală."
     }
   }
 }
