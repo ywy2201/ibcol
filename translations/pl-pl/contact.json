@@ -1,7 +1,7 @@
 {
   "pageTitle":"Skontaktuj się z nami",
   "seoDescription":"Miedzynarodowa Olimpiada Blockchain (IBCOL) to wielotematyczny konkurs projektow budowlamych. IBCOL zaprasza studentow z calego swiata do rozwiazania realnych zadan poprzez zdecentralizowane aplikacje.",
-  "ogImage":"../../static/images/ogimage.jpg",
+  "ogImage":"static/images/ogimage.jpg",
   "subhead":"Skontaktować się z organizatorami Olimpiady 2019 Międzynarodowego Blockchain",
   "mailingAddressTitle":"Adres pocztowy",
   "emailAddressTitle":"E-mail",

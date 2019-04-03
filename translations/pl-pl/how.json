@@ -1,7 +1,7 @@
 {
   "pageTitle":"Jak dołączyć",
   "seoDescription":"Miedzynarodowa Olimpiada Blockchain (IBCOL) to wielotematyczny konkurs projektow budowlamych. IBCOL zaprasza studentow z calego swiata do rozwiazania realnych zadan poprzez zdecentralizowane aplikacje.",
-  "ogImage":"../../static/images/ogimage.jpg",
+  "ogImage":"static/images/ogimage.jpg",
   "subhead":"Zapisy na 2019 Międzynarodowej Olimpiadzie Blockchain",
   "eligibility":"Kryteria kwalifikacji",
   "eligibilityGeneral":"Student definiuje się jako osobę zapisaną w dobrej kondycji w uznanej średnim lub policealnym instytucji akademickiej, czy ukończył z uznanych średnim lub policealnym instytucji akademickiej w ciągu ostatnich 2 lat.",

@@ -1,7 +1,7 @@
 {
   "pageTitle":"Ambasadorzy szkolne",
   "seoDescription":"Miedzynarodowa Olimpiada Blockchain (IBCOL) to wielotematyczny konkurs projektow budowlamych. IBCOL zaprasza studentow z calego swiata do rozwiazania realnych zadan poprzez zdecentralizowane aplikacje.",
-  "ogImage":"../../static/images/ogimage.jpg",
+  "ogImage":"static/images/ogimage.jpg",
   "subhead":"Relacje studentów na 2019 Międzynarodowej Olimpiadzie Blockchain",
   "schoolAmbassadorsTitle":"Ambasadorzy szkolne",
   "schoolAmbassadorsDescriptions":"Ambasadorowie szkolne stanowią IBCOL 2019 na swoich uczelniach",

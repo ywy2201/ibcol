@@ -1,7 +1,7 @@
 {
   "pageTitle":"nasi sponsorzy",
   "seoDescription":"Miedzynarodowa Olimpiada Blockchain (IBCOL) to wielotematyczny konkurs projektow budowlamych. IBCOL zaprasza studentow z calego swiata do rozwiazania realnych zadan poprzez zdecentralizowane aplikacje.",
-  "ogImage":"../../static/images/ogimage.jpg",
+  "ogImage":"static/images/ogimage.jpg",
   "subhead":"Sponsorzy i Zwolennicy 2019 Międzynarodowej Olimpiadzie Blockchain",
   "sponsorsTitle":"Sponsorzy",
   "sponsors":[

@@ -3,6 +3,10 @@
   "seoDescription":"",
   "ogImage":"static/images/ogimage.jpg",
   "subhead":"",
+  "eligibility":"Critère d'éligibilité",
+  "eligibilityGeneral":"Un étudiant est défini comme une personne inscrite en règle dans un établissement d'enseignement secondaire ou postsecondaire reconnu, ou si un diplôme d'un établissement d'enseignement secondaire ou postsecondaire reconnu au cours des 2 dernières années.",
+  "eligibilityCategory":"Les étudiants sont classés comme les élèves du secondaire ou postsecondaire en fonction de leurs documents d'identité des étudiants au moment de l'inscription.",
+  "eligibilityTeam":"Les étudiants ne peuvent être inscrits à une équipe; si un étudiant est impliqué dans une équipe autre que le leur, ils seraient considérés comme un conseiller à cette autre équipe, et un concurrent à leur équipe principale.",
   "whenToJoinHeading":"",
   "plans":{
     "fromLabel":"",

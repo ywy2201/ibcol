@@ -1,7 +1,7 @@
 {
   "pageTitle":"Regisztrálás",
   "seoDescription":"A Nemzetközi Blockchain Diákolimpia egy multidiszciplináris verseny, ahol a tervezés és kivitelezés van középpontban. Az IBCOL 2019 a világ minden tájáról várja a diákokat, hogy olyan decentralizált alkalamzások szülessenek, amik valós problémákat oldanak meg.",
-  "ogImage":"../../static/images/ogimage.jpg",
+  "ogImage":"static/images/ogimage.jpg",
   "subhead":"Csapat Regisztráció",
   "teamInfo":"Csapat információ",
   "teamName":"Csapat név",
