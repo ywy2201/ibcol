@@ -19,30 +19,30 @@
     }
   },
   "timelineSection":{
-    "heading":"",
+    "heading":"Proces konkurencja",
     "block1":{
-      "title":"",
-      "details":"Until April 21st"
+      "title":"Rejestracja",
+      "details":"Musisz się zarejestrować, aby zarządzać projektem"
     },
     "block2":{
-      "title":"",
-      "details":""
+      "title":"Biały papier",
+      "details":"Termin toczenia jest na 21 kwietnia"
     },
     "block3":{
-      "title":"",
-      "details":""
+      "title":"Wywiad",
+      "details":"Wszystkie rozmowy zostaną zakończone przed 9 czerwca"
     },
     "block4":{
-      "title":"",
-      "details":""
+      "title":"Próbny",
+      "details":"Finaliści sporządza proof of concept"
     },
     "block5":{
-      "title":"",
-      "details":""
+      "title":"Smoła",
+      "details":"Finaliści przygotowują prezentację sceniczną"
     },
     "block6":{
-      "title":"",
-      "details":""
+      "title":"Kontynuacja",
+      "details":"Zawodnicy otrzymują staże lub inwestycji"
     }
   },
   "section01":{
