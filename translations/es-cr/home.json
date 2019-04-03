@@ -19,30 +19,30 @@
     }
   },
   "timelineSection":{
-    "heading":"",
+    "heading":"Proceso de competencia",
     "block1":{
-      "title":"Registro  ",
-      "details":"hasta el 21 de abril"
+      "title":"Registro",
+      "details":"Debe registrarse para gestionar su proyecto"
     },
     "block2":{
-      "title":"",
-      "details":""
+      "title":"Papel blanco",
+      "details":"El plazo de perfiles es el 21 de abril"
     },
     "block3":{
-      "title":"",
-      "details":""
+      "title":"Entrevista",
+      "details":"Todas las entrevistas estarán terminadas antes del 9 de junio de"
     },
     "block4":{
-      "title":"",
-      "details":""
+      "title":"Manifestación",
+      "details":"Los finalistas deberán preparar la prueba de concepto"
     },
     "block5":{
-      "title":"",
-      "details":""
+      "title":"Tono",
+      "details":"Finalistas preparará presentación de la etapa"
     },
     "block6":{
-      "title":"",
-      "details":""
+      "title":"Continuación",
+      "details":"Los competidores reciben prácticas o inversiones"
     }
   },
   "section01":{
