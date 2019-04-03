@@ -1,13 +1,13 @@
 {
-  "pageTitle":"",
-  "seoDescription":"",
-  "ogImage":"static/images/ogimage.jpg",
-  "subhead":"",
-  "mailingAddressTitle":"",
-  "emailAddressTitle":"",
-  "mailingAddressHTML":"",
-  "generalEnquiriesLabel":"",
+  "pageTitle":"Lépjen kapcsolatba velünk",
+  "seoDescription":"A Nemzetközi Blockchain Diákolimpia egy multidiszciplináris verseny, ahol a tervezés és kivitelezés van középpontban. Az IBCOL 2019 a világ minden tájáról várja a diákokat, hogy olyan decentralizált alkalamzások szülessenek, amik valós problémákat oldanak meg.",
+  "ogImage":"../../static/images/ogimage.jpg",
+  "subhead":"Kapcsolat a 2019 Nemzetközi Blockchain Diákolimpia Szervezőihez",
+  "mailingAddressTitle":"Levelezési cím",
+  "emailAddressTitle":"Email cím",
+  "mailingAddressHTML":"IBCOL Szervező Bizottság <br/>Nemzetközi Blockchain Diákolimpia <br/>333A, 3 / F, Core 2 épület, <br/>1W Science Park Avenue, <br/>Hong Kong",
+  "generalEnquiriesLabel":"Általános kérdések",
   "generalEnquiriesEmail":"info@ibcol.org",
-  "sponsorshipLabel":"",
+  "sponsorshipLabel":"Szponzorálás",
   "sponsorshipEmail":"sponsorship@ibcol.org"
 }

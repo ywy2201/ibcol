@@ -1,9 +1,9 @@
 {
-  "pageTitle":"",
-  "seoDescription":"",
-  "ogImage":"static/images/ogimage.jpg",
-  "subhead":"",
-  "sponsorsTitle":"",
+  "pageTitle":"Támogatóink",
+  "seoDescription":"A Nemzetközi Blockchain Diákolimpia egy multidiszciplináris verseny, ahol a tervezés és kivitelezés van középpontban. Az IBCOL 2019 a világ minden tájáról várja a diákokat, hogy olyan decentralizált alkalamzások szülessenek, amik valós problémákat oldanak meg.",
+  "ogImage":"../../static/images/ogimage.jpg",
+  "subhead":"Szponzorok és Támogatói a 2019 Nemzetközi Blockchain Diákolimpiának",
+  "sponsorsTitle":"Támogatóink",
   "sponsors":[
     {"name":"Cardano","url":"https://www.cardano.org","logo":"/static/images/logo-cardano.png","description":"<b>Cardano</b> is a decentralised public blockchain and cryptocurrency project and is fully open sourced. Cardano is developing a smart contract platform which seeks to deliver more advanced features than any protocol previously developed. Cardano is represented by Emurgo HK."},
     {"name":"EmurgoHK","url":"https://emurgohk.io","logo":"/static/images/logo-emurgohk.png","description":"<b>EMURGO HK</b> is the venture builder for the Cardano blockchain protocol. And now we're in Hong Kong. Located in one of the world's most dynamic business hubs, and perfectly positioned between Northeast and Southeast Asia, EmurgoHK is spreading the revolutionary Cardano protocol across the Pacific Rim."},
@@ -26,5 +26,5 @@
     {"name":"Moscow State University (MSU), Faculty of Law","url":"http://law.msu.ru/","logo":"/static/images/logo-moscow-state-university-(msu),-faculty-of-law.png","description":"The <b>Law School of Moscow State University</b> is Russia’s leading educational and legal research institution. The school merges in its work the classical academic culture and the latest requirements of the job market. It is for a reason that the school’s motto is <i>Traditions and development</i>. About 3,000 students and postgrads study at the school."},
     {"name":"Future Pre-employment Planning (Shenzhen)","url":"#","logo":"/static/images/logo-future-pre-employment-planning-(shenzhen).png","description":"<b>FPP</b> empowers students to discover their true passion and career interest and equip them with professional competencies, so they can ultimately pursue a personally-rewarding career and make a positive impact on society, by offering online and offline individualized solutions that fill the gap between theoretical classroom learning and practical skillsets needed in the employment market."}
   ],
-  "prompt":""
+  "prompt":"Ha érdekel a Nemzetközi Blockchain Diákolimpia támogatása, írj nekünk a sponsors@ibcol.org email címen!"
 }
