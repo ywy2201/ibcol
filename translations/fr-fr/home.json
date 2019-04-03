@@ -19,30 +19,30 @@
     }
   },
   "timelineSection":{
-    "heading":"",
+    "heading":"Processus de la concurrence",
     "block1":{
-      "title":"",
-      "details":"Until April 21st"
+      "title":"enregistrement",
+      "details":"Vous devez vous inscrire pour gérer votre projet"
     },
     "block2":{
-      "title":"",
-      "details":""
+      "title":"Papier blanc",
+      "details":"La date limite de roulement est le 21 Avril"
     },
     "block3":{
-      "title":"",
-      "details":""
+      "title":"Entrevue",
+      "details":"Toutes les entrevues seront terminées avant le 9 Juin"
     },
     "block4":{
-      "title":"",
-      "details":""
+      "title":"Demo",
+      "details":"Finalistes doivent préparer la preuve de concept"
     },
     "block5":{
-      "title":"",
-      "details":""
+      "title":"Pas",
+      "details":"Finalistes doivent préparer la présentation de l'étape"
     },
     "block6":{
-      "title":"",
-      "details":""
+      "title":"Continuation",
+      "details":"Les concurrents reçoivent des stages ou des investissements"
     }
   },
   "section01":{
