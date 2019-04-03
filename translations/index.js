@@ -61,6 +61,8 @@ module.exports = {
   "fa-ir": require('./fa-ir'),
   "fr-fr": require('./fr-fr'),
   "hu-hu": require('./hu-hu'),
+  "it-ch": require('./it-ch'),
+  "it-it": require('./it-it'),
   "ja-jp": require('./ja-jp'),
   "ko-kr": require('./ko-kr'),
   "pl-pl": require('./pl-pl'),
