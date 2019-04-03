@@ -1,21 +1,21 @@
 {
-  "pageTitle":"",
-  "seoDescription":"",
+  "pageTitle":"Olimpíadas Internacionais de Blockchain",
+  "seoDescription":"A Olimpíada Internacional de Blockchain (IBCOL) é uma competição multidisciplinar de design e criação. O IBCOL 2019 convida estudantes do mundo inteiro para resolver desafios reais por meio de aplicativos descentralizados (DApps).",
   "ogImage":"static/images/ogimage.jpg",
-  "mainHeading":"",
-  "subHeading":"",
-  "register":"",
-  "howToJoin":"",
-  "competitionRules":"",
-  "scroll":"",
+  "mainHeading":"Ajudar a trazer o mundo para o Blockchain",
+  "subHeading":"Conhecer e competir com os melhores construtores blockchain do mundo",
+  "register":"Informações de registro",
+  "howToJoin":"Como entrar",
+  "competitionRules":"Processo de Concorrência",
+  "scroll":"Rolagem",
   "introSection":{
     "leftBlock":{
-      "title":"",
-      "infoList":"<li>Insufficient time to build well-rounded projects</li><li>Projects too tech-focused and divorced from reality</li><li>No incentive to continue developing the new project</li>"
+      "title":"A maioria dos hackathons não produzem resultados úteis",
+      "infoList":"<li>tempo suficiente para construir projetos bem-arredondados</li><li>Projetos também e divorciada da realidade focada-tech</li><li>Nenhum incentivo para continuar a desenvolver o novo projeto</li>"
     },
     "rightBlock":{
-      "title":"",
-      "infoList":"<li>From now until July 2019 to get something working</li><li>Multidisciplinary approach to applying blockchain</li><li>Matching with entities that can take projects forward</li>"
+      "title":"Esta competição irá produzir resultados úteis",
+      "infoList":"<li>De agora até julho 2019 para obter algo de trabalho</li><li>abordagem multidisciplinar para aplicar blockchain</li><li>Combinando com entidades que podem levar projetos adiante</li>"
     }
   },
   "timelineSection":{
@@ -46,46 +46,46 @@
     }
   },
   "section01":{
-      "languageTitle":"",
-      "writtenLanguageLabel":"",
-      "writtenLanguages":"",
-      "spokenLanguageLabel":"",
-      "spokenLanguages":""
+      "languageTitle":"línguas",
+      "writtenLanguageLabel":"Línguas aceitáveis ​​para material escrito:",
+      "writtenLanguages":"Árabe (standard), chinês (simplificado), chinês (tradicional), Inglês, Francês, alemão, húngaro, italiano, japonês, coreano, persa, polonês, Português, Russo, Espanhol, Ucraniano",
+      "spokenLanguageLabel":"Línguas aceitáveis ​​para o material que fala:",
+      "spokenLanguages":"Árabe (Egito), Árabe (Golfo), Cantonês, Inglês, Francês, alemão, húngaro, italiano, japonês, coreano, mandarim, Persa, Polaco, Português, Russo, Espanhol, Ucraniano"
   },
   "section02":{
-    "heading":"",
+    "heading":"Prêmios",
     "awards":{
       "gold":{
         "quantity":5,
-        "title":"",
-        "description":""
+        "title":"Medalhas de ouro",
+        "description":"1º lugar vencedor de uma categoria com 4096 prêmio de USD"
       },
       "silver":{
         "quantity":5,
-        "title":"",
-        "description":""
+        "title":"Medalhas de prata",
+        "description":"vencedor do lugar dia 2 de uma categoria com 2.048 prêmio USD"
       },
       "bronze":{
         "quantity":5,
-        "title":"",
-        "description":""
+        "title":"Medalhas de bronze",
+        "description":"vencedor do lugar 3ª de uma categoria com 1.024 prêmio USD"
       },
       "nominee":{
         "quantity":15,
-        "title":"",
-        "description":""
+        "title":"Prêmios nominator",
+        "description":"Reconhecimento de treinador da equipe pela nomeação de um time vencedor"
       },
       "finalist":{
         "quantity":10,
-        "title":"",
-        "description":""
+        "title":"Finalista Prêmios",
+        "description":"Reconhecimento de equipes por ser top 5 em uma categoria"
       },
       "merit":{
         "quantity":50,
-        "title":"",
-        "description":""
+        "title":"Prêmios de mérito",
+        "description":"Reconhecimento de equipes para a concepção de uma solução completa"
       },
-      "note":""
+      "note":"O melhor prêmio para os alunos não é financeiro, mas sim experiência, orientação, e uma chance de ter um impacto real no mundo real."
     }
   }
 }

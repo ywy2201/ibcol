@@ -1,13 +1,13 @@
 {
-  "pageTitle":"",
-  "seoDescription":"",
+  "pageTitle":"Contate-Nos",
+  "seoDescription":"A Olimpíada Internacional de Blockchain (IBCOL) é uma competição multidisciplinar de design e criação. O IBCOL 2019 convida estudantes do mundo inteiro para resolver desafios reais por meio de aplicativos descentralizados (DApps).",
   "ogImage":"static/images/ogimage.jpg",
-  "subhead":"",
-  "mailingAddressTitle":"",
-  "emailAddressTitle":"",
-  "mailingAddressHTML":"",
-  "generalEnquiriesLabel":"",
+  "subhead":"Entrar em contato com os organizadores do 2019 Internacional Blockchain Olympiad",
+  "mailingAddressTitle":"Endereço de correspondência",
+  "emailAddressTitle":"Endereço de e-mail",
+  "mailingAddressHTML":"<br/> Comitê Organizador IBCOLInternacional Blockchain Olympiad <br/>333A, 3 / F, Núcleo de edifício 2, <br/>1W Science Park Avenue, <br/>Hong Kong",
+  "generalEnquiriesLabel":"informações gerais",
   "generalEnquiriesEmail":"info@ibcol.org",
-  "sponsorshipLabel":"",
+  "sponsorshipLabel":"patrocínio",
   "sponsorshipEmail":"sponsorship@ibcol.org"
 }
