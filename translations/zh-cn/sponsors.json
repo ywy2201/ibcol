@@ -6,13 +6,13 @@
   "titleSponsorTitle":"冠名赞助商",
   "titleSponsor":[
     {"name":"Cardano","url":"https://www.cardano.org","logo":"/static/images/logo-cardano.png","description":"Cardano是一个分散的公共区块链和加密货币项目，完全开源。 Cardano正在开发一个智能合约平台，旨在提供比以前开发的任何协议更高级的功能。 Cardano由Emurgo HK代理。"},
-    {"name":"EmurgoHK","url":"https://emurgohk.io","logo":"/static/images/logo-emurgohk.png","description":"EMURGO HK是Cardano区块链协议的风险投资商。现在我们在香港。 EmurgoHK位于世界上最具活力的商业中心之一，地理位置优越，位于东北亚和东南亚之间，正在环太平洋地区推广革命性的Cardano协议。"},
+    {"name":"EmurgoHK","url":"https://emurgohk.io","logo":"/static/images/logo-emurgohk.png","description":"EMURGO HK是Cardano区块链协议的风险投资商。现在我们在香港。 EmurgoHK位于世界上最具活力的商业中心之一，地理位置优越，位于东北亚和东南亚之间，正在环太平洋地区推广革命性的Cardano协议。"}
   ],
   "generalSponsorTitle":"一般赞助商",
   "generalSponsor":[
     {"name":"Emali","url":"https://emali.io","logo":"/static/images/logo-emali.png","description":"Emali是一家企业技术公司，为亚太地区开发、许可、支持和销售fintech软件，解决方案和相关服务，专注于AI、区块链、加密、安全和隐私技术。"},
     {"name":"CredProof","url":"http://www.credproof.net/","logo":"/static/images/logo-credproof.png","description":"CredProof 是一种身份认证技术，适用于验证学历证书或工作证明，以及作其他情况的认证，如无信任方的可靠身份，并在符合欧盟GDPR的保密及安全标准下完成身份认证。"},
-    {"name":"R3","url":"https://www.r3.com/","logo":"/static/images/logo-r3.png","description":"R3是一个企业blockchain软件公司与对面的私营和公共部门多个行业的300多名成员和合作伙伴的广泛的生态系统，开发开源blockchain平台琴弦工作。"},
+    {"name":"R3","url":"https://www.r3.com/","logo":"/static/images/logo-r3.png","description":"R3是一个企业blockchain软件公司与对面的私营和公共部门多个行业的300多名成员和合作伙伴的广泛的生态系统，开发开源blockchain平台琴弦工作。"}
   ],
   "academicPartnersTitle":"学术合作伙伴",
   "academicPartners":[
@@ -22,7 +22,7 @@
     {"name":"Moscow State University (MSU), Faculty of Law","url":"http://law.msu.ru/","logo":"/static/images/logo-moscow-state-university-(msu),-faculty-of-law.png","description":"莫斯科国立大学的法学院是俄罗斯领先的教育和法律研究机构。该校在其工作中融合了古典学术文化和就业市场的最新要求。这是有原因的，学校的座右铭是<I>传统和发展</ I>。约3000名学生和postgrads在学校学习。"},
     {"name":"台大创新设计学院 (NTU)","url":"https://dschool.ntu.edu.tw","logo":"/static/images/logo-national-taiwan-university,-d-school.png","description":"台大创新设计学院于 2014 年通过成立 , 并于 2015 年秋季正式授课 。目标是藉由建立台大师生跨领域合作的空间, 让不同系所、不同专业的师生可以一起学习创新与合作, 也期望用创新的方式解决社会上重要问题, 并实际动手实践, 提升台湾的整体竞争力。"},
     {"name":"滑铁卢大学 (UW) 工程学院","url":"https://uwaterloo.ca/engineering/","logo":"/static/images/logo-university-of-waterloo,-faculty-of-engineering.png","description":"滑铁卢工程在滑铁卢大学是加拿大最大的工程学校和顶级工程人才管道，以世界领先的公司。在世界排名前50的工程学院排名中，我们的卓越声誉是建立在合作教育的基础，创新大胆的历史。"},
-    {"name":"滑铁卢大学 (UW) 数学学院","url":"https://uwaterloo.ca/math","logo":"/static/images/logo-university-of-waterloo,-faculty-of-mathematics.png","description":"滑铁卢大学成立于1967年，成为北美第一所大学有一个数学系分开。优秀的学生来自加拿大各地和世界各地的画，与国际学生形成本科生的30％以上。我们的本科生团队会定期把在北美普特南数学竞赛高，而且在世界范围内的ACM计算机编程竞赛。"},
+    {"name":"滑铁卢大学 (UW) 数学学院","url":"https://uwaterloo.ca/math","logo":"/static/images/logo-university-of-waterloo,-faculty-of-mathematics.png","description":"滑铁卢大学成立于1967年，成为北美第一所大学有一个数学系分开。优秀的学生来自加拿大各地和世界各地的画，与国际学生形成本科生的30％以上。我们的本科生团队会定期把在北美普特南数学竞赛高，而且在世界范围内的ACM计算机编程竞赛。"}
   ],
   "supportingOrganisationsTitle":"支援机构",
   "supportingOrganisations":[
@@ -41,7 +41,7 @@
     {"_name":"Stanford Blockchain Club","url":"https://blockchain.stanford.edu/","logo":"/static/images/logo-stanford-blockchain-club.png","description":"斯坦福Blockchain俱乐部是斯坦福大学的一切blockchain，cryptoeconomics和cryptocurrency学生团体。"},
     {"_name":"Stanford Blockchain Collective","url":"https://blockchaincollective.io/","logo":"/static/images/logo-stanford-blockchain-collective.png","description":"斯坦福Blockchain集体跨越工程，商业和法律学院，其成员分担cryptocurrency和blockchain技术的热情一个跨学科的学生社团。我们的目标是要在blockchain技术斯坦福大学的思想领袖，从跨学科创造一个充满活力的社区汇集的思想专注于探索既分散，blockchain基于未来的技术和非技术的影响。"},
     {"name":"滑铁卢大学 (UW)","url":"https://uwaterloo.ca/hong-kong-foundation/","logo":"/static/images/logo-university-of-waterloo,-hong-kong-foundation.png","description":"滑铁卢的香港大学基金会于2011年开业，加强与亚裔社区的关系，充分发挥香港的地理优势和独特的中西结合西方文化融合作为威斯康星大学的战略计划，以在该地区建立一个强大的存在的一部分。 UWHKF位于香港中环的商业区。"},
-    {"name":"UW Blockchain Club","url":"https://www.facebook.com/uwblockchain/","logo":"/static/images/logo-uw-blockchain-club.png","description":"在滑铁卢大学专注于一切blockchain和cryptocurrency相关学生跑组织。 UW Blockchain 5月成立2018年，旨在建立在UW Blockchain爱好者组成的社区，通过浸到一个接合套件的车间，这种形式的比赛，联谊活动等。"},
+    {"name":"UW Blockchain Club","url":"https://www.facebook.com/uwblockchain/","logo":"/static/images/logo-uw-blockchain-club.png","description":"在滑铁卢大学专注于一切blockchain和cryptocurrency相关学生跑组织。 UW Blockchain 5月成立2018年，旨在建立在UW Blockchain爱好者组成的社区，通过浸到一个接合套件的车间，这种形式的比赛，联谊活动等。"}
   ],
   "prompt":"如果您有兴趣支持国际奥林匹克区块链竞赛，请联络sponsors@ibcol.org"
 }

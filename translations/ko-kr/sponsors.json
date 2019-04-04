@@ -6,13 +6,13 @@
   "titleSponsorTitle":"타이틀 스폰서",
   "titleSponsor":[
     {"name":"카르다노","url":"https://www.cardano.org","logo":"/static/images/logo-cardano.png","description":"카르 다노는 분산 된 공공 blockchain 및 암호 화폐 프로젝트 및 소싱 완전히 열려 있습니다. 카르 다노는 이전에 개발 된 프로토콜보다 더 많은 고급 기능을 제공하고자 스마트 계약 플랫폼을 개발하고있다. 카르 다노는 Emurgo HK로 표시됩니다."},
-    {"name":"EmurgoHK","url":"https://emurgohk.io","logo":"/static/images/logo-emurgohk.png","description":"EMURGO HK는 카르 다노 blockchain 프로토콜에 대한 벤처 빌더입니다. 그리고 지금 우리는 홍콩에있어. 세계에서 가장 역동적 인 비즈니스 허브 중 하나에 위치하고 있으며, 완벽 동북과 동남 아시아 사이에 위치, EmurgoHK는 환 태평양 지역에 걸쳐 혁명적 인 카르 다노 프로토콜을 확산되고있다."},
+    {"name":"EmurgoHK","url":"https://emurgohk.io","logo":"/static/images/logo-emurgohk.png","description":"EMURGO HK는 카르 다노 blockchain 프로토콜에 대한 벤처 빌더입니다. 그리고 지금 우리는 홍콩에있어. 세계에서 가장 역동적 인 비즈니스 허브 중 하나에 위치하고 있으며, 완벽 동북과 동남 아시아 사이에 위치, EmurgoHK는 환 태평양 지역에 걸쳐 혁명적 인 카르 다노 프로토콜을 확산되고있다."}
   ],
   "generalSponsorTitle":"일반 스폰서",
   "generalSponsor":[
     {"name":"Emali","url":"https://emali.io","logo":"/static/images/logo-emali.png","description":"Emali는 AI, blockchain, 암호화, 보안 및 개인 정보 보호 기술을 전문으로, 아시아 태평양 지역에 FINTECH 소프트웨어, 솔루션 및 관련 서비스를, 라이센스를 개발하고 지원하고 판매하는 기업의 기술 회사입니다."},
     {"name":"CredProof","url":"http://www.credproof.net/","logo":"/static/images/logo-credproof.png","description":"CredProof는 신원 교정과 학업, 취업을위한 자격 증명 확인 서비스, 신뢰할 수있는 인증은 유럽 연합 (EU) GDPR에 따라 개인과 안전한 방법으로 신용이없는 당사자 사이에 요구되는 다른 경우입니다."},
-    {"name":"R3","url":"https://www.r3.com/","logo":"/static/images/logo-r3.png","description":"R3는 오픈 소스 blockchain 플랫폼 코르다에 개발을 모두 민간 및 공공 부문에서 여러 산업에 걸쳐 300 명 이상의 회원들과 파트너의 광범위한 에코 시스템과 협력 기업 blockchain 소프트웨어 회사입니다."},
+    {"name":"R3","url":"https://www.r3.com/","logo":"/static/images/logo-r3.png","description":"R3는 오픈 소스 blockchain 플랫폼 코르다에 개발을 모두 민간 및 공공 부문에서 여러 산업에 걸쳐 300 명 이상의 회원들과 파트너의 광범위한 에코 시스템과 협력 기업 blockchain 소프트웨어 회사입니다."}
   ],
   "academicPartnersTitle":"학술 파트너",
   "academicPartners":[
@@ -22,7 +22,7 @@
     {"name":"Moscow State University (MSU), Faculty of Law","url":"http://law.msu.ru/","logo":"/static/images/logo-moscow-state-university-(msu),-faculty-of-law.png","description":"모스크바 주립 대학의 법대 러시아의 주요 교육 및 법률 연구 기관입니다. 학교는 그 일에 고전 학술 문화와 고용 시장의 최신 요구 사항을 병합합니다. 이 학교의 모토는 <I> 전통 및 개발 </ I>이라고 이유입니다. 약 3,000 학생과 postgrads은 학교에서 공부."},
     {"name":"National Taiwan University, D-School","url":"https://dschool.ntu.edu.tw","logo":"/static/images/logo-national-taiwan-university,-d-school.png","description":"스탠리 왕 D-학교 @ NTU는 2014 년에 설립되었으며 공식적으로 모든 부서에서 NTU의 학생과 교수 사이에 혁신과 협력을 촉진하는 것입니다 2015 D-학교의 사명 년 가을에 과정을 시작했다. D-학교는 혁신적인 솔루션과 함께 중요한 사회적 문제를 해결 대만의 전반적인 경쟁력을 향상시키기 위해 실현에 핸즈 수 있습니다."},
     {"name":"워털루 대학교 (UW) 공학부","url":"https://uwaterloo.ca/engineering/","logo":"/static/images/logo-university-of-waterloo,-faculty-of-engineering.png","description":"워털루 대학의 워털루 엔지니어링은 캐나다 최대의 엔지니어링 학교와 세계 최고의 기업 탑 엔지니어링 인재의 파이프 라인이다. 세계 50 대 공과 대학 중 위의 우수성에 대한 우리의 명성은 협동 교육의 기초와 혁신의 대담한 역사에 내장되어 있습니다."},
-    {"name":"워털루 대학교 (UW) 수학 학부","url":"https://uwaterloo.ca/math","logo":"/static/images/logo-university-of-waterloo,-faculty-of-mathematics.png","description":"1967 년에 설립 된 워털루 대학은 수학에 대한 별도의 학부를 가지고 북미에서 최초의 대학이되었다. 우수 학생들은 국제 학생들이 학부생의 30 % 이상을 형성하는, 캐나다 전역에서 세계 주위에 그려집니다. 우리 학부 팀은 정기적으로 북미 푸트 수학 경쟁에서 높은두고, 전세계 ACM 컴퓨터 프로그래밍 경쟁한다."},
+    {"name":"워털루 대학교 (UW) 수학 학부","url":"https://uwaterloo.ca/math","logo":"/static/images/logo-university-of-waterloo,-faculty-of-mathematics.png","description":"1967 년에 설립 된 워털루 대학은 수학에 대한 별도의 학부를 가지고 북미에서 최초의 대학이되었다. 우수 학생들은 국제 학생들이 학부생의 30 % 이상을 형성하는, 캐나다 전역에서 세계 주위에 그려집니다. 우리 학부 팀은 정기적으로 북미 푸트 수학 경쟁에서 높은두고, 전세계 ACM 컴퓨터 프로그래밍 경쟁한다."}
   ],
   "supportingOrganisationsTitle":"지원 단체",
   "supportingOrganisations":[
@@ -41,7 +41,7 @@
     {"_name":"Stanford Blockchain Club","url":"https://blockchain.stanford.edu/","logo":"/static/images/logo-stanford-blockchain-club.png","description":"스탠포드 Blockchain 클럽은 blockchain 모든 것을 cryptoeconomics 및 암호 화폐에 대한 스탠포드 대학의 학생 그룹입니다."},
     {"_name":"Stanford Blockchain Collective","url":"https://blockchaincollective.io/","logo":"/static/images/logo-stanford-blockchain-collective.png","description":"스탠포드 Blockchain의 단체 회원 암호 화폐 및 blockchain 기술에 대한 열정을 공유 엔지니어링, 비즈니스 및 법률 학교에서 크로스 징계 학생 클럽입니다. 우리의 비전은 분산, blockchain 기반 미래의 기술 및 비 기술적 인 의미 모두를 탐구에 초점을 맞추고, blockchain 기술 스탠포드의 생각 지도자가 될 분야는 활기찬 지역 사회를 만드는 맞은 편에서 함께 아이디어를 가져 오는 것입니다."},
     {"name":"워털루 대학교 (UW)","url":"https://uwaterloo.ca/hong-kong-foundation/","logo":"/static/images/logo-university-of-waterloo,-hong-kong-foundation.png","description":"워털루의 홍콩 재단의 대학은 홍콩의 지리적 이점을 활용, 아시아 지역 사회와의 유대 관계를 강화하기 위해 2011 년에 열리고 있던 고유의 동쪽 - 만족 - 웨스트 문화 혼합 지역에서 강력한 입지를 구축 할 수있는 UW의 전략적 계획의 일환으로. UWHKF는 중앙, 홍콩의 상업 지구에 위치하고 있습니다."},
-    {"name":"UW Blockchain Club","url":"https://www.facebook.com/uwblockchain/","logo":"/static/images/logo-uw-blockchain-club.png","description":"워털루 대학 blockchain 및 암호 화폐와 관련된 모든 것을에 초점을 맞추고에서 학생 운영 단체입니다. 2018년 5월 년에 설립 된, UW Blockchain 등, 워크샵, 해커 톤의 매력적인 세트로 몰입 네트워킹 이벤트로, UW에서 Blockchain 매니아의 지역 사회를 만드는 것을 목표로"},
+    {"name":"UW Blockchain Club","url":"https://www.facebook.com/uwblockchain/","logo":"/static/images/logo-uw-blockchain-club.png","description":"워털루 대학 blockchain 및 암호 화폐와 관련된 모든 것을에 초점을 맞추고에서 학생 운영 단체입니다. 2018년 5월 년에 설립 된, UW Blockchain 등, 워크샵, 해커 톤의 매력적인 세트로 몰입 네트워킹 이벤트로, UW에서 Blockchain 매니아의 지역 사회를 만드는 것을 목표로"}
   ],
   "prompt":"국제 블록체인 올림피아드 지원을 원하시는 단체는 sponsors@ibcol.org 로 연락주세요."
 }
