@@ -27,9 +27,7 @@
   "supportingOrganisationsTitle":"支援机构",
   "supportingOrganisations":[
     {"name":"bitfwd","url":"https://www.bitfwd.com/","logo":"/static/images/logo-bitfwd.png","description":"bitfwd是密码朋，Blockchain开发商，企业家和密码爱好者的基层社区。我们带来的资源，内容和教育活动在一起。让我们引导的cryptoeconomy。"},
-    {"_name":"Blockchain at Berkeley","url":"https://blockchain.berkeley.edu/","logo":"/static/images/logo-blockchain-at-berkeley.png","description":"自2016年至今，Blockchain伯克利分校已经成长为一组约100多样化和有才华的学生：顾问，设计师，开发人员，教育工作者和研究人员都热衷于blockchain技术。这些年来，我们一直保持我们的企业精神，不断学习和互相推搡成功。"},
     {"name":"政大区块链研究社","url":"https://www.facebook.com/Blockchain.at.NCCU/","logo":"/static/images/logo-blockchain-at-nccu.png","description":"在国立政治大学（国立政治大学）Blockchain成立2018年3月，随着政治大学Blockchain实验室根源，提供blockchain教育，法律业务咨询，并在银行和金融技术解决方案，信息科学，社会科学，法律，商业和通信。"},
-    {"_name":"Blockchain Education Network (BEN)","url":"https://www.blockchainedu.org","logo":"/static/images/logo-blockchain-education-network-(ben).png","description":"Blockchain教育网由谁是他们的学术校园创建比特币和blockchain俱乐部在世界各地的学生和校友。通过他们的同龄人的安全范围内探讨这个社会经济实验，学生建立新的期望和创新。"},
     {"name":"Blockchain Slovakia","url":"https://blockchainslovakia.sk","logo":"/static/images/logo-blockchain-slovakia.png","description":"Blockchain斯洛伐克是一个非营利性组织cryptocurrencies和blockchain技术领域的重点是教育和宣传。我们为开发人员创建，企业，学术界，监管部门之间讨论的平台，以及公众感兴趣的这些技术。"},
     {"name":"好义配","url":"https://easyvolunteer.hk","logo":"/static/images/logo-easyvolunteer.hk.png","description":"「好义配」义工搜寻器是一个汇集义工和服务机会的平台，由「香港赛马会社区资助计划─青年义工网络」 于2014年成立，以推动义工普及化为目标，连系义工和提供服务机会团体，让义工不受时间及地点的限制，搜寻合适的义工服务机会，以行动实践助人的精神，让爱融入生活中。"},
     {"name":"宽道职前策划","url":"#","logo":"/static/images/logo-future-pre-employment-planning-(shenzhen).png","description":"宽道职前策划，是为大学生、毕业生提供就业策划及技能辅导的培训咨询公司，通过启发和探索学员职业兴趣，分析职前个体的内在潜力，并通过自信心、抗压能力、求职分析、职场技巧等咨询指导，让大学毕业生就业前充分完善自我，掌握全方位的职场技能，用科学的分析做好就业准备，成为雇主真正需要的优质人才。 FPP 同时与国内外知名企业合作，为大学生, 毕业生及优质人才提供就业平台。"},
@@ -38,8 +36,6 @@
     {"name":"香港科技园 (HKSTP)","url":"https://www.hkstp.org","logo":"/static/images/logo-hong-kong-science-park-(hkstp).png","description":"香港科技园公司为一法定机构，一直秉承一个明确、清晰的目标—积极打造香港成为地区科技枢纽。作为地区科技枢纽，协助香港的经济发展变得更多元化；为各行各业提供庞大的就业机会；巩固香港作为环球重点市场的地位并提升至更高层次；培育STEM人才及提升公众对STEM学科的兴趣，继而为他们提供炙手可热的科技行业职位；更重要是有助创造可持续发展的世界，为年青一代燃亮他们的未来。"},
     {"name":"立法委员许毓仁","url":"https://www.jhsu.tw","logo":"/static/images/logo-jason-hsu-yu-jen.png","description":"许毓仁是台湾议会成员，也是亚洲区块链联盟的创始人，在许多圈子中被称为第一个“加密议员”。虽然他曾经是一名连续创业者，但他后来成为立法者，通过像金融这样的法案。技术实验和创新法促进亚洲金融科技。"},
     {"name":"RNS Solutions","url":"https://rnssol.com/","logo":"/static/images/logo-rns-solutions.png","description":"RNS解决方案是blockchain解决方案和研究服务，和最有影响力的球员之一，在提供给孵化，实习，比赛，和奖学金的学生和毕业生的机会培育blockchain生态系统在巴基斯坦的领先供应商。"},
-    {"_name":"Stanford Blockchain Club","url":"https://blockchain.stanford.edu/","logo":"/static/images/logo-stanford-blockchain-club.png","description":"斯坦福Blockchain俱乐部是斯坦福大学的一切blockchain，cryptoeconomics和cryptocurrency学生团体。"},
-    {"_name":"Stanford Blockchain Collective","url":"https://blockchaincollective.io/","logo":"/static/images/logo-stanford-blockchain-collective.png","description":"斯坦福Blockchain集体跨越工程，商业和法律学院，其成员分担cryptocurrency和blockchain技术的热情一个跨学科的学生社团。我们的目标是要在blockchain技术斯坦福大学的思想领袖，从跨学科创造一个充满活力的社区汇集的思想专注于探索既分散，blockchain基于未来的技术和非技术的影响。"},
     {"name":"滑铁卢大学 (UW)","url":"https://uwaterloo.ca/hong-kong-foundation/","logo":"/static/images/logo-university-of-waterloo,-hong-kong-foundation.png","description":"滑铁卢的香港大学基金会于2011年开业，加强与亚裔社区的关系，充分发挥香港的地理优势和独特的中西结合西方文化融合作为威斯康星大学的战略计划，以在该地区建立一个强大的存在的一部分。 UWHKF位于香港中环的商业区。"},
     {"name":"UW Blockchain Club","url":"https://www.facebook.com/uwblockchain/","logo":"/static/images/logo-uw-blockchain-club.png","description":"在滑铁卢大学专注于一切blockchain和cryptocurrency相关学生跑组织。 UW Blockchain 5月成立2018年，旨在建立在UW Blockchain爱好者组成的社区，通过浸到一个接合套件的车间，这种形式的比赛，联谊活动等。"}
   ],
