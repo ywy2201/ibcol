@@ -25,6 +25,7 @@ module.exports = {
   "en-ke": require('./en-ke'),
   "en-kw": require('./en-kw'),
   "en-lr": require('./en-lr'),
+  "en-mt": require('./en-mt'),
   "en-my": require('./en-my'),
   "en-na": require('./en-na'),
   "en-ng": require('./en-ng'),
