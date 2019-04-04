@@ -11,7 +11,7 @@
     "ica"
   ],
   "scripts": {
-    "start": "npm run local -- ",
+    "start": "npm run local --",
     "build": "next build",
     "now-build": "next build",
     "local": "NOW_CONFIG=now-local.json node server.js",
@@ -101,5 +101,9 @@
     "url-loader": "^1.1.2",
     "webpack": "^4.29.5"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "micro": "^9.3.3",
+    "micro-dev": "^3.0.0",
+    "micro-proxy": "^1.1.0"
+  }
 }
