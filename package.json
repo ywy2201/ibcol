@@ -75,7 +75,7 @@
     "micro": "^9.3.3",
     "minimist": "^1.2.0",
     "moment-timezone": "^0.5.23",
-    "next": "^8.0.5-canary.22",
+    "next": "^8.0.4",
     "next-offline": "^3.3.6",
     "next-routes": "^1.4.2",
     "next-with-apollo": "^3.4.0",
