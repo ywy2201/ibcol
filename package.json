@@ -19,12 +19,9 @@
     "stage": "NOW_CONFIG=now-stage.json node server.js",
     "production": "NOW_CONFIG=now-production.json node server.js",
     "deploy": "npm run deploy-stage",
-    "deploy-dev": "now --local-config=now-dev.json --team bbi-v2 && npm run link-dev",
-    "deploy-stage": "export NOW_URL=$(now --local-config=now-stage.json --team ibcol) && npm run link-stage && ALIAS_PATH='https://www.uat.ibcol.org' node slack-notifications/now-alias.js",
-    "deploy-production": "export NOW_URL=$(now --local-config=now-production.json --team ibcol) && npm run link-production && ALIAS_PATH='https://www.ibcol.org' node slack-notifications/now-alias.js",
-    "link-dev": "now alias --local-config=now-dev.json --team bbi-v2",
-    "link-stage": "now alias --local-config=now-stage.json --team ibcol",
-    "link-production": "now alias --local-config=now-production.json --team ibcol",
+    "deploy-dev": "now --local-config now-dev.json --scope bbi --target production",
+    "deploy-stage": "export NOW_URL=$(now --local-config now-stage.json --scope ibcol --target production) && ALIAS_PATH='https://www.uat.ibcol.org' node slack-notifications/now-alias.js",
+    "deploy-production": "export NOW_URL=$(now --local-config=now-production.json --scope ibcol --target production) && ALIAS_PATH='https://www.ibcol.org' node slack-notifications/now-alias.js",
     "cleanup-production-now": "now rm $npm_package_name-production -s"
   },
   "repository": {
