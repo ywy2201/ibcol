@@ -77,7 +77,7 @@
     "lodash-checkit": "^2.1.0",
     "minimist": "^1.2.0",
     "moment-timezone": "^0.5.23",
-    "next": "^8.0.4",
+    "next": "^8.0.5-canary.22",
     "next-offline": "^3.3.6",
     "next-routes": "^1.4.2",
     "next-with-apollo": "^3.4.0",
@@ -102,8 +102,9 @@
     "webpack": "^4.29.5"
   },
   "devDependencies": {
-    "micro": "^9.3.3",
-    "micro-dev": "^3.0.0",
-    "micro-proxy": "^1.1.0"
+    "bufferutil": "^4.0.1",
+    "encoding": "^0.1.12",
+    "micro-proxy": "^1.1.0",
+    "utf-8-validate": "^5.0.2"
   }
 }

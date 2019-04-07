@@ -88,7 +88,18 @@ const nextConfig = {
       }
     })
     return config
-  },
+  }
+}
+
+
+console.log("=========================");
+console.log('process.env.NODE_ENV:', process.env.NODE_ENV);
+console.log("=========================");
+
+
+module.exports = (process.env.NODE_ENV === 'production') 
+? moduleExists('next-offline')
+? withOffline(withCSS(Object.assign({}, nextConfig, {
   workboxOpts: {
     swDest: 'static/service-worker.js',
     runtimeCaching: [
@@ -108,9 +119,10 @@ const nextConfig = {
         },
       },
     ],
-  },
-}
+  }
+})))
+: withCSS(nextConfig)
+: withCSS(nextConfig);
 
-module.exports = moduleExists('next-offline')
-  ? withOffline(withCSS(nextConfig))
-  : withCSS(nextConfig)
+
+
