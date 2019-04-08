@@ -10,7 +10,7 @@
   ],
   "generalSponsorTitle":"Sponsori generale",
   "generalSponsor":[
-    {"name":"Emali","url":"https://emali.io","logo":"/static/images/logo-emali.png","description":"Emali este o companie de tehnologie de întreprindere care se dezvoltă, licențe, susține, și vinde software-ul FinTech, soluții și servicii legate de regiunea Asia-Pacific, specializata in tehnologii AI, blockchain, criptografie, securitate și confidențialitate."},
+    {"name":"EMALI","url":"https://emali.io","logo":"/static/images/logo-emali.png","description":"EMALI este o companie de tehnologie de întreprindere care se dezvoltă, licențe, susține, și vinde software-ul FinTech, soluții și servicii legate de regiunea Asia-Pacific, specializata in tehnologii AI, blockchain, criptografie, securitate și confidențialitate."},
     {"name":"CredProof","url":"http://www.credproof.net/","logo":"/static/images/logo-credproof.png","description":"CredProof este o proofing identitate și servicii de verificare pentru acreditare academică, ocuparea forței de muncă, precum și alte cazuri în care este necesară autentificarea de încredere între părți trustless într-un mod privat și sigur, în conformitate cu GDPR UE."},
     {"name":"R3","url":"https://www.r3.com/","logo":"/static/images/logo-r3.png","description":"R3 este o firmă de software de întreprindere blockchain de lucru cu un ecosistem larg de mai mult de 300 de membri și parteneri din mai multe industrii atât din sectorul privat și public să se dezvolte pe platforma open-source blockchain Corda."}
   ],

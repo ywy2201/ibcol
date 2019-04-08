@@ -10,7 +10,7 @@
   ],
   "generalSponsorTitle":"Általános Támogatók",
   "generalSponsor":[
-    {"name":"Emali","url":"https://emali.io","logo":"/static/images/logo-emali.png","description":"<b>Emali</b> vállalati blokchain fejlesztésekre szakosodott a Pénzügyi / Biztosítási / Szabályozási ágazatotban, kiemelten fókuszálva a személyazonosság-kezelésre, a kereskedelem és az ellátási láncra, pénzügyre, biztosítási követeléskezelésre, csalások felderítésére és szabályozási nyilvántartásokra."},
+    {"name":"EMALI","url":"https://emali.io","logo":"/static/images/logo-emali.png","description":"<b>EMALI</b> vállalati blokchain fejlesztésekre szakosodott a Pénzügyi / Biztosítási / Szabályozási ágazatotban, kiemelten fókuszálva a személyazonosság-kezelésre, a kereskedelem és az ellátási láncra, pénzügyre, biztosítási követeléskezelésre, csalások felderítésére és szabályozási nyilvántartásokra."},
     {"name":"CredProof","url":"http://www.credproof.net/","logo":"/static/images/logo-credproof.png","description":"CredProof az identitás próbanyomat, és a hitelesítő hitelesítési szolgáltatás az egyetemi, a foglalkoztatás, és egyéb esetekben, amikor megbízható hitelesítés szükséges között megbízhatatlan felek egy privát és biztonságos módon, összhangban az EU GDPR."},
     {"name":"R3","url":"https://www.r3.com/","logo":"/static/images/logo-r3.png","description":"R3 egy vállalkozás blockchain szoftver cég dolgozik a széles ökoszisztéma több mint 300 tagok és partnerek több iparágban mind a magán- és az állami szektor fejlesztésére, nyílt forráskódú platform blockchain Corda."}
   ],

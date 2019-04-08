@@ -10,7 +10,7 @@
   ],
   "generalSponsorTitle":"Sponsors généraux",
   "generalSponsor":[
-    {"name":"Emali","url":"https://emali.io","logo":"/static/images/logo-emali.png","description":"Emali est une société de technologie d'entreprise qui se développe, les licences, prend en charge, et commercialise des logiciels de FinTech, des solutions et des services liés à la région Asie-Pacifique, spécialisée dans l'IA, blockchain, cryptographie, sécurité et technologies de la vie privée."},
+    {"name":"EMALI","url":"https://emali.io","logo":"/static/images/logo-emali.png","description":"EMALI est une société de technologie d'entreprise qui se développe, les licences, prend en charge, et commercialise des logiciels de FinTech, des solutions et des services liés à la région Asie-Pacifique, spécialisée dans l'IA, blockchain, cryptographie, sécurité et technologies de la vie privée."},
     {"name":"CredProof","url":"http://www.credproof.net/","logo":"/static/images/logo-credproof.png","description":"CredProof est une épreuve d'identité et service de vérification des titres de compétences pour études, l'emploi, et d'autres cas où l'authentification de confiance est nécessaire entre les parties trustless d'une manière privée et sécurisée, conformément à l'UE GDPR."},
     {"name":"R3","url":"https://www.r3.com/","logo":"/static/images/logo-r3.png","description":"R3 est une société de logiciel blockchain entreprise travaille avec un vaste écosystème de plus de 300 membres et partenaires dans de nombreux secteurs des secteurs public et privé pour développer sur la plateforme open-source blockchain Corda."}
   ],
