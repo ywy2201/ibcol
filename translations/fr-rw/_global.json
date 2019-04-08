@@ -1,0 +1,27 @@
+{
+  "siteTitle":"Olympiades Internationales de Blockchain (OLIBC)",
+  "seoDescription":"L’Olympiade internationale de Blockchain (IBCOL) est un concours multidisciplinaire de conception et de construction. IBCOL 2019 invite les étudiants du monde entier à résoudre des problèmes concrets grâce à des applications décentralisées.",
+  "keywords":"",
+  "ogImage":"static/images/ogimage.jpg",
+  "logoTag":"IBCOL: Olympiades Internationales de Blockchain",
+  "titleSeparator":"|",
+  "menu":{
+    "home":"Accueil",
+    "about":"Sur",
+    "how":"Comment s'inscrire",
+    "competition":"Concurrence",
+    "ambassadors":"Étudiants",
+    "sponsors":"sponsors",
+    "schedule":"Programme",
+    "contact":"Contact",
+    "registration":"enregistrement"
+  },
+  "footerMenu":{
+    "backToTop":"Retour au sommet",
+    "aboutCompetition":"À propos du concours",
+    "registrationInfo":"Inscrire maintenant"
+  },
+  "closeMenu":"Fermer",
+  "navigateTo":"Aller vers...",
+  "copyright":"Copyright © 2018 internationale Blockchain Olympiade. Tous les droits sont réservés."
+}

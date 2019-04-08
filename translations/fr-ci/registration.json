@@ -1,0 +1,68 @@
+{
+  "pageTitle":"enregistrement",
+  "seoDescription":"L’Olympiade internationale de Blockchain (IBCOL) est un concours multidisciplinaire de conception et de construction. IBCOL 2019 invite les étudiants du monde entier à résoudre des problèmes concrets grâce à des applications décentralisées.",
+  "ogImage":"static/images/ogimage.jpg",
+  "subhead":"Inscription de l'équipe",
+  "teamInfo":"Informations d'équipe",
+  "teamName":"Nom de l'équipe",
+  "studentInfo":"information sur les étudiants",
+  "studentRecords":{
+    "firstName":"Prénom",
+    "lastName":"Nom de famille",
+    "phoneNumber":"Numéro de téléphone",
+    "email":"Email",
+    "educationRecords":{
+      "degree":"Diplôme ou équivalent",
+      "programme":"Programme ou Major",
+      "yearOfGraduation":"nom de l'institution",
+      "institutionName":"Année d'obtention du diplôme",
+      "city":"Ville",
+      "state":"Province / État",
+      "countryCode":"Pays / Région"
+    }
+  },
+  "advisorRecords":{
+    "firstName":"Prénom",
+    "lastName":"Nom de famille",
+    "phoneNumber":"Numéro de téléphone",
+    "email":"Email",
+    "associationRecords":{
+      "organisationName":"Société / Organisation",
+      "city":"Ville",
+      "state":"Province / État",
+      "countryCode":"Pays / Région",
+      "title":"Titre / Rôle",
+      "sectorCode":"Groupe d'Industries",
+      "yearCommencement":"Commencement",
+      "yearCessation":"Cessation"
+    }
+  },
+  "projectRecords":{
+    "name":"nom du projet",
+    "projectCategoryKey":"Catégorie de projet",
+    "description":"Description du projet"
+  },
+  "studentEducationInfo":"Diplômes",
+  "addAnotherStudent":"Ajouter un autre étudiant",
+  "removeStudent":"Retirer étudiants",
+  "addAnotherStudentEducationRecord":"Ajouter un autre des titres scolaires",
+  "removeStudentEducationRecord":"Retirer des titres de compétences académiques",
+  "advisorInfo":"Renseignements sur le conseiller",
+  "addAnAdvisor":"Ajouter un conseiller",
+  "addAnotherAdvisor":"Ajouter un autre conseiller",
+  "removeAdvisor":"Retirer conseiller",
+  "advisorAssociationInfo":"Record Association",
+  "addAnotherAdvisorAssociationRecord":"Ajouter un autre enregistrement Association",
+  "removeAdvisorAssociationRecord":"Effacer l'enregistrement Association",
+  "projectInfo":"Renseignements sur le projet",
+  "removeProject":"Retirer du projet",
+  "addAnotherProject":"Ajouter un autre projet",
+  "submit":"Soumettre",
+  "registerAnother":"Créer une autre application",
+  "confirmation":{
+    "title":"Merci pour votre inscription.",
+    "message":"Nous avons reçu votre inscription. Nous attendons avec impatience de lire votre livre blanc (à échéance le 21 Avril 2019). S'il vous plaît ne pas remettre à plus tard!",
+    "refTitle":"Référence de l'application:",
+    "TteamNameTitle":"Nom de l'équipe:"
+  }
+}
