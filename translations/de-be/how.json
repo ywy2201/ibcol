@@ -4,8 +4,8 @@
   "ogImage":"static/images/ogimage.jpg",
   "subhead":"Registration für die 2019 Internationale Blockchain Olympiade",
   "eligibility":"Zulassungskriterien",
-  "eligibilityGeneral":"Ein Student wird als eine Person in einem guten Ruf bei einer anerkannten sekundären oder post-sekundärer Bildungseinrichtung eingeschrieben definiert ist, oder wenn von einer anerkannten sekundären oder post-sekundärer akademischen Einrichtung in den letzten 2 Jahren absolviert.",
-  "eligibilityCategory":"Die Schüler werden kategorisiert als sekundäre oder post-sekundäre Studenten auf der Grundlage ihrer Schüler Ausweisdokumente zum Zeitpunkt der Registrierung.",
+  "eligibilityGeneral":"Ein Student wird als eine Person in einem guten Ruf bei einer anerkannten wissenschaftlichen Einrichtung eingeschrieben definiert ist, oder wenn von einer anerkannten wissenschaftlichen Einrichtung in den letzten 2 Jahren absolviert.",
+  "eligibilityCategory":"Die Schüler können jedes Alter sein. Es gibt keine Altersgrenzen.",
   "eligibilityTeam":"Die Schüler können nur mit einem Team registriert werden; wenn ein Student mit einem Team andere als ihre eigenen beteiligt ist, würden sie einen Berater zu dem anderen Team, und einen Teilnehmer zu ihrem primären Team betrachtet.",
   "whenToJoinHeading":"Teilnahme Zeitpunkt",
   "plans":{

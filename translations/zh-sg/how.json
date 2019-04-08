@@ -4,9 +4,9 @@
   "ogImage":"static/images/ogimage.jpg",
   "subhead":"申请2019年国际区块链奥林匹克运动会",
   "eligibility":"资格标准",
-  "eligibilityGeneral":"学生被定义为一个公认的中学或中学后学术机构就读于信誉良好的人，或在过去2年中从一个公认的中学或中学后学术机构毕业。",
-  "eligibilityCategory":"学生被归类为基于在注册的时候他们的学生身份证明文件中学或中学后的学生。",
-  "eligibilityTeam":"学生只可登记到一个团队;如果学生参与到自己以外的球队，他们会被认为是一个顾问，其他队伍和选手，以他们的主要团队。",
+  "eligibilityGeneral":"学生是指在公认信誉良好之学术机构（如学校、学院）学习或进修者。以及于过去的2年内毕业的也能被定义为学生。",
+  "eligibilityCategory":"学生可以是任何年龄。有没有年龄限制。",
+  "eligibilityTeam":"学生只可登记到一个团队。如果学生想参与另外的团队，他们就会被视作一个顾问的身份加入，而非选手身份。",
   "whenToJoinHeading":"什么时候加入",
   "plans":{
     "fromLabel":"由...",

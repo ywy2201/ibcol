@@ -14,6 +14,7 @@
     "sponsors":"sponsor",
     "schedule":"Programma",
     "contact":"Contatti",
+    "blog":"Notizia",
     "registration":"Registrazione"
   },
   "footerMenu":{
@@ -23,5 +24,5 @@
   },
   "closeMenu":"Chiudi",
   "navigateTo":"Vai a...",
-  "copyright":"Copyright © 2018 Internazionale Blockchain Olimpiade. Tutti i diritti riservati."
+  "copyright":"Copyright © 2018-2019 Internazionale Blockchain Olimpiade. Tutti i diritti riservati."
 }

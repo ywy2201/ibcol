@@ -4,9 +4,9 @@
   "ogImage":"static/images/ogimage.jpg",
   "subhead":"申請2019年國際區塊鏈奧林匹克運動會",
   "eligibility":"資格標準",
-  "eligibilityGeneral":"學生被定義為一個公認的中學或中學後學術機構就讀於信譽良好的人，或在過去2年中從一個公認的中學或中學後學術機構畢業。",
-  "eligibilityCategory":"學生被歸類為基於在註冊的時候他們的學生身份證明文件中學或中學後的學生。",
-  "eligibilityTeam":"學生只可登記到一個團隊;如果學生參與到自己以外的球隊，他們會被認為是一個顧問，其他隊伍和選手，以他們的主要團隊。",
+  "eligibilityGeneral":"學生是指在公認信譽良好之學術機構（如學校、學院）學習或進修者。以及於過去的2年內畢業的也能被定義為學生。",
+  "eligibilityCategory":"學生可以是任何年齡。有沒有年齡限制。",
+  "eligibilityTeam":"學生只可登記到一個團隊。如果學生想參與另外的團隊，他們就會被視作一個顧問的身份加入，而非選手身份。",
   "whenToJoinHeading":"什麼時候加入",
   "plans":{
     "fromLabel":"由...",

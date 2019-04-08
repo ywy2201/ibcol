@@ -4,7 +4,7 @@ module.exports = {
     "name":"ایران",
     "label":"خوش آمدید",
     "flag": "ir.svg",
-    "disabled": true
+    "disabled": false
   },
   "_global":require('./_global.json'),
   "_countries": require('./_countries.json'),

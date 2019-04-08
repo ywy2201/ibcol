@@ -1,21 +1,21 @@
 {
-  "pageTitle":"",
-  "seoDescription":"",
+  "pageTitle":"المپیاد جهانی بلاک چین",
+  "seoDescription":"بین المللی بلاکچین المپیاد طراحی و ساخت و ساز رقابت چند رشته است. IBCOL 2019 دعوت از دانش آموزان از سراسر جهان برای حل چالش های دنیای واقعی از طریق برنامه های کاربردی غیر متمرکز.",
   "ogImage":"static/images/ogimage.jpg",
-  "mainHeading":"",
-  "subHeading":"",
-  "register":"",
-  "howToJoin":"",
-  "competitionRules":"",
-  "scroll":"",
+  "mainHeading":"کمک به جهان بر روی بلاکچین",
+  "subHeading":"دیدار و رقابت با بهترین سازندگان بلاکچین جهان",
+  "register":"اطلاعات ثبت نام",
+  "howToJoin":"چگونگی عضویت",
+  "competitionRules":"فرآیند مسابقه",
+  "scroll":"طومار",
   "introSection":{
     "leftBlock":{
-      "title":"",
-      "infoList":"<li>Insufficient time to build well-rounded projects</li><li>Projects too tech-focused and divorced from reality</li><li>No incentive to continue developing the new project</li>"
+      "title":"ترین هکاتون نتایج مفید را تولید نمی کند",
+      "infoList":"<li>زمان کافی برای ساخت پروژه های خوبی گرد</li><li>پروژه خیلی با تکنولوژی متمرکز و طلاق گرفته از واقعیت</li><li>هیچ انگیزه ای برای ادامه توسعه این پروژه جدید</li>"
     },
     "rightBlock":{
-      "title":"",
-      "infoList":"<li>From now until July 2019 to get something working</li><li>Multidisciplinary approach to applying blockchain</li><li>Matching with entities that can take projects forward</li>"
+      "title":"این رقابت نتایج مفید تولید",
+      "infoList":"<li>از هم اکنون تا ژوئیه 2019 به دست آوردن چیزی کار</li><li>رویکرد چند رشته ای به استفاده از بلاکچین</li><li>تطبیق با اشخاص است که می توانید پروژه های رو به جلو را</li>"
     }
   },
   "timelineSection":{
@@ -46,46 +46,46 @@
     }
   },
   "section01":{
-      "languageTitle":"",
-      "writtenLanguageLabel":"",
-      "writtenLanguages":"",
-      "spokenLanguageLabel":"",
-      "spokenLanguages":""
+      "languageTitle":"زبان ها",
+      "writtenLanguageLabel":"زبان قابل قبول برای مواد نوشته شده:",
+      "writtenLanguages":"عربی (استاندارد)، چینی (ساده شده) چینی (سنتی)، انگلیسی، فرانسوی، آلمانی، مجارستانی، ایتالیایی، ژاپنی، کره ای، فارسی، لهستانی، پرتغالی، روسی، اسپانیایی، اوکراین",
+      "spokenLanguageLabel":"زبان قابل قبول برای مواد گفتاری:",
+      "spokenLanguages":"عربی (مصر)، عربی (خلیج فارس)، کانتونی، انگلیسی، فرانسوی، آلمانی، مجارستانی، ایتالیایی، ژاپنی، کره ای، ماندارین، فارسی، لهستانی، پرتغالی، روسی، اسپانیایی، اوکراین"
   },
   "section02":{
-    "heading":"",
+    "heading":"جوایز",
     "awards":{
       "gold":{
         "quantity":5,
-        "title":"",
-        "description":""
+        "title":"مدال طلا",
+        "description":"1 برنده رتبه یک دسته بندی با 4096 دلار جایزه"
       },
       "silver":{
         "quantity":5,
-        "title":"",
-        "description":""
+        "title":"مدال نقره",
+        "description":"برنده 2 از یک دسته بندی با 2048 دلار جایزه"
       },
       "bronze":{
         "quantity":5,
-        "title":"",
-        "description":""
+        "title":"مدال برنز",
+        "description":"برنده 3 از یک دسته بندی با 1024 دلار جایزه"
       },
       "nominee":{
         "quantity":15,
-        "title":"",
-        "description":""
+        "title":"جوایز Nominator",
+        "description":"شناخت مربی تیم برای معرفی یک تیم برنده"
       },
       "finalist":{
         "quantity":10,
-        "title":"",
-        "description":""
+        "title":"فینالیست جایزه",
+        "description":"شناخت تیم بودن بالای 5 در یک دسته بندی"
       },
       "merit":{
         "quantity":50,
-        "title":"",
-        "description":""
+        "title":"جوایز شایستگی",
+        "description":"شناخت تیم برای طراحی یک راه حل کامل"
       },
-      "note":""
+      "note":"بهترین جایزه برای دانش آموزان است نه مالی، بلکه تجربه، راهنمایی، و یک فرصت برای ایجاد یک تاثیر واقعی در دنیای واقعی."
     }
   }
 }
