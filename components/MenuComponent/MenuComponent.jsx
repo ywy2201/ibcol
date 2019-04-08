@@ -208,7 +208,7 @@ class MenuComponent extends React.Component {
       </li>
 
       <li>
-        <NavLinkComponent prefetch route="https://medium.com/international-blockchain-olympiad" params={{ locale }}>
+        <NavLinkComponent prefetch route="https://medium.com/international-blockchain-olympiad" params={{ locale }} target="_blank">
           {this.translate('menu.blog')}
         </NavLinkComponent>
       </li>
