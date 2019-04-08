@@ -10,7 +10,7 @@
   ],
   "generalSponsorTitle":"一般贊助商",
   "generalSponsor":[
-    {"name":"Emali","url":"https://emali.io","logo":"/static/images/logo-emali.png","description":"Emali是一家企業技術公司，為亞太地區開發、許可、支持和銷售fintech軟件，解決方案和相關服務，專注於AI、區塊鏈、加密、安全和隱私技術。"},
+    {"name":"EMALI","url":"https://emali.io","logo":"/static/images/logo-emali.png","description":"EMALI是一家企業技術公司，為亞太地區開發、許可、支持和銷售fintech軟件，解決方案和相關服務，專注於AI、區塊鏈、加密、安全和隱私技術。"},
     {"name":"CredProof","url":"http://www.credproof.net/","logo":"/static/images/logo-credproof.png","description":"CredProof 是一種身份認證技術，適用於驗證學歷證書或工作證明，以及作其他情況的認証，如無信任方的可靠身份，并在符合歐盟GDPR的保密及安全標準下完成身份認證。"},
     {"name":"R3","url":"https://www.r3.com/","logo":"/static/images/logo-r3.png","description":"R3是一個企業blockchain軟件公司與對面的私營和公共部門多個行業的300多名成員和合作夥伴的廣泛的生態系統，開發開源blockchain平台琴弦工作。"}
   ],

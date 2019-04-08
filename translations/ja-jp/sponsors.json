@@ -10,7 +10,7 @@
   ],
   "generalSponsorTitle":"一般的なスポンサー",
   "generalSponsor":[
-    {"name":"エマリ","url":"https://emali.io","logo":"/static/images/logo-emali.png","description":"Emaliは、開発企業の技術会社であるライセンス、サポート、およびAI、blockchain、暗号化、セキュリティ、およびプライバシーの技術に特化し、アジア太平洋地域にフィンテックソフトウェア、ソリューション、および関連サービスを販売しています。"},
+    {"name":"エマリ","url":"https://emali.io","logo":"/static/images/logo-emali.png","description":"EMALIは、開発企業の技術会社であるライセンス、サポート、およびAI、blockchain、暗号化、セキュリティ、およびプライバシーの技術に特化し、アジア太平洋地域にフィンテックソフトウェア、ソリューション、および関連サービスを販売しています。"},
     {"name":"CredProof","url":"http://www.credproof.net/","logo":"/static/images/logo-credproof.png","description":"CredProofは、身元識別情報の検証や学術、雇用の資格検証サービス、および信頼された認証はEU GDPRに合わせてプライベートで安全な方法でtrustlessの当事者間で必要とされる他のインスタンスです。"},
     {"name":"R3","url":"https://www.r3.com/","logo":"/static/images/logo-r3.png","description":"R3は、オープンソースのblockchainプラットフォームコルダ上で開発するために、両方の民間部門と公共部門から複数の業界全体で300人の以上のメンバーやパートナーの幅広いエコシステムと協力し、企業blockchainソフトウェア会社です。"}
   ],

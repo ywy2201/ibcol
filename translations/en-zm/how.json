@@ -4,8 +4,8 @@
   "ogImage":"static/images/ogimage.jpg",
   "subhead":"Registration for the 2019 International Blockchain Olympiad",
   "eligibility":"Eligibility Criteria",
-  "eligibilityGeneral":"A student is defined as a person enrolled in good standing at a recognised secondary or post-secondary academic institution, or if graduated from a recognised secondary or post-secondary academic institution within the last 2 years.",
-  "eligibilityCategory":"Students are categorised as secondary or post-secondary students based on their student identity documents at the time of registration.",
+  "eligibilityGeneral":"A student is defined as a person enrolled in good standing at a recognised academic institution, or if graduated from a recognised academic institution within the last 2 years.",
+  "eligibilityCategory":"Students can be of any age. There are no age limits.",
   "eligibilityTeam":"Students may only be registered to one team; if a student is involved with a team other than their own, they would be considered an advisor to that other team, and a contestant to their primary team.",
   "whenToJoinHeading":"When to join",
   "plans":{

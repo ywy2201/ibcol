@@ -1,13 +1,13 @@
 {
-  "pageTitle":"",
-  "seoDescription":"",
+  "pageTitle":"تماس با ما",
+  "seoDescription":"بین المللی بلاکچین المپیاد طراحی و ساخت و ساز رقابت چند رشته است. IBCOL 2019 دعوت از دانش آموزان از سراسر جهان برای حل چالش های دنیای واقعی از طریق برنامه های کاربردی غیر متمرکز.",
   "ogImage":"static/images/ogimage.jpg",
-  "subhead":"",
-  "mailingAddressTitle":"",
-  "emailAddressTitle":"",
-  "mailingAddressHTML":"",
-  "generalEnquiriesLabel":"",
+  "subhead":"تماس با سازمان دهندگان این 2019 بین المللی بلاکچین المپیاد",
+  "mailingAddressTitle":"آدرس پستی",
+  "emailAddressTitle":"آدرس ایمیل",
+  "mailingAddressHTML":"IBCOL Organising Committee<br/>International Blockchain Olympiad<br/>333A, 3/F, Core Building 2,<br/>1W Science Park Avenue,<br/>Hong Kong",
+  "generalEnquiriesLabel":"پرسش های عمومی",
   "generalEnquiriesEmail":"info@ibcol.org",
-  "sponsorshipLabel":"",
+  "sponsorshipLabel":"حمایت",
   "sponsorshipEmail":"sponsorship@ibcol.org"
 }

@@ -4,8 +4,8 @@
   "ogImage":"static/images/ogimage.jpg",
   "subhead":"Jelentkezés a 2019-es Nemzetközi Blockchain Diákolimpiára",
   "eligibility":"Jogosultsági kritériumok",
-  "eligibilityGeneral":"A diák úgy definiáljuk, mint egy személy iratkozott jó állapotú egy elismert közép- vagy középfokú felsőoktatási intézmény, vagy ha végzett egy elismert közép- vagy középfokú felsőoktatási intézmény az elmúlt 2 évben.",
-  "eligibilityCategory":"A diákok minősíteni szekunder vagy középfokú diákok alapján a hallgatói személyazonossági okmányok idején regisztráció.",
+  "eligibilityGeneral":"A diák úgy definiáljuk, mint egy személy iratkozott jó állapotú egy elismert felsőoktatási intézmény, vagy ha végzett egy elismert felsőoktatási intézmény az elmúlt 2 évben.",
+  "eligibilityCategory":"A diákok lehetnek bármilyen korú. Vannak nincs korhatár.",
   "eligibilityTeam":"A diákok csak akkor vehető nyilvántartásba az egyik csapat, ha a hallgató is részt vesz a csapat más, mint a saját, akkor figyelembe kell venni a tanácsadója, hogy más csapat, és a versenyző az elsődleges csapat.",
   "whenToJoinHeading":"Mikor jelentkezz",
   "plans":{

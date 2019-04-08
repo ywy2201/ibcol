@@ -1,8 +1,8 @@
 {
-  "pageTitle":"",
-  "seoDescription":"",
+  "pageTitle":"حامیان ما",
+  "seoDescription":"بین المللی بلاکچین المپیاد طراحی و ساخت و ساز رقابت چند رشته است. IBCOL 2019 دعوت از دانش آموزان از سراسر جهان برای حل چالش های دنیای واقعی از طریق برنامه های کاربردی غیر متمرکز.",
   "ogImage":"static/images/ogimage.jpg",
-  "subhead":"",
+  "subhead":"حامیان مالی و حامیان بین المللی 2019 بلاکچین المپیاد",
   "titleSponsorTitle":"حامیان عنوان",
   "titleSponsor":[
     {"name":"Cardano","url":"https://www.cardano.org","logo":"/static/images/logo-cardano.png","description":"کاردانو blockchain و cryptocurrency به پروژه های عمومی غیر متمرکز است و به طور کامل منبع باز. کاردانو در حال توسعه یک پلت فرم قرارداد های هوشمند که به دنبال ارائه ویژگی های پیشرفته تر از هر پروتکل قبلا توسعه یافته است. کاردانو است Emurgo HK ارائه شده است."},
@@ -10,7 +10,7 @@
   ],
   "generalSponsorTitle":"حامیان عمومی",
   "generalSponsor":[
-    {"name":"Emali","url":"https://emali.io","logo":"/static/images/logo-emali.png","description":"Emali یک شرکت فن آوری شرکت است که توسعه، مجوز، پشتیبانی و فروش نرم افزار fintech، راه حل، و خدمات مربوط به منطقه آسیا و اقیانوسیه، متخصص در فن آوری AI، بلاکچین، رمزنگاری، امنیت و حریم خصوصی است."},
+    {"name":"EMALI","url":"https://emali.io","logo":"/static/images/logo-emali.png","description":"EMALI یک شرکت فن آوری شرکت است که توسعه، مجوز، پشتیبانی و فروش نرم افزار fintech، راه حل، و خدمات مربوط به منطقه آسیا و اقیانوسیه، متخصص در فن آوری AI، بلاکچین، رمزنگاری، امنیت و حریم خصوصی است."},
     {"name":"CredProof","url":"http://www.credproof.net/","logo":"/static/images/logo-credproof.png","description":"CredProof تصحیح هویت و سرویس تایید اعتبارنامه برای دانشگاهی، اشتغال و سایر موارد که احراز هویت مورد اعتماد میان دو طرف trustless به شیوه ای امن و خصوصی مطابق با GDPR اتحادیه اروپا مورد نیاز است."},
     {"name":"R3","url":"https://www.r3.com/","logo":"/static/images/logo-r3.png","description":"R3 یک شرکت نرم افزار شرکت بلاکچین کار با یک اکوسیستم گسترده ای از بیش از 300 عضو و شرکای در میان صنایع مختلف از هر دو بخش خصوصی و دولتی به توسعه در منبع باز پلت فرم بلاکچین Corda است."}
   ],
@@ -39,5 +39,5 @@
     {"name":"University of Waterloo, Hong Kong Foundation","url":"https://uwaterloo.ca/hong-kong-foundation/","logo":"/static/images/logo-university-of-waterloo,-hong-kong-foundation.png","description":"از طرف بنیاد دانشگاه هنگ کنگ واترلو در سال 2011 افتتاح شد برای تقویت روابط با جامعه آسیایی، اعمال نفوذ استفاده جغرافیایی هنگ کنگ و منحصر به فرد شرق در دیدار غرب مخلوط فرهنگی به عنوان بخشی از برنامه استراتژیک دانشگاه واشنگتن برای ایجاد یک حضور قوی در منطقه است. UWHKF در مرکزی، منطقه تجاری هنگ کنگ واقع شده است."},
     {"name":"UW Blockchain Club","url":"https://www.facebook.com/uwblockchain/","logo":"/static/images/logo-uw-blockchain-club.png","description":"یک سازمان دانشجویی در دانشگاه واترلو با تمرکز بر همه چیز مربوط به blockchain و cryptocurrency به. تاسیس مه 2018، UW بلاکچین با هدف ایجاد یک جامعه از علاقه مندان بلاکچین در UW، با فرو بردن آنها را به یک مجموعه ای جذاب از کارگاه های آموزشی، هکاتون، رویدادهای شبکه و غیره"}
   ],
-  "prompt":""
+  "prompt":"اگر سازمان شما علاقه مند در حمایت از بلاکچین المپیاد جهانی است، لطفا با sponsors@ibcol.org"
 }

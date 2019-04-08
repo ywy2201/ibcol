@@ -4,8 +4,8 @@
   "ogImage":"static/images/ogimage.jpg",
   "subhead":"L'iscrizione al 2019 Internazionale Blockchain Olimpiade",
   "eligibility":"Criteri di ammissibilità",
-  "eligibilityGeneral":"Uno studente è definito come una persona iscritta in regola ad un'istituzione accademica secondaria o post-secondaria riconosciuta, o se laureato da un istituto accademico secondaria o post-secondaria riconosciuta nel corso degli ultimi 2 anni.",
-  "eligibilityCategory":"Gli studenti sono classificati come studenti di scuola secondaria o post-secondaria in base alle loro documenti di identità degli studenti al momento della registrazione.",
+  "eligibilityGeneral":"Uno studente è definito come una persona iscritta in regola presso un istituto accademico riconosciuto, o se si è laureato da un istituto accademico riconosciuto nel corso degli ultimi 2 anni.",
+  "eligibilityCategory":"Gli studenti possono essere di qualsiasi età. Non ci sono limiti di età.",
   "eligibilityTeam":"Gli studenti possono essere registrati solo una squadra; se uno studente è coinvolto con un team diverso dal proprio, sarebbe considerato un consulente a quell'altra squadra, e un concorrente alla propria squadra principale.",
   "whenToJoinHeading":"Quando ad unirsi",
   "plans":{
