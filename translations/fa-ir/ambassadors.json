@@ -1,11 +1,11 @@
 {
-  "pageTitle":"",
-  "seoDescription":"",
+  "pageTitle":"سفیران مدرسه",
+  "seoDescription":"بین المللی بلاکچین المپیاد طراحی و ساخت و ساز رقابت چند رشته است. IBCOL 2019 دعوت از دانش آموزان از سراسر جهان برای حل چالش های دنیای واقعی از طریق برنامه های کاربردی غیر متمرکز.",
   "ogImage":"static/images/ogimage.jpg",
-  "subhead":"",
-  "schoolAmbassadorsTitle":"",
-  "schoolAmbassadorsDescriptions":"",
-  "applyAmbassadorsLabel":"",
+  "subhead":"روابط دانشجویی برای 2019 بین المللی بلاکچین المپیاد",
+  "schoolAmbassadorsTitle":"سفیران مدرسه",
+  "schoolAmbassadorsDescriptions":"سفرای مدرسه نشان IBCOL 2019 در دانشکده های خود",
+  "applyAmbassadorsLabel":"درخواست برای یک سفیر مدرسه IBCOL",
   "schoolAmbassadors":[
     {"flag":"flag-icon-hu","countryCode":"hu","title":"Budapest Metropolitan University (METU)","ambassadors":[
       {"name":"Viktor Tabori","email":"viktor.tabori@ibcol.org"}
@@ -105,14 +105,14 @@
       {"name":"Marina Danylyuk","email":"marina.danylyuk@ibcol.org"}
     ]}
   ],
-  "schoolAmbassadorProgrammeTitle":"",
-  "schoolAmbassadorProgrammeDescription":"",
-  "responsibilitiesTitle":"",
-  "responsibilities":["Promote the International Blockchain Olympiad on campus","Recruit interested students on campus","Take lead and be the point of contact between interested applicants and registered participants","Arrange with student organisations or faculty or department for subsidies","Organise events for preparing students to compete in IBCOL 2019, such as team formation, blockchain training, and general promotion","Act in the best interest of the International Blockchain Olympiad"],
-  "perksTitle":"",
-  "perks":["Gain valuable experience and insights into the enterprise, government, and blockchain worlds","1 free course (DC3) issued by the Hong Kong Blockchain Society (Value: 2000 USD)","School Ambassador Certificate issued by the International Blockchain Olympiad","Entitled to 10% discount on admission to IBCOL 2019 (Value up to 2000 USD - includes full 2-day access to tech expo, fireside chats, keynote luncheons, and networking sessions), for each referred team. For example, 3 referred teams is 30%, 7 referred teams is 70% off, 10 or more is 100% off, i.e. free ticket."],
-  "applyNowButtonLabel":"",
-  "comingSoonButtonLabel":"",
-  "financialAssistanceTitle":"",
-  "financialAssistanceDescription":""
+  "schoolAmbassadorProgrammeTitle":"برنامه سفیر مدرسه",
+  "schoolAmbassadorProgrammeDescription":"یک شور و شوق برای مسابقات فن آوری، نوآوری، و یا دانش آموز؟ مشارکت در اولین بین المللی بلاکچین المپیاد! ما به دنبال سفرای مدرسه برای ترویج IBCOL 2019 در دانشگاه های محلی خود را.",
+  "responsibilitiesTitle":"مسئولیت",
+  "responsibilities":["ترویج بلاکچین المپیاد جهانی در محوطه دانشگاه","استخدام دانش آموزان علاقه مند در محوطه دانشگاه","نگاهی سرب و نقطه تماس بین متقاضیان علاقه مند و شرکت کنندگان ثبت نام","ترتیب با سازمان های دانشجویی و یا دانشکده یا گروه برای یارانه","برگزاری برنامه برای آماده سازی دانش آموزان برای رقابت در IBCOL 2019، مانند تشکیل تیم، آموزش بلاکچین، و ارتقاء کلی","قانون در جهت منافع از بلاکچین المپیاد جهانی"],
+  "perksTitle":"قدرت پردازش",
+  "perks":["به دست آوردن تجربه ارزشمند و بینش را به سرمایه گذاری، دولت، و جهان بلاکچین","1 دوره های رایگان (DC3) صادر شده توسط بلاکچین جامعه هنگ کنگ (ارزش: 2000 تومان)","گواهی مدرسه سفیر صادر شده توسط بلاکچین المپیاد جهانی","در بدو ورود به تخفیف 10٪ حق IBCOL 2019 (ارزش تا 2000 تومان - شامل دسترسی کامل 2 روزه به نمایشگاه تکنولوژی، چت پای بخاری، نهار سخنرانیها، و جلسات شبکه)، برای هر تیم نامیده می شود. به عنوان مثال، 3 اشاره تیم 30٪، 7 اشاره تیم است 70٪ تخفیف، 10 یا بیشتر 100٪، به عنوان مثال بلیط رایگان است."],
+  "applyNowButtonLabel":"درخواست کن",
+  "comingSoonButtonLabel":"به زودی",
+  "financialAssistanceTitle":"گزینه های کمک های مالی",
+  "financialAssistanceDescription":"متقاضیان بر اساس مورد به مورد بررسی قرار، با هیچ تأثیری در نتایج واقعی از رقابت. دانش آموزان ممکن است اعمال شوند برای یارانه به کاهش بار مالی شرکت در IBCOL 2019، مانند هزینه ورود، به رویداد اصلی در هنگ کنگ، و کمک های اقامت سفر در حالی که در هنگ کنگ. فقط واجد شرایط برای ثبت نام قبل از فوریه 1."
 }
