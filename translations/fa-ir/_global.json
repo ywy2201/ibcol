@@ -1,27 +1,28 @@
 {
-  "siteTitle":"المپیاد جهانی بلاک چین",
-  "seoDescription":"",
+  "siteTitle":"المپیاد جهانی بلاک چین (IBCOL)",
+  "seoDescription":"بین المللی بلاکچین المپیاد طراحی و ساخت و ساز رقابت چند رشته است. IBCOL 2019 دعوت از دانش آموزان از سراسر جهان برای حل چالش های دنیای واقعی از طریق برنامه های کاربردی غیر متمرکز.",
   "keywords":"",
   "ogImage":"static/images/ogimage.jpg",
   "logoTag":"IBCOL: المپیاد جهانی بلاک چین",
   "titleSeparator":"|",
   "menu":{
-    "home":"",
-    "about":"",
-    "how":"",
-    "competition":"",
-    "ambassadors":"",
-    "sponsors":"",
-    "schedule":"",
-    "contact":"",
-    "registration":""
+    "home":"خانه",
+    "about":"در باره",
+    "how":"چگونگی عضویت",
+    "competition":"رقابت",
+    "ambassadors":"دانش آموزان",
+    "sponsors":"حامیان",
+    "schedule":"برنامه",
+    "contact":"تماس",
+    "blog":"اخبار",
+    "registration":"ثبت"
   },
   "footerMenu":{
-    "backToTop":"",
-    "aboutCompetition":"",
-    "registrationInfo":""
+    "backToTop":"بازگشت به بالا",
+    "aboutCompetition":"در مورد رقابت",
+    "registrationInfo":"ثبت نام"
   },
-  "closeMenu":"",
-  "navigateTo":"",
-  "copyright":""
+  "closeMenu":"نزدیک",
+  "navigateTo":"هدایت به...",
+  "copyright":"کپی رایت © 2018 بین المللی بلاکچین المپیاد. همه حقوق محفوظ است."
 }

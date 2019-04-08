@@ -1,5 +1,5 @@
 {
-  "siteTitle":"Olimpiada Internațională de Blockchain (IBCOL)",
+  "siteTitle":"Olimpiada Internațională de Blockchain (Olimpiada internațională de blockchain (IBCOL) este o competiție de design și implementare multidisciplinară. IBCOL 2019 invită studenți din întreaga lume să soluționeze provocările din lumea reală prin aplicații descentralizate.)",
   "seoDescription":"Olimpiada Internațională de Blockchain este o competiție multidisciplinară de design si inginerie. IBCOL 2019 invită studenții din toată lumea să rezolve provocări reale, prin aplicații de-centralizate.",
   "keywords":"",
   "ogImage":"static/images/ogimage.jpg",
@@ -14,6 +14,7 @@
     "sponsors":"Sponsori",
     "schedule":"Program",
     "contact":"Contact",
+    "blog":"Știri",
     "registration":"Înregistrare"
   },
   "footerMenu":{

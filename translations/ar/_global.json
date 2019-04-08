@@ -1,27 +1,28 @@
 {
-  "siteTitle":"",
-  "seoDescription":"",
+  "siteTitle":"أولمبياد Blockchain الدولية (IBCOL)",
+  "seoDescription":"Blockchain الأولمبياد الدولي هو تصميم وبناء متعددة التخصصات المنافسة. IBCOL 2019 تدعو الطلاب من جميع أنحاء العالم في حل التحديات في العالم الحقيقي من خلال تطبيقات اللامركزية.",
   "keywords":"",
   "ogImage":"static/images/ogimage.jpg",
-  "logoTag":"",
+  "logoTag":"IBCOL: أولمبياد Blockchain الدولية",
   "titleSeparator":"|",
   "menu":{
-    "home":"",
-    "about":"",
-    "how":"",
-    "competition":"",
-    "ambassadors":"",
-    "sponsors":"",
-    "schedule":"",
-    "contact":"",
-    "registration":""
+    "home":"الصفحة الرئيسية",
+    "about":"حول",
+    "how":"كيفية الانضمام",
+    "competition":"منافسة",
+    "ambassadors":"الطلاب",
+    "sponsors":"الرعاة",
+    "schedule":"برنامج",
+    "contact":"اتصل",
+    "blog":"أخبار",
+    "registration":"التسجيل"
   },
   "footerMenu":{
-    "backToTop":"",
-    "aboutCompetition":"",
-    "registrationInfo":""
+    "backToTop":"الرجوع الى أعلى الصفحة",
+    "aboutCompetition":"عن المسابقة",
+    "registrationInfo":"سجل الان"
   },
-  "closeMenu":"",
-  "navigateTo":"",
-  "copyright":""
+  "closeMenu":"قريب",
+  "navigateTo":"انتقل إلى...",
+  "copyright":"حقوق التأليف والنشر © 2018 أولمبياد Blockchain الدولية. كل الحقوق محفوظة."
 }

@@ -1,6 +1,6 @@
 {
   "siteTitle":"国际奥林匹克区块链竞赛 (奥链赛)",
-  "seoDescription":"国际奥林匹克区块链竞赛是一个多学科的设计与建设性的竞赛。 IBCOL 2019邀请来自世界各地的学生,通过分散的应用程式,解决现实生活中所面对的挑战。",
+  "seoDescription":"国际奥林匹克区块链竞赛是一个多学科的设计与建设性的竞赛。 2019届奥链竞赛邀请来自世界各地的学生通过去中心化​的分布式应用解决现实生活中所面对的挑战。",
   "keywords":"",
   "ogImage":"static/images/ogimage.jpg",
   "logoTag":"IBCOL: 国际奥林匹克区块链竞赛",
@@ -14,6 +14,7 @@
     "sponsors":"赞助",
     "schedule":"项目",
     "contact":"联系",
+    "blog":"新闻",
     "registration":"参加"
   },
   "footerMenu":{

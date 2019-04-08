@@ -1,19 +1,20 @@
 {
-  "siteTitle":"Nemzetközi Blockchain Olimpia (NBO)",
-  "seoDescription":"",
+  "siteTitle":"Nemzetközi Blockchain Diákolimpia (NBD)",
+  "seoDescription":"A Nemzetközi Blockchain Diákolimpia egy multidiszciplináris verseny, ahol a tervezés és kivitelezés van középpontban. Az IBCOL 2019 a világ minden tájáról várja a diákokat, hogy olyan decentralizált alkalamzások szülessenek, amik valós problémákat oldanak meg.",
   "keywords":"",
   "ogImage":"static/images/ogimage.jpg",
-  "logoTag":"IBCOL: Nemzetközi Blockchain Olimpia",
+  "logoTag":"IBCOL: Nemzetközi Blockchain Diákolimpia",
   "titleSeparator":"|",
   "menu":{
     "home":"Főoldal",
-    "about":"",
-    "how":"",
+    "about":"Rólunk",
+    "how":"Hogyan jelentkezz",
     "competition":"Verseny",
     "ambassadors":"Diákok",
     "sponsors":"Szponzorok",
-    "schedule":"",
+    "schedule":"Program",
     "contact":"Kapcsolat",
+    "blog":"hírek",
     "registration":"Jelentkezés"
   },
   "footerMenu":{
@@ -21,7 +22,7 @@
     "aboutCompetition":"A versenyről",
     "registrationInfo":"Jelentkezés"
   },
-  "closeMenu":"",
-  "navigateTo":"",
+  "closeMenu":"Bezárás",
+  "navigateTo":"Ugrás...",
   "copyright":"Copyright © 2018 International Blockchain Olympiad. Minden jog fenntartva."
 }

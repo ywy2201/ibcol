@@ -1,6 +1,6 @@
 {
   "siteTitle":"國際奧林匹克區塊鏈競賽 (奧鏈賽)",
-  "seoDescription":"國際奧林匹克區塊鏈競賽是一個多學科的設計與建設性的競賽。 IBCOL 2019邀請來自世界各地的學生,通過分散的應用程式,解決現實生活中所面對的挑戰。",
+  "seoDescription":"國際奧林匹克區塊鏈競賽是一個多學科的設計與建設性的競賽。 2019屆奧鏈競賽邀請來自世界各地的學生通過去中心化​的分布式應用解決現實生活中所面對的挑戰。",
   "keywords":"",
   "ogImage":"static/images/ogimage.jpg",
   "logoTag":"IBCOL: 國際奧林匹克區塊鏈競賽",
@@ -14,6 +14,7 @@
     "sponsors":"贊助",
     "schedule":"項目",
     "contact":"聯繫",
+    "blog":"新聞",
     "registration":"參加"
   },
   "footerMenu":{
