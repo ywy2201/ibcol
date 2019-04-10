@@ -3,6 +3,10 @@
   "seoDescription":"国际奥林匹克区块链竞赛是一个多学科的设计与建设性的竞赛。 IBCOL 2019邀请来自世界各地的学生,通过分散的应用程式,解决现实生活中所面对的挑战。",
   "ogImage":"static/images/ogimage.jpg",
   "subhead":"申请2019年国际区块链奥林匹克运动会",
+  "eligibility":"资格标准",
+  "eligibilityGeneral":"学生是指在公认信誉良好之学术机构（如学校、学院）学习或进修者。以及于过去的2年内毕业的也能被定义为学生。",
+  "eligibilityCategory":"学生可以是任何年龄。有没有年龄限制。",
+  "eligibilityTeam":"学生只可登记到一个团队。如果学生想参与另外的团队，他们就会被视作一个顾问的身份加入，而非选手身份。",
   "whenToJoinHeading":"什么时候加入",
   "plans":{
     "fromLabel":"由...",

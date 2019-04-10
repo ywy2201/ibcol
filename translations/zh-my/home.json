@@ -19,30 +19,30 @@
     }
   },
   "timelineSection":{
-    "heading":"比赛流程",
+    "heading":"比赛过程",
     "block1":{
-      "title":"登记",
-      "details":"直到4月21日"
+      "title":"参加",
+      "details":"您必须注册才能管理项目"
     },
     "block2":{
       "title":"白皮書",
-      "details":"白皮书<br/>需于4月21日或之前<br/>通过网上提交"
+      "details":"滚动截止日期为4月21日"
     },
     "block3":{
       "title":"訪問",
-      "details":"通过电话会议面试<br/>五月及六月举行"
+      "details":"所有的采访将6月9日之前完成"
     },
     "block4":{
       "title":"模擬示範",
-      "details":"七月期间<br/>在科技博览会<br/>模拟示范"
+      "details":"入围者应准备概念验证"
     },
     "block5":{
       "title":"開幕",
-      "details":"7月<br/>在舞台上<br/>正式开幕"
+      "details":"入围者应准备登台演讲"
     },
     "block6":{
       "title":"延續",
-      "details":"七月后<br/>通过加速器继续"
+      "details":"参赛者获得实习或投资"
     }
   },
   "section01":{

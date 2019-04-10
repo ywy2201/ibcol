@@ -1,11 +1,11 @@
 {
-  "pageTitle":"",
-  "seoDescription":"",
+  "pageTitle":"Iskolai nagykövetek",
+  "seoDescription":"A Nemzetközi Blockchain Diákolimpia egy multidiszciplináris verseny, ahol a tervezés és kivitelezés van középpontban. Az IBCOL 2019 a világ minden tájáról várja a diákokat, hogy olyan decentralizált alkalamzások szülessenek, amik valós problémákat oldanak meg.",
   "ogImage":"static/images/ogimage.jpg",
-  "subhead":"",
-  "schoolAmbassadorsTitle":"",
-  "schoolAmbassadorsDescriptions":"",
-  "applyAmbassadorsLabel":"",
+  "subhead":"Diák kapcsolat az 2019 Nemzetközi Blockchain Diákolimpiával kapcsolatban",
+  "schoolAmbassadorsTitle":"Iskolai nagykövetek",
+  "schoolAmbassadorsDescriptions":"Iskolai nagykövetek, akik az IBCOL 2019-t képviselik a saját egyetemeiken",
+  "applyAmbassadorsLabel":"Jelentkezz IBCOL iskolai nagykövetnek",
   "schoolAmbassadors":[
     {"flag":"flag-icon-hu","countryCode":"hu","title":"Budapesti Metropolitan Egyetem","ambassadors":[
       {"name":"Viktor Tabori","email":"viktor.tabori@ibcol.org"}
@@ -105,14 +105,14 @@
       {"name":"Marina Danylyuk","email":"marina.danylyuk@ibcol.org"}
     ]}
   ],
-  "schoolAmbassadorProgrammeTitle":"",
-  "schoolAmbassadorProgrammeDescription":"",
-  "responsibilitiesTitle":"",
-  "responsibilities":["Promote the International Blockchain Olympiad on campus","Recruit interested students on campus","Take lead and be the point of contact between interested applicants and registered participants","Arrange with student organisations or faculty or department for subsidies","Organise events for preparing students to compete in IBCOL 2019, such as team formation, blockchain training, and general promotion","Act in the best interest of the International Blockchain Olympiad"],
-  "perksTitle":"",
-  "perks":["Gain valuable experience and insights into the enterprise, government, and blockchain worlds","1 free course (DC3) issued by the Hong Kong Blockchain Society (Value: 2000 USD)","School Ambassador Certificate issued by the International Blockchain Olympiad","Entitled to 10% discount on admission to IBCOL 2019 (Value up to 2000 USD - includes full 2-day access to tech expo, fireside chats, keynote luncheons, and networking sessions), for each referred team. For example, 3 referred teams is 30%, 7 referred teams is 70% off, 10 or more is 100% off, i.e. free ticket."],
-  "applyNowButtonLabel":"",
-  "comingSoonButtonLabel":"",
-  "financialAssistanceTitle":"",
-  "financialAssistanceDescription":""
+  "schoolAmbassadorProgrammeTitle":"Iskolai Nagykövet Program",
+  "schoolAmbassadorProgrammeDescription":"Lelkes vagy a technológiákkal, innovációval vagy tanulmányi versenyekkel kapcsolatban? Vegyél részt az első Nemzetközi Blockchain Diákolimpia létrehozásában! Iskolai nagyköveteket keresünk, akik az IBCOL 2019-t promótálják a saját helyi egyetemükön.",
+  "responsibilitiesTitle":"Feladatok",
+  "responsibilities":["A Nemzetközi Blockchain Diákolimpia promótálása az egyetemen","Érdeklődő diákok toborzása az egyetemről","Kezdeményezés és kapcsolattartás a jelentkezőkkel","Támogatásokkal kapcsolatban kommunikáció kezdeményezés diákszervezeteknél, karnál vagy tanszéknél","Rendezvények szervezése és hallgatók felkészítése az IBCOL 2019-re, blockchain oktatás és általános promóció","A Nemzetközi Blockchain Diákolimpia legjobb érdekében eljárni"],
+  "perksTitle":"Előnyök",
+  "perks":["Értékes tapasztalat és betekintés a vállalati, kormányzati és blockchain területekre","1 ingyenes tanfolyam (DC3) a Hongkongi Blockchain Society által (érték: 2,000 USD)","Iskolai Nagykövet Certificate a Nemzetközi Blockchain Diákolimpia által kiállítva","10% kedvezmény az IBCOL 2019 belépő árából (érték akár 2,000 USD - magában foglalja a teljes 2 napos belépőt a tech expora, kerekasztal beszélgetésekre, vitaindító étkezésekre, és kapcsolatépítési ülésekre). Ez minden javasolt csapat után jár. Például 3 javasolt csapat után 30%, 7 referrált csapat után 70% kedvezmény, 10 vagy több csapat után 100% kedvezmény, azaz ingyenes jegy."],
+  "applyNowButtonLabel":"Jelentkezz most",
+  "comingSoonButtonLabel":"Hamarosan",
+  "financialAssistanceTitle":"Pénzügyi támogatási lehetőségek",
+  "financialAssistanceDescription":"A jelentkezések egyedileg kerülnek elbírálásra, a versenyen való végleges eredményetől függetlenül. A diákok jogosultak támogatást kérni, hogy csökkentsék az anyagi költségeiket az IBCOL 2019-re való jelentkezéssel kapcsolatban, mint pl. belépési díj, Hong Kong-ba való utazás és a szálláshely költsége. Csak február 1 előtt regisztrálók jogosultak."
 }

@@ -1,27 +1,28 @@
 {
   "siteTitle":"Międzynarodowa Olimpiada Blockchain (MOB)",
-  "seoDescription":"",
+  "seoDescription":"Miedzynarodowa Olimpiada Blockchain (IBCOL) to wielotematyczny konkurs projektow budowlamych. IBCOL zaprasza studentow z calego swiata do rozwiazania realnych zadan poprzez zdecentralizowane aplikacje.",
   "keywords":"",
   "ogImage":"static/images/ogimage.jpg",
   "logoTag":"IBCOL: Międzynarodowa Olimpiada Blockchain",
   "titleSeparator":"|",
   "menu":{
-    "home":"",
-    "about":"",
-    "how":"",
-    "competition":"",
-    "ambassadors":"",
-    "sponsors":"",
-    "schedule":"",
-    "contact":"",
-    "registration":""
+    "home":"Dom",
+    "about":"O",
+    "how":"Jak dołączyć",
+    "competition":"Zawody",
+    "ambassadors":"studenci",
+    "sponsors":"Sponsorzy",
+    "schedule":"Program",
+    "contact":"Kontakt",
+    "blog":"Aktualności",
+    "registration":"Rejestracja"
   },
   "footerMenu":{
-    "backToTop":"",
-    "aboutCompetition":"",
-    "registrationInfo":""
+    "backToTop":"Powrót do góry",
+    "aboutCompetition":"O konkursie",
+    "registrationInfo":"Zarejestruj się teraz"
   },
-  "closeMenu":"",
-  "navigateTo":"",
-  "copyright":""
+  "closeMenu":"Blisko",
+  "navigateTo":"Nawigować do...",
+  "copyright":"Copyright © 2018-2019 Międzynarodowe Blockchain Olimpiady. Wszelkie prawa zastrzeżone."
 }

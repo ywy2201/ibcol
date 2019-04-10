@@ -1,0 +1,68 @@
+{
+  "pageTitle":"Registrazione",
+  "seoDescription":"Internazionale Blockchain Olimpiade è un disegno e la costruzione di concorso multidisciplinare. IBCOL 2019 invita gli studenti di tutto il mondo per risolvere le sfide del mondo reale attraverso le applicazioni decentralizzate.",
+  "ogImage":"static/images/ogimage.jpg",
+  "subhead":"registrazione della squadra",
+  "teamInfo":"Informazioni squadra",
+  "teamName":"Nome della squadra",
+  "studentInfo":"Informazioni per studenti",
+  "studentRecords":{
+    "firstName":"Nome di battesimo",
+    "lastName":"Cognome",
+    "phoneNumber":"Numero di telefono",
+    "email":"E-mail",
+    "educationRecords":{
+      "degree":"Grado o equivalente",
+      "programme":"Programma o Maggiore",
+      "yearOfGraduation":"Nome istituzione",
+      "institutionName":"anno di laurea",
+      "city":"Città",
+      "state":"Provincia / Stato",
+      "countryCode":"Paese / Regione"
+    }
+  },
+  "advisorRecords":{
+    "firstName":"Nome di battesimo",
+    "lastName":"Cognome",
+    "phoneNumber":"Numero di telefono",
+    "email":"E-mail",
+    "associationRecords":{
+      "organisationName":"Azienda / Organizzazione",
+      "city":"Città",
+      "state":"Provincia / Stato",
+      "countryCode":"Paese / Regione",
+      "title":"Ruolo principale",
+      "sectorCode":"Industry Group",
+      "yearCommencement":"inizio",
+      "yearCessation":"Cessazione"
+    }
+  },
+  "projectRecords":{
+    "name":"Nome del progetto",
+    "projectCategoryKey":"Progetto Categoria",
+    "description":"descrizione del progetto"
+  },
+  "studentEducationInfo":"Credenziali accademiche",
+  "addAnotherStudent":"Aggiungere un altro studente",
+  "removeStudent":"rimuovere Student",
+  "addAnotherStudentEducationRecord":"Aggiungi un altro credenziali Accademico",
+  "removeStudentEducationRecord":"Rimuovere Accademico credenziali",
+  "advisorInfo":"Advisor Informazioni",
+  "addAnAdvisor":"Aggiungere un Advisor",
+  "addAnotherAdvisor":"Aggiungi un altro Advisor",
+  "removeAdvisor":"rimuovere Advisor",
+  "advisorAssociationInfo":"Associazione Record",
+  "addAnotherAdvisorAssociationRecord":"Aggiungere un'altra associazione Record",
+  "removeAdvisorAssociationRecord":"Rimuovere Associazione Record",
+  "projectInfo":"Informazioni di progetto",
+  "removeProject":"rimuovere Progetto",
+  "addAnotherProject":"Aggiungere un altro progetto",
+  "submit":"Sottoscrivi",
+  "registerAnother":"Creare un'altra applicazione",
+  "confirmation":{
+    "title":"Grazie per la tua registrazione.",
+    "message":"Abbiamo ricevuto la tua registrazione. Non vediamo l'ora di leggere il tuo whitepaper (a causa 21 aprile 2019). Si prega di non procrastinare!",
+    "refTitle":"Riferimento applicativi:",
+    "TteamNameTitle":"Nome della squadra:"
+  }
+}

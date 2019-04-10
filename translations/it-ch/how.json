@@ -1,0 +1,69 @@
+{
+  "pageTitle":"Come partecipare",
+  "seoDescription":"Internazionale Blockchain Olimpiade è un disegno e la costruzione di concorso multidisciplinare. IBCOL 2019 invita gli studenti di tutto il mondo per risolvere le sfide del mondo reale attraverso le applicazioni decentralizzate.",
+  "ogImage":"static/images/ogimage.jpg",
+  "subhead":"L'iscrizione al 2019 Internazionale Blockchain Olimpiade",
+  "eligibility":"Criteri di ammissibilità",
+  "eligibilityGeneral":"Uno studente è definito come una persona iscritta in regola presso un istituto accademico riconosciuto, o se si è laureato da un istituto accademico riconosciuto nel corso degli ultimi 2 anni.",
+  "eligibilityCategory":"Gli studenti possono essere di qualsiasi età. Non ci sono limiti di età.",
+  "eligibilityTeam":"Gli studenti possono essere registrati solo una squadra; se uno studente è coinvolto con un team diverso dal proprio, sarebbe considerato un consulente a quell'altra squadra, e un concorrente alla propria squadra principale.",
+  "whenToJoinHeading":"Quando ad unirsi",
+  "plans":{
+    "fromLabel":"A partire dal...",
+    "toLabel":"Fino a...",
+    "feeLabel":"Registrazione",
+    "financialAssistanceLabel":"Assistenza finanziaria",
+    "viewMoreLabel":"strisciare per più",
+    "secondaryLabel":"Progetto Scuola secondaria Studente",
+    "postSecondaryLabel":"Progetto studente post-secondaria",
+    "additionalCategoryLabel":"Per ogni categoria supplementare",
+    "specialNotice":"Tranne tasse categoria aggiuntivi, spese di registrazione del progetto per le registrazioni del team sono rinunciato per tutte le squadre registrate fino ad 1 apr 2019",
+    "superEarlyBird":{
+      "name":"Super Early Bird",
+      "fromDate":"Oggi",
+      "toDate":"Venerdì<br/>1 FEBBRAIO 2019<br/>23:59 HKT",
+      "fee":"Fee è rinunciato",
+      "financialAssistanceDetails":"Beneficiare di sovvenzioni di viaggio",
+      "feeSchedule":{
+        "secondary":"40 USD",
+        "postSecondary":"50 USD",
+        "additionalCategory":"16 USD"
+      }
+    },
+    "earlyBird":{
+      "name":"Early Bird",
+      "fromDate":"Sabato<br/>2 febbraio 2019<br/>00:00 HKT",
+      "toDate":"Lunedi<br/>1 Aprile 2019<br/>23:59 HKT",
+      "fee":"Fee è rinunciato",
+      "financialAssistanceDetails":"Non ammissibili per le sovvenzioni di viaggio",
+      "feeSchedule":{
+        "secondary":"50 USD",
+        "postSecondary":"60 USD",
+        "additionalCategory":"20 USD"
+      }
+    },
+    "regular":{
+      "name":"Regolare",
+      "fromDate":"martedì<br/>2 aprile 2019<br/>00:00 HKT",
+      "toDate":"Domenica<br/>21 Aprile 2019<br/>23:59 HKT",
+      "fee":"è necessario Fee",
+      "financialAssistanceDetails":"Non ammissibili per le sovvenzioni di viaggio",
+      "feeSchedule":{
+        "secondary":"100 USD",
+        "postSecondary":"120 USD",
+        "additionalCategory":"40 USD"
+      }
+    }
+  },
+  "howToJoinHeading":"Come partecipare",
+  "teamLabel":"Squadra",
+  "teamExplained":"Fino a 6 studenti possono iscriversi in un unico gruppo",
+  "projectLabel":"Progetto",
+  "projectExplained":"Una squadra può presentare più di un progetto",
+  "categoryLabel":"Categoria",
+  "categoryExplained":"Ogni progetto viene inserito in una categoria",
+  "categoriesHeading":"categorie",
+  "feeScheduleHeading":"Tariffario",
+  "applyNowCTALabel":"Applica ora",
+  "faqHeading":"FAQ"
+}

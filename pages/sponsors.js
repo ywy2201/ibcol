@@ -75,13 +75,13 @@ export default class extends React.Component {
                 <div className="row corporate-logo">
 
                     <div className="col-block">
-                        <h1>{this.translate('sponsorsTitle')}</h1>
+                        <h1>{this.translate('titleSponsorTitle')}</h1>
                     </div>
 
                     <div className="block-1-3 block-tab-full">
 
                         {
-                            this.translate('sponsors').map((sponsor, index)=>{
+                            this.translate('titleSponsor').map((sponsor, index)=>{
                                 return <div className="col-block" key={index}>
                                     <a href={sponsor.url} target="_blank">
                                         <img src={sponsor.logo} alt={sponsor.name} />
@@ -106,6 +106,40 @@ export default class extends React.Component {
                 <div className="row corporate-logo">
 
                     <div className="col-block">
+                        <h1>{this.translate('generalSponsorTitle')}</h1>
+                    </div>
+
+                    <div className="block-1-3 block-tab-full">
+                        {
+                            this.translate('generalSponsor').map((sponsor, index)=>{
+                                return <div className="col-block" key={index}>
+                                    <a href={sponsor.url} target="_blank">
+                                        <img src={sponsor.logo} alt={sponsor.name} />
+                                    </a>
+                                    <p dangerouslySetInnerHTML={{__html: sponsor.description}}/>
+                                </div>
+                            })
+                        }                       
+                    </div>
+
+                    <div className="col-block">
+                        <h1>{this.translate('academicPartnersTitle')}</h1>
+                    </div>
+
+                    <div className="block-1-3 block-tab-full">
+                        {
+                            this.translate('academicPartners').map((sponsor, index)=>{
+                                return <div className="col-block" key={index}>
+                                    <a href={sponsor.url} target="_blank">
+                                        <img src={sponsor.logo} alt={sponsor.name} />
+                                    </a>
+                                    <p dangerouslySetInnerHTML={{__html: sponsor.description}}/>
+                                </div>
+                            })
+                        }                       
+                    </div>
+
+                    <div className="col-block">
                         <h1>{this.translate('supportingOrganisationsTitle')}</h1>
                     </div>
 
@@ -119,12 +153,11 @@ export default class extends React.Component {
                                     <p dangerouslySetInnerHTML={{__html: sponsor.description}}/>
                                 </div>
                             })
-                        }
-
-                        
+                        }                       
                     </div>
-
+                           
                 </div>
+
                 <div className="row">
                     <div className="col-block" dangerouslySetInnerHTML={{__html: this.translate('prompt')}}/>
                 </div>

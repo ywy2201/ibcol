@@ -1,64 +1,68 @@
 {
-  "pageTitle":"",
-  "seoDescription":"",
+  "pageTitle":"Hogyan jelentkezz",
+  "seoDescription":"A Nemzetközi Blockchain Diákolimpia egy multidiszciplináris verseny, ahol a tervezés és kivitelezés van középpontban. Az IBCOL 2019 a világ minden tájáról várja a diákokat, hogy olyan decentralizált alkalamzások szülessenek, amik valós problémákat oldanak meg.",
   "ogImage":"static/images/ogimage.jpg",
-  "subhead":"Jelentkezés a 2019-es Nemzetközi Blockchain Olimpiára",
+  "subhead":"Jelentkezés a 2019-es Nemzetközi Blockchain Diákolimpiára",
+  "eligibility":"Jogosultsági kritériumok",
+  "eligibilityGeneral":"A diák úgy definiáljuk, mint egy személy iratkozott jó állapotú egy elismert felsőoktatási intézmény, vagy ha végzett egy elismert felsőoktatási intézmény az elmúlt 2 évben.",
+  "eligibilityCategory":"A diákok lehetnek bármilyen korú. Vannak nincs korhatár.",
+  "eligibilityTeam":"A diákok csak akkor vehető nyilvántartásba az egyik csapat, ha a hallgató is részt vesz a csapat más, mint a saját, akkor figyelembe kell venni a tanácsadója, hogy más csapat, és a versenyző az elsődleges csapat.",
   "whenToJoinHeading":"Mikor jelentkezz",
   "plans":{
     "fromLabel":"Mikortól",
     "toLabel":"Meddig",
     "feeLabel":"Regisztrálás",
     "financialAssistanceLabel":"Pénzügyi támogatás",
-    "viewMoreLabel":"",
-    "secondaryLabel":"",
-    "postSecondaryLabel":"",
-    "additionalCategoryLabel":"",
-    "specialNotice":"",
+    "viewMoreLabel":"swipolj a részletekért",
+    "secondaryLabel":"Középiskolás diákprojekt",
+    "postSecondaryLabel":"Középiskola utáni diákprojekt",
+    "additionalCategoryLabel":"Minden további kategória",
+    "specialNotice":"A projektek regisztrációs díja elengedésre kerül azoknak a csapatoknak akik 2019 április 1-ig regisztrálnak, kivéve a további kiegészítő kategóriához kapcsolódó díjakat.",
     "superEarlyBird":{
       "name":"Szuper early bird",
       "fromDate":"Ma",
-      "toDate":"péntek<br/>2019 február 1. <br/>00:00 HKT",
+      "toDate":"Péntek<br/>2019 február 1. <br/>23:59 HKT",
       "fee":"Díjmentes",
-      "financialAssistanceDetails":"",
+      "financialAssistanceDetails":"Jogosult utazási támogatásra",
       "feeSchedule":{
-        "secondary":"",
-        "postSecondary":"",
-        "additionalCategory":""
+        "secondary":"40 USD",
+        "postSecondary":"50 USD",
+        "additionalCategory":"16 USD"
       }
     },
     "earlyBird":{
       "name":"Early bird",
-      "fromDate":"szombat<br/>2019 február 2. <br/>00:00 HKT",
-      "toDate":"hétfő<br/>2019 április 1.<br/>00:00 HKT",
+      "fromDate":"Szombat<br/>2019 február 2. <br/>00:00 HKT",
+      "toDate":"Hétfő<br/>2019 április 1.<br/>23:59 HKT",
       "fee":"Díjmentes",
-      "financialAssistanceDetails":"",
+      "financialAssistanceDetails":"Nem jogosult utazási támogatásra",
       "feeSchedule":{
-        "secondary":"",
-        "postSecondary":"",
-        "additionalCategory":""
+        "secondary":"50 USD",
+        "postSecondary":"60 USD",
+        "additionalCategory":"20 USD"
       }
     },
     "regular":{
       "name":"Normál",
-      "fromDate":"kedd<br/>2019 április 2.<br/>00:00 HKT",
-      "toDate":"vasárnap<br/>2019 április 21. <br/>00:00 HKT",
+      "fromDate":"Kedd<br/>2019 április 2.<br/>00:00 HKT",
+      "toDate":"Vasárnap<br/>2019 április 21. <br/>23:59 HKT",
       "fee":"Díjat kell fizetni",
-      "financialAssistanceDetails":"",
+      "financialAssistanceDetails":"Nem jogosult utazási támogatásra",
       "feeSchedule":{
-        "secondary":"",
-        "postSecondary":"",
-        "additionalCategory":""
+        "secondary":"100 USD",
+        "postSecondary":"120 USD",
+        "additionalCategory":"40 USD"
       }
     }
   },
-  "howToJoinHeading":"",
-  "teamLabel":"",
-  "teamExplained":"",
-  "projectLabel":"",
-  "projectExplained":"",
-  "categoryLabel":"",
-  "categoryExplained":"",
-  "categoriesHeading":"",
-  "feeScheduleHeading":"",
-  "applyNowCTALabel":""
+  "howToJoinHeading":"Hogyan jelentkezz",
+  "teamLabel":"Csapat",
+  "teamExplained":"Maximum 6 diák regisztrálhat egy csapatként",
+  "projectLabel":"Projekt",
+  "projectExplained":"Egy csapat több projektet is beküldhet",
+  "categoryLabel":"Kategória",
+  "categoryExplained":"Minden projektet lépett egy kategóriát",
+  "categoriesHeading":"Kategóriák",
+  "feeScheduleHeading":"Díjak ütemezése",
+  "applyNowCTALabel":"Jelentkezz most"
 }

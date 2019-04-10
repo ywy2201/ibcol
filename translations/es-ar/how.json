@@ -1,15 +1,19 @@
 {
   "pageTitle":"Como apuntarse",
-  "seoDescription":"",
+  "seoDescription":"La Olimpiada Internacional de Blockchain (IBCOL) es un concurso multidisciplinar de diseño y creación. IBCOL 2019 invita a estudiantes de todo el mundo a resolver desafíos del mundo real a través de aplicaciones descentralizadas.",
   "ogImage":"static/images/ogimage.jpg",
   "subhead":"Registro para las olimpiadas internacionales de Blockchain 2019",
+  "eligibility":"Criterio de elegibilidad",
+  "eligibilityGeneral":"Un estudiante se define como una persona inscrita en buen estado en una institución académica reconocida, o si se graduó de una institución académica reconocida en los últimos 2 años.",
+  "eligibilityCategory":"Los estudiantes pueden ser de cualquier edad. No hay límites de edad.",
+  "eligibilityTeam":"Los estudiantes sólo pueden ser registrados a uno de los equipos; si un estudiante está involucrado en un equipo distinto del suyo, serían considerados asesor de ese otro equipo, y un concursante a su equipo principal.",
   "whenToJoinHeading":"Cuando registrarse",
   "plans":{
     "fromLabel":"Desde",
     "toLabel":"Hasta",
     "feeLabel":"Registro  ",
     "financialAssistanceLabel":"Asistencia financiera",
-    "viewMoreLabel":"",
+    "viewMoreLabel":"deslizar para obtener más",
     "secondaryLabel":"Proyecto de estudiante de secundaria",
     "postSecondaryLabel":"Proyecto Estudiantil Post Secundaria",
     "additionalCategoryLabel":"Para cada categoría adicional",
@@ -17,37 +21,37 @@
     "superEarlyBird":{
       "name":"Super Descuento",
       "fromDate":"Hoy",
-      "toDate":"Sábado<br/>16 de marzo 2019<br/>23:59 HKT",
+      "toDate":"Viernes<br/>1 de febrero 2019<br/>23:59 HKT",
       "fee":"No se cobra tarifa",
       "financialAssistanceDetails":"Elegible para subsidios de viaje",
       "feeSchedule":{
-        "secondary":"",
-        "postSecondary":"",
-        "additionalCategory":""
+        "secondary":"40 USD",
+        "postSecondary":"50 USD",
+        "additionalCategory":"16 USD"
       }
     },
     "earlyBird":{
       "name":"Descuento",
-      "fromDate":"Domingo<br/>17 de marzo 2019<br/>0 horas HKT",
-      "toDate":"Lunes<br/>13 de abril 2019<br/>23:59 HKT",
+      "fromDate":"Sabado<br/>2 de febrero 2019<br/>0 horas HKT",
+      "toDate":"Lunes<br/>1 de abril 2019<br/>23:59 HKT",
       "fee":"No se cobra tarifa",
       "financialAssistanceDetails":"No elegible para subsidios de viaje",
       "feeSchedule":{
-        "secondary":"",
-        "postSecondary":"",
-        "additionalCategory":""
+        "secondary":"50 USD",
+        "postSecondary":"60 USD",
+        "additionalCategory":"20 USD"
       }
     },
     "regular":{
       "name":"Normal",
-      "fromDate":"Martes<br/>14 de abril 2019<br/>0 horas HKT",
+      "fromDate":"Martes<br/>2 de abril 2019<br/>0 horas HKT",
       "toDate":"Domingo<br/>21 de abril 2019<br/>23:59 HKT",
       "fee":"Se requiere pago",
       "financialAssistanceDetails":"No elegible para subsidios de viaje",
       "feeSchedule":{
-        "secondary":"",
-        "postSecondary":"",
-        "additionalCategory":""
+        "secondary":"100 USD",
+        "postSecondary":"120 USD",
+        "additionalCategory":"40 USD"
       }
     }
   },
@@ -60,5 +64,6 @@
   "categoryExplained":"Cada proyecto entra en una categoría ",
   "categoriesHeading":"Categorías",
   "feeScheduleHeading":"Tarifas",
-  "applyNowCTALabel":""
+  "applyNowCTALabel":"Aplica ya",
+  "faqHeading":"Preguntas más frecuentes"
 }

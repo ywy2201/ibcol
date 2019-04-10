@@ -1,9 +1,9 @@
 module.exports = {
   "_locale": {
-    "id": "en-us",
-    "name": "United States",
+    "id": "en-lr",
+    "name": "Liberia",
     "label": "Welcome",
-    "flag": "us.svg"
+    "flag": "lr.svg"
   },
   "_global": require('./_global.json'),
   "_countries": require('./_countries.json'),

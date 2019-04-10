@@ -14,6 +14,7 @@
     "sponsors":"Sponsors",
     "schedule":"Programme",
     "contact":"Contact",
+    "blog":"News",
     "registration":"Registration"
   },
   "footerMenu":{
@@ -23,7 +24,8 @@
   },
   "closeMenu":"Close",
   "navigateTo":"Navigate to...",
-  "copyright":"Copyright © 2018 International Blockchain Olympiad. All rights reserved.","filepond": {
+  "copyright":"Copyright © 2018-2019 International Blockchain Olympiad. All rights reserved.",
+  "filepond": {
     "labelMaxFileSize": "Maximum file size is {filesize}",
     "labelMaxTotalFileSizeExceeded": "File is too large",
     "labelFileLoading": "Loading",

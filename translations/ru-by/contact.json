@@ -1,13 +1,13 @@
 {
-  "pageTitle":"",
-  "seoDescription":"",
+  "pageTitle":"Связаться с нами",
+  "seoDescription":"Международная Олимпиада по Блокчейну (IBCOL) - это многопрофильный конкурс по разработке и дизайну программных решений на основе технологии блокчейн. IBCOL 2019 приглашает студентов со всего мира решать реальные задачи с помощью децентрализованных приложений.",
   "ogImage":"static/images/ogimage.jpg",
-  "subhead":"",
-  "mailingAddressTitle":"",
-  "emailAddressTitle":"",
-  "mailingAddressHTML":"",
-  "generalEnquiriesLabel":"",
+  "subhead":"Связаться с организаторами 2019 International Blockchain Олимпиады",
+  "mailingAddressTitle":"Электронная почта",
+  "emailAddressTitle":"Адрес электронной почты",
+  "mailingAddressHTML":"IBCOL Organising Committee<br/>International Blockchain Olympiad<br/>333A, 3/F, Core Building 2,<br/>1W Science Park Avenue,<br/>Hong Kong",
+  "generalEnquiriesLabel":"Общие вопросы",
   "generalEnquiriesEmail":"info@ibcol.org",
-  "sponsorshipLabel":"",
+  "sponsorshipLabel":"спонсорство",
   "sponsorshipEmail":"sponsorship@ibcol.org"
 }

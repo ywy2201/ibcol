@@ -1,32 +1,32 @@
 {
   "projectCategories":{
     "FINTECH":{
-      "name":"Fintech",
-      "description":"Financial Technology broadly encapsulates activities in the traditional finance sector, as well as in insurance, trading, and risk management.",
+      "name":"FINTECH",
+      "description":"Technologia finansowa szeroko obudowuje działalność w tradycyjnym sektorze finansów, jak i ubezpieczeń, handlu i zarządzania ryzykiem.",
       "color":"blue",
       "icon":"show_chart"
     },
     "GOVTECH":{
       "name":"Govtech",
-      "description":"Government Technology describes key platform and infrastructure solutions required for administrative responsibilities of a sovereign state or territory.",
+      "description":"Technologia rząd opisuje najważniejsze platformy i infrastrukturalnych rozwiązań niezbędnych do obowiązków administracyjnych suwerennego państwa lub terytorium.",
       "color":"yellow",
       "icon":"account_balance"
     },
     "MEDTECH":{
       "name":"Medtech",
-      "description":"Medical Technology is a collection of applications that solve health related issues and improve the quality of lives, for humans or otherwise.",
+      "description":"Technologia medyczna to zbiór aplikacji, które rozwiązują problemy związane ze zdrowiem i poprawy jakości życia, dla ludzi lub w inny sposób.",
       "color":"black",
       "icon":"local_hospital"
     },
     "IOT_O2O":{
-      "name":"IoT / O2O",
-      "description":"Internet of Things / Online-to-Offline / vice versa concerns bridging of digital and physical worlds, i.e. interpreting real-life situations and phenomena into machine-useable data.",
+      "name":"Internet przedmiotów / O2O",
+      "description":"Internet przedmiotów / Online-to-Online / odwrotnie obaw pomostowych światów cyfrowych i fizycznych, tj interpretacji sytuacji i zjawisk rzeczywistych w danych maszynowych-użytkowej.",
       "color":"green",
       "icon":"local_shipping"
     },
     "ARTS_MEDIA":{
-      "name":"Arts / Media",
-      "description":"Art and media technology encompassing human activities in public and commercial communications, entertainment, and adjacent industries.",
+      "name":"Sztuka / Media",
+      "description":"Sztuka i technologia mediów obejmujący działalność człowieka w publicznych i komercyjnych komunikacji, rozrywki i sąsiednich branżach.",
       "color":"red",
       "icon":"color_lens"
     }

@@ -1,8 +1,8 @@
 {
   "pageTitle":"Registration",
-  "seoDescription":"IBCOL",
+  "seoDescription":"Internationale Blockchain-Olympiade (IBCOL) ist ein multidisziplinärer Wettbewerb zur Planung und Konzeption von Blockchain Anwendungen. IBCOL 2019 lädt Studenten aus der ganzen Welt dazu ein, durch dezentrale Anwendungen reale Herausforderungen zu lösen.",
   "ogImage":"static/images/ogimage.jpg",
-  "subhead":"",
+  "subhead":"Team Registration",
   "teamInfo":"Team Information",
   "teamName":"Name des Teams",
   "studentInfo":"Information für Studenten",
@@ -17,7 +17,7 @@
       "yearOfGraduation":"Name der Universität",
       "institutionName":"Abschlussjahr",
       "city":"Stadt",
-      "state":"",
+      "state":"Provinz/Gliedstaat",
       "countryCode":"Land"
     }
   },
@@ -27,42 +27,42 @@
     "phoneNumber":"Telefonnummer",
     "email":"Email",
     "associationRecords":{
-      "organisationName":"",
+      "organisationName":"Firmen Organisation",
       "city":"Stadt",
-      "state":"",
+      "state":"Gemeinde /",
       "countryCode":"Land",
-      "title":"",
+      "title":"Titelrolle",
       "sectorCode":"Industriegruppe",
-      "yearCommencement":"",
-      "yearCessation":""
+      "yearCommencement":"Beginn",
+      "yearCessation":"Einstellung"
     }
   },
   "projectRecords":{
-    "name":"",
-    "projectCategoryKey":"",
-    "description":""
+    "name":"Projektname",
+    "projectCategoryKey":"Projekt Kategorie",
+    "description":"Projektbeschreibung"
   },
   "studentEducationInfo":"Akademische Abschlüsse",
-  "addAnotherStudent":"",
-  "removeStudent":"",
-  "addAnotherStudentEducationRecord":"",
-  "removeStudentEducationRecord":"",
-  "advisorInfo":"",
-  "addAnAdvisor":"",
-  "addAnotherAdvisor":"",
-  "removeAdvisor":"",
-  "advisorAssociationInfo":"",
-  "addAnotherAdvisorAssociationRecord":"",
-  "removeAdvisorAssociationRecord":"",
-  "projectInfo":"",
-  "removeProject":"",
-  "addAnotherProject":"",
-  "submit":"",
-  "registerAnother":"",
+  "addAnotherStudent":"In einem anderen Studenten",
+  "removeStudent":"entfernen Studenten",
+  "addAnotherStudentEducationRecord":"Ein weiteres hinzufügen Academic Credential",
+  "removeStudentEducationRecord":"Entfernen Academic Credential",
+  "advisorInfo":"Advisor Informationen",
+  "addAnAdvisor":"In einem Berater",
+  "addAnotherAdvisor":"Ein weiteres hinzufügen Advisor",
+  "removeAdvisor":"entfernen Advisor",
+  "advisorAssociationInfo":"Zugordnungseintrag",
+  "addAnotherAdvisorAssociationRecord":"In anderen Verband Bilanz",
+  "removeAdvisorAssociationRecord":"Entfernen Verband Bilanz",
+  "projectInfo":"Projekt Information",
+  "removeProject":"entfernen Projekt",
+  "addAnotherProject":"Ein weiteres hinzufügen Projekt",
+  "submit":"einreichen",
+  "registerAnother":"Erstellen Sie eine andere Anwendung",
   "confirmation":{
-    "title":"",
-    "message":"",
-    "refTitle":"",
-    "TteamNameTitle":""
+    "title":"Danke für ihre Registrierung.",
+    "message":"Wir haben Ihre Registrierung erhalten. Wir freuen uns auf Ihre White Paper (aufgrund 21. April 2019) zu lesen. Bitte nicht zögern!",
+    "refTitle":"Anwendungshinweis:",
+    "TteamNameTitle":"Teamname:"
   }
 }

@@ -3,6 +3,10 @@
   "seoDescription":"International Blockchain Olympiad is a multidisciplinary design and building competition. IBCOL 2019 invites students from around the world to solve real-world challenges through decentralized applications.",
   "ogImage":"static/images/ogimage.jpg",
   "subhead":"Registration for the 2019 International Blockchain Olympiad",
+  "eligibility":"Eligibility Criteria",
+  "eligibilityGeneral":"A student is defined as a person enrolled in good standing at a recognised academic institution, or if graduated from a recognised academic institution within the last 2 years.",
+  "eligibilityCategory":"Students can be of any age. There are no age limits.",
+  "eligibilityTeam":"Students may only be registered to one team; if a student is involved with a team other than their own, they would be considered an advisor to that other team, and a contestant to their primary team.",
   "whenToJoinHeading":"When to join",
   "plans":{
     "fromLabel":"From...",
