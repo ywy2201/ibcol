@@ -6,14 +6,19 @@
   ],
   "env": {
     "ENV": "dev",
-    "NODE_ENV": "production"
+    "NODE_ENV": "production",
+    "SALT": ")6Dc1UP*S9Night-Age-Doll-Famous-8as81*@()#@",
+    "BUCKET_NAME": "ibcol-uploads-dev",
+    "GOOGLE_APPLICATION_CREDENTIALS": "/tmp/service-account.json",
+    "GOOGLE_APPLICATION_CREDENTIALS_DATA": "@ibcol-gcloudserviceaccount-dev"
   },
   "build": {
     "env": {
-      "ENV": "dev"
+      "ENV": "dev",
+      "NODE_ENV": "production",
+      "FILEPOND_API_ENDPOINT": "/file/"
     }
   },
-  "regions": ["all"],
   "github": {
     "enabled": false,
     "autoAlias": false,
@@ -22,14 +27,10 @@
   },
   "builds": [
     { "src": "node-routes/defaultRoute.js", "use": "@now/node", "config": { "maxLambdaSize": "40mb" } },
+    { "src": "node-routes/filepondRoute.js", "use": "@now/node" },
     { "src": "next.config.js", "use": "@now/next" }
   ],
   "routes": [
-    { 
-      "src": "/.*",
-      "headers": {"cache-control": "s-maxage=31536000, max-age=0"},
-      "continue": true
-    },
 
     { 
       "src": "/service-worker.js",  
@@ -39,14 +40,22 @@
         "Service-Worker-Allowed": "/"
       }
     },
-
+    
 
     {
       "src": "/(how|ambassadors|sponsors|contact|registration)?([/]*)",
       "dest": "/node-routes/defaultRoute.js"
     },
-
     
+    {
+      "src": "/file([/]*)",
+      "dest": "/node-routes/filepondRoute.js",
+      "methods": ["POST", "DELETE", "GET"]
+    },
+    
+    
+    
+
     { 
       "src": "/(?<locale>[^/]*)/", 
       "dest": "/home?locale=$locale"
@@ -69,7 +78,8 @@
 
     { 
       "src": "/(?<locale>[^/]*)/ambassadors/", 
-      "dest": "/ambassadors?locale=$locale"
+      "dest": "/ambassadors?locale=$locale",
+      "headers": { "cache-control": "s-maxage=31536000, max-age=0" }
     },
     { 
       "src": "/(?<locale>[^/]*)/ambassadors", 

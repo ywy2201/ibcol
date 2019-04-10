@@ -71,7 +71,9 @@ const withCSS = require('@zeit/next-css')
 const nextConfig = {
   target: 'serverless',
   env: {
-    ENV: process.env.ENV
+    ENV: process.env.ENV,
+    FILEPOND_API_ENDPOINT: process.env.FILEPOND_API_ENDPOINT ? process.env.FILEPOND_API_ENDPOINT : '',
+    FILEPOND_API_URL: process.env.FILEPOND_API_URL ? process.env.FILEPOND_API_URL : ''
   },
   webpack: (config) => {
     
