@@ -21,8 +21,12 @@
       "countryCode": "Country",
       "studentNumber": "Student Number",
       "studentCard": "Student ID Card",
-      "studentCardFrontImagePrompt": "Image of Student Card (Front)",
-      "studentCardBackImagePrompt": "Image of Student Card (Back)"
+      "studentCardFrontFile": "Student Card (Front)",
+      "studentCardFrontFileType": "Accepts PNG/JPEG/PDF Only",
+      "studentCardBackFile": "Student Card (Back)",
+      "studentCardBackFileType": "Accepts PNG/JPEG/PDF Only",
+      "transcriptFile": "Academic Transcript",
+      "transcriptFileType": "Accepts PNG/JPEG/PDF/ZIP Only"
     }
   },
   "advisorRecords": {
@@ -45,7 +49,11 @@
   "projectRecords": {
     "name": "Project Name",
     "projectCategoryKey": "Project Category",
-    "description": "Project Description"
+    "description": "Project Description",
+    "presentationFile": "Presentation",
+    "presentationFileType": "Accepts PDF/ZIP Only",
+    "whitepaperFile": "Whitepaper",
+    "whitepaperFileType": "Accepts PDF/ZIP Only"
   },
 
   "studentEducationInfo": "Academic Credential",
