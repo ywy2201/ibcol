@@ -99,7 +99,7 @@ const deleteFilepondUploads = (serverId) => {
         
         // Deletes the file from the temp bucket
         await storage
-          .bucket(`${BUCKET_NAME}-temps`)
+          .bucket(`${BUCKET_NAME}-temp`)
           .file(uuid)
           .delete();
 
