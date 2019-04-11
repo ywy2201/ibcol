@@ -9,9 +9,9 @@ import configs from 'configs';
 import { media, style } from 'helpers/styledComponents.js';
 
 import {translate} from 'helpers/translate.js';
-import { transparentize } from 'polished'
+// import { transparentize } from 'polished'
 
-import { Link } from '/routes';
+// import { Link } from '/routes';
 
 import PageContainerComponent from 'components/PageContainerComponent';
 import CountryInputSelectComponent from 'components/CountryInputSelectComponent';
@@ -24,6 +24,105 @@ import gql from 'graphql-tag'
 
 import ReactDOM from 'react-dom';
 import Countdown from 'react-countdown-now';
+
+
+import axios from 'axios';
+// import FilePondComponent from 'components/FilePondComponent';
+import { FilePond, registerPlugin } from 'react-filepond';
+import '/node_modules/filepond/dist/filepond.min.css';
+
+import FilePondPluginFileValidateType from 'filepond-plugin-file-validate-type';
+import FilePondPluginImageExifOrientation from 'filepond-plugin-image-exif-orientation';
+import FilePondPluginImagePreview from 'filepond-plugin-image-preview';
+import FilePondPluginFileValidateSize from 'filepond-plugin-file-validate-size';
+import '/node_modules/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.css';
+
+
+// Register the plugins
+registerPlugin(FilePondPluginFileValidateType, FilePondPluginFileValidateSize, FilePondPluginImageExifOrientation, FilePondPluginImagePreview);
+
+
+const filepondServer = {
+  url: process.env.FILEPOND_API_URL,
+  process: function(fieldName, file, metadata, load, error, progress, abort) {
+    // console.log(fieldName, file);
+
+    const CancelToken = axios.CancelToken;
+
+    // console.log('file', file);
+    let cancelPutGSXHR;
+    let cancelGetSignedUrlXHR;
+    
+    axios.post(`${process.env.FILEPOND_API_URL}${process.env.FILEPOND_API_ENDPOINT}`, {
+      type: file.type,
+      name: file.name,
+      size: file.size,
+    }, {
+      cancelToken: new CancelToken(function executor(c) {
+        // An executor function receives a cancel function as a parameter
+        cancelGetSignedUrlXHR = c;
+      })
+    })
+    .then(function (response) {
+      // console.log(response.data);
+
+      const serverId = response.data.serverId;
+
+      // const formData = new FormData();
+      // formData.append('file',file);
+      // formData.append('Content-Type', file.type);
+      // formData.append('GoogleAccessId', response.data.GoogleAccessId);
+      // formData.append('policy', response.data.policy.base64);
+      // formData.append('signature', response.data.policy.signature);
+      // formData.append('bucket', response.data.bucket);
+
+      axios.put(`${response.data.signedUrl}`, file, 
+        {
+          headers: { 
+            'content-type': file.type,
+            
+          }
+        }, {
+          cancelToken: new CancelToken(function executor(c) {
+          // An executor function receives a cancel function as a parameter
+          cancelPutGSXHR = c;
+          })
+        }
+      ).then((response) => {
+        console.log(serverId);
+        load(serverId);
+      })
+      .catch((e) => {
+        console.log(e);
+        error();
+      })
+    }).catch((e) => {
+      console.log(e);
+      error();
+    });
+
+
+    // Should expose an abort method so the request can be cancelled
+    return {
+      abort: () => {
+        // This function is entered if the user has tapped the cancel button
+        if (cancelGetSignedUrlXHR)
+          cancelGetSignedUrlXHR();
+        if (cancelPutGSXHR)
+          cancelPutGSXHR();
+
+        // Let FilePond know the request has been cancelled
+        abort();
+      }
+    };
+
+  },
+  // url: process.env.FILEPOND_API_URL,
+  // process: process.env.FILEPOND_API_ENDPOINT,
+  fetch: process.env.FILEPOND_API_ENDPOINT,
+  revert: process.env.FILEPOND_API_ENDPOINT
+};
+
 
 const MAX_STUDENT_PER_TEAM = 6;
 const MAX_PROJECT_PER_TEAM = 5;
@@ -54,6 +153,27 @@ const ADD_APPLICATION = gql`
 
 
 const ThisPageContainerComponent = styled(PageContainerComponent)`
+  
+  #extraRegistration {
+    h1, h3, a, span {
+      width: 100%;
+      float: none;
+      height: unset;
+      line-height: 3rem;
+    }
+
+    a {
+      display: inline;
+    }
+    
+    background: #eee;
+    padding: 3rem 2rem 0.8rem;
+    margin-left: -2rem;
+    margin-right: -2rem;
+    margin-bottom: 5rem;
+
+  }
+
 
   .lds-ellipsis {
     display: inline-block;
@@ -129,6 +249,8 @@ const ThisPageContainerComponent = styled(PageContainerComponent)`
       cursor: not-allowed;
     }
   }
+
+  .filepond--root { font-size: 1.5rem !important; }
 `;
 
 const RegistrationForm = styled.form`
@@ -243,7 +365,7 @@ const renderer = ({ days, hours, minutes, seconds }) => {
   return <span>{days} Days, {hours} Hrs, {minutes} Mins, {seconds} Secs</span>;
 };
 
-export default class extends React.Component {
+export default class extends React.PureComponent {
   static async getInitialProps({ query }) {
     return { query };
   }
@@ -257,6 +379,7 @@ export default class extends React.Component {
 
   getDefaultState = () => {
     return {
+      pendingUploads: 0,
       focusedField: undefined,
       record: this.props.record !== undefined ? this.graphQLCleanUp(this.props.record) : this.getDefaultEditorRecord(),
       lastEditorStateChange: Date.now(),
@@ -378,6 +501,10 @@ export default class extends React.Component {
   getNewStudentEducationRecord = () => {
     return {
       institutionName: "",
+      studentCardFrontFileId: "",
+      studentCardBackFileId: "",
+      transcriptFileId: "",
+      studentNumber: "",
       state: "",
       city: "",
       countryCode: "",
@@ -391,7 +518,9 @@ export default class extends React.Component {
     return {
       name: "",
       projectCategoryKey: "",
-      description: ""
+      description: "",
+      presentationFileId: "",
+      whitepaperFileId: ""
     }
   }
 
@@ -484,6 +613,8 @@ export default class extends React.Component {
         }
       })
     }
+
+
     if (!_.isEmpty(updatedRecord)) {
       // console.log('updatedRecord', updatedRecord);
       this.setState({
@@ -492,6 +623,56 @@ export default class extends React.Component {
       });
     }
   }
+
+  onPendingUploads = (inc = true) => {
+    this.setState({pendingUploads: this.state.pendingUploads + (inc ? 1:-1)});
+  }
+
+  onFilepondChange = (file, meta) => {
+    console.log(file ? file.serverId : file, meta);
+    
+    let updatedRecord = {};
+
+    if (meta.section === 'studentEducationRecords') {
+      const studentIndex = meta.studentIndex;
+      const studentEducationIndex = parseInt(meta.studentEducationIndex);
+      updatedRecord = update(this.state.record, {
+        studentRecords: {
+          [studentIndex]: {
+            educationRecords: {
+              [studentEducationIndex]: {
+                [meta.name]: {
+                  $set: file ? file.serverId : ""
+                }
+              }
+            }
+          }
+        }
+      })
+    } else if (meta.section === 'projectRecords') {
+      const projectIndex = meta.projectIndex;
+      updatedRecord = update(this.state.record, {
+        projectRecords: {
+          [projectIndex]: {
+            [meta.name]: {
+              $set: file ? file.serverId : ""
+            }
+          }
+        }
+      })
+    }
+
+
+    if (!_.isEmpty(updatedRecord)) {
+      // console.log('updatedRecord', updatedRecord);
+      this.setState({
+        record: updatedRecord,
+        lastEditorStateChange: Date.now()
+      });
+    }
+  }
+
+
   graphQLCleanUp = (record) => {
     return record;
   }
@@ -773,6 +954,8 @@ export default class extends React.Component {
   render() {
 
     // console.log(">>> query", this.props.query);
+    // console.log("===>", process.env.FILEPOND_API);
+    // console.log("===>", process.env.ENV);
 
 
     const locale = this.props.query.locale;
@@ -780,6 +963,7 @@ export default class extends React.Component {
     const sectors = _.sortBy(this.translate('sectors'), [(o) => o]);
     const projectCategories = _.sortBy(this.translate('projectCategories'), [(o) => o.name]);
 
+    
 
     return (
       <ThisPageContainerComponent>
@@ -850,18 +1034,18 @@ export default class extends React.Component {
                     return <RegistrationForm onSubmit={(e) => { e.preventDefault(); }}>
 
                       <FormSection className="FormSection">
-                        <div id="trainingBox">
-                          <h1>Next Training Section: </h1>
-                          <Countdown date={new Date(2019, 3, 13, 13, 30, 0, 0)}
-                            renderer={renderer}
-                          />
-                          <div className="clearing"></div>
-                        </div>
+                        <div id="extraRegistration">
+                          <div id="trainingBox">
+                            <h1>Next Training Section: </h1>
+                            <Countdown date={new Date(2019, 3, 13, 13, 30, 0, 0)}
+                              renderer={renderer}
+                            />
+                          </div>
 
-                        <div id="registrationBox">
-                          <h3>广州大学城</h3>
-                          <a href="https://mp.weixin.qq.com/s/yK792yQKiBe4Alvkq50pNA" target="_blank">活动通知</a>
-                          <div className="clearing"></div>
+                          <div id="registrationBox">
+                            <h3>广州大学城</h3>
+                            <a href="https://mp.weixin.qq.com/s/yK792yQKiBe4Alvkq50pNA" target="_blank">活动通知</a>
+                          </div>
                         </div>
                         
                         <h3 className="subhead">{this.translate('teamInfo')}</h3>
@@ -915,6 +1099,7 @@ export default class extends React.Component {
                                 <input type="email" data-name="email" data-section="studentRecords" data-student-index={studentIndex} onChange={this.onRecordChange} value={_.isEmpty(studentRecord['email']) ? "" : studentRecord['email']} onFocus={this.onFieldFocused} onBlur={this.onFieldBlurred} />
                               </FormField>
                             </FormRow>
+                            
 
 
 
@@ -964,7 +1149,151 @@ export default class extends React.Component {
                                     </FormField>
                                   </FormRow>
 
+                                  <FormRow>
+                                    <FormField>
+                                      {this.getLabel('studentRecords.educationRecords.studentNumber')}
+                                      <input type="text" data-name="studentNumber" data-section="studentEducationRecords" data-student-index={studentIndex} data-student-education-index={studentEducationIndex} onChange={this.onRecordChange} value={_.isEmpty(educationRecord['studentNumber']) ? "" : educationRecord['studentNumber']} onFocus={this.onFieldFocused} onBlur={this.onFieldBlurred} />
+                                    </FormField>
 
+                                    
+                                  </FormRow>
+
+
+                                  <FormRow>
+                                    <FormField>
+                                      {this.getLabel('studentRecords.educationRecords.studentCardFrontFile')}
+                                      <input disabled style={{display: "none"}} type="text" data-name="studentCardFrontFileId" data-section="studentEducationRecords" data-student-index={studentIndex} data-student-education-index={studentEducationIndex} value={_.isEmpty(educationRecord['studentCardFrontFileId']) ? "" : educationRecord['studentCardFrontFileId']} />
+                                      <FilePond
+                                        allowMultiple={false}
+                                        {...this.translate('filepond')}
+                                        acceptedFileTypes="image/png, image/jpeg, application/pdf"
+                                        labelFileTypeNotAllowed={this.translate('studentRecords.educationRecords.studentCardFrontFileType')}
+                                        allowFileSizeValidation={true}
+                                        maxTotalFileSize="100MB"
+                                        
+                                        
+                                        server={filepondServer}
+
+                                        onprocessfileabort={(file)=>{this.onPendingUploads(false)}}
+                                        onprocessfilestart={(file)=>{this.onPendingUploads()}}
+                                        onremovefile={(file)=>{
+                                          // console.log('onremovefile', file);
+                                          this.onPendingUploads(false);
+                                          this.onFilepondChange(file, {
+                                            name: "studentCardFrontFileId",
+                                            section: "studentEducationRecords",
+                                            studentIndex,
+                                            studentEducationIndex
+                                          });
+                                        }}
+                                        onprocessfile={(error, file)=>{
+                                          // console.log('onprocessfile', file, file.serverId);
+                                          this.onPendingUploads(false);
+                                          this.onFilepondChange(file, {
+                                            name: "studentCardFrontFileId",
+                                            section: "studentEducationRecords",
+                                            studentIndex,
+                                            studentEducationIndex
+                                          });
+                                        }}
+
+                                        />
+                                      
+                                      
+                                      
+                                    </FormField>
+
+                                    
+
+                                    <FormField>
+                                      {this.getLabel('studentRecords.educationRecords.studentCardBackFile')}
+                                      <input disabled style={{display: "none"}} type="text" data-name="studentCardBackFileId" data-section="studentEducationRecords" data-student-index={studentIndex} data-student-education-index={studentEducationIndex} value={_.isEmpty(educationRecord['studentCardBackFileId']) ? "" : educationRecord['studentCardBackFileId']} />
+                                      <FilePond
+                                        allowMultiple={false}
+                                        {...this.translate('filepond')}
+                                        acceptedFileTypes="image/png, image/jpeg, application/pdf"
+                                        labelFileTypeNotAllowed={this.translate('studentRecords.educationRecords.studentCardBackFileType')}
+                                        allowFileSizeValidation={true}
+                                        maxTotalFileSize="100MB"
+                                        
+                                        
+                                        server={filepondServer}
+                                        onprocessfileabort={(file)=>{this.onPendingUploads(false)}}
+                                        onprocessfilestart={(file)=>{this.onPendingUploads()}}
+                                        onremovefile={(file)=>{
+                                          // console.log('onremovefile', file);
+                                          this.onPendingUploads(false);
+                                          this.onFilepondChange(file, {
+                                            name: "studentCardBackFileId",
+                                            section: "studentEducationRecords",
+                                            studentIndex,
+                                            studentEducationIndex
+                                          });
+                                        }}
+                                        onprocessfile={(error, file)=>{
+                                          // console.log('onprocessfile', file, file.serverId);
+                                          this.onPendingUploads(false);
+                                          this.onFilepondChange(file, {
+                                            name: "studentCardBackFileId",
+                                            section: "studentEducationRecords",
+                                            studentIndex,
+                                            studentEducationIndex
+                                          });
+                                        }}
+
+                                        />
+                                      
+                                      
+                                      
+                                    </FormField>
+                                  </FormRow>
+
+                                  <FormRow>
+                                    <FormField>
+                                      {this.getLabel('studentRecords.educationRecords.transcriptFile')}
+                                      <input disabled style={{display: "none"}} type="text" data-name="transcriptFileId" data-section="studentEducationRecords" data-student-index={studentIndex} data-student-education-index={studentEducationIndex} value={_.isEmpty(educationRecord['transcriptFileId']) ? "" : educationRecord['transcriptFileId']} />
+                                      <FilePond
+                                        allowMultiple={false}
+                                        {...this.translate('filepond')}
+
+                                        acceptedFileTypes="image/png, image/jpeg, application/pdf, application/zip"
+                                        labelFileTypeNotAllowed={this.translate('studentRecords.educationRecords.transcriptFileType')}
+                                        allowFileSizeValidation={true}
+                                        maxTotalFileSize="100MB"
+                                        
+                                        
+                                        server={filepondServer}
+                                        onprocessfileabort={(file)=>{this.onPendingUploads(false)}}
+                                        onprocessfilestart={(file)=>{this.onPendingUploads()}}
+                                        onremovefile={(file)=>{
+                                          // console.log('onremovefile', file);
+                                          this.onPendingUploads(false);
+                                          this.onFilepondChange(file, {
+                                            name: "transcriptFileId",
+                                            section: "studentEducationRecords",
+                                            studentIndex,
+                                            studentEducationIndex
+                                          });
+                                        }}
+                                        onprocessfile={(error, file)=>{
+                                          // console.log('onprocessfile', file, file.serverId);
+                                          this.onPendingUploads(false);
+                                          this.onFilepondChange(file, {
+                                            name: "transcriptFileId",
+                                            section: "studentEducationRecords",
+                                            studentIndex,
+                                            studentEducationIndex
+                                          });
+                                        }}
+
+                                        />
+                                      
+                                      
+                                      
+                                    </FormField>
+
+                                    
+                                  </FormRow>
 
 
                                   <FormRow>
@@ -978,6 +1307,9 @@ export default class extends React.Component {
                                       <input type="text" data-name="state" data-section="studentEducationRecords" data-student-index={studentIndex} data-student-education-index={studentEducationIndex} onChange={this.onRecordChange} value={_.isEmpty(educationRecord['state']) ? "" : educationRecord['state']} onFocus={this.onFieldFocused} onBlur={this.onFieldBlurred} />
                                     </FormField>
                                   </FormRow>
+
+
+
 
 
 
@@ -1234,6 +1566,104 @@ export default class extends React.Component {
                                 <textarea type="text" data-name="description" data-section="projectRecords" data-project-index={projectIndex} onChange={this.onRecordChange} value={_.isEmpty(projectRecord['description']) ? "" : projectRecord['description']} onFocus={this.onFieldFocused} onBlur={this.onFieldBlurred} />
                               </FormField>
                             </FormRow>
+
+
+
+
+
+                            <FormRow>
+                              <FormField>
+                                {this.getLabel('projectRecords.whitepaperFile')}
+                                <input disabled style={{display: "none"}} type="text" data-name="whitepaperFileId" data-section="projectRecords" data-project-index={projectIndex} value={_.isEmpty(projectRecord['whitepaperFileId']) ? "" : projectRecord['whitepaperFileId']} />
+                                <FilePond
+                                  allowMultiple={false}
+                                  {...this.translate('filepond')}
+
+                                  acceptedFileTypes="application/pdf, application/zip"
+                                  labelFileTypeNotAllowed={this.translate('projectRecords.whitepaperFileType')}
+                                  allowFileSizeValidation={true}
+                                  maxTotalFileSize="500MB"
+                                  
+                                  
+                                  server={filepondServer}
+                                  onprocessfileabort={(file)=>{this.onPendingUploads(false)}}
+                                  onprocessfilestart={(file)=>{this.onPendingUploads()}}
+                                  onremovefile={(file)=>{
+                                    // console.log('onremovefile', file);
+                                    this.onPendingUploads(false);
+                                    this.onFilepondChange(file, {
+                                      name: "whitepaperFileId",
+                                      section: "projectRecords",
+                                      projectIndex
+                                    });
+                                  }}
+                                  onprocessfile={(error, file)=>{
+                                    // console.log('onprocessfile', file, file.serverId);
+                                    this.onPendingUploads(false);
+                                    this.onFilepondChange(file, {
+                                      name: "whitepaperFileId",
+                                      section: "projectRecords",
+                                      projectIndex
+                                    });
+                                  }}
+
+                                  />
+                                
+                                
+                                
+                              </FormField>
+
+                              
+                            </FormRow>
+
+
+                            <FormRow>
+                              <FormField>
+                                {this.getLabel('projectRecords.presentationFile')}
+                                <input disabled style={{display: "none"}} type="text" data-name="presentationFileId" data-section="projectRecords" data-project-index={projectIndex} value={_.isEmpty(projectRecord['presentationFileId']) ? "" : projectRecord['presentationFileId']} />
+                                <FilePond
+                                  allowMultiple={false}
+                                  {...this.translate('filepond')}
+
+                                  acceptedFileTypes="application/pdf, application/zip"
+                                  labelFileTypeNotAllowed={this.translate('projectRecords.presentationFileType')}
+                                  allowFileSizeValidation={true}
+                                  maxTotalFileSize="500MB"
+                                  
+                                  
+                                  server={filepondServer}
+                                  onprocessfileabort={(file)=>{this.onPendingUploads(false)}}
+                                  onprocessfilestart={(file)=>{this.onPendingUploads()}}
+                                  onremovefile={(file)=>{
+                                    // console.log('onremovefile', file);
+                                    this.onPendingUploads(false);
+                                    this.onFilepondChange(file, {
+                                      name: "presentationFileId",
+                                      section: "projectRecords",
+                                      projectIndex
+                                    });
+                                  }}
+                                  onprocessfile={(error, file)=>{
+                                    // console.log('onprocessfile', file, file.serverId);
+                                    this.onPendingUploads(false);
+                                    this.onFilepondChange(file, {
+                                      name: "presentationFileId",
+                                      section: "projectRecords",
+                                      projectIndex
+                                    });
+                                  }}
+
+                                  />
+                                
+                                
+                                
+                              </FormField>
+
+                              
+                            </FormRow>
+
+
+
                           </FormSection>
                         })
                       }
@@ -1245,8 +1675,8 @@ export default class extends React.Component {
                       <FormTools>
                         <div className="full-width">
                           <button className={classNames({
-                            disabled: this.state.recordIsValid !== true || this.state.isEditorMutating === true
-                          })} disabled={!this.state.recordIsValid || this.state.isEditorMutating === true} onClick={() => {
+                            disabled: this.state.pendingUploads > 0 ||this.state.recordIsValid !== true || this.state.isEditorMutating === true
+                          })} disabled={this.state.pendingUploads > 0 || !this.state.recordIsValid || this.state.isEditorMutating === true} onClick={() => {
                             this.onCreateApplication(mutate)
                           }}>
                             {

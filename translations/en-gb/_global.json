@@ -24,5 +24,31 @@
   },
   "closeMenu":"Close",
   "navigateTo":"Navigate to...",
-  "copyright":"Copyright © 2018-2019 International Blockchain Olympiad. All rights reserved."
+  "copyright":"Copyright © 2018-2019 International Blockchain Olympiad. All rights reserved.",
+  "filepond": {
+    "labelMaxFileSize": "Maximum file size is {filesize}",
+    "labelMaxTotalFileSizeExceeded": "File is too large",
+    "labelFileLoading": "Loading",
+    "labelFileLoadError": "Error during load",
+    "labelFileProcessing": "Uploading",
+    "labelFileProcessingComplete": "Upload complete",
+    "labelFileProcessingAborted": "Upload cancelled",
+    "labelFileProcessingError": "Error during upload",
+    "labelFileProcessingRevertError": "Error during revert",
+    "labelFileRemoveError": "Error during remove",
+    "labelTapToCancel": "tap to cancel",
+    "labelTapToRetry": "tap to retry",
+    "labelTapToUndo": "tap to undo",
+    "labelButtonRemoveItem": "Remove",
+    "labelButtonAbortItemLoad": "Abort",
+    "labelButtonRetryItemLoad": "Retry",
+    "labelButtonAbortItemProcessing": "Cancel",
+    "labelButtonUndoItemProcessing": "Undo",
+    "labelButtonRetryItemProcessing": "Retry",
+    "labelButtonProcessItem": "Upload",
+    "labelFileWaitingForSize": "Waiting for size",
+    "labelFileSizeNotAvailable": "Size not available",
+    "labelInvalidField": "Field contains invalid files",
+    "labelIdle": "Drag & Drop your files or <span class=\"filepond--label-action\"> Browse </span>"
+  }
 }

@@ -28,7 +28,7 @@
   "routes": [
     { 
       "src": "/.*",
-      "headers": {"cache-control": "s-maxage=31536000, maxage=0"},
+      "headers": {"cache-control": "s-maxage=31536000, max-age=0"},
       "continue": true
     },
 
@@ -43,67 +43,67 @@
 
 
     {
-      "src": "/(how|ambassadors|sponsors|contact|registration)?([/]*)$",
+      "src": "/(how|ambassadors|sponsors|contact|registration)?([/]*)",
       "dest": "/node-routes/defaultRoute.js"
     },
     
     
     { 
-      "src": "/(?<locale>[^/]*)/$", 
+      "src": "/(?<locale>[^/]*)/", 
       "dest": "/home?locale=$locale"
     },
     { 
-      "src": "/(?<locale>[^/]*)$", 
+      "src": "/(?<locale>[^/]*)", 
       "status": 301,
       "headers": { "Location": "/$locale/" }
     },
 
     { 
-      "src": "/(?<locale>[^/]*)/how/$", 
+      "src": "/(?<locale>[^/]*)/how/", 
       "dest": "/how?locale=$locale"
     },
     { 
-      "src": "/(?<locale>[^/]*)/how$", 
+      "src": "/(?<locale>[^/]*)/how", 
       "status": 301,
       "headers": { "Location": "/$locale/how/" }
     },
 
     { 
-      "src": "/(?<locale>[^/]*)/ambassadors/$", 
+      "src": "/(?<locale>[^/]*)/ambassadors/", 
       "dest": "/ambassadors?locale=$locale"
     },
     { 
-      "src": "/(?<locale>[^/]*)/ambassadors$", 
+      "src": "/(?<locale>[^/]*)/ambassadors", 
       "status": 301,
       "headers": { "Location": "/$locale/ambassadors/" }
     },
 
     { 
-      "src": "/(?<locale>[^/]*)/sponsors/$", 
+      "src": "/(?<locale>[^/]*)/sponsors/", 
       "dest": "/sponsors?locale=$locale"
     },
     { 
-      "src": "/(?<locale>[^/]*)/sponsors$", 
+      "src": "/(?<locale>[^/]*)/sponsors", 
       "status": 301,
       "headers": { "Location": "/$locale/sponsors/" }
     },
 
     { 
-      "src": "/(?<locale>[^/]*)/contact/$", 
+      "src": "/(?<locale>[^/]*)/contact/", 
       "dest": "/contact?locale=$locale"
     },
     { 
-      "src": "/(?<locale>[^/]*)/contact$", 
+      "src": "/(?<locale>[^/]*)/contact", 
       "status": 301,
       "headers": { "Location": "/$locale/contact/" }
     },
 
     { 
-      "src": "/(?<locale>[^/]*)/registration/$", 
+      "src": "/(?<locale>[^/]*)/registration/", 
       "dest": "/registration?locale=$locale"
     },
     { 
-      "src": "/(?<locale>[^/]*)/registration$", 
+      "src": "/(?<locale>[^/]*)/registration", 
       "status": 301,
       "headers": { "Location": "/$locale/registration/" }
     },

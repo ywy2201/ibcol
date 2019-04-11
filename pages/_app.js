@@ -154,13 +154,13 @@ class MyApp extends App {
 
 
 
-  static async getInitialProps({ Component, router, ctx }) {
+  static async getInitialProps({ Component, ctx }) {
     let pageProps = {}
 
     if (Component.getInitialProps) {
       pageProps = await Component.getInitialProps(ctx);
 
-      console.debug('incoming pageProps >>>', pageProps);
+      // console.debug('incoming pageProps >>>', pageProps);
       
     }
 
@@ -175,7 +175,7 @@ class MyApp extends App {
 
     
 
-    return { pageProps, router }
+    return { pageProps }
   }
   
   componentWillMount() {
