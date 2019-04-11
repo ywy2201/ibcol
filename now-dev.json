@@ -32,7 +32,12 @@
     { "src": "next.config.js", "use": "@now/next" }
   ],
   "routes": [
-
+    { 
+      "src": "/.*",
+      "headers": {"cache-control": "s-maxage=31536000, max-age=0"},
+      "continue": true
+    },
+    
     { 
       "src": "/service-worker.js",  
       "dest": "/_next/static/service-worker.js",
