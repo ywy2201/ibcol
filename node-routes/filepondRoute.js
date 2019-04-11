@@ -1,7 +1,7 @@
 const cors = (process.env.NOW_REGION === undefined) ? require('micro-cors')() : undefined;
 
 
-console.log('cors', cors === undefined, process.env.NOW_REGION === undefined);
+// console.log('cors', cors === undefined, process.env.NOW_REGION === undefined);
 
 // const fs = require('fs');
 const CryptoJS = require("crypto-js");
@@ -94,18 +94,34 @@ const deleteFilepondUploads = (serverId) => {
     async resolve => {
       const uuid = ServerId.decrypt(serverId);
 
-      console.log(`deleting ${serverId} gs://${BUCKET_NAME}-temp/${uuid}...`);
-      
-      // Deletes the file from the bucket
-      await storage
-        .bucket(`${BUCKET_NAME}-temp`)
-        .file(uuid)
-        .delete();
+      try {
+        console.log(`deleting gs://${BUCKET_NAME}-temp/${uuid}...`);
+        
+        // Deletes the file from the temp bucket
+        await storage
+          .bucket(`${BUCKET_NAME}-temps`)
+          .file(uuid)
+          .delete();
 
-      console.log(`gs://${BUCKET_NAME}-temp/${uuid} deleted.`);
+        console.log(`gs://${BUCKET_NAME}-temp/${uuid} deleted.`);
 
 
-      resolve(`gs://${BUCKET_NAME}-temp/${uuid}`);
+        resolve(`gs://${BUCKET_NAME}-temp/${uuid}`);
+      } catch (e) {
+        console.log(`object not found in gs://${BUCKET_NAME}-temp/${uuid}...`);
+        console.log(`trying to delete object from gs://${BUCKET_NAME}/${uuid}...`);
+        // Try to deletes the file from the storage bucket
+        await storage
+          .bucket(`${BUCKET_NAME}`)
+          .file(uuid)
+          .delete();
+
+        console.log(`gs://${BUCKET_NAME}/${uuid} deleted.`);
+
+
+        resolve(`gs://${BUCKET_NAME}/${uuid}`);
+
+      }
     }
   );
 
@@ -169,9 +185,6 @@ const filepodRoute = async (req, res) => {
     const serverId = await text(req);
 
     return send(res, 200, await deleteFilepondUploads(serverId));
-
-
-
 
   }
   
