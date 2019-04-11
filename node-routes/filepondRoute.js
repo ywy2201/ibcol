@@ -55,75 +55,97 @@ const ServerId = {
 
 // const {routeToDefaultPath} = require('../helpers/route');
 
-const generateUploadMeta = (fileMeta) => {
+const generateUploadMeta = async (fileMeta) => {
+  console.log('fileMeta', fileMeta);
+  const uuid = `${generateUUID()}/${fileMeta.name}`;
 
-  return new Promise(
-    async resolve => {
-      console.log('fileMeta', fileMeta);
-      const uuid = `${generateUUID()}/${fileMeta.name}`;
+  
 
-      
+  const options = {
+    action: "write",
+    contentType: fileMeta.type,
+    expires: Date.now() + 1000 * 60 * 10, // ten minute
+    // contentMd5: fileMeta.contentMd5
+  };
 
-      const options = {
-        action: "write",
-        contentType: fileMeta.type,
-        expires: Date.now() + 1000 * 60 * 10, // ten minute
-        // contentMd5: fileMeta.contentMd5
-      };
+  
+  
+  const bucket = `${BUCKET_NAME}-temp`;
 
-      
-      
-      const bucket = `${BUCKET_NAME}-temp`;
+  // Uploads a local file to the bucket
+  const signedUrl = await storage.bucket(bucket).file(uuid).getSignedUrl(options);
 
-      // Uploads a local file to the bucket
-      const signedUrl = await storage.bucket(bucket).file(uuid).getSignedUrl(options);
-
-      
-
-      resolve({serverId: ServerId.encrypt(uuid), signedUrl: signedUrl[0]});
-    }
-  );
+  return {serverId: ServerId.encrypt(uuid), signedUrl: signedUrl[0]};
 
     
 }
 
 
-const deleteFilepondUploads = (serverId) => {
+const storeUploads = async (serverId) => {
 
-  return new Promise(
-    async resolve => {
-      const uuid = ServerId.decrypt(serverId);
+  const uuid = ServerId.decrypt(serverId);
+  
+  try {
+    console.log(`storing gs://${BUCKET_NAME}-temp/${uuid}...`);
 
-      try {
-        console.log(`deleting gs://${BUCKET_NAME}-temp/${uuid}...`);
-        
-        // Deletes the file from the temp bucket
-        await storage
-          .bucket(`${BUCKET_NAME}-temp`)
-          .file(uuid)
-          .delete();
+    await storage
+      .bucket(`${BUCKET_NAME}-temp`)
+      .file(uuid)
+      .move(`gs://${BUCKET_NAME}/${uuid}`);
 
-        console.log(`gs://${BUCKET_NAME}-temp/${uuid} deleted.`);
+    console.log(`object stored gs://${BUCKET_NAME}/${uuid}.`);
 
 
-        resolve(`gs://${BUCKET_NAME}-temp/${uuid}`);
-      } catch (e) {
-        console.log(`object not found in gs://${BUCKET_NAME}-temp/${uuid}...`);
-        console.log(`trying to delete object from gs://${BUCKET_NAME}/${uuid}...`);
-        // Try to deletes the file from the storage bucket
-        await storage
-          .bucket(`${BUCKET_NAME}`)
-          .file(uuid)
-          .delete();
+    return `gs://${BUCKET_NAME}/${uuid}`;
+  } catch (e) {
+    // maybe file already have been stored?
+    console.log(`checking for gs://${BUCKET_NAME}/${uuid}...`);
 
-        console.log(`gs://${BUCKET_NAME}/${uuid} deleted.`);
+    await storage
+      .bucket(`${BUCKET_NAME}`)
+      .file(uuid)
+      .get();
+
+    console.log(`object already stored gs://${BUCKET_NAME}/${uuid}.`);
+    
+    return `gs://${BUCKET_NAME}/${uuid}`;
+
+  }
+    
+}
+
+const deleteFilepondUploads = async (serverId) => {
+
+  const uuid = ServerId.decrypt(serverId);
+
+  try {
+    console.log(`deleting gs://${BUCKET_NAME}-temp/${uuid}...`);
+    
+    // Deletes the file from the temp bucket
+    await storage
+      .bucket(`${BUCKET_NAME}-temp`)
+      .file(uuid)
+      .delete();
+
+    console.log(`gs://${BUCKET_NAME}-temp/${uuid} deleted.`);
 
 
-        resolve(`gs://${BUCKET_NAME}/${uuid}`);
+    return `gs://${BUCKET_NAME}-temp/${uuid}`;
+  } catch (e) {
+    console.log(`object not found in gs://${BUCKET_NAME}-temp/${uuid}...`);
+    console.log(`trying to delete object from gs://${BUCKET_NAME}/${uuid}...`);
+    // Try to deletes the file from the storage bucket
+    await storage
+      .bucket(`${BUCKET_NAME}`)
+      .file(uuid)
+      .delete();
 
-      }
-    }
-  );
+    console.log(`gs://${BUCKET_NAME}/${uuid} deleted.`);
+
+
+    return `gs://${BUCKET_NAME}/${uuid}`;
+
+  }
 
     
 }
@@ -180,18 +202,11 @@ const filepodRoute = async (req, res) => {
   console.log('method', req.method);
 
   if (req.method === 'DELETE') {
-    
-
     const serverId = await text(req);
-
     return send(res, 200, await deleteFilepondUploads(serverId));
-
   }
   
   if (req.method === 'POST') {
-
-    
-
     // const serverId = await processFilepondUploads(req);
     // return send(res, 200, serverId);  
 
@@ -200,6 +215,10 @@ const filepodRoute = async (req, res) => {
     return send(res, 200, await generateUploadMeta(fileMeta));
   }
 
+  if (req.method === 'PUT') {
+    const serverId = await text(req);
+    return send(res, 200, await storeUploads(serverId));
+  }
 
   return send(res, 200);
   
