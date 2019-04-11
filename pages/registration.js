@@ -11,7 +11,7 @@ import { media, style } from 'helpers/styledComponents.js';
 import {translate} from 'helpers/translate.js';
 // import { transparentize } from 'polished'
 
-// import { Link } from '/routes';
+import { Link } from '/routes';
 
 import PageContainerComponent from 'components/PageContainerComponent';
 import CountryInputSelectComponent from 'components/CountryInputSelectComponent';
@@ -167,9 +167,9 @@ const ThisPageContainerComponent = styled(PageContainerComponent)`
     }
     
     background: #eee;
-    padding: 3rem 2rem 0.8rem;
-    margin-left: -2rem;
-    margin-right: -2rem;
+    padding: 3rem 3rem 0.8rem;
+    /* margin-left: 2rem;
+    margin-right: 2rem; */
     margin-bottom: 5rem;
 
   }
@@ -975,8 +975,26 @@ export default class extends React.PureComponent {
           <meta property="og:type" content="website" />
         </Head>
 
+
+        <section className="s-section target-section first">
+
+            <div id="extraRegistration">
+              <div id="trainingBox">
+                <h1>Next Training Section: </h1>
+                <Countdown date={new Date(2019, 3, 13, 13, 30, 0, 0)}
+                  renderer={renderer}
+                />
+              </div>
+
+              <div id="registrationBox">
+                <h3>广州大学城</h3>
+                <a href="https://mp.weixin.qq.com/s/yK792yQKiBe4Alvkq50pNA" target="_blank">活动通知</a>
+              </div>
+            </div>
+        </section>
+
         {this.state.showConfirmation &&
-          <section className="s-section target-section first last">
+          <section className="target-section last">
 
             <div className="row section-header">
               <div className="col-full">
@@ -997,7 +1015,7 @@ export default class extends React.PureComponent {
                       <b>{this.translate('confirmation.teamNameTitle')}</b><br />{this.state.confirmation.teamName}
                     </p>
                   </div>
-                  <div className="full-width">
+                  <div className="full-width" style={{marginBottom: "4rem"}}>
                     <button onClick={this.resetForm}>{this.translate('registerAnother')}</button>
                   </div>
                 </div>
@@ -1011,10 +1029,8 @@ export default class extends React.PureComponent {
 
 
 
-
-
         {!this.state.showConfirmation &&
-          <section className="s-section target-section first last">
+          <section className="target-section last">
 
             <div className="row section-header">
               <div className="col-full">
@@ -1034,19 +1050,6 @@ export default class extends React.PureComponent {
                     return <RegistrationForm onSubmit={(e) => { e.preventDefault(); }}>
 
                       <FormSection className="FormSection">
-                        <div id="extraRegistration">
-                          <div id="trainingBox">
-                            <h1>Next Training Section: </h1>
-                            <Countdown date={new Date(2019, 3, 13, 13, 30, 0, 0)}
-                              renderer={renderer}
-                            />
-                          </div>
-
-                          <div id="registrationBox">
-                            <h3>广州大学城</h3>
-                            <a href="https://mp.weixin.qq.com/s/yK792yQKiBe4Alvkq50pNA" target="_blank">活动通知</a>
-                          </div>
-                        </div>
                         
                         <h3 className="subhead">{this.translate('teamInfo')}</h3>
 
