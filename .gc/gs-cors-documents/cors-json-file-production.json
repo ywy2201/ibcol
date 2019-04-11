@@ -1,6 +1,6 @@
 [
     {
-      "origin": ["https://www.ibcol.org"],
+      "origin": ["https://www.ibcol.org", "https://api.ibcol.org"],
       "responseHeader": ["Content-Type"],
       "method": ["GET", "HEAD", "DELETE", "POST"],
       "maxAgeSeconds": 3600
