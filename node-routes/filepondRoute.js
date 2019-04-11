@@ -1,5 +1,8 @@
-console.log("ENV", process.env);
-const cors = require('micro-cors')()
+const cors = (process.env.NOW_REGION === undefined) ? require('micro-cors')() : undefined;
+
+
+console.log('cors', cors === undefined, process.env.NOW_REGION === undefined);
+
 // const fs = require('fs');
 const CryptoJS = require("crypto-js");
 const { randomBytes } = require('crypto')
@@ -156,7 +159,7 @@ const deleteFilepondUploads = (serverId) => {
 // }
 
 
-module.exports = cors(async (req, res) => {
+const filepodRoute = async (req, res) => {
   
   console.log('method', req.method);
 
@@ -187,4 +190,8 @@ module.exports = cors(async (req, res) => {
 
   return send(res, 200);
   
-})
+}
+
+
+
+module.exports = (cors !== undefined) ? cors(filepodRoute) : filepodRoute;
