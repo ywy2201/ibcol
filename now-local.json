@@ -4,7 +4,7 @@
   "env": {
     "ENV": "local",
     "NODE_ENV": "local",
-    "FILEPOND_API_URL": "http://localhost:4000",
+    "FILEPOND_API_URL": "http://localhost:4004",
     "FILEPOND_API_ENDPOINT": "/"
   },
   "build": {
