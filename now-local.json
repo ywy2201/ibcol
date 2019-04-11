@@ -14,7 +14,6 @@
       "FILEPOND_API_ENDPOINT": "/file/"
     }
   },
-  "regions": ["all"],
   "github": {
     "enabled": false,
     "autoAlias": false,
