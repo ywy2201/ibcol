@@ -1676,7 +1676,7 @@ export default class extends React.PureComponent {
                         <div className="full-width">
                           <button className={classNames({
                             disabled: this.state.pendingUploads > 0 ||this.state.recordIsValid !== true || this.state.isEditorMutating === true
-                          })} disabled={this.state.pendingUploads > 0  || this.state.recordIsValid || this.state.isEditorMutating === true} onClick={() => {
+                          })} disabled={this.state.pendingUploads > 0 || !this.state.recordIsValid || this.state.isEditorMutating === true} onClick={() => {
                             this.onCreateApplication(mutate)
                           }}>
                             {
