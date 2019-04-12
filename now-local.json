@@ -44,8 +44,7 @@
     
     {
       "src": "/file([/]*)",
-      "dest": "/node-routes/filepondRoute.js",
-      "methods": ["POST", "DELETE", "GET", "PUT"]
+      "dest": "/node-routes/filepondRoute.js"
     },
     
     

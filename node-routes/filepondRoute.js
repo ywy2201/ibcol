@@ -33,13 +33,7 @@ if (process.env.ENV === 'local')
   require('now-env');
 
 
-const generateUUID = (size = 10) => {
-  return randomBytes(Math.ceil(size * 3 / 4))
-    .toString('base64')
-    .slice(0, size)
-    .replace(/\+/g, 'a')
-    .replace(/\//g, 'b')
-}
+
 
 const ServerId = {
   encrypt: (uuid) => {
@@ -57,7 +51,8 @@ const ServerId = {
 
 const generateUploadMeta = async (fileMeta) => {
   console.log('fileMeta', fileMeta);
-  const uuid = `${generateUUID()}/${fileMeta.name}`;
+  const shortid = require('shortid');
+  const uuid = `${shortid.generate()}/${fileMeta.name}`;
 
   
 
@@ -71,10 +66,10 @@ const generateUploadMeta = async (fileMeta) => {
   
   
   const bucket = `${BUCKET_NAME}-temp`;
-
+  console.log(`assigned temp path: gs://${bucket}/${uuid}`);
   // Uploads a local file to the bucket
   const signedUrl = await storage.bucket(bucket).file(uuid).getSignedUrl(options);
-
+  
   return {serverId: ServerId.encrypt(uuid), signedUrl: signedUrl[0]};
 
     
@@ -97,18 +92,24 @@ const storeUploads = async (serverId) => {
 
 
     return `gs://${BUCKET_NAME}/${uuid}`;
-  } catch (e) {
+  } catch (e1) {
     // maybe file already have been stored?
     console.log(`checking for gs://${BUCKET_NAME}/${uuid}...`);
 
-    await storage
-      .bucket(`${BUCKET_NAME}`)
-      .file(uuid)
-      .get();
-
-    console.log(`object already stored gs://${BUCKET_NAME}/${uuid}.`);
+    try {
+      await storage
+        .bucket(`${BUCKET_NAME}`)
+        .file(uuid)
+        .get();
     
-    return `gs://${BUCKET_NAME}/${uuid}`;
+
+      console.log(`object already stored gs://${BUCKET_NAME}/${uuid}.`);
+      
+      return `gs://${BUCKET_NAME}/${uuid}`;
+    } catch (e2) {
+      console.log(`ERROR: cannot find ${uuid} anywhere!!`)
+      throw(e1);
+    }
 
   }
     
@@ -217,7 +218,13 @@ const filepodRoute = async (req, res) => {
 
   if (req.method === 'PUT') {
     const serverId = await text(req);
-    return send(res, 200, await storeUploads(serverId));
+    console.log('serverId', serverId);
+    try {
+      return send(res, 200, await storeUploads(serverId));
+    } catch ({message}) {
+      // console.log('e', e);
+      return send(res, 500, message);
+    }
   }
 
   return send(res, 200);
