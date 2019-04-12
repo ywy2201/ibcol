@@ -6,11 +6,17 @@
   ],
   "env": {
     "ENV": "production",
-    "NODE_ENV": "production"
+    "NODE_ENV": "production",
+    "SALT": ")6Dc1UP*Energy-Copper-Chest-Smaller-8)#@",
+    "BUCKET_NAME": "ibcol-uploads-production",
+    "GOOGLE_APPLICATION_CREDENTIALS": "/tmp/service-account.json",
+    "GOOGLE_APPLICATION_CREDENTIALS_DATA": "@ibcol-gcloudserviceaccount-production"
   },
   "build": {
     "env": {
-      "ENV": "production"
+      "ENV": "production",
+      "NODE_ENV": "production",
+      "FILEPOND_API_ENDPOINT": "/file/"
     }
   },
   "regions": ["all"],
@@ -22,15 +28,16 @@
   },
   "builds": [
     { "src": "node-routes/defaultRoute.js", "use": "@now/node", "config": { "maxLambdaSize": "40mb" } },
+    { "src": "node-routes/filepondRoute.js", "use": "@now/node" },
     { "src": "next.config.js", "use": "@now/next" }
   ],
   "routes": [
     { 
       "src": "/.*",
-      "headers": {"cache-control": "s-maxage=31536000, maxage=0"},
+      "headers": {"cache-control": "s-maxage=31536000, max-age=0"},
       "continue": true
     },
-
+    
     { 
       "src": "/service-worker.js",  
       "dest": "/_next/static/service-worker.js",
@@ -39,75 +46,86 @@
         "Service-Worker-Allowed": "/"
       }
     },
-
+    
 
     {
-      "src": "/(how|ambassadors|sponsors|contact|registration)?([/]*)$",
+      "src": "/(how|ambassadors|sponsors|contact|registration)?([/]*)",
       "dest": "/node-routes/defaultRoute.js"
     },
     
+    {
+      "src": "/file([/]*)",
+      "dest": "/node-routes/filepondRoute.js",
+      "headers": {
+        "Access-Control-Allow-Origin": "*"
+      }
+    },
     
+    
+    
+
     { 
-      "src": "/(?<locale>[^/]*)/$", 
+      "src": "/(?<locale>[^/]*)/", 
       "dest": "/home?locale=$locale"
     },
     { 
-      "src": "/(?<locale>[^/]*)$", 
+      "src": "/(?<locale>[^/]*)", 
       "status": 301,
       "headers": { "Location": "/$locale/" }
     },
 
     { 
-      "src": "/(?<locale>[^/]*)/how/$", 
+      "src": "/(?<locale>[^/]*)/how/", 
       "dest": "/how?locale=$locale"
     },
     { 
-      "src": "/(?<locale>[^/]*)/how$", 
+      "src": "/(?<locale>[^/]*)/how", 
       "status": 301,
       "headers": { "Location": "/$locale/how/" }
     },
 
     { 
-      "src": "/(?<locale>[^/]*)/ambassadors/$", 
-      "dest": "/ambassadors?locale=$locale"
+      "src": "/(?<locale>[^/]*)/ambassadors/", 
+      "dest": "/ambassadors?locale=$locale",
+      "headers": { "cache-control": "s-maxage=31536000, max-age=0" }
     },
     { 
-      "src": "/(?<locale>[^/]*)/ambassadors$", 
+      "src": "/(?<locale>[^/]*)/ambassadors", 
       "status": 301,
       "headers": { "Location": "/$locale/ambassadors/" }
     },
 
     { 
-      "src": "/(?<locale>[^/]*)/sponsors/$", 
+      "src": "/(?<locale>[^/]*)/sponsors/", 
       "dest": "/sponsors?locale=$locale"
     },
     { 
-      "src": "/(?<locale>[^/]*)/sponsors$", 
+      "src": "/(?<locale>[^/]*)/sponsors", 
       "status": 301,
       "headers": { "Location": "/$locale/sponsors/" }
     },
 
     { 
-      "src": "/(?<locale>[^/]*)/contact/$", 
+      "src": "/(?<locale>[^/]*)/contact/", 
       "dest": "/contact?locale=$locale"
     },
     { 
-      "src": "/(?<locale>[^/]*)/contact$", 
+      "src": "/(?<locale>[^/]*)/contact", 
       "status": 301,
       "headers": { "Location": "/$locale/contact/" }
     },
 
     { 
-      "src": "/(?<locale>[^/]*)/registration/$", 
+      "src": "/(?<locale>[^/]*)/registration/", 
       "dest": "/registration?locale=$locale"
     },
     { 
-      "src": "/(?<locale>[^/]*)/registration$", 
+      "src": "/(?<locale>[^/]*)/registration", 
       "status": 301,
       "headers": { "Location": "/$locale/registration/" }
     },
     
     { "src": "/_next/static/(?:[^/]+/pages|chunks|runtime)/.+", "headers": { "cache-control": "immutable" } }
-
+    
   ]
 }
