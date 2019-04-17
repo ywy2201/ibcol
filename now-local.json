@@ -101,7 +101,7 @@
 
     { 
       "src": "/(?<locale>[^/]*)/registration/", 
-      "dest": "/registration?locale=$locale"
+      "dest": "/registration/?locale=$locale"
     },
     { 
       "src": "/(?<locale>[^/]*)/registration", 
