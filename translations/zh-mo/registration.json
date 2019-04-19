@@ -3,6 +3,8 @@
   "seoDescription":"國際奧林匹克區塊鏈競賽是一個多學科的設計與建設性的競賽。 2019屆奧鏈競賽邀請來自世界各地的學生通過去中心化​的分布式應用解決現實生活中所面對的挑戰。",
   "ogImage":"static/images/ogimage.jpg",
   "subhead":"團隊註冊",
+  "1stDayToSubmit":"第一天接受白皮書",
+  "lastDayToSubmit":"最後一天接受白皮書",
   "teamInfo":"隊伍資料",
   "teamName":"隊名",
   "studentInfo":"學生資料",
