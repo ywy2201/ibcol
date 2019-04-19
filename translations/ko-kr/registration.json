@@ -3,6 +3,8 @@
   "seoDescription":"국제블록체인 올림피아드는 여러 학문 분야에 대한 블록체인 대회입니다. IBCOL 2019는 분산형 애플리케이션을 통해 전 세계 학생들이 현실 세계의 과제를 해결하도록 초대합니다.",
   "ogImage":"static/images/ogimage.jpg",
   "subhead":"팀 등록",
+  "1stDayToSubmit":"백서를 허용하기위한 첫 날",
+  "lastDayToSubmit":"백서를 수락에 대한 마지막 날",
   "teamInfo":"팀 정보",
   "teamName":"팀 이름",
   "studentInfo":"학생 정보",
