@@ -3,6 +3,8 @@
   "seoDescription":"Miedzynarodowa Olimpiada Blockchain (IBCOL) to wielotematyczny konkurs projektow budowlamych. IBCOL zaprasza studentow z calego swiata do rozwiazania realnych zadan poprzez zdecentralizowane aplikacje.",
   "ogImage":"static/images/ogimage.jpg",
   "subhead":"Rejestracja zespół",
+  "1stDayToSubmit":"Pierwszy dzień za przyjęcie Oficjalne dokumenty",
+  "lastDayToSubmit":"Ostatni dzień na przyjmowanie Oficjalne dokumenty",
   "teamInfo":"Informacje o drużynie",
   "teamName":"Nazwa drużyny",
   "studentInfo":"Informacja studencka",
