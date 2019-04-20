@@ -16,11 +16,19 @@
     "educationRecords":{
       "degree":"Diplôme ou équivalent",
       "programme":"Programme ou Major",
-      "yearOfGraduation":"nom de l'institution",
-      "institutionName":"Année d'obtention du diplôme",
+      "institutionName":"nom de l'institution",
+      "yearOfGraduation":"Année d'obtention du diplôme",
       "city":"Ville",
       "state":"Province / État",
-      "countryCode":"Pays / Région"
+      "countryCode":"Pays / Région",
+      "studentNumber":"Numéro d'étudiant",
+      "studentCard":"Carde d'identité d'étudiant",
+      "studentCardFrontFile":"Carte d'étudiant (avant)",
+      "studentCardFrontFileType":"accepte uniquement PNG / JPEG / PDF",
+      "studentCardBackFile":"Carte d'étudiant (verso de la carte)",
+      "studentCardBackFileType":"accepte uniquement PNG / JPEG / PDF",
+      "transcriptFile":"Transcription académique (pour confirmer le programme académique)",
+      "transcriptFileType":"accepte uniquement PNG / JPEG / PDF / ZIP"
     }
   },
   "advisorRecords":{
@@ -42,7 +50,11 @@
   "projectRecords":{
     "name":"nom du projet",
     "projectCategoryKey":"Catégorie de projet",
-    "description":"Description du projet"
+    "description":"Description du projet",
+    "presentationFile":"Présentation",
+    "presentationFileType":"accepte uniquement PDF / ZIP",
+    "whitepaperFile":"Papier blanc",
+    "whitepaperFileType":"accepte uniquement PDF / ZIP"
   },
   "studentEducationInfo":"Diplômes",
   "addAnotherStudent":"Ajouter un autre étudiant",
@@ -57,13 +69,14 @@
   "addAnotherAdvisorAssociationRecord":"Ajouter un autre enregistrement Association",
   "removeAdvisorAssociationRecord":"Effacer l'enregistrement Association",
   "projectInfo":"Renseignements sur le projet",
+  "extraInfo":"Si vous avez une équipe, mais pas encore un projet décidé, s'il vous plaît entrer « aucun » et choisissez une catégorie. Vous pouvez modifier cette information plus tard.",
   "removeProject":"Retirer du projet",
   "addAnotherProject":"Ajouter un autre projet",
   "submit":"Soumettre",
   "registerAnother":"Créer une autre application",
   "confirmation":{
     "title":"Merci pour votre inscription.",
-    "message":"Nous avons reçu votre inscription. Nous attendons avec impatience de lire votre livre blanc (à échéance le 21 Avril 2019). S'il vous plaît ne pas remettre à plus tard!",
+    "message":"Nous avons reçu votre inscription. Les finalistes seront annoncés avant le 9 Juin.",
     "refTitle":"Référence de l'application:",
     "TteamNameTitle":"Nom de l'équipe:"
   }

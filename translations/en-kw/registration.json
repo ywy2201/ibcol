@@ -2,10 +2,10 @@
   "pageTitle":"Registration",
   "seoDescription":"International Blockchain Olympiad is a multidisciplinary design and building competition. IBCOL 2019 invites students from around the world to solve real-world challenges through decentralized applications.",
   "ogImage":"static/images/ogimage.jpg",
-  "subhead": "Team Registration",
+  "subhead":"Team Registration",
   "1stDayToSubmit":"First Day for Accepting Whitepapers",
   "lastDayToSubmit":"Last Day for Accepting Whitepapers",
-  "teamInfo": "Team Information",
+  "teamInfo":"Team Information",
   "teamName":"Team Name",
   "studentInfo":"Student Information",
   "studentRecords":{
@@ -16,11 +16,19 @@
     "educationRecords":{
       "degree":"Degree or Equivalent",
       "programme":"Program or Major",
-      "yearOfGraduation":"Institution Name",
-      "institutionName":"Year of Graduation",
+      "institutionName":"Institution Name",
+      "yearOfGraduation":"Year of Graduation",
       "city":"City",
       "state":"Province/State",
-      "countryCode":"Country/Region"
+      "countryCode":"Country/Region",
+      "studentNumber":"Student Number",
+      "studentCard":"Student ID Card",
+      "studentCardFrontFile":"Student Card (Front)",
+      "studentCardFrontFileType":"Only accepts PNG/JPEG/PDF",
+      "studentCardBackFile":"Student Card (Back of Card)",
+      "studentCardBackFileType":"Only accepts PNG/JPEG/PDF",
+      "transcriptFile":"Academic Transcript (to confirm academic program)",
+      "transcriptFileType":"Only accepts PNG/JPEG/PDF/ZIP"
     }
   },
   "advisorRecords":{
@@ -42,7 +50,11 @@
   "projectRecords":{
     "name":"Project Name",
     "projectCategoryKey":"Project Category",
-    "description":"Project Description"
+    "description":"Project Description",
+    "presentationFile":"Presentation",
+    "presentationFileType":"Only accepts PDF/ZIP",
+    "whitepaperFile":"Whitepaper",
+    "whitepaperFileType":"Only accepts PDF/ZIP"
   },
   "studentEducationInfo":"Academic Credentials",
   "addAnotherStudent":"Add Another Student",
@@ -57,14 +69,14 @@
   "addAnotherAdvisorAssociationRecord":"Add Another Association Record",
   "removeAdvisorAssociationRecord":"Remove Association Record",
   "projectInfo":"Project Information",
-  "extraInfo":"If you have a team but not yet a project decided, please enter n/a and choose any category. You may change this information later.",
+  "extraInfo":"If you have a team but not yet a project decided, please enter “none” and choose any category. You may change this information later.",
   "removeProject":"Remove Project",
   "addAnotherProject":"Add Another Project",
   "submit":"Submit",
   "registerAnother":"Create Another Application",
   "confirmation":{
     "title":"Thank you for your registration.",
-    "message":"We have received your registration. We look forward to reading your whitepaper (due 21 April  2019). Please do not procrastinate!",
+    "message":"We have received your registration. Finalists will be announced before June 9.",
     "refTitle":"Application Reference:",
     "TteamNameTitle":"Team Name:"
   }

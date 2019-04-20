@@ -16,11 +16,19 @@
     "educationRecords":{
       "degree":"درجة أو ما يعادلها",
       "programme":"برنامج أو الرئيسية",
-      "yearOfGraduation":"اسم المعهد",
-      "institutionName":"سنة التخرج",
+      "institutionName":"اسم المعهد",
+      "yearOfGraduation":"سنة التخرج",
       "city":"مدينة",
       "state":"المقاطعة / الدولة",
-      "countryCode":"البلد / المنطقة"
+      "countryCode":"البلد / المنطقة",
+      "studentNumber":"رقم الطالب",
+      "studentCard":"بطاقة هوية الطالب",
+      "studentCardFrontFile":"بطاقة الطالب (الجبهة)",
+      "studentCardFrontFileType":"لا يقبل إلا PNG / JPEG / PDF",
+      "studentCardBackFile":"بطاقة الطالب (ظهر البطاقة)",
+      "studentCardBackFileType":"لا يقبل إلا PNG / JPEG / PDF",
+      "transcriptFile":"الأكاديمية نسخة (لتأكيد البرنامج الأكاديمي)",
+      "transcriptFileType":"لا يقبل إلا PNG / JPEG / PDF / ZIP"
     }
   },
   "advisorRecords":{
@@ -42,7 +50,11 @@
   "projectRecords":{
     "name":"اسم المشروع",
     "projectCategoryKey":"تصنيف المشروع",
-    "description":"وصف المشروع"
+    "description":"وصف المشروع",
+    "presentationFile":"عرض",
+    "presentationFileType":"فقط تقبل PDF / ZIP",
+    "whitepaperFile":"ورق ابيض",
+    "whitepaperFileType":"فقط تقبل PDF / ZIP"
   },
   "studentEducationInfo":"المؤهلات الأكاديمية",
   "addAnotherStudent":"إضافة طالب آخر",
@@ -57,13 +69,14 @@
   "addAnotherAdvisorAssociationRecord":"إضافة آخر الرابطة سجل",
   "removeAdvisorAssociationRecord":"إزالة رابطة سجل",
   "projectInfo":"معلومات المشروع",
+  "extraInfo":"إذا كان لديك فريق ولكن لم يتم قررت المشروع، يرجى إدخال n/a واختيار أي فئة. تستطيع تغيير هذه المعلومات لاحقا.",
   "removeProject":"إزالة مشروع",
   "addAnotherProject":"إضافة مشروع آخر",
   "submit":"خضع",
   "registerAnother":"إنشاء تطبيق آخر",
   "confirmation":{
     "title":"نشكرك على التسجيل.",
-    "message":"لقد تلقينا التسجيل. ونحن نتطلع إلى قراءة المستند التقني الخاص بك (المقرر 21 أبريل 2019). من فضلك لا المماطلة!",
+    "message":"لقد تلقينا التسجيل. وسيتم الإعلان عن المرشحين قبل 9 يونيو.",
     "refTitle":"تطبيق المرجعي:",
     "TteamNameTitle":"اسم الفريق:"
   }

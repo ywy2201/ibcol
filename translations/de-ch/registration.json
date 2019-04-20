@@ -16,11 +16,19 @@
     "educationRecords":{
       "degree":"Abschluss",
       "programme":"Studienrichtung",
-      "yearOfGraduation":"Name der Universität",
-      "institutionName":"Abschlussjahr",
+      "institutionName":"Name der Universität",
+      "yearOfGraduation":"Abschlussjahr",
       "city":"Stadt",
       "state":"Provinz/Gliedstaat",
-      "countryCode":"Land"
+      "countryCode":"Land",
+      "studentNumber":"Matrikelnummer",
+      "studentCard":"Studentenausweis",
+      "studentCardFrontFile":"Student Card (Front)",
+      "studentCardFrontFileType":"Nur akzeptiert PNG / JPEG / PDF",
+      "studentCardBackFile":"Student Card (Rückseite der Karte)",
+      "studentCardBackFileType":"Nur akzeptiert PNG / JPEG / PDF",
+      "transcriptFile":"Academic Transcript (akademisches Programm bestätigen)",
+      "transcriptFileType":"Nur akzeptiert / PNG JPEG / PDF / ZIP"
     }
   },
   "advisorRecords":{
@@ -42,7 +50,11 @@
   "projectRecords":{
     "name":"Projektname",
     "projectCategoryKey":"Projekt Kategorie",
-    "description":"Projektbeschreibung"
+    "description":"Projektbeschreibung",
+    "presentationFile":"Präsentation",
+    "presentationFileType":"Nur akzeptiert PDF / ZIP",
+    "whitepaperFile":"Weißes Papier",
+    "whitepaperFileType":"Nur akzeptiert PDF / ZIP"
   },
   "studentEducationInfo":"Akademische Abschlüsse",
   "addAnotherStudent":"In einem anderen Studenten",
@@ -57,13 +69,14 @@
   "addAnotherAdvisorAssociationRecord":"In anderen Verband Bilanz",
   "removeAdvisorAssociationRecord":"Entfernen Verband Bilanz",
   "projectInfo":"Projekt Information",
+  "extraInfo":"Wenn Sie ein Team haben, aber noch nicht ein Projekt entschieden, geben Sie bitte „keine“ und jede Kategorie wählen. Sie können diese Informationen später ändern.",
   "removeProject":"entfernen Projekt",
   "addAnotherProject":"Ein weiteres hinzufügen Projekt",
   "submit":"einreichen",
   "registerAnother":"Erstellen Sie eine andere Anwendung",
   "confirmation":{
     "title":"Danke für ihre Registrierung.",
-    "message":"Wir haben Ihre Registrierung erhalten. Wir freuen uns auf Ihre White Paper (aufgrund 21. April 2019) zu lesen. Bitte nicht zögern!",
+    "message":"Wir haben Ihre Registrierung erhalten. Die Finalisten werden vor dem 9. Juni bekannt gegeben.",
     "refTitle":"Anwendungshinweis:",
     "TteamNameTitle":"Teamname:"
   }
