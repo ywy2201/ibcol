@@ -16,11 +16,19 @@
     "educationRecords":{
       "degree":"Stopień lub równoważny",
       "programme":"Program lub major",
-      "yearOfGraduation":"Nazwa instytucji",
-      "institutionName":"Rok ukończenia studiów",
+      "institutionName":"Nazwa instytucji",
+      "yearOfGraduation":"Rok ukończenia studiów",
       "city":"Miasto",
       "state":"Prowincja",
-      "countryCode":"Kraj / Region"
+      "countryCode":"Kraj / Region",
+      "studentNumber":"Numer studenta",
+      "studentCard":"Legitymacja studencka",
+      "studentCardFrontFile":"Legitymacja studencka (przód)",
+      "studentCardFrontFileType":"Tylko akceptuje PNG / JPEG / PDF",
+      "studentCardBackFile":"Legitymacja studencka (z tyłu karty)",
+      "studentCardBackFileType":"Tylko akceptuje PNG / JPEG / PDF",
+      "transcriptFile":"Academic Transcript (aby potwierdzić program akademicki)",
+      "transcriptFileType":"Tylko akceptuje PNG / JPEG / PDF / ZIP"
     }
   },
   "advisorRecords":{
@@ -42,7 +50,11 @@
   "projectRecords":{
     "name":"Nazwa Projektu",
     "projectCategoryKey":"projekt Kategoria",
-    "description":"Opis Projektu"
+    "description":"Opis Projektu",
+    "presentationFile":"Prezentacja",
+    "presentationFileType":"Akceptuje tylko PDF / ZIP",
+    "whitepaperFile":"Biały papier",
+    "whitepaperFileType":"Akceptuje tylko PDF / ZIP"
   },
   "studentEducationInfo":"wyższe wykształcenie",
   "addAnotherStudent":"Dodaj inny student",
@@ -57,13 +69,14 @@
   "addAnotherAdvisorAssociationRecord":"Dodaj kolejny rekord Association",
   "removeAdvisorAssociationRecord":"Usuń rekord Association",
   "projectInfo":"Informacje o projekcie",
+  "extraInfo":"Jeśli masz zespół, ale jeszcze nie zdecydował projekt, wpisz „none” i wybrać dowolną kategorię. Można zmienić tę informację później.",
   "removeProject":"Usuń projekt",
   "addAnotherProject":"Dodaj kolejny projekt",
   "submit":"Zatwierdź",
   "registerAnother":"Tworzenie innej aplikacji",
   "confirmation":{
     "title":"Dziękujemy za rejestrację.",
-    "message":"Otrzymaliśmy rejestrację. Czekamy na czytanie whitepaper (z powodu 21 kwietnia 2019). Proszę nie zwlekać!",
+    "message":"Otrzymaliśmy rejestrację. Finaliści zostaną ogłoszone przed 9 czerwca.",
     "refTitle":"Odniesienie Zastosowanie:",
     "TteamNameTitle":"Nazwa drużyny:"
   }

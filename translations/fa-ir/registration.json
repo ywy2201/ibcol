@@ -16,11 +16,19 @@
     "educationRecords":{
       "degree":"درجه یا معادل آن",
       "programme":"برنامه و یا عمده",
-      "yearOfGraduation":"نام موسسه",
-      "institutionName":"سال فارغ التحصیلی",
+      "institutionName":"نام موسسه",
+      "yearOfGraduation":"سال فارغ التحصیلی",
       "city":"شهرستان",
       "state":"استان / ایالت",
-      "countryCode":"کشور / منطقه"
+      "countryCode":"کشور / منطقه",
+      "studentNumber":"شماره دانشجویی",
+      "studentCard":"کارت دانشجویی",
+      "studentCardFrontFile":"کارت دانشجویی (جلو)",
+      "studentCardFrontFileType":"تنها می پذیرد PNG / JPEG / PDF",
+      "studentCardBackFile":"کارت دانشجویی (پشت کارت)",
+      "studentCardBackFileType":"تنها می پذیرد PNG / JPEG / PDF",
+      "transcriptFile":"ریز نمرات (برای تایید برنامه تحصیلی)",
+      "transcriptFileType":"تنها می پذیرد PNG / JPEG / PDF / پستی"
     }
   },
   "advisorRecords":{
@@ -42,7 +50,11 @@
   "projectRecords":{
     "name":"نام پروژه",
     "projectCategoryKey":"پروژه رده",
-    "description":"شرح پروژه"
+    "description":"شرح پروژه",
+    "presentationFile":"ارائه",
+    "presentationFileType":"فقط PDF / پستی را می پذیرد",
+    "whitepaperFile":"کاغذ سفید",
+    "whitepaperFileType":"فقط PDF / پستی را می پذیرد"
   },
   "studentEducationInfo":"گواهینامه های آکادمیک",
   "addAnotherStudent":"اضافه کردن یکی دیگر از دانشجویان",
@@ -57,13 +69,14 @@
   "addAnotherAdvisorAssociationRecord":"اضافه کردن یکی دیگر از انجمن ثبت",
   "removeAdvisorAssociationRecord":"حذف انجمن ضبط",
   "projectInfo":"اطلاعات پروژه",
+  "extraInfo":"اگر شما یک تیم اما هنوز یک پروژه تصمیم گرفت، لطفا n/a را وارد کنید و هر دسته را انتخاب نمایید. شما ممکن است این اطلاعات بعد تغییر دهید.",
   "removeProject":"حذف پروژه",
   "addAnotherProject":"اضافه کردن یکی دیگر از پروژه",
   "submit":"ارسال",
   "registerAnother":"درست برنامه دیگری",
   "confirmation":{
     "title":"از ثبت نام شما سپاسگزاریم.",
-    "message":"ما ثبت نام خود را دریافت کرده اند. ما مشتاقانه منتظر خواندن نشریه خود را (به علت 2019 آوریل 21). لطفا تعویق امور نیست!",
+    "message":"ما ثبت نام خود را دریافت کرده اند. نهایی خواهد شد قبل از 9 ژوئن اعلام کرد.",
     "refTitle":"مرجع نرم افزار:",
     "TteamNameTitle":"نام گروه:"
   }

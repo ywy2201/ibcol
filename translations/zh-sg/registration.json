@@ -16,11 +16,19 @@
     "educationRecords":{
       "degree":"学位或同等学历",
       "programme":"学系或主修",
-      "yearOfGraduation":"机构名称",
-      "institutionName":"毕业年份",
+      "institutionName":"机构名称",
+      "yearOfGraduation":"毕业年份",
       "city":"城市",
       "state":"省/州",
-      "countryCode":"国家/地区"
+      "countryCode":"国家/地区",
+      "studentNumber":"学生号码",
+      "studentCard":"学生证",
+      "studentCardFrontFile":"学生卡（正面）",
+      "studentCardFrontFileType":"只接受PNG / JPEG / PDF",
+      "studentCardBackFile":"学生证（卡背面）",
+      "studentCardBackFileType":"只接受PNG / JPEG / PDF",
+      "transcriptFile":"成绩单（确认学术课程）",
+      "transcriptFileType":"只接受PNG / JPEG / PDF / ZIP"
     }
   },
   "advisorRecords":{
@@ -42,7 +50,11 @@
   "projectRecords":{
     "name":"企划名称",
     "projectCategoryKey":"企划项目",
-    "description":"企划简介"
+    "description":"企划简介",
+    "presentationFile":"介绍",
+    "presentationFileType":"只接受PDF / ZIP",
+    "whitepaperFile":"白皮书",
+    "whitepaperFileType":"只接受PDF / ZIP"
   },
   "studentEducationInfo":"学历",
   "addAnotherStudent":"新增成员",
@@ -57,13 +69,14 @@
   "addAnotherAdvisorAssociationRecord":"添加另一个关联记录",
   "removeAdvisorAssociationRecord":"删除对应记录",
   "projectInfo":"项目信息",
+  "extraInfo":"如果你有一个团队，但还没有一个项目决定，请输入“无”，并选择任何类别。稍后可以更改这些信息。",
   "removeProject":"删除项目",
   "addAnotherProject":"添加另一个项目",
   "submit":"递交",
   "registerAnother":"创建另一个应用程序",
   "confirmation":{
     "title":"谢谢您的注册。",
-    "message":"我们已经收到您的注册。我们期待着您的阅读白皮书（由于2019年4月21日）。请不要拖延！",
+    "message":"我们已经收到您的注册。入围者将6月9日之前公布。",
     "refTitle":"应用参考：",
     "TteamNameTitle":"队名："
   }
