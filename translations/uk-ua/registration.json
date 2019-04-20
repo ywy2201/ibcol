@@ -16,11 +16,19 @@
     "educationRecords":{
       "degree":"Ступінь або еквівалент",
       "programme":"Програма або Major",
-      "yearOfGraduation":"Назва навчального закладу",
-      "institutionName":"рік закінчення",
+      "institutionName":"Назва навчального закладу",
+      "yearOfGraduation":"рік закінчення",
       "city":"місто",
       "state":"Область / Штат",
-      "countryCode":"Країна / Регіон"
+      "countryCode":"Країна / Регіон",
+      "studentNumber":"студент Номер",
+      "studentCard":"Student ID Card",
+      "studentCardFrontFile":"Student Card (Front)",
+      "studentCardFrontFileType":"Тільки приймає PNG / JPEG / PDF",
+      "studentCardBackFile":"Student Card (Назад Card)",
+      "studentCardBackFileType":"Тільки приймає PNG / JPEG / PDF",
+      "transcriptFile":"Академічна Стенограма (для підтвердження академічної програми)",
+      "transcriptFileType":"Тільки приймає PNG / JPEG / PDF / ZIP"
     }
   },
   "advisorRecords":{
@@ -42,7 +50,11 @@
   "projectRecords":{
     "name":"Назва проекту",
     "projectCategoryKey":"Категорія проекту",
-    "description":"Опис проекту"
+    "description":"Опис проекту",
+    "presentationFile":"презентація",
+    "presentationFileType":"Тільки приймає PDF / ZIP",
+    "whitepaperFile":"Whitepaper",
+    "whitepaperFileType":"Тільки приймає PDF / ZIP"
   },
   "studentEducationInfo":"академічні Повноваження",
   "addAnotherStudent":"Додати ще один студент",
@@ -57,13 +69,14 @@
   "addAnotherAdvisorAssociationRecord":"Додати іншу асоціацію запис",
   "removeAdvisorAssociationRecord":"Видалити асоціації запис",
   "projectInfo":"інформація про проект",
+  "extraInfo":"Якщо у вас є команда, але ще не проект, вирішив, будь ласка, введіть «ні» і вибрати будь-яку категорію. Ви можете змінити цю інформацію пізніше.",
   "removeProject":"видалити проект",
   "addAnotherProject":"Додати ще один проект",
   "submit":"уявити",
   "registerAnother":"Створити ще один додаток",
   "confirmation":{
     "title":"Дякуємо Вам за реєстрацію.",
-    "message":"Ми отримали вашу реєстрацію. Ми з нетерпінням чекаємо, щоб читати ваш офіційний документ (з 21 квітня 2019). Будь ласка, не відкладайте!",
+    "message":"Ми отримали вашу реєстрацію. Фіналісти будуть оголошені до 9 червня.",
     "refTitle":"Інформація про програму:",
     "TteamNameTitle":"Назва команди:"
   }

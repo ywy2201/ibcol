@@ -16,11 +16,19 @@
     "educationRecords":{
       "degree":"Diplomă",
       "programme":"Profil sau Master",
-      "yearOfGraduation":"Numele instituției",
-      "institutionName":"Anul absolvirii",
+      "institutionName":"Numele instituției",
+      "yearOfGraduation":"Anul absolvirii",
       "city":"Oraș",
       "state":"Stat/Județ/Provincie",
-      "countryCode":"Țară"
+      "countryCode":"Țară",
+      "studentNumber":"Numarul studentului",
+      "studentCard":"Card de student ID-ul",
+      "studentCardFrontFile":"Card Student (față)",
+      "studentCardFrontFileType":"acceptă numai PNG / JPEG / PDF",
+      "studentCardBackFile":"Card Student (spatele cardului)",
+      "studentCardBackFileType":"acceptă numai PNG / JPEG / PDF",
+      "transcriptFile":"Academic Transcrierea (pentru a confirma programul academic)",
+      "transcriptFileType":"acceptă numai PNG / JPEG / PDF / ZIP"
     }
   },
   "advisorRecords":{
@@ -42,7 +50,11 @@
   "projectRecords":{
     "name":"Numele proiectului",
     "projectCategoryKey":"Categoria proiectului",
-    "description":"Descrierea proiectului"
+    "description":"Descrierea proiectului",
+    "presentationFile":"Prezentare",
+    "presentationFileType":"Numai acceptă PDF / ZIP",
+    "whitepaperFile":"Hartie alba",
+    "whitepaperFileType":"Numai acceptă PDF / ZIP"
   },
   "studentEducationInfo":"Calificare academică",
   "addAnotherStudent":"Adaugă încă un student",
@@ -57,6 +69,7 @@
   "addAnotherAdvisorAssociationRecord":"Adăugați un alt record de asociere",
   "removeAdvisorAssociationRecord":"Eliminați Asociația Înregistrare",
   "projectInfo":"Informații despre Proiect",
+  "extraInfo":"Dacă aveți o echipă, dar nu a fost încă un proiect a decis, vă rugăm să introduceți „nici unul“ și alege orice categorie. Puteți modifica aceste informații mai târziu.",
   "removeProject":"Șterge proiect",
   "addAnotherProject":"Adaugă încă un proiect",
   "submit":"Trimite",

@@ -16,11 +16,19 @@
     "educationRecords":{
       "degree":"Grau ou equivalente",
       "programme":"Programa ou Major",
-      "yearOfGraduation":"Nome da Instituição",
-      "institutionName":"Ano da Graduação",
+      "institutionName":"Nome da Instituição",
+      "yearOfGraduation":"Ano da Graduação",
       "city":"Cidade",
       "state":"Província / Estado",
-      "countryCode":"País / Região"
+      "countryCode":"País / Região",
+      "studentNumber":"Número de estudante",
+      "studentCard":"Cartão de identificação de estudante",
+      "studentCardFrontFile":"Cartão de Estudante (Frente)",
+      "studentCardFrontFileType":"Só aceita PNG / JPEG / PDF",
+      "studentCardBackFile":"Cartão de Estudante (verso do cartão)",
+      "studentCardBackFileType":"Só aceita PNG / JPEG / PDF",
+      "transcriptFile":"Histórico Escolar (para confirmar programa acadêmico)",
+      "transcriptFileType":"Só aceita PNG / JPEG / PDF / ZIP"
     }
   },
   "advisorRecords":{
@@ -42,7 +50,11 @@
   "projectRecords":{
     "name":"Nome do Projeto",
     "projectCategoryKey":"Categoria projeto",
-    "description":"Descrição do Projeto"
+    "description":"Descrição do Projeto",
+    "presentationFile":"Apresentação",
+    "presentationFileType":"Só aceita PDF / ZIP",
+    "whitepaperFile":"Papel branco",
+    "whitepaperFileType":"Só aceita PDF / ZIP"
   },
   "studentEducationInfo":"Credenciais acadêmicas",
   "addAnotherStudent":"Adicionar outro estudante",
@@ -57,13 +69,14 @@
   "addAnotherAdvisorAssociationRecord":"Adicionar outra associação Registro",
   "removeAdvisorAssociationRecord":"Remover Associação Gravar",
   "projectInfo":"Informações do Projeto",
+  "extraInfo":"Se você tem uma equipe, mas ainda não um projeto decidiu, digite “nenhum” e escolher qualquer categoria. Você pode alterar essas informações mais tarde.",
   "removeProject":"remover o Project",
   "addAnotherProject":"Adicionar outro projeto",
   "submit":"Enviar",
   "registerAnother":"Criar outro aplicativo",
   "confirmation":{
     "title":"Obrigado por sua inscrição.",
-    "message":"Recebemos sua inscrição. Estamos ansiosos para ler o seu whitepaper (devido 21 de abril de 2019). Por favor, não procrastine!",
+    "message":"Recebemos sua inscrição. Os finalistas serão anunciados antes de 9 de Junho.",
     "refTitle":"Nota de aplicação:",
     "TteamNameTitle":"Nome do time:"
   }

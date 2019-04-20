@@ -16,11 +16,19 @@
     "educationRecords":{
       "degree":"学位または同等の学歴",
       "programme":"学科または専攻",
-      "yearOfGraduation":"機関名",
-      "institutionName":"卒業の年",
+      "institutionName":"機関名",
+      "yearOfGraduation":"卒業の年",
       "city":"市",
       "state":"県",
-      "countryCode":"国／地域"
+      "countryCode":"国／地域",
+      "studentNumber":"学籍番号",
+      "studentCard":"学生証",
+      "studentCardFrontFile":"学生証（フロント）",
+      "studentCardFrontFileType":"唯一のPNG / JPEG / PDFを受け入れ",
+      "studentCardBackFile":"学生証（カードの裏面）",
+      "studentCardBackFileType":"唯一のPNG / JPEG / PDFを受け入れ",
+      "transcriptFile":"（アカデミックプログラムを確認するための）成績証明書",
+      "transcriptFileType":"唯一のPNG / JPEG / PDF / ZIPを受け入れます"
     }
   },
   "advisorRecords":{
@@ -42,7 +50,11 @@
   "projectRecords":{
     "name":"プロジェクトネーム",
     "projectCategoryKey":"プロジェクトカテゴリー",
-    "description":"プロジェクトの説明"
+    "description":"プロジェクトの説明",
+    "presentationFile":"プレゼンテーション",
+    "presentationFileType":"PDF / ZIPを受け付けのみ",
+    "whitepaperFile":"白書",
+    "whitepaperFileType":"PDF / ZIPを受け付けのみ"
   },
   "studentEducationInfo":"学歴",
   "addAnotherStudent":"メンバーを追加",
@@ -57,13 +69,14 @@
   "addAnotherAdvisorAssociationRecord":"別の関連付けのレコードを追加します。",
   "removeAdvisorAssociationRecord":"協会のレコードを削除します",
   "projectInfo":"プロジェクト情報",
+  "extraInfo":"あなたはチームではなく、まだ決めてプロジェクトを持っている場合は、「なし」を入力しないと、任意のカテゴリを選択してください。この情報は後で変更することがあります。",
   "removeProject":"プロジェクトを削除します",
   "addAnotherProject":"別のプロジェクトを追加します。",
   "submit":"提出",
   "registerAnother":"別のアプリケーションを作成します。",
   "confirmation":{
     "title":"ご登録いただきありがとうございます。",
-    "message":"私たちはあなたの登録を受けています。私たちはあなたのホワイトペーパー（による2019年4月21日）を読んで楽しみにしています。先延ばしにしないでください！",
+    "message":"私たちはあなたの登録を受けています。ファイナリストは、6月9日の前に発表される予定。",
     "refTitle":"アプリケーションリファレンス：",
     "TteamNameTitle":"チームの名前："
   }
