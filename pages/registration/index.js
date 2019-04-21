@@ -21,8 +21,6 @@ import Head from 'next/head';
 import { Mutation } from "react-apollo";
 import gql from 'graphql-tag'
 
-
-import ReactDOM from 'react-dom';
 import Countdown from 'react-countdown-now';
 
 
@@ -160,17 +158,23 @@ const ThisPageContainerComponent = styled(PageContainerComponent)`
       float: none;
       height: unset;
       line-height: 3rem;
+      margin-top: 1.5rem;
+      margin-bottom: 0.5rem;
     }
 
     a {
       display: inline;
     }
+
+    #trainingBox {
+      background: #eee;
+      padding: 3rem 3rem 2.95rem;
+      /* margin-left: 2rem;
+      margin-right: 2rem; */
+      margin-bottom: 5rem;
+    }
     
-    background: #eee;
-    padding: 3rem 3rem 0.8rem;
-    /* margin-left: 2rem;
-    margin-right: 2rem; */
-    margin-bottom: 5rem;
+    
 
   }
 
@@ -977,27 +981,35 @@ export default class extends React.PureComponent {
 
 
         <section className="s-section target-section first">
-
-            <div id="extraRegistration">
+          <div className="row">
+            <div className="col-full">
+              <h1>{this.translate('subhead')}</h1>
+            </div>
+          </div>
+        </section>
+        <section className="target-section">
+          <div id="extraRegistration" className="row">
+            <div className="col-full">
               <div id="trainingBox">
-                <h1>{this.translate('1stDayToSubmit')}:</h1>
+                <h3>{this.translate('1stDayToSubmit')}:</h3>
                 <Countdown date={new Date(2019, 3, 21, 23, 59, 59, 59)}
                   renderer={renderer}
                 />
-              <br/>
-                <h1>{this.translate('lastDayToSubmit')}:</h1>
+              
+                <h3>{this.translate('lastDayToSubmit')}:</h3>
                 <Countdown date={new Date(2019, 5, 9, 23, 59, 59, 59)}
                   renderer={renderer}
                 />
               </div>
             </div>
+          </div>
         </section>
 
         <section className="target-section">
           <div className="row">
             <div className="col-full">
               <Link route="registrationLogin" params={{ locale }}>
-                  <a className="btn btn--stroke btn--primary full-width btn--large" style={{"margin": "1rem auto 4rem"}}>
+                  <a className="btn btn--stroke btn--primary full-width btn--large" style={{"margin": "1rem auto 6rem"}}>
                       {this.translate('teamLogin')}
                   </a>
               </Link>
@@ -1015,7 +1027,9 @@ export default class extends React.PureComponent {
               <div className="col-full">
                 <h3 className="subhead">{this.translate('confirmation.title')}</h3>
               </div>
+              
             </div>
+            
 
             <div className="row">
 
@@ -1046,11 +1060,7 @@ export default class extends React.PureComponent {
 
         {!this.state.showConfirmation &&
           <section className="target-section last">
-            <div className="row">
-              <div className="col-full">
-                <h1>{this.translate('subhead')}</h1>
-              </div>
-            </div>
+              
             <div className="row section-header">
               <div className="col-full">
 
