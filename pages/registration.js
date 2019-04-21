@@ -1617,7 +1617,7 @@ export default class extends React.PureComponent {
                             </FormRow>
 
 
-                            <FormRow>
+                            {/* <FormRow>
                               <FormField>
                                 {this.getLabel('projectRecords.presentationFile')}
                                 <input disabled style={{display: "none"}} type="text" data-name="presentationFileId" data-section="projectRecords" data-project-index={projectIndex} value={_.isEmpty(projectRecord['presentationFileId']) ? "" : projectRecord['presentationFileId']} />
@@ -1660,7 +1660,7 @@ export default class extends React.PureComponent {
                               </FormField>
 
                               
-                            </FormRow>
+                            </FormRow> */}
 
 
 
