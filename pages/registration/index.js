@@ -1050,6 +1050,19 @@ export default class extends React.PureComponent {
                     return <RegistrationForm onSubmit={(e) => { e.preventDefault(); }}>
 
                       <FormSection className="FormSection">
+                        <div id="extraRegistration">
+                          <div id="trainingBox">
+                            <h1>{this.translate('1stDayToSubmit')}:</h1>
+                            <Countdown date={new Date(2019, 3, 21, 23, 59, 59, 59)}
+                              renderer={renderer}
+                            />
+                          <br/>
+                            <h1>{this.translate('lastDayToSubmit')}:</h1>
+                            <Countdown date={new Date(2019, 5, 9, 23, 59, 59, 59)}
+                              renderer={renderer}
+                            />
+                          </div>
+                        </div>
                         
                         <h3 className="subhead">{this.translate('teamInfo')}</h3>
 
@@ -1620,7 +1633,7 @@ export default class extends React.PureComponent {
                             </FormRow>
 
 
-                            <FormRow>
+                            {/* <FormRow>
                               <FormField>
                                 {this.getLabel('projectRecords.presentationFile')}
                                 <input disabled style={{display: "none"}} type="text" data-name="presentationFileId" data-section="projectRecords" data-project-index={projectIndex} value={_.isEmpty(projectRecord['presentationFileId']) ? "" : projectRecord['presentationFileId']} />
@@ -1663,7 +1676,7 @@ export default class extends React.PureComponent {
                               </FormField>
 
                               
-                            </FormRow>
+                            </FormRow> */}
 
 
 

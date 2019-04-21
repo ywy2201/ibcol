@@ -3,6 +3,8 @@
   "seoDescription":"La Olimpiada Internacional de Blockchain (IBCOL) es un concurso multidisciplinar de diseño y creación. IBCOL 2019 invita a estudiantes de todo el mundo a resolver desafíos del mundo real a través de aplicaciones descentralizadas.",
   "ogImage":"static/images/ogimage.jpg",
   "subhead":"registro de equipos",
+  "1stDayToSubmit":"Primer día de aceptación de libros blancos",
+  "lastDayToSubmit":"Último día para la aceptación de libros blancos",
   "teamInfo":"Información del equipo",
   "teamName":"Nombre del equipo",
   "studentInfo":"Información del estudiante",
@@ -14,11 +16,19 @@
     "educationRecords":{
       "degree":"Grado o equivalente",
       "programme":"Programa o Mayor",
-      "yearOfGraduation":"Nombre de la Institución",
-      "institutionName":"Año de Graduación",
+      "institutionName":"Nombre de la Institución",
+      "yearOfGraduation":"Año de Graduación",
       "city":"Ciudad",
       "state":"Provincia / Estado",
-      "countryCode":"País / Región"
+      "countryCode":"País / Región",
+      "studentNumber":"Número de estudiante",
+      "studentCard":"Credencial de estudiante",
+      "studentCardFrontFile":"Tarjeta de Estudiante (frontal)",
+      "studentCardFrontFileType":"Sólo acepta PNG / JPEG / PDF",
+      "studentCardBackFile":"Tarjeta de Estudiante (Parte posterior de la tarjeta)",
+      "studentCardBackFileType":"Sólo acepta PNG / JPEG / PDF",
+      "transcriptFile":"Transcripción académica (para confirmar programa académico)",
+      "transcriptFileType":"Sólo acepta PNG / JPEG / PDF / ZIP"
     }
   },
   "advisorRecords":{
@@ -40,7 +50,11 @@
   "projectRecords":{
     "name":"Nombre del proyecto",
     "projectCategoryKey":"Categoría de proyecto",
-    "description":"Descripción del Proyecto"
+    "description":"Descripción del Proyecto",
+    "presentationFile":"Presentación",
+    "presentationFileType":"Sólo acepta PDF / ZIP",
+    "whitepaperFile":"Papel blanco",
+    "whitepaperFileType":"Sólo acepta PDF / ZIP"
   },
   "studentEducationInfo":"Credenciales académicas",
   "addAnotherStudent":"Añadir otro estudiante",
@@ -55,13 +69,14 @@
   "addAnotherAdvisorAssociationRecord":"Añadir otro registro de asociación",
   "removeAdvisorAssociationRecord":"Eliminar asociación Record",
   "projectInfo":"Información del proyecto",
+  "extraInfo":"Toda la propiedad intelectual de los estudiantes es y seguirá siendo propiedad única y exclusiva de dichos estudiantes. Los beneficiarios de la propiedad intelectual no adquieren (por licencia o de otra manera, ya sea expresa o implícita) los derechos de propiedad intelectual u otros derechos bajo cualquier divulgación a continuación. Si usted tiene un equipo, pero aún no un proyecto decidido, por favor escribe “ninguno” y elegir cualquier categoría. Usted puede modificar esta información posteriormente.",
   "removeProject":"Retire Proyecto",
   "addAnotherProject":"Añadir otro proyecto",
   "submit":"Enviar",
   "registerAnother":"Crear otra aplicación",
   "confirmation":{
     "title":"Gracias por su registro.",
-    "message":"Hemos recibido su registro. Esperamos que la lectura de su libro blanco (de pago 21 de abril de 2019). Por favor, no posponer las cosas!",
+    "message":"Hemos recibido su registro. Los finalistas serán anunciados antes del 9 de junio.",
     "refTitle":"Aplicación Referencia:",
     "TteamNameTitle":"Nombre del equipo:"
   }

@@ -3,6 +3,8 @@
   "seoDescription":"A Nemzetközi Blockchain Diákolimpia egy multidiszciplináris verseny, ahol a tervezés és kivitelezés van középpontban. Az IBCOL 2019 a világ minden tájáról várja a diákokat, hogy olyan decentralizált alkalamzások szülessenek, amik valós problémákat oldanak meg.",
   "ogImage":"static/images/ogimage.jpg",
   "subhead":"Csapat Regisztráció",
+  "1stDayToSubmit":"Első nap az Elfogadó Termékismertető",
+  "lastDayToSubmit":"Utolsó napja Elfogadó Termékismertető",
   "teamInfo":"Csapat információ",
   "teamName":"Csapat név",
   "studentInfo":"Hallgatói Információ",
@@ -14,11 +16,19 @@
     "educationRecords":{
       "degree":"Diploma vagy azzal egyenértékű",
       "programme":"Program vagy Szakterület",
-      "yearOfGraduation":"Intézmény neve",
-      "institutionName":"Diplomázás éve",
+      "institutionName":"Intézmény neve",
+      "yearOfGraduation":"Diplomázás éve",
       "city":"Város",
       "state":"Tartomány / állam",
-      "countryCode":"Ország / régió"
+      "countryCode":"Ország / régió",
+      "studentNumber":"Tanulói szám",
+      "studentCard":"Diákigazolvány",
+      "studentCardFrontFile":"Diákigazolvány (elülső)",
+      "studentCardFrontFileType":"Csak fogadja PNG / JPEG / PDF",
+      "studentCardBackFile":"Diákigazolvány (Vissza a Card)",
+      "studentCardBackFileType":"Csak fogadja PNG / JPEG / PDF",
+      "transcriptFile":"Akadémiai átirata (megerősíteni akadémiai program)",
+      "transcriptFileType":"Csak fogadja PNG / JPEG / PDF / ZIP"
     }
   },
   "advisorRecords":{
@@ -40,7 +50,11 @@
   "projectRecords":{
     "name":"Projekt neve",
     "projectCategoryKey":"Projekt kategória",
-    "description":"A projekt leírása"
+    "description":"A projekt leírása",
+    "presentationFile":"Bemutatás",
+    "presentationFileType":"Csak fogadja PDF / ZIP",
+    "whitepaperFile":"Fehér papír",
+    "whitepaperFileType":"Csak fogadja PDF / ZIP"
   },
   "studentEducationInfo":"Akadémiai bizonyítványok",
   "addAnotherStudent":"Tovább diák hozzáadása",
@@ -55,6 +69,7 @@
   "addAnotherAdvisorAssociationRecord":"További egyesületi tagság felvétele",
   "removeAdvisorAssociationRecord":"Egyesületi tagság törlése",
   "projectInfo":"Projekt információ",
+  "extraInfo":"Minden szellemi tulajdon a hallgatók, és az egyedüli és kizárólagos tulajdonát képezik az ilyen diákok. A címzettek a szellemi tulajdon nem szerez (a licenc, vagy más módon, akár kifejezett, akár vélelmezett) bármely szellemi tulajdonjog és egyéb jogok bármilyen nyilvánosságra hozatal az alábbiakban. Ha van egy csapat, de még nem döntött a projekt, kérjük írja be a „none”, majd válassza ki a kategóriát. Lehet változtatni ezt az információt később.",
   "removeProject":"Project törlése",
   "addAnotherProject":"További Projekt hozzáadása",
   "submit":"Beküldés",

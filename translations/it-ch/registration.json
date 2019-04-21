@@ -3,6 +3,8 @@
   "seoDescription":"Internazionale Blockchain Olimpiade è un disegno e la costruzione di concorso multidisciplinare. IBCOL 2019 invita gli studenti di tutto il mondo per risolvere le sfide del mondo reale attraverso le applicazioni decentralizzate.",
   "ogImage":"static/images/ogimage.jpg",
   "subhead":"registrazione della squadra",
+  "1stDayToSubmit":"Primo giorno per l'accettazione Whitepapers",
+  "lastDayToSubmit":"Ultimo giorno per l'accettazione Whitepapers",
   "teamInfo":"Informazioni squadra",
   "teamName":"Nome della squadra",
   "studentInfo":"Informazioni per studenti",
@@ -14,11 +16,19 @@
     "educationRecords":{
       "degree":"Grado o equivalente",
       "programme":"Programma o Maggiore",
-      "yearOfGraduation":"Nome istituzione",
-      "institutionName":"anno di laurea",
+      "institutionName":"Nome istituzione",
+      "yearOfGraduation":"anno di laurea",
       "city":"Città",
       "state":"Provincia / Stato",
-      "countryCode":"Paese / Regione"
+      "countryCode":"Paese / Regione",
+      "studentNumber":"Numero studente",
+      "studentCard":"Carta d'identità dello studente",
+      "studentCardFrontFile":"Student Card (anteriore)",
+      "studentCardFrontFileType":"Solo accetta PNG / JPEG / PDF",
+      "studentCardBackFile":"Student Card (retro della carta)",
+      "studentCardBackFileType":"Solo accetta PNG / JPEG / PDF",
+      "transcriptFile":"Academic Trascrizione (per confermare programma accademico)",
+      "transcriptFileType":"Solo accetta PNG / JPEG / PDF / ZIP"
     }
   },
   "advisorRecords":{
@@ -40,7 +50,11 @@
   "projectRecords":{
     "name":"Nome del progetto",
     "projectCategoryKey":"Progetto Categoria",
-    "description":"descrizione del progetto"
+    "description":"descrizione del progetto",
+    "presentationFile":"Presentazione",
+    "presentationFileType":"Solo accetta PDF / ZIP",
+    "whitepaperFile":"Carta bianca",
+    "whitepaperFileType":"Solo accetta PDF / ZIP"
   },
   "studentEducationInfo":"Credenziali accademiche",
   "addAnotherStudent":"Aggiungere un altro studente",
@@ -55,13 +69,14 @@
   "addAnotherAdvisorAssociationRecord":"Aggiungere un'altra associazione Record",
   "removeAdvisorAssociationRecord":"Rimuovere Associazione Record",
   "projectInfo":"Informazioni di progetto",
+  "extraInfo":"Tutta la proprietà intellettuale degli studenti è e resterà l'unica ed esclusiva proprietà di tali studenti. I destinatari della proprietà intellettuale non acquisiscono (da licenza o in altro modo, esplicita o implicita) eventuali diritti di proprietà intellettuale o altri diritti sotto qualsiasi divulgazione di seguito. Se si dispone di una squadra, ma non ancora un progetto deciso, inserite “none” e scegliere qualsiasi categoria. Puoi modificare queste informazioni in seguito.",
   "removeProject":"rimuovere Progetto",
   "addAnotherProject":"Aggiungere un altro progetto",
   "submit":"Sottoscrivi",
   "registerAnother":"Creare un'altra applicazione",
   "confirmation":{
     "title":"Grazie per la tua registrazione.",
-    "message":"Abbiamo ricevuto la tua registrazione. Non vediamo l'ora di leggere il tuo whitepaper (a causa 21 aprile 2019). Si prega di non procrastinare!",
+    "message":"Abbiamo ricevuto la tua registrazione. I finalisti saranno annunciati prima del 9 giugno.",
     "refTitle":"Riferimento applicativi:",
     "TteamNameTitle":"Nome della squadra:"
   }

@@ -3,6 +3,8 @@
   "seoDescription":"國際奧林匹克區塊鏈競賽是一個多學科的設計與建設性的競賽。 2019屆奧鏈競賽邀請來自世界各地的學生通過去中心化​的分布式應用解決現實生活中所面對的挑戰。",
   "ogImage":"static/images/ogimage.jpg",
   "subhead":"團隊註冊",
+  "1stDayToSubmit":"第一天接受白皮書",
+  "lastDayToSubmit":"最後一天接受白皮書",
   "teamInfo":"隊伍資料",
   "teamName":"隊名",
   "studentInfo":"學生資料",
@@ -14,11 +16,19 @@
     "educationRecords":{
       "degree":"學位或同等學歷",
       "programme":"学系或主修",
-      "yearOfGraduation":"機構名稱",
-      "institutionName":"畢業年份",
+      "institutionName":"機構名稱",
+      "yearOfGraduation":"畢業年份",
       "city":"城市",
       "state":"省/州",
-      "countryCode":"國家/地區"
+      "countryCode":"國家/地區",
+      "studentNumber":"學生號碼",
+      "studentCard":"學生證",
+      "studentCardFrontFile":"學生卡（正面）",
+      "studentCardFrontFileType":"只接受PNG / JPEG / PDF",
+      "studentCardBackFile":"學生證（卡背面）",
+      "studentCardBackFileType":"只接受PNG / JPEG / PDF",
+      "transcriptFile":"成績單（確認學術課程）",
+      "transcriptFileType":"只接受PNG / JPEG / PDF / ZIP"
     }
   },
   "advisorRecords":{
@@ -40,7 +50,11 @@
   "projectRecords":{
     "name":"企劃名稱",
     "projectCategoryKey":"企劃項目",
-    "description":"企劃簡介"
+    "description":"企劃簡介",
+    "presentationFile":"介紹",
+    "presentationFileType":"只接受PDF / ZIP",
+    "whitepaperFile":"白皮書",
+    "whitepaperFileType":"只接受PDF / ZIP"
   },
   "studentEducationInfo":"學歷",
   "addAnotherStudent":"新增成員",
@@ -55,13 +69,14 @@
   "addAnotherAdvisorAssociationRecord":"添加另一個關聯記錄",
   "removeAdvisorAssociationRecord":"刪除對應記錄",
   "projectInfo":"項目信息",
+  "extraInfo":"學生的所有知識產權是且應保持這樣的學生的獨有財產。知識產權的收件人沒有獲得（憑許可證或其它方面，無論明示或暗示）任何披露下的任何知識產權或其他權利下文。如果你有一個團隊，但還沒有一個項目決定，請輸入“無”，並選擇任何類別。稍後可以更改這些信息。",
   "removeProject":"刪除項目",
   "addAnotherProject":"添加另一個項目",
   "submit":"遞交",
   "registerAnother":"創建另一個應用程序",
   "confirmation":{
     "title":"謝謝您的註冊。",
-    "message":"我們已經收到您的註冊。我們期待著您的閱讀白皮書（由於2019年4月21日）。請不要拖延！",
+    "message":"我們已經收到您的註冊。入圍者將6月9日之前公佈。",
     "refTitle":"應用參考：",
     "TteamNameTitle":"隊名："
   }
