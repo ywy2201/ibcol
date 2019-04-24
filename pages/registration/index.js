@@ -478,6 +478,8 @@ export default class extends React.PureComponent {
     };
   }
 
+  existingPondFiles = []
+
   loadFilesToPonds = () => {
     const record = this.state.record;
 
@@ -487,19 +489,27 @@ export default class extends React.PureComponent {
         console.log(`${studentIndex}-${studentEducationIndex}`, educationRecord);
 
         if (!_.isEmpty(educationRecord.studentCardFrontFileId)) {
-          console.log(`${educationRecord.studentCardFrontFileId}`);
-
+          console.log(`educationRecord.studentCardFrontFileId ${educationRecord.studentCardFrontFileId}`);
+          this.existingPondFiles.push(educationRecord.studentCardFrontFileId);
           this.pondRefs.studentCardFronts[`${studentIndex}-${studentEducationIndex}`].addFile(`${_.isEmpty(process.env.FILEPOND_API_URL)? document.location.protocol + '//' + document.location.hostname :process.env.FILEPOND_API_URL}${process.env.FILEPOND_API_ENDPOINT}${educationRecord.studentCardFrontFileId}`);
+        } else {
+          try {this.pondRefs.studentCardFronts[`${studentIndex}-${studentEducationIndex}`].removeFile()} catch (e) {console.error(e)}
         }
 
         if (!_.isEmpty(educationRecord.studentCardBackFileId)) {
-          console.log(`${educationRecord.studentCardBackFileId}`);
+          console.log(`educationRecord.studentCardBackFileId ${educationRecord.studentCardBackFileId}`);
+          this.existingPondFiles.push(educationRecord.studentCardBackFileId);
           this.pondRefs.studentCardBacks[`${studentIndex}-${studentEducationIndex}`].addFile(`${_.isEmpty(process.env.FILEPOND_API_URL)? document.location.protocol + '//' + document.location.hostname :process.env.FILEPOND_API_URL}${process.env.FILEPOND_API_ENDPOINT}${educationRecord.studentCardBackFileId}`);
+        } else {
+          try {this.pondRefs.studentCardBacks[`${studentIndex}-${studentEducationIndex}`].removeFile()} catch (e) {console.error(e)}
         }
 
         if (!_.isEmpty(educationRecord.transcriptFileId)) {
-          console.log(`${educationRecord.transcriptFileId}`);
+          console.log(`educationRecord.transcriptFileId ${educationRecord.transcriptFileId}`);
+          this.existingPondFiles.push(educationRecord.transcriptFileId);
           this.pondRefs.transcripts[`${studentIndex}-${studentEducationIndex}`].addFile(`${_.isEmpty(process.env.FILEPOND_API_URL)? document.location.protocol + '//' + document.location.hostname :process.env.FILEPOND_API_URL}${process.env.FILEPOND_API_ENDPOINT}${educationRecord.transcriptFileId}`);
+        } else {
+          try {this.pondRefs.transcripts[`${studentIndex}-${studentEducationIndex}`].removeFile()} catch (e) {console.error(e)}
         }
         
 
@@ -510,6 +520,7 @@ export default class extends React.PureComponent {
   }
 
   onManageRecordChange = (e) => {
+    this.resetForm();
     console.log('onManageRecordChange', e.currentTarget.value);
     this.setState({currentSelectedRecordIndex: e.currentTarget.value, record: this.graphQLCleanUp(this.state.existingApplications[e.currentTarget.value])})
   }
@@ -797,23 +808,30 @@ export default class extends React.PureComponent {
     console.log('file', file);
     console.log('meta', meta);
 
-    if (file === null)
-      return;
+    const serverId = !_.isEmpty(file) ? file.serverId : "";
     
     let updatedRecord = {};
 
     if (meta.section === 'studentEducationRecords') {
       const studentIndex = meta.studentIndex;
       const studentEducationIndex = parseInt(meta.studentEducationIndex);
-      if (this.state.record.studentRecords[studentIndex].educationRecords[studentEducationIndex][meta.name] !== file.serverId) {
-        console.log(`onFilepondChange ${this.state.record.studentRecords[studentIndex].educationRecords[studentEducationIndex][meta.name]} vs ${file.serverId}`);
+      
+      if (_.includes(this.existingPondFiles, this.state.record.studentRecords[studentIndex].educationRecords[studentEducationIndex][meta.name])) {
+        console.log('this.existingPondFiles', this.existingPondFiles);
+        console.log(this.state.record.studentRecords[studentIndex].educationRecords[studentEducationIndex][meta.name]);
+        _.pull(this.existingPondFiles, this.state.record.studentRecords[studentIndex].educationRecords[studentEducationIndex][meta.name]);
+        return;
+      }
+
+      if (this.state.record.studentRecords[studentIndex].educationRecords[studentEducationIndex][meta.name] !== serverId) {
+        console.log(`onFilepondChange ${this.state.record.studentRecords[studentIndex].educationRecords[studentEducationIndex][meta.name]} vs ${serverId}`);
         updatedRecord = update(this.state.record, {
           studentRecords: {
             [studentIndex]: {
               educationRecords: {
                 [studentEducationIndex]: {
                   [meta.name]: {
-                    $set: file ? file.serverId : ""
+                    $set: serverId
                   }
                 }
               }
@@ -823,14 +841,23 @@ export default class extends React.PureComponent {
       }
     } else if (meta.section === 'projectRecords') {
       const projectIndex = meta.projectIndex;
-      if (this.state.record.projectRecords[projectIndex][meta.name] !== file.serverId) {
-        console.log(`onFilepondChange ${this.state.record.projectRecords[projectIndex][meta.name]} vs ${file.serverId}`);
+
+      if (_.includes(this.existingPondFiles, this.state.record.projectRecords[projectIndex][meta.name])) {
+        console.log('this.existingPondFiles', this.existingPondFiles);
+        console.log(this.state.record.projectRecords[projectIndex][meta.name]);
+        _.pull(this.existingPondFiles, this.state.record.projectRecords[projectIndex][meta.name]);
+        
+        return;
+      }
+
+      if (this.state.record.projectRecords[projectIndex][meta.name] !== serverId) {
+        console.log(`onFilepondChange ${this.state.record.projectRecords[projectIndex][meta.name]} vs ${serverId}`);
 
         updatedRecord = update(this.state.record, {
           projectRecords: {
             [projectIndex]: {
               [meta.name]: {
-                $set: file ? file.serverId : ""
+                $set: serverId
               }
             }
           }
@@ -840,7 +867,7 @@ export default class extends React.PureComponent {
 
 
     if (!_.isEmpty(updatedRecord)) {
-      // console.log('updatedRecord', updatedRecord);
+      console.log('updatedRecord', updatedRecord);
       this.setState({
         record: updatedRecord,
         lastEditorStateChange: Date.now()
@@ -894,7 +921,7 @@ export default class extends React.PureComponent {
     if (this.state.recordIsValid) {
       // mutation AddPage($slug: String!, $locale: String!, $localisedPageInput: LocalisedPageInput!, $schemaDefinitionInputs: [SchemaDefinitionInput]!,
       //   $localisedFieldInputs: [LocalisedFieldInput]) {
-        // console.log('this.state.record', this.state.record);
+      console.log('this.state.record', this.state.record);
       const application = update(this.state.record, {
         $unset: ['__typename'],
         studentRecords: {$apply: (studentRecords)=>{return studentRecords.map((studentRecord) => {
@@ -1299,7 +1326,7 @@ export default class extends React.PureComponent {
 
             <div className="row section-header">
               <div className="col-full">
-                <h3 className="subhead">{this.translate('confirmation.title')}</h3>
+                <h3 className="subhead">{this.state.hasValidToken ? this.translate('confirmation.updateTitle') : this.translate('confirmation.title')}</h3>
               </div>
               
             </div>
@@ -1310,7 +1337,7 @@ export default class extends React.PureComponent {
               <div className="block-tab-full">
                 <div className="col-block" style={{ width: "100%" }}>
                   <div className="item-process__text">
-                    <p dangerouslySetInnerHTML={{ __html: this.translate('confirmation.message') }} />
+                    <p dangerouslySetInnerHTML={{ __html: this.state.hasValidToken ? this.translate('confirmation.updateMessage') : this.translate('confirmation.message') }} />
                     <p>
                       <b>{this.translate('confirmation.refTitle')}</b><br />#{this.state.confirmation.ref}
                     </p>
@@ -1319,7 +1346,13 @@ export default class extends React.PureComponent {
                     </p>
                   </div>
                   <div className="full-width" style={{marginBottom: "4rem"}}>
-                    <button onClick={this.resetForm}>{this.translate('registerAnother')}</button>
+                    <button onClick={()=>{
+                      if (this.state.hasValidToken) {
+                        location.reload();
+                      } else {
+                        this.resetForm();
+                      }
+                    }}>{this.state.hasValidToken ? this.translate('updateAnother') : this.translate('registerAnother')}</button>
                   </div>
                 </div>
               </div>
@@ -1394,6 +1427,8 @@ export default class extends React.PureComponent {
                             }}
                           </Query>
                         }
+
+                        
                         <h3 className="subhead">{this.translate('teamInfo')}</h3>
 
                         <FormRow>

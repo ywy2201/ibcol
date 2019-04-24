@@ -84,9 +84,12 @@
   "update": "Update",
   "submit": "Submit",
   "registerAnother": "Create Another Application",
+  "updateAnother": "Make Another Update",
   "confirmation": {
     "title": "Thank you for your regisration.",
+    "updateTitle": "Thank you for your updates.",
     "message": "We have received your application. We will be in touch shortly.",
+    "updateMessage": "We have received your updates.",
     "refTitle": "Application Reference:",
     "teamNameTitle": "Team Name:"
   },

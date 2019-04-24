@@ -163,16 +163,21 @@ const deleteFilepondUploads = async (serverId) => {
     console.log(`object not found in gs://${BUCKET_NAME}-temp/${uuid}...`);
     console.log(`trying to delete object from gs://${BUCKET_NAME}/${uuid}...`);
     // Try to deletes the file from the storage bucket
-    await storage
-      .bucket(`${BUCKET_NAME}`)
-      .file(uuid)
-      .delete();
+    
+    try {
+      await storage
+        .bucket(`${BUCKET_NAME}`)
+        .file(uuid)
+        .delete();
 
-    console.log(`gs://${BUCKET_NAME}/${uuid} deleted.`);
+      console.log(`gs://${BUCKET_NAME}/${uuid} deleted.`);
 
 
-    return `gs://${BUCKET_NAME}/${uuid}`;
-
+      return `gs://${BUCKET_NAME}/${uuid}`;
+    } catch (e) {
+      console.log(`${uuid} does not exist.`)
+      return;
+    }
   }
 
     
@@ -229,10 +234,7 @@ const filepodRoute = async (req, res) => {
   
   console.log('method', req.method);
 
-  if (req.method === 'DELETE') {
-    const serverId = await text(req);
-    return send(res, 200, await deleteFilepondUploads(serverId));
-  }
+  
   
   if (req.method === 'POST') {
     // const serverId = await processFilepondUploads(req);
@@ -269,13 +271,19 @@ const filepodRoute = async (req, res) => {
 
   if (req.method === 'PUT') {
     const serverId = await text(req);
-    console.log('serverId', serverId);
+    // console.log('serverId', serverId);
     try {
       return send(res, 200, await storeUploads(serverId));
     } catch ({message}) {
       // console.log('e', e);
       return send(res, 500, message);
     }
+  }
+
+  if (req.method === 'DELETE') {
+    const serverId = await text(req);
+    console.log('serverId', serverId);
+    return send(res, 200, await deleteFilepondUploads(serverId));
   }
 
   return send(res, 200);
