@@ -11,7 +11,8 @@
     "SALT": ")6sasasWeight-Waste-Stems-Dead-5s81*@()#@",
     "BUCKET_NAME": "ibcol-uploads-uat",
     "GOOGLE_APPLICATION_CREDENTIALS": "/tmp/service-account.json",
-    "GOOGLE_APPLICATION_CREDENTIALS_DATA": "@ibcol-gcloudserviceaccount-stage"
+    "GOOGLE_APPLICATION_CREDENTIALS_DATA": "@ibcol-gcloudserviceaccount-stage",
+    "FILEPOND_API_ENDPOINT": "/file/"
   },
   "build": {
     "env": {
@@ -56,6 +57,13 @@
     
     {
       "src": "/file([/]*)",
+      "dest": "/node-routes/filepondRoute.js",
+      "headers": {
+        "Access-Control-Allow-Origin": "*"
+      }
+    },
+    {
+      "src": "/file/(.*)",
       "dest": "/node-routes/filepondRoute.js",
       "headers": {
         "Access-Control-Allow-Origin": "*"
@@ -125,6 +133,27 @@
       "status": 301,
       "headers": { "Location": "/$locale/registration/" }
     },
+
+    { 
+      "src": "/(?<locale>[^/]*)/registration/login/", 
+      "dest": "/registration/login?locale=$locale"
+    },
+    { 
+      "src": "/(?<locale>[^/]*)/registration/login", 
+      "status": 301,
+      "headers": { "Location": "/$locale/registration/login/" }
+    },
+
+    { 
+      "src": "/(?<locale>[^/]*)/registration/verify/(.*)/(.*)/", 
+      "dest": "/registration/verify?locale=$locale&verificationCode=$2&email=$3"
+    },
+    { 
+      "src": "/(?<locale>[^/]*)/registration/verify/(.*)/(.*)", 
+      "status": 301,
+      "headers": { "Location": "/$locale/registration/verify/$2/$3/" }
+    },
+    
     
     { "src": "/_next/static/(?:[^/]+/pages|chunks|runtime)/.+", "headers": { "cache-control": "immutable" } }
   ]

@@ -20,7 +20,7 @@ import PageContainerComponent from 'components/PageContainerComponent';
 
 import Head from 'next/head';
 
-import { Mutation } from "react-apollo";
+import { Mutation, Query } from "react-apollo";
 import gql from 'graphql-tag'
 
 
@@ -28,10 +28,17 @@ import gql from 'graphql-tag'
 
 
 const REQUEST_ACCESS_TOKEN = gql`
-  mutation RequestAccessToken($email: String!, $seed: String!) {
+  mutation RequestAccessToken($email: String!, $seed: String!, $locale: String!) {
 
-    requestAccessToken(email: $email, seed: $seed)
+    requestAccessToken(email: $email, seed: $seed, locale: $locale)
 
+  }
+`;
+
+
+const IS_TOKEN_VALID = gql`
+  query IsTokenValid($email: String!, $token: String!) {
+    isTokenValid(email: $email, token: $token)
   }
 `;
 
@@ -242,15 +249,23 @@ export default class extends React.PureComponent {
 
   constructor(props) {
     super(props);
-    this.state = Object.assign({}, this.getDefaultState(), {
-      showConfirmation: true
-    });
+    this.state = this.getDefaultState();
     this.resetForm();
     // this.onEditorStateChange();
   }
 
+  getTokenFromCookie = () => {
+
+    return (cookies.get('email') !== null && cookies.get('token') !== null) ? {
+      email: cookies.get('email'),
+      token: cookies.get('token')
+    }: undefined;
+  }
+
   getDefaultState = () => {
     return {
+      tokenCookie: undefined,
+      hasValidToken: false,
       focusedField: undefined,
       record: this.props.record !== undefined ? this.graphQLCleanUp(this.props.record) : this.getDefaultEditorRecord(),
       lastEditorStateChange: Date.now(),
@@ -292,12 +307,11 @@ export default class extends React.PureComponent {
 
 
   componentDidMount = () => {
+
     this.setState({
-      cookie: {
-        loginAttemptEmail: cookies.get('loginAttemptEmail'),
-        seed: cookies.get('seed')
-      }
+      tokenCookie: this.getTokenFromCookie()
     })
+
   }
 
   componentDidUpdate = (prevProps, prevState) => {
@@ -402,10 +416,23 @@ export default class extends React.PureComponent {
 
   redirectToVerification = (email, verificationCode) => {
     console.log('redirectToVerification', email, verificationCode);
-    Router.pushRoute('registrationVerification', {
+    Router.replaceRoute('registrationVerification', {
       email, verificationCode, locale: this.props.query.locale
     });
   }
+
+  clearCookie = () => {
+    cookies.erase('seed');
+    cookies.erase('loginAttemptEmail');
+    cookies.erase('token');
+    cookies.erase('email');
+
+    this.setState({
+      tokenCookie: undefined,
+      hasValidToken: false
+    })
+  }
+
 
   onRequestAccessToken = (mutate) => {
     if (this.state.recordIsValid) {
@@ -417,7 +444,8 @@ export default class extends React.PureComponent {
       mutate({
         variables: {
           "email": this.state.record.loginEmail.trim(),
-          seed
+          seed,
+          "locale": this.props.query.locale
         }
       });
 
@@ -445,9 +473,16 @@ export default class extends React.PureComponent {
   onMutationCompleted = ({requestAccessToken: email}) => {
     console.log('requestAccessToken', email);
 
+    // this.clearCookie();
+
     if (email === this.state.record.loginEmail) {
-      cookies.set('seed', this.state.confirmation.seed, {expires: 365});
-      cookies.set('loginAttemptEmail', email, {expires: 1});
+      const cookie = {
+        seed: this.state.confirmation.seed,
+        loginAttemptEmail: email
+      }
+      console.log('cookie', cookie);
+      cookies.set('seed', cookie.seed, {expires: 365});
+      cookies.set('loginAttemptEmail', cookie.loginAttemptEmail, {expires: 1});
 
 
       this.setState({
@@ -455,7 +490,8 @@ export default class extends React.PureComponent {
         mutationError: undefined,
         record: this.getDefaultEditorRecord(),
         showConfirmation: true,
-        recordIsValid: false
+        recordIsValid: false,
+        cookie
       });
     }
 
@@ -567,7 +603,7 @@ export default class extends React.PureComponent {
 
 
 
-        {!this.state.showConfirmation &&
+        {(!this.state.showConfirmation && !this.state.hasValidToken && this.state.tokenCookie === undefined) &&
           <section className="s-section target-section first last">
             <div className="row">
               <div className="col-full">
@@ -639,6 +675,60 @@ export default class extends React.PureComponent {
             </div>
           </section>
         }
+
+
+
+        {(!this.state.hasValidToken && this.state.tokenCookie !== undefined) &&
+          <section className="s-section target-section first last">
+            <div className="row">
+              <div className="col-full">
+                <h1>{this.translate('subhead')}</h1>
+              </div>
+            </div>
+            <div className="row section-header">
+              <div className="col-full">
+
+                <Query query={IS_TOKEN_VALID} variables={{ email: this.state.tokenCookie.email, token: this.state.tokenCookie.token }}>
+                  {({ loading, error, data, refetch, networkStatus }) => {
+                    {/* console.log('querying graphql...');
+                    console.log('loading:', loading);
+                    console.log('networkStatus:', networkStatus); */}
+                    {/* console.log('error', error);
+                    console.log('data', data); */}
+                    if ((networkStatus === 4) || loading) return <div className="full-width" style={{textAlign: 'center'}}>
+                        <><div className="lds-ellipsis"><div></div><div></div><div></div><div></div></div></>
+                      </div>;
+                    
+                    if (error) return `Error! ${error.message}`;
+
+                    if (!_.isEmpty(data)) {
+                      console.log('data', data.isTokenValid);
+
+                      this.setState({
+                        hasValidToken: data.isTokenValid
+                      })
+
+                      if (!data.isTokenValid) {
+                        this.clearCookie()
+                      } else {
+                        Router.replaceRoute('registration', {
+                          locale: this.props.query.locale
+                        });
+                      }
+                    }
+
+                    return null
+                  }}
+                </Query>
+
+
+                
+              </div>
+            </div>
+          </section>
+        }
+
+
       </ThisPageContainerComponent>
     )
   }

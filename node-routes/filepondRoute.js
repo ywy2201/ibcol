@@ -12,7 +12,7 @@ const atob = str => Buffer.from(str, 'base64').toString('binary');
 
 // const formidable = require('formidable');
 
-const SALT = process.env.SALT ? process.env.SALT : "@)$&R(DHADKJHASAJKSHKJHDSA";
+const SALT = process.env.SALT ? process.env.SALT : ")6Dc1UP*S9Night-Age-Doll-Famous-8as81*@()#@";
 const BUCKET_NAME = process.env.BUCKET_NAME ? process.env.BUCKET_NAME : "ibcol-uploads-dev";
 
 const {Storage} = require('@google-cloud/storage');
@@ -71,6 +71,33 @@ const generateUploadMeta = async (fileMeta) => {
   const signedUrl = await storage.bucket(bucket).file(uuid).getSignedUrl(options);
   
   return {serverId: ServerId.encrypt(uuid), signedUrl: signedUrl[0]};
+
+    
+}
+
+const generateReadOnlyURL = async (serverId) => {
+  
+  const uuid = ServerId.decrypt(serverId);
+
+  console.log(`generateReadOnlyURL for ${uuid}...`);
+
+  // const shortid = require('shortid');
+  // const uuid = `${shortid.generate()}/${fileMeta.name}`;
+
+  
+
+  const options = {
+    action: "read",
+    expires: Date.now() + 1000 * 60 * 60, // 60 minute
+    // contentMd5: fileMeta.contentMd5
+  };
+
+  const bucket = `${BUCKET_NAME}`;
+  
+  // Uploads a local file to the bucket
+  const readOnlyURL = await storage.bucket(bucket).file(uuid).getSignedUrl(options);
+  console.log(`readOnlyURL for ${uuid} - ${readOnlyURL}`);
+  return readOnlyURL;
 
     
 }
@@ -214,6 +241,30 @@ const filepodRoute = async (req, res) => {
     const fileMeta = await json(req);
 
     return send(res, 200, await generateUploadMeta(fileMeta));
+  }
+
+  if (req.method === 'GET') {
+    // const serverId = await text(req);
+
+    console.log('req', req.url);
+    const replaceString = `${process.env.FILEPOND_API_URL ? '/' + process.env.FILEPOND_API_URL + process.env.FILEPOND_API_ENDPOINT + '/' : process.env.FILEPOND_API_ENDPOINT}`;
+    console.log('replace', replaceString);
+    const url = require('url');
+    const serverId = decodeURIComponent(url.parse(req.url).pathname).replace(replaceString, '');
+
+    console.log('serverId', serverId);
+    
+    // const uuid = ServerId.decrypt(serverId);
+
+    // console.log('uuid', uuid);
+
+    const signedReadOnlyURL = await generateReadOnlyURL(serverId);
+
+    res.writeHead(302, {
+      'Location': signedReadOnlyURL
+    });
+    res.end();
+    return
   }
 
   if (req.method === 'PUT') {

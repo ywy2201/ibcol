@@ -14,7 +14,7 @@
     "start": "npm run local --",
     "build": "next build",
     "now-build": "next build",
-    "local-filepond": "GOOGLE_APPLICATION_CREDENTIALS=/tmp/gc-service-account.json  GOOGLE_APPLICATION_CREDENTIALS_DATA=$(cat .gc/service-accounts/IBCOL-bc7c0de657f9.json | base64) micro-dev node-routes/filepondRoute.js --port 4004",
+    "local-filepond": "FILEPOND_API_ENDPOINT= FILEPOND_API_URL=http://localhost:4004 GOOGLE_APPLICATION_CREDENTIALS=/tmp/gc-service-account.json  GOOGLE_APPLICATION_CREDENTIALS_DATA=$(cat .gc/service-accounts/IBCOL-bc7c0de657f9.json | base64) micro-dev node-routes/filepondRoute.js --port 4004",
     "local": "NOW_CONFIG=now-local.json node server.js",
     "dev": "NOW_CONFIG=now-dev.json node server.js",
     "stage": "NOW_CONFIG=now-stage.json node server.js",

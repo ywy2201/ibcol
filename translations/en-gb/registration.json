@@ -81,7 +81,7 @@
   "extraInfo":"If you have a team but not yet a project decided, please enter n/a and choose any category. You may change this information later.",
   "removeProject": "- Remove Project",
   "addAnotherProject": "+ Add Another Project",
-  
+  "update": "Update",
   "submit": "Submit",
   "registerAnother": "Create Another Application",
   "confirmation": {
@@ -91,7 +91,8 @@
     "teamNameTitle": "Team Name:"
   },
 
-  "teamLogin": "Registration Management",
+  "teamLogin": "Registration Management - Login",
+  "teamLogout": "Registration Management - Logout",
   "loginEmail": "Email",
   "loginAction": "Login as Existing Team",
   "loginAwaitingTitle": "Awaiting Verification",
@@ -100,7 +101,9 @@
   "loginManualVerification": "Manual Verification",
   "loginManualVerificationCode": "Verification Code",
   "verifyAction": "Verify Login",
-  "portal": {
-    
-  }
+  "loginVerifyingTitle": "Verifying Login",
+  "loginVerifyingMessage": "Verifying the following seed code against <b>{verificationCode}</b>:",
+  "loginVerifyingErrorMessage": "Login verification failed. Please try to verify again on the same browser login was initiated.",
+  
+  "managingApplicationTitle": "Managing Registration"
 }
