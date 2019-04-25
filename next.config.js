@@ -73,7 +73,8 @@ const nextConfig = {
   env: {
     ENV: process.env.ENV,
     FILEPOND_API_ENDPOINT: process.env.FILEPOND_API_ENDPOINT ? process.env.FILEPOND_API_ENDPOINT : '',
-    FILEPOND_API_URL: process.env.FILEPOND_API_URL ? process.env.FILEPOND_API_URL : ''
+    FILEPOND_API_URL: process.env.FILEPOND_API_URL ? process.env.FILEPOND_API_URL : '',
+    SALT: process.env.SALT
   },
   webpack: (config) => {
     

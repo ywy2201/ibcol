@@ -5,7 +5,7 @@ const cors = (process.env.NOW_REGION === undefined) ? require('micro-cors')() : 
 
 // const fs = require('fs');
 const CryptoJS = require("crypto-js");
-const { randomBytes } = require('crypto')
+// const { randomBytes } = require('crypto')
 
 
 const atob = str => Buffer.from(str, 'base64').toString('binary');

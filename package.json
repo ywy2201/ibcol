@@ -82,6 +82,7 @@
     "micro": "^9.3.3",
     "micro-cors": "^0.1.1",
     "minimist": "^1.2.0",
+    "moment": "^2.24.0",
     "moment-timezone": "^0.5.23",
     "next": "^8.0.4",
     "next-offline": "^3.3.6",

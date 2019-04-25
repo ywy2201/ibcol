@@ -3,12 +3,12 @@ import classNames from 'classnames';
 import styled from 'styled-components';
 import _ from 'lodash-checkit';
 import update from 'immutability-helper';
-
+import moment from 'moment';
 import configs from 'configs';
 import cookies from 'browser-cookies';
 
 import { media, style } from 'helpers/styledComponents.js';
-
+import CryptoJS from "crypto-js";
 import {translate} from 'helpers/translate.js';
 // import { transparentize } from 'polished'
 
@@ -43,7 +43,12 @@ registerPlugin(FilePondPluginFileValidateType, FilePondPluginFileValidateSize, F
 const SALT = process.env.SALT ? process.env.SALT : ")6Dc1UP*S9Night-Age-Doll-Famous-8as81*@()#@";
 
 const getFilenameFromFileId = (fileId) => {
-  return _.last(ServerId.decrypt(CryptoJS.AES.decrypt(fileId, SALT).toString(CryptoJS.enc.Utf8)).split('/'));
+  // console.log('getFilenameFromFileId', fileId, SALT);
+  const filename = _.last(CryptoJS.AES.decrypt(fileId, SALT).toString(CryptoJS.enc.Utf8).split('/'));
+  // console.log('fileId', fileId);
+  // console.log('SALT', SALT);
+  // console.log('filename', filename);
+  return filename;
 }
 
 const filepondServer = {
@@ -211,6 +216,7 @@ const GET_APPLICATIONS = gql`
         }
       }
       projectRecords {
+        ref
         name
         projectCategoryKey
         description
@@ -940,7 +946,7 @@ export default class extends React.PureComponent {
         })})}},
 
         projectRecords: {$apply: (projectRecords)=>{
-          return projectRecords.map((projectRecord)=>_.pick(projectRecord, ['name', 'projectCategoryKey', 'description', 'whitepaperFileId', 'presentationFileId']))
+          return projectRecords.map((projectRecord)=>_.pick(projectRecord, ['ref', 'name', 'projectCategoryKey', 'description', 'whitepaperFileId', 'presentationFileId']))
         }},
 
         advisorRecords: {$apply: (advisorRecords)=>{return advisorRecords.map((advisorRecord) => {
@@ -1227,8 +1233,11 @@ export default class extends React.PureComponent {
     // console.log("===> FILEPOND_API_URL", process.env.FILEPOND_API_URL);
     // console.log("===>", process.env.ENV);
 
+    
+
 
     const locale = this.props.query.locale;
+    moment.locale(locale);
 
     const sectors = _.sortBy(this.translate('sectors'), [(o) => o]);
     const projectCategories = _.sortBy(this.translate('projectCategories'), [(o) => o.name]);
@@ -1922,7 +1931,7 @@ export default class extends React.PureComponent {
 
                       {
                         this.state.record.projectRecords.map((projectRecord, projectIndex) => {
-
+                          {/* console.log('projectRecord', projectRecord); */}
                           return <FormSection className="FormSection" key={projectIndex}>
 
                             <h3 className="subhead">{this.translate('projectInfo')} {this.state.record.projectRecords.length > 1 && `#${projectIndex + 1}`}
@@ -2008,16 +2017,23 @@ export default class extends React.PureComponent {
                               
                             </FormRow>
 
-                            <FormRow>
-                              <FormField>
-                                {this.getLabel('projectRecords.whitepaperSubmitted')}
-                                <div>
-                                  <ul>
-
-                                  </ul>
-                                </div>
-                              </FormField>
-                            </FormRow>
+                            {(projectRecord.whitepaperFileIds && projectRecord.whitepaperFileIds.length > 0) && 
+                              <FormRow>
+                                <FormField>
+                                  {this.getLabel('projectRecords.whitepaperSubmitted')}
+                                  <div>
+                                    <ol>
+                                      {
+                                        projectRecord.whitepaperFileIds.slice().reverse().map((dropfile, index)=>{
+                                          return <li key={index}><a target="_blank" href={`${process.env.FILEPOND_API_URL}${process.env.FILEPOND_API_ENDPOINT}${process.env.FILEPOND_API_URL}${process.env.FILEPOND_API_ENDPOINT}${dropfile.fileId}`}>{getFilenameFromFileId(dropfile.fileId)}</a> {dropfile.receivedAt && <span>- {moment(dropfile.receivedAt).fromNow()}</span>}</li>
+                                        })
+                                      }
+                                    </ol>
+                                  </div>
+                                </FormField>
+                              </FormRow>
+                            }
+                            
 
 
                             {/* <FormRow>
