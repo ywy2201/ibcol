@@ -18,7 +18,8 @@
     "env": {
       "ENV": "stage",
       "NODE_ENV": "production",
-      "FILEPOND_API_ENDPOINT": "/file/"
+      "FILEPOND_API_ENDPOINT": "/file/",
+      "SALT": ")6sasasWeight-Waste-Stems-Dead-5s81*@()#@"
     }
   },
   "regions": ["all"],

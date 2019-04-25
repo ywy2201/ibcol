@@ -2,7 +2,7 @@ import React from 'react';
 import classNames from 'classnames';
 import styled from 'styled-components';
 import _ from 'lodash-checkit';
-import update from 'update-immutable';
+import update from 'immutability-helper';
 
 import configs from 'configs';
 

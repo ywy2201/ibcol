@@ -17,7 +17,8 @@
     "env": {
       "ENV": "production",
       "NODE_ENV": "production",
-      "FILEPOND_API_ENDPOINT": "/file/"
+      "FILEPOND_API_ENDPOINT": "/file/",
+      "SALT": ")6Dc1UP*Energy-Copper-Chest-Smaller-8)#@"
     }
   },
   "regions": ["all"],

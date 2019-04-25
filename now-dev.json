@@ -15,6 +15,7 @@
   },
   "build": {
     "env": {
+      "SALT": ")6Dc1UP*S9Night-Age-Doll-Famous-8as81*@()#@",
       "ENV": "dev",
       "NODE_ENV": "production",
       "FILEPOND_API_ENDPOINT": "/file/"

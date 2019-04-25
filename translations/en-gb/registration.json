@@ -53,8 +53,10 @@
     "description":"Project Description",
     "presentationFile":"Presentation",
     "presentationFileType":"Only accepts PDF/ZIP",
+    "presentationSubmitted": "Previous Presentation Revisions",
     "whitepaperFile":"Whitepaper",
-    "whitepaperFileType":"Only accepts PDF/ZIP"
+    "whitepaperFileType":"Only accepts PDF/ZIP",
+    "whitepaperSubmitted": "Previous Whitepaper Revisions"
   },
 
   "studentEducationInfo": "Academic Credential",

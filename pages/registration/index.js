@@ -2,7 +2,7 @@ import React from 'react';
 import classNames from 'classnames';
 import styled from 'styled-components';
 import _ from 'lodash-checkit';
-import update from 'update-immutable';
+import update from 'immutability-helper';
 
 import configs from 'configs';
 import cookies from 'browser-cookies';
@@ -40,7 +40,11 @@ import '/node_modules/filepond-plugin-image-preview/dist/filepond-plugin-image-p
 // Register the plugins
 registerPlugin(FilePondPluginFileValidateType, FilePondPluginFileValidateSize, FilePondPluginImageExifOrientation, FilePondPluginImagePreview);
 
+const SALT = process.env.SALT ? process.env.SALT : ")6Dc1UP*S9Night-Age-Doll-Famous-8as81*@()#@";
 
+const getFilenameFromFileId = (fileId) => {
+  return _.last(ServerId.decrypt(CryptoJS.AES.decrypt(fileId, SALT).toString(CryptoJS.enc.Utf8)).split('/'));
+}
 
 const filepondServer = {
   url: process.env.FILEPOND_API_URL,
@@ -149,9 +153,9 @@ const ADD_APPLICATION = gql`
 `;
 
 const UPDATE_APPLICATION = gql`
-  mutation UpdateApplication($application: ApplicationUpdateInput!) {
+  mutation UpdateApplication($email: String!, $token: String!, $application: ApplicationUpdateInput!) {
 
-    updateApplication(application: $application) {
+    updateApplication(email: $email, token: $token, application: $application) {
       teamName
       ref
     }
@@ -210,8 +214,14 @@ const GET_APPLICATIONS = gql`
         name
         projectCategoryKey
         description
-        whitepaperFileIds
-        presentationFileIds
+        whitepaperFileIds {
+          fileId,
+          receivedAt
+        }
+        presentationFileIds {
+          fileId,
+          receivedAt
+        }
       }
     }
   }
@@ -942,7 +952,9 @@ export default class extends React.PureComponent {
       console.log('onUpdateApplication', application);
       mutate({
         variables: {
-          application
+          application,
+          email: this.state.tokenCookie.email, 
+          token: this.state.tokenCookie.token
         }
       });
 
@@ -1994,6 +2006,17 @@ export default class extends React.PureComponent {
                               </FormField>
 
                               
+                            </FormRow>
+
+                            <FormRow>
+                              <FormField>
+                                {this.getLabel('projectRecords.whitepaperSubmitted')}
+                                <div>
+                                  <ul>
+
+                                  </ul>
+                                </div>
+                              </FormField>
                             </FormRow>
 
 
