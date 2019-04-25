@@ -101,14 +101,35 @@
 
     { 
       "src": "/(?<locale>[^/]*)/registration/", 
-      "dest": "/registration?locale=$locale"
+      "dest": "/registration/?locale=$locale"
     },
     { 
       "src": "/(?<locale>[^/]*)/registration", 
       "status": 301,
       "headers": { "Location": "/$locale/registration/" }
     },
+
+    { 
+      "src": "/(?<locale>[^/]*)/registration/login/", 
+      "dest": "/registration/login?locale=$locale"
+    },
+    { 
+      "src": "/(?<locale>[^/]*)/registration/login", 
+      "status": 301,
+      "headers": { "Location": "/$locale/registration/login/" }
+    },
+
+    { 
+      "src": "/(?<locale>[^/]*)/registration/verify/(.*)/(.*)/", 
+      "dest": "/registration/verify?locale=$locale&verificationCode=$2&email=$3"
+    },
+    { 
+      "src": "/(?<locale>[^/]*)/registration/verify/(.*)/(.*)", 
+      "status": 301,
+      "headers": { "Location": "/$locale/registration/verify/$2/$3/" }
+    },
     
+
     { "src": "/_next/static/(?:[^/]+/pages|chunks|runtime)/.+", "headers": { "cache-control": "immutable" } }
     
   ]
