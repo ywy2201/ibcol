@@ -158,9 +158,9 @@ const ADD_APPLICATION = gql`
 `;
 
 const UPDATE_APPLICATION = gql`
-  mutation UpdateApplication($email: String!, $token: String!, $application: ApplicationUpdateInput!) {
+  mutation UpdateApplication($accessToken: TokenInput!, $application: ApplicationUpdateInput!) {
 
-    updateApplication(email: $email, token: $token, application: $application) {
+    updateApplication(accessToken: $accessToken, application: $application) {
       teamName
       ref
     }
@@ -169,14 +169,15 @@ const UPDATE_APPLICATION = gql`
 
 
 const IS_TOKEN_VALID = gql`
-  query IsTokenValid($email: String!, $token: String!) {
-    isTokenValid(email: $email, token: $token)
+  query IsTokenValid($accessToken: TokenInput!) {
+    isTokenValid(accessToken: $accessToken)
   }
 `;
 
+
 const GET_APPLICATIONS = gql`
-  query GetApplications($email: String!, $token: String!) {
-    getApplications(email: $email, token: $token) {
+  query GetApplications($accessToken: TokenInput!) {
+    getApplications(accessToken: $accessToken) {
       teamName
       ref
       studentRecords {
@@ -959,8 +960,10 @@ export default class extends React.PureComponent {
       mutate({
         variables: {
           application,
-          email: this.state.tokenCookie.email, 
-          token: this.state.tokenCookie.token
+          accessToken: {
+            email: this.state.tokenCookie.email, 
+            token: this.state.tokenCookie.token
+          }
         }
       });
 
@@ -1285,7 +1288,7 @@ export default class extends React.PureComponent {
           <div className="row">
             <div className="col-full">
               {(!this.state.hasValidToken && this.state.tokenCookie !== undefined) &&
-                <Query query={IS_TOKEN_VALID} variables={{ email: this.state.tokenCookie.email, token: this.state.tokenCookie.token }}>
+                <Query query={IS_TOKEN_VALID} variables={{ accessToken: {email: this.state.tokenCookie.email, token: this.state.tokenCookie.token} }}>
                   {({ loading, error, data, refetch, networkStatus }) => {
                     {/* console.log('querying graphql...');
                     console.log('loading:', loading);
@@ -1405,7 +1408,7 @@ export default class extends React.PureComponent {
 
                       <FormSection className="FormSection">
                         {(this.state.hasValidToken && this.state.tokenCookie !== undefined) &&
-                          <Query query={GET_APPLICATIONS} variables={{ email: this.state.tokenCookie.email, token: this.state.tokenCookie.token }}>
+                          <Query query={GET_APPLICATIONS} variables={{ accessToken: {email: this.state.tokenCookie.email, token: this.state.tokenCookie.token }}}>
                             {({ loading, error, data, refetch, networkStatus }) => {
                               {/* console.log('querying graphql...');
                               console.log('loading:', loading);
@@ -1419,10 +1422,11 @@ export default class extends React.PureComponent {
                               if (error) return `Error! ${error.message}`;
 
                               if (!_.isEmpty(data)) {
-                                console.log('data', data);
+                                
                                 const existingApplications = data.getApplications;
 
                                 if (this.state.currentSelectedRecordIndex === undefined) {
+                                  console.log('data', data);
                                   this.setState({
                                     existingApplications,
                                     currentSelectedRecordIndex: 0,

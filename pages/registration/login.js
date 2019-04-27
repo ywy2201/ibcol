@@ -37,8 +37,8 @@ const REQUEST_ACCESS_TOKEN = gql`
 
 
 const IS_TOKEN_VALID = gql`
-  query IsTokenValid($email: String!, $token: String!) {
-    isTokenValid(email: $email, token: $token)
+  query IsTokenValid($accessToken: TokenInput!) {
+    isTokenValid(accessToken: $accessToken)
   }
 `;
 
@@ -688,7 +688,7 @@ export default class extends React.PureComponent {
             <div className="row section-header">
               <div className="col-full">
 
-                <Query query={IS_TOKEN_VALID} variables={{ email: this.state.tokenCookie.email, token: this.state.tokenCookie.token }}>
+                <Query query={IS_TOKEN_VALID} variables={{ accessToken: {email: this.state.tokenCookie.email, token: this.state.tokenCookie.token} }}>
                   {({ loading, error, data, refetch, networkStatus }) => {
                     {/* console.log('querying graphql...');
                     console.log('loading:', loading);
