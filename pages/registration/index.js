@@ -175,9 +175,9 @@ const IS_TOKEN_VALID = gql`
 `;
 
 
-const GET_APPLICATIONS = gql`
-  query GetApplications($accessToken: TokenInput!) {
-    getApplications(accessToken: $accessToken) {
+const GET_MY_APPLICATIONS = gql`
+  query GetMyApplications($accessToken: TokenInput!) {
+    getMyApplications(accessToken: $accessToken) {
       teamName
       ref
       studentRecords {
@@ -1408,7 +1408,7 @@ export default class extends React.PureComponent {
 
                       <FormSection className="FormSection">
                         {(this.state.hasValidToken && this.state.tokenCookie !== undefined) &&
-                          <Query query={GET_APPLICATIONS} variables={{ accessToken: {email: this.state.tokenCookie.email, token: this.state.tokenCookie.token }}}>
+                          <Query query={GET_MY_APPLICATIONS} variables={{ accessToken: {email: this.state.tokenCookie.email, token: this.state.tokenCookie.token }}}>
                             {({ loading, error, data, refetch, networkStatus }) => {
                               {/* console.log('querying graphql...');
                               console.log('loading:', loading);
@@ -1423,7 +1423,7 @@ export default class extends React.PureComponent {
 
                               if (!_.isEmpty(data)) {
                                 
-                                const existingApplications = data.getApplications;
+                                const existingApplications = data.getMyApplications;
 
                                 if (this.state.currentSelectedRecordIndex === undefined) {
                                   console.log('data', data);
