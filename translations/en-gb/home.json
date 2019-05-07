@@ -3,46 +3,46 @@
   "seoDescription":"International Blockchain Olympiad is a multidisciplinary design and building competition. IBCOL 2019 invites students from around the world to solve real-world challenges through decentralised applications.",
   "ogImage":"static/images/ogimage.jpg",
   "mainHeading":"Help bring the world onto the Blockchain",
-  "subHeading":"Meet and compete with the world's best blockchain builders",
+  "subHeading":"July 5~7 in Hong Kong",
   "register":"Registration",
   "howToJoin":"How to join",
   "competitionRules":"Competition Process",
   "scroll":"Scroll",
   "introSection":{
     "leftBlock":{
-      "title":"Most hackathons don’t produce useful results",
-      "infoList":"<li>Insufficient time to build well-rounded projects</li><li>Projects too tech-focused and divorced from reality</li><li>No incentive to continue developing the new project</li>"
+      "title":"Not a typical hackathon",
+      "infoList":"<li>Insufficient time to design complete solutions</li><li>Either too tech-focused or unrealistic</li><li>No incentive to continue development</li>"
     },
     "rightBlock":{
-      "title":"This competition will produce useful results",
-      "infoList":"<li>From now until July 2019 to get something working</li><li>Multidisciplinary approach to applying blockchain</li><li>Matching with entities that can take projects forward</li>"
+      "title":"Build for the real world",
+      "infoList":"<li>Sufficient time to design complete solutions</li><li>Multidisciplinary approach to applications</li><li>Matching with investors & incubators</li>"
     }
   },
   "timelineSection":{
     "heading":"Competition Process",
     "block1":{
       "title":"Registration",
-      "details":"You must register to manage your project"
+      "details":"Register <a href='https://ibcol.org/registration' target='_blank'>here</a> before June 9; <a href='https://medium.com/international-blockchain-olympiad/ibcol-2019-who-can-join-35f1cb25b51' target='_blank'>see: Eligibility</a>"
     },
     "block2":{
       "title":"Whitepaper",
-      "details":"The rolling deadline is on April 21"
+      "details":"Rolling deadline until June 9; <a href='https://medium.com/international-blockchain-olympiad/tagged/writing-tips' target='_blank'>see: WP Tips</a>"
     },
     "block3":{
       "title":"Interview",
-      "details":"All interviews will be finished before June 9"
+      "details":"All <a href='https://medium.com/international-blockchain-olympiad/ibcol-2019-how-to-join-8f903af68d6c' target='_blank'>interviews</a> to be finished before June 9"
     },
     "block4":{
       "title":"Demo",
-      "details":"Finalists shall prepare Proof of Concept"
+      "details":"Finalists shall prepare <a href='https://medium.com/international-blockchain-olympiad/ibcol-2019-how-to-join-8f903af68d6c' target='_blank'>Proof-of-Concept</a>"
     },
     "block5":{
       "title":"Pitch",
-      "details":"Finalists shall prepare stage presentation"
+      "details":"Finalists shall prepare <a href='https://medium.com/international-blockchain-olympiad/ibcol-2019-how-to-join-8f903af68d6c' target='_blank'>stage presentation</a>"
     },
     "block6":{
       "title":"Continuation",
-      "details":"Competitors receive internships or investments"
+      "details":"Competitors receive <a href='https://medium.com/international-blockchain-olympiad/ibcol-2019-why-join-cc4a63301490' target='_blank'>internships or investments</a>"
     }
   },
   "section01":{
@@ -87,5 +87,41 @@
       },
       "note":"The best prize for students is not financial, but rather experience, guidance, and a chance to make a real impact in the real world."
     }
+  },
+  "section03":{
+    "pageTitle":"Our Sponsors",
+    "seoDescription":"International Blockchain Olympiad is a multidisciplinary design and building competition. IBCOL 2019 invites students from around the world to solve real-world challenges through decentralised applications.",
+    "ogImage":"static/images/ogimage.jpg",
+    "subhead":"Sponsors & Supporters of the 2019 International Blockchain Olympiad",
+    "titleSponsorTitle":"Title Sponsors",
+    "titleSponsor":[
+      {"name":"Cardano","url":"https://www.cardano.org","logo":"/static/images/logo-cardano.png"},
+      {"name":"EmurgoHK","url":"https://emurgohk.io","logo":"/static/images/logo-emurgohk.png"}
+    ],
+    "generalSponsorTitle":"General Sponsors",
+    "generalSponsor":[
+      {"name":"EMALI","url":"https://emali.io","logo":"/static/images/logo-emali.png"},
+      {"name":"CredProof","url":"http://www.credproof.net/","logo":"/static/images/logo-credproof.png"},
+      {"name":"R3","url":"https://www.r3.com/","logo":"/static/images/logo-r3.png"}
+    ],
+    "academicPartnersTitle":"Academic Partners",
+    "academicPartners":[
+      {"name":"Chinese University of Hong Kong, Engineering Alumni Association","url":"https://www.facebook.com/groups/cuhk.ergaa.oc/","logo":"/static/images/logo-chinese-university-of-hong-kong,-engineering-alumni-association.png"},
+      {"name":"Hong Kong Polytechnic University, Office of Student Development, Entrepreneurship Society (ES OSD PolyU)","url":"http://www.polyu.edu.hk/stars/co-curriculum/entrepreneurship-development/entrepreneurship-development.html","logo":"/static/images/logo-hong-kong-polytechnic-university,-office-of-student-development,-entrepreneurship-society-(es-osd-polyu).png"},
+      {"name":"Moscow State University (MSU), Faculty of Law","url":"http://law.msu.ru/","logo":"/static/images/logo-moscow-state-university-(msu),-faculty-of-law.png"},
+      {"name":"National Taiwan University, D-School","url":"https://dschool.ntu.edu.tw","logo":"/static/images/logo-national-taiwan-university,-d-school.png"},
+      {"name":"University of Waterloo, Faculty of Engineering","url":"https://uwaterloo.ca/engineering/","logo":"/static/images/logo-university-of-waterloo,-faculty-of-engineering.png"}
+    ],
+    "supportingOrganisationsTitle":"Supporting Organisations",
+    "supportingOrganisations":[
+      {"name":"bitfwd","url":"https://www.bitfwd.com/","logo":"/static/images/logo-bitfwd.png"},
+      {"name":"Blockchain Slovakia","url":"https://blockchainslovakia.sk","logo":"/static/images/logo-blockchain-slovakia.png"},
+      {"name":"EasyVolunteer.HK","url":"https://easyvolunteer.hk","logo":"/static/images/logo-easyvolunteer.hk.png"},
+      {"name":"Hong Kong Blockchain Society (HKBCS)","url":"http://www.hkbcs.org","logo":"/static/images/logo-hong-kong-blockchain-society-(hkbcs).png"},
+      {"name":"Hong Kong Science Park (HKSTP)","url":"https://www.hkstp.org","logo":"/static/images/logo-hong-kong-science-park-(hkstp).png"},
+      {"name":"Jason Hsu Yu Jen","url":"https://www.jhsu.tw","logo":"/static/images/logo-jason-hsu-yu-jen.png"},
+      {"name":"RNS Solutions","url":"https://rnssol.com/","logo":"/static/images/logo-rns-solutions.png"},
+      {"name":"UW Blockchain Club","url":"https://www.facebook.com/uwblockchain/","logo":"/static/images/logo-uw-blockchain-club.png"}
+    ]
   }
 }
