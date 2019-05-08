@@ -22,27 +22,27 @@
     "heading":"Competition Process",
     "block1":{
       "title":"Registration",
-      "details":"You must register to manage your project"
+      "details":"Register <a href='https://ibcol.org/registration' target='_blank'>here</a> before June 9; <a href='https://medium.com/international-blockchain-olympiad/ibcol-2019-who-can-join-35f1cb25b51' target='_blank'>see: Eligibility</a>"
     },
     "block2":{
       "title":"Whitepaper",
-      "details":"The rolling deadline is on April 21"
+      "details":"Rolling deadline until June 9; <a href='https://medium.com/international-blockchain-olympiad/tagged/writing-tips' target='_blank'>see: WP Tips</a>"
     },
     "block3":{
       "title":"Interview",
-      "details":"All interviews will be finished before June 9"
+      "details":"All <a href='https://medium.com/international-blockchain-olympiad/ibcol-2019-how-to-join-8f903af68d6c' target='_blank'>interviews</a> to be finished before June 9"
     },
     "block4":{
       "title":"Demo",
-      "details":"Finalists shall prepare Proof of Concept"
+      "details":"Finalists shall prepare <a href='https://medium.com/international-blockchain-olympiad/ibcol-2019-how-to-join-8f903af68d6c' target='_blank'>Proof-of-Concept</a>"
     },
     "block5":{
       "title":"Pitch",
-      "details":"Finalists shall prepare stage presentation"
+      "details":"Finalists shall prepare <a href='https://medium.com/international-blockchain-olympiad/ibcol-2019-how-to-join-8f903af68d6c' target='_blank'>stage presentation</a>"
     },
     "block6":{
       "title":"Continuation",
-      "details":"Competitors receive internships or investments"
+      "details":"Competitors receive <a href='https://medium.com/international-blockchain-olympiad/ibcol-2019-why-join-cc4a63301490' target='_blank'>internships or investments</a>"
     }
   },
   "section01":{
