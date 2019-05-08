@@ -10,12 +10,12 @@
   "scroll":"Scroll",
   "introSection":{
     "leftBlock":{
-      "title":"Most hackathons don’t produce useful results",
-      "infoList":"<li>Insufficient time to build well-rounded projects</li><li>Projects too tech-focused and divorced from reality</li><li>No incentive to continue developing the new project</li>"
+      "title":"Not a typical hackathon",
+      "infoList":"<li>Insufficient time to design complete solutions</li><li>Either too tech-focused or unrealistic</li><li>No incentive to continue development</li>"
     },
     "rightBlock":{
-      "title":"This competition will produce useful results",
-      "infoList":"<li>From now until July 2019 to get something working</li><li>Multidisciplinary approach to applying blockchain</li><li>Matching with entities that can take projects forward</li>"
+      "title":"Build for the real world",
+      "infoList":"<li>Sufficient time to design complete solutions</li><li>Multidisciplinary approach to applications</li><li>Matching with investors & incubators</li>"
     }
   },
   "timelineSection":{
