@@ -14,6 +14,8 @@ import PageContainerComponent from 'components/PageContainerComponent';
 
 import Head from 'next/head';
 
+import Countdown from 'react-countdown-now';
+
 import jQuery from 'jquery';
 
 const $ = jQuery;
@@ -27,7 +29,10 @@ const $ = jQuery;
 //   xxLarge: style.dimension.normal.pagePadding.xxLarge
 // }
 
-
+const renderer = ({ days, hours, minutes, seconds }) => {
+  // Render a countdown
+  return <span>{days} Days, {hours} Hrs, {minutes} Mins, {seconds} Secs</span>;
+};
 
 
 
@@ -99,7 +104,9 @@ export default class extends React.Component {
               </h1>
 
               <h3>
-                {this.translate('subHeading')}
+                {/* this.translate('subHeading') */}
+                <Countdown date={new Date(2019, 5, 9, 23, 59, 59, 59)}
+                  renderer={renderer}/><br/>left to submit your application
               </h3>
 
               <div className="home-content__button">
