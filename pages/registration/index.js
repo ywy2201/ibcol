@@ -1269,12 +1269,7 @@ export default class extends React.PureComponent {
         <section className="target-section">
           <div id="extraRegistration" className="row">
             <div className="col-full">
-              <div id="trainingBox">
-                <h3>{this.translate('1stDayToSubmit')}:</h3>
-                <Countdown date={new Date(2019, 3, 21, 23, 59, 59, 59)}
-                  renderer={renderer}
-                />
-              
+              <div id="trainingBox">              
                 <h3>{this.translate('lastDayToSubmit')}:</h3>
                 <Countdown date={new Date(2019, 5, 9, 23, 59, 59, 59)}
                   renderer={renderer}
