@@ -264,13 +264,38 @@ class MyApp extends App {
             <div className="col-full ss-copyright">
               <span dangerouslySetInnerHTML={{ __html: this.translate('copyright') }} />
             </div>
+            <br/>
             <div>
+              <div>
+                <br/>
+                <a href="https://twitter.com/ibcolorg" target="_blank">
+                  <img src="../static/sm/tt.png"/>
+                </a>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="https://www.facebook.com/ibcol.org" target="_blank">
+                  <img src="../static/sm/fb.png"/>
+                </a>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="https://www.instagram.com/ibcol_org" target="_blank">
+                  <img src="../static/sm/ig.png"/>
+                </a>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="https://www.linkedin.com/company/ibcol" target="_blank">
+                  <img src="../static/sm/li.png"/>
+                </a>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="https://www.youtube.com/channel/UCxN1ZN_bSlWlVWncT9QcTkg" target="_blank">
+                  <img src="../static/sm/yt.png"/>
+                </a>
+                <br/>
+              </div>
               <div className="languageMenuFooterTrigger" onClick={this.toggleLanguageSelector}>
                 <div className="languageMenuFooterTriggerIcon" alt={this.translate('_locale.name')} title={this.translate('_locale.name')} style={{
                   backgroundImage: `url("/static/images/flags/1x1/${this.translate('_locale.flag')}")`
                 }}></div>
                 {this.translate('_locale.name')}
               </div>
+
             </div>
             <div></div>
           </div>
