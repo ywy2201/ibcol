@@ -10,13 +10,15 @@
     "SALT": ")6Dc1UP*Energy-Copper-Chest-Smaller-8)#@",
     "BUCKET_NAME": "ibcol-uploads-production",
     "GOOGLE_APPLICATION_CREDENTIALS": "/tmp/service-account.json",
-    "GOOGLE_APPLICATION_CREDENTIALS_DATA": "@ibcol-gcloudserviceaccount-production"
+    "GOOGLE_APPLICATION_CREDENTIALS_DATA": "@ibcol-gcloudserviceaccount-production",
+    "FILEPOND_API_ENDPOINT": "/file/"
   },
   "build": {
     "env": {
       "ENV": "production",
       "NODE_ENV": "production",
-      "FILEPOND_API_ENDPOINT": "/file/"
+      "FILEPOND_API_ENDPOINT": "/file/",
+      "SALT": ")6Dc1UP*Energy-Copper-Chest-Smaller-8)#@"
     }
   },
   "regions": ["all"],
@@ -55,6 +57,14 @@
     
     {
       "src": "/file([/]*)",
+      "dest": "/node-routes/filepondRoute.js",
+      "headers": {
+        "Access-Control-Allow-Origin": "*"
+      }
+    },
+
+    {
+      "src": "/file/(.*)",
       "dest": "/node-routes/filepondRoute.js",
       "headers": {
         "Access-Control-Allow-Origin": "*"
@@ -117,13 +127,34 @@
 
     { 
       "src": "/(?<locale>[^/]*)/registration/", 
-      "dest": "/registration?locale=$locale"
+      "dest": "/registration/?locale=$locale"
     },
     { 
       "src": "/(?<locale>[^/]*)/registration", 
       "status": 301,
       "headers": { "Location": "/$locale/registration/" }
     },
+
+    { 
+      "src": "/(?<locale>[^/]*)/registration/login/", 
+      "dest": "/registration/login?locale=$locale"
+    },
+    { 
+      "src": "/(?<locale>[^/]*)/registration/login", 
+      "status": 301,
+      "headers": { "Location": "/$locale/registration/login/" }
+    },
+
+    { 
+      "src": "/(?<locale>[^/]*)/registration/verify/(.*)/(.*)/", 
+      "dest": "/registration/verify?locale=$locale&verificationCode=$2&email=$3"
+    },
+    { 
+      "src": "/(?<locale>[^/]*)/registration/verify/(.*)/(.*)", 
+      "status": 301,
+      "headers": { "Location": "/$locale/registration/verify/$2/$3/" }
+    },
+    
     
     { "src": "/_next/static/(?:[^/]+/pages|chunks|runtime)/.+", "headers": { "cache-control": "immutable" } }
     

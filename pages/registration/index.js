@@ -2,27 +2,26 @@ import React from 'react';
 import classNames from 'classnames';
 import styled from 'styled-components';
 import _ from 'lodash-checkit';
-import update from 'update-immutable';
-
+import update from 'immutability-helper';
+import moment from 'moment';
 import configs from 'configs';
+import cookies from 'browser-cookies';
 
 import { media, style } from 'helpers/styledComponents.js';
-
+import CryptoJS from "crypto-js";
 import {translate} from 'helpers/translate.js';
 // import { transparentize } from 'polished'
 
-// import { Link } from '/routes';
+import { Link } from '/routes';
 
 import PageContainerComponent from 'components/PageContainerComponent';
 import CountryInputSelectComponent from 'components/CountryInputSelectComponent';
 
 import Head from 'next/head';
 
-import { Mutation } from "react-apollo";
+import { Mutation, Query } from "react-apollo";
 import gql from 'graphql-tag'
 
-
-import ReactDOM from 'react-dom';
 import Countdown from 'react-countdown-now';
 
 
@@ -41,6 +40,16 @@ import 'node_modules/filepond-plugin-image-preview/dist/filepond-plugin-image-pr
 // Register the plugins
 registerPlugin(FilePondPluginFileValidateType, FilePondPluginFileValidateSize, FilePondPluginImageExifOrientation, FilePondPluginImagePreview);
 
+const SALT = process.env.SALT ? process.env.SALT : ")6Dc1UP*S9Night-Age-Doll-Famous-8as81*@()#@";
+
+const getFilenameFromFileId = (fileId) => {
+  // console.log('getFilenameFromFileId', fileId, SALT);
+  const filename = _.last(CryptoJS.AES.decrypt(fileId, SALT).toString(CryptoJS.enc.Utf8).split('/'));
+  // console.log('fileId', fileId);
+  // console.log('SALT', SALT);
+  // console.log('filename', filename);
+  return filename;
+}
 
 const filepondServer = {
   url: process.env.FILEPOND_API_URL,
@@ -148,6 +157,82 @@ const ADD_APPLICATION = gql`
   }
 `;
 
+const UPDATE_APPLICATION = gql`
+  mutation UpdateApplication($accessToken: TokenInput!, $application: ApplicationUpdateInput!) {
+
+    updateApplication(accessToken: $accessToken, application: $application) {
+      teamName
+      ref
+    }
+  }
+`;
+
+
+const IS_TOKEN_VALID = gql`
+  query IsTokenValid($accessToken: TokenInput!) {
+    isTokenValid(accessToken: $accessToken)
+  }
+`;
+
+
+const GET_APPLICATIONS = gql`
+  query GetApplications($accessToken: TokenInput!) {
+    getApplications(accessToken: $accessToken) {
+      teamName
+      ref
+      studentRecords {
+        firstName
+        lastName
+        phoneNumber
+        email
+        educationRecords {
+          institutionName
+          state
+          city
+          countryCode
+          degree
+          programme
+          yearOfGraduation
+          studentNumber
+          studentCardFrontFileId
+          studentCardBackFileId
+          transcriptFileId
+          isVerified
+        }
+      }
+      advisorRecords {
+        firstName
+        lastName
+        phoneNumber
+        email
+        associationRecords {
+          organisationName
+          title
+          sectorCode
+          state
+          city
+          countryCode
+          yearCommencement
+          yearCessation
+        }
+      }
+      projectRecords {
+        ref
+        name
+        projectCategoryKey
+        description
+        whitepaperFileIds {
+          fileId,
+          receivedAt
+        }
+        presentationFileIds {
+          fileId,
+          receivedAt
+        }
+      }
+    }
+  }
+`;
 
 
 
@@ -160,17 +245,23 @@ const ThisPageContainerComponent = styled(PageContainerComponent)`
       float: none;
       height: unset;
       line-height: 3rem;
+      margin-top: 1.5rem;
+      margin-bottom: 0.5rem;
     }
 
     a {
       display: inline;
     }
+
+    #trainingBox {
+      background: #eee;
+      padding: 3rem 3rem 2.95rem;
+      /* margin-left: 2rem;
+      margin-right: 2rem; */
+      margin-bottom: 5rem;
+    }
     
-    background: #eee;
-    padding: 3rem 2rem 0.8rem;
-    margin-left: -2rem;
-    margin-right: -2rem;
-    margin-bottom: 5rem;
+    
 
   }
 
@@ -372,9 +463,20 @@ export default class extends React.PureComponent {
 
   constructor(props) {
     super(props);
-    this.state = this.getDefaultState();
+    this.state = Object.assign({
+      tokenCookie: undefined,
+      hasValidToken: false,
+      existingApplications: [],
+      currentSelectedRecordIndex: undefined
+    }, this.getDefaultState());
     this.resetForm();
     // this.onEditorStateChange();
+  }
+
+  pondRefs = {
+    studentCardFronts: [],
+    studentCardBacks: [],
+    transcripts: []
   }
 
   getDefaultState = () => {
@@ -391,6 +493,92 @@ export default class extends React.PureComponent {
         ref: ""
       }
     };
+  }
+
+  existingPondFiles = []
+
+  loadFilesToPonds = () => {
+    const record = this.state.record;
+
+    console.log('loadFilesToPonds...');
+    record.studentRecords.map((studentRecord, studentIndex) => {
+      studentRecord.educationRecords.map((educationRecord, studentEducationIndex) => {
+        console.log(`${studentIndex}-${studentEducationIndex}`, educationRecord);
+
+        if (!_.isEmpty(educationRecord.studentCardFrontFileId)) {
+          console.log(`educationRecord.studentCardFrontFileId ${educationRecord.studentCardFrontFileId}`);
+          this.existingPondFiles.push(educationRecord.studentCardFrontFileId);
+          this.pondRefs.studentCardFronts[`${studentIndex}-${studentEducationIndex}`].addFile(`${_.isEmpty(process.env.FILEPOND_API_URL)? document.location.protocol + '//' + document.location.hostname :process.env.FILEPOND_API_URL}${process.env.FILEPOND_API_ENDPOINT}${educationRecord.studentCardFrontFileId}`);
+        } else {
+          try {this.pondRefs.studentCardFronts[`${studentIndex}-${studentEducationIndex}`].removeFile()} catch (e) {console.error(e)}
+        }
+
+        if (!_.isEmpty(educationRecord.studentCardBackFileId)) {
+          console.log(`educationRecord.studentCardBackFileId ${educationRecord.studentCardBackFileId}`);
+          this.existingPondFiles.push(educationRecord.studentCardBackFileId);
+          this.pondRefs.studentCardBacks[`${studentIndex}-${studentEducationIndex}`].addFile(`${_.isEmpty(process.env.FILEPOND_API_URL)? document.location.protocol + '//' + document.location.hostname :process.env.FILEPOND_API_URL}${process.env.FILEPOND_API_ENDPOINT}${educationRecord.studentCardBackFileId}`);
+        } else {
+          try {this.pondRefs.studentCardBacks[`${studentIndex}-${studentEducationIndex}`].removeFile()} catch (e) {console.error(e)}
+        }
+
+        if (!_.isEmpty(educationRecord.transcriptFileId)) {
+          console.log(`educationRecord.transcriptFileId ${educationRecord.transcriptFileId}`);
+          this.existingPondFiles.push(educationRecord.transcriptFileId);
+          this.pondRefs.transcripts[`${studentIndex}-${studentEducationIndex}`].addFile(`${_.isEmpty(process.env.FILEPOND_API_URL)? document.location.protocol + '//' + document.location.hostname :process.env.FILEPOND_API_URL}${process.env.FILEPOND_API_ENDPOINT}${educationRecord.transcriptFileId}`);
+        } else {
+          try {this.pondRefs.transcripts[`${studentIndex}-${studentEducationIndex}`].removeFile()} catch (e) {console.error(e)}
+        }
+        
+
+        
+
+      })
+    })
+  }
+
+  onManageRecordChange = (e) => {
+    this.resetForm();
+    console.log('onManageRecordChange', e.currentTarget.value);
+    this.setState({currentSelectedRecordIndex: e.currentTarget.value, record: this.graphQLCleanUp(this.state.existingApplications[e.currentTarget.value])})
+  }
+
+  logout = () => {
+    this.clearCookie();
+    this.resetForm();
+    this.setState({
+      currentSelectedRecordIndex: undefined
+    })
+  }
+
+  clearCookie = () => {
+    cookies.erase('seed');
+    cookies.erase('loginAttemptEmail');
+    cookies.erase('token');
+    cookies.erase('email');
+
+    this.setState({
+      tokenCookie: undefined,
+      hasValidToken: false
+    })
+  }
+
+  getTokenFromCookie = () => {
+
+    return (cookies.get('email') !== null && cookies.get('token') !== null) ? {
+      email: cookies.get('email'),
+      token: cookies.get('token')
+    }: undefined;
+  }
+
+  componentDidMount = () => {
+    this.setState({
+      tokenCookie: this.getTokenFromCookie(),
+      cookie: {
+        loginAttemptEmail: cookies.get('loginAttemptEmail') || undefined,
+        seed: cookies.get('seed') || undefined,
+        token: cookies.get('token') || undefined
+      }
+    })
   }
 
   resetForm = () => {
@@ -533,6 +721,10 @@ export default class extends React.PureComponent {
       });
     }
 
+    if (prevState.currentSelectedRecordIndex !== this.state.currentSelectedRecordIndex) {
+      this.loadFilesToPonds();
+    }
+
   }
 
   onRecordChange = (e) => {
@@ -629,42 +821,70 @@ export default class extends React.PureComponent {
   }
 
   onFilepondChange = (file, meta) => {
-    console.log(file ? file.serverId : file, meta);
+    // console.log(`onFilepondChange ${file ? file.serverId : file, meta}`);
+    console.log('file', file);
+    console.log('meta', meta);
+
+    const serverId = !_.isEmpty(file) ? file.serverId : "";
     
     let updatedRecord = {};
 
     if (meta.section === 'studentEducationRecords') {
       const studentIndex = meta.studentIndex;
       const studentEducationIndex = parseInt(meta.studentEducationIndex);
-      updatedRecord = update(this.state.record, {
-        studentRecords: {
-          [studentIndex]: {
-            educationRecords: {
-              [studentEducationIndex]: {
-                [meta.name]: {
-                  $set: file ? file.serverId : ""
+      
+      if (_.includes(this.existingPondFiles, this.state.record.studentRecords[studentIndex].educationRecords[studentEducationIndex][meta.name])) {
+        console.log('this.existingPondFiles', this.existingPondFiles);
+        console.log(this.state.record.studentRecords[studentIndex].educationRecords[studentEducationIndex][meta.name]);
+        _.pull(this.existingPondFiles, this.state.record.studentRecords[studentIndex].educationRecords[studentEducationIndex][meta.name]);
+        return;
+      }
+
+      if (this.state.record.studentRecords[studentIndex].educationRecords[studentEducationIndex][meta.name] !== serverId) {
+        console.log(`onFilepondChange ${this.state.record.studentRecords[studentIndex].educationRecords[studentEducationIndex][meta.name]} vs ${serverId}`);
+        updatedRecord = update(this.state.record, {
+          studentRecords: {
+            [studentIndex]: {
+              educationRecords: {
+                [studentEducationIndex]: {
+                  [meta.name]: {
+                    $set: serverId
+                  }
                 }
               }
             }
           }
-        }
-      })
+        })
+      }
     } else if (meta.section === 'projectRecords') {
       const projectIndex = meta.projectIndex;
-      updatedRecord = update(this.state.record, {
-        projectRecords: {
-          [projectIndex]: {
-            [meta.name]: {
-              $set: file ? file.serverId : ""
+
+      if (_.includes(this.existingPondFiles, this.state.record.projectRecords[projectIndex][meta.name])) {
+        console.log('this.existingPondFiles', this.existingPondFiles);
+        console.log(this.state.record.projectRecords[projectIndex][meta.name]);
+        _.pull(this.existingPondFiles, this.state.record.projectRecords[projectIndex][meta.name]);
+        
+        return;
+      }
+
+      if (this.state.record.projectRecords[projectIndex][meta.name] !== serverId) {
+        console.log(`onFilepondChange ${this.state.record.projectRecords[projectIndex][meta.name]} vs ${serverId}`);
+
+        updatedRecord = update(this.state.record, {
+          projectRecords: {
+            [projectIndex]: {
+              [meta.name]: {
+                $set: serverId
+              }
             }
           }
-        }
-      })
+        })
+      }
     }
 
 
     if (!_.isEmpty(updatedRecord)) {
-      // console.log('updatedRecord', updatedRecord);
+      console.log('updatedRecord', updatedRecord);
       this.setState({
         record: updatedRecord,
         lastEditorStateChange: Date.now()
@@ -674,6 +894,16 @@ export default class extends React.PureComponent {
 
 
   graphQLCleanUp = (record) => {
+    
+    // const studentRecords = record.studentRecords;
+    // const studentRecords = record.studentRecords;
+    // const advisorRecords = record.advisorRecords;
+    // const projectRecords = record.projectRecords;
+    // const studentRecords = record.studentRecords;
+    //         "advisorRecords": this.state.record.advisorRecords,
+    //         "projectRecords": this.state.record.projectRecords
+
+
     return record;
   }
   onCreateApplication = (mutate) => {
@@ -687,6 +917,52 @@ export default class extends React.PureComponent {
             "studentRecords": this.state.record.studentRecords,
             "advisorRecords": this.state.record.advisorRecords,
             "projectRecords": this.state.record.projectRecords
+          }
+        }
+      });
+
+      this.setState({
+        isEditorMutating: true,
+        mutationError: undefined,
+        confirmation: {
+          teamName: "",
+          ref: ""
+        }
+      })
+    }
+  }
+
+  onUpdateApplication = (mutate) => {
+    // console.log('onUpdateApplication');
+
+    if (this.state.recordIsValid) {
+      // mutation AddPage($slug: String!, $locale: String!, $localisedPageInput: LocalisedPageInput!, $schemaDefinitionInputs: [SchemaDefinitionInput]!,
+      //   $localisedFieldInputs: [LocalisedFieldInput]) {
+      console.log('this.state.record', this.state.record);
+      const application = update(this.state.record, {
+        $unset: ['__typename'],
+        studentRecords: {$apply: (studentRecords)=>{return studentRecords.map((studentRecord) => {
+          return Object.assign({}, _.pick(studentRecord, ['firstName', 'lastName', 'phoneNumber', 'email']), {educationRecords: studentRecord.educationRecords.map((educationRecord) => _.pick(educationRecord, ['institutionName', 'state', 'city', 'countryCode',
+    'degree', 'programme', 'yearOfGraduation', 'studentNumber', 'studentCardFrontFileId', 'studentCardBackFileId', 'transcriptFileId']))
+        })})}},
+
+        projectRecords: {$apply: (projectRecords)=>{
+          return projectRecords.map((projectRecord)=>_.pick(projectRecord, ['ref', 'name', 'projectCategoryKey', 'description', 'whitepaperFileId', 'presentationFileId']))
+        }},
+
+        advisorRecords: {$apply: (advisorRecords)=>{return advisorRecords.map((advisorRecord) => {
+          return Object.assign({}, _.pick(advisorRecord, ['firstName', 'lastName', 'phoneNumber', 'email']), {associationRecords: advisorRecord.associationRecords.map((associationRecord) => _.pick(associationRecord, ['yearCessation', 'yearCommencement', 'countryCode', 'city', 'sectorCode', 'state', 'title', 'organisationName']))
+        })})}},
+      })
+
+      
+      console.log('onUpdateApplication', application);
+      mutate({
+        variables: {
+          application,
+          accessToken: {
+            email: this.state.tokenCookie.email, 
+            token: this.state.tokenCookie.token
           }
         }
       });
@@ -936,8 +1212,10 @@ export default class extends React.PureComponent {
   }
 
 
-  onMutationCompleted = ({ addApplication }) => {
+  onMutationCompleted = ({ updateApplication, addApplication }) => {
     console.log('addApplication', addApplication);
+    console.log('updateApplication', updateApplication);
+
     this.setState({
       isEditorMutating: false,
       mutationError: undefined,
@@ -945,8 +1223,8 @@ export default class extends React.PureComponent {
       editId: undefined,
       showConfirmation: true,
       confirmation: {
-        teamName: addApplication.teamName,
-        ref: addApplication.ref
+        teamName: addApplication ? addApplication.teamName : updateApplication.teamName,
+        ref: addApplication ? addApplication.ref : updateApplication.ref
       }
     })
   };
@@ -954,11 +1232,15 @@ export default class extends React.PureComponent {
   render() {
 
     // console.log(">>> query", this.props.query);
-    // console.log("===>", process.env.FILEPOND_API);
+    // console.log("===> FILEPOND_API_ENDPOINT ", process.env.FILEPOND_API_ENDPOINT);
+    // console.log("===> FILEPOND_API_URL", process.env.FILEPOND_API_URL);
     // console.log("===>", process.env.ENV);
+
+    
 
 
     const locale = this.props.query.locale;
+    moment.locale(locale);
 
     const sectors = _.sortBy(this.translate('sectors'), [(o) => o]);
     const projectCategories = _.sortBy(this.translate('projectCategories'), [(o) => o.name]);
@@ -975,21 +1257,106 @@ export default class extends React.PureComponent {
           <meta property="og:type" content="website" />
         </Head>
 
+        
+
+        <section className="s-section target-section first">
+          <div className="row">
+            <div className="col-full">
+              <h1>{this.translate('subhead')}</h1>
+            </div>
+          </div>
+        </section>
+        <section className="target-section">
+          <div id="extraRegistration" className="row">
+            <div className="col-full">
+              <div id="trainingBox">              
+                <h3>{this.translate('lastDayToSubmit')}:</h3>
+                <Countdown date={new Date(2019, 5, 9, 23, 59, 59, 59)}
+                  renderer={renderer}
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="target-section">
+          <div className="row">
+            <div className="col-full">
+              {(!this.state.hasValidToken && this.state.tokenCookie !== undefined) &&
+                <Query query={IS_TOKEN_VALID} variables={{ accessToken: {email: this.state.tokenCookie.email, token: this.state.tokenCookie.token} }}>
+                  {({ loading, error, data, refetch, networkStatus }) => {
+                    {/* console.log('querying graphql...');
+                    console.log('loading:', loading);
+                    console.log('networkStatus:', networkStatus); */}
+                    {/* console.log('error', error);
+                    console.log('data', data); */}
+                    if ((networkStatus === 4) || loading) return <div className="full-width" style={{textAlign: 'center'}}>
+                        <><div className="lds-ellipsis"><div></div><div></div><div></div><div></div></div></>
+                      </div>;
+                    
+                    if (error) return `Error! ${error.message}`;
+
+                    if (!_.isEmpty(data)) {
+                      {/* console.log('data', data.isTokenValid); */}
+
+                      this.setState({
+                        hasValidToken: data.isTokenValid
+                      })
+
+                      if (!data.isTokenValid) {
+                        this.clearCookie()
+                      }
+                    }
+
+                    return null
+                  }}
+                </Query>
+              }
+              {
+                (!this.state.hasValidToken && this.state.tokenCookie === undefined) &&
+                <Link route="registrationLogin" params={{ locale }}>
+                    <a className="btn btn--stroke btn--primary full-width btn--large" style={{"margin": "1rem auto 6rem"}}>
+                        {this.translate('teamLogin')}
+                    </a>
+                </Link>
+              }
+              {
+                (this.state.hasValidToken && this.state.tokenCookie !== undefined) &&
+                
+                <a className="btn btn--stroke btn--primary full-width btn--large" style={{"margin": "1rem auto 6rem"}} onClick={()=>{
+                  this.logout();
+                }}>
+                    {this.translate('teamLogout')}
+                </a>
+            
+              }
+
+              
+
+            </div>
+          </div>
+            
+        </section>
+
+
+
         {this.state.showConfirmation &&
-          <section className="s-section target-section first last">
+          <section className="target-section last">
 
             <div className="row section-header">
               <div className="col-full">
-                <h3 className="subhead">{this.translate('confirmation.title')}</h3>
+                <h3 className="subhead">{this.state.hasValidToken ? this.translate('confirmation.updateTitle') : this.translate('confirmation.title')}</h3>
               </div>
+              
             </div>
-
+            
+            
             <div className="row">
 
               <div className="block-tab-full">
                 <div className="col-block" style={{ width: "100%" }}>
                   <div className="item-process__text">
-                    <p dangerouslySetInnerHTML={{ __html: this.translate('confirmation.message') }} />
+                    <p dangerouslySetInnerHTML={{ __html: this.state.hasValidToken ? this.translate('confirmation.updateMessage') : this.translate('confirmation.message') }} />
                     <p>
                       <b>{this.translate('confirmation.refTitle')}</b><br />#{this.state.confirmation.ref}
                     </p>
@@ -997,8 +1364,14 @@ export default class extends React.PureComponent {
                       <b>{this.translate('confirmation.teamNameTitle')}</b><br />{this.state.confirmation.teamName}
                     </p>
                   </div>
-                  <div className="full-width">
-                    <button onClick={this.resetForm}>{this.translate('registerAnother')}</button>
+                  <div className="full-width" style={{marginBottom: "4rem"}}>
+                    <button onClick={()=>{
+                      if (this.state.hasValidToken) {
+                        location.reload();
+                      } else {
+                        this.resetForm();
+                      }
+                    }}>{this.state.hasValidToken ? this.translate('updateAnother') : this.translate('registerAnother')}</button>
                   </div>
                 </div>
               </div>
@@ -1011,18 +1384,13 @@ export default class extends React.PureComponent {
 
 
 
-
-
         {!this.state.showConfirmation &&
-          <section className="s-section target-section first last">
-
+          <section className="target-section last">
+              
             <div className="row section-header">
               <div className="col-full">
-
-
-
                 <Mutation
-                  mutation={ADD_APPLICATION}
+                  mutation={this.state.currentSelectedRecordIndex === undefined ? ADD_APPLICATION : UPDATE_APPLICATION}
                   onCompleted={this.onMutationCompleted}
                   onError={this.onMutationError}
                 >
@@ -1034,19 +1402,52 @@ export default class extends React.PureComponent {
                     return <RegistrationForm onSubmit={(e) => { e.preventDefault(); }}>
 
                       <FormSection className="FormSection">
-                        <div id="extraRegistration">
-                          <div id="trainingBox">
-                            <h1>Next Training Section: </h1>
-                            <Countdown date={new Date(2019, 3, 13, 13, 30, 0, 0)}
-                              renderer={renderer}
-                            />
-                          </div>
+                        {(this.state.hasValidToken && this.state.tokenCookie !== undefined) &&
+                          <Query query={GET_APPLICATIONS} variables={{ accessToken: {email: this.state.tokenCookie.email, token: this.state.tokenCookie.token }}}>
+                            {({ loading, error, data, refetch, networkStatus }) => {
+                              {/* console.log('querying graphql...');
+                              console.log('loading:', loading);
+                              console.log('networkStatus:', networkStatus); */}
+                              {/* console.log('error', error);
+                              console.log('data', data); */}
+                              {/* if ((networkStatus === 4) || loading) return <div className="full-width" style={{textAlign: 'center'}}>
+                                  <><div className="lds-ellipsis"><div></div><div></div><div></div><div></div></div></>
+                                </div>; */}
+                              
+                              if (error) return `Error! ${error.message}`;
 
-                          <div id="registrationBox">
-                            <h3>广州大学城</h3>
-                            <a href="https://mp.weixin.qq.com/s/yK792yQKiBe4Alvkq50pNA" target="_blank">活动通知</a>
-                          </div>
-                        </div>
+                              if (!_.isEmpty(data)) {
+                                
+                                const existingApplications = data.getApplications;
+
+                                if (this.state.currentSelectedRecordIndex === undefined) {
+                                  console.log('data', data);
+                                  this.setState({
+                                    existingApplications,
+                                    currentSelectedRecordIndex: 0,
+                                    record: existingApplications[0]
+                                  })
+                                }
+                                
+
+                                return <FormRow><FormField>{this.getLabel('managingApplicationTitle')}<select onChange={this.onManageRecordChange} value={this.state.currentSelectedRecordIndex}>
+                                  {
+                                    existingApplications.map((application, index)=>{
+                                      return <option value={index} key={application.ref}>
+                                        {`#${application.ref} (${application.teamName})`}
+                                      </option>
+                                    })
+                                  }
+                                  </select></FormField></FormRow>
+                              } else {
+                                return null
+                              }
+
+                              
+                            }}
+                          </Query>
+                        }
+
                         
                         <h3 className="subhead">{this.translate('teamInfo')}</h3>
 
@@ -1170,8 +1571,7 @@ export default class extends React.PureComponent {
                                         labelFileTypeNotAllowed={this.translate('studentRecords.educationRecords.studentCardFrontFileType')}
                                         allowFileSizeValidation={true}
                                         maxTotalFileSize="100MB"
-                                        
-                                        
+                                        ref={ref => this.pondRefs.studentCardFronts[`${studentIndex}-${studentEducationIndex}`] = ref}
                                         server={filepondServer}
 
                                         onprocessfileabort={(file)=>{this.onPendingUploads(false)}}
@@ -1215,7 +1615,7 @@ export default class extends React.PureComponent {
                                         labelFileTypeNotAllowed={this.translate('studentRecords.educationRecords.studentCardBackFileType')}
                                         allowFileSizeValidation={true}
                                         maxTotalFileSize="100MB"
-                                        
+                                        ref={ref => this.pondRefs.studentCardBacks[`${studentIndex}-${studentEducationIndex}`] = ref}
                                         
                                         server={filepondServer}
                                         onprocessfileabort={(file)=>{this.onPendingUploads(false)}}
@@ -1260,7 +1660,7 @@ export default class extends React.PureComponent {
                                         labelFileTypeNotAllowed={this.translate('studentRecords.educationRecords.transcriptFileType')}
                                         allowFileSizeValidation={true}
                                         maxTotalFileSize="100MB"
-                                        
+                                        ref={ref => this.pondRefs.transcripts[`${studentIndex}-${studentEducationIndex}`] = ref}
                                         
                                         server={filepondServer}
                                         onprocessfileabort={(file)=>{this.onPendingUploads(false)}}
@@ -1530,7 +1930,7 @@ export default class extends React.PureComponent {
 
                       {
                         this.state.record.projectRecords.map((projectRecord, projectIndex) => {
-
+                          {/* console.log('projectRecord', projectRecord); */}
                           return <FormSection className="FormSection" key={projectIndex}>
 
                             <h3 className="subhead">{this.translate('projectInfo')} {this.state.record.projectRecords.length > 1 && `#${projectIndex + 1}`}
@@ -1616,8 +2016,26 @@ export default class extends React.PureComponent {
                               
                             </FormRow>
 
+                            {(projectRecord.whitepaperFileIds && projectRecord.whitepaperFileIds.length > 0) && 
+                              <FormRow>
+                                <FormField>
+                                  {this.getLabel('projectRecords.whitepaperSubmitted')}
+                                  <div>
+                                    <ol>
+                                      {
+                                        projectRecord.whitepaperFileIds.slice().reverse().map((dropfile, index)=>{
+                                          return <li key={index}><a target="_blank" href={`${process.env.FILEPOND_API_URL}${process.env.FILEPOND_API_ENDPOINT}${process.env.FILEPOND_API_URL}${process.env.FILEPOND_API_ENDPOINT}${dropfile.fileId}`}>{getFilenameFromFileId(dropfile.fileId)}</a> {dropfile.receivedAt && <span>- {moment(dropfile.receivedAt).fromNow()}</span>}</li>
+                                        })
+                                      }
+                                    </ol>
+                                  </div>
+                                </FormField>
+                              </FormRow>
+                            }
+                            
 
-                            <FormRow>
+
+                            {/* <FormRow>
                               <FormField>
                                 {this.getLabel('projectRecords.presentationFile')}
                                 <input disabled style={{display: "none"}} type="text" data-name="presentationFileId" data-section="projectRecords" data-project-index={projectIndex} value={_.isEmpty(projectRecord['presentationFileId']) ? "" : projectRecord['presentationFileId']} />
@@ -1660,7 +2078,7 @@ export default class extends React.PureComponent {
                               </FormField>
 
                               
-                            </FormRow>
+                            </FormRow> */}
 
 
 
@@ -1674,17 +2092,33 @@ export default class extends React.PureComponent {
                       </FormTools>
                       <FormTools>
                         <div className="full-width">
-                          <button className={classNames({
-                            disabled: this.state.pendingUploads > 0 ||this.state.recordIsValid !== true || this.state.isEditorMutating === true
-                          })} disabled={this.state.pendingUploads > 0 || !this.state.recordIsValid || this.state.isEditorMutating === true} onClick={() => {
-                            this.onCreateApplication(mutate)
-                          }}>
-                            {
-                              !this.state.isEditorMutating ? 
-                                this.translate('submit') :
-                                <><div className="lds-ellipsis"><div></div><div></div><div></div><div></div></div></>
-                            }
-                          </button>
+                          {this.state.hasValidToken !== true &&
+                            <button className={classNames({
+                              disabled: this.state.pendingUploads > 0 ||this.state.recordIsValid !== true || this.state.isEditorMutating === true
+                            })} disabled={this.state.pendingUploads > 0 || !this.state.recordIsValid || this.state.isEditorMutating === true} onClick={() => {
+                              this.onCreateApplication(mutate)
+                            }}>
+                              {
+                                !this.state.isEditorMutating ? 
+                                  this.translate('submit') :
+                                  <><div className="lds-ellipsis"><div></div><div></div><div></div><div></div></div></>
+                              }
+                            </button>
+                          }
+
+                          {this.state.hasValidToken === true &&
+                            <button className={classNames({
+                              disabled: this.state.pendingUploads > 0 ||this.state.recordIsValid !== true || this.state.isEditorMutating === true
+                            })} disabled={this.state.pendingUploads > 0 || !this.state.recordIsValid || this.state.isEditorMutating === true} onClick={() => {
+                              this.onUpdateApplication(mutate)
+                            }}>
+                              {
+                                !this.state.isEditorMutating ? 
+                                  this.translate('update') :
+                                  <><div className="lds-ellipsis"><div></div><div></div><div></div><div></div></div></>
+                              }
+                            </button>
+                          }
                         </div>
                       </FormTools>
                       {

@@ -3,6 +3,8 @@
   "seoDescription":"국제블록체인 올림피아드는 여러 학문 분야에 대한 블록체인 대회입니다. IBCOL 2019는 분산형 애플리케이션을 통해 전 세계 학생들이 현실 세계의 과제를 해결하도록 초대합니다.",
   "ogImage":"static/images/ogimage.jpg",
   "subhead":"팀 등록",
+  "1stDayToSubmit":"백서를 허용하기위한 첫 날",
+  "lastDayToSubmit":"백서를 수락에 대한 마지막 날",
   "teamInfo":"팀 정보",
   "teamName":"팀 이름",
   "studentInfo":"학생 정보",
@@ -14,11 +16,19 @@
     "educationRecords":{
       "degree":"학위",
       "programme":"전공 과목",
-      "yearOfGraduation":"기관명 (학교)",
-      "institutionName":"졸업년도",
+      "institutionName":"기관명 (학교)",
+      "yearOfGraduation":"졸업년도",
       "city":"도시",
       "state":"시 /도",
-      "countryCode":"국가/지역"
+      "countryCode":"국가/지역",
+      "studentNumber":"학생 수",
+      "studentCard":"학생 ID 카드",
+      "studentCardFrontFile":"학생 카드 (전면)",
+      "studentCardFrontFileType":"만 PNG / JPEG / PDF를 받아",
+      "studentCardBackFile":"학생 카드 (카드 뒷면)",
+      "studentCardBackFileType":"만 PNG / JPEG / PDF를 받아",
+      "transcriptFile":"성적 증명서 (학습 프로그램을 확인합니다)",
+      "transcriptFileType":"만 PNG / JPEG / PDF / 우편 번호를 받아"
     }
   },
   "advisorRecords":{
@@ -40,7 +50,11 @@
   "projectRecords":{
     "name":"프로젝트 이름",
     "projectCategoryKey":"프로젝트 카테고리",
-    "description":"프로젝트 설명"
+    "description":"프로젝트 설명",
+    "presentationFile":"표시",
+    "presentationFileType":"PDF / 우편 번호를 받아 만",
+    "whitepaperFile":"백지",
+    "whitepaperFileType":"PDF / 우편 번호를 받아 만"
   },
   "studentEducationInfo":"학업 정보",
   "addAnotherStudent":"또 다른 학생 추가",
@@ -55,13 +69,14 @@
   "addAnotherAdvisorAssociationRecord":"또 다른 협회 레코드 추가",
   "removeAdvisorAssociationRecord":"협회 레코드를 제거",
   "projectInfo":"프로젝트 정보",
+  "extraInfo":"학생들의 모든 지적 재산권은 이러한 학생들의 유일하고 독점적 인 재산을 유지하여야한다. 지적 재산권의 수신자는 공개에서 지적 재산권이나 기타 권리 본 계약 (명시 적 또는 묵시적 여부, 그렇지 않은 경우 라이센스 또는) 획득하지 않습니다. 당신이 팀을 보유하고 있지만, 아직 프로젝트가 결정되면, n/a 을 입력하고 카테고리를 선택하시기 바랍니다. 나중에이 정보를 변경할 수 있습니다.",
   "removeProject":"프로젝트 제거",
   "addAnotherProject":"또 다른 프로젝트 추가",
   "submit":"제출",
   "registerAnother":"또 다른 응용 프로그램 만들기",
   "confirmation":{
     "title":"등록 주셔서 감사합니다.",
-    "message":"우리는 등록을 받았습니다. 우리는 당신의 백서 (때문에 2019년 4월 21일)을 읽기를 기대합니다. 미루지 마십시오!",
+    "message":"우리는 등록을 받았습니다. 최종 후보는 6월 9일 전에 발표 될 예정이다.",
     "refTitle":"응용 프로그램 참조 :",
     "TteamNameTitle":"팀 이름:"
   }

@@ -3,6 +3,8 @@
   "seoDescription":"Olimpiada Internațională de Blockchain este o competiție multidisciplinară de design si inginerie. IBCOL 2019 invită studenții din toată lumea să rezolve provocări reale, prin aplicații de-centralizate.",
   "ogImage":"static/images/ogimage.jpg",
   "subhead":"Înregistrare echipă",
+  "1stDayToSubmit":"Prima zi pentru acceptarea Whitepapers",
+  "lastDayToSubmit":"Ultima zi pentru acceptarea Whitepapers",
   "teamInfo":"Informații echipă",
   "teamName":"Numele echipei",
   "studentInfo":"Informații studenți",
@@ -14,11 +16,19 @@
     "educationRecords":{
       "degree":"Diplomă",
       "programme":"Profil sau Master",
-      "yearOfGraduation":"Numele instituției",
-      "institutionName":"Anul absolvirii",
+      "institutionName":"Numele instituției",
+      "yearOfGraduation":"Anul absolvirii",
       "city":"Oraș",
       "state":"Stat/Județ/Provincie",
-      "countryCode":"Țară"
+      "countryCode":"Țară",
+      "studentNumber":"Numarul studentului",
+      "studentCard":"Card de student ID-ul",
+      "studentCardFrontFile":"Card Student (față)",
+      "studentCardFrontFileType":"acceptă numai PNG / JPEG / PDF",
+      "studentCardBackFile":"Card Student (spatele cardului)",
+      "studentCardBackFileType":"acceptă numai PNG / JPEG / PDF",
+      "transcriptFile":"Academic Transcrierea (pentru a confirma programul academic)",
+      "transcriptFileType":"acceptă numai PNG / JPEG / PDF / ZIP"
     }
   },
   "advisorRecords":{
@@ -40,7 +50,11 @@
   "projectRecords":{
     "name":"Numele proiectului",
     "projectCategoryKey":"Categoria proiectului",
-    "description":"Descrierea proiectului"
+    "description":"Descrierea proiectului",
+    "presentationFile":"Prezentare",
+    "presentationFileType":"Numai acceptă PDF / ZIP",
+    "whitepaperFile":"Hartie alba",
+    "whitepaperFileType":"Numai acceptă PDF / ZIP"
   },
   "studentEducationInfo":"Calificare academică",
   "addAnotherStudent":"Adaugă încă un student",
@@ -55,6 +69,7 @@
   "addAnotherAdvisorAssociationRecord":"Adăugați un alt record de asociere",
   "removeAdvisorAssociationRecord":"Eliminați Asociația Înregistrare",
   "projectInfo":"Informații despre Proiect",
+  "extraInfo":"Toate proprietatea intelectuală a studenților este și va rămâne proprietatea unică și exclusivă a unor astfel de studenți. Beneficiarii de proprietate intelectuală nu dobândesc (prin licență sau în alt mod, fie în mod expres sau implicit) orice drepturi de proprietate intelectuală sau alte drepturi în conformitate cu orice divulgare mai jos. Dacă aveți o echipă, dar nu a fost încă un proiect a decis, vă rugăm să introduceți „nici unul“ și alege orice categorie. Puteți modifica aceste informații mai târziu.",
   "removeProject":"Șterge proiect",
   "addAnotherProject":"Adaugă încă un proiect",
   "submit":"Trimite",

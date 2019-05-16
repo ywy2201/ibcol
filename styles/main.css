@@ -1016,14 +1016,19 @@ button.btn--large {
 button.btn--stroke {
   background: transparent !important;
   border: 0.2rem solid #FFFFFF;
-  color: #FFFFFF;
+  /* color: #FFFFFF; */
+}
+
+.btn--stroke.btn--primary,
+button.btn--stroke.btn--primary {
+  color: #0086cad1;
 }
 
 .btn--stroke:hover,
 button.btn--stroke:hover {
   background: #FFFFFF !important;
-  border: 0.2rem solid #FFFFFF;
-  color: #000000;
+  /* border: 0.2rem solid #FFFFFF; */
+  /* color: #000000; */
 }
 
 .btn--pill,

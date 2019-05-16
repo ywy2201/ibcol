@@ -3,6 +3,8 @@
   "seoDescription":"Международная Олимпиада по Блокчейну (IBCOL) - это многопрофильный конкурс по разработке и дизайну программных решений на основе технологии блокчейн. IBCOL 2019 приглашает студентов со всего мира решать реальные задачи с помощью децентрализованных приложений.",
   "ogImage":"static/images/ogimage.jpg",
   "subhead":"Команда Регистрация",
+  "1stDayToSubmit":"Первый день для приема Whitepapers",
+  "lastDayToSubmit":"Последний день для принятия Whitepapers",
   "teamInfo":"информация о команде",
   "teamName":"Название команды",
   "studentInfo":"информация для студентов",
@@ -14,11 +16,19 @@
     "educationRecords":{
       "degree":"Степень или эквивалент",
       "programme":"Программа или Major",
-      "yearOfGraduation":"Название учебного заведения",
-      "institutionName":"выпускной год",
+      "institutionName":"Название учебного заведения",
+      "yearOfGraduation":"выпускной год",
       "city":"город",
       "state":"Область / Штат",
-      "countryCode":"Страна / Регион"
+      "countryCode":"Страна / Регион",
+      "studentNumber":"Количество учащихся",
+      "studentCard":"Student ID Card",
+      "studentCardFrontFile":"Student Card (Front)",
+      "studentCardFrontFileType":"Только принимает PNG / JPEG / PDF",
+      "studentCardBackFile":"Student Card (Назад Card)",
+      "studentCardBackFileType":"Только принимает PNG / JPEG / PDF",
+      "transcriptFile":"Академическая Стенограмма (для подтверждения академической программы)",
+      "transcriptFileType":"Только принимает PNG / JPEG / PDF / ZIP"
     }
   },
   "advisorRecords":{
@@ -40,7 +50,11 @@
   "projectRecords":{
     "name":"название проекта",
     "projectCategoryKey":"Категория проекта",
-    "description":"Описание Проекта"
+    "description":"Описание Проекта",
+    "presentationFile":"презентация",
+    "presentationFileType":"Только принимает PDF / ZIP",
+    "whitepaperFile":"Белая бумага",
+    "whitepaperFileType":"Только принимает PDF / ZIP"
   },
   "studentEducationInfo":"Академические полномочия",
   "addAnotherStudent":"Добавить другой студент",
@@ -55,13 +69,14 @@
   "addAnotherAdvisorAssociationRecord":"Добавить другую ассоциацию запись",
   "removeAdvisorAssociationRecord":"Удалить ассоциации запись",
   "projectInfo":"информация о проекте",
+  "extraInfo":"Вся интеллектуальная собственность студентов и остается единственным и исключительным свойством таких студентов. Получатели интеллектуальной собственности не получают (по лицензии или иным способом, будь то явных или подразумеваемых) какие-либо права на интеллектуальную собственность или иные права в соответствии с любым раскрытием ниже. Если у вас есть команда, но еще не проект, решил, пожалуйста, введите «нет» и выбрать любую категорию. Вы можете изменить эту информацию позже.",
   "removeProject":"Удалить проект",
   "addAnotherProject":"Добавить другой проект",
   "submit":"Отправить",
   "registerAnother":"Создать еще одно приложение",
   "confirmation":{
     "title":"Благодарим Вас за регистрацию.",
-    "message":"Мы получили вашу регистрацию. Мы с нетерпением ждем, чтобы читать ваш официальный документ (из 21 апреля 2019). Пожалуйста, не откладывайте!",
+    "message":"Мы получили вашу регистрацию. Финалисты будут объявлены до 9 июня.",
     "refTitle":"Информация о приложении:",
     "TteamNameTitle":"Название команды:"
   }
