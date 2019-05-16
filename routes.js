@@ -51,9 +51,10 @@ routes
   // .add({ name: 'competition', pattern: '/:locale/competition/', page: 'competition' })
   .add({ name: 'ambassadors', pattern: '/:locale/ambassadors/', page: 'ambassadors' })
   .add({ name: 'sponsors', pattern: '/:locale/sponsors/', page: 'sponsors' })
-  // .add({ name: 'schedule', pattern: '/:locale/schedule/', page: 'schedule' })
+  .add({ name: 'schedule', pattern: '/:locale/schedule/', page: 'schedule' })
   .add({ name: 'contact', pattern: '/:locale/contact/', page: 'contact' })
   .add({ name: 'registration', pattern: '/:locale/registration/', page: 'registration' })
+
 
 
 

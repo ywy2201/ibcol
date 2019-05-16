@@ -35,7 +35,7 @@ import FilePondPluginFileValidateType from 'filepond-plugin-file-validate-type';
 import FilePondPluginImageExifOrientation from 'filepond-plugin-image-exif-orientation';
 import FilePondPluginImagePreview from 'filepond-plugin-image-preview';
 import FilePondPluginFileValidateSize from 'filepond-plugin-file-validate-size';
-import '/node_modules/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.css';
+import 'node_modules/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.css';
 
 
 // Register the plugins

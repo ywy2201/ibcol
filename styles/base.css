@@ -407,6 +407,76 @@ div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, p, blockquote, t
 #CommunitiesContactInfo h4 a {
   margin-left: 1rem;
 }
+
+
+/*schedule*/
+iframe {
+    width: 100%;
+    height: 500px;
+}
+.schedule td{
+    padding: 20px;
+    vertical-align: top;
+}
+.schedule td:first-child {
+    padding-left: 20px;
+}
+.schedule td h5 {
+    margin: 0 0 10px;
+}
+.schedule td p {
+    margin: 0 0 10px;
+}
+.schedule td.blue {
+    border-right: 5px solid blue;
+}
+.schedule td.red {
+    border-right: 5px solid red;
+}
+.schedule td.green {
+    border-right: 5px solid green;
+}
+.schedule td.orange {
+    border-right: 5px solid orange;
+}
+.session-schedule-time {
+    width: 20%;
+}
+.session-schedule-detail {
+    width: 80%;
+}
+.block-tab-full {
+    margin-bottom: 100px;
+}
+.col-block a {
+    display: inline-block;
+    margin-right: 30px;
+    padding: 30px 0;
+}
+.col-block a h4{
+    margin-bottom: 0;
+}
+.stickynav {
+    position: fixed;
+    top: 0;
+    background: white;
+    width: 100%;
+    max-width: none;
+    border-bottom: 1px solid #ececec;
+}
+.stickynav .col-block {
+    float: none;
+    text-align: center;
+}
+@media (max-width: 640px){
+ 
+.col-block a {
+    display: inline-block;
+    margin-right: 0;
+    padding: 10px 0;
+    width: 100%;
+}
+}
 h1, h2, h3, h4, h5, h6 {
   -webkit-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
